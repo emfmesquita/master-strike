@@ -1,32 +1,41 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <v-app-bar app color="primary" dark>
+      <div class="d-flex align-center">
+
+        <div id="nav">
+          <router-link to="/"><span class="display-1">Master Strike</span></router-link>
+          <router-link to="/about"><span>About</span></router-link>
+        </div>
+      </div>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        text
+      >
+        <v-icon>mdi-filter-outline</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-content>
+      <router-view />
+    </v-content>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
+export default {
+  name: "App",
+  data: () => ({
+    //
+  })
+};
+</script>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<style scoped>
+  span {
+    color: #fff !important;
   }
-}
-</style>
+</style>>
