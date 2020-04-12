@@ -20,3 +20,12 @@ export const heroClassArray = Object.freeze([
     STRENGTH,
     TECH
 ]);
+
+export const heroClassBackgroundArray = Object.freeze([
+    "#ffffff",
+    "#ffb3b3",
+    "#ffffcc",
+    "#c2d1f0",
+    "#c6ecd9",
+    "#d9d9d9"
+]);

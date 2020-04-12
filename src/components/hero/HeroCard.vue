@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto hero-card" outlined >
+  <v-card class="mx-auto hero-card" raised :style="{ backgroundColor }">
     <TeamIcon class="card-team" :icon="card.team || hero.team"/>
     <HeroClassIcon class="card-hero-class" :icon="card.hc"/>
     <RarityIcon class="card-rarity" :icon="card.rarity" />
@@ -37,6 +37,7 @@ import TeamIcon from "./TeamIcon.vue";
 import HeroClassIcon from "./HeroClassIcon.vue";
 import CardAbility from "./CardAbility.vue";
 import RarityIcon from "./RarityIcon.vue";
+import { heroClassBackgroundArray } from "../../constants/hero-class";
 
 export default {
   name: "HeroCard",
@@ -51,8 +52,8 @@ export default {
     RarityIcon
   },
   computed: {
-    background() {
-      return "";
+    backgroundColor() {
+      return heroClassBackgroundArray[this.card.hc || 0];
     }
   }
 };
