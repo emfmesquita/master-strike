@@ -3,20 +3,20 @@
     <span v-if="typeof ability === 'string'">{{ ability }}</span>
     <span class="font-weight-bold" v-else-if="ability.bold">{{ ability.bold }}</span>
     <HeroClassIcon class="icon" v-else-if="ability.hc" :icon="ability.hc"/>
-    <AttackIcon v-else-if="ability.icon === 1" width="24px"/>
+    <AbilityIcon v-else-if="ability.icon" :icon="ability.icon" width="24px"/>
   </span>
 </template>
 
 <script>
 import HeroClassIcon from "./HeroClassIcon.vue";
-import AttackIcon from "./AttackIcon.vue";
+import AbilityIcon from "./AbilityIcon.vue";
 
 export default {
   name: "CardAbility",
   props: ["ability"],
   components: {
     HeroClassIcon,
-    AttackIcon
+    AbilityIcon
   },
   data: () => ({})
 };
