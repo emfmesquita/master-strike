@@ -1,8 +1,8 @@
 <template>
   <v-card class="mx-auto hero-card" raised :style="{ backgroundColor }">
-    <TeamIcon class="card-team" :icon="card.team || hero.team"/>
-    <HeroClassIcon class="card-hero-class" :icon="card.hc"/>
-    <RarityIcon class="card-rarity" :icon="card.rarity" />
+    <TeamIcon class="card-team" :icon="card.team || hero.team" width="40px"/>
+    <HeroClassIcon class="card-hero-class" :icon="card.hc" width="32px"/>
+    <RarityIcon class="card-rarity" :icon="card.rarity" width="24px"/>
     <div class="text-center font-weight-black card-header">{{ card.name }}</div>
     <div class="text-center card-sub-header">{{ hero.name }}</div>
 
@@ -16,17 +16,17 @@
     </div>
 
     <template v-if="card.recruit">
-      <img class="card-recruit-icon absolute-icon" src="../../assets/icons/recruit.svg"/>
+      <AbilityIcon class="card-recruit-icon absolute-icon" icon="2" width="72px"/>
       <span class="card-recruit icon-text text-center font-weight-bold">{{ card.recruit }}</span>
     </template>
 
     <template v-if="card.attack">
-      <img class="card-attack-icon absolute-icon"  src="../../assets/icons/attack.svg"/>
+      <AbilityIcon class="card-attack-icon absolute-icon" icon="1" width="64px"/>
       <span class="card-attack icon-text text-center font-weight-bold">{{ card.attack }}</span>
     </template>
 
     <template v-if="card.cost >= 0">
-      <img class="card-cost-icon absolute-icon" src="../../assets/icons/cost.svg"/>
+      <AbilityIcon class="card-cost-icon absolute-icon" icon="3" width="64px"/>
       <span class="card-cost icon-text text-center font-weight-bold">{{ card.cost }}</span>
     </template>
   </v-card>
@@ -37,7 +37,8 @@ import TeamIcon from "./TeamIcon.vue";
 import HeroClassIcon from "./HeroClassIcon.vue";
 import CardAbility from "./CardAbility.vue";
 import RarityIcon from "./RarityIcon.vue";
-import { heroClassBackgroundArray } from "../../constants/hero-class";
+import AbilityIcon from "./AbilityIcon.vue";
+import { heroClassArray } from "../../constants/hero-class";
 
 export default {
   name: "HeroCard",
@@ -49,11 +50,12 @@ export default {
     TeamIcon,
     HeroClassIcon,
     CardAbility,
-    RarityIcon
+    RarityIcon,
+    AbilityIcon
   },
   computed: {
     backgroundColor() {
-      return heroClassBackgroundArray[this.card.hc || 0];
+      return heroClassArray[this.card.hc || 0].bgColor;
     }
   }
 };
@@ -61,23 +63,20 @@ export default {
 
 <style scoped lang="scss">
 .hero-card {
-  height: 260px;
+  height: 250px;
   padding: 6px;
   .card-team {
     position: absolute;
-    width: 40px;
     left: 0px;
     top: 0px;
   }
   .card-hero-class {
     position: absolute;
-    width: 32px;
     left: 4px;
     top: 30px;
   }
   .card-rarity {
     position: absolute;
-    width: 24px;
     right: 2px;
     top: 6px;
   }
@@ -89,7 +88,6 @@ export default {
   }
   
   .card-cost-icon {
-    width: 64px;
     right: 0px;
     bottom: 0px;
   }
@@ -101,7 +99,6 @@ export default {
   }
   
   .card-recruit-icon {
-    width: 72px;
     left: -4px;
     bottom: 50px;
   }
@@ -113,7 +110,6 @@ export default {
   }
 
   .card-attack-icon {
-    width: 64px;
     left: 0px;
     bottom: 0px;
   }
@@ -131,6 +127,7 @@ export default {
     -webkit-text-stroke-color: #000;
     line-height: 64px;
     user-select: none;
+    pointer-events: none;
   }
 
   .absolute-icon {
@@ -138,7 +135,6 @@ export default {
     user-select: none;
   }
 
-  .card-header {}
   .card-sub-header {
     font-size: 12px;
   }

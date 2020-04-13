@@ -2,8 +2,8 @@
   <span>
     <span v-if="typeof ability === 'string'">{{ ability }}</span>
     <span class="font-weight-bold" v-else-if="ability.bold">{{ ability.bold }}</span>
-    <HeroClassIcon class="icon" v-else-if="ability.hc" :icon="ability.hc"/>
-    <TeamIcon class="icon" v-else-if="ability.team" :icon="ability.team"/>
+    <HeroClassIcon v-else-if="ability.hc" :icon="ability.hc" width="24px"/>
+    <TeamIcon v-else-if="ability.team" :icon="ability.team" width="24px"/>
     <AbilityIcon v-else-if="ability.icon" :icon="ability.icon" width="32px"/>
   </span>
 </template>
@@ -24,9 +24,3 @@ export default {
   data: () => ({})
 };
 </script>
-
-<style scoped lang="scss">
-.icon {
-  width: 24px;
-}
-</style>

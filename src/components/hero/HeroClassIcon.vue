@@ -1,5 +1,14 @@
 <template>
-  <img class="hero-class-icon" v-if="icon" :src="hc"/>
+  <span>
+    <v-tooltip top>
+      <template v-slot:activator="{ on }">
+        <span v-on="on">
+          <img class="hero-class-icon" v-if="icon" :src="hc" :width="width"/>
+        </span>
+      </template>
+      <span>{{ label }}</span>
+    </v-tooltip>
+  </span>
 </template>
 
 <script>
@@ -7,11 +16,15 @@ import { heroClassArray } from "../../constants/hero-class";
 
 export default {
   name: "TeamIcon",
-  props: ["icon"],
+  props: ["icon", "width"],
   computed: {
     hc() {
-      const hc = heroClassArray[this.icon];
+      const hc = heroClassArray[this.icon].value;
       return require(`../../assets/icons/heroclasses/${hc}.svg`);
+    },
+    label() {
+      const label = heroClassArray[this.icon].label;
+      return `Hero Class: ${label}`;
     }
   },
   data: () => ({})

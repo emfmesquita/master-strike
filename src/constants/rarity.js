@@ -1,6 +1,15 @@
-const COMMON = "common";
-const UNCOMMON = "uncommon";
-const RARE = "rare";
+const COMMON = {
+    value: "common",
+    label: "Common (5 cards)"
+};
+const UNCOMMON = {
+    value: "uncommon",
+    label: "Uncommon (3 cards)"
+};
+const RARE = {
+    value: "rare",
+    label: "Rare (1 card)"
+};
 
 export const rarity = Object.freeze({
     COMMON,
@@ -9,7 +18,7 @@ export const rarity = Object.freeze({
 });
 
 export const rarityArray = Object.freeze([
-    "",
+    {},
     COMMON,
     UNCOMMON,
     RARE
