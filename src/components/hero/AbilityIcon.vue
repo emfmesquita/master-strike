@@ -25,7 +25,7 @@ export default {
     },
     iconClass() {
       return {
-        'adjust-icon': this.icon.value === 1 || this.icon.value === 2
+        'adjust-icon': this.icon === 1 || this.icon === 2
       };
     },
     label() {
