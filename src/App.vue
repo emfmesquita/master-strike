@@ -5,7 +5,7 @@
 
         <div id="nav">
           <router-link to="/"><span class="display-1">Master Strike</span></router-link>
-          <router-link to="/about"><span>About</span></router-link>
+          <!-- <router-link to="/about"><span>About</span></router-link> -->
         </div>
       </div>
 

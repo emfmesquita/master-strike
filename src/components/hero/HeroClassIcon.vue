@@ -21,5 +21,6 @@ export default {
 <style scoped lang="scss">
 .hero-class-icon {
   user-select: none;
+  vertical-align: middle;
 }
 </style>

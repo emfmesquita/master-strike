@@ -21,5 +21,6 @@ export default {
 <style scoped lang="scss">
 .team-icon {
   user-select: none;
+  vertical-align: middle;
 }
 </style>

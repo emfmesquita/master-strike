@@ -1,6 +1,6 @@
 
 <template>
-  <img class="ability-icon" v-if="icon" :src="iconSrc"/>
+  <img class="ability-icon" :class="{ 'adjust-icon': icon === 1 || icon === 2 }" v-if="icon" :src="iconSrc"/>
 </template>
 
 <script>
@@ -22,5 +22,11 @@ export default {
 <style scoped lang="scss">
 .ability-icon {
   user-select: none;
+  vertical-align: middle;
+}
+
+.adjust-icon {
+  margin: -6px;
+  padding-bottom: 4px;
 }
 </style>

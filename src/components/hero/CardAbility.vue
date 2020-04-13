@@ -4,7 +4,7 @@
     <span class="font-weight-bold" v-else-if="ability.bold">{{ ability.bold }}</span>
     <HeroClassIcon class="icon" v-else-if="ability.hc" :icon="ability.hc"/>
     <TeamIcon class="icon" v-else-if="ability.team" :icon="ability.team"/>
-    <AbilityIcon v-else-if="ability.icon" :icon="ability.icon" width="24px"/>
+    <AbilityIcon v-else-if="ability.icon" :icon="ability.icon" width="32px"/>
   </span>
 </template>
 
