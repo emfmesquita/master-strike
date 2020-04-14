@@ -37,10 +37,10 @@ export const heroClass = Object.freeze({
 });
 
 export const heroClassArray = Object.freeze([
-    NONE,
-    COVERT,
-    INSTINCT,
-    RANGED,
-    STRENGTH,
-    TECH
+    NONE,       // 0
+    COVERT,     // 1
+    INSTINCT,   // 2
+    RANGED,     // 3
+    STRENGTH,   // 4
+    TECH        // 5
 ]);

@@ -23,8 +23,8 @@ export const icon = Object.freeze({
 });
 
 export const iconArray = Object.freeze([
-    ATTACK,
-    RECRUIT,
-    COST,
-    VP
+    ATTACK,     // 1
+    RECRUIT,    // 2
+    COST,       // 3
+    VP          // 4
 ]);
