@@ -20,6 +20,20 @@
       <router-view />
     </v-content>
 
+    <v-btn
+      class="scroll-top"
+      fixed
+      dark
+      fab
+      bottom
+      right
+      color="pink"
+      v-scroll-to="'#app'"
+      v-show="showScrollToTop"
+    >
+      <v-icon>mdi-chevron-up</v-icon>
+    </v-btn>
+
     <v-footer
       app
       color="primary"
@@ -36,13 +50,29 @@
 export default {
   name: "App",
   data: () => ({
-    drawer: true
-  })
+    drawer: true,
+    showScrollToTop: false
+  }),
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      this.showScrollToTop = window.scrollY > 0;
+    }
+  }
 };
 </script>
 
 <style scoped>
   span {
     color: #fff !important;
+  }
+
+  .scroll-top {
+    margin-bottom: 48px;
   }
 </style>>
