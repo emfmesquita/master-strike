@@ -66,7 +66,7 @@ export default {
 
 <style scoped lang="scss">
 .hero-card {
-  height: 250px;
+  height: 280px;
   padding: 6px;
   .card-team {
     position: absolute;

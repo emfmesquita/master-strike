@@ -29,6 +29,19 @@ export default {
           name: "Radiant Blast",
           hc: 3,
           rarity: 1,
+          cost: 4,
+          attack: "2+",
+          abilities: [
+            [
+              "If you drew any extra cards this turn, you get",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 1
+              } 
+            ]
+          ]
 
         },
         {
@@ -45,6 +58,307 @@ export default {
               ": ",
               {
                 keyword: 66
+              }
+            ]
+          ]
+        },
+        {
+          name: "Higher, Further, Faster",
+          hc: 4,
+          rarity: 3,
+          cost: 7,
+          attack: "0+",
+          abilities: [
+            [
+              "Choose one: Draw three cards or ",
+              {
+                keyword: 66
+              }
+            ],
+            [
+              { 
+                hc:4
+              },
+              {
+                hc: 4
+              },
+              ": Instead, do both."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Darkhawk",
+      team: 1,
+      cards: [
+        {
+          name: "Balance the Darkforce",
+          hc: 5,
+          rarity: 1,
+          cost: 3,
+          recruit: "1",
+          attack: "1",
+          abilities: [
+            [
+              {
+                hc:5
+              },
+              ": Draw a card."
+            ]
+          ]
+        },
+        {
+          name: "Hawk Dive",
+          hc: 1,
+          rarity: 1,
+          cost: 4,
+          attack: "0+",
+          recruit: "0+",
+          abilities: [
+            [
+              "Choose",
+              {
+                icon: 2
+              },
+              "or",
+              {
+                icon: 1
+              },
+              ". Then ",
+              {
+                keyword: 64
+              },
+              {
+                bold: "4 "
+              },
+              "for that icon."
+            ]
+          ]
+
+        },
+        {
+          name: "Travel to Nullspace",
+          hc: 5,
+          rarity: 2,
+          cost: 6,
+          attack: "0+",
+          recruit: "0+",
+          abilities: [
+            [
+              "If the most recent Hero you played this turn has a",
+              {
+                icon: 2
+              },
+              "icon, you get ",
+              {
+                bold: "+3"
+              },
+              {
+                icon: 2
+              },
+              ". If it has an",
+              {
+                icon: 1
+              },
+              "icon, you get ",
+              {
+                bold: "+3"
+              },
+              {
+                icon: 1
+              },
+              ". (If both, you get both.)"  
+            ]
+          ]
+        },
+        {
+          name: "Warflight",
+          hc: 5,
+          rarity: 3,
+          cost: 7,
+          attack: "0+",
+          recent: "0+",
+          abilities: [
+            [
+              "Whenever you Hyperspeed this turn, you get both",
+              {
+                icon: 2
+              },
+              "from",
+              {
+                icon: 2
+              },
+              "icons and",
+              {
+                icon: 1
+              },
+              "from",
+              {
+                icon: 1
+              },
+              "icons."
+            ],
+            [
+              {
+                keyword: 64
+              },
+              {
+                bold: "7"
+              }
+            ],
+            [
+              {
+                hc: 5
+              },
+              {
+                hc: 5
+              },
+              ": Instead,",
+              {
+                keyword: 64
+              },
+              {
+                bold: "9"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Hellcat",
+      team: 1,
+      cards: [
+        {
+          name: "Catlike Agility",
+          hc: 2,
+          rarity: 1,
+          cost: 2,
+          attack: "1",
+          abilities: [
+            [
+              {
+                hc:2
+              },
+              ": : Choose one - Draw a card or you get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 1
+              }
+            ]
+          ]
+        },
+        {
+          name: "Part-Time PI",
+          hc: 2,
+          rarity: 1,
+          cost: 3,
+          recruit: "2+",
+          abilities: [
+            [
+              "Reveal the top card of any deck. If it's not a Scheme Twist, you may put it on the bottom of that deck."
+            ],
+            [
+              {
+                hc: 2
+              },
+              ": Choose one - Draw a card or you get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 2
+              }
+            ]
+          ]
+
+        },
+        {
+          name: "Travel to Nullspace",
+          hc: 5,
+          rarity: 2,
+          cost: 6,
+          attack: "0+",
+          recruit: "0+",
+          abilities: [
+            [
+              "If the most recent Hero you played this turn has a",
+              {
+                icon: 2
+              },
+              "icon, you get ",
+              {
+                bold: "+3"
+              },
+              {
+                icon: 2
+              },
+              ". If it has an",
+              {
+                icon: 1
+              },
+              "icon, you get ",
+              {
+                bold: "+3"
+              },
+              {
+                icon: 1
+              },
+              ". (If both, you get both.)"  
+            ]
+          ]
+        },
+        {
+          name: "Warflight",
+          hc: 5,
+          rarity: 3,
+          cost: 7,
+          attack: "0+",
+          recent: "0+",
+          abilities: [
+            [
+              "Whenever you Hyperspeed this turn, you get both",
+              {
+                icon: 2
+              },
+              "from",
+              {
+                icon: 2
+              },
+              "icons and",
+              {
+                icon: 1
+              },
+              "from",
+              {
+                icon: 1
+              },
+              "icons."
+            ],
+            [
+              {
+                keyword: 64
+              },
+              {
+                bold: "7"
+              }
+            ],
+            [
+              {
+                hc: 5
+              },
+              {
+                hc: 5
+              },
+              ": Instead,",
+              {
+                keyword: 64
+              },
+              {
+                bold: "9"
               }
             ]
           ]
