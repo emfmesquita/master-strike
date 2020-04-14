@@ -2,7 +2,9 @@
   <span>
     <v-tooltip top>
       <template v-slot:activator="{ on }">
-        <span v-on="on"><img class="team-icon" v-if="icon" :src="team" :width="width"/></span>
+        <span v-on="on">
+          <img class="team-icon" v-if="icon" :src="team" :width="width" draggable="false"/>
+        </span>
       </template>
       <span>{{ label }}</span>
     </v-tooltip>
@@ -17,11 +19,11 @@ export default {
   props: ["icon", "width", "classProp"],
   computed: {
     team() {
-      const team = teamArray[this.icon].value;
+      const team = teamArray[this.icon - 1].value;
       return require(`../../assets/icons/teams/${team}.svg`);
     },
     label() {
-      const label = teamArray[this.icon].label;
+      const label = teamArray[this.icon - 1].label;
       return `Team: ${label}`;
     }
   },
@@ -33,5 +35,7 @@ export default {
 .team-icon {
   user-select: none;
   vertical-align: middle;
+  margin: -2px;
+  padding-bottom: 1px;
 }
 </style>

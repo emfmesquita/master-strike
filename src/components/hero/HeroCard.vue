@@ -1,7 +1,7 @@
 <template>
   <v-card class="mx-auto hero-card" raised :style="{ backgroundColor }">
-    <TeamIcon class="card-team" :icon="card.team || hero.team" width="40px"/>
-    <HeroClassIcon class="card-hero-class" :icon="card.hc" width="32px"/>
+    <TeamIcon class="card-team" v-if="team" :icon="team" width="40px"/>
+    <HeroClassIcon class="card-hero-class" v-if="card.hc" :icon="card.hc" width="32px"/>
     <RarityIcon class="card-rarity" :icon="card.rarity" width="24px"/>
     <div class="text-center font-weight-black card-header">{{ card.name }}</div>
     <div class="text-center card-sub-header">{{ hero.name }}</div>
@@ -56,6 +56,9 @@ export default {
   computed: {
     backgroundColor() {
       return heroClassArray[this.card.hc || 0].bgColor;
+    },
+    team() {
+      return this.card.team || this.hero.team;
     }
   }
 };

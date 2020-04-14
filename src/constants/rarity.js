@@ -18,7 +18,6 @@ export const rarity = Object.freeze({
 });
 
 export const rarityArray = Object.freeze([
-    {},
     COMMON,
     UNCOMMON,
     RARE

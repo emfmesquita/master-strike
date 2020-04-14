@@ -23,7 +23,6 @@ export const team = Object.freeze({
 });
 
 export const teamArray = Object.freeze([
-    {},
     AVENGERS,
     SHIELD,
     SPIDER_FRIENDS,

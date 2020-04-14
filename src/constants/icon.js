@@ -23,7 +23,6 @@ export const icon = Object.freeze({
 });
 
 export const iconArray = Object.freeze([
-    {},
     ATTACK,
     RECRUIT,
     COST,

@@ -4,7 +4,7 @@
     <v-tooltip top>
       <template v-slot:activator="{ on }">
         <span v-on="on">
-          <img class="ability-icon" :class="iconClass" v-if="icon" :src="iconSrc" :width="width"/>
+          <img class="ability-icon" :class="iconClass" v-if="icon" :src="iconSrc" :width="width" draggable="false"/>
         </span>
       </template>
       <span>{{ label }}</span>
@@ -20,7 +20,7 @@ export default {
   props: ["icon", "width"],
   computed: {
     iconSrc() {
-      const icon = iconArray[this.icon].value;
+      const icon = iconArray[this.icon - 1].value;
       return require(`../../assets/icons/${icon}.svg`);
     },
     iconClass() {
@@ -29,7 +29,7 @@ export default {
       };
     },
     label() {
-      return iconArray[this.icon].label;
+      return iconArray[this.icon - 1].label;
     }
   },
   data: () => ({})

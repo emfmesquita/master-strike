@@ -28,6 +28,7 @@ const NONE = {
 };
 
 export const heroClass = Object.freeze({
+    NONE,
     COVERT,
     INSTINCT,
     RANGED,

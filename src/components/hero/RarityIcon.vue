@@ -4,7 +4,7 @@
     <v-tooltip top>
       <template v-slot:activator="{ on }">
         <span v-on="on">
-          <img class="rarity-icon" v-if="icon" :src="rarity" :width="width"/>
+          <img class="rarity-icon" v-if="icon" :src="rarity" :width="width" draggable="false"/>
         </span>
       </template>
       <span>{{ label }}</span>
@@ -21,11 +21,11 @@ export default {
   props: ["icon", "width"],
   computed: {
     rarity() {
-      const rarity = rarityArray[this.icon].value;
+      const rarity = rarityArray[this.icon - 1].value;
       return require(`../../assets/icons/rarity/${rarity}.svg`);
     },
     label() {
-      return rarityArray[this.icon].label;
+      return rarityArray[this.icon - 1].label;
     }
   },
   data: () => ({})

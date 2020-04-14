@@ -3,7 +3,7 @@
     <v-tooltip top>
       <template v-slot:activator="{ on }">
         <span v-on="on">
-          <img class="hero-class-icon" v-if="icon" :src="hc" :width="width"/>
+          <img class="hero-class-icon" v-if="icon" :src="hc" :width="width" draggable="false"/>
         </span>
       </template>
       <span>{{ label }}</span>
@@ -35,5 +35,7 @@ export default {
 .hero-class-icon {
   user-select: none;
   vertical-align: middle;
+  margin: -2px;
+  padding-bottom: 1px;
 }
 </style>
