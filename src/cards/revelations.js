@@ -277,88 +277,120 @@ export default {
 
         },
         {
-          name: "Travel to Nullspace",
-          hc: 5,
+          name: "Demon Sight",
+          hc: 1,
           rarity: 2,
-          cost: 6,
-          attack: "0+",
-          recruit: "0+",
+          cost: 5,
+          attack: "2+",
           abilities: [
             [
-              "If the most recent Hero you played this turn has a",
+              "Guess Villain, Bystander, Strike, or Twist. Then reveal the top card of the Villain Deck. If you guessed right, you get ",
               {
-                icon: 2
-              },
-              "icon, you get ",
-              {
-                bold: "+3"
-              },
-              {
-                icon: 2
-              },
-              ". If it has an",
-              {
-                icon: 1
-              },
-              "icon, you get ",
-              {
-                bold: "+3"
+                bold: "+2"
               },
               {
                 icon: 1
               },
-              ". (If both, you get both.)"  
+              "."  
+            ],
+            [
+              {
+                team: 1
+              },
+              ": If it was a Villain, you may fight it this turn."
             ]
           ]
         },
         {
-          name: "Warflight",
-          hc: 5,
+          name: "Second Chance at Life",
+          hc: 2,
           rarity: 3,
-          cost: 7,
-          attack: "0+",
-          recent: "0+",
+          cost: 8,
+          attack: "6",
           abilities: [
             [
-              "Whenever you Hyperspeed this turn, you get both",
-              {
-                icon: 2
-              },
-              "from",
-              {
-                icon: 2
-              },
-              "icons and",
-              {
-                icon: 1
-              },
-              "from",
-              {
-                icon: 1
-              },
-              "icons."
+              "If a Master Strike or Scheme Twist would occur, you may discard this card from your hand instead. If you do, draw three cards, then shuffle that Strike or Twist back into the Villain Deck.",
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Photon",
+      team: 1,
+      cards: [
+        {
+          name: "Infrared Conversation",
+          hc: 3,
+          rarity: 1,
+          cost: 3,
+          abilities: [
+            [
+              "To play this, you must discard a card. Draw two cards."
+            ]
+          ]
+        },
+        {
+          name: "Ultraviolet Radiation",
+          hc: 3,
+          rarity: 1,
+          cost: 4,
+          attack: "3+",
+          abilities: [
+            [
+              "To play this, you must discard a card."
             ],
             [
+              {
+                hc: 3
+              },
+              ": ",
               {
                 keyword: 64
               },
               {
-                bold: "7"
+                bold: "3."
               }
-            ],
+            ]
+          ]
+
+        },
+        {
+          name: "Light the Way",
+          hc: 1,
+          rarity: 2,
+          cost: 6,
+          attack: "3+",
+          abilities: [
+            [
+              "You get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 1
+              },
+              "for each card you discarded from your hand this turn."  
+            ]
+          ]
+        },
+        {
+          name: "Coruscating Vengeance",
+          hc: 3,
+          rarity: 3,
+          cost: 8,
+          attack: "6+",
+          abilities: [
             [
               {
-                hc: 5
+                team:1
               },
               {
-                hc: 5
+                team:1
               },
-              ": Instead,",
+              ":",
               {
-                keyword: 64
-              },
-              {
-                bold: "9"
+                keyword: 66
               }
             ]
           ]
