@@ -33,7 +33,7 @@ export default {
           attack: "2+",
           abilities: [
             [
-              "If you drew any extra cards this turn, you get",
+              "If you drew any extra cards this turn, you get ",
               {
                 bold: "+1"
               },
@@ -392,6 +392,475 @@ export default {
               {
                 keyword: 66
               }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Quicksilver",
+      team: 1,
+      cards: [
+        {
+          name: "Infrared Conversation",
+          hc: 2,
+          rarity: 1,
+          cost: 3,
+          recruit: "0+",
+          attack: "0+",
+          abilities: [
+            [
+              {
+                keyword: 64
+              },
+              {
+                bold: "3 "
+              },
+              "for",
+              {
+                icon: 2
+              },
+              "."
+            ],
+            [
+              {
+                hc:2
+              },
+              ": Instead, ",
+              {
+                keyword: 64
+              },
+              {
+                bold: "3 "
+              },
+              "for",
+              {
+                icon:2
+              },
+              "and" ,
+              {
+                icon:1
+              }
+            ]
+          ]
+        },
+        {
+          name: "Perpetual Motion",
+          hc: 4,
+          rarity: 1,
+          cost: 4,
+          attack: "2+",
+          abilities: [
+            [
+              {
+                hc:4
+              },
+              {
+                keyword: 64
+              },
+              {
+                bold: "4"
+              },
+              "."
+            ]
+          ]
+
+        },
+        {
+          name: "Jittery Impatience",
+          hc: 2,
+          rarity: 2,
+          cost: 6,
+          attack: "2",
+          recruit: "2",
+          abilities: [
+            [
+              "Look at the top card of your deck. Discard it or put it back."
+            ],
+            [
+              {
+                hc:2
+              },
+              ": You may KO the card you discarded this way."
+            ]
+          ]
+        },
+        {
+          name: "Around the World Punch",
+          hc: 4,
+          rarity: 3,
+          cost: 8,
+          attack: "0+",
+          abilities: [
+            [
+              {
+                keyword:64
+              },
+              "your entire remaining deck. (Don't reshuffle.)",
+            ],
+            [
+              {
+                team:1
+              },
+              {
+                team:1
+              },
+              {
+                team:1
+              },
+              {
+                team:1
+              },
+              ": Before you do that, put your discard pile on top of your deck."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Ronin",
+      team: 1,
+      cards: [
+        {
+          name: "Mysterious Identity",
+          hc: 1,
+          rarity: 1,
+          cost: 3,
+          attack: "2",
+          abilities: [
+            [
+              "As you play this card, you may choose a color and/or a team icon. This card is that color and team icon this turn. (instead of",
+              {
+                hc:1
+              },
+              "and",
+              {
+                team: 1
+              },
+              ")."
+            ]
+          ]
+        },
+        {
+          name: "Storm of Arrows",
+          hc: 3,
+          rarity: 1,
+          cost: 4,
+          attack: "0+",
+          abilities: [
+            [
+              {
+                keyword:64
+              },
+              {
+                bold: "4"
+              }
+            ],
+            [
+              {
+                hc:3
+              },
+              ": Draw a card."
+            ]
+          ]
+
+        },
+        {
+          name: "Haunted by Loss",
+          hc: 2,
+          rarity: 2,
+          cost: 5,
+          attack: "2+",
+          abilities: [
+            [
+             {
+               hc:2
+             },
+             {
+               keyword: 65
+             }
+            ]
+          ]
+        },
+        {
+          name: "Brooding Fury",
+          hc: 4,
+          rarity: 3,
+          cost: 7,
+          attack: "3+",
+          abilities: [
+            [
+              {
+                keyword:65
+              }
+            ],
+            [
+              {
+                hc:4
+              },
+              ":",
+              {
+                keyword:65
+              },
+              "again."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Scarlet Witch",
+      team: 1,
+      cards: [
+        {
+          name: "Hex Bolt",
+          hc: 3,
+          rarity: 1,
+          cost: 2,
+          attack: "1",
+          abilities: [
+            [
+              {
+                hc:3
+              },
+              ": Discard the top card of any player's deck. You may play a copy of that card this turn."
+            ]
+          ]
+        },
+        {
+          name: "Alter Reality",
+          hc: 1,
+          rarity: 1,
+          cost: 3,
+          recruit: "2",
+          attack: "0+",
+          abilities: [
+            [
+              "Reveal the top card of your deck. Discard it or put it back."
+            ],
+            [
+              {
+                hc:1
+              },
+              ":",
+              {
+                keyword: 65
+              }
+            ]
+          ]
+
+        },
+        {
+          name: "Chaos Magic",
+          hc: 1,
+          rarity: 2,
+          cost: 4,
+          abilities: [
+            [
+              "Reveal the top card of the Hero Deck. You may play a copy of that card this turn. When you do, put that card on the bottom of the Hero Deck."
+            ]
+          ]
+        },
+        {
+          name: "Warp Time and Space",
+          hc: 1,
+          rarity: 3,
+          cost: 7,
+          attack: "0+",
+          abilities: [
+            [
+              "Reveal the top three cards of the Hero Deck. Put one of them in your hand. Put the rest on the top or bottom of the Hero Deck in any order."
+            ],
+            [
+              {
+                hc:1
+              },
+              {
+                hc:1
+              },
+              {
+                hc:1
+              },
+              ":",
+              {
+                keyword:65
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Speed",
+      team: 1,
+      cards: [
+        {
+          name: "Accelerate",
+          hc: 2,
+          rarity: 1,
+          cost: 2,
+          attack: "0+",
+          abilities: [
+            [
+              {
+                keyword:64
+              },
+              {
+                bold: "2"
+              }
+            ],
+            [
+              {
+                hc:2
+              },
+              ": Instead, ",
+              {
+                keyword: 64
+              },
+              {
+                bold: "6"
+              }
+            ]
+          ]
+        },
+        {
+          name: "Speedy Delivery ",
+          hc: 2,
+          rarity: 1,
+          cost: 4,
+          recruit: "2",
+          attack: "1",
+          abilities: [
+            [
+              "The next Hero you recruit this turn goes on top of your deck."
+            ]
+          ]
+
+        },
+        {
+          name: "Race to the Rescue",
+          hc: 1,
+          rarity: 2,
+          cost: 5,
+          abilities: [
+            [
+              "Choose a Hero Class. (",
+              {
+                hc: 4
+              },
+              {
+                hc: 2
+              },
+              {
+                hc: 1
+              },
+              {
+                hc: 5
+              },
+              {
+                hc: 3
+              },
+              " ) Reveal the top card of your deck. If it's the Hero Class you named, draw it. Otherwise, put it back on the top or bottom."
+            ]
+          ]
+        },
+        {
+          name: "Break the Sound Barrier",
+          hc: 1,
+          rarity: 3,
+          cost: 8,
+          attack: "0+",
+          abilities: [
+            [
+              "Look at the top six cards of your deck, draw two of them, and put the rest back on the top or bottom in any order."
+            ],
+            [
+              {
+                hc:1
+              },
+              ":",
+              {
+                keyword:64
+              },
+              {
+                bold: "6"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "War Machine",
+      team: 1,
+      cards: [
+        {
+          name: "Simulated Target Practice",
+          hc: 5,
+          rarity: 1,
+          cost: 3,
+          attack: "2",
+          abilities: [
+            [
+              {
+                hc: 5
+              },
+              ": You may fight a Henchman from your Victory Pile this turn. If you do, KO it and rescue a Bystander. (Do that Henchman's Fight effect too.)"
+            ]
+          ]
+        },
+        {
+          name: "Military-Industrial Complex ",
+          hc: 5,
+          rarity: 1,
+          cost: 4,
+          recruit: "2",
+          attack: "0+",
+          abilities: [
+            [
+              "Whenever you defeat a Villain this turn, you get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 2
+              }
+            ]
+          ]
+
+        },
+        {
+          name: "Hypersonic Cannon",
+          hc: 3,
+          rarity: 2,
+          cost: 5,
+          attack: "0+",
+          abilities: [
+            [
+              {
+                keyword: 64
+              },
+              {
+                bold:5
+              }
+            ],
+            [
+              {
+                hc:3
+              },
+              ": You may KO a card from your discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Overwhelming Firepower ",
+          hc: 5,
+          rarity: 3,
+          cost: 8,
+          attack: "5",
+          abilities: [
+            [
+              "Whenever you defeat a Villain or Mastermind this turn, draw a card and rescue a Bystander."
             ]
           ]
         }
