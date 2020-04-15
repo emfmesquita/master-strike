@@ -23,7 +23,7 @@ const WARBOUND = {
     label: "Warbound"
 };
 const CRIME_SYNDICATE = {
-    value: "crime-Syndicate",
+    value: "crime-syndicate",
     label: "Crime Syndicate"
 };
 const FANTASTIC_FOUR = {
