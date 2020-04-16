@@ -4,7 +4,7 @@
     <HeroClassIcon class="card-hero-class" v-if="card.hc" :icon="card.hc" width="32px"/>
     <RarityIcon class="card-rarity" :icon="card.rarity" width="24px"/>
     <div class="text-center font-weight-black card-header">{{ card.name }}</div>
-    <div class="text-center card-sub-header">{{ hero.name }}</div>
+    <div :class="subTitleClasses">{{ subTitle }}</div>
 
     <div class="card-abilities" v-if="card.abilities">
       <div v-for="(ability, idx) in card.abilities" :key="idx">
@@ -58,7 +58,17 @@ export default {
       return heroClassArray[this.card.hc || 0].bgColor;
     },
     team() {
-      return this.card.team || this.hero.team;
+      return this.card.team !== undefined ? this.card.team : this.hero.team;
+    },
+    subTitle() {
+      return this.card.redSubTitle || this.card.subTitle || this.hero.name;
+    },
+    subTitleClasses() {
+      return {
+        'text-center': true,
+        'card-sub-title': true,
+        'card-red-sub-title': !!this.card.redSubTitle
+      };
     }
   }
 };
@@ -138,8 +148,11 @@ export default {
     user-select: none;
   }
 
-  .card-sub-header {
+  .card-sub-title {
     font-size: 12px;
+    &.card-red-sub-title {
+      color: #f00;
+    }
   }
   .card-abilities {
     font-size: 12px;
