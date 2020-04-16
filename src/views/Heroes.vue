@@ -48,7 +48,7 @@ export default {
   },
   data: () => ({
     expansions: expansionsArray,
-    selected: "wwhulk"
+    selected: "coreset"
   })
 };
 </script>
