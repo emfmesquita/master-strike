@@ -16,7 +16,7 @@
    version="1.1"
    id="svg6613"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="hulk.svg">
+   sodipodi:docname="warbound.svg">
   <defs
      id="defs6607">
     <mask
@@ -43,7 +43,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="144.46249"
+     inkscape:cx="82.085571"
      inkscape:cy="193.1392"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -62,7 +62,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -73,7 +73,7 @@
      transform="translate(0,-244.08334)">
     <g
        id="g74"
-       transform="matrix(26.458333,0,0,-32.911581,13.229167,286.99746)">
+       transform="matrix(18.89881,0,0,-23.508272,17.008929,282.29581)">
       <image
          width="1"
          height="1"

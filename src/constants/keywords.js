@@ -66,9 +66,9 @@ const RISE_OF_THE_LIVING_DEAD = {
     value: "riseofthelivingdead",
     label: "Rise of The Living Dead"
 }
-const CROSS_DIMENSIONAL_RAMPAGE = {
-    value: "crossdimensionalrampage",
-    label: "Cross-Dimensional Rampage"
+const CROSS_DIMENSIONAL_HULK_RAMPAGE = {
+    value: "crossdimensionalhulkrampage",
+    label: "Cross-Dimensional Hulk Rampage"
 }
 const SPECTRUM = {
     value: "spectrum",
@@ -305,7 +305,7 @@ export const keywords = Object.freeze({
     THROWN_ARTIFACT,
     URU_ENCHANTED_WEAPONS,
     RISE_OF_THE_LIVING_DEAD,
-    CROSS_DIMENSIONAL_RAMPAGE,
+    CROSS_DIMENSIONAL_HULK_RAMPAGE,
     SPECTRUM,
     PATROL,
     CIRCLE_OF_KUNG_FU,
@@ -380,7 +380,7 @@ export const keywordsArray = Object.freeze([
     THROWN_ARTIFACT,            // 15
     URU_ENCHANTED_WEAPONS,      // 16
     RISE_OF_THE_LIVING_DEAD,    // 17
-    CROSS_DIMENSIONAL_RAMPAGE,  // 18
+    CROSS_DIMENSIONAL_HULK_RAMPAGE,  // 18
     SPECTRUM,                   // 19
     PATROL,                     // 20
     CIRCLE_OF_KUNG_FU,          // 21
