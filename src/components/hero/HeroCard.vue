@@ -8,10 +8,7 @@
 
     <div class="card-abilities" v-if="card.abilities">
       <div v-for="(ability, idx) in card.abilities" :key="idx">
-        <template v-if="Array.isArray(ability)">
-          <CardAbility v-for="(abilityComponent, componetIdx) in ability" :key="componetIdx" :ability="abilityComponent" />
-        </template>
-        <CardAbility v-else  :ability="ability" />
+        <shared-description-group :description="ability"/>
       </div>
     </div>
 
@@ -33,11 +30,10 @@
 </template>
 
 <script>
-import TeamIcon from "./TeamIcon.vue";
-import HeroClassIcon from "./HeroClassIcon.vue";
-import CardAbility from "./CardAbility.vue";
-import RarityIcon from "./RarityIcon.vue";
-import AbilityIcon from "./AbilityIcon.vue";
+import TeamIcon from "../shared/TeamIcon.vue";
+import HeroClassIcon from "../shared/HeroClassIcon.vue";
+import RarityIcon from "../shared/RarityIcon.vue";
+import AbilityIcon from "../shared/AbilityIcon.vue";
 import { heroClassArray } from "../../constants/hero-class";
 
 export default {
@@ -49,7 +45,6 @@ export default {
   components: {
     TeamIcon,
     HeroClassIcon,
-    CardAbility,
     RarityIcon,
     AbilityIcon
   },

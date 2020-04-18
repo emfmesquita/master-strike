@@ -34,7 +34,7 @@
 
 <script>
 import Hero from "../components/hero/Hero.vue";
-import cards from "../cards/all";
+import { cards } from "../data";
 import { expansionsArray } from "../constants/expansions";
 
 export default {
