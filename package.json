@@ -5,14 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "deploy": "aws s3 sync --profile master-strike --acl public-read --delete dist/ s3://masterstrike"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",
-    "vue-scrollto": "^2.18.0",
     "vuetify": "^2.2.11",
     "vuex": "^3.1.3"
   },
