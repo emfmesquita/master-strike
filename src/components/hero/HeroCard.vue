@@ -73,6 +73,7 @@ export default {
 .hero-card {
   height: 280px;
   padding: 6px;
+  color: #000;
   .card-team {
     position: absolute;
     left: 0px;
