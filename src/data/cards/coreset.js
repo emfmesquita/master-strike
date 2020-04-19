@@ -2,6 +2,7 @@ export default {
   heroes: [
     {
       name: "Black Widow",
+      set: 1,
       team: 1,
       cards: [
         {
@@ -69,6 +70,7 @@ export default {
     },
     {
       name: "Captain America",
+      set: 1,
       team: 1,
       cards: [
         {
@@ -151,6 +153,7 @@ export default {
     },
     {
       name: "Cyclops",
+      set: 1,
       team: 1,
       cards: [
         {
@@ -219,6 +222,7 @@ export default {
     },
     {
       name: "Deadpool",
+      set: 1,
       cards: [
         {
           name: "Here, Hold This for a Second",
@@ -283,6 +287,7 @@ export default {
     },
     {
       name: "Emma Frost",
+      set: 1,
       team: 4,
       cards: [
         {
@@ -359,6 +364,7 @@ export default {
     },
     {
       name: "Gambit",
+      set: 1,
       team: 4,
       cards: [
         {
@@ -429,6 +435,7 @@ export default {
     },
     {
       name: "Hawkeye",
+      set: 1,
       team: 1,
       cards: [
         {
@@ -488,6 +495,7 @@ export default {
     },
     {
       name: "Hulk",
+      set: 1,
       team: 1,
       cards: [
         {
@@ -555,6 +563,7 @@ export default {
     },
     {
       name: "Iron Man",
+      set: 1,
       team: 1,
       cards: [
         {
@@ -630,6 +639,7 @@ export default {
     },
     {
       name: "Nick Fury",
+      set: 1,
       team: 2,
       cards: [
         {
@@ -708,6 +718,7 @@ export default {
     },
     {
       name: "Rogue",
+      set: 1,
       team: 4,
       cards: [
         {
@@ -785,6 +796,7 @@ export default {
     },
     {
       name: "Spider-Man",
+      set: 1,
       team: 3,
       cards: [
         {
@@ -861,6 +873,7 @@ export default {
     },
     {
       name: "Storm",
+      set: 1,
       team: 4,
       cards: [
         {
@@ -944,6 +957,7 @@ export default {
     },
     {
       name: "Thor",
+      set: 1,
       team: 1,
       cards: [
         {
@@ -1042,6 +1056,7 @@ export default {
     },
     {
       name: "Wolverine",
+      set: 1,
       team: 4,
       cards: [
         {

@@ -28,8 +28,8 @@
       bottom
       right
       color="pink"
-      v-scroll-to="'#app'"
       v-show="showScrollToTop"
+      @click="$vuetify.goTo(0)"
     >
       <v-icon>mdi-chevron-up</v-icon>
     </v-btn>

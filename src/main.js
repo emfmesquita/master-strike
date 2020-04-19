@@ -3,12 +3,9 @@ import BulletPointDescription from "./components/shared/BulletPointDescription.v
 import DescriptionComponent from "./components/shared/DescriptionComponent.vue"
 import DescriptionGroup from "./components/shared/DescriptionGroup.vue"
 import Vue from "vue";
-import VueScrollTo from "vue-scrollto";
 import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
-
-Vue.use(VueScrollTo);
 
 Vue.config.productionTip = false;
 

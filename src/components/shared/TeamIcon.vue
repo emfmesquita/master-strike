@@ -19,11 +19,11 @@ export default {
   props: ["icon", "width", "classProp"],
   computed: {
     team() {
-      const team = teamArray[this.icon - 1].value;
+      const team = teamArray[this.icon].value;
       return require(`../../assets/icons/teams/${team}.svg`);
     },
     label() {
-      const label = teamArray[this.icon - 1].label;
+      const label = teamArray[this.icon].label;
       return `Team: ${label}`;
     }
   },

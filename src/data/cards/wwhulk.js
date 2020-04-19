@@ -2,6 +2,7 @@ export default {
   heroes: [
     {
       name: "Amadeus Cho",
+      set: 19,
       team: 18,
       cards: [
         {
@@ -110,6 +111,7 @@ export default {
     },
     {
       name: "Bruce Banner",
+      set: 19,
       team: 1,
       cards: [
         {
@@ -198,6 +200,7 @@ export default {
     },
     {
       name: "Caiera",
+      set: 19,
       team: 19,
       cards: [
         {
@@ -293,6 +296,7 @@ export default {
     },
     {
       name: "Gladiator Hulk",
+      set: 19,
       team: 19,
       cards: [
         {
@@ -404,6 +408,7 @@ export default {
     },
     {
       name: "Hiroim",
+      set: 19,
       team: 19,
       cards: [
         {
@@ -494,6 +499,7 @@ export default {
     },
     {
       name: "Hulkbuster Iron Man",
+      set: 19,
       team: 1,
       cards: [
         {
@@ -603,7 +609,8 @@ export default {
     },
     {
       name: "Joe Fixit, Grey Hulk",
-      team: 5,
+      set: 19,
+      team: 8,
       cards: [
         {
           name: "Carefully Considered Smashing",
@@ -710,6 +717,7 @@ export default {
     },
     {
       name: "Korg",
+      set: 19,
       team: 19,
       cards: [
         {
@@ -819,6 +827,7 @@ export default {
     },
     {
       name: "Miek, The Unhived",
+      set: 19,
       team: 19,
       cards: [
         {
@@ -916,6 +925,7 @@ export default {
     },
     {
       name: "Namora",
+      set: 19,
       team: 18,
       cards: [
         {
@@ -1028,6 +1038,7 @@ export default {
     },
     {
       name: "No-Name, Brood Queen",
+      set: 19,
       team: 19,
       cards: [
         {
@@ -1123,6 +1134,7 @@ export default {
     },
     {
       name: "Rick Jones",
+      set: 19,
       team: 2,
       cards: [
         {
@@ -1243,6 +1255,7 @@ export default {
     },
     {
       name: "Sentry",
+      set: 19,
       team: 1,
       cards: [
         {
@@ -1376,6 +1389,7 @@ export default {
     },
     {
       name: "She-Hulk",
+      set: 19,
       team: 1,
       cards: [
         {
@@ -1489,6 +1503,7 @@ export default {
     },
     {
       name: "Skaar, Son of Hulk",
+      set: 19,
       team: 1,
       cards: [
         {
