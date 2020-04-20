@@ -21,7 +21,7 @@ const STRENGTH = {
 const TECH = {
     value: "tech",
     label: "Tech",
-    bgColor: "#d9d9d9"
+    bgColor: "#A0A0A0"
 };
 const NONE = {
     bgColor: "#ffffff"

@@ -147,7 +147,7 @@ export default {
   .card-sub-title {
     font-size: 12px;
     &.card-red-sub-title {
-      color: #f00;
+      color: #d00;
     }
   }
   .card-abilities {

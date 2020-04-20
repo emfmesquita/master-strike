@@ -2,7 +2,10 @@
   <v-card class="mx-auto hero" outlined>
     <v-container>
       <v-row>
-        <v-col cols="12 title">{{ hero.name }}</v-col>
+        <v-col cols="12">
+          <span class="title">{{ hero.name }}</span>
+          <SetChip class="set-chip float-right" :set="hero.set"/>
+        </v-col>
       </v-row>
       <v-row>
         <template v-if="pages.length === 1">
@@ -34,11 +37,12 @@
 
 <script>
 import HeroCard from "./HeroCard.vue";
+import SetChip from "../shared/SetChip.vue";
 
 export default {
   name: "Hero",
   props: ["hero"],
-  components: { HeroCard },
+  components: { HeroCard, SetChip },
   data: () => ({}),
   computed: {
     numberOfColumns() {
@@ -71,6 +75,10 @@ export default {
 <style lang="scss">
 .hero {
   background-color:#f2f2f2 !important;
+  .set-chip {
+    padding-left: 16px;
+    margin-bottom: 2px;
+  }
   .carousel-column {
     padding: 0px;
   }
