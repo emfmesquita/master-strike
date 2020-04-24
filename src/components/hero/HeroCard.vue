@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto hero-card" raised :style="{ backgroundColor }">
+  <v-card class="mx-auto hero-card" :class="classes" raised :style="{ backgroundColor }">
     <TeamIcon class="card-team" v-if="team" :icon="team" width="40px"/>
     <HeroClassIcon class="card-hero-class" v-if="card.hc" :icon="card.hc" width="32px"/>
     <RarityIcon class="card-rarity" :icon="card.rarity" width="24px"/>
@@ -64,6 +64,13 @@ export default {
         'card-sub-title': true,
         'card-red-sub-title': !!this.card.redSubTitle
       };
+    },
+    classes() {
+      console.log(this.card.divided === 1)
+      return {
+        "hero-divided-left": this.card.divided === 1,
+        "hero-divided-right": this.card.divided === 2
+      }
     }
   }
 };
@@ -74,6 +81,21 @@ export default {
   height: 280px;
   padding: 6px;
   color: #000;
+  border: solid 1px rgba(#000, .2);
+
+  &.hero-divided-left {
+    border-right-width: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: initial;
+  }
+  &.hero-divided-right {
+    border-left-width: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: initial;
+  }
+
   .card-team {
     position: absolute;
     left: 0px;

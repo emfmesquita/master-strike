@@ -9,7 +9,11 @@
       </v-row>
       <v-row>
         <template v-if="pages.length === 1">
-          <v-col cols="12" sm="6" md="4" lg="3"  v-for="card in pages[0]" :key="card.name">
+          <v-col 
+            cols="12" sm="6" md="4" lg="3" 
+            :class="{'divided-column-left': card.divided === 1, 'divided-column-right': card.divided === 2}"  
+            v-for="card in pages[0]" :key="card.name"
+          >
             <HeroCard :card="card" :hero="hero"/>
           </v-col>
         </template>
@@ -22,7 +26,12 @@
             <v-carousel-item v-for="(page, i) in pages" :key="i">
               <v-sheet height="100%" >
                 <v-row class="inner-carousel-row">
-                  <v-col cols="12" sm="6" md="4" lg="3" v-for="card in page" :key="card.name">
+                  <v-col 
+                    cols="12" sm="6" md="4" lg="3"
+                    class="das"
+                    :class="{'divided-column-left': card.divided === 1, 'divided-column-right': card.divided === 2}"  
+                    v-for="card in page" :key="card.name"
+                  >
                     <HeroCard :card="card" :hero="hero"/>
                   </v-col>
                 </v-row>
@@ -99,6 +108,12 @@ export default {
   }
   .v-carousel__controls__item i {
     color: #1976d2 !important;
+  }
+  .divided-column-left {
+    padding-right: 0px;
+  }
+  .divided-column-right {
+    padding-left: 0px;
   }
 }
 </style>
