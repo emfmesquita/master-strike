@@ -7,7 +7,7 @@
     >
       <template v-slot:activator="{ on }">
         <span v-on="on" class="font-weight-bold keyword">
-          {{ label }}
+          <slot>{{ label }}</slot>
         </span>
       </template>
 

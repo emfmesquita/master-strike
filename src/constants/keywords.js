@@ -112,7 +112,7 @@ const ABOMINATION = {
 }
 const DIVIDED = {
     value: "divided",
-    label: "Divided"
+    label: "Divided Card"
 }
 const SIZE_CHANGING = {
     value: "sizechanging",

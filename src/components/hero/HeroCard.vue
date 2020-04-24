@@ -3,14 +3,21 @@
     <TeamIcon class="card-team" v-if="team" :icon="team" width="40px"/>
     <HeroClassIcon class="card-hero-class" v-if="card.hc" :icon="card.hc" width="32px"/>
     <RarityIcon class="card-rarity" :icon="card.rarity" width="24px"/>
-    <div class="text-center font-weight-black card-header">{{ card.name }}</div>
+    <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
     <div :class="subTitleClasses">{{ subTitle }}</div>
 
-    <div class="card-abilities" v-if="card.abilities">
+    <div class="card-abilities" :class="{ small: card.smallAbilities }" v-if="card.abilities">
       <div v-for="(ability, idx) in card.abilities" :key="idx">
         <shared-description-group :description="ability"/>
       </div>
     </div>
+
+    <shared-keyword v-if="card.divided === 1" :keyword="29">
+      <DividedCardIcon class="divided-card-icon-left" size="12px" left />
+    </shared-keyword>
+    <shared-keyword v-if="card.divided === 2" :keyword="29">
+      <DividedCardIcon class="divided-card-icon-right" size="12px" right />
+    </shared-keyword>
 
     <template v-if="card.recruit">
       <AbilityIcon class="card-recruit-icon absolute-icon" icon="2" width="72px"/>
@@ -34,7 +41,16 @@ import TeamIcon from "../shared/TeamIcon.vue";
 import HeroClassIcon from "../shared/HeroClassIcon.vue";
 import RarityIcon from "../shared/RarityIcon.vue";
 import AbilityIcon from "../shared/AbilityIcon.vue";
+import DividedCardIcon from "../shared/DividedCardIcon.vue";
 import { heroClassArray } from "../../constants/hero-class";
+
+const getTextWidth = (text, font) => {
+  const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
+  const context = canvas.getContext("2d");
+  context.font = font;
+  const metrics = context.measureText(text);
+  return metrics.width;
+}
 
 export default {
   name: "HeroCard",
@@ -46,7 +62,8 @@ export default {
     TeamIcon,
     HeroClassIcon,
     RarityIcon,
-    AbilityIcon
+    AbilityIcon,
+    DividedCardIcon
   },
   computed: {
     backgroundColor() {
@@ -66,11 +83,16 @@ export default {
       };
     },
     classes() {
-      console.log(this.card.divided === 1)
       return {
         "hero-divided-left": this.card.divided === 1,
         "hero-divided-right": this.card.divided === 2
       }
+    },
+    smallName() {
+      return getTextWidth(this.card.name, "16px Roboto") > 152;
+    },
+    smallerName() {
+      return getTextWidth(this.card.name, "14px Roboto") > 152;
     }
   }
 };
@@ -96,6 +118,17 @@ export default {
     box-shadow: initial;
   }
 
+  &.hero-divided-left:before, &.hero-divided-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+
   .card-team {
     position: absolute;
     left: 0px;
@@ -113,9 +146,17 @@ export default {
   }
 
   .card-abilities {
+    font-size: 12px;
     padding-top: 30px;
     padding-left: 50px;
     padding-right: 16px;
+
+    &.small {
+      font-size: 11px;
+      padding-top: 16px;
+      padding-left: 42px;
+      padding-right: 10px;
+    }
   }
   
   .card-cost-icon {
@@ -166,14 +207,36 @@ export default {
     user-select: none;
   }
 
+  .card-header {
+    line-height: 24px;
+    padding: 0px 24px;
+    &.small {
+      font-size: 14px;
+    }
+    &.smaller {
+      font-size: 12px;
+    }
+  }
+
   .card-sub-title {
     font-size: 12px;
+    padding: 0px 24px;
     &.card-red-sub-title {
       color: #d00;
     }
   }
-  .card-abilities {
-    font-size: 12px;
+
+  .divided-card-icon-left {
+    color: #000;
+    position: absolute;
+    right: 2px;
+    top: 130px
+  }
+  .divided-card-icon-right {
+    color: #000;
+    position: absolute;
+    left: 2px;
+    top: 130px
   }
 }
 </style>

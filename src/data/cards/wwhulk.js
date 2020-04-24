@@ -1364,6 +1364,7 @@ export default {
           rarity: 3,
           cost: 8,
           attack: "0+",
+          smallAbilities: true,
           abilities: [
             [
               "Reveal the top five cards of the Hero Deck, gain their total printed",
