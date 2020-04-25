@@ -158,10 +158,8 @@ export default {
           abilities: [
             [
               {
-                keyword: 53
-              },
-              {
-                bold: " 4"
+                keyword: 53,
+                text: "Smash 4"
               }
             ]
           ]
@@ -231,10 +229,8 @@ export default {
               },
               ": ",
               {
-                keyword: 53
-              },
-              {
-                bold: " 2"
+                keyword: 53,
+                text: "Smash 2"
               }
             ]
           ]
@@ -311,10 +307,8 @@ export default {
             ],
             [
               {
-                keyword: 53
-              },
-              {
-                bold: " 2"
+                keyword: 53,
+                text: "Smash 2"
               }
             ]
           ]
@@ -328,10 +322,8 @@ export default {
           abilities: [
             [
               {
-                keyword: 53
-              },
-              {
-                bold: " 3"
+                keyword: 53,
+                text: "Smash 3"
               }
             ],
             [
@@ -369,7 +361,8 @@ export default {
               },
               ": ",
               {
-                keyword: 18
+                keyword: 18,
+                text: "Cross-Dimensional Hulk Rampage."
               }
             ],
             [
@@ -397,10 +390,8 @@ export default {
             ],
             [
               {
-                keyword: 53
-              },
-              {
-                bold: " 3"
+                keyword: 53,
+                text: "Smash 3"
               }
             ]
           ]
@@ -540,10 +531,8 @@ export default {
               },
               ": ",
               {
-                keyword: 53
-              },
-              {
-                bold: " 2"
+                keyword: 53,
+                text: "Smash 2"
               }
             ]
           ]
@@ -583,10 +572,8 @@ export default {
             ],
             [
               {
-                keyword: 53
-              },
-              {
-                bold: " 2"
+                keyword: 53,
+                text: "Smash 2"
               }
             ]
           ]
@@ -627,10 +614,8 @@ export default {
               },
               ": ",
               {
-                keyword: 53
-              },
-              {
-                bold: " 2"
+                keyword: 53,
+                text: "Smash 2"
               }
             ]
           ]
@@ -738,10 +723,8 @@ export default {
               },
               ": ",
               {
-                keyword: 53
-              },
-              {
-                bold: " 2"
+                keyword: 53,
+                text: "Smash 2"
               },
               ". If you ",
               {
@@ -801,10 +784,8 @@ export default {
             ],
             [
               {
-                keyword: 53
-              },
-              {
-                bold: " 3"
+                keyword: 53,
+                text: "Smash 3"
               }
             ]
           ]
@@ -841,10 +822,8 @@ export default {
           abilities: [
             [
               {
-                keyword: 53
-              },
-              {
-                bold: " 1"
+                keyword: 53,
+                text: "Smash 1"
               }
             ]
           ]
@@ -947,10 +926,8 @@ export default {
               },
               ": ",
               {
-                keyword: 53
-              },
-              {
-                bold: " 3"
+                keyword: 53,
+                text: "Smash 3"
               }
             ]
           ]
@@ -1000,10 +977,8 @@ export default {
           abilities: [
             [
               {
-                keyword: 53
-              },
-              {
-                bold: " 3"
+                keyword: 53,
+                text: "Smash 3"
               }
             ],
             [
@@ -1217,10 +1192,8 @@ export default {
           abilities: [
             [
               {
-                keyword: 53
-              },
-              {
-                bold: " 5"
+                keyword: 53,
+                text: "Smash 5"
               }
             ]
           ]
@@ -1430,18 +1403,14 @@ export default {
           abilities: [
             [
               {
-                keyword: 53
-              },
-              {
-                bold: " 2"
+                keyword: 53,
+                text: "Smash 2"
               }
             ],
             [
               {
-                keyword: 53
-              },
-              {
-                bold: " 2"
+                keyword: 53,
+                text: "Smash 2"
               }
             ]
           ]
@@ -1524,10 +1493,8 @@ export default {
               },
               ": ",
               {
-                keyword: 53
-              } ,
-              {
-                bold: " 3"
+                keyword: 53,
+                text: "Smash 3"
               }
             ]
           ]

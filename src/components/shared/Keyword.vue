@@ -7,7 +7,7 @@
     >
       <template v-slot:activator="{ on }">
         <span v-on="on" class="font-weight-bold keyword">
-          <slot>{{ label }}</slot>
+          <slot>{{ text }}</slot>
         </span>
       </template>
 
@@ -48,15 +48,20 @@
 import { keywordsArray } from "../../constants/keywords";
 import { keywords } from "../../data";
 
+const obj = (keyword) => keywordsArray[keyword.keyword - 1];
+
 export default {
   name: "Keyword",
   props: ["keyword"],
   computed: {
     label() {
-      return keywordsArray[this.keyword - 1].label;
+      return obj(this.keyword).label;
+    },
+    text() {
+      return this.keyword.text || obj(this.keyword).label;
     },
     keywordRules() {
-      const keywordValue = keywordsArray[this.keyword - 1].value;
+      const keywordValue = obj(this.keyword).value;
       return keywords[keywordValue] || [];
     }
   },

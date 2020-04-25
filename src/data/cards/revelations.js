@@ -129,12 +129,10 @@ export default {
               },
               ". Then ",
               {
-                keyword: 64
+                keyword: 64,
+                text: "Hyperspeed 4"
               },
-              {
-                bold: " 4 "
-              },
-              "for that icon."
+              " for that icon."
             ]
           ]
 
@@ -203,10 +201,8 @@ export default {
             ],
             [
               {
-                keyword: 64
-              },
-              {
-                bold: " 7"
+                keyword: 64,
+                text: "Hyperspeed 7"
               }
             ],
             [
@@ -218,10 +214,8 @@ export default {
               },
               ": Instead, ",
               {
-                keyword: 64
-              },
-              {
-                bold: " 9"
+                keyword: 64,
+                text: "Hyperspeed 9"
               }
             ]
           ]
@@ -350,10 +344,8 @@ export default {
               },
               ": ",
               {
-                keyword: 64
-              },
-              {
-                bold: " 3."
+                keyword: 64,
+                text: "Hyperspeed 3"
               }
             ]
           ]
@@ -416,12 +408,10 @@ export default {
           abilities: [
             [
               {
-                keyword: 64
+                keyword: 64,
+                text: "Hyperspeed 3"
               },
-              {
-                bold: " 3 "
-              },
-              "for",
+              " for",
               {
                 icon: 2
               },
@@ -433,12 +423,10 @@ export default {
               },
               ": Instead, ",
               {
-                keyword: 64
+                keyword: 64,
+                text: "Hyperspeed 3"
               },
-              {
-                bold: " 3 "
-              },
-              "for",
+              " for",
               {
                 icon:2
               },
@@ -462,12 +450,9 @@ export default {
               },
               ": ",
               {
-                keyword: 64
-              },
-              {
-                bold: " 4"
-              },
-              "."
+                keyword: 64,
+                text: "Hyperspeed 4"
+              }
             ]
           ]
 
@@ -557,10 +542,8 @@ export default {
           abilities: [
             [
               {
-                keyword:64
-              },
-              {
-                bold: " 4"
+                keyword:64,
+                text: "Hyperspeed 4"
               }
             ],
             [
@@ -713,10 +696,8 @@ export default {
           abilities: [
             [
               {
-                keyword:64
-              },
-              {
-                bold: " 2"
+                keyword:64,
+                text: "Hyperspeed 2"
               }
             ],
             [
@@ -725,10 +706,8 @@ export default {
               },
               ": Instead, ",
               {
-                keyword: 64
-              },
-              {
-                bold: " 6"
+                keyword: 64,
+                text: "Hyperspeed 6"
               }
             ]
           ]
@@ -790,10 +769,8 @@ export default {
               },
               ": ",
               {
-                keyword:64
-              },
-              {
-                bold: " 6"
+                keyword:64,
+                text: "Hyperspeed 6"
               }
             ]
           ]
@@ -849,10 +826,8 @@ export default {
           abilities: [
             [
               {
-                keyword: 64
-              },
-              {
-                bold: " 5"
+                keyword: 64,
+                text: "Hyperspeed 5"
               }
             ],
             [

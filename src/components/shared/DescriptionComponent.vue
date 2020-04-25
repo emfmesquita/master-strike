@@ -6,7 +6,7 @@
     <HeroClassIcon v-else-if="descriptionComponent.hc" :icon="descriptionComponent.hc" width="24px"/>
     <TeamIcon v-else-if="descriptionComponent.team" :icon="descriptionComponent.team" width="26px"/>
     <AbilityIcon v-else-if="descriptionComponent.icon" :icon="descriptionComponent.icon" width="32px"/>
-    <shared-keyword v-else-if="descriptionComponent.keyword" :keyword="descriptionComponent.keyword"/>
+    <shared-keyword v-else-if="descriptionComponent.keyword" :keyword="descriptionComponent"/>
   </span>
 </template>
 
