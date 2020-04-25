@@ -49,7 +49,7 @@ export default {
           ]
         },
         {
-          name: "Hammer of the Serpent",
+          name: "War Banner of HYDRA",
           hc: 1,
           rarity: 3,
           cost: 7,

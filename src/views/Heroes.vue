@@ -34,7 +34,7 @@
 
     <v-container>
       <template v-if="heroes.length">
-        <v-row :key="hero.name" v-for="hero in heroes">
+        <v-row :key="heroKey(hero)" v-for="hero in heroes">
           <v-col cols="12">
             <Hero :hero="hero" />
           </v-col>
@@ -99,6 +99,9 @@ export default {
       if(!value) return [];
       const tokens = value.split(",");
       return tokens.map(token => this.toInteger(token)).filter(token => token >= 0);
+    },
+    heroKey(hero) {
+      return hero.team + hero.name;
     },
     filterChanged() {
       this.$vuetify.goTo(0);

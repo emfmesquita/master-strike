@@ -1,7 +1,8 @@
 <template>
-  <v-card class="mx-auto hero-card" :class="classes" raised :style="{ backgroundColor }">
+  <v-card class="mx-auto hero-card" :class="classes" raised :style="{ background }">
     <TeamIcon class="card-team" v-if="team" :icon="team" width="40px"/>
     <HeroClassIcon class="card-hero-class" v-if="card.hc" :icon="card.hc" width="32px"/>
+    <HeroClassIcon class="card-second-hero-class" v-if="card.hc2" :icon="card.hc2" width="32px"/>
     <RarityIcon class="card-rarity" :icon="card.rarity" width="24px"/>
     <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
     <div :class="subTitleClasses">{{ subTitle }}</div>
@@ -66,8 +67,11 @@ export default {
     DividedCardIcon
   },
   computed: {
-    backgroundColor() {
-      return heroClassArray[this.card.hc || 0].bgColor;
+    background() {
+      const baseColor = heroClassArray[this.card.hc || 0].bgColor;
+      if(!this.card.hc2) return baseColor;
+      const secondColor = heroClassArray[this.card.hc2 || 0].bgColor;
+      return `linear-gradient(${baseColor} 35%, ${secondColor} 65%)`;
     },
     team() {
       return this.card.team !== undefined ? this.card.team : this.hero.team;
@@ -138,6 +142,11 @@ export default {
     position: absolute;
     left: 4px;
     top: 30px;
+  }
+  .card-second-hero-class {
+    position: absolute;
+    left: 4px;
+    top: 56px;
   }
   .card-rarity {
     position: absolute;
