@@ -4,7 +4,10 @@
     <v-tooltip top>
       <template v-slot:activator="{ on }">
         <span v-on="on">
-          <img class="ability-icon" :class="iconClass" v-if="icon" :src="iconSrc" :width="width" draggable="false"/>
+          <template v-if="icon">
+            <v-icon v-if="icon === 5" :style="{ fontSize: width + 'px', paddingBottom: '4px' }" style="color: #000">mdi-arrow-right-thick </v-icon>
+            <img v-else class="ability-icon" :class="iconClass"  :src="iconSrc" :width="width" draggable="false"/>
+          </template>
         </span>
       </template>
       <span>{{ label }}</span>
