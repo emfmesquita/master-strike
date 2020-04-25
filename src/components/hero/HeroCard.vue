@@ -13,10 +13,10 @@
       </div>
     </div>
 
-    <shared-keyword v-if="card.divided === 1" :keyword="29">
+    <shared-keyword v-if="card.divided === 1" :keyword="{ keyword: 29 }">
       <DividedCardIcon class="divided-card-icon-left" size="12px" left />
     </shared-keyword>
-    <shared-keyword v-if="card.divided === 2" :keyword="29">
+    <shared-keyword v-if="card.divided === 2" :keyword="{ keyword: 29 }">
       <DividedCardIcon class="divided-card-icon-right" size="12px" right />
     </shared-keyword>
 
