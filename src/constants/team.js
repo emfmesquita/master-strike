@@ -63,20 +63,20 @@ const GUARDIANS_OF_THE_GALAXY = {
     value: "guardians-of-the-galaxy",
     label: "Guardians of the Galaxy"
 };
-const ILLUMINATI = {
+const HYDRA = {
     id: 13,
-    value: "illuminati",
-    label: "Illuminati"
+    value: "hydra",
+    label: "HYDRA"
 };
 const CABAL = {
     id: 14,
     value: "cabal",
     label: "Cabal"
 };
-const HYDRA = {
+const ILLUMINATI = {
     id: 15,
-    value: "hydra",
-    label: "HYDRA"
+    value: "illuminati",
+    label: "Illuminati"
 };
 const NEW_WARRIORS = {
     id: 16,

@@ -14,8 +14,8 @@
    viewBox="0 0 52.916666 52.916666"
    version="1.1"
    id="svg6613"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="XMen.svg">
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="x-men.svg">
   <defs
      id="defs6607" />
   <sodipodi:namedview
@@ -26,16 +26,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="206.83941"
-     inkscape:cy="193.1392"
+     inkscape:cx="137.13888"
+     inkscape:cy="152.7331"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="1842"
-     inkscape:window-height="1057"
-     inkscape:window-x="70"
-     inkscape:window-y="-8"
+     inkscape:window-width="1680"
+     inkscape:window-height="939"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata6610">
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,7 +56,7 @@
      transform="translate(0,-244.08334)">
     <g
        id="g6297"
-       transform="matrix(1.5749008,0,0,-1.5749008,-1403.284,1074.8089)">
+       transform="matrix(1.4880952,0,0,-1.4879476,-1324.4793,1030.4038)">
       <g
          transform="translate(907.7899,518.7357)"
          id="g5203">
