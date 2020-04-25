@@ -17,38 +17,7 @@
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="shield.svg">
   <defs
-     id="defs6607">
-    <linearGradient
-       x1="0"
-       y1="0"
-       x2="1"
-       y2="0"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-11.250824,-15.485443,-15.485443,11.250824,923.8938,417.98428)"
-       spreadMethod="pad"
-       id="linearGradient5269">
-      <stop
-         style="stop-opacity:1;stop-color:#fde140"
-         offset="0"
-         id="stop5259" />
-      <stop
-         style="stop-opacity:1;stop-color:#f58017"
-         offset="0.570557"
-         id="stop5261" />
-      <stop
-         style="stop-opacity:1;stop-color:#ee2223"
-         offset="0.877304"
-         id="stop5263" />
-      <stop
-         style="stop-opacity:1;stop-color:#ee2223"
-         offset="0.88638358"
-         id="stop5265" />
-      <stop
-         style="stop-opacity:1;stop-color:#ee2223"
-         offset="1"
-         id="stop5267" />
-    </linearGradient>
-  </defs>
+     id="defs6607" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -57,14 +26,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="137.13888"
+     inkscape:cx="58.094444"
      inkscape:cy="51.717845"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1680"
-     inkscape:window-height="939"
+     inkscape:window-height="936"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1" />

@@ -22,17 +22,29 @@
 
     <template v-if="card.recruit">
       <AbilityIcon class="card-recruit-icon absolute-icon" icon="2" width="72px"/>
-      <span class="card-recruit icon-text text-center font-weight-bold">{{ card.recruit }}</span>
+      <span 
+        class="card-recruit icon-text text-center font-weight-black" 
+        :class="{ small: card.recruit.length > 2 }">
+        {{ card.recruit }}
+      </span>
     </template>
 
     <template v-if="card.attack">
       <AbilityIcon class="card-attack-icon absolute-icon" icon="1" width="64px"/>
-      <span class="card-attack icon-text text-center font-weight-bold">{{ card.attack }}</span>
+      <span 
+        class="card-attack icon-text text-center font-weight-black" 
+        :class="{ small: card.attack.length > 2 }">
+        {{ card.attack }}
+      </span>
     </template>
 
-    <template v-if="card.cost >= 0">
+    <template v-if="card.cost">
       <AbilityIcon class="card-cost-icon absolute-icon" icon="3" width="64px"/>
-      <span class="card-cost icon-text text-center font-weight-bold">{{ card.cost }}</span>
+      <span 
+        class="card-cost icon-text text-center font-weight-bold"
+        :class="{ small: card.cost.length > 2 }">
+        {{ card.cost }}
+      </span>
     </template>
   </v-card>
 </template>
@@ -173,10 +185,13 @@ export default {
     bottom: 0px;
   }
   .card-cost {
-    width: 64px;
     right: 1px;
     bottom: 2px;
-    font-size: 32px;
+    font-size: 32px !important;
+    
+    &.small {
+      font-size: 24px !important;
+    }
   }
   
   .card-recruit-icon {
@@ -184,10 +199,8 @@ export default {
     bottom: 50px;
   }
   .card-recruit {
-    width: 64px;
     left: 0px;
     bottom: 50px;
-    font-size: 24px;
   }
 
   .card-attack-icon {
@@ -195,20 +208,25 @@ export default {
     bottom: 0px;
   }
   .card-attack {
-    width: 64px;
     left: 0px;
     bottom: 0px;
-    font-size: 24px;
   }
 
   .icon-text {
     position: absolute;
+    width: 64px;
+    font-size: 28px;
     -webkit-text-fill-color: #fff;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #000;
     line-height: 64px;
     user-select: none;
     pointer-events: none;
+
+    &.small {
+      font-size: 22px;
+      -webkit-text-stroke-width: 1px;
+    }
   }
 
   .absolute-icon {

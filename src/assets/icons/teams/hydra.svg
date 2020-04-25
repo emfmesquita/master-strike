@@ -7,7 +7,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="200"
@@ -19,45 +18,6 @@
    sodipodi:docname="hydra.svg">
   <defs
      id="defs6607">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath2124">
-      <path
-         d="M 0,0 H 576 V 576 H 0 Z"
-         id="path2122"
-         inkscape:connector-curvature="0" />
-    </clipPath>
-    <mask
-       maskUnits="userSpaceOnUse"
-       x="0"
-       y="0"
-       width="1"
-       height="1"
-       id="mask2210">
-      <image
-         width="1"
-         height="1"
-         style="image-rendering:optimizeSpeed"
-         preserveAspectRatio="none"
-         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAAAAADENi4cAAAAAXNCSVQI5gpbmQAAA0ZJREFUOI2NVU1rXVUUXXuf8555SV/SNPa1tI0o/YitiFCxxYh1IoI6U4RCkY614Fw68h+UgkJFHDh0ZoelSByI2pqgVKWmNTUhEktiyEeT9L179l4O7ru+j+YR1+AM7l137XX31wFEAADSPAQQEVHNHwkCgPwQYf7e1dWByFJloBKZ0uZWI3OhMDjAYEAEICAIQB2hf/TAkSdGKsKV+Zm//lxkohiEsCIqkWNw9PnxE7X9VQXAtPj3Hz9PTq1lpo5guVEBRBEwcOiDiVUmkk46jaxz5qOX9gokNsUkp6P/5IdzNJI0kuY0kmnr+tmREiBacBWIe85fazCjudM9/yCRJO9efHa3NnUVAOK+s7O5YA4nM9JJc9a/PB2kZUIH375pTZ1uuNmnByMEGhAcKL918Tm1ACuCtUAoD9fnH5gAUITK2NdkSqTTt9Elly8czL0iDL+3lRLpybehMrHByVc0AALZ9caNRJKp/e8KJDrZ4Mcjeb6e/IKJTEWqumCkMbt35rGKOjB2OgUgCLyZwXY4AUXcd6q6K0JLLx6DBRAirpQurgKksnJmQiJ8+AUvulXRTW12jODUUY3QWk25DaMLQ4clSjiwH3w0djf6nkFEHKluG7kbo4gsV0uQndk+zIhYUmBHC9A+RNAJ7sxFkiipYfgfhlmXKLaZXL0nmVSAEFmW6A8XlnZT/dHOzSFCDwJwTiJ4f5mw0EvXlQF04TRVcH9WpJcqoAa4qC5OTyux8l09ifckBzUBMfHTLwq3qTuRPYUJiDizb/9Z0gDOXm/0zpmQCobff9hYDxRZX6s93bsYVHjAlaubCQDi8Lm15rR4x/B4sdv8+3EACkVan7oGGJAgVsgZFA4QgNjC57f/84RXr2bFIBbIEj0XT0vvPq5APowB/W9+4+Zk94JIpDNd3tt2TwTsee0GadYy7E0iufjJ8XKrNABQfvnKQue+cdLc/Md3DoViWQsEEJW+Y+//xqwzD87Vr14fAgIC8stIACHSxp27G7X+oolcBLI5eemz2ytKRkNHkytD9ejJ8bHjVVdQtpZu3bz16716WwlbtQSEMjQ4euKpoZL4+vzszNyD1L45OrgKR5C+gbIqbLVhGSFt5H8BKgWLNTu5O2wAAAAASUVORK5CYII="
-         id="image2212" />
-    </mask>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath2240">
-      <path
-         d="M 0,0 H 576 V 576 H 0 Z"
-         id="path2238"
-         inkscape:connector-curvature="0" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath2442">
-      <path
-         d="M 0,0 H 576 V 576 H 0 Z"
-         id="path2440"
-         inkscape:connector-curvature="0" />
-    </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath2478">
@@ -75,14 +35,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="5.5665159"
+     inkscape:cx="-73.47792"
      inkscape:cy="71.920895"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1680"
-     inkscape:window-height="939"
+     inkscape:window-height="936"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1" />
