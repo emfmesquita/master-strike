@@ -140,9 +140,9 @@ export default {
               {
                 keyword: 52
               },
-              ":",
+              ": ",
               {
-                keyword: 52
+                keyword: 51
               },
               " this into Savage Hulk Unleashed."
             ]
@@ -161,7 +161,7 @@ export default {
                 keyword: 53
               },
               {
-                bold: "4"
+                bold: " 4"
               }
             ]
           ]
@@ -229,12 +229,12 @@ export default {
               {
                 hc: 1
               },
-              ":",
+              ": ",
               {
                 keyword: 53
               },
               {
-                bold: "2"
+                bold: " 2"
               }
             ]
           ]
@@ -314,7 +314,7 @@ export default {
                 keyword: 53
               },
               {
-                bold: "2"
+                bold: " 2"
               }
             ]
           ]
@@ -331,7 +331,7 @@ export default {
                 keyword: 53
               },
               {
-                bold: "3"
+                bold: " 3"
               }
             ],
             [
@@ -367,7 +367,7 @@ export default {
               {
                 hc: 4
               },
-              ":",
+              ": ",
               {
                 keyword: 18
               }
@@ -376,7 +376,8 @@ export default {
               "If any players gained a Wound this way, you get ",
               {
                 keyword: 54
-              }
+              },
+              "."
             ]
           ]
         },
@@ -399,7 +400,7 @@ export default {
                 keyword: 53
               },
               {
-                bold: "3"
+                bold: " 3"
               }
             ]
           ]
@@ -537,12 +538,12 @@ export default {
               {
                 keyword: 52
               },
-              ":",
+              ": ",
               {
                 keyword: 53
               },
               {
-                bold: "2"
+                bold: " 2"
               }
             ]
           ]
@@ -561,7 +562,7 @@ export default {
               {
                 hc: 4
               },
-              ":",
+              ": ",
               {
                 keyword: 51
               },
@@ -585,7 +586,7 @@ export default {
                 keyword: 53
               },
               {
-                bold: "2"
+                bold: " 2"
               }
             ]
           ]
@@ -624,12 +625,12 @@ export default {
               {
                 hc: 4
               },
-              ":",
+              ": ",
               {
                 keyword: 53
               },
               {
-                bold: "2"
+                bold: " 2"
               }
             ]
           ]
@@ -670,7 +671,7 @@ export default {
               {
                 keyword: 51
               },
-              "this into Underworld Boss and put it on top of your deck."
+              " this into Underworld Boss and put it on top of your deck."
             ]
           ]
         },
@@ -683,13 +684,14 @@ export default {
           attack: "0+",
           abilities: [
             [
-              "Choose a Villain in your Victory Pile, You get + Attack equal to it's printed VP.",
+              "Choose a Villain in your Victory Pile, You get ",
               {
                 bold: "+"
               },
               {
                 icon: 1
-              }
+              },
+              " equal to it's printed VP."
             ]
           ]
         },
@@ -734,18 +736,18 @@ export default {
               {
                 hc: 4
               },
-              ":",
+              ": ",
               {
                 keyword: 53
               },
               {
-                bold: "2"
+                bold: " 2"
               },
-              " If you ",
+              ". If you ",
               {
                 keyword: 53
               },
-              "a Wound this way, KO it."
+              " a Wound this way, KO it."
             ]
           ]
         },
@@ -778,11 +780,11 @@ export default {
               {
                 hc: 4
               },
-              ":",
+              ": ",
               {
                 keyword: 51
               },
-              "this into Lord of Granite."
+              " this into Lord of Granite."
             ]
           ]
         },
@@ -802,7 +804,7 @@ export default {
                 keyword: 53
               },
               {
-                bold: "3"
+                bold: " 3"
               }
             ]
           ]
@@ -842,13 +844,13 @@ export default {
                 keyword: 53
               },
               {
-                bold: "1"
+                bold: " 1"
               }
             ]
           ]
         },
         {
-          name: "Devouring Frenzy ",
+          name: "Devouring Frenzy",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -861,10 +863,11 @@ export default {
               {
                 hc: 2
               },
-              ": You may",
+              ": You may ",
               {
                 keyword: 9
-              }
+              },
+              "."
             ]
           ]
         },
@@ -888,7 +891,7 @@ export default {
           recruit: "5",
           abilities: [
             [
-              "You may",
+              "You may ",
               {
                 keyword: 9
               },
@@ -896,11 +899,11 @@ export default {
               {
                 icon: 1
               },
-              "was KO'd from your deck this turn,",
+              "was KO'd from your deck this turn, ",
               {
                 keyword: 51
               },
-              "this into Hive King Miek."
+              " this into Hive King Miek."
             ]
           ]
         },
@@ -913,7 +916,7 @@ export default {
           attack: "6",
           abilities: [
             [
-              "Look at the top three cards of your deck and put them back in any order. Then you may",
+              "Look at the top three cards of your deck and put them back in any order. Then you may ",
               {
                 keyword: 9
               },
@@ -942,12 +945,12 @@ export default {
               {
                 hc: 3
               },
-              ":",
+              ": ",
               {
                 keyword: 53
               },
               {
-                bold: "3"
+                bold: " 3"
               }
             ]
           ]
@@ -979,11 +982,11 @@ export default {
           recruit: "3",
           abilities: [
             [
-              "When you defeat a Villain in the Sewers or Bridge,",
+              "When you defeat a Villain in the Sewers or Bridge, ",
               {
                 keyword: 51
               },
-              "this into Master of Depths and put it on top of your deck."
+              " this into Master of Depths and put it on top of your deck."
             ]
           ]
         },
@@ -1000,15 +1003,15 @@ export default {
                 keyword: 53
               },
               {
-                bold: "3"
+                bold: " 3"
               }
             ],
             [
-              "If you",
+              "If you ",
               {
                 keyword: 53
               },
-              "a 0-cost Hero this way, KO it."
+              " a 0-cost Hero this way, KO it."
             ]
           ]
         },
@@ -1025,12 +1028,12 @@ export default {
               },
               ": If the Bridge is empty, you may move a Villain there from another city space. A Villain moved this way gets",
               {
-                bold: "-3"
+                bold: " -3"
               },
               {
                 icon: 1
               },
-              "this turn."
+              " this turn."
             ]
           ]
         }
@@ -1067,10 +1070,11 @@ export default {
               {
                 hc: 1
               },
-              ": You may",
+              ": You may ",
               {
                 keyword: 9
-              }
+              },
+              "."
             ]
           ]
         },
@@ -1082,15 +1086,15 @@ export default {
           recruit: "2",
           abilities: [
             [
-              "You may",
+              "You may ",
               {
                 keyword: 9
               },
-              ". Then, if a non-grey Hero was KO'd from your deck this turn,",
+              ". Then, if a non-grey Hero was KO'd from your deck this turn, ",
               {
                 keyword: 51
               },
-              "this into Torrent of Broodlings."
+              " this into Torrent of Broodlings."
             ]
           ]
         },
@@ -1115,18 +1119,18 @@ export default {
           attack: "4+",
           abilities: [
             [
-              "Look at the top card of your deck. Then",
+              "Look at the top card of your deck. Then ",
               {
                 keyword: 9
               },
-              "up to three times. You get ",
+              " up to three times. You get ",
               {
                 bold: "+2"
               },
               {
                 icon: 1
               },
-              "for each non-grey Hero that was KO'd from your deck this turn."
+              " for each non-grey Hero that was KO'd from your deck this turn."
             ]
           ]
         }
@@ -1168,7 +1172,7 @@ export default {
               {
                 keyword: 51
               },
-              "this into Captain Marvel."
+              " this into Captain Marvel."
             ]
           ]
         },
@@ -1198,7 +1202,7 @@ export default {
               {
                 keyword: 51
               },
-              "this into A-Bomb and put it on top of your deck."
+              " this into A-Bomb and put it on top of your deck."
             ]
           ]
         },
@@ -1216,7 +1220,7 @@ export default {
                 keyword: 53
               },
               {
-                bold: "5"
+                bold: " 5"
               }
             ]
           ]
@@ -1229,11 +1233,11 @@ export default {
           attack: "4",
           abilities: [
             [
-              "If you defeat two Villains this turn,",
+              "If you defeat two Villains this turn, ",
               {
                 keyword: 51
               },
-              "this into The Destiny Force and put it on top of your deck."
+              " this into The Destiny Force and put it on top of your deck."
             ]
           ]
         },
@@ -1269,7 +1273,7 @@ export default {
               {
                 keyword: 51
               },
-              "this into Golden Guardian of Good and put it in your discard pile."
+              " this into Golden Guardian of Good and put it in your discard pile."
             ]
           ]
         },
@@ -1282,11 +1286,11 @@ export default {
           recruit: "0+",
           abilities: [
             [
-              "You may",
+              "You may ",
               {
                 keyword: 51
               },
-              "this into Agoraphobia and put it in your discard pile. If you do, you get ",
+              " this into Agoraphobia and put it in your discard pile. If you do, you get ",
               {
                 bold: "+4"
               },
@@ -1312,11 +1316,11 @@ export default {
               {
                 icon: 1
               },
-              "for each card that",
+              "for each card that ",
               {
                 keyword: 51
               },
-              "this turn."
+              " this turn."
             ]
           ]
         },
@@ -1328,11 +1332,11 @@ export default {
           recruit: "2",
           abilities: [
             [
-              "Reveal the top card of your deck. If it costs 1 or more,",
+              "Reveal the top card of your deck. If it costs 1 or more, ",
               {
                 keyword: 51
               },
-              "this into The Void Unchained and put it on top of your deck."
+              " this into The Void Unchained and put it on top of your deck."
             ]
           ]
         },
@@ -1346,15 +1350,15 @@ export default {
           attack: "3",
           abilities: [
             [
-              "Reveal the top card of your deck. If it costs 0, then",
+              "Reveal the top card of your deck. If it costs 0, then ",
               {
                 keyword: 9
               },
-              ". Otherwise,",
+              ". Otherwise, ",
               {
                 keyword: 51
               },
-              "this into Mournful Sentinel and put it in your discard pile."
+              " this into Mournful Sentinel and put it in your discard pile."
             ]
           ]
         },
@@ -1378,11 +1382,11 @@ export default {
               {
                 icon: 1
               },
-              " or more, then",
+              " or more, then ",
               {
                 keyword: 51
               },
-              "this card into The Void Mastermind and add it to the game at the start of the next turn with one random Tactic."
+              " this card into The Void Mastermind and add it to the game at the start of the next turn with one random Tactic."
             ]
           ]
         }
@@ -1408,11 +1412,11 @@ export default {
               {
                 icon: 2
               },
-              "this turn,",
+              "this turn, ",
               {
                 keyword: 51
               },
-              "this into Hurl Trucks."
+              " this into Hurl Trucks."
             ]
           ]
         },
@@ -1429,7 +1433,7 @@ export default {
                 keyword: 53
               },
               {
-                bold: 2
+                bold: " 2"
               }
             ],
             [
@@ -1437,7 +1441,7 @@ export default {
                 keyword: 53
               },
               {
-                bold: 2
+                bold: " 2"
               }
             ]
           ]
@@ -1518,12 +1522,12 @@ export default {
               {
                 hc:4
               },
-              ":",
+              ": ",
               {
                 keyword: 53
               } ,
               {
-                bold: "3"
+                bold: " 3"
               }
             ]
           ]
@@ -1539,7 +1543,7 @@ export default {
               {
                 hc:2
               },
-              ":",
+              ": ",
               {
                 keyword: 54
               }
@@ -1557,11 +1561,11 @@ export default {
               {
                 hc: 2
               },
-              ": You may gain a Wound. If you do,",
+              ": You may gain a Wound. If you do, ",
               {
                 keyword: 51
               },
-              "this into Raging Savage."
+              " this into Raging Savage."
             ]
           ]
         },

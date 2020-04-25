@@ -3,6 +3,7 @@ export default {
       {
         name: "Silver Surfer",
         set: 4,
+        team: 0,
         cards: [
           {
             name: "Warp Speed",

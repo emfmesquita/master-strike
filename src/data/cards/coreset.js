@@ -223,6 +223,7 @@ export default {
     {
       name: "Deadpool",
       set: 1,
+      team: 0,
       cards: [
         {
           name: "Here, Hold This for a Second",

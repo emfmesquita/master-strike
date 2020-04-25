@@ -132,7 +132,7 @@ export default {
                 keyword: 64
               },
               {
-                bold: "4 "
+                bold: " 4 "
               },
               "for that icon."
             ]
@@ -206,7 +206,7 @@ export default {
                 keyword: 64
               },
               {
-                bold: "7"
+                bold: " 7"
               }
             ],
             [
@@ -216,12 +216,12 @@ export default {
               {
                 hc: 5
               },
-              ": Instead,",
+              ": Instead, ",
               {
                 keyword: 64
               },
               {
-                bold: "9"
+                bold: " 9"
               }
             ]
           ]
@@ -353,7 +353,7 @@ export default {
                 keyword: 64
               },
               {
-                bold: "3."
+                bold: " 3."
               }
             ]
           ]
@@ -392,7 +392,7 @@ export default {
               {
                 team:1
               },
-              ":",
+              ": ",
               {
                 keyword: 66
               }
@@ -419,7 +419,7 @@ export default {
                 keyword: 64
               },
               {
-                bold: "3 "
+                bold: " 3 "
               },
               "for",
               {
@@ -436,7 +436,7 @@ export default {
                 keyword: 64
               },
               {
-                bold: "3 "
+                bold: " 3 "
               },
               "for",
               {
@@ -460,11 +460,12 @@ export default {
               {
                 hc:4
               },
+              ": ",
               {
                 keyword: 64
               },
               {
-                bold: "4"
+                bold: " 4"
               },
               "."
             ]
@@ -501,7 +502,7 @@ export default {
               {
                 keyword:64
               },
-              "your entire remaining deck. (Don't reshuffle.)",
+              " your entire remaining deck. (Don't reshuffle.)",
             ],
             [
               {
@@ -559,7 +560,7 @@ export default {
                 keyword:64
               },
               {
-                bold: "4"
+                bold: " 4"
               }
             ],
             [
@@ -582,6 +583,7 @@ export default {
              {
                hc:2
              },
+             ": ",
              {
                keyword: 65
              }
@@ -604,11 +606,11 @@ export default {
               {
                 hc:4
               },
-              ":",
+              ": ",
               {
                 keyword:65
               },
-              "again."
+              " again."
             ]
           ]
         }
@@ -649,7 +651,7 @@ export default {
               {
                 hc:1
               },
-              ":",
+              ": ",
               {
                 keyword: 65
               }
@@ -688,7 +690,7 @@ export default {
               {
                 hc:1
               },
-              ":",
+              ": ",
               {
                 keyword:65
               }
@@ -714,7 +716,7 @@ export default {
                 keyword:64
               },
               {
-                bold: "2"
+                bold: " 2"
               }
             ],
             [
@@ -726,7 +728,7 @@ export default {
                 keyword: 64
               },
               {
-                bold: "6"
+                bold: " 6"
               }
             ]
           ]
@@ -786,12 +788,12 @@ export default {
               {
                 hc:1
               },
-              ":",
+              ": ",
               {
                 keyword:64
               },
               {
-                bold: "6"
+                bold: " 6"
               }
             ]
           ]
@@ -850,7 +852,7 @@ export default {
                 keyword: 64
               },
               {
-                bold:5
+                bold: " 5"
               }
             ],
             [
