@@ -7,6 +7,9 @@
             <v-select
               v-model="filter.set"
               :items="sets"
+              multiple
+              chips
+              deletable-chips
               label="Set"
               item-text="label"
               item-value="id"
@@ -83,14 +86,14 @@ export default {
     sets: setsArray,
     teams: teams,
     filter: {
-      set: 0,
+      set: [],
       team: []
     },
     heroes: []
   }),
   created() {
-    this.filter.set = this.toInteger(this.$route.query.set);
-    if(!setsArray[this.filter.set - 1]) this.filter.set = 0;
+    this.filter.set = this.toIntegerArray(this.$route.query.set);
+    this.filter.set = this.filter.set.filter(set => setsArray[set]);
 
     this.filter.team = this.toIntegerArray(this.$route.query.team);
     this.filter.team = this.filter.team.filter(team => teamArray[team]);
@@ -116,24 +119,27 @@ export default {
       return hero.team + hero.name;
     },
     filterChanged() {
-      this.$vuetify.goTo(0);
+      this.$vuetify.goTo(0, { duration: 0 });
 
-      setTimeout(() => {
-        this.search();
-        const query = {};
-        if(this.filter.set) query.set = this.filter.set;
-        if(this.filter.team.length) {
-          query.team = this.filter.team.join(",");
-        }
-        this.$router.replace({
-          path: this.$route.path,
-          query
-        });
-      }, 0);
+      this.search();
+      const query = {};
+      if(this.filter.set.length) {
+        query.set = this.filter.set.join(",");
+      }
+      if(this.filter.team.length) {
+        query.team = this.filter.team.join(",");
+      }
+      this.$router.replace({
+        path: this.$route.path,
+        query
+      });
     },
     search() {
       this.heroes = allHeroes;
-      if(this.filter.set) this.heroes = this.heroes.filter(hero => hero.set === this.filter.set);
+      if(this.filter.set.length) {
+        const set = this.filter.set;
+        this.heroes = this.heroes.filter(hero => set.indexOf(hero.set) >= 0);
+      }
       if(this.filter.team.length) {
         const team = this.filter.team;
         this.heroes = this.heroes.filter(hero => {
