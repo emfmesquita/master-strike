@@ -34,15 +34,22 @@
 
     <v-container>
       <template v-if="heroes.length">
-        <v-row :key="heroKey(hero)" v-for="hero in heroes">
+        <v-row>
           <v-col cols="12">
-            <Hero :hero="hero" />
+            <div class="text-center title">{{ heroes.length }} {{ heroFound }}</div>
           </v-col>
         </v-row>
+        <v-lazy min-height="410" :key="heroKey(hero)" v-for="hero in heroes">
+          <v-row>
+            <v-col cols="12">
+              <Hero :hero="hero" />
+            </v-col>
+          </v-row>
+        </v-lazy>
       </template>
       <v-row v-else>
         <v-col cols="12">
-          <div class="text-center title">No Cards Founds</div>
+          <div class="text-center title">No Heroes Founds</div>
         </v-col>
       </v-row>
     </v-container>
@@ -90,6 +97,11 @@ export default {
 
     this.search();
   },
+  computed: {
+    heroFound() {
+      return this.heroes.length === 1 ? "Hero was found" : "Heroes were found";
+    }
+  },
   methods: {
     toInteger(value) {
       const interger = Number.parseInt(value);
@@ -105,16 +117,19 @@ export default {
     },
     filterChanged() {
       this.$vuetify.goTo(0);
-      this.search();
-      const query = {};
-      if(this.filter.set) query.set = this.filter.set;
-      if(this.filter.team.length) {
-        query.team = this.filter.team.join(",");
-      }
-      this.$router.replace({
-        path: this.$route.path,
-        query
-      });
+
+      setTimeout(() => {
+        this.search();
+        const query = {};
+        if(this.filter.set) query.set = this.filter.set;
+        if(this.filter.team.length) {
+          query.team = this.filter.team.join(",");
+        }
+        this.$router.replace({
+          path: this.$route.path,
+          query
+        });
+      }, 0);
     },
     search() {
       this.heroes = allHeroes;
