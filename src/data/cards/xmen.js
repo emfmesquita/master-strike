@@ -1,6 +1,81 @@
 export default {
   heroes: [
     {
+      name: "Banshee",
+      set: 16,
+      team: 4,
+      cards: [
+        {
+          name: "Sonar Detection",
+          hc: 1,
+          rarity: 1,
+          cost: 2,
+          piercing: "0+",
+          abilities: [
+            "Draw a card.",
+            { keyword: 39 },
+            [
+              { keyword: 38 },
+              { hc: 1 },
+              ": You get ",
+              { bold: "+1"},
+              { icon: 6 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Speed of Sound",
+          hc: 3,
+          rarity: 1,
+          cost: 3,
+          piercing: "2",
+          abilities: [
+            { keyword: 41 },
+            { keyword: 39 }
+          ]
+        },
+        {
+          name: "Sonic Blastwave",
+          hc: 3,
+          rarity: 2,
+          cost: 5,
+          recruit: "3",
+          piercing: "0+",
+          abilities: [
+            { keyword: 39 },
+            [
+              { hc: 3 },
+              ": You may have this card produce ",
+              { icon: 6 },
+              " instead of",
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Bone-Shattering Howl",
+          hc: 3,
+          rarity: 3,
+          cost: 8,
+          piercing: "4",
+          abilities: [
+            { keyword: 39 },
+            [
+              { hc: 3 },
+              { hc: 1 },
+              ": You may use",
+              { icon: 1 },
+              " as if it were ",
+              { icon: 6 },
+              " this turn."
+            ]
+          ]
+        }
+      ]
+    },
+    {
       name: "Aurora and Northstar",
       set: 16,
       team: 4,

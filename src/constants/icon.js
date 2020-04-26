@@ -23,13 +23,19 @@ const FOCUS = {
     value: "focus",
     label: "Focus"
 };
+const PIERCING = {
+    id: 6,
+    value: "piercing",
+    label: "Piercing Energy"
+};
 
 export const icon = Object.freeze({
     ATTACK,
     RECRUIT,
     COST,
     VP,
-    FOCUS
+    FOCUS,
+    PIERCING
 });
 
 export const iconArray = Object.freeze([
@@ -37,5 +43,6 @@ export const iconArray = Object.freeze([
     RECRUIT,    // 2
     COST,       // 3
     VP,         // 4
-    FOCUS       // 5
+    FOCUS,      // 5
+    PIERCING    // 6
 ]);

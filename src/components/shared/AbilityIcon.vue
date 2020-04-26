@@ -20,7 +20,7 @@ import { iconArray } from "../../constants/icon";
 
 export default {
   name: "AbilityIcon",
-  props: ["icon", "width"],
+  props: ["icon", "width", "noAdjust"],
   computed: {
     iconSrc() {
       const icon = iconArray[this.icon - 1].value;
@@ -28,7 +28,7 @@ export default {
     },
     iconClass() {
       return {
-        'adjust-icon': this.icon === 1 || this.icon === 2 || this.icon === 4
+        'adjust-icon': this.icon !== 3 && this.icon !== 5 && this.noAdjust === undefined
       };
     },
     label() {

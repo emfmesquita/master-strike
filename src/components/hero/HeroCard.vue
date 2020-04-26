@@ -21,7 +21,7 @@
     </shared-keyword>
 
     <template v-if="card.recruit">
-      <AbilityIcon class="card-recruit-icon absolute-icon" icon="2" width="72px"/>
+      <AbilityIcon class="card-recruit-icon absolute-icon" noAdjust :icon="2" width="72px"/>
       <span 
         class="card-recruit icon-text text-center font-weight-black" 
         :class="{ small: card.recruit.length > 2 }">
@@ -30,7 +30,7 @@
     </template>
 
     <template v-if="card.attack">
-      <AbilityIcon class="card-attack-icon absolute-icon" icon="1" width="64px"/>
+      <AbilityIcon class="card-attack-icon absolute-icon" noAdjust :icon="1" width="64px"/>
       <span 
         class="card-attack icon-text text-center font-weight-black" 
         :class="{ small: card.attack.length > 2 }">
@@ -38,8 +38,17 @@
       </span>
     </template>
 
+    <template v-if="card.piercing">
+      <AbilityIcon class="card-attack-icon absolute-icon" noAdjust :icon="6" width="64px"/>
+      <span 
+        class="card-attack icon-text text-center font-weight-black" 
+        :class="{ small: card.piercing.length > 2 }">
+        {{ card.piercing }}
+      </span>
+    </template>
+
     <template v-if="card.cost">
-      <AbilityIcon class="card-cost-icon absolute-icon" icon="3" width="64px"/>
+      <AbilityIcon class="card-cost-icon absolute-icon" noAdjust :icon="3" width="64px"/>
       <span 
         class="card-cost icon-text text-center font-weight-black"
         :class="{ small: card.cost.length > 2 }">
@@ -196,20 +205,20 @@ export default {
   
   .card-recruit-icon {
     left: -4px;
-    bottom: 50px;
+    bottom: 60px;
   }
   .card-recruit {
     left: 0px;
-    bottom: 50px;
+    bottom: 60px;
   }
 
   .card-attack-icon {
     left: 0px;
-    bottom: 0px;
+    bottom: 10px;
   }
   .card-attack {
     left: 0px;
-    bottom: 0px;
+    bottom: 10px;
   }
 
   .icon-text {
