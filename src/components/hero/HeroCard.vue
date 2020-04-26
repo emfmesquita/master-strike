@@ -41,7 +41,7 @@
     <template v-if="card.cost">
       <AbilityIcon class="card-cost-icon absolute-icon" icon="3" width="64px"/>
       <span 
-        class="card-cost icon-text text-center font-weight-bold"
+        class="card-cost icon-text text-center font-weight-black"
         :class="{ small: card.cost.length > 2 }">
         {{ card.cost }}
       </span>

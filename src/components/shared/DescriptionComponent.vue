@@ -7,6 +7,7 @@
     <TeamIcon v-else-if="descriptionComponent.team" :icon="descriptionComponent.team" width="26px"/>
     <AbilityIcon v-else-if="descriptionComponent.icon" :icon="descriptionComponent.icon" width="32px"/>
     <shared-keyword v-else-if="descriptionComponent.keyword" :keyword="descriptionComponent"/>
+    <v-divider class="ability-divider" v-else-if="descriptionComponent.divider"/>
   </span>
 </template>
 
@@ -26,3 +27,10 @@ export default {
   data: () => ({})
 };
 </script>
+
+<style scoped>
+.ability-divider {
+  margin: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+</style>
