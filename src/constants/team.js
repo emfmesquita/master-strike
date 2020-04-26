@@ -16,7 +16,7 @@ const SHIELD = {
 const SPIDER_FRIENDS = {
     id: 3,
     value: "spider-friends",
-    label: "Spider Fiends"
+    label: "Spider Friends"
 };
 const X_MEN = {
     id: 4,

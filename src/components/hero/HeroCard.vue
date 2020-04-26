@@ -185,8 +185,8 @@ export default {
     bottom: 0px;
   }
   .card-cost {
-    right: 1px;
-    bottom: 2px;
+    right: 0px;
+    bottom: 0px;
     font-size: 32px !important;
     
     &.small {

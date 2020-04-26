@@ -6,7 +6,7 @@
       max-width="500px"
     >
       <template v-slot:activator="{ on }">
-        <span v-on="on" class="font-weight-bold keyword">
+        <span v-on="on" class="font-weight-bold keyword" :class="{ 'red-keyword': keyword.keyword === 49 }">
           <slot>{{ text }}</slot>
         </span>
       </template>
@@ -74,5 +74,8 @@ export default {
 <style scoped lang="scss">
 .keyword {
   cursor: pointer;
+}
+.red-keyword {
+  color: #d00;
 }
 </style>
