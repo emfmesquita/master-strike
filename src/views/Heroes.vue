@@ -4,32 +4,53 @@
       <v-container>
         <v-row align="center">
           <v-col cols="12">
-            <v-select
+            <v-autocomplete
               v-model="filter.set"
               :items="sets"
               multiple
-              chips
-              deletable-chips
               label="Set"
               item-text="label"
-              item-value="id"
+              item-value="id" 
+              clearable
               @change="filterChanged"
-            />
+            >
+              <template v-slot:selection="{ item }">
+                <v-tooltip top>
+                  <template v-slot:activator="{ on }" dense>
+                    <span v-on="on">
+                      <v-chip class="ma-1" style="cursor: pointer" @click.stop="removeSet(item.id)">
+                        {{item.initials}}
+                      </v-chip>
+                    </span>
+                  </template>
+                  <span>{{ item.label }}</span>
+                </v-tooltip>
+              </template>
+            </v-autocomplete>
           </v-col>
         </v-row>
         <v-row align="center">
           <v-col cols="12">
-            <v-select
+            <v-autocomplete
               v-model="filter.team"
               :items="teams"
               multiple
-              chips
-              deletable-chips
+              clearable
               item-text="label"
               item-value="id"
               label="Team"
               @change="filterChanged"
-            />
+            >
+              <template v-slot:selection="{ item }">
+                <span style="cursor: pointer" @click.stop="removeTeam(item.id)">
+                  <TeamIcon :icon="item.id" width="40px"/>
+                </span>
+              </template>
+              <template v-slot:item="{ item }">
+                <TeamIcon :icon="item.id" width="40px" />
+                {{ item.label }}
+              </template>
+            </v-autocomplete>
           </v-col>
         </v-row>
       </v-container>
@@ -64,6 +85,7 @@ import Hero from "../components/hero/Hero.vue";
 import { cards } from "../data";
 import { setsArray } from "../constants/sets";
 import { teamArray } from "../constants/team";
+import TeamIcon from "../components/shared/TeamIcon.vue";
 
 let allHeroes = [];
 Object.values(cards).forEach(setCards => {
@@ -81,7 +103,7 @@ teams = Object.freeze(teams);
 
 export default {
   name: "HelloWorld",
-  components: { Hero },
+  components: { Hero, TeamIcon },
   data: () => ({
     sets: setsArray,
     teams: teams,
@@ -117,6 +139,14 @@ export default {
     },
     heroKey(hero) {
       return hero.team + hero.name;
+    },
+    removeSet(id) {
+      this.filter.set = this.filter.set.filter(set => set !== id);
+      this.filterChanged();
+    },
+    removeTeam(id) {
+      this.filter.team = this.filter.team.filter(team => team !== id);
+      this.filterChanged();
     },
     filterChanged() {
       this.$vuetify.goTo(0, { duration: 0 });

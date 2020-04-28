@@ -3,7 +3,7 @@
     <v-tooltip top>
       <template v-slot:activator="{ on }">
         <span v-on="on">
-          <img class="team-icon" v-if="icon" :src="team" :width="width" draggable="false"/>
+          <img class="team-icon" :src="team" :width="width" draggable="false"/>
         </span>
       </template>
       <span>{{ label }}</span>
@@ -20,7 +20,13 @@ export default {
   computed: {
     team() {
       const team = teamArray[this.icon].value;
-      return require(`../../assets/icons/teams/${team}.svg`);
+      let src = "";
+      try {
+        src = require(`../../assets/icons/teams/${team}.svg`);
+      } catch (error) {
+        src = require(`../../assets/icons/teams/unaffiliated.svg`);
+      }
+      return src;
     },
     label() {
       const label = teamArray[this.icon].label;

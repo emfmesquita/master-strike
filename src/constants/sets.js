@@ -2,7 +2,7 @@ const CORE_SET = {
     id: 1,
     value: "coreset",
     label: "Core Set",
-    initials: " C "
+    initials: "C"
 };
 const PROMO = {
     id: 2,
@@ -32,13 +32,13 @@ const PAINT_THE_TOWN_RED = {
     id: 6,
     value: "pttr",
     label: "Paint the Town Red",
-    initials: "PTR"
+    initials: "PtTR"
 };
 const GUARDIANS_OF_THE_GALAXY = {
     id: 7,
     value: "gotg",
     label: "Guardians of the Galaxy",
-    initials: "GG"
+    initials: "GotG"
 };
 const FEAR_ITSELF = {
     id: 8,
@@ -86,7 +86,7 @@ const NOIR = {
     id: 15,
     value: "noir",
     label: "Noir",
-    initials: "N"
+    initials: "Noir"
 };
 const X_MEN = {
     id: 16,
@@ -98,13 +98,13 @@ const SPIDER_HOMECOMING = {
     id: 17,
     value: "spiderhomecoming",
     label: "Spider-Man Homecoming",
-    initials: "SM"
+    initials: "SMH"
 };
 const CHAMPIONS = {
     id: 18,
     value: "champions",
     label: "Champions",
-    initials: "CH"
+    initials: "Champ"
 };
 const WW_HULK = {
     id: 19,
@@ -116,7 +116,7 @@ const MARVEL_STUDIOS = {
     id: 20,
     value: "marvelstudios",
     label: "Marvel Studios, Phase 1",
-    initials: "MS"
+    initials: "MS1"
 };
 const ANT_MAN = {
     id: 21,
@@ -128,31 +128,31 @@ const VENOM = {
     id: 22,
     value: "venom",
     label: "Venom",
-    initials: "V"
+    initials: "Venom"
 };
 const DIMENSIONS = {
     id: 23,
     value: "dimensions",
     label: "Dimensions",
-    initials: "D"
+    initials: "Dim"
 };
 const REVELATIONS = {
     id: 24,
     value: "revelations",
     label: "Revelations",
-    initials: "R"
+    initials: "Rev"
 };
 const SHIELD = {
     id: 25,
     value: "shield",
     label: "S.H.I.E.L.D.",
-    initials: "SH"
+    initials: "SHIELD"
 };
 const HEROES_OF_ASGARD = {
     id: 26,
     value: "heroesofasgard",
     label: "Heroes of Asgard",
-    initials: "HA"
+    initials: "HoA"
 };
 const NEW_MUTANTS = {
     id: 27,
