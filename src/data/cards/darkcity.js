@@ -710,6 +710,707 @@ export default {
           ]
         }
       ]
+    },
+    {
+      name: "Forge",
+      set: 3,
+      team: 7,
+      cards: [
+        {
+          name: "Dirty Work",
+          hc: 5,
+          rarity: 1,
+          cost: 3,
+          attack: "2",
+          abilities: [
+            [
+              {
+                hc: 5
+              },
+              ": Any Villain you fight in the Sewers this turn gets ",
+              {
+                bold: "-2"
+              },
+              {
+                icon: 1
+              },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Reboot",
+          hc: 5,
+          rarity: 1,
+          cost: 4,
+          recruit: "2",
+          abilities: [
+            [
+              {
+                hc: 5
+              },
+              ": You may discard a card. If you do, draw two cards."
+            ]
+          ]
+        },
+        {
+          name: "Overdrive",
+          hc: 5,
+          rarity: 2,
+          cost: 5,
+          attack: "0+",
+          recruit: "0+",
+          abilities: [
+            [
+              {
+                keyword: 3
+              },
+              {
+                bold: " 3"
+              }
+            ]
+          ]
+        },
+        {
+          name: "B.F.G.",
+          hc: 5,
+          rarity: 3,
+          cost: 7,
+          attack: "5",
+          abilities: [
+            [
+             {
+               hc: 5
+             },
+             {
+               hc: 5
+             },
+             ": Defeat the Mastermind once for free."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Ghost Rider",
+      set: 3,
+      team: 6,
+      cards: [
+        {
+          name: "Blazing Hellfire",
+          hc: 3,
+          rarity: 1,
+          cost: 5,
+          attack: "2+",
+          abilities: [
+            [
+              "You may KO a Villain from your Victory Pile. If you do, you get ",
+              {
+                bold: "+3"
+              },
+              {
+                icon: 1
+              },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Hell on Wheels",
+          hc: 5,
+          rarity: 1,
+          cost: 3,
+          recruit: "2+",
+          abilities: [
+            [
+              {
+                team: 6
+              },
+              ": You get ",
+              {
+                bold: "+2"
+              },
+              {
+                icon: 2
+              }
+            ]
+          ]
+        },
+        {
+          name: "Infernal Chains",
+          hc: 4,
+          rarity: 2,
+          cost: 2,
+          abilities: [
+            "Draw a card.",
+            [
+              {
+                hc: 4
+              },
+              ": Defeat a Villain of ",
+              {
+                bold: " 3"
+              },
+              {
+                icon: 1
+              },
+              " or less for free."
+            ]
+          ]
+        },
+        {
+          name: "Penance Stare",
+          hc: 3,
+          rarity: 3,
+          cost: 8,
+          attack: "3+",
+          abilities: [
+            [
+              "Each player KOs a Villain from their Victory Pile. You get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 1
+              },
+              "for each Villain KO'd this way."
+            ],
+            [
+             {
+               team: 6
+             },
+             ": Put one of those Villains into your Victory Pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Iceman",
+      set: 3,
+      team: 4,
+      cards: [
+        {
+          name: "Deep Freeze",
+          hc: 3,
+          rarity: 1,
+          cost: 5,
+          recruit: "0+",
+          abilities: [
+            "Draw a card.",
+            [
+              {
+                hc: 3
+              },
+              ": You get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 2
+              },
+              "for each other",
+              {
+                hc: 3
+              },
+              " Hero you played this turn."
+            ]
+          ]
+        },
+        {
+          name: "Ice Slide",
+          hc: 3,
+          rarity: 1,
+          cost: 4,
+          attack: "2+",
+          abilities: [
+            [
+              {
+                hc: 3
+              },
+              ": You get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 1
+              },
+              "for each other",
+              {
+                hc: 3
+              },
+              " Hero you played this turn."
+            ]
+          ]
+        },
+        {
+          name: "Frost Spike Armor",
+          hc: 4,
+          rarity: 2,
+          cost: 5,
+          attack: "3",
+          abilities: [
+            "Draw a card.",
+            [
+              {
+                hc: 3
+              },
+              ": Draw a card for each ",
+              {
+                hc: 3
+              },
+              "Hero you played this turn."
+            ]
+          ]
+        },
+        {
+          name: "Impenetrable Ice Wall",
+          hc: 3,
+          rarity: 3,
+          cost: 8,
+          attack: "7",
+          abilities: [
+            [
+              "If a Villain, Master Strike, or Mastermind Tactic would cause you to gain any Wounds or discard any cards, you may reveal this card instead."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Iron Fist",
+      set: 3,
+      team: 6,
+      cards: [
+        {
+          name: "Focus Chi ",
+          hc: 2,
+          rarity: 1,
+          cost: 3,
+          recruit: "0+",
+          abilities: [
+            [
+              "You get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 2
+              },
+              "for each Hero with a different ",
+              {
+                icon: 3
+              },
+              " you have."
+            ]
+          ]
+        },
+        {
+          name: "Wield the Iron Fist",
+          hc: 4,
+          rarity: 1,
+          cost: 4,
+          attack: "0+",
+          abilities: [
+            [
+             "You get ",
+             {
+               bold: "+1"
+             },
+             {
+               icon: 1
+             },
+              "for each Hero with a different ",
+              {
+                icon: 3
+              },
+              " you have."
+            ]
+          ]
+        },
+        {
+          name: "Ancient Legacy",
+          hc: 4,
+          rarity: 2,
+          cost: 1,
+          attack: "0+",
+          recruit: "0+",
+          abilities: [
+            "Draw a card.",
+            [
+             {
+               hc: 4
+             },
+             {
+               hc: 4
+             },
+             {
+               keyword: 3
+             },
+             {
+               bold: " 2"
+             }
+            ]
+          ]
+        },
+        {
+          name: "Living Weapon",
+          hc: 4,
+          rarity: 3,
+          cost: 9,
+          attack: "8",
+          abilities: [
+            [
+              "Reveal cards from your deck until you have revealed two cards with the same ",
+              {
+                icon: 3
+              },
+              ". Draw all the cards you revealed."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Jean Grey",
+      set: 3,
+      team: 4,
+      cards: [
+        {
+          name: "Psychic Search",
+          hc: 3,
+          rarity: 1,
+          cost: 3,
+          attack: "2",
+          abilities: [
+            [
+              {
+                team: 4
+              },
+              ": Rescue a Bystander."
+            ]
+          ]
+        },
+        {
+          name: "Read Your Thoughts",
+          hc: 1,
+          rarity: 1,
+          cost: 5,
+          recruit: "3+",
+          abilities: [
+            [
+             "Whenever you rescue a Bystander this turn, you get ",
+             {
+               bold: "+1"
+             },
+             {
+               icon: 2
+             }
+            ]
+          ]
+        },
+        {
+          name: "Mind Over Matter",
+          hc: 1,
+          rarity: 2,
+          cost: 6,
+          attack: "4",
+          abilities: [
+            "Whenever you rescue a Bystander this turn, draw a card."
+          ]
+        },
+        {
+          name: "Telekinetic Mastery",
+          hc: 3,
+          rarity: 3,
+          cost: 7,
+          attack: "5+",
+          abilities: [
+            [
+              "Whenever you rescue a Bystander this turn, you get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 1
+              }
+            ],
+            [
+              {
+                team: 4
+              },
+              ": Rescue a Bystander for each other ",
+              {
+                team: 4
+              },
+              " Hero you played this turn."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Nightcrawler",
+      set: 3,
+      team: 4,
+      cards: [
+        {
+          name: "Bamf!",
+          hc: 2,
+          rarity: 1,
+          cost: 3,
+          recruit: "2",
+          abilities: [
+            [
+             {
+               keyword: 1
+             }
+            ]
+          ]
+        },
+        {
+          name: "Blend Into Shadows",
+          hc: 1,
+          rarity: 1,
+          cost: 4,
+          attack: "2",
+          abilities: [
+           {
+             keyword: 1
+           }
+          ]
+        },
+        {
+          name: "Swashbuckler",
+          hc: 2,
+          rarity: 2,
+          cost: 5,
+          attack: "3+",
+          abilities: [
+            [
+              {
+                hc: 1
+              },
+              {
+                hc: 2
+              },
+              ": You get ",
+              {
+                bold: "+3"
+              },
+              { 
+                icon: 1
+              }
+            ]
+          ]
+        },
+        {
+          name: "Along for the Ride",
+          hc: 1,
+          rarity: 3,
+          cost: 7,
+          attack: "5",
+          abilities: [
+            [
+              {
+                keyword: 1
+              }
+            ],
+            [
+              "When you play or ",
+              {
+                keyword: 1
+              },
+              " this card, you may also ",
+              {
+                keyword: 1
+              },
+              " up to three other cards from your hand."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Punisher",
+      set: 3,
+      team: 6,
+      cards: [
+        {
+          name: "Boom Goes the Dynamite ",
+          hc: 5,
+          rarity: 1,
+          cost: 2,
+          abilities: [
+            [
+              "Reveal the top card of your deck. If it costs 0",
+              {
+                icon: 3
+              },
+              ", KO it."
+            ],
+            [
+              {
+                hc: 5
+              },
+              ": Draw a card."
+            ]
+          ]
+        },
+        {
+          name: "Hail of Bullets",
+          hc: 5,
+          rarity: 1,
+          cost: 5,
+          attack: "2+",
+          abilities: [
+            [
+              "Reveal the top card of the Villain Deck. If it's a Villain, you get ",
+              {
+                bold: "+"
+              },
+              {
+                icon: 1
+              },
+              " equal to its printed ",
+              {
+                icon: 4
+              }
+            ],
+            [
+              {
+                hc: 5
+              },
+              {
+                hc: 5
+              },
+              ": You may defeat that Villain for free."
+            ]
+          ]
+        },
+        {
+          name: "Hostile Interrogation",
+          hc: 4,
+          rarity: 2,
+          cost: 3,
+          recruit: "2+",
+          abilities: [
+            [
+              {
+                hc: 4
+              },
+              ": Each other player reveals the top card of their deck. If that card costs 4",
+              {
+                icon: 3
+              },
+              " or more, discard it. You get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 2
+              },
+              " for each card discarded this way."
+            ]
+          ]
+        },
+        {
+          name: "The Punisher",
+          hc: 4,
+          rarity: 3,
+          cost: 8,
+          attack: "4+",
+          abilities: [
+            [
+              "Reveal cards from the Hero Deck until you have revealed two cards with the same",
+              {
+                icon: 3
+              },
+              ". You get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 1
+              },
+              " for each card revealed this way. Put them on the bottom of the Hero Deck in random order."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Wolverine",
+      set: 3,
+      team: 7,
+      cards: [
+        {
+          name: "Animal Instincts",
+          hc: 2,
+          rarity: 1,
+          cost: 2,
+          attack: "0+",
+          abilities: [
+            "Draw a card.",
+            [
+              {
+                hc: 2
+              },
+              ": You get ",
+              {
+                bold: "+2"
+              },
+              {
+                icon: 1
+              }
+            ]
+          ]
+        },
+        {
+          name: "Sudden Ambush",
+          hc: 1,
+          rarity: 1,
+          cost: 4,
+          attack: "2+",
+          abilities: [
+            [
+              "If you drew any extra cards this turn, you get ",
+              {
+                bold: "+2"
+              },
+              {
+                icon: 1
+              }
+            ]
+          ]
+        },
+        {
+          name: "No Mercy",
+          hc: 4,
+          rarity: 2,
+          cost: 4,
+          abilities: [
+            [
+              "Draw a card.",
+            ],
+            [
+              "You may KO a card from your hand or discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Reckless Abandon",
+          hc: 1,
+          rarity: 3,
+          cost: 7,
+          attack: "3",
+          abilities: [
+            [
+              "Count the number of extra cards you drew this turn. Draw that many cards."
+            ]
+          ]
+        }
+      ]
     }
   ]
 }
