@@ -53,6 +53,30 @@
             </v-autocomplete>
           </v-col>
         </v-row>
+        <v-row align="center">
+          <v-col cols="12">
+            <v-autocomplete
+              v-model="filter.hc"
+              :items="heroClasses"
+              multiple
+              clearable
+              item-text="label"
+              item-value="id"
+              label="Hero Class"
+              @change="filterChanged"
+            >
+              <template v-slot:selection="{ item }">
+                <span style="cursor: pointer" @click.stop="removeHC(item.id)">
+                  <HeroClassIcon :icon="item.id" width="32px"/>
+                </span>
+              </template>
+              <template v-slot:item="{ item }">
+                <HeroClassIcon :icon="item.id" width="32px" />
+                {{ item.label }}
+              </template>
+            </v-autocomplete>
+          </v-col>
+        </v-row>
       </v-container>
     </v-navigation-drawer>
 
@@ -85,7 +109,9 @@ import Hero from "../components/hero/Hero.vue";
 import { cards } from "../data";
 import { setsArray } from "../constants/sets";
 import { teamArray } from "../constants/team";
+import { heroClassArray } from "../constants/hero-class";
 import TeamIcon from "../components/shared/TeamIcon.vue";
+import HeroClassIcon from "../components/shared/HeroClassIcon.vue";
 
 let allHeroes = [];
 Object.values(cards).forEach(setCards => {
@@ -101,15 +127,21 @@ let teams = teamArray.concat([]);
 teams.sort((a, b) => a.label.localeCompare(b.label));
 teams = Object.freeze(teams);
 
+let heroClasses = heroClassArray.concat([]);
+heroClasses.shift();
+heroClasses = Object.freeze(heroClasses);
+
 export default {
   name: "HelloWorld",
-  components: { Hero, TeamIcon },
+  components: { Hero, TeamIcon, HeroClassIcon },
   data: () => ({
     sets: setsArray,
-    teams: teams,
+    teams,
+    heroClasses,
     filter: {
       set: [],
-      team: []
+      team: [],
+      hc: []
     },
     heroes: []
   }),
@@ -119,6 +151,9 @@ export default {
 
     this.filter.team = this.toIntegerArray(this.$route.query.team);
     this.filter.team = this.filter.team.filter(team => teamArray[team]);
+
+    this.filter.hc = this.toIntegerArray(this.$route.query.hc);
+    this.filter.hc = this.filter.hc.filter(hc => heroClassArray[hc]);
 
     this.search();
   },
@@ -148,6 +183,10 @@ export default {
       this.filter.team = this.filter.team.filter(team => team !== id);
       this.filterChanged();
     },
+    removeHC(id) {
+      this.filter.hc = this.filter.hc.filter(hc => hc !== id);
+      this.filterChanged();
+    },
     filterChanged() {
       this.$vuetify.goTo(0, { duration: 0 });
 
@@ -159,6 +198,9 @@ export default {
       if(this.filter.team.length) {
         query.team = this.filter.team.join(",");
       }
+      if(this.filter.hc.length) {
+        query.hc = this.filter.hc.join(",");
+      }
       this.$router.replace({
         path: this.$route.path,
         query
@@ -166,18 +208,59 @@ export default {
     },
     search() {
       this.heroes = allHeroes;
+      this.heroes.forEach(hero => {
+        hero.filteredCards = (hero.cards || []).map(card => {
+          card.disabled = false;
+          return card;
+        });
+      });
+
       if(this.filter.set.length) {
         const set = this.filter.set;
         this.heroes = this.heroes.filter(hero => set.indexOf(hero.set) >= 0);
       }
+
       if(this.filter.team.length) {
         const team = this.filter.team;
         this.heroes = this.heroes.filter(hero => {
-          if(team.indexOf(hero.team) >= 0) return true;
-          if(!hero.cards) return false;
-          return hero.cards.some(card => team.indexOf(card.team) >= 0);
+          let match = team.indexOf(hero.team) >= 0;
+          if(!hero.filteredCards) return match;
+          hero.filteredCards.forEach(card => {
+            if(card.team === undefined) card.team = hero.team;
+            const matchTeam = team.indexOf(card.team) >= 0;
+            if(matchTeam) match = true;
+            card.disabled = !matchTeam;
+          });
+          return match;
         });
       }
+
+      if(this.filter.hc.length) {
+        const hc = this.filter.hc;
+        this.heroes = this.heroes.filter(hero => {
+          let match = false;
+          hero.filteredCards.forEach(card => {
+            let matchHC = hc.indexOf(card.hc) >= 0 || hc.indexOf(card.hc2) >= 0;
+            if(matchHC) match = true;
+            card.disabled = !matchHC;
+          });
+          return match;
+        });
+      }
+
+      this.heroes.forEach(hero => {
+        hero.filteredCards.sort((a,b) => {
+          if(a.disabled && !b.disabled) return 1;
+          if(!a.disabled && b.disabled) return -1;
+          if(a.rarity > b.rarity) return 1;
+          if(a.rarity < b.rarity) return -1;
+          if(a.cost > b.cost) return 1;
+          if(a.cost < b.cost) return -1;
+          if(a.divided > b.divided) return 1;
+          if(a.divided < b.divided) return -1;
+          return 0;
+        });
+      });
     }
   }
 };

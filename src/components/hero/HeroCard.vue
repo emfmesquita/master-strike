@@ -110,7 +110,8 @@ export default {
     classes() {
       return {
         "hero-divided-left": this.card.divided === 1,
-        "hero-divided-right": this.card.divided === 2
+        "hero-divided-right": this.card.divided === 2,
+        "disabled": this.card.disabled
       }
     },
     smallName() {
@@ -129,6 +130,10 @@ export default {
   padding: 6px;
   color: #000;
   border: solid 1px rgba(#000, .2);
+
+  &.disabled {
+    filter: blur(0px) grayscale(60%) opacity(0.4);
+  }
 
   &.hero-divided-left {
     border-right-width: 0px;

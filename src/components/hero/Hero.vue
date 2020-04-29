@@ -65,12 +65,13 @@ export default {
       return 4;
     },
     pages() {
-      const numberOfPages = Math.ceil(this.hero.cards.length / this.numberOfColumns);
+      const cards = this.hero.filteredCards;
+      const numberOfPages = Math.ceil(cards.length / this.numberOfColumns);
       const pages = [];
       for (let pageNumber = 0; pageNumber < numberOfPages; pageNumber++) {
         const page = [];
         for (let column = 0; column < this.numberOfColumns; column++) {
-          const card = this.hero.cards[pageNumber * this.numberOfColumns + column];
+          const card = cards[pageNumber * this.numberOfColumns + column];
           if(card) page.push(card);
         }
         pages.push(page);

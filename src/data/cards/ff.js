@@ -13,8 +13,7 @@ export default {
             recruit: "2",
             abilities: [
               [
-                { keyword: 4 },
-                { bold: " 2" },
+                { keyword: 4, text: "Focus 2" },
                 { icon: 2 },
                 { icon: 5 },
                 "Draw a card."
@@ -29,8 +28,7 @@ export default {
             recruit: "2",
             abilities: [
               [
-                { keyword: 4 },
-                { bold: " 6" },
+                { keyword: 4, text: "Focus 6" },
                 { icon: 2 },
                 { icon: 5 },
                 " Defeat a Villain of ",
@@ -52,8 +50,7 @@ export default {
             recruit: "3",
             abilities: [
               [
-                { keyword: 4 },
-                { bold: " 9" },
+                { keyword: 4, text: "Focus 9" },
                 { icon: 2 },
                 { icon: 5 },
                 " You get ",
@@ -122,8 +119,7 @@ export default {
             attack: "4+",
             abilities: [
               [
-                { keyword: 4 },
-                { bold: " 6" },
+                { keyword: 4, text: "Focus 6" },
                 { icon: 2 },
                 { icon: 5 },
                 " You get ",
@@ -171,10 +167,7 @@ export default {
             abilities: [
               [
                 {
-                  keyword: 4
-                },
-                {
-                  bold: " 2 "
+                  keyword: 4, text: "Focus 2"
                 },
                 {
                   icon: 2
@@ -217,8 +210,7 @@ export default {
             attack: "2",
             abilities: [
               [
-                { keyword: 4 },
-                { bold: " 2" },
+                { keyword: 4, text: "Focus 2" },
                 { icon: 2 },
                 { icon: 5 },
                 " Rescue a Bystander. You may only use this ability up to four times this turn.",
@@ -253,10 +245,7 @@ export default {
             abilities: [
               [
                 {
-                  keyword: 4
-                },
-                {
-                  bold: " 2 "
+                  keyword: 4, text: "Focus 2"
                 },
                 {
                   icon: 2
@@ -311,10 +300,7 @@ export default {
               ],
               [
                 {
-                  keyword: 4
-                },
-                {
-                  bold: " 1 "
+                  keyword: 4, text: "Focus 1"
                 },
                 {
                   icon: 2
@@ -371,10 +357,7 @@ export default {
             abilities: [
               [
                 {
-                  keyword: 4
-                },
-                {
-                  bold: " 3 "
+                  keyword: 4, text: "Focus 3"
                 },
                 {
                   icon: 2
@@ -403,10 +386,7 @@ export default {
               "Whenever you defeat a Villain in the Bank this turn, rescue a Bystander.",
               [
                 {
-                  keyword: 4
-                },
-                {
-                  bold: " 1 "
+                  keyword: 4, text: "Focus 1"
                 },
                 {
                   icon: 2
