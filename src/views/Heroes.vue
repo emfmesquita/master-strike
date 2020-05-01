@@ -143,6 +143,7 @@ export default {
       team: [],
       hc: []
     },
+    lastFilterTime: 0,
     heroes: []
   }),
   created() {
@@ -173,7 +174,7 @@ export default {
       return tokens.map(token => this.toInteger(token)).filter(token => token >= 0);
     },
     heroKey(hero) {
-      return hero.team + hero.name;
+      return `${this.lastFilterTime}-${hero.team}-${hero.name}`;
     },
     removeSet(id) {
       this.filter.set = this.filter.set.filter(set => set !== id);
@@ -249,6 +250,14 @@ export default {
       }
 
       this.heroes.forEach(hero => {
+        // make sure divided cards disabled status is consistent
+        hero.filteredCards.forEach((card, idx) => {
+          if(card.divided !== 1) return;
+          const pair = hero.filteredCards[idx + 1];
+          if(card.disabled && !pair.disabled) card.disabled = false;
+          else if (!card.disabled && pair.disabled) pair.disabled = false;
+        });
+
         hero.filteredCards.sort((a,b) => {
           if(a.disabled && !b.disabled) return 1;
           if(!a.disabled && b.disabled) return -1;
@@ -261,6 +270,8 @@ export default {
           return 0;
         });
       });
+
+      this.lastFilterTime = Date.now();
     }
   }
 };
