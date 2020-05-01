@@ -339,9 +339,10 @@ export default {
             attack: "3+",
             abilities: [
               [
-                "If you played at least 7 other cards this turn you get +2 Attack.",
+                "If you played at least 7 other cards this turn you get ",
                 { bold: "+2"},
-                { icon: 1}
+                { icon: 1},
+                "."
               ]
             ]
           },
