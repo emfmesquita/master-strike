@@ -246,11 +246,6 @@ export default {
     }
   }
 
-  .absolute-icon {
-    position: absolute;
-    user-select: none;
-  }
-
   .card-header {
     line-height: 24px;
     padding: 0px 24px;

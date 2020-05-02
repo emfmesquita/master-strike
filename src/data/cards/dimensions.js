@@ -23,7 +23,7 @@ export default {
           name: "Nut Punch",
           hc: 2,
           rarity: 1,
-          cost: 2,
+          cost: 3,
           attack: "1+",
           abilities: [
             { keyword: 56, text: "Switcheroo 4" },

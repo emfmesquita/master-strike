@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-navigation-drawer app clipped>
-      <v-container>
+      <v-container class="card-filter">
         <v-row align="center">
           <v-col cols="12">
             <v-autocomplete
@@ -97,6 +97,29 @@
             </v-autocomplete>
           </v-col>
         </v-row>
+        <v-row align="center">
+          <v-col cols="12">
+            <v-range-slider
+              v-model="filter.cost"
+              :max="9"
+              :min="0"
+              ticks="always"
+              tick-size="4"
+              thumb-label="always"
+              thumb-size="0"
+              class="align-center"
+              @change="filterChanged"
+            >
+              <template v-slot:thumb-label="{ value }">
+                <AbilityIcon class="thumb absolute-icon" noAdjust :icon="3" width="32px"/>
+                <span 
+                  class="thumb card-cost icon-text text-center font-weight-black">
+                  {{ value }}
+                </span>
+              </template>
+            </v-range-slider>
+          </v-col>
+        </v-row>
       </v-container>
     </v-navigation-drawer>
 
@@ -133,6 +156,7 @@ import { heroClassArray } from "../constants/hero-class";
 import { keywordsArray } from "../constants/keywords";
 import TeamIcon from "../components/shared/TeamIcon.vue";
 import HeroClassIcon from "../components/shared/HeroClassIcon.vue";
+import AbilityIcon from "../components/shared/AbilityIcon.vue";
 
 let allHeroes = [];
 Object.values(cards).forEach(setCards => {
@@ -158,7 +182,7 @@ keywords = Object.freeze(keywords);
 
 export default {
   name: "HelloWorld",
-  components: { Hero, TeamIcon, HeroClassIcon },
+  components: { Hero, TeamIcon, HeroClassIcon, AbilityIcon },
   data: () => ({
     sets: setsArray,
     teams,
@@ -168,29 +192,33 @@ export default {
       set: [],
       team: [],
       hc: [],
-      keyword: []
+      keyword: [],
+      cost: [0,9]
     },
     lastFilterTime: 0,
     heroes: []
   }),
   created() {
-    this.filter.set = this.toIntegerArray(this.$route.query.set);
-    this.filter.set = this.filter.set.filter(set => setsArray[set]);
+    const query = this.$route.query;
+    this.filter.set = this.toIntArray(query.set).filter(set => setsArray[set]);
+    this.filter.team = this.toIntArray(query.team).filter(team => teamArray[team]);
+    this.filter.hc = this.toIntArray(query.hc).filter(hc => heroClassArray[hc]);
+    this.filter.keyword = this.toIntArray(query.keyword).filter(keyword => keywordsArray[keyword]);
 
-    this.filter.team = this.toIntegerArray(this.$route.query.team);
-    this.filter.team = this.filter.team.filter(team => teamArray[team]);
-
-    this.filter.hc = this.toIntegerArray(this.$route.query.hc);
-    this.filter.hc = this.filter.hc.filter(hc => heroClassArray[hc]);
-
-    this.filter.keyword = this.toIntegerArray(this.$route.query.keyword);
-    this.filter.keyword = this.filter.keyword.filter(keyword => keywordsArray[keyword]);
+    const safeCost = cost => cost < 0 ? 0 : (cost > 9 ? 9 : cost);
+    const costs = this.toIntArray(query.cost);
+    const costMin = costs.length < 1 ? 0 : safeCost(costs[0]);
+    const costMax = costs.length < 2 ? 9 : safeCost(costs[1]);
+    this.filter.cost = [costMin, costMax];
 
     this.search();
   },
   computed: {
     heroFound() {
       return this.heroes.length === 1 ? "Hero was found" : "Heroes were found";
+    },
+    hasCostFilter() {
+      return this.filter.cost[0] !== 0 || this.filter.cost[1] !== 9;
     }
   },
   methods: {
@@ -198,7 +226,7 @@ export default {
       const interger = Number.parseInt(value);
       return Number.isNaN(interger) ? -1 : interger;
     },
-    toIntegerArray(value) {
+    toIntArray(value) {
       if(!value) return [];
       const tokens = value.split(",");
       return tokens.map(token => this.toInteger(token)).filter(token => token >= 0);
@@ -215,18 +243,13 @@ export default {
 
       this.search();
       const query = {};
-      if(this.filter.set.length) {
-        query.set = this.filter.set.join(",");
-      }
-      if(this.filter.team.length) {
-        query.team = this.filter.team.join(",");
-      }
-      if(this.filter.hc.length) {
-        query.hc = this.filter.hc.join(",");
-      }
-      if(this.filter.keyword.length) {
-        query.keyword = this.filter.keyword.join(",");
-      }
+      const filter = this.filter;
+      if(filter.set.length) query.set = filter.set.join(",");
+      if(filter.team.length) query.team = filter.team.join(",");
+      if(filter.hc.length) query.hc = filter.hc.join(",");
+      if(filter.keyword.length) query.keyword = filter.keyword.join(",");
+      if(this.hasCostFilter) query.cost = filter.cost.join(",");
+      
       this.$router.replace({
         path: this.$route.path,
         query
@@ -291,6 +314,21 @@ export default {
         });
       }
 
+      if(this.hasCostFilter) {
+        const minCost = this.filter.cost[0];
+        const maxCost = this.filter.cost[1];
+        this.heroes = this.heroes.filter(hero => {
+          let match = false;
+          hero.filteredCards.forEach(card => {
+            if(card.disabled) return;
+            const matchCost = card.cost >= minCost && card.cost <= maxCost;
+            if(matchCost) match = true;
+            card.disabled = !matchCost;
+          });
+          return match;
+        });
+      }
+
       this.heroes.forEach(hero => {
         // make sure divided cards disabled status is consistent
         hero.filteredCards.forEach((card, idx) => {
@@ -327,6 +365,29 @@ export default {
       overflow: hidden;
       display: inline-block !important;
       line-height: 32px;
+    }
+  }
+
+  .absolute-icon {
+    position: absolute;
+    user-select: none;
+  }
+
+  .card-filter {
+    .thumb {
+      top: -32px;
+      left: -16px;
+    }
+    .icon-text {
+      position: absolute;
+      width: 32px;
+      font-size: 16px;
+      -webkit-text-fill-color: #fff;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #000;
+      line-height: 32px;
+      user-select: none;
+      pointer-events: none;
     }
   }
 </style>
