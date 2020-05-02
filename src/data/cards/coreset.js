@@ -823,7 +823,7 @@ export default {
           name: "Great Responsibility",
           hc: 2,
           rarity: 1,
-          cost: 3,
+          cost: 2,
           attack: "1",
           abilities: [
             [
