@@ -939,7 +939,7 @@ export default {
           cost: 4,
           piercing: "2",
           abilities: [
-            { keyword: 37},
+            { keyword: 35 },
             [
               { hc: 3 },
               ": Draw a card."
