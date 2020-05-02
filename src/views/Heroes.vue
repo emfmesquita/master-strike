@@ -18,7 +18,7 @@
                 <v-tooltip top>
                   <template v-slot:activator="{ on }" dense>
                     <span v-on="on">
-                      <v-chip class="ma-1" style="cursor: pointer" @click.stop="removeSet(item.id)">
+                      <v-chip class="ma-1" style="cursor: pointer" @click.stop="remove(item.id, 'set')">
                         {{item.initials}}
                       </v-chip>
                     </span>
@@ -42,7 +42,7 @@
               @change="filterChanged"
             >
               <template v-slot:selection="{ item }">
-                <span style="cursor: pointer" @click.stop="removeTeam(item.id)">
+                <span style="cursor: pointer" @click.stop="remove(item.id, 'team')">
                   <TeamIcon :icon="item.id" width="40px"/>
                 </span>
               </template>
@@ -66,13 +66,33 @@
               @change="filterChanged"
             >
               <template v-slot:selection="{ item }">
-                <span style="cursor: pointer" @click.stop="removeHC(item.id)">
+                <span style="cursor: pointer" @click.stop="remove(item.id, 'hc')">
                   <HeroClassIcon :icon="item.id" width="32px"/>
                 </span>
               </template>
               <template v-slot:item="{ item }">
                 <HeroClassIcon :icon="item.id" width="32px" />
                 {{ item.label }}
+              </template>
+            </v-autocomplete>
+          </v-col>
+        </v-row>
+        <v-row align="center">
+          <v-col cols="12">
+            <v-autocomplete
+              v-model="filter.keyword"
+              :items="keywords"
+              multiple
+              clearable
+              item-text="label"
+              item-value="id"
+              label="Keyword"
+              @change="filterChanged"
+            >
+              <template v-slot:selection="{ item }">
+                <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'keyword')">
+                  {{item.label}}
+                </v-chip>
               </template>
             </v-autocomplete>
           </v-col>
@@ -110,6 +130,7 @@ import { cards } from "../data";
 import { setsArray } from "../constants/sets";
 import { teamArray } from "../constants/team";
 import { heroClassArray } from "../constants/hero-class";
+import { keywordsArray } from "../constants/keywords";
 import TeamIcon from "../components/shared/TeamIcon.vue";
 import HeroClassIcon from "../components/shared/HeroClassIcon.vue";
 
@@ -131,6 +152,10 @@ let heroClasses = heroClassArray.concat([]);
 heroClasses.shift();
 heroClasses = Object.freeze(heroClasses);
 
+let keywords = keywordsArray.concat([]);
+keywords.sort((a, b) => a.label.localeCompare(b.label));
+keywords = Object.freeze(keywords);
+
 export default {
   name: "HelloWorld",
   components: { Hero, TeamIcon, HeroClassIcon },
@@ -138,10 +163,12 @@ export default {
     sets: setsArray,
     teams,
     heroClasses,
+    keywords,
     filter: {
       set: [],
       team: [],
-      hc: []
+      hc: [],
+      keyword: []
     },
     lastFilterTime: 0,
     heroes: []
@@ -155,6 +182,9 @@ export default {
 
     this.filter.hc = this.toIntegerArray(this.$route.query.hc);
     this.filter.hc = this.filter.hc.filter(hc => heroClassArray[hc]);
+
+    this.filter.keyword = this.toIntegerArray(this.$route.query.keyword);
+    this.filter.keyword = this.filter.keyword.filter(keyword => keywordsArray[keyword]);
 
     this.search();
   },
@@ -176,16 +206,8 @@ export default {
     heroKey(hero) {
       return `${this.lastFilterTime}-${hero.team}-${hero.name}`;
     },
-    removeSet(id) {
-      this.filter.set = this.filter.set.filter(set => set !== id);
-      this.filterChanged();
-    },
-    removeTeam(id) {
-      this.filter.team = this.filter.team.filter(team => team !== id);
-      this.filterChanged();
-    },
-    removeHC(id) {
-      this.filter.hc = this.filter.hc.filter(hc => hc !== id);
+    remove(id, filterName) {
+      this.filter[filterName] = this.filter[filterName].filter(item => item !== id);
       this.filterChanged();
     },
     filterChanged() {
@@ -201,6 +223,9 @@ export default {
       }
       if(this.filter.hc.length) {
         query.hc = this.filter.hc.join(",");
+      }
+      if(this.filter.keyword.length) {
+        query.keyword = this.filter.keyword.join(",");
       }
       this.$router.replace({
         path: this.$route.path,
@@ -241,9 +266,26 @@ export default {
         this.heroes = this.heroes.filter(hero => {
           let match = false;
           hero.filteredCards.forEach(card => {
-            let matchHC = hc.indexOf(card.hc) >= 0 || hc.indexOf(card.hc2) >= 0;
+            if(card.disabled) return;
+            const matchHC = hc.indexOf(card.hc) >= 0 || hc.indexOf(card.hc2) >= 0;
             if(matchHC) match = true;
             card.disabled = !matchHC;
+          });
+          return match;
+        });
+      }
+
+      if(this.filter.keyword.length) {
+        const keyword = this.filter.keyword;
+        this.heroes = this.heroes.filter(hero => {
+          let match = false;
+          hero.filteredCards.forEach(card => {
+            if(card.disabled || !card.abilities) return;
+            const abs = card.abilities;
+            const hasKey = ab => keyword.indexOf(ab.keyword) >= 0;
+            const matchKey = abs.some(ab => Array.isArray(ab) ? ab.some(hasKey) : hasKey(ab));
+            if(matchKey) match = true;
+            card.disabled = !matchKey;
           });
           return match;
         });
@@ -276,3 +318,15 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+  .chip-ellipsis {
+    cursor: pointer;
+    .v-chip__content {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: inline-block !important;
+      line-height: 32px;
+    }
+  }
+</style>
