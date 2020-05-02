@@ -1424,7 +1424,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 45
+                keyword: 46
               },
               ": Draw a card."
             ]
