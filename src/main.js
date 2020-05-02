@@ -2,7 +2,7 @@ import App from "./App.vue";
 import BulletPointDescription from "./components/shared/BulletPointDescription.vue";
 import DescriptionComponent from "./components/shared/DescriptionComponent.vue";
 import DescriptionGroup from "./components/shared/DescriptionGroup.vue";
-import Keyword from "./components/shared/Keyword.vue";
+import Rule from "./components/shared/Rule.vue";
 import Vue from "vue";
 import router from "./router";
 import store from "./store";
@@ -14,7 +14,7 @@ Vue.config.productionTip = false;
 Vue.component('shared-description-component', DescriptionComponent);
 Vue.component('shared-description-group', DescriptionGroup);
 Vue.component('shared-bullet-point-description', BulletPointDescription);
-Vue.component('shared-keyword', Keyword);
+Vue.component('shared-rule', Rule);
 
 new Vue({
   router,

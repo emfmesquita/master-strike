@@ -8,3 +8,4 @@ const baseExport = files => {
 
 export const cards = baseExport(require.context('./cards', false, /\.js$/));
 export const keywords = baseExport(require.context('./keywords', false, /\.js$/));
+export const rules = baseExport(require.context('./rules', false, /\.js$/));

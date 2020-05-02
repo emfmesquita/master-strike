@@ -2,7 +2,7 @@ export default {
   heroes: [
     {
       name: "Deadpool",
-      set: 13,
+      set: 14,
       team: 17,
       cards: [
         {
@@ -66,7 +66,7 @@ export default {
           attack: "5",
           abilities: [
             [
-              { keyword: 34 },
+              { keyword: 30 },
               ": Take another turn after this one. But don't use this ability more than once per game — trilogies are stupid."
             ]
           ]

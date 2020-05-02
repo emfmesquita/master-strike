@@ -315,7 +315,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 51
+                keyword: 1
               }
             ],
             [

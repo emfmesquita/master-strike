@@ -38,7 +38,7 @@ export default {
           rarity: 2,
           cost: 5,
           abilities: [
-            { keyword: 15 },
+            { keyword: 14 },
             [
               "When you throw this, you get ",
               { bold: "+2 "},
@@ -54,7 +54,7 @@ export default {
           rarity: 3,
           cost: 7,
           abilities: [
-            { keyword: 15 },
+            { keyword: 14 },
             [
               "When you throw this, you get ",
               { bold: "+1 "},

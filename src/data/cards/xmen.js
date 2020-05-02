@@ -13,9 +13,9 @@ export default {
           piercing: "0+",
           abilities: [
             "Draw a card.",
-            { keyword: 39 },
+            { keyword: 35 },
             [
-              { keyword: 38 },
+              { keyword: 34 },
               { hc: 1 },
               ": You get ",
               { bold: "+1"},
@@ -31,8 +31,8 @@ export default {
           cost: 3,
           piercing: "2",
           abilities: [
-            { keyword: 41 },
-            { keyword: 39 }
+            { keyword: 37 },
+            { keyword: 35 }
           ]
         },
         {
@@ -43,7 +43,7 @@ export default {
           recruit: "3",
           piercing: "0+",
           abilities: [
-            { keyword: 39 },
+            { keyword: 35 },
             [
               { hc: 3 },
               ": You may have this card produce ",
@@ -61,7 +61,7 @@ export default {
           cost: 8,
           piercing: "4",
           abilities: [
-            { keyword: 39 },
+            { keyword: 35 },
             [
               { hc: 3 },
               { hc: 1 },
@@ -87,9 +87,9 @@ export default {
           cost: 3,
           attack: "2",
           abilities: [
-            { keyword: 41 },
+            { keyword: 37 },
             [
-              { keyword: 42 },
+              { keyword: 38 },
               ": Draw a card."
             ]
           ]
@@ -104,7 +104,7 @@ export default {
           recruit: "2+",
           abilities: [
             [
-                { keyword: 42 },
+                { keyword: 38 },
                 ": You get ",
                 { bold: "+2"},
                 { icon: 2 },
@@ -121,7 +121,7 @@ export default {
           cost: 4,
           attack: "2+",
           abilities: [
-            { keyword: 40 }
+            { keyword: 36 }
           ]
         },
         {
@@ -131,9 +131,9 @@ export default {
           cost: 5,
           attack: "2+",
           abilities: [
-            { keyword: 41 },
+            { keyword: 37 },
             [
-              { keyword: 42 },
+              { keyword: 38 },
               ": You get ",
               { bold: "+3"},
               { icon: 1 },
@@ -149,19 +149,19 @@ export default {
           recruit: "4",
           attack: "0+",
           abilities: [
-            { keyword: 41 },
+            { keyword: 37 },
             [
               "All Heroes you recruit this turn have ",
-              { keyword: 41 },
+              { keyword: 37 },
               "."
             ],
             [
-              { keyword: 42 },
+              { keyword: 38 },
               ": You get ",
               { bold: "+2"},
               { icon: 1 },
               "for each ",
-              { keyword: 42 },
+              { keyword: 38 },
               " card you played this turn."
             ]
           ]
@@ -181,7 +181,7 @@ export default {
           attack: "1",
           abilities: [
             [
-              { keyword: 38 },
+              { keyword: 34 },
               { hc: 5 },
               ": Draw a card."
             ]
@@ -194,12 +194,12 @@ export default {
           cost: 4,
           attack: "2+",
           abilities: [
-            { keyword: 40 },
+            { keyword: 36 },
             [
-              { keyword: 38 },
+              { keyword: 34 },
               { hc: 4 },
               ": ",
-              { keyword: 40 }
+              { keyword: 36 }
 
             ]
          ]
@@ -213,7 +213,7 @@ export default {
           abilities: [
             "Look at the top card of your deck. Discard it or put it back.",
             [
-              { keyword: 40 }
+              { keyword: 36 }
             ]
           ]
         },
@@ -224,9 +224,9 @@ export default {
           cost: 8,
           attack: "3+",
           abilities: [
-            { keyword: 40 },
+            { keyword: 36 },
             [
-              { keyword: 38 },
+              { keyword: 34 },
               { team: 4 },
               ": You may return a 0-cost, 3-cost, and 4-cost card from your discard pile to your hand."
             ]
@@ -246,7 +246,7 @@ export default {
           cost: 3,
           attack: "1+",
           abilities: [
-            { keyword: 41 },
+            { keyword: 37 },
             [
               { hc: 2 },
               ": You get ",
@@ -262,11 +262,11 @@ export default {
           cost: 4,
           recruit: "2",
           abilities: [
-            { keyword: 41 },
+            { keyword: 37 },
             [
               { hc: 4 },
               ": The next Hero you recruit this turn has ",
-              { keyword: 41 }
+              { keyword: 37 }
 
             ]
          ]
@@ -278,7 +278,7 @@ export default {
           cost: 6,
           attack: "3",
           abilities: [
-            { keyword: 41},
+            { keyword: 37},
             [
               { hc: 4 },
               ": Return a ",
@@ -294,7 +294,7 @@ export default {
           cost: 8,
           attack: "4+",
           abilities: [
-            { keyword: 41 },
+            { keyword: 37 },
             [
               "If you played at least 6 other cards this turn, you get ",
               { bold: "+2"},
@@ -330,9 +330,9 @@ export default {
           attack: "1+",
           abilities: [
             [
-              { keyword: 40 },
+              { keyword: 36 },
               ", ",
-              { keyword: 40 }
+              { keyword: 36 }
             ]
           ]
         },
@@ -343,12 +343,12 @@ export default {
           cost: 4,
           attack: "2+",
           abilities: [
-            { keyword: 41 },
+            { keyword: 37 },
             [
-              { keyword: 38 },
+              { keyword: 34 },
               { hc: 2 },
               ": ",
-              { keyword: 40 }
+              { keyword: 36 }
             ]
           ]
         },
@@ -359,7 +359,7 @@ export default {
           cost: 6,
           attack: "4+",
           abilities: [
-            { keyword: 40 },
+            { keyword: 36 },
             [
               "If you have a Wound in your hand or discard pile, KO it. Otherwise, gain a Wound."
             ]
@@ -373,11 +373,11 @@ export default {
           attack: "3+",
           abilities: [
             [
-              { keyword: 40 },
+              { keyword: 36 },
               ", ",
-              { keyword: 40 },
+              { keyword: 36 },
               ", ",
-              { keyword: 40 }
+              { keyword: 36 }
             ],
             [
               "Then, draw a card for each",
@@ -401,9 +401,9 @@ export default {
           recruit: "1",
           piercing: "0+",
           abilities: [
-            { keyword: 39 },
+            { keyword: 35 },
             [
-              { keyword: 42},
+              { keyword: 38},
               ": You get ",
               { bold: "+1"},
               { icon: 6},
@@ -418,7 +418,7 @@ export default {
           cost: 4,
           attack: "2+",
           abilities: [
-            { keyword: 42 },
+            { keyword: 38 },
             [
               ": You get ",
               { bold: "+2"},
@@ -434,7 +434,7 @@ export default {
           attack: "3",
           abilities: [
             [
-              { keyword: 42},
+              { keyword: 38},
               ": When you draw a new hand of cards at the end of this turn, draw two extra cards."
             ]
           ]
@@ -447,7 +447,7 @@ export default {
           attack: "5",
           abilities: [
             [
-              { keyword: 42 },
+              { keyword: 38 },
               ": Put a Hero from the HQ on top of your deck."
             ]
           ]
@@ -467,7 +467,7 @@ export default {
           recruit: "2",
           abilities: [
             [
-              { keyword: 42},
+              { keyword: 38},
               ": You get ",
               { bold: "+3"},
               { icon: 1},
@@ -484,9 +484,9 @@ export default {
           abilities: [
             "To play this card, you must discard a card from your hand.",
             [
-              { keyword: 40},
+              { keyword: 36},
               ", ",
-              { keyword: 40}
+              { keyword: 36}
             ]
          ]
         },
@@ -498,7 +498,7 @@ export default {
           attack: "2+",
           abilities: [
             [
-              { keyword: 38},
+              { keyword: 34},
               { hc: 3 },
               ": You get ",
               { bold: "+1"},
@@ -516,9 +516,9 @@ export default {
           cost: 7,
           attack: "3+",
           abilities: [
-            { keyword: 40},
+            { keyword: 36},
             [
-              { keyword: 38 },
+              { keyword: 34 },
               { hc: 3 },
               ": You get the total printed",
               { icon: 1},
@@ -544,7 +544,7 @@ export default {
           abilities: [
             "Draw a card.",
             [
-              { keyword: 42},
+              { keyword: 38},
               ": You get ",
               { bold: "+1"},
               { icon: 2},
@@ -561,7 +561,7 @@ export default {
           abilities: [
             "Draw a card.",
             [
-              { keyword: 42},
+              { keyword: 38},
               ": You get ",
               { bold: "+1"},
               { icon: 1},
@@ -577,7 +577,7 @@ export default {
           attack: "3",
           abilities: [
             [
-              { keyword: 42},
+              { keyword: 38},
               ": Look at the top card of your deck. If it costs 0, KO it."
             ]
           ]
@@ -591,7 +591,7 @@ export default {
           recruit: "0+",
           abilities: [
             [
-              { keyword: 42 },
+              { keyword: 38 },
               ": You get ",
               { bold: "+1"},
               { icon: 2},
@@ -599,7 +599,7 @@ export default {
               { bold: "+1"},
               { icon: 1},
               "for each ",
-              { keyword: 42 },
+              { keyword: 38 },
               " card you played this turn."
             ]
           ]
@@ -643,7 +643,7 @@ export default {
           recruit: "1",
           abilities: [
             [
-              { keyword: 38},
+              { keyword: 34},
               { team: 4},
               ": Draw a card."
             ]
@@ -671,7 +671,7 @@ export default {
           cost: 8,
           attack: "0+",
           abilities: [
-            { keyword: 41 },
+            { keyword: 37 },
             [
              "Put a card from the HQ on the bottom of the Hero Deck. You get ",
              {  bold: "+"},
@@ -695,7 +695,7 @@ export default {
           cost: 2,
           attack: "1+",
           abilities: [
-            {keyword: 40}
+            {keyword: 36}
           ]
         },
         {
@@ -707,7 +707,7 @@ export default {
           recruit: "1+",
           abilities: [
             [
-              { keyword: 40 },
+              { keyword: 36 },
               ": You get ",
               { bold: "+2" },
               { icon: 2 }
@@ -733,7 +733,7 @@ export default {
           piercing: "2",
           abilities: [
             [
-              { keyword: 39 }
+              { keyword: 35 }
             ]
           ]
         },
@@ -770,7 +770,7 @@ export default {
           cost: 8,
           attack: "3+",
           abilities: [
-            { keyword: 41 },
+            { keyword: 37 },
             [
              "Reveal the top three cards of the Hero Deck. You get their total printed ",
              {  icon: 1},
@@ -804,11 +804,11 @@ export default {
           cost: 4,
           attack: "2+",
           abilities: [
-            {keyword: 40},
+            {keyword: 36},
             [
               { hc: 5},
               ": ",
-              { keyword: 40}
+              { keyword: 36}
             ]
          ]
         },
@@ -870,8 +870,8 @@ export default {
           cost: 4,
           piercing: "4",
           abilities: [
-            { keyword: 41},
-            { keyword: 39},
+            { keyword: 37},
+            { keyword: 35},
             "KO this card."
          ]
         },
@@ -895,13 +895,13 @@ export default {
           attack: "6+",
           abilities: [
             [
-              { keyword:40 },
+              { keyword: 36 },
               ", ",
-              { keyword:40 },
+              { keyword: 36 },
               ", ",
-              { keyword:40 },
+              { keyword: 36 },
               ", ",
-              { keyword:40 },
+              { keyword: 36 },
             ],
             [
               "KO all the cards you Berserked. If this card makes at least ",
@@ -925,7 +925,7 @@ export default {
           cost: 3,
           recruit: "2",
           abilities: [
-            { keyword: 41},
+            { keyword: 37},
             [
               { hc: 1},
               ": When you draw a new hand of cards at the end of this turn, draw an extra card."
@@ -939,7 +939,7 @@ export default {
           cost: 4,
           piercing: "2",
           abilities: [
-            { keyword: 41},
+            { keyword: 37},
             [
               { hc: 3 },
               ": Draw a card."
@@ -953,7 +953,7 @@ export default {
           cost: 6,
           attack: "2",
           abilities: [
-            { keyword: 41 },
+            { keyword: 37 },
             [
               { hc: 1},
               ": Look at the top two cards of your deck. You may KO one of them. Put the rest back in any order."
@@ -967,9 +967,9 @@ export default {
           cost: 8,
           recruit: "4",
           abilities: [
-            { keyword: 41},
+            { keyword: 37},
             [
-              { keyword: 38},
+              { keyword: 34},
               { team: 4},
               ": You can use Recruit as Attack ",
               { icon: 2 },
@@ -995,7 +995,7 @@ export default {
           abilities: [
             "Draw a card.",
             [
-              { keyword: 39},
+              { keyword: 35},
             ],
             [
               {hc: 2},
@@ -1022,9 +1022,9 @@ export default {
           cost: 5,
           piercing: "2+",
           abilities: [
-            { keyword: 39 },
+            { keyword: 35 },
             [
-              { keyword: 38},
+              { keyword: 34},
               { hc: 1},
               ": You get ",
               { bold: "+1"},
@@ -1039,7 +1039,7 @@ export default {
           cost: 7,
           piercing: "3",
           abilities: [
-            { keyword: 39},
+            { keyword: 35},
             [
               "Reveal the top card of the Hero Deck. The player of your choice puts it in their hand."
             ]
@@ -1060,7 +1060,7 @@ export default {
           attack: "2",
           abilities: [
             [
-              { keyword: 38 },
+              { keyword: 34 },
               { hc: 2},
               ": Draw a card."
             ]
@@ -1074,7 +1074,7 @@ export default {
           cost: 4,
           attack: "2+",
           abilities: [
-            { keyword: 40},
+            { keyword: 36},
             "You may KO a Wound from your hand or discard pile."
          ]
         },
@@ -1085,9 +1085,9 @@ export default {
           cost: 6,
           attack: "2+",
           abilities: [
-            { keyword: 40 },
+            { keyword: 36 },
             [
-              { keyword: 38},
+              { keyword: 34},
               { hc: 2},
               ": You may KO a card from your hand or discard pile."
             ]
@@ -1101,17 +1101,17 @@ export default {
           attack: "3+",
           abilities: [
             [
-              {keyword:40},
+              {keyword: 36},
               ", ",
-              {keyword:40}
+              {keyword: 36}
             ],
             [
-              { keyword: 38},
+              { keyword: 34},
               { hc: 2},
               ": Count the",
               { hc: 2},
               " cards in your discard pile. ",
-              { keyword: 40},
+              { keyword: 36},
               " that many times."
             ]
           ]

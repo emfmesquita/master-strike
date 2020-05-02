@@ -6,7 +6,7 @@
       max-width="500px"
     >
       <template v-slot:activator="{ on }">
-        <span v-on="on" class="font-weight-bold keyword" :class="{ 'red-keyword': keyword.keyword === 49 }">
+        <span v-on="on" class="rule" :class="classes">
           <slot>{{ text }}</slot>
         </span>
       </template>
@@ -20,7 +20,7 @@
         </v-card-title>
 
         <v-card-text>
-          <div v-for="(rule, idx) in keywordRules" :key="idx">
+          <div v-for="(rule, idx) in rules" :key="idx">
             <shared-bullet-point-description v-if="typeof rule === 'object' && rule.points" :points="rule.points" />
             <shared-description-group v-else :description="rule" />
           </div>
@@ -47,22 +47,32 @@
 <script>
 import { keywordsArray } from "../../constants/keywords";
 import { keywords } from "../../data";
+import { rulesArray } from "../../constants/rules";
+import { rules } from "../../data";
 
-const obj = (keyword) => keywordsArray[keyword.keyword - 1];
+const obj = (rule) => rule.rule ? rulesArray[rule.rule - 1] : keywordsArray[rule.keyword - 1];
 
 export default {
-  name: "Keyword",
-  props: ["keyword"],
+  name: "Rule",
+  props: ["rule"],
   computed: {
     label() {
-      return obj(this.keyword).label;
+      return obj(this.rule).label;
     },
     text() {
-      return this.keyword.text || obj(this.keyword).label;
+      return this.rule.text || obj(this.rule).label;
     },
-    keywordRules() {
-      const keywordValue = obj(this.keyword).value;
-      return keywords[keywordValue] || [];
+    rules() {
+      const val = obj(this.rule).value;
+      const src = this.rule.rule ? rules : keywords;
+      return src[val] || [];
+    },
+    classes() {
+      return {
+        'red-keyword': this.rule.keyword === 43,
+        'font-weight-bold': !!this.rule.keyword,
+        'extra-rule': !!this.rule.rule
+      }
     }
   },
   data: () => ({
@@ -72,10 +82,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.keyword {
+.rule {
   cursor: pointer;
 }
 .red-keyword {
   color: #d00;
+}
+.extra-rule {
+  text-decoration: underline;
 }
 </style>

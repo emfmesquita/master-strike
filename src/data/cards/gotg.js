@@ -11,7 +11,7 @@ export default {
             rarity: 1,
             cost: 3,
             abilities: [
-              { keyword: 14, text: "Artifact -" },
+              { keyword: 13, text: "Artifact -" },
               [
                 "Once per turn, you get ",
                 { bold: "+1" },
@@ -119,7 +119,7 @@ export default {
             rarity: 3,
             cost: 8,
             abilities: [
-              { keyword: 14, text: "Artifact -" },
+              { keyword: 13, text: "Artifact -" },
               [
                 "Once per turn, gain two Shards. Once per turn, you may spend 5 Shards to get ",
                 { bold: "+10"},
@@ -225,7 +225,7 @@ export default {
             rarity: 2,
             cost: 4,
             abilities: [
-              { keyword: 14, text: "Artifact -" },
+              { keyword: 13, text: "Artifact -" },
               [
                 "Whenever a Master Strike or Villain's Ambush ability is completed, you may gain a Shard."
               ]
@@ -261,7 +261,7 @@ export default {
             cost: 4,
             recruit: "2",
             abilities: [
-              { keyword: 14, text: "Artifact -" },
+              { keyword: 13, text: "Artifact -" },
               [
                 "Once per turn, gain a Shard."
               ]
@@ -285,7 +285,7 @@ export default {
             rarity: 2,
             cost: 6,
             abilities: [
-              { keyword: 14, text: "Artifact -" },
+              { keyword: 13, text: "Artifact -" },
               [
                 "Once per turn, draw a card."
               ]
@@ -297,7 +297,7 @@ export default {
             rarity: 3,
             cost: 8,
             abilities: [
-              { keyword: 14, text: "Artifact -" },
+              { keyword: 13, text: "Artifact -" },
               [
                 "Once per turn, gain a Shard for each Artifact you control."
               ]

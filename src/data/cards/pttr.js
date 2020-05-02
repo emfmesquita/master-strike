@@ -2,7 +2,7 @@ export default {
   heroes: [
     {
       name: "Black Cat",
-      set: 6,
+      set: 5,
       team: 3,
       cards: [
         {
@@ -12,7 +12,7 @@ export default {
           cost: 4,
           recruit: "2+",
           abilities: [
-            { keyword: 8 },
+            { keyword: 7 },
             [
               "You get another ",
               { bold: "+1" },
@@ -28,7 +28,7 @@ export default {
           cost: 1,
           attack: "0+",
           abilities: [
-            { keyword: 8 },
+            { keyword: 7 },
             [
               "Reveal the top card of any player's deck. You get ",
               { bold: "+" },
@@ -76,7 +76,7 @@ export default {
     },
     {
       name: "Moon Knight",
-      set: 6,
+      set: 5,
       team: 6,
       cards: [
         {
@@ -86,7 +86,7 @@ export default {
           cost: 3,
           recruit: "2+",
           abilities: [
-            { keyword: 8 },
+            { keyword: 7 },
             [
               { hc: 2},
               ": You get ",
@@ -102,7 +102,7 @@ export default {
           cost: 3,
           attack: "2",
           abilities: [
-            { keyword: 8 },
+            { keyword: 7 },
             [
               "Whenever you defeat a Villain on the Rooftops this turn, you may KO one of your cards or a card from your discard pile."
             ]
@@ -146,7 +146,7 @@ export default {
     },
     {
       name: "Scarlet Spider",
-      set: 6,
+      set: 5,
       team: 3,
       cards: [
         {
@@ -156,7 +156,7 @@ export default {
           cost: 2,
           recruit: "1",
           abilities: [
-            { keyword: 8 },
+            { keyword: 7 },
             [
               { team: 3},
               ": Draw a card.",
@@ -170,7 +170,7 @@ export default {
           cost: 4,
           attack: "1",
           abilities: [
-            { keyword: 8 },
+            { keyword: 7 },
             [
               "Draw a card."
             ]
@@ -183,7 +183,7 @@ export default {
           cost: 6,
           attack: "3+",
           abilities: [
-            {keyword: 8},
+            {keyword: 7},
             [
             { hc: 2},
             ": You get ",
@@ -208,7 +208,7 @@ export default {
     },
     {
       name: "Spider-Woman",
-      set: 6,
+      set: 5,
       team: 3,
       cards: [
         {
@@ -218,7 +218,7 @@ export default {
           cost: 4,
           attack: "2",
           abilities: [
-            { keyword: 8 },
+            { keyword: 7 },
             [
               "Reveal the top card of your deck. If that card has an ",
               { icon: 1},
@@ -245,7 +245,7 @@ export default {
           cost: 6,
           attack: "3",
           abilities: [
-            {keyword: 8},
+            {keyword: 7},
             [
               "Reveal the top card of your deck. If that card has a ",
               { icon: 2},
@@ -270,7 +270,7 @@ export default {
     },
     {
       name: "Symbiote Spider-Man",
-      set: 6,
+      set: 5,
       team: 3,
       cards: [
         {
@@ -280,7 +280,7 @@ export default {
           cost: 2,
           attack: "1+",
           abilities: [
-            { keyword: 8 },
+            { keyword: 7 },
             [
               "Reveal the top card of your deck. If it costs 1 ",
               { icon: 3},
@@ -312,7 +312,7 @@ export default {
           cost: 2,
           attack: "1+",
           abilities: [
-            {keyword: 8},
+            {keyword: 7},
             [
               "You get +1 Attack",
               { bold: "+1"},

@@ -14,7 +14,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 52
+                keyword: 46
               },
               ": Draw a card."
             ]
@@ -32,7 +32,7 @@ export default {
             [
               "Then, if you drew two cards this turn, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Like Totally Smart Hulk."
             ]]
@@ -47,7 +47,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 52
+                keyword: 46
               },
               ": You get ",
               {
@@ -79,7 +79,7 @@ export default {
             ],
             [
               {
-                keyword: 52
+                keyword: 46
               },
               ": Draw a card."
             ]
@@ -95,13 +95,13 @@ export default {
             [
               "Whenever you use an ",
               {
-                keyword: 52
+                keyword: 46
               },
               " ability this turn, you may use it an extra time. "
             ],
             [
               {
-                keyword: 52
+                keyword: 46
               },
               ": Look at the top card of your deck. KO it or put it back."
             ]
@@ -123,7 +123,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 52
+                keyword: 46
               },
               ": When you draw a new hand of cards at the end of this turn, draw an extra card."
             ]
@@ -138,11 +138,11 @@ export default {
           abilities: [
             [
               {
-                keyword: 52
+                keyword: 46
               },
               ": ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Savage Hulk Unleashed."
             ]
@@ -158,7 +158,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 4"
               }
             ]
@@ -188,7 +188,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 52
+                keyword: 46
               },
               ": Look at the top three cards of your deck. Draw one of them, KO one, and put one back."
             ]
@@ -210,7 +210,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 52
+                keyword: 46
               },
               ": Draw a card."
             ]
@@ -229,7 +229,7 @@ export default {
               },
               ": ",
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 2"
               }
             ]
@@ -244,7 +244,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 52
+                keyword: 46
               },
               ": You may KO a card from your hand or discard pile."
             ]
@@ -266,7 +266,7 @@ export default {
             [
               "If there are at least 3 Heroes per player in the KO pile, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Vengeful Destructor."
             ]
@@ -307,7 +307,7 @@ export default {
             ],
             [
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 2"
               }
             ]
@@ -322,14 +322,14 @@ export default {
           abilities: [
             [
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 3"
               }
             ],
             [
               "Then, if you discarded at least two cards this turn, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Hulk Is King and put it on top of your deck."
             ]
@@ -368,7 +368,7 @@ export default {
             [
               "If any players gained a Wound this way, you get ",
               {
-                keyword: 54
+                keyword: 48
               },
               "."
             ]
@@ -390,7 +390,7 @@ export default {
             ],
             [
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 3"
               }
             ]
@@ -431,7 +431,7 @@ export default {
             [
               "If there are at least two Bystanders in your Victory Pile, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Hiroim Redeemed."
             ]
@@ -527,11 +527,11 @@ export default {
           abilities: [
             [
               {
-                keyword: 52
+                keyword: 46
               },
               ": ",
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 2"
               }
             ]
@@ -553,7 +553,7 @@ export default {
               },
               ": ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Ultra-Massive Armor"
             ]
@@ -572,7 +572,7 @@ export default {
             ],
             [
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 2"
               }
             ]
@@ -614,7 +614,7 @@ export default {
               },
               ": ",
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 2"
               }
             ]
@@ -654,7 +654,7 @@ export default {
               },
               " or more, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Underworld Boss and put it on top of your deck."
             ]
@@ -723,12 +723,12 @@ export default {
               },
               ": ",
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 2"
               },
               ". If you ",
               {
-                keyword: 53
+                keyword: 47
               },
               " a Wound this way, KO it."
             ]
@@ -743,7 +743,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 52
+                keyword: 46
               },
               ": Draw a card."
             ]
@@ -765,7 +765,7 @@ export default {
               },
               ": ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Lord of Granite."
             ]
@@ -784,7 +784,7 @@ export default {
             ],
             [
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 3"
               }
             ]
@@ -822,7 +822,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 1"
               }
             ]
@@ -844,7 +844,7 @@ export default {
               },
               ": You may ",
               {
-                keyword: 9
+                keyword: 8
               },
               "."
             ]
@@ -872,7 +872,7 @@ export default {
             [
               "You may ",
               {
-                keyword: 9
+                keyword: 8
               },
               ". Then, if a card with an",
               {
@@ -880,7 +880,7 @@ export default {
               },
               "was KO'd from your deck this turn, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Hive King Miek."
             ]
@@ -897,7 +897,7 @@ export default {
             [
               "Look at the top three cards of your deck and put them back in any order. Then you may ",
               {
-                keyword: 9
+                keyword: 8
               },
               "."
             ]
@@ -926,7 +926,7 @@ export default {
               },
               ": ",
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 3"
               }
             ]
@@ -961,7 +961,7 @@ export default {
             [
               "When you defeat a Villain in the Sewers or Bridge, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Master of Depths and put it on top of your deck."
             ]
@@ -977,14 +977,14 @@ export default {
           abilities: [
             [
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 3"
               }
             ],
             [
               "If you ",
               {
-                keyword: 53
+                keyword: 47
               },
               " a 0-cost Hero this way, KO it."
             ]
@@ -1047,7 +1047,7 @@ export default {
               },
               ": You may ",
               {
-                keyword: 9
+                keyword: 8
               },
               "."
             ]
@@ -1063,11 +1063,11 @@ export default {
             [
               "You may ",
               {
-                keyword: 9
+                keyword: 8
               },
               ". Then, if a non-grey Hero was KO'd from your deck this turn, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Torrent of Broodlings."
             ]
@@ -1096,7 +1096,7 @@ export default {
             [
               "Look at the top card of your deck. Then ",
               {
-                keyword: 9
+                keyword: 8
               },
               " up to three times. You get ",
               {
@@ -1145,7 +1145,7 @@ export default {
             [
               "Reveal the top card of your deck. If it costs 3 or more, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Captain Marvel."
             ]
@@ -1175,7 +1175,7 @@ export default {
             [
               "If you have at least 5 Villains in your Victory Pile, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into A-Bomb and put it on top of your deck."
             ]
@@ -1192,7 +1192,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 5"
               }
             ]
@@ -1208,7 +1208,7 @@ export default {
             [
               "If you defeat two Villains this turn, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into The Destiny Force and put it on top of your deck."
             ]
@@ -1244,7 +1244,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Golden Guardian of Good and put it in your discard pile."
             ]
@@ -1261,7 +1261,7 @@ export default {
             [
               "You may ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Agoraphobia and put it in your discard pile. If you do, you get ",
               {
@@ -1291,7 +1291,7 @@ export default {
               },
               "for each card that ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this turn."
             ]
@@ -1307,7 +1307,7 @@ export default {
             [
               "Reveal the top card of your deck. If it costs 1 or more, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into The Void Unchained and put it on top of your deck."
             ]
@@ -1325,11 +1325,11 @@ export default {
             [
               "Reveal the top card of your deck. If it costs 0, then ",
               {
-                keyword: 9
+                keyword: 8
               },
               ". Otherwise, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Mournful Sentinel and put it in your discard pile."
             ]
@@ -1357,7 +1357,7 @@ export default {
               },
               " or more, then ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this card into The Void Mastermind and add it to the game at the start of the next turn with one random Tactic."
             ]
@@ -1387,7 +1387,7 @@ export default {
               },
               "this turn, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Hurl Trucks."
             ]
@@ -1403,13 +1403,13 @@ export default {
           abilities: [
             [
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 2"
               }
             ],
             [
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 2"
               }
             ]
@@ -1424,7 +1424,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 51
+                keyword: 45
               },
               ": Draw a card."
             ]
@@ -1493,7 +1493,7 @@ export default {
               },
               ": ",
               {
-                keyword: 53,
+                keyword: 47,
                 text: "Smash 3"
               }
             ]
@@ -1512,7 +1512,7 @@ export default {
               },
               ": ",
               {
-                keyword: 54
+                keyword: 48
               }
             ]
           ]
@@ -1530,7 +1530,7 @@ export default {
               },
               ": You may gain a Wound. If you do, ",
               {
-                keyword: 51
+                keyword: 45
               },
               " this into Raging Savage."
             ]
@@ -1546,7 +1546,7 @@ export default {
           abilities: [
             [
              {
-               keyword: 54
+               keyword: 48
              }
             ]
           ]
@@ -1560,7 +1560,7 @@ export default {
           abilities: [
             [
               {
-                keyword:54
+                keyword: 48
               }
             ],
             [

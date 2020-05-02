@@ -58,7 +58,7 @@ export default {
               },
               ": ",
               {
-                keyword: 66
+                keyword: 59
               }
             ]
           ]
@@ -73,7 +73,7 @@ export default {
             [
               "Choose one: Draw three cards or ",
               {
-                keyword: 66
+                keyword: 59
               }
             ],
             [
@@ -129,7 +129,7 @@ export default {
               },
               ". Then ",
               {
-                keyword: 64,
+                keyword: 57,
                 text: "Hyperspeed 4"
               },
               " for that icon."
@@ -201,7 +201,7 @@ export default {
             ],
             [
               {
-                keyword: 64,
+                keyword: 57,
                 text: "Hyperspeed 7"
               }
             ],
@@ -214,7 +214,7 @@ export default {
               },
               ": Instead, ",
               {
-                keyword: 64,
+                keyword: 57,
                 text: "Hyperspeed 9"
               }
             ]
@@ -344,7 +344,7 @@ export default {
               },
               ": ",
               {
-                keyword: 64,
+                keyword: 57,
                 text: "Hyperspeed 3"
               }
             ]
@@ -386,7 +386,7 @@ export default {
               },
               ": ",
               {
-                keyword: 66
+                keyword: 59
               }
             ]
           ]
@@ -408,7 +408,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 64,
+                keyword: 57,
                 text: "Hyperspeed 3"
               },
               " for",
@@ -423,7 +423,7 @@ export default {
               },
               ": Instead, ",
               {
-                keyword: 64,
+                keyword: 57,
                 text: "Hyperspeed 3"
               },
               " for",
@@ -450,7 +450,7 @@ export default {
               },
               ": ",
               {
-                keyword: 64,
+                keyword: 57,
                 text: "Hyperspeed 4"
               }
             ]
@@ -485,7 +485,7 @@ export default {
           abilities: [
             [
               {
-                keyword:64
+                keyword: 57
               },
               " your entire remaining deck. (Don't reshuffle.)",
             ],
@@ -542,7 +542,7 @@ export default {
           abilities: [
             [
               {
-                keyword:64,
+                keyword: 57,
                 text: "Hyperspeed 4"
               }
             ],
@@ -568,7 +568,7 @@ export default {
              },
              ": ",
              {
-               keyword: 65
+               keyword: 58
              }
             ]
           ]
@@ -582,7 +582,7 @@ export default {
           abilities: [
             [
               {
-                keyword:65
+                keyword: 58
               }
             ],
             [
@@ -591,7 +591,7 @@ export default {
               },
               ": ",
               {
-                keyword:65
+                keyword: 58
               },
               " again."
             ]
@@ -636,7 +636,7 @@ export default {
               },
               ": ",
               {
-                keyword: 65
+                keyword: 58
               }
             ]
           ]
@@ -675,7 +675,7 @@ export default {
               },
               ": ",
               {
-                keyword:65
+                keyword: 58
               }
             ]
           ]
@@ -696,7 +696,7 @@ export default {
           abilities: [
             [
               {
-                keyword:64,
+                keyword: 57,
                 text: "Hyperspeed 2"
               }
             ],
@@ -706,7 +706,7 @@ export default {
               },
               ": Instead, ",
               {
-                keyword: 64,
+                keyword: 57,
                 text: "Hyperspeed 6"
               }
             ]
@@ -769,7 +769,7 @@ export default {
               },
               ": ",
               {
-                keyword:64,
+                keyword: 57,
                 text: "Hyperspeed 6"
               }
             ]
@@ -826,7 +826,7 @@ export default {
           abilities: [
             [
               {
-                keyword: 64,
+                keyword: 57,
                 text: "Hyperspeed 5"
               }
             ],

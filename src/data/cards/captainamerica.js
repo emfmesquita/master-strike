@@ -19,7 +19,7 @@ export default {
                 { team: 2 },
                 { team: 2 },
                 ": ",
-                { keyword: 26 }
+                { keyword: 23, text: "Woman Out of Time" }
               ]
             ]
           },
@@ -55,7 +55,7 @@ export default {
               [
                 { hc: 1},
                 ": ",
-                { keyword: 26 }
+                { keyword: 23, text: "Woman Out of Time" }
               ]
             ]
           },
@@ -164,7 +164,7 @@ export default {
               [
                { hc: 4},
                ": ",
-               { keyword: 25}
+               { keyword: 23, text: "Man Out of Time"}
               ]
             ]
           },
@@ -182,7 +182,7 @@ export default {
                 " for each Hero class you have."
               ],
               [
-                { keyword: 25 }
+                { keyword: 23, text: "Man Out of Time" }
               ]
             ]
           },
@@ -214,7 +214,7 @@ export default {
               [
                 { keyword: 27},
                 ": ",
-                { keyword: 25}
+                { keyword: 23, text: "Man Out of Time"}
               ]
             ]
           }
@@ -275,7 +275,7 @@ export default {
               [
                 { keyword: 27},
                 ": ",
-                { keyword: 25}
+                { keyword: 23, text: "Man Out of Time"}
               ]
             ]
           },
@@ -312,7 +312,7 @@ export default {
               [
                { hc: 5},
                ": ",
-               { keyword: 25}
+               { keyword: 23, text: "Man Out of Time"}
               ]
             ]
           },
@@ -327,7 +327,7 @@ export default {
               [
                 { hc: 5},
                 ": ",
-                { keyword: 25}
+                { keyword: 23, text: "Man Out of Time"}
               ]
             ]
           },
@@ -355,13 +355,13 @@ export default {
             abilities: [
               [
                 "A Hero in your hand gains ",
-                { keyword: 25},
+                { keyword: 23, text: "Man Out of Time"},
                 " this turn."
               ],
               [
                 { hc: 5},
                 ": Another Hero in your hand gains ",
-                { keyword: 25},
+                { keyword: 23, text: "Man Out of Time"},
                 " this turn."
               ]
             ]

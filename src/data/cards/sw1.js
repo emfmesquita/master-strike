@@ -2,7 +2,7 @@ export default {
   heroes: [
     {
       name: "Black Panther",
-      set: 9,
+      set: 10,
       team: 15,
       cards: [
         {

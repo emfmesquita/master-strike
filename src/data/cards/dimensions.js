@@ -11,10 +11,10 @@ export default {
           rarity: 1,
           cost: 2,
           abilities: [
-            { keyword: 63, text: "Switcheroo 3" },
+            { keyword: 56, text: "Switcheroo 3" },
             { divider: true },
             [
-              { keyword: 36 },
+              { keyword: 32 },
               " for a card that costs 3 or less."
             ]
           ]
@@ -26,7 +26,7 @@ export default {
           cost: 2,
           attack: "1+",
           abilities: [
-            { keyword: 63, text: "Switcheroo 4" },
+            { keyword: 56, text: "Switcheroo 4" },
             { divider: true },
             [
               { hc: 2 },
@@ -44,7 +44,7 @@ export default {
           cost: 4,
           attack: "2+",
           abilities: [
-            { keyword: 63, text: "Switcheroo 5" },
+            { keyword: 56, text: "Switcheroo 5" },
             { divider: true },
             [
               "You get ",
@@ -63,7 +63,7 @@ export default {
           abilities: [
             [
               "You may choose a number from 1 to 5. A Hero in your hand gains ",
-              { keyword: 63 },
+              { keyword: 56 },
               " for that number."
             ],
             [

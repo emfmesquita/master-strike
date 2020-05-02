@@ -2,7 +2,10 @@
   <v-card class="mx-auto hero-card" :class="classes" raised :style="{ background }">
     <TeamIcon class="card-team" v-if="team" :icon="team" width="40px"/>
     <HeroClassIcon class="card-hero-class" v-if="card.hc" :icon="card.hc" width="32px"/>
-    <HeroClassIcon class="card-second-hero-class" v-if="card.hc2" :icon="card.hc2" width="32px"/>
+
+    <shared-rule v-if="card.hc2" :rule="{ rule: 2 }">
+      <HeroClassIcon class="card-second-hero-class"  :icon="card.hc2" width="32px"/>
+    </shared-rule>
     <RarityIcon class="card-rarity" :icon="card.rarity" width="24px"/>
     <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
     <div :class="subTitleClasses">{{ subTitle }}</div>
@@ -13,12 +16,12 @@
       </div>
     </div>
 
-    <shared-keyword v-if="card.divided === 1" :keyword="{ keyword: 29 }">
+    <shared-rule v-if="card.divided === 1" :rule="{ rule: 4 }">
       <DividedCardIcon class="divided-card-icon-left" size="12px" left />
-    </shared-keyword>
-    <shared-keyword v-if="card.divided === 2" :keyword="{ keyword: 29 }">
+    </shared-rule>
+    <shared-rule v-if="card.divided === 2" :rule="{ rule: 4 }">
       <DividedCardIcon class="divided-card-icon-right" size="12px" right />
-    </shared-keyword>
+    </shared-rule>
 
     <template v-if="card.recruit">
       <AbilityIcon class="card-recruit-icon absolute-icon" noAdjust :icon="2" width="72px"/>

@@ -22,17 +22,17 @@ const FANTASTIC_FOUR = {
     label: "Fantastic Four",
     initials: "FF"
 };
-const VILLAINS = {
-    id: 5,
-    value: "villains",
-    label: "Villains",
-    initials: "V"
-};
 const PAINT_THE_TOWN_RED = {
-    id: 6,
+    id: 5,
     value: "pttr",
     label: "Paint the Town Red",
     initials: "PtTR"
+};
+const VILLAINS = {
+    id: 6,
+    value: "villains",
+    label: "Villains",
+    initials: "V"
 };
 const GUARDIANS_OF_THE_GALAXY = {
     id: 7,
@@ -46,23 +46,23 @@ const FEAR_ITSELF = {
     label: "Fear Itself",
     initials: "FI"
 };
-const SECRET_WARS_1 = {
+const THREE_DIMENSION = {
     id: 9,
+    value: "3d",
+    label: "Playable Marvel 3D Trading Cards",
+    initials: "3D"
+};
+const SECRET_WARS_1 = {
+    id: 10,
     value: "sw1",
     label: "Secret Wars, Volume 1",
     initials: "SW1"
 };
 const SECRET_WARS_2 = {
-    id: 10,
+    id: 11,
     value: "sw2",
     label: "Secret Wars, Volume 2",
     initials: "SW2"
-};
-const THREE_DIMENSION = {
-    id: 11,
-    value: "3d",
-    label: "Playable Marvel 3D Trading Cards",
-    initials: "3D"
 };
 const CAPTAIN_AMERICA = {
     id: 12,
@@ -70,17 +70,17 @@ const CAPTAIN_AMERICA = {
     label: "Captain America 75th Anniversary",
     initials: "CA"
 };
-const DEADPOOL = {
-    id: 13,
-    value: "deadpool",
-    label: "Deadpool",
-    initials: "DP"
-};
 const CIVIL_WAR = {
-    id: 14,
+    id: 13,
     value: "civilwar",
     label: "Civil War",
     initials: "CW"
+};
+const DEADPOOL = {
+    id: 14,
+    value: "deadpool",
+    label: "Deadpool",
+    initials: "DP"
 };
 const NOIR = {
     id: 15,
@@ -196,16 +196,16 @@ export const setsArray = Object.freeze([
     PROMO,                      // 2
     DARK_CITY,                  // 3
     FANTASTIC_FOUR,             // 4
-    VILLAINS,                   // 5
-    PAINT_THE_TOWN_RED,         // 6
+    PAINT_THE_TOWN_RED,         // 5
+    VILLAINS,                   // 6
     GUARDIANS_OF_THE_GALAXY,    // 7
     FEAR_ITSELF,                // 8
-    SECRET_WARS_1,              // 9
-    SECRET_WARS_2,              // 10
-    THREE_DIMENSION,            // 11
+    THREE_DIMENSION,            // 9
+    SECRET_WARS_1,              // 10
+    SECRET_WARS_2,              // 11
     CAPTAIN_AMERICA,            // 12
-    DEADPOOL,                   // 13
-    CIVIL_WAR,                  // 14
+    CIVIL_WAR,                  // 13
+    DEADPOOL,                   // 14
     NOIR,                       // 15
     X_MEN,                      // 16
     SPIDER_HOMECOMING,          // 17

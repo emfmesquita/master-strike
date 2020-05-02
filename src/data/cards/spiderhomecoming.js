@@ -25,8 +25,8 @@ export default {
             cost: 2,
             attack: "0+",
             abilities: [
-              { keyword: 8 },
-              { keyword: 47, text: "Danger Sense 3" }
+              { keyword: 7 },
+              { keyword: 41, text: "Danger Sense 3" }
             ]
           },
           {
@@ -36,7 +36,7 @@ export default {
             cost: 2,
             attack: "2",
             abilities: [
-              { keyword: 8 },
+              { keyword: 7 },
               [
                 { hc: 5 },
                 ": Choose two Villains in adjacent city spaces. Each of them gets ",
@@ -53,8 +53,8 @@ export default {
             cost: 2,
             attack: "0+",
             abilities: [
-              { keyword: 8 },
-              { keyword: 49 },
+              { keyword: 7 },
+              { keyword: 43 },
               [
                 "You get ",
                 { bold: "+3" },
