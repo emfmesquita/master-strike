@@ -186,7 +186,7 @@ const X_GENE = {
     id: 34,
     inHeroes: true,
     value: "xgene",
-    label: "X-gene"
+    label: "X-Gene"
 }
 const PIERCING_ENERGY = {
     id: 35,
@@ -244,7 +244,7 @@ const CHEERING_CROWDS= {
     id: 44,
     inHeroes: true,
     value: "cheeringcrowds",
-    label: "Coordinate"
+    label: "Cheering Crowds"
 }
 const TRANSFORM = {
     id: 45,

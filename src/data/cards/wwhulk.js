@@ -361,7 +361,7 @@ export default {
               },
               ": ",
               {
-                keyword: 18,
+                keyword: 17,
                 text: "Cross-Dimensional Hulk Rampage."
               }
             ],
