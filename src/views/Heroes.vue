@@ -152,7 +152,7 @@ let heroClasses = heroClassArray.concat([]);
 heroClasses.shift();
 heroClasses = Object.freeze(heroClasses);
 
-let keywords = keywordsArray.concat([]);
+let keywords = keywordsArray.filter(keyword => keyword.inHeroes);
 keywords.sort((a, b) => a.label.localeCompare(b.label));
 keywords = Object.freeze(keywords);
 

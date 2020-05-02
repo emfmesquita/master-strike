@@ -1,5 +1,6 @@
 const TELEPORT = {
     id: 1,
+    inHeroes: true,
     value: "teleport",
     label: "Teleport"
 }
@@ -10,11 +11,13 @@ const BRIBE = {
 }
 const VERSATILE = {
     id: 3,
+    inHeroes: true,
     value: "Versatile",
     label: "Versatile"
 }
 const FOCUS = {
     id: 4,
+    inHeroes: true,
     value: "focus",
     label: "Focus"
 }
@@ -30,21 +33,25 @@ const COSMIC_THREAT = {
 }
 const WALL_CRAWL = {
     id: 7,
+    inHeroes: true,
     value: "wallcrawl",
     label: "Wall-Crawl"
 }
 const FEAST = {
     id: 8,
+    inHeroes: true,
     value: "feast",
     label: "Feast"
 }
 const DEMOLISH = {
     id: 9,
+    inHeroes: true,
     value: "demolish",
     label: "Demolish"
 }
 const DODGE = {
     id: 10,
+    inHeroes: true,
     value: "dodge",
     label: "Dodge"
 }
@@ -60,11 +67,13 @@ const X_TREME_ATTACK = {
 }
 const ARTIFACT = {
     id: 13,
+    inHeroes: true,
     value: "artifact",
     label: "Artifact"
 }
 const THROWN_ARTIFACT = {
     id: 14,
+    inHeroes: true,
     value: "thrownartifact",
     label: "Thrown Artifact"
 }
@@ -80,16 +89,19 @@ const RISE_OF_THE_LIVING_DEAD = {
 }
 const CROSS_DIMENSIONAL_RAMPAGE = {
     id: 17,
+    inHeroes: true,
     value: "crossdimensionalrampage",
     label: "Cross-Dimensional Rampage"
 }
 const SPECTRUM = {
     id: 18,
+    inHeroes: true,
     value: "spectrum",
     label: "Spectrum"
 }
 const PATROL = {
     id: 19,
+    inHeroes: true,
     value: "patrol",
     label: "Patrol"
 }
@@ -110,11 +122,13 @@ const CHARGE = {
 }
 const MAN_OUT_OF_TIME = {
     id: 23,
+    inHeroes: true,
     value: "manoutoftime",
     label: "Man (and Woman) Out of Time"
 }
 const SAVIOR = {
     id: 24,
+    inHeroes: true,
     value: "savior",
     label: "Savior"
 }
@@ -125,16 +139,19 @@ const ABOMINATION = {
 }
 const SIZE_CHANGING = {
     id: 26,
+    inHeroes: true,
     value: "sizechanging",
     label: "Size Changing"
 }
 const PHASING = {
     id: 27,
+    inHeroes: true,
     value: "phasing",
     label: "Phasing"
 }
 const FORTIFY = {
     id: 28,
+    inHeroes: true,
     value: "Fortify",
     label: "Fortify"
 }
@@ -145,6 +162,7 @@ const SHIELD_CLEARANCE = {
 }
 const EXCESSIVE_VIOLENCE = {
     id: 30,
+    inHeroes: true,
     value: "excessiveviolence",
     label: "Excessive Violence"
 }
@@ -155,6 +173,7 @@ const REVENGE = {
 }
 const INVESTIGATE = {
     id: 32,
+    inHeroes: true,
     value: "investigate",
     label: "Investigate"
 }
@@ -165,26 +184,31 @@ const HIDDEN_WITNESS = {
 }
 const X_GENE = {
     id: 34,
+    inHeroes: true,
     value: "xgene",
     label: "X-gene"
 }
 const PIERCING_ENERGY = {
     id: 35,
+    inHeroes: true,
     value: "piercingenergy",
     label: "Piercing Energy"
 }
 const BERSERK = {
     id: 36,
+    inHeroes: true,
     value: "berserk",
     label: "Berserk"
 }
 const SOARING_FLIGHT = {
     id: 37,
+    inHeroes: true,
     value: "soaringflight",
     label: "Soaring Flight"
 }
 const LIGHTSHOW= {
     id: 38,
+    inHeroes: true,
     value: "lightshow",
     label: "Lightshow"
 }
@@ -200,56 +224,67 @@ const HUMAN_SHIELDS= {
 }
 const DANGER_SENSE= {
     id: 41,
+    inHeroes: true,
     value: "dangersense",
     label: "Danger Sense"
 }
 const STRIKER= {
     id: 42,
+    inHeroes: true,
     value: "striker",
     label: "Striker"
 }
 const COORDINATE= {
     id: 43,
+    inHeroes: true,
     value: "coordinate",
     label: "Coordinate"
 }
 const CHEERING_CROWDS= {
     id: 44,
+    inHeroes: true,
     value: "cheeringcrowds",
     label: "Coordinate"
 }
 const TRANSFORM = {
     id: 45,
+    inHeroes: true,
     value: "transform",
     label: "Transform"
 }
 const OUTWIT= {
     id: 46,
+    inHeroes: true,
     value: "outwit",
     label: "Outwit"
 }
 const SMASH = {
     id: 47,
+    inHeroes: true,
     value: "smash",
     label: "Smash"
 }
 const WOUNDED_FURY = {
     id: 48,
+    inHeroes: true,
     value: "woundedfury",
     label: "Wounded Fury"
 }
 const CONQUEROR = {
     id: 49,
+    inHeroes: true,
     value: "conqueror",
     label: "Conqueror"
 }
 const MICROSCOPIC_SIZE_CHANGING = {
     id: 50,
+    inHeroes: true,
     value: "microscopicsizechanging",
     label: "Microscopic Size-Changing"
 }
 const EMPOWERED = {
     id: 51,
+    inHeroes: true,
     value: "empowered",
     label: "Empowered"
 }
@@ -265,41 +300,49 @@ const SYMBIOTE_BONDS = {
 }
 const DIGEST = {
     id: 54,
+    inHeroes: true,
     value: "digest",
     label: "Digest"
 }
 const INDIGESTION = {
     id: 55,
+    inHeroes: true,
     value: "indigestion",
     label: "Indigestion"
 }
 const SWITCHEROO = {
     id: 56,
+    inHeroes: true,
     value: "switcheroo",
     label: "Switcheroo"
 }
 const HYPERSPEED = {
     id: 57,
+    inHeroes: true,
     value: "hyperspeed",
     label: "Hyperspeed"
 }
 const DARK_MEMORIES = {
     id: 58,
+    inHeroes: true,
     value: "darkmemories",
     label: "Dark Memories"
 }
 const LAST_STAND = {
     id: 59,
+    inHeroes: true,
     value: "laststand",
     label: "Last Stand"
 }
 const UNDERCOVER = {
     id: 60,
+    inHeroes: true,
     value: "undercover",
     label: "Undercover"
 }
 const SHIELD_LEVEL = {
     id: 61,
+    inHeroes: true,
     value: "shieldlevel",
     label: "Shield Level"
 }
@@ -310,16 +353,19 @@ const HYDRA_LEVEL = {
 }
 const WORTHY = {
     id: 63,
+    inHeroes: true,
     value: "worthy",
     label: "Worthy"
 }
 const MOONLIGHT_SUNLIGHT = {
     id: 64,
+    inHeroes: true,
     value: "moonlightsunlight",
     label: "Moonlight and Sunlight"
 }
 const WAKING_NIGHTMARE = {
     id: 65,
+    inHeroes: true,
     value: "wakingnightmare",
     label: "Waking Nightmare"
 }
