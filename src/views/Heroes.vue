@@ -120,6 +120,55 @@
             </v-range-slider>
           </v-col>
         </v-row>
+        <v-row align="center">
+          <v-col cols="12">
+            <v-range-slider
+              v-model="filter.attack"
+              :max="10"
+              :min="-1"
+              ticks="always"
+              tick-size="4"
+              thumb-label="always"
+              thumb-size="0"
+              class="align-center"
+              @change="filterChanged"
+            >
+              <template v-slot:thumb-label="{ value }">
+                <AbilityIcon class="thumb absolute-icon" noAdjust :icon="1" width="32px" :iconSrcOverride="value === -1 ? 'block' : null"/>
+                <span
+                  v-if="value !== -1"
+                  class="thumb card-cost icon-text text-center font-weight-black">
+                  {{ value }}
+                </span>
+              </template>
+            </v-range-slider>
+          </v-col>
+        </v-row>
+        <v-row align="center">
+          <v-col cols="12">
+            <v-range-slider
+              v-model="filter.recruit"
+              :max="5"
+              :min="-1"
+              ticks="always"
+              tick-size="4"
+              thumb-label="always"
+              thumb-size="0"
+              class="align-center"
+              @change="filterChanged"
+            >
+              <template v-slot:thumb-label="{ value }">
+                <AbilityIcon v-if="value === -1" class="thumb absolute-icon" noAdjust :icon="2" width="32px" iconSrcOverride="block"/>
+                <AbilityIcon v-else class="thumb absolute-icon" noAdjust style="top: -43px; left: -24px" :icon="2" width="48px"/>
+                <span
+                  v-if="value !== -1"
+                  class="thumb card-cost icon-text text-center font-weight-black">
+                  {{ value }}
+                </span>
+              </template>
+            </v-range-slider>
+          </v-col>
+        </v-row>
       </v-container>
     </v-navigation-drawer>
 
@@ -168,6 +217,19 @@ Object.values(cards).forEach(setCards => {
 allHeroes.sort((a, b) => a.name.localeCompare(b.name));
 allHeroes = Object.freeze(allHeroes);
 
+const toNumber = (value) => {
+  if(!value) return -1;
+  const safeValue = value.replace(/[+*]*/ig, '').replace('½', '.5');
+  const number = Number.parseFloat(safeValue);
+  return Number.isNaN(number) ? -1 : number;
+}
+allHeroes.forEach(hero => {
+  (hero.cards || []).forEach(card => {
+    card.attackNum = toNumber(card.attack);
+    card.recruitNum = toNumber(card.recruit);
+  });
+});
+
 let teams = teamArray.concat([]);
 teams.sort((a, b) => a.label.localeCompare(b.label));
 teams = Object.freeze(teams);
@@ -193,7 +255,9 @@ export default {
       team: [],
       hc: [],
       keyword: [],
-      cost: [0,9]
+      cost: [0,9],
+      attack: [-1,10],
+      recruit: [-1,5]
     },
     lastFilterTime: 0,
     heroes: []
@@ -204,13 +268,9 @@ export default {
     this.filter.team = this.toIntArray(query.team).filter(team => teamArray[team]);
     this.filter.hc = this.toIntArray(query.hc).filter(hc => heroClassArray[hc]);
     this.filter.keyword = this.toIntArray(query.keyword).filter(keyword => keywordsArray[keyword]);
-
-    const safeCost = cost => cost < 0 ? 0 : (cost > 9 ? 9 : cost);
-    const costs = this.toIntArray(query.cost);
-    const costMin = costs.length < 1 ? 0 : safeCost(costs[0]);
-    const costMax = costs.length < 2 ? 9 : safeCost(costs[1]);
-    this.filter.cost = [costMin, costMax];
-
+    this.filter.cost = this.toIntPair(query.cost, 0, 9);
+    this.filter.attack = this.toIntPair(query.attack, -1, 10);
+    this.filter.recruit = this.toIntPair(query.recruit, -1, 5);
     this.search();
   },
   computed: {
@@ -219,6 +279,12 @@ export default {
     },
     hasCostFilter() {
       return this.filter.cost[0] !== 0 || this.filter.cost[1] !== 9;
+    },
+    hasAttackFilter() {
+      return this.filter.attack[0] !== -1 || this.filter.attack[1] !== 10;
+    },
+    hasRecruitFilter() {
+      return this.filter.recruit[0] !== -1 || this.filter.recruit[1] !== 5;
     }
   },
   methods: {
@@ -226,10 +292,17 @@ export default {
       const interger = Number.parseInt(value);
       return Number.isNaN(interger) ? -1 : interger;
     },
-    toIntArray(value) {
-      if(!value) return [];
-      const tokens = value.split(",");
-      return tokens.map(token => this.toInteger(token)).filter(token => token >= 0);
+    toIntArray(strValues) {
+      if(!strValues) return [];
+      const tokens = strValues.split(",");
+      return tokens.map(token => this.toInteger(token));
+    },
+    toIntPair(strValues, min, max) {
+      const intValues = this.toIntArray(strValues);
+      const safe = (value) => value < min ? min : (value > max ? max : value);
+      const lowerValue = intValues.length < 1 ? min : safe(intValues[0]);
+      const higherValue = intValues.length < 2 ? max : safe(intValues[1]);
+      return [lowerValue, higherValue];
     },
     heroKey(hero) {
       return `${this.lastFilterTime}-${hero.team}-${hero.name}`;
@@ -237,6 +310,18 @@ export default {
     remove(id, filterName) {
       this.filter[filterName] = this.filter[filterName].filter(item => item !== id);
       this.filterChanged();
+    },
+    filterByMinMax(filter, prop) {
+      this.heroes = this.heroes.filter(hero => {
+        let match = false;
+        hero.filteredCards.forEach(card => {
+          if(card.disabled) return;
+          const valueMatch = card[prop] >= filter[0] && card[prop] <= filter[1];
+          if(valueMatch) match = true;
+          card.disabled = !valueMatch;
+        });
+        return match;
+      });
     },
     filterChanged() {
       this.$vuetify.goTo(0, { duration: 0 });
@@ -249,6 +334,8 @@ export default {
       if(filter.hc.length) query.hc = filter.hc.join(",");
       if(filter.keyword.length) query.keyword = filter.keyword.join(",");
       if(this.hasCostFilter) query.cost = filter.cost.join(",");
+      if(this.hasAttackFilter) query.attack = filter.attack.join(",");
+      if(this.hasRecruitFilter) query.recruit = filter.recruit.join(",");
       
       this.$router.replace({
         path: this.$route.path,
@@ -314,20 +401,9 @@ export default {
         });
       }
 
-      if(this.hasCostFilter) {
-        const minCost = this.filter.cost[0];
-        const maxCost = this.filter.cost[1];
-        this.heroes = this.heroes.filter(hero => {
-          let match = false;
-          hero.filteredCards.forEach(card => {
-            if(card.disabled) return;
-            const matchCost = card.cost >= minCost && card.cost <= maxCost;
-            if(matchCost) match = true;
-            card.disabled = !matchCost;
-          });
-          return match;
-        });
-      }
+      if(this.hasCostFilter) this.filterByMinMax(this.filter.cost, "cost");
+      if(this.hasAttackFilter) this.filterByMinMax(this.filter.attack, "attackNum");
+      if(this.hasRecruitFilter) this.filterByMinMax(this.filter.recruit, "recruitNum");
 
       this.heroes.forEach(hero => {
         // make sure divided cards disabled status is consistent

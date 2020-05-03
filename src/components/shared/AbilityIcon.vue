@@ -20,10 +20,10 @@ import { iconArray } from "../../constants/icon";
 
 export default {
   name: "AbilityIcon",
-  props: ["icon", "width", "noAdjust"],
+  props: ["icon", "width", "noAdjust", "iconSrcOverride"],
   computed: {
     iconSrc() {
-      const icon = iconArray[this.icon - 1].value;
+      const icon = this.iconSrcOverride || iconArray[this.icon - 1].value;
       return require(`../../assets/icons/${icon}.svg`);
     },
     iconClass() {
