@@ -3,8 +3,9 @@
     <v-container>
       <v-row>
         <v-col cols="12">
-          <span class="title">{{ hero.name }}</span>
-          <SetChip class="set-chip float-right" :set="hero.set"/>
+          <SetChip class="set-chip float-right" :short="this.numberOfColumns === 1" :set="hero.set"/>
+          <NumberOfCards class="hero-cards-number" :number="numberOfFilteredCards" size="16"/>
+          <span :class="titleClasses">{{ hero.name }}</span>
         </v-col>
       </v-row>
       <v-row>
@@ -47,13 +48,27 @@
 <script>
 import HeroCard from "./HeroCard.vue";
 import SetChip from "../shared/SetChip.vue";
+import NumberOfCards from "../shared/NumberOfCards";
+
+const reduceCards = (onlyEnabled) => (total, card) => {
+  if(onlyEnabled && card.disabled || card.divided === 2) return total;
+  if(card.rarity === 1) return total + 5;
+  if(card.rarity === 2) return total + 3;
+  return total + 1;
+}
 
 export default {
   name: "Hero",
   props: ["hero"],
-  components: { HeroCard, SetChip },
+  components: { HeroCard, SetChip, NumberOfCards },
   data: () => ({}),
   computed: {
+    numberOfFilteredCards() {
+      return this.hero.filteredCards.reduce(reduceCards(true), 0);
+    },
+    matchPercentage() {
+      return 100 * this.numberOfFilteredCards / this.numberOfCards;
+    },
     numberOfColumns() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs': return 1
@@ -64,6 +79,13 @@ export default {
       }
       return 4;
     },
+    titleClasses() {
+      const short = this.numberOfColumns === 1;
+      return {
+        'title': !short,
+        'subtitle-1 font-weight-bold': short
+      };
+    }, 
     pages() {
       const cards = this.hero.filteredCards;
       const numberOfPages = Math.ceil(cards.length / this.numberOfColumns);
@@ -115,6 +137,11 @@ export default {
   }
   .divided-column-right {
     padding-left: 0px;
+  }
+  .hero-cards-number {
+    position: absolute;
+    top: -16px;
+    left: 4px;
   }
 }
 </style>

@@ -8,7 +8,7 @@
           </v-chip>
         </span>
       </template>
-      <span>Set</span>
+      <span>{{ tooltip }}</span>
     </v-tooltip>
   </span>
 </template>
@@ -18,10 +18,16 @@ import { setsArray } from "../../constants/sets";
 
 export default {
   name: "SetChip",
-  props: ["set"],
+  props: ["set", "short"],
   computed: {
+    setObj() {
+      return setsArray[this.set - 1];
+    },
     label() {
-      return setsArray[this.set - 1].label;
+      return this.short ? this.setObj.initials : this.setObj.label;
+    },
+    tooltip() {
+      return this.short ? `Set: ${this.setObj.label}` : "Set"
     }
   },
   data: () => ({})

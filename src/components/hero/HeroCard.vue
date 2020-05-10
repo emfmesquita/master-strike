@@ -105,8 +105,7 @@ export default {
     },
     subTitleClasses() {
       return {
-        'text-center': true,
-        'card-sub-title': true,
+        'text-center card-sub-title': true,
         'card-red-sub-title': !!this.card.redSubTitle
       };
     },
