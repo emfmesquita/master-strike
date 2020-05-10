@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="12">
           <SetChip class="set-chip float-right" :short="this.numberOfColumns === 1" :set="hero.set"/>
-          <NumberOfCards class="hero-cards-number" :number="numberOfFilteredCards" size="16"/>
+          <NumberOfCards class="hero-cards-number" :number="hero.results" size="16"/>
           <span :class="titleClasses">{{ hero.name }}</span>
         </v-col>
       </v-row>
@@ -50,25 +50,12 @@ import HeroCard from "./HeroCard.vue";
 import SetChip from "../shared/SetChip.vue";
 import NumberOfCards from "../shared/NumberOfCards";
 
-const reduceCards = (onlyEnabled) => (total, card) => {
-  if(onlyEnabled && card.disabled || card.divided === 2) return total;
-  if(card.rarity === 1) return total + 5;
-  if(card.rarity === 2) return total + 3;
-  return total + 1;
-}
-
 export default {
   name: "Hero",
   props: ["hero"],
   components: { HeroCard, SetChip, NumberOfCards },
   data: () => ({}),
   computed: {
-    numberOfFilteredCards() {
-      return this.hero.filteredCards.reduce(reduceCards(true), 0);
-    },
-    matchPercentage() {
-      return 100 * this.numberOfFilteredCards / this.numberOfCards;
-    },
     numberOfColumns() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs': return 1

@@ -4,6 +4,25 @@
       <v-container class="card-filter">
         <v-row align="center">
           <v-col cols="12">
+            <v-btn-toggle
+              class="d-flex justify-center"
+              v-model="sortMethod"
+              mandatory
+              @change="sortChanged"
+            >
+              <v-btn value="alpha">
+                <v-icon>mdi-sort-alphabetical-ascending</v-icon>
+                <span class="pa-2 subtitle-2">Alpha</span>
+              </v-btn>
+              <v-btn value="results">
+                <v-icon>mdi-cards</v-icon>
+                <span class="pa-2 subtitle-2">Results</span>
+              </v-btn>
+            </v-btn-toggle>
+          </v-col>
+        </v-row>
+        <v-row align="center">
+          <v-col cols="12">
             <v-autocomplete
               v-model="filter.set"
               :items="sets"
@@ -214,9 +233,6 @@ Object.values(cards).forEach(setCards => {
   }
 });
 
-allHeroes.sort((a, b) => a.name.localeCompare(b.name));
-allHeroes = Object.freeze(allHeroes);
-
 const toNumber = (value) => {
   if(!value) return -1;
   const safeValue = value.replace(/[+*]*/ig, '').replace('½', '.5');
@@ -250,6 +266,7 @@ export default {
     teams,
     heroClasses,
     keywords,
+    sortMethod: "alpha",
     filter: {
       set: [],
       team: [],
@@ -271,7 +288,9 @@ export default {
     this.filter.cost = this.toIntPair(query.cost, 0, 9);
     this.filter.attack = this.toIntPair(query.attack, -1, 10);
     this.filter.recruit = this.toIntPair(query.recruit, -1, 5);
+    this.sortMethod = query.sort === "results" ? "results" : "alpha";
     this.search();
+    this.sort();
   },
   computed: {
     heroFound() {
@@ -323,10 +342,7 @@ export default {
         return match;
       });
     },
-    filterChanged() {
-      this.$vuetify.goTo(0, { duration: 0 });
-
-      this.search();
+    setQuery() {
       const query = {};
       const filter = this.filter;
       if(filter.set.length) query.set = filter.set.join(",");
@@ -336,11 +352,32 @@ export default {
       if(this.hasCostFilter) query.cost = filter.cost.join(",");
       if(this.hasAttackFilter) query.attack = filter.attack.join(",");
       if(this.hasRecruitFilter) query.recruit = filter.recruit.join(",");
+
+      if(this.sortMethod === "results") query.sort = "results";
       
       this.$router.replace({
         path: this.$route.path,
         query
       });
+    },
+    sortChanged() {
+      this.$vuetify.goTo(0, { duration: 0 });
+      this.sort();
+      this.setQuery();
+    },
+    filterChanged() {
+      this.$vuetify.goTo(0, { duration: 0 });
+      this.search();
+      if(this.sortMethod === "results") this.sort();
+      this.setQuery();
+    },
+    sort() {
+      this.heroes.sort((a, b) => {
+        if(this.sortMethod === "alpha" || b.results === a.results) return (a.name || "").localeCompare(b.name || "");
+        return b.results - a.results;
+      });
+
+      this.lastFilterTime = Date.now();
     },
     search() {
       this.heroes = allHeroes;
@@ -425,6 +462,13 @@ export default {
           if(a.divided < b.divided) return -1;
           return 0;
         });
+
+        hero.results = hero.filteredCards.reduce((total, card) => {
+          if(card.disabled || card.divided === 2) return total;
+          if(card.rarity === 1) return total + 5;
+          if(card.rarity === 2) return total + 3;
+          return total + 1;
+        }, 0);
       });
 
       this.lastFilterTime = Date.now();
