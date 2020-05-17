@@ -1,6 +1,7 @@
 export default {
   heroes: [
     {
+      id: 157,
       name: "Amadeus Cho",
       set: 19,
       team: 18,
@@ -110,6 +111,7 @@ export default {
       ]
     },
     {
+      id: 158,
       name: "Bruce Banner",
       set: 19,
       team: 1,
@@ -197,6 +199,7 @@ export default {
       ]
     },
     {
+      id: 159,
       name: "Caiera",
       set: 19,
       team: 19,
@@ -291,6 +294,7 @@ export default {
       ]
     },
     {
+      id: 160,
       name: "Gladiator Hulk",
       set: 19,
       team: 19,
@@ -399,6 +403,7 @@ export default {
       ]
     },
     {
+      id: 161,
       name: "Hiroim",
       set: 19,
       team: 19,
@@ -490,6 +495,7 @@ export default {
       ]
     },
     {
+      id: 162,
       name: "Hulkbuster Iron Man",
       set: 19,
       team: 1,
@@ -596,6 +602,7 @@ export default {
       ]
     },
     {
+      id: 163,
       name: "Joe Fixit, Grey Hulk",
       set: 19,
       team: 8,
@@ -703,6 +710,7 @@ export default {
       ]
     },
     {
+      id: 164,
       name: "Korg",
       set: 19,
       team: 19,
@@ -809,6 +817,7 @@ export default {
       ]
     },
     {
+      id: 165,
       name: "Miek, The Unhived",
       set: 19,
       team: 19,
@@ -906,6 +915,7 @@ export default {
       ]
     },
     {
+      id: 166,
       name: "Namora",
       set: 19,
       team: 18,
@@ -1015,6 +1025,7 @@ export default {
       ]
     },
     {
+      id: 167,
       name: "No-Name, Brood Queen",
       set: 19,
       team: 19,
@@ -1112,6 +1123,7 @@ export default {
       ]
     },
     {
+      id: 168,
       name: "Rick Jones",
       set: 19,
       team: 2,
@@ -1231,6 +1243,7 @@ export default {
       ]
     },
     {
+      id: 169,
       name: "Sentry",
       set: 19,
       team: 1,
@@ -1366,6 +1379,7 @@ export default {
       ]
     },
     {
+      id: 170,
       name: "She-Hulk",
       set: 19,
       team: 1,
@@ -1476,6 +1490,7 @@ export default {
       ]
     },
     {
+      id: 171,
       name: "Skaar, Son of Hulk",
       set: 19,
       team: 1,

@@ -1,6 +1,7 @@
 export default {
     heroes: [
       {
+        id: 148,
         name: "High Tech Spider-Man",
         set: 17,
         team: 3,

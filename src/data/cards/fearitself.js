@@ -1,6 +1,7 @@
 export default {
   heroes: [
     {
+      id: 67,
       name: "Skadi",
       set: 8,
       team: 13,

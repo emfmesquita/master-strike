@@ -1,6 +1,7 @@
 export default {
     heroes: [
       {
+        id: 58,
         name: "Drax the Destroyer",
         set: 7,
         team: 12,
@@ -65,6 +66,7 @@ export default {
         ]
       },
       {
+        id: 59,
         name: "Gamora",
         set: 7,
         team: 12,
@@ -131,6 +133,7 @@ export default {
         ]
       },
       {
+        id: 60,
         name: "Groot",
         set: 7,
         team: 12,
@@ -188,6 +191,7 @@ export default {
         ]
       },
       {
+        id: 61,
         name: "Rocket Raccoon",
         set: 7,
         team: 12,
@@ -250,6 +254,7 @@ export default {
         ]
       },
       {
+        id: 62,
         name: "Star-Lord",
         set: 7,
         team: 12,

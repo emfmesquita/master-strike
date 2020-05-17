@@ -1,6 +1,7 @@
 export default {
   heroes: [
     {
+      id: 184,
       name: "Squirrel Girl",
       set: 23,
       team: 1,

@@ -1,6 +1,7 @@
 export default {
     heroes: [
       {
+        id: 101,
         name: "Agent X-13",
         set: 12,
         team: 2,
@@ -82,6 +83,7 @@ export default {
         ]
       },
       {
+        id: 102,
         name: "Captain America (Falcon)",
         set: 12,
         team: 1,
@@ -150,6 +152,7 @@ export default {
         ]
       },
       {
+        id: 103,
         name: "Captain America 1941",
         set: 12,
         team: 1,
@@ -221,7 +224,9 @@ export default {
         ]
       },
       {
+        id: 104,
         name: "Steve Rogers, Director of S.H.I.E.L.D.",
+        filterName: "Steve Rogers",
         set: 12,
         team: 2,
         cards: [
@@ -298,6 +303,7 @@ export default {
         ]
       },
       {
+        id: 105,
         name: "Winter Soldier",
         set: 12,
         team: 0,

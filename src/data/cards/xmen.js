@@ -1,81 +1,7 @@
 export default {
   heroes: [
     {
-      name: "Banshee",
-      set: 16,
-      team: 4,
-      cards: [
-        {
-          name: "Sonar Detection",
-          hc: 1,
-          rarity: 1,
-          cost: 2,
-          piercing: "0+",
-          abilities: [
-            "Draw a card.",
-            { keyword: 35 },
-            [
-              { keyword: 34 },
-              { hc: 1 },
-              ": You get ",
-              { bold: "+1"},
-              { icon: 6 },
-              "."
-            ]
-          ]
-        },
-        {
-          name: "Speed of Sound",
-          hc: 3,
-          rarity: 1,
-          cost: 3,
-          piercing: "2",
-          abilities: [
-            { keyword: 37 },
-            { keyword: 35 }
-          ]
-        },
-        {
-          name: "Sonic Blastwave",
-          hc: 3,
-          rarity: 2,
-          cost: 5,
-          recruit: "3",
-          piercing: "0+",
-          abilities: [
-            { keyword: 35 },
-            [
-              { hc: 3 },
-              ": You may have this card produce ",
-              { icon: 6 },
-              " instead of",
-              { icon: 2 },
-              "."
-            ]
-          ]
-        },
-        {
-          name: "Bone-Shattering Howl",
-          hc: 3,
-          rarity: 3,
-          cost: 8,
-          piercing: "4",
-          abilities: [
-            { keyword: 35 },
-            [
-              { hc: 3 },
-              { hc: 1 },
-              ": You may use",
-              { icon: 1 },
-              " as if it were ",
-              { icon: 6 },
-              " this turn."
-            ]
-          ]
-        }
-      ]
-    },
-    {
+      id: 132,
       name: "Aurora and Northstar",
       set: 16,
       team: 4,
@@ -169,6 +95,83 @@ export default {
       ]
     },
     {
+      id: 133,
+      name: "Banshee",
+      set: 16,
+      team: 4,
+      cards: [
+        {
+          name: "Sonar Detection",
+          hc: 1,
+          rarity: 1,
+          cost: 2,
+          piercing: "0+",
+          abilities: [
+            "Draw a card.",
+            { keyword: 35 },
+            [
+              { keyword: 34 },
+              { hc: 1 },
+              ": You get ",
+              { bold: "+1"},
+              { icon: 6 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Speed of Sound",
+          hc: 3,
+          rarity: 1,
+          cost: 3,
+          piercing: "2",
+          abilities: [
+            { keyword: 37 },
+            { keyword: 35 }
+          ]
+        },
+        {
+          name: "Sonic Blastwave",
+          hc: 3,
+          rarity: 2,
+          cost: 5,
+          recruit: "3",
+          piercing: "0+",
+          abilities: [
+            { keyword: 35 },
+            [
+              { hc: 3 },
+              ": You may have this card produce ",
+              { icon: 6 },
+              " instead of",
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Bone-Shattering Howl",
+          hc: 3,
+          rarity: 3,
+          cost: 8,
+          piercing: "4",
+          abilities: [
+            { keyword: 35 },
+            [
+              { hc: 3 },
+              { hc: 1 },
+              ": You may use",
+              { icon: 1 },
+              " as if it were ",
+              { icon: 6 },
+              " this turn."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 134,
       name: "Beast",
       set: 16,
       team: 4,
@@ -235,6 +238,7 @@ export default {
       ]
     },
     {
+      id: 135,
       name: "Cannonball",
       set: 16,
       team: 4,
@@ -305,6 +309,7 @@ export default {
       ]
     },
     {
+      id: 136,
       name: "Colossus and Wolverine",
       set: 16,
       team: 4,
@@ -389,6 +394,7 @@ export default {
       ]
     },
     {
+      id: 137,
       name: "Dazzler",
       set: 16,
       team: 4,
@@ -455,6 +461,7 @@ export default {
       ]
     },
     {
+      id: 138,
       name: "Havok",
       set: 16,
       team: 4,
@@ -531,6 +538,7 @@ export default {
       ]
     },
     {
+      id: 139,
       name: "Jubilee",
       set: 16,
       team: 4,
@@ -607,6 +615,7 @@ export default {
       ]
     },
     {
+      id: 140,
       name: "Kitty Pryde",
       set: 16,
       team: 4,
@@ -683,6 +692,7 @@ export default {
       ]
     },
     {
+      id: 141,
       name: "Legion",
       set: 16,
       team: 4,
@@ -781,6 +791,7 @@ export default {
       ]
     },
     {
+      id: 142,
       name: "Longshot",
       set: 16,
       team: 4,
@@ -846,6 +857,7 @@ export default {
       ]
     },
     {
+      id: 143,
       name: "Phoenix",
       set: 16,
       team: 4,
@@ -914,6 +926,7 @@ export default {
       ]
     },
     {
+      id: 144,
       name: "Polaris",
       set: 16,
       team: 4,
@@ -982,6 +995,7 @@ export default {
       ]
     },
     {
+      id: 145,
       name: "Psylocke",
       set: 16,
       team: 4,
@@ -1048,6 +1062,7 @@ export default {
       ]
     },
     {
+      id: 146,
       name: "X-23",
       set: 16,
       team: 4,

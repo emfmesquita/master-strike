@@ -24,6 +24,26 @@
         <v-row align="center">
           <v-col cols="12">
             <v-autocomplete
+              v-model="filter.hero"
+              :items="filterHeroes"
+              multiple
+              label="Hero"
+              item-text="label"
+              item-value="id" 
+              clearable
+              @change="filterChanged"
+            >
+              <template v-slot:selection="{ item }">
+                <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'hero')">
+                  {{item.label}}
+                </v-chip>
+              </template>
+            </v-autocomplete>
+          </v-col>
+        </v-row>
+        <v-row align="center">
+          <v-col cols="12">
+            <v-autocomplete
               v-model="filter.set"
               :items="sets"
               multiple
@@ -246,6 +266,13 @@ allHeroes.forEach(hero => {
   });
 });
 
+let filterHeroes = allHeroes.map(hero => ({
+  id: hero.id,
+  label: hero.filterName ? hero.filterName : hero.name
+}));
+filterHeroes.sort((a, b) => a.label.localeCompare(b.label));
+const validHeroes = allHeroes.filter(hero => hero.id).map(hero => hero.id);
+
 let teams = teamArray.concat([]);
 teams.sort((a, b) => a.label.localeCompare(b.label));
 teams = Object.freeze(teams);
@@ -262,12 +289,14 @@ export default {
   name: "HelloWorld",
   components: { Hero, TeamIcon, HeroClassIcon, AbilityIcon },
   data: () => ({
+    filterHeroes,
     sets: setsArray,
     teams,
     heroClasses,
     keywords,
     sortMethod: "alpha",
     filter: {
+      hero: [],
       set: [],
       team: [],
       hc: [],
@@ -281,6 +310,7 @@ export default {
   }),
   created() {
     const query = this.$route.query;
+    this.filter.hero = this.toIntArray(query.hero).filter(hero => validHeroes.indexOf(hero) >= 0);
     this.filter.set = this.toIntArray(query.set).filter(set => setsArray[set]);
     this.filter.team = this.toIntArray(query.team).filter(team => teamArray[team]);
     this.filter.hc = this.toIntArray(query.hc).filter(hc => heroClassArray[hc]);
@@ -345,6 +375,7 @@ export default {
     setQuery() {
       const query = {};
       const filter = this.filter;
+      if(filter.hero.length) query.hero = filter.hero.join(",");
       if(filter.set.length) query.set = filter.set.join(",");
       if(filter.team.length) query.team = filter.team.join(",");
       if(filter.hc.length) query.hc = filter.hc.join(",");
@@ -387,6 +418,11 @@ export default {
           return card;
         });
       });
+
+      if(this.filter.hero.length) {
+        const heroIds = this.filter.hero;
+        this.heroes = this.heroes.filter(hero => heroIds.indexOf(hero.id) >= 0);
+      }
 
       if(this.filter.set.length) {
         const set = this.filter.set;

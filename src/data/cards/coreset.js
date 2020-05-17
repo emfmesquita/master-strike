@@ -1,6 +1,7 @@
 export default {
   heroes: [
     {
+      id: 1,
       name: "Black Widow",
       set: 1,
       team: 1,
@@ -69,6 +70,7 @@ export default {
       ]
     },
     {
+      id: 2,
       name: "Captain America",
       set: 1,
       team: 1,
@@ -152,6 +154,7 @@ export default {
       ]
     },
     {
+      id: 3,
       name: "Cyclops",
       set: 1,
       team: 1,
@@ -221,7 +224,9 @@ export default {
       ]
     },
     {
+      id: 4,
       name: "Deadpool",
+      filterName: "Deadpool (Core)",
       set: 1,
       team: 0,
       cards: [
@@ -287,6 +292,7 @@ export default {
       ]
     },
     {
+      id: 5,
       name: "Emma Frost",
       set: 1,
       team: 4,
@@ -364,6 +370,7 @@ export default {
       ]
     },
     {
+      id: 6,
       name: "Gambit",
       set: 1,
       team: 4,
@@ -435,6 +442,7 @@ export default {
       ]
     },
     {
+      id: 7,
       name: "Hawkeye",
       set: 1,
       team: 1,
@@ -495,6 +503,7 @@ export default {
       ]
     },
     {
+      id: 8,
       name: "Hulk",
       set: 1,
       team: 1,
@@ -563,6 +572,7 @@ export default {
       ]
     },
     {
+      id: 9,
       name: "Iron Man",
       set: 1,
       team: 1,
@@ -639,6 +649,7 @@ export default {
       ]
     },
     {
+      id: 10,
       name: "Nick Fury",
       set: 1,
       team: 2,
@@ -718,6 +729,7 @@ export default {
       ]
     },
     {
+      id: 11,
       name: "Rogue",
       set: 1,
       team: 4,
@@ -796,6 +808,7 @@ export default {
       ]
     },
     {
+      id: 12,
       name: "Spider-Man",
       set: 1,
       team: 3,
@@ -873,6 +886,7 @@ export default {
       ]
     },
     {
+      id: 13,
       name: "Storm",
       set: 1,
       team: 4,
@@ -957,6 +971,7 @@ export default {
       ]
     },
     {
+      id: 14,
       name: "Thor",
       set: 1,
       team: 1,
@@ -1056,7 +1071,9 @@ export default {
       ]
     },
     {
+      id: 15,
       name: "Wolverine",
+      filterName: "Wolverine (Core)",
       set: 1,
       team: 4,
       cards: [

@@ -1,6 +1,7 @@
 export default {
   heroes: [
     {
+      id: 38,
       name: "Black Cat",
       set: 5,
       team: 3,
@@ -75,6 +76,7 @@ export default {
       ]
     },
     {
+      id: 39,
       name: "Moon Knight",
       set: 5,
       team: 6,
@@ -145,6 +147,7 @@ export default {
       ]
     },
     {
+      id: 40,
       name: "Scarlet Spider",
       set: 5,
       team: 3,
@@ -207,6 +210,7 @@ export default {
       ]
     },
     {
+      id: 41,
       name: "Spider-Woman",
       set: 5,
       team: 3,
@@ -269,6 +273,7 @@ export default {
       ]
     },
     {
+      id: 42,
       name: "Symbiote Spider-Man",
       set: 5,
       team: 3,

@@ -1,7 +1,9 @@
 export default {
   heroes: [
     {
+      id: 185,
       name: "Captain Marvel, Agent of S.H.I.E.L.D.",
+      filterName: "Captain Marvel (Rev)",
       set: 24,
       team: 2,
       cards: [
@@ -90,6 +92,7 @@ export default {
       ]
     },
     {
+      id: 186,
       name: "Darkhawk",
       set: 24,
       team: 1,
@@ -223,6 +226,7 @@ export default {
       ]
     },
     {
+      id: 187,
       name: "Hellcat",
       set: 24,
       team: 1,
@@ -313,6 +317,7 @@ export default {
       ]
     },
     {
+      id: 188,
       name: "Photon",
       set: 24,
       team: 1,
@@ -394,6 +399,7 @@ export default {
       ]
     },
     {
+      id: 189,
       name: "Quicksilver",
       set: 24,
       team: 1,
@@ -509,6 +515,7 @@ export default {
       ]
     },
     {
+      id: 190,
       name: "Ronin",
       set: 24,
       team: 1,
@@ -600,6 +607,7 @@ export default {
       ]
     },
     {
+      id: 191,
       name: "Scarlet Witch",
       set: 24,
       team: 1,
@@ -683,6 +691,7 @@ export default {
       ]
     },
     {
+      id: 192,
       name: "Speed",
       set: 24,
       team: 1,
@@ -778,6 +787,7 @@ export default {
       ]
     },
     {
+      id: 193,
       name: "War Machine",
       set: 24,
       team: 1,

@@ -1,6 +1,75 @@
 export default {
   heroes: [
     {
+      id: 122,
+      name: "Bob, Agent of HYDRA",
+      set: 14,
+      team: 13,
+      cards: [
+        {
+          name: "Bullets Flying, Bob Hiding",
+          hc: 1,
+          rarity: 1,
+          cost: 3,
+          recruit: "2½ ",
+          abilities: [
+            [
+              {keyword: 30},
+              ": Draw a card."
+            ]
+          ]
+        },
+        {
+          name: "HYDRA Half-Wit",
+          hc: 5,
+          rarity: 1,
+          cost: 2,
+          attack: "1½ ",
+          abilities: [
+            [
+              "Reveal the top card of your deck. If it's HYDRA or S.H.I.E.L.D.",
+              { team: 13},
+              " or ",
+              { team: 2},
+              ", draw it."
+            ]
+          ]
+        },
+        {
+          name: "How Do I Get Out of Here??",
+          hc: 1,
+          rarity: 2,
+          cost: 6,
+          attack: "4",
+          abilities: [
+            [
+              { hc: 1 },
+              ": Look at the top card of another player's deck. Ask them a yes or no question about it. If they guess right, then they draw that card. If not, then you draw a card."
+            ]
+          ]
+        },
+        {
+          name: "Epic Middle Manager",
+          hc: 1,
+          rarity: 3,
+          cost: 8,
+          attack: "5",
+          abilities: [
+            [
+              { keyword: 30 },
+              ": KO up to two ",
+              { team: 13},
+              " and/or ",
+              { team: 2},
+              " Heroes from your discard pile. Draw a card for each Hero KO'd this way."
+
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 123,
       name: "Deadpool",
       set: 14,
       team: 17,
@@ -74,73 +143,7 @@ export default {
       ]
     },
     {
-      name: "Bob, Agent of HYDRA",
-      set: 14,
-      team: 13,
-      cards: [
-        {
-          name: "Bullets Flying, Bob Hiding",
-          hc: 1,
-          rarity: 1,
-          cost: 3,
-          recruit: "2½ ",
-          abilities: [
-            [
-              {keyword: 30},
-              ": Draw a card."
-            ]
-          ]
-        },
-        {
-          name: "HYDRA Half-Wit",
-          hc: 5,
-          rarity: 1,
-          cost: 2,
-          attack: "1½ ",
-          abilities: [
-            [
-              "Reveal the top card of your deck. If it's HYDRA or S.H.I.E.L.D.",
-              { team: 13},
-              " or ",
-              { team: 2},
-              ", draw it."
-            ]
-          ]
-        },
-        {
-          name: "How Do I Get Out of Here??",
-          hc: 1,
-          rarity: 2,
-          cost: 6,
-          attack: "4",
-          abilities: [
-            [
-              { hc: 1 },
-              ": Look at the top card of another player's deck. Ask them a yes or no question about it. If they guess right, then they draw that card. If not, then you draw a card."
-            ]
-          ]
-        },
-        {
-          name: "Epic Middle Manager",
-          hc: 1,
-          rarity: 3,
-          cost: 8,
-          attack: "5",
-          abilities: [
-            [
-              { keyword: 30 },
-              ": KO up to two ",
-              { team: 13},
-              " and/or ",
-              { team: 2},
-              " Heroes from your discard pile. Draw a card for each Hero KO'd this way."
-
-            ]
-          ]
-        }
-      ]
-    },
-    {
+      id: 124,
       name: "Slapstick",
       set: 14,
       team: 17,
@@ -200,6 +203,7 @@ export default {
       ]
     },
     {
+      id: 125,
       name: "Solo",
       set: 14,
       team: 17,
@@ -263,6 +267,7 @@ export default {
       ]
     },
     {
+      id: 126,
       name: "Stingray",
       set: 14,
       team: 17,

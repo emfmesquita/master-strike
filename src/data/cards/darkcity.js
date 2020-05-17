@@ -1,6 +1,7 @@
 export default {
   heroes: [
     {
+      id: 16,
       name: "Angel",
       set: 3,
       team: 4,
@@ -60,73 +61,7 @@ export default {
       ]
     },
     {
-      name: "Professor X",
-      set: 3,
-      team: 4,
-      cards: [
-        {
-          name: "Psionic Astral Form",
-          hc: 3,
-          rarity: 1,
-          cost: 2,
-          attack: "1+",
-          abilities: [
-            [
-              { team: 4 },
-              ": You get ",
-              { bold: "+2" },
-              { icon: 1 },
-              "."
-            ]
-          ]
-        },
-        {
-          name: "Class Dismissed",
-          hc: 2,
-          rarity: 1,
-          cost: 3,
-          recruit: "2",
-          abilities: [
-            "You may put a Hero from the HQ on the bottom of the Hero Deck.",
-            [
-              { hc: 2 },
-              ": You may KO a card from your hand or discard pile."
-            ]
-          ]
-        },
-        {
-          name: "Telepathic Probe",
-          hc: 3,
-          rarity: 2,
-          cost: 5,
-          attack: "3",
-          abilities: [
-            "Reveal the top card of the Villain Deck. If it's a Bystander, you may rescue it. If it's a Villain, you may fight it this turn."
-          ]
-        },
-        {
-          name: "Mind Control",
-          hc: 1,
-          rarity: 3,
-          cost: 8,
-          attack: "6",
-          abilities: [
-            [
-              "Whenever you defeat a Villain this turn, you may gain it. It becomes a grey Hero with no text that gives ",
-              { bold: "+"},
-              { icon: 1 },
-              " equal to its ",
-              { icon: 1 },
-              ". ",
-              { italic: "[ You still get its " },
-              { icon: 4 },
-              { italic: "]" }
-            ]
-          ]
-        }
-      ]
-    },
-    {
+      id: 17,
       name: "Bishop",
       set: 3,
       team: 4,
@@ -211,6 +146,7 @@ export default {
       ]
     },
     {
+      id: 18,
       name: "Blade",
       set: 3,
       team: 6,
@@ -271,6 +207,7 @@ export default {
       ]
     },
     {
+      id: 19,
       name: "Cable",
       set: 3,
       team: 7,
@@ -355,6 +292,7 @@ export default {
       ]
     },
     {
+      id: 20,
       name: "Colossus",
       set: 3,
       team: 7,
@@ -420,7 +358,9 @@ export default {
       ]
     },
     {
+      id: 21,
       name: "Daredevil",
+      filterName: "Daredevil (DC)",
       set: 3,
       team: 6,
       cards: [
@@ -493,6 +433,7 @@ export default {
       ]
     },
     {
+      id: 22,
       name: "Domino",
       set: 3,
       team: 7,
@@ -608,6 +549,7 @@ export default {
       ]
     },
     {
+      id: 23,
       name: "Elektra",
       set: 3,
       team: 6,
@@ -712,6 +654,7 @@ export default {
       ]
     },
     {
+      id: 24,
       name: "Forge",
       set: 3,
       team: 7,
@@ -792,6 +735,7 @@ export default {
       ]
     },
     {
+      id: 25,
       name: "Ghost Rider",
       set: 3,
       team: 6,
@@ -886,6 +830,7 @@ export default {
       ]
     },
     {
+      id: 26,
       name: "Iceman",
       set: 3,
       team: 4,
@@ -978,6 +923,7 @@ export default {
       ]
     },
     {
+      id: 27,
       name: "Iron Fist",
       set: 3,
       team: 6,
@@ -1072,6 +1018,7 @@ export default {
       ]
     },
     {
+      id: 28,
       name: "Jean Grey",
       set: 3,
       team: 4,
@@ -1150,6 +1097,7 @@ export default {
       ]
     },
     {
+      id: 29,
       name: "Nightcrawler",
       set: 3,
       team: 4,
@@ -1232,6 +1180,75 @@ export default {
       ]
     },
     {
+      id: 30,
+      name: "Professor X",
+      set: 3,
+      team: 4,
+      cards: [
+        {
+          name: "Psionic Astral Form",
+          hc: 3,
+          rarity: 1,
+          cost: 2,
+          attack: "1+",
+          abilities: [
+            [
+              { team: 4 },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Class Dismissed",
+          hc: 2,
+          rarity: 1,
+          cost: 3,
+          recruit: "2",
+          abilities: [
+            "You may put a Hero from the HQ on the bottom of the Hero Deck.",
+            [
+              { hc: 2 },
+              ": You may KO a card from your hand or discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Telepathic Probe",
+          hc: 3,
+          rarity: 2,
+          cost: 5,
+          attack: "3",
+          abilities: [
+            "Reveal the top card of the Villain Deck. If it's a Bystander, you may rescue it. If it's a Villain, you may fight it this turn."
+          ]
+        },
+        {
+          name: "Mind Control",
+          hc: 1,
+          rarity: 3,
+          cost: 8,
+          attack: "6",
+          abilities: [
+            [
+              "Whenever you defeat a Villain this turn, you may gain it. It becomes a grey Hero with no text that gives ",
+              { bold: "+"},
+              { icon: 1 },
+              " equal to its ",
+              { icon: 1 },
+              ". ",
+              { italic: "[ You still get its " },
+              { icon: 4 },
+              { italic: "]" }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 31,
       name: "Punisher",
       set: 3,
       team: 6,
@@ -1340,7 +1357,9 @@ export default {
       ]
     },
     {
+      id: 32,
       name: "Wolverine",
+      filterName: "Wolverine (DC)",
       set: 3,
       team: 7,
       cards: [
