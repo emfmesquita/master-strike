@@ -1,65 +1,7 @@
 export default {
   heroes: [
     {
-      name: "Black Panther",
-      set: 10,
-      team: 15,
-      cards: [
-        {
-          name: "Catlike Reflexes",
-          hc: 2,
-          hc2: 1,
-          rarity: 1,
-          cost: 3,
-          recruit: "1",
-          abilities: [
-            "Draw a card."
-          ]
-        },
-        {
-          name: "Multifaceted Genius",
-          hc: 4,
-          hc2: 5,
-          rarity: 1,
-          cost: 4,
-          attack: "2+",
-          abilities: [
-            [
-              "You get ",
-              { bold: "+1" },
-              { icon: 1 },
-              " for each other multicolored card you played this turn."
-            ]
-          ]
-        },
-        {
-          name: "Stalk the Urban Jungle",
-          hc: 4,
-          hc2: 1,
-          rarity: 2,
-          cost: 6,
-          attack: "4",
-          abilities: [
-            "Whenever you defeat a Villain on the Rooftops or Streets this turn, you may KO one of your cards or a card from your discard pile."
-          ]
-        },
-        {
-          name: "King of Wakanda",
-          hc: 2,
-          hc2: 5,
-          rarity: 3,
-          cost: 7,
-          abilities: [
-            "Gain three sidekicks.",
-            [
-              { team: 15 },
-              ": Put them on top of your deck."
-            ]
-          ]
-        }
-      ]
-    },
-    {
+      id: 71,
       name: "Apocalyptic Kitty Pryde",
       set: 10,
       team: 4,
@@ -122,6 +64,7 @@ export default {
       ]
     },
     {
+      id: 72,
       name: "Black Bolt",
       set: 10,
       team: 15,
@@ -185,6 +128,67 @@ export default {
       ]
     },
     {
+      id: 73,
+      name: "Black Panther",
+      set: 10,
+      team: 15,
+      cards: [
+        {
+          name: "Catlike Reflexes",
+          hc: 2,
+          hc2: 1,
+          rarity: 1,
+          cost: 3,
+          recruit: "1",
+          abilities: [
+            "Draw a card."
+          ]
+        },
+        {
+          name: "Multifaceted Genius",
+          hc: 4,
+          hc2: 5,
+          rarity: 1,
+          cost: 4,
+          attack: "2+",
+          abilities: [
+            [
+              "You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each other multicolored card you played this turn."
+            ]
+          ]
+        },
+        {
+          name: "Stalk the Urban Jungle",
+          hc: 4,
+          hc2: 1,
+          rarity: 2,
+          cost: 6,
+          attack: "4",
+          abilities: [
+            "Whenever you defeat a Villain on the Rooftops or Streets this turn, you may KO one of your cards or a card from your discard pile."
+          ]
+        },
+        {
+          name: "King of Wakanda",
+          hc: 2,
+          hc2: 5,
+          rarity: 3,
+          cost: 7,
+          abilities: [
+            "Gain three sidekicks.",
+            [
+              { team: 15 },
+              ": Put them on top of your deck."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 74,
       name: "Captain Marvel",
       set: 10,
       team: 1,
@@ -258,6 +262,7 @@ export default {
       ]
     },
     {
+      id: 75,
       name: "Dr. Strange",
       set: 10,
       team: 15,
@@ -327,6 +332,7 @@ export default {
       ]
     },
     {
+      id: 76,
       name: "Lady Thor",
       set: 10,
       team: 1,
@@ -403,6 +409,7 @@ export default {
       ]
     },
     {
+      id: 77,
       name: "Magik",
       set: 10,
       team: 4,
@@ -471,6 +478,7 @@ export default {
       ]
     },
     {
+      id: 78,
       name: "Maximus",
       set: 10,
       team: 14,
@@ -537,6 +545,7 @@ export default {
       ]
     },
     {
+      id: 79,
       name: "Namor, the Sub-Mariner",
       set: 10,
       team: 14,
@@ -600,6 +609,7 @@ export default {
       ]
     },
     {
+      id: 80,
       name: "Old Man Logan",
       set: 10,
       team: 4,
@@ -671,6 +681,7 @@ export default {
       ]
     },
     {
+      id: 81,
       name: "Proxima Midnight",
       set: 10,
       team: 14,
@@ -747,6 +758,7 @@ export default {
       ]
     },
     {
+      id: 82,
       name: "Superior Iron Man",
       set: 10,
       team: 15,
@@ -807,6 +819,7 @@ export default {
       ]
     },
     {
+      id: 83,
       name: "Thanos",
       set: 10,
       team: 14,
@@ -874,6 +887,7 @@ export default {
       ]
     },
     {
+      id: 84,
       name: "Ultimate Spider-Man",
       set: 10,
       team: 3,
