@@ -237,7 +237,6 @@
 
 <script>
 import Hero from "../components/hero/Hero.vue";
-import { cards } from "../data";
 import { setsArray } from "../constants/sets";
 import { teamArray } from "../constants/team";
 import { heroClassArray } from "../constants/hero-class";
@@ -245,28 +244,11 @@ import { keywordsArray } from "../constants/keywords";
 import TeamIcon from "../components/shared/TeamIcon.vue";
 import HeroClassIcon from "../components/shared/HeroClassIcon.vue";
 import AbilityIcon from "../components/shared/AbilityIcon.vue";
+import { toIntArray, toIntPair } from "../services/queryUtils";
+import { getAllHeroes, numberOfHeroCards } from "../services/cardUtils";
 
-let allHeroes = [];
-Object.values(cards).forEach(setCards => {
-  if(setCards.heroes && setCards.heroes.length) {
-    allHeroes = allHeroes.concat(setCards.heroes);
-  }
-});
-
-const toNumber = (value) => {
-  if(!value) return -1;
-  const safeValue = value.replace(/[+*]*/ig, '').replace('½', '.5');
-  const number = Number.parseFloat(safeValue);
-  return Number.isNaN(number) ? -1 : number;
-}
-allHeroes.forEach(hero => {
-  (hero.cards || []).forEach(card => {
-    card.attackNum = toNumber(card.attack);
-    card.recruitNum = toNumber(card.recruit);
-  });
-});
-
-let filterHeroes = allHeroes.map(hero => ({
+const allHeroes = getAllHeroes();
+const filterHeroes = allHeroes.map(hero => ({
   id: hero.id,
   label: hero.filterName ? hero.filterName : hero.name
 }));
@@ -286,7 +268,7 @@ keywords.sort((a, b) => a.label.localeCompare(b.label));
 keywords = Object.freeze(keywords);
 
 export default {
-  name: "HelloWorld",
+  name: "Heroes",
   components: { Hero, TeamIcon, HeroClassIcon, AbilityIcon },
   data: () => ({
     filterHeroes,
@@ -310,14 +292,14 @@ export default {
   }),
   created() {
     const query = this.$route.query;
-    this.filter.hero = this.toIntArray(query.hero).filter(hero => validHeroes.indexOf(hero) >= 0);
-    this.filter.set = this.toIntArray(query.set).filter(set => setsArray[set]);
-    this.filter.team = this.toIntArray(query.team).filter(team => teamArray[team]);
-    this.filter.hc = this.toIntArray(query.hc).filter(hc => heroClassArray[hc]);
-    this.filter.keyword = this.toIntArray(query.keyword).filter(keyword => keywordsArray[keyword]);
-    this.filter.cost = this.toIntPair(query.cost, 0, 9);
-    this.filter.attack = this.toIntPair(query.attack, -1, 10);
-    this.filter.recruit = this.toIntPair(query.recruit, -1, 5);
+    this.filter.hero = toIntArray(query.hero).filter(hero => validHeroes.indexOf(hero) >= 0);
+    this.filter.set = toIntArray(query.set).filter(set => setsArray[set]);
+    this.filter.team = toIntArray(query.team).filter(team => teamArray[team]);
+    this.filter.hc = toIntArray(query.hc).filter(hc => heroClassArray[hc]);
+    this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword]);
+    this.filter.cost = toIntPair(query.cost, 0, 9);
+    this.filter.attack = toIntPair(query.attack, -1, 10);
+    this.filter.recruit = toIntPair(query.recruit, -1, 5);
     this.sortMethod = query.sort === "results" ? "results" : "alpha";
     this.search();
     this.sort();
@@ -337,22 +319,6 @@ export default {
     }
   },
   methods: {
-    toInteger(value) {
-      const interger = Number.parseInt(value);
-      return Number.isNaN(interger) ? -1 : interger;
-    },
-    toIntArray(strValues) {
-      if(!strValues) return [];
-      const tokens = strValues.split(",");
-      return tokens.map(token => this.toInteger(token));
-    },
-    toIntPair(strValues, min, max) {
-      const intValues = this.toIntArray(strValues);
-      const safe = (value) => value < min ? min : (value > max ? max : value);
-      const lowerValue = intValues.length < 1 ? min : safe(intValues[0]);
-      const higherValue = intValues.length < 2 ? max : safe(intValues[1]);
-      return [lowerValue, higherValue];
-    },
     heroKey(hero) {
       return `${this.lastFilterTime}-${hero.team}-${hero.name}`;
     },
@@ -499,12 +465,7 @@ export default {
           return 0;
         });
 
-        hero.results = hero.filteredCards.reduce((total, card) => {
-          if(card.disabled || card.divided === 2) return total;
-          if(card.rarity === 1) return total + 5;
-          if(card.rarity === 2) return total + 3;
-          return total + 1;
-        }, 0);
+        hero.results = numberOfHeroCards(hero.filteredCards);
       });
 
       this.lastFilterTime = Date.now();

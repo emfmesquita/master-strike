@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="12">
           <SetChip class="set-chip float-right" :short="this.numberOfColumns === 1" :set="hero.set"/>
-          <NumberOfCards class="hero-cards-number" :number="hero.results" size="16"/>
+          <NumberOfCards class="hero-cards-number" :number="numberOfCards" size="16"/>
           <span :class="titleClasses">{{ hero.name }}</span>
         </v-col>
       </v-row>
@@ -49,6 +49,7 @@
 import HeroCard from "./HeroCard.vue";
 import SetChip from "../shared/SetChip.vue";
 import NumberOfCards from "../shared/NumberOfCards";
+import { numberOfHeroCards } from "../../services/cardUtils";
 
 export default {
   name: "Hero",
@@ -66,6 +67,12 @@ export default {
       }
       return 4;
     },
+    cards() {
+      return this.hero.filteredCards === undefined ? this.hero.cards : this.hero.filteredCards;
+    },
+    numberOfCards() {
+      return this.hero.results === undefined ? numberOfHeroCards(this.cards) : this.hero.results;
+    },
     titleClasses() {
       const short = this.numberOfColumns === 1;
       return {
@@ -74,7 +81,7 @@ export default {
       };
     }, 
     pages() {
-      const cards = this.hero.filteredCards;
+      const cards = this.cards;
       const numberOfPages = Math.ceil(cards.length / this.numberOfColumns);
       const pages = [];
       for (let pageNumber = 0; pageNumber < numberOfPages; pageNumber++) {

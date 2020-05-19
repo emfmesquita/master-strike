@@ -1,4 +1,5 @@
 import Heroes from "../views/Heroes.vue";
+import Random from "../views/Random";
 import Vue from "vue";
 import VueRouter from "vue-router";
 
@@ -14,6 +15,11 @@ const routes = [
     path: "/heroes",
     name: "Heroes",
     component: Heroes
+  },
+  {
+    path: "/random",
+    name: "Random",
+    component: Random
   },
   {
     path: "/about",
