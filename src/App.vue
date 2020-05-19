@@ -4,7 +4,7 @@
       <div class="d-flex align-center">
 
         <div id="nav">
-          <router-link to="/"><span class="display-1">Master Strike</span></router-link>
+          <router-link to="/"><span :class="titleClasses">Master Strike</span></router-link>
           <!-- <router-link to="/about"><span>About</span></router-link> -->
         </div>
       </div>
@@ -58,6 +58,14 @@ export default {
   },
   destroyed() {
     window.removeEventListener('scroll', this.handleScroll);
+  },
+  computed: {
+    titleClasses() {
+      return {
+        'display-1': this.$vuetify.breakpoint.mdAndUp,
+        'title': this.$vuetify.breakpoint.smAndDown
+      }
+    }
   },
   methods: {
     handleScroll() {
