@@ -1,6 +1,8 @@
 <template>
   <div>
-    <v-navigation-drawer app clipped>
+    <shared-header />
+
+    <shared-side-bar>
       <v-container class="card-filter">
         <v-row align="center">
           <v-col cols="12">
@@ -33,7 +35,7 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-navigation-drawer>
+    </shared-side-bar>
     <v-container>
       <v-row>
         <v-col cols="8" sm="4" md="4" lg="2" offset="2" offset-sm="4" offset-md="4" offset-lg="5">
@@ -57,6 +59,8 @@
         </v-lazy>
       </template>
     </v-container>
+
+    <shared-footer />
   </div>
 </template>
 

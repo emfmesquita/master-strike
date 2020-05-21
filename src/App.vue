@@ -1,21 +1,5 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark clipped-left clipped-right>
-      <div class="d-flex align-center">
-
-        <div id="nav">
-          <router-link to="/"><span :class="titleClasses">Master Strike</span></router-link>
-          <!-- <router-link to="/about"><span>About</span></router-link> -->
-        </div>
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn text>
-        <v-icon>mdi-cog-outline</v-icon>
-      </v-btn>
-    </v-app-bar>
-
     <v-content>
       <router-view />
     </v-content>
@@ -33,15 +17,6 @@
     >
       <v-icon>mdi-chevron-up</v-icon>
     </v-btn>
-
-    <v-footer
-      app
-      color="primary"
-      class="white--text"
-    >
-      <v-spacer />
-      <span>2020</span>
-    </v-footer>
   </v-app>
 </template>
 
@@ -51,7 +26,7 @@ export default {
   name: "App",
   data: () => ({
     drawer: true,
-    showScrollToTop: false
+    scrolled: false
   }),
   created() {
     window.addEventListener('scroll', this.handleScroll);
@@ -60,27 +35,21 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
   computed: {
-    titleClasses() {
-      return {
-        'display-1': this.$vuetify.breakpoint.mdAndUp,
-        'title': this.$vuetify.breakpoint.smAndDown
-      }
+    showScrollToTop() {
+      const fullSizeSideBar = this.$vuetify.breakpoint.mdAndDown && !this.$store.getters.sideBarCollapsed;
+      return this.scrolled && !fullSizeSideBar;
     }
   },
   methods: {
     handleScroll() {
-      this.showScrollToTop = window.scrollY > 0;
+      this.scrolled = window.scrollY > 1000;
     }
   }
 };
 </script>
 
 <style scoped>
-  span {
-    color: #fff !important;
-  }
-
   .scroll-top {
     margin-bottom: 48px;
   }
-</style>>
+</style>

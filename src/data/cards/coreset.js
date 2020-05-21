@@ -157,7 +157,7 @@ export default {
       id: 3,
       name: "Cyclops",
       set: 1,
-      team: 1,
+      team: 4,
       cards: [
         {
           name: "Determination",
@@ -517,7 +517,7 @@ export default {
           abilities: [
             [
               {
-                hc:5
+                hc:4
               },
               ": You get +1 Attack."
             ]

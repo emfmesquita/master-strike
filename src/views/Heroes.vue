@@ -1,6 +1,8 @@
 <template>
   <div>
-    <v-navigation-drawer app clipped>
+    <shared-header />
+
+    <shared-side-bar>
       <v-container class="card-filter">
         <v-row align="center">
           <v-col cols="12">
@@ -209,13 +211,13 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-navigation-drawer>
+    </shared-side-bar>
 
     <v-container>
       <template v-if="heroes.length">
         <v-row>
           <v-col cols="12">
-            <div class="text-center title">{{ heroes.length }} {{ heroFound }}</div>
+            <div class="text-center title">{{ heroes.length }} {{ heroFound }} - {{ test }}</div>
           </v-col>
         </v-row>
         <v-lazy min-height="410" :key="heroKey(hero)" v-for="hero in heroes">
@@ -232,6 +234,8 @@
         </v-col>
       </v-row>
     </v-container>
+
+    <shared-footer />
   </div>
 </template>
 
@@ -305,6 +309,9 @@ export default {
     this.sort();
   },
   computed: {
+    test() {
+      return this.$vuetify.breakpoint.name;
+    },
     heroFound() {
       return this.heroes.length === 1 ? "Hero was found" : "Heroes were found";
     },

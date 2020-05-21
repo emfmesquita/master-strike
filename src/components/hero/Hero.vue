@@ -10,8 +10,8 @@
       </v-row>
       <v-row>
         <template v-if="pages.length === 1">
-          <v-col 
-            cols="12" sm="6" md="4" lg="3" 
+          <v-col
+            :cols="columnSize"
             :class="{'divided-column-left': card.divided === 1, 'divided-column-right': card.divided === 2}"  
             v-for="card in pages[0]" :key="card.name"
           >
@@ -27,9 +27,8 @@
             <v-carousel-item v-for="(page, i) in pages" :key="i">
               <v-sheet height="100%" >
                 <v-row class="inner-carousel-row">
-                  <v-col 
-                    cols="12" sm="6" md="4" lg="3"
-                    class="das"
+                  <v-col
+                    :cols="columnSize"
                     :class="{'divided-column-left': card.divided === 1, 'divided-column-right': card.divided === 2}"  
                     v-for="card in page" :key="card.name"
                   >
@@ -58,14 +57,18 @@ export default {
   data: () => ({}),
   computed: {
     numberOfColumns() {
+      const expandedSideBar = !this.$store.getters.sideBarCollapsed;
       switch (this.$vuetify.breakpoint.name) {
         case 'xs': return 1
-        case 'sm': return 2
-        case 'md': return 3
+        case 'sm': return expandedSideBar ? 1 : 2
+        case 'md': return expandedSideBar ? 2 : 3
         case 'lg': return 4
         case 'xl': return 4
       }
       return 4;
+    },
+    columnSize() {
+      return 12 / this.numberOfColumns;
     },
     cards() {
       return this.hero.filteredCards === undefined ? this.hero.cards : this.hero.filteredCards;
