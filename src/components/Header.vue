@@ -11,9 +11,9 @@
     <v-spacer></v-spacer>
 
     <slot name="right-toolbar">
-      <v-btn text>
+      <!-- <v-btn text>
         <v-icon>mdi-cog-outline</v-icon>
-      </v-btn>
+      </v-btn> -->
     </slot>
   </v-app-bar>
 </template>
