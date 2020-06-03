@@ -73,7 +73,7 @@ export default {
                 " Heroes from your hand and/or discard pile."
               ],
               [
-                { keyword: 27 },
+                { keyword: 24 },
                 ": For each card KO'd this way, you get ",
                 { bold: "+1"},
                 { icon: 1}
@@ -109,7 +109,7 @@ export default {
             attack: "2+",
             abilities: [
               [
-                { keyword: 27 },
+                { keyword: 24 },
                 ": You get ",
                 { bold: "+2"},
                 { icon: 1}
@@ -141,7 +141,7 @@ export default {
                 " for each Hero Class you have."
               ],
               [
-                { keyword: 27 },
+                { keyword: 24 },
                 ": You get ",
                 { bold: "+2"},
                 { icon: 2},
@@ -201,7 +201,7 @@ export default {
                 ": Rescue a Bystander"
               ],
               [
-                { keyword: 27},
+                { keyword: 24},
                 ": ",
                 "Draw a Card."
               ]
@@ -215,7 +215,7 @@ export default {
             attack: "5",
             abilities: [
               [
-                { keyword: 27},
+                { keyword: 24},
                 ": ",
                 { keyword: 23, text: "Man Out of Time"}
               ]
@@ -245,7 +245,7 @@ export default {
                 " for each Hero Class you have."
               ],
               [
-                { keyword: 27},
+                { keyword: 24},
                 ": You get ",
                 { bold: "+1"},
                 { icon: 1},
@@ -278,7 +278,7 @@ export default {
             attack: "2",
             abilities: [
               [
-                { keyword: 27},
+                { keyword: 24},
                 ": ",
                 { keyword: 23, text: "Man Out of Time"}
               ]
@@ -293,7 +293,7 @@ export default {
             abilities: [
               "Rescue a Bystander",
               [
-                { keyword: 27},
+                { keyword: 24},
                 ": You get ",
                 { bold: "+3"},
                 { icon: 1}

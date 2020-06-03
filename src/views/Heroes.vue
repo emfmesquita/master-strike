@@ -213,11 +213,11 @@
       </v-container>
     </shared-side-bar>
 
-    <v-container>
+    <v-container @mouseenter="enter" @mouseleave="out">
       <template v-if="heroes.length">
         <v-row>
           <v-col cols="12">
-            <div class="text-center title">{{ heroes.length }} {{ heroFound }} - {{ test }}</div>
+            <div class="text-center title">{{ heroes.length }} {{ heroFound }}</div>
           </v-col>
         </v-row>
         <v-lazy min-height="410" :key="heroKey(hero)" v-for="hero in heroes">
@@ -250,6 +250,7 @@ import HeroClassIcon from "../components/shared/HeroClassIcon.vue";
 import AbilityIcon from "../components/shared/AbilityIcon.vue";
 import { toIntArray, toIntPair } from "../services/queryUtils";
 import { getAllHeroes, numberOfHeroCards } from "../services/cardUtils";
+import { disableBodyScroll, enableBodyScroll } from "../services/scrollUtils";
 
 const allHeroes = getAllHeroes();
 const filterHeroes = allHeroes.map(hero => ({
@@ -309,9 +310,6 @@ export default {
     this.sort();
   },
   computed: {
-    test() {
-      return this.$vuetify.breakpoint.name;
-    },
     heroFound() {
       return this.heroes.length === 1 ? "Hero was found" : "Heroes were found";
     },
@@ -326,6 +324,12 @@ export default {
     }
   },
   methods: {
+    enter() {
+      enableBodyScroll();
+    },
+    out() {
+      disableBodyScroll();
+    },
     heroKey(hero) {
       return `${this.lastFilterTime}-${hero.team}-${hero.name}`;
     },

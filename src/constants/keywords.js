@@ -141,7 +141,7 @@ const SIZE_CHANGING = {
     id: 26,
     inHeroes: true,
     value: "sizechanging",
-    label: "Size Changing"
+    label: "Size-Changing"
 }
 const PHASING = {
     id: 27,
