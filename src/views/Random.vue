@@ -6,6 +6,18 @@
       <v-container class="card-filter">
         <v-row align="center">
           <v-col cols="12">
+            <v-btn 
+              block 
+              color="pink"
+              class="white--text"
+              @click="randomize"
+            >
+              <v-icon left>mdi-refresh</v-icon> Randomize
+            </v-btn>
+          </v-col>
+        </v-row>
+        <v-row align="center">
+          <v-col cols="12">
             <v-autocomplete
               v-model="filter.set"
               :items="sets"
@@ -35,20 +47,18 @@
           </v-col>
         </v-row>
       </v-container>
+      <template v-slot:collapsed>
+            <v-btn 
+              block 
+              color="pink"
+              class="white--text pa-0"
+              @click="randomize"
+            >
+              <v-icon>mdi-refresh</v-icon>
+            </v-btn>
+      </template>
     </shared-side-bar>
     <v-container>
-      <v-row>
-        <v-col cols="8" sm="4" md="4" lg="2" offset="2" offset-sm="4" offset-md="4" offset-lg="5">
-          <v-btn 
-            block 
-            color="pink"
-            class="white--text"
-            @click="randomize"
-          >
-            Randomize
-          </v-btn>
-        </v-col>
-      </v-row>
       <template v-if="heroes.length">
         <v-lazy min-height="410" :key="heroKey(hero)" v-for="hero in heroes">
           <v-row>
