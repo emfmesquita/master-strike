@@ -213,7 +213,7 @@
       </v-container>
     </shared-side-bar>
 
-    <v-container @mouseenter="enter" @mouseleave="out">
+    <v-container>
       <template v-if="heroes.length">
         <v-row>
           <v-col cols="12">
@@ -250,7 +250,7 @@ import HeroClassIcon from "../components/shared/HeroClassIcon.vue";
 import AbilityIcon from "../components/shared/AbilityIcon.vue";
 import { toIntArray, toIntPair } from "../services/queryUtils";
 import { getAllHeroes, numberOfHeroCards } from "../services/cardUtils";
-import { disableBodyScroll, enableBodyScroll } from "../services/scrollUtils";
+// import { disableBodyScroll, enableBodyScroll } from "../services/scrollUtils";
 
 const allHeroes = getAllHeroes();
 const filterHeroes = allHeroes.map(hero => ({
@@ -324,12 +324,12 @@ export default {
     }
   },
   methods: {
-    enter() {
-      enableBodyScroll();
-    },
-    out() {
-      disableBodyScroll();
-    },
+    // enter() {
+    //   enableBodyScroll();
+    // },
+    // out() {
+    //   disableBodyScroll();
+    // },
     heroKey(hero) {
       return `${this.lastFilterTime}-${hero.team}-${hero.name}`;
     },
