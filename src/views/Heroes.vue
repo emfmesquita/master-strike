@@ -376,7 +376,7 @@ export default {
     filterChanged() {
       this.$vuetify.goTo(0, { duration: 0 });
       this.search();
-      if(this.sortMethod === "results") this.sort();
+      this.sort();
       this.setQuery();
     },
     sort() {

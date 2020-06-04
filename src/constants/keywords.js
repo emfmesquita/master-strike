@@ -12,7 +12,7 @@ const BRIBE = {
 const VERSATILE = {
     id: 3,
     inHeroes: true,
-    value: "Versatile",
+    value: "versatile",
     label: "Versatile"
 }
 const FOCUS = {

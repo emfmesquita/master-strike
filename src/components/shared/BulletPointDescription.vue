@@ -1,7 +1,7 @@
 <template>
   <ul>
     <li v-for="(point, idx) in points" :key="idx">
-      <shared-description-group :description="point" />
+      <shared-description-group :description="point" :padded="padded" />
     </li>
   </ul>
 </template>
@@ -10,7 +10,7 @@
 
 export default {
   name: "BulletPointDescription",
-  props: ["points"],
+  props: ["points", "padded"],
   data: () => ({})
 };
 </script>

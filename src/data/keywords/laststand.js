@@ -1,5 +1,5 @@
 export default [
-  "This new keyword represents how a Dark Avenger fights hardest when all alone, back to the wall, making a last stand. Treacherous and cruel, they don’t understand the teamwork of the real Avengers.",
+  "This keyword represents how a Dark Avenger fights hardest when all alone, back to the wall, making a last stand. Treacherous and cruel, they don’t understand the teamwork of the real Avengers.",
   {
     points: [
       [
