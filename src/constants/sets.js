@@ -160,6 +160,12 @@ const NEW_MUTANTS = {
     label: "The New Mutants",
     initials: "NM"
 };
+const INTO_THE_COSMOS = {
+    id: 28,
+    value: "intothecosmos",
+    label: "Into the Cosmos",
+    initials: "ItC"
+};
 
 export const sets = Object.freeze({
     CORE_SET,
@@ -188,7 +194,8 @@ export const sets = Object.freeze({
     REVELATIONS,
     SHIELD,
     HEROES_OF_ASGARD,
-    NEW_MUTANTS
+    NEW_MUTANTS,
+    INTO_THE_COSMOS
 });
 
 export const setsArray = Object.freeze([
@@ -218,5 +225,6 @@ export const setsArray = Object.freeze([
     REVELATIONS,                // 24
     SHIELD,                     // 25
     HEROES_OF_ASGARD,           // 26
-    NEW_MUTANTS                 // 27
+    NEW_MUTANTS,                // 27
+    INTO_THE_COSMOS             // 28
 ]);

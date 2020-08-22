@@ -124,7 +124,7 @@ const MAN_OUT_OF_TIME = {
     id: 23,
     inHeroes: true,
     value: "manoutoftime",
-    label: "Man (and Woman) Out of Time"
+    label: "Man/Woman Out of Time"
 }
 const SAVIOR = {
     id: 24,
@@ -369,6 +369,24 @@ const WAKING_NIGHTMARE = {
     value: "wakingnightmare",
     label: "Waking Nightmare"
 }
+const BURN_SHARDS = {
+    id: 66,
+    inHeroes: true,
+    value: "burnshards",
+    label: "Burn Shards"
+}
+const CELESTIAL_BOON = {
+    id: 67,
+    inHeroes: false,
+    value: "celestialboon",
+    label: "Celestial Boon"
+}
+const CONTEST_OF_CHAMPIONS = {
+    id: 68,
+    inHeroes: true,
+    value: "contestofchampions",
+    label: "Contest of Champions"
+}
 
 export const keywords = Object.freeze({
     TELEPORT,
@@ -435,7 +453,10 @@ export const keywords = Object.freeze({
     HYDRA_LEVEL,
     WORTHY,
     MOONLIGHT_SUNLIGHT,
-    WAKING_NIGHTMARE
+    WAKING_NIGHTMARE,
+    BURN_SHARDS,
+    CELESTIAL_BOON,
+    CONTEST_OF_CHAMPIONS
 });
 
 export const keywordsArray = Object.freeze([
@@ -503,5 +524,8 @@ export const keywordsArray = Object.freeze([
     HYDRA_LEVEL,                // 62
     WORTHY,                     // 63
     MOONLIGHT_SUNLIGHT,         // 64
-    WAKING_NIGHTMARE            // 65
+    WAKING_NIGHTMARE,           // 65
+    BURN_SHARDS,                // 66
+    CELESTIAL_BOON,             // 67
+    CONTEST_OF_CHAMPIONS        // 68
 ]);
