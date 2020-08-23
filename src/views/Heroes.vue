@@ -25,6 +25,15 @@
         </v-row>
         <v-row align="center">
           <v-col cols="12">
+            <v-text-field
+              v-model="filter.search"
+              label="Search"
+              @input="filterChangedDebounced"
+            ></v-text-field>
+          </v-col>
+        </v-row>
+        <v-row align="center">
+          <v-col cols="12">
             <v-autocomplete
               v-model="filter.hero"
               :items="filterHeroes"
@@ -250,7 +259,10 @@ import HeroClassIcon from "../components/shared/HeroClassIcon.vue";
 import AbilityIcon from "../components/shared/AbilityIcon.vue";
 import { toIntArray, toIntPair } from "../services/queryUtils";
 import { getAllHeroes, numberOfHeroCards } from "../services/cardUtils";
+import { buildHeroSearch } from "../services/searchUtils";
 // import { disableBodyScroll, enableBodyScroll } from "../services/scrollUtils";
+
+const heroSearch = buildHeroSearch();
 
 const allHeroes = getAllHeroes();
 const filterHeroes = allHeroes.map(hero => ({
@@ -283,6 +295,7 @@ export default {
     keywords,
     sortMethod: "alpha",
     filter: {
+      search: "",
       hero: [],
       set: [],
       team: [],
@@ -349,6 +362,20 @@ export default {
         return match;
       });
     },
+    filterBySearch() {
+      const cards = heroSearch.search(this.filter.search);
+      this.heroes = this.heroes.filter(hero => {
+        const cardsFound = cards.filter(card => card.heroId === hero.id);
+        let match = false;
+        hero.filteredCards.forEach(card => {
+          if(card.disabled) return;
+          const found = cardsFound.some(cardFound => cardFound.name === card.name);
+          if(found) match = true;
+          card.disabled = !found;
+        });
+        return match;
+      });
+    },
     setQuery() {
       const query = {};
       const filter = this.filter;
@@ -372,6 +399,10 @@ export default {
       this.$vuetify.goTo(0, { duration: 0 });
       this.sort();
       this.setQuery();
+    },
+    filterChangedDebounced() {
+      clearTimeout(this._debounceTimerId);
+      this._debounceTimerId = setTimeout(() => this.filterChanged(), 750);
     },
     filterChanged() {
       this.$vuetify.goTo(0, { duration: 0 });
@@ -454,6 +485,7 @@ export default {
       if(this.hasCostFilter) this.filterByMinMax(this.filter.cost, "cost");
       if(this.hasAttackFilter) this.filterByMinMax(this.filter.attack, "attackNum");
       if(this.hasRecruitFilter) this.filterByMinMax(this.filter.recruit, "recruitNum");
+      if(this.filter.search) this.filterBySearch();
 
       this.heroes.forEach(hero => {
         // make sure divided cards disabled status is consistent
