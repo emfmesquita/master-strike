@@ -46,7 +46,9 @@ export default {
                 { team: 12},
                 ": Each other player reveals an ",
                 { hc: 2 },
-                " Hero or discards an Artifact they control. For each Artifact discarded this way, you gain a Shard.",
+                " Hero or discards an Artifact they control. For each Artifact discarded this way, you gain a ",
+                { rule: 1, text: "Shard" },
+                "."
               ]
             ]
           },
@@ -78,7 +80,11 @@ export default {
             cost: 2,
             recruit: "2",
             abilities: [
-              "A Villain gains a Shard."
+              [
+                "A Villain gains a ",
+                { rule: 1, text: "Shard" },
+                "."
+              ]
             ]
           },
           {
@@ -87,10 +93,16 @@ export default {
             rarity: 1,
             cost: 3,
             abilities: [
-              "Gain two Shards.",
+              [
+                "Gain two ",
+                { rule: 1 },
+                "."
+              ],
               [
                 { hc: 1},
-                ": Gain another Shard."
+                ": Gain another ",
+                { rule: 1, text: "Shard" },
+                "."
               ]
             ]
           },
@@ -104,14 +116,18 @@ export default {
               [
                 "A Villain of your choice gets no ",
                 { icon: 1},
-                " from Shards this turn."
+                " from ",
+                { rule: 1 },
+                " this turn."
               ],
               [
                 { hc: 1},
                 { hc: 1},
                 ": The Mastermind gets no ",
                 { icon: 1},
-                " from Shards this turn.",
+                " from ",
+                { rule: 1 },
+                " this turn."
               ]
             ]
           },
@@ -123,7 +139,11 @@ export default {
             abilities: [
               { keyword: 13, text: "Artifact -" },
               [
-                "Once per turn, gain two Shards. Once per turn, you may spend 5 Shards to get ",
+                "Once per turn, gain two ",
+                { rule: 1 },
+                ". Once per turn, you may spend 5 ",
+                { rule: 1 },
+                " to get ",
                 { bold: "+10"},
                 { icon: 1 },
                 "."
@@ -147,7 +167,9 @@ export default {
             abilities: [
               [
                 { hc: 4},
-                ": You may KO a card from your hand or discard pile. If you do, gain a Shard."
+                ": You may KO a card from your hand or discard pile. If you do, gain a ",
+                { rule: 1, text: "Shard" },
+                "."
               ]
             ]
           },
@@ -168,13 +190,17 @@ export default {
             cost: 4,
             abilities: [
               [
-                "Gain two Shards. You may spend Shards to get ",
+                "Gain two ",
+                { rule: 1 },
+                ". You may spend Shards to get ",
                 { icon: 2},
                 " this turn."
               ],
               [
                 { hc: 1},
-                ": You may choose another player. That player gains a Shard."
+                ": You may choose another player. That player gains a ",
+                { rule: 1, text: "Shard" },
+                "."
               ]
             ]
           },
@@ -185,7 +211,11 @@ export default {
             cost: 8,
             recruit: "5",
             abilities: [
-              "When you recruit your next Hero this turn, you gain Shards equal to that Hero's cost."
+              [
+                "When you recruit your next Hero this turn, you gain ",
+                { rule: 1 },
+                " equal to that Hero's cost."
+              ]
             ]
           }
         ]
@@ -217,7 +247,9 @@ export default {
             abilities: [
               [
                 { team: 12},
-                ": You gain a Shard for each other ",
+                ": You gain a ",
+                { rule: 1, text: "Shard" },
+                " for each other ",
                 { team: 12},
                 " Hero you played this turn."
               ]
@@ -231,7 +263,9 @@ export default {
             abilities: [
               { keyword: 13, text: "Artifact -" },
               [
-                "Whenever a Master Strike or Villain's Ambush ability is completed, you may gain a Shard."
+                "Whenever a Master Strike or Villain's Ambush ability is completed, you may gain a ",
+                { rule: 1, text: "Shard" },
+                "."
               ]
             ]
           },
@@ -268,7 +302,9 @@ export default {
             abilities: [
               { keyword: 13, text: "Artifact -" },
               [
-                "Once per turn, gain a Shard."
+                "Once per turn, gain a ",
+                { rule: 1, text: "Shard" },
+                "."
               ]
             ]
           },
@@ -304,7 +340,9 @@ export default {
             abilities: [
               { keyword: 13, text: "Artifact -" },
               [
-                "Once per turn, gain a Shard for each Artifact you control."
+                "Once per turn, gain a ",
+                { rule: 1, text: "Shard" },
+                " for each Artifact you control."
               ]
             ]
           }

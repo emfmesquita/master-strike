@@ -2,6 +2,7 @@ import { cards } from "../data";
 import { heroClassArray } from "../constants/hero-class"
 import { iconArray } from "../constants/icon"
 import { keywordsArray } from "../constants/keywords"
+import { rulesArray } from "../constants/rules"
 import { teamArray } from "../constants/team"
 
 const toNumber = (value) => {
@@ -43,7 +44,7 @@ const abilitiesToText = abilities => {
     else if(ability.team) append(teamArray[ability.team].label);
     else if(ability.icon) append(iconArray[ability.icon - 1].label);
     else if(ability.keyword) append(ability.text || keywordsArray[ability.keyword - 1].label);
-    else if(ability.rule) append(ability.text || keywordsArray[ability.rule - 1].label);
+    else if(ability.rule) append(ability.text || rulesArray[ability.rule - 1].label);
   });
   return textTokens.join(" ");
 }

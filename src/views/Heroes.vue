@@ -28,6 +28,8 @@
             <v-text-field
               v-model="filter.search"
               label="Search"
+              maxlength="30"
+              clearable
               @input="filterChangedDebounced"
             ></v-text-field>
           </v-col>
@@ -149,6 +151,26 @@
         </v-row>
         <v-row align="center">
           <v-col cols="12">
+            <v-autocomplete
+              v-model="filter.rule"
+              :items="rules"
+              multiple
+              clearable
+              item-text="label"
+              item-value="id"
+              label="Special Rule"
+              @change="filterChanged"
+            >
+              <template v-slot:selection="{ item }">
+                <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'rule')">
+                  {{item.label}}
+                </v-chip>
+              </template>
+            </v-autocomplete>
+          </v-col>
+        </v-row>
+        <v-row align="center">
+          <v-col cols="12">
             <v-range-slider
               v-model="filter.cost"
               :max="9"
@@ -254,6 +276,7 @@ import { setsArray } from "../constants/sets";
 import { teamArray } from "../constants/team";
 import { heroClassArray } from "../constants/hero-class";
 import { keywordsArray } from "../constants/keywords";
+import { rulesArray } from "../constants/rules";
 import TeamIcon from "../components/shared/TeamIcon.vue";
 import HeroClassIcon from "../components/shared/HeroClassIcon.vue";
 import AbilityIcon from "../components/shared/AbilityIcon.vue";
@@ -284,6 +307,10 @@ let keywords = keywordsArray.filter(keyword => keyword.inHeroes);
 keywords.sort((a, b) => a.label.localeCompare(b.label));
 keywords = Object.freeze(keywords);
 
+let rules = rulesArray.filter(rule => rule.inHeroes);
+rules.sort((a, b) => a.label.localeCompare(b.label));
+rules = Object.freeze(rules);
+
 export default {
   name: "Heroes",
   components: { Hero, TeamIcon, HeroClassIcon, AbilityIcon },
@@ -293,6 +320,7 @@ export default {
     teams,
     heroClasses,
     keywords,
+    rules,
     sortMethod: "alpha",
     filter: {
       search: "",
@@ -301,6 +329,7 @@ export default {
       team: [],
       hc: [],
       keyword: [],
+      rule: [],
       cost: [0,9],
       attack: [-1,10],
       recruit: [-1,5]
@@ -310,11 +339,13 @@ export default {
   }),
   created() {
     const query = this.$route.query;
+    this.filter.search = decodeURI(query.s || "");
     this.filter.hero = toIntArray(query.hero).filter(hero => validHeroes.indexOf(hero) >= 0);
     this.filter.set = toIntArray(query.set).filter(set => setsArray[set]);
     this.filter.team = toIntArray(query.team).filter(team => teamArray[team]);
     this.filter.hc = toIntArray(query.hc).filter(hc => heroClassArray[hc]);
     this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword]);
+    this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule + 1]);
     this.filter.cost = toIntPair(query.cost, 0, 9);
     this.filter.attack = toIntPair(query.attack, -1, 10);
     this.filter.recruit = toIntPair(query.recruit, -1, 5);
@@ -379,11 +410,13 @@ export default {
     setQuery() {
       const query = {};
       const filter = this.filter;
+      if(filter.search) query.s = encodeURI(filter.search);
       if(filter.hero.length) query.hero = filter.hero.join(",");
       if(filter.set.length) query.set = filter.set.join(",");
       if(filter.team.length) query.team = filter.team.join(",");
       if(filter.hc.length) query.hc = filter.hc.join(",");
       if(filter.keyword.length) query.keyword = filter.keyword.join(",");
+      if(filter.rule.length) query.rule = filter.rule.join(",");
       if(this.hasCostFilter) query.cost = filter.cost.join(",");
       if(this.hasAttackFilter) query.attack = filter.attack.join(",");
       if(this.hasRecruitFilter) query.recruit = filter.recruit.join(",");
@@ -477,6 +510,36 @@ export default {
             const matchKey = abs.some(ab => Array.isArray(ab) ? ab.some(hasKey) : hasKey(ab));
             if(matchKey) match = true;
             card.disabled = !matchKey;
+          });
+          return match;
+        });
+      }
+
+      if(this.filter.rule.length) {
+        const rules = this.filter.rule;
+        this.heroes = this.heroes.filter(hero => {
+          let match = false;
+          hero.filteredCards.forEach(card => {
+            if(card.disabled || !card.abilities) return;
+
+            // checks for multiclass
+            if(card.hc2 && rules.includes(2)) {
+              match = true;
+              return;
+            }
+
+            // checks for divided
+            if(card.divided && rules.includes(4)) {
+              match = true;
+              return;
+            }
+
+            // checks other rules
+            const abs = card.abilities;
+            const hasRule = ab => rules.indexOf(ab.rule) >= 0;
+            const matchRule = abs.some(ab => Array.isArray(ab) ? ab.some(hasRule) : hasRule(ab));
+            if(matchRule) match = true;
+            card.disabled = !matchRule;
           });
           return match;
         });

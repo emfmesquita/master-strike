@@ -1,11 +1,13 @@
 
 const SHARDS = {
     id: 1,
+    inHeroes: true,
     value: "shards",
     label: "Shards"
 }
 const MULTICLASS_CARDS = {
     id: 2,
+    inHeroes: true,
     value: "multiclasscards",
     label: "Multiclass Cards"
 }
@@ -16,6 +18,7 @@ const MULTIPLE_MASTERMINDS = {
 }
 const DIVIDED = {
     id: 4,
+    inHeroes: true,
     value: "divided",
     label: "Divided Card"
 }
