@@ -377,7 +377,6 @@ const BURN_SHARDS = {
 }
 const CELESTIAL_BOON = {
     id: 67,
-    inHeroes: false,
     value: "celestialboon",
     label: "Celestial Boon"
 }
