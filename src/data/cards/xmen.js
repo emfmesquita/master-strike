@@ -173,6 +173,7 @@ export default {
     {
       id: 134,
       name: "Beast",
+      filterName: "Beast (X-Men)",
       set: 16,
       team: 4,
       cards: [

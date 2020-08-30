@@ -10,7 +10,7 @@
     <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
     <div :class="subTitleClasses">{{ subTitle }}</div>
 
-    <div class="card-abilities" :class="{ small: card.smallAbilities }" v-if="card.abilities">
+    <div class="card-abilities" :class="{ dense: card.dense }" v-if="card.abilities">
       <div v-for="(ability, idx) in card.abilities" :key="idx">
         <shared-description-group :description="ability"/>
       </div>
@@ -188,10 +188,10 @@ export default {
     padding-left: 50px;
     padding-right: 16px;
 
-    &.small {
-      font-size: 11px;
+    &.dense {
+      font-size: 10px;
       padding-top: 16px;
-      padding-left: 42px;
+      padding-left: 46px;
       padding-right: 10px;
     }
   }

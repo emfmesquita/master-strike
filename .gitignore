@@ -21,6 +21,7 @@ yarn-error.log*
 *.sw?
 
 # firebase
+.firebase
 .firebaserc
 firebase.json
 hosting.*
