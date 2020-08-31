@@ -3,7 +3,7 @@ export default {
     {
       id: 1,
       name: "Black Widow",
-      set: 1,
+      set: [1, 20],
       team: 1,
       cards: [
         {
@@ -72,7 +72,7 @@ export default {
     {
       id: 2,
       name: "Captain America",
-      set: 1,
+      set: [1, 20],
       team: 1,
       cards: [
         {
@@ -444,7 +444,7 @@ export default {
     {
       id: 7,
       name: "Hawkeye",
-      set: 1,
+      set: [1, 20],
       team: 1,
       cards: [
         {
@@ -505,7 +505,7 @@ export default {
     {
       id: 8,
       name: "Hulk",
-      set: 1,
+      set: [1, 20],
       team: 1,
       cards: [
         {
@@ -574,7 +574,7 @@ export default {
     {
       id: 9,
       name: "Iron Man",
-      set: 1,
+      set: [1, 20],
       team: 1,
       cards: [
         {
@@ -651,7 +651,7 @@ export default {
     {
       id: 10,
       name: "Nick Fury",
-      set: 1,
+      set: [1, 20],
       team: 2,
       cards: [
         {
@@ -973,7 +973,7 @@ export default {
     {
       id: 14,
       name: "Thor",
-      set: 1,
+      set: [1, 20],
       team: 1,
       cards: [
         {

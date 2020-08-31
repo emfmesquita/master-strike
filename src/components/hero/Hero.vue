@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="12">
-          <SetChip class="set-chip float-right" :short="this.numberOfColumns === 1" :set="hero.set"/>
+          <SetChip v-for="set in setArray" :key="set" class="set-chip float-right" :short="numberOfColumns <= 2" :set="set"/>
           <NumberOfCards class="hero-cards-number" :number="numberOfCards" size="16"/>
           <span :class="titleClasses">{{ hero.name }}</span>
         </v-col>
@@ -96,6 +96,10 @@ export default {
         pages.push(page);
       }
       return pages;
+    },
+    setArray() {
+      // sets are reversed to consider float-right
+      return Array.isArray(this.hero.set) ? this.hero.set.slice(0).reverse() : [this.hero.set];
     }
   }
 };

@@ -12,7 +12,6 @@ export const buildHeroSearch = () => {
     processHeroText(hero);
     cards = cards.concat(hero.cards);
   });
-  console.log(cards)
   search.addDocuments(cards);
   return search;
 }

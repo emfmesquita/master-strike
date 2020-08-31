@@ -466,8 +466,11 @@ export default {
       }
 
       if(this.filter.set.length) {
-        const set = this.filter.set;
-        this.heroes = this.heroes.filter(hero => set.indexOf(hero.set) >= 0);
+        const fromSet = a => this.filter.set.includes(a);
+        const setCheck = hero => {
+          return Array.isArray(hero.set) ? hero.set.some(fromSet) : fromSet(hero.set);
+        }
+        this.heroes = this.heroes.filter(setCheck);
       }
 
       if(this.filter.team.length) {
