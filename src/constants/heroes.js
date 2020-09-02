@@ -15,7 +15,7 @@
 // NOIR    127 - 131 done
 // X       132 - 146 done
 // SMH     147 - 151 done
-// Champ   152 - 156
+// Champ   152 - 156 done
 // WWH     157 - 171 done
 // AM      172 - 176
 // Venom   177 - 181

@@ -55,7 +55,12 @@
       <span 
         class="card-cost icon-text text-center font-weight-black"
         :class="{ small: card.cost.length > 2 }">
-        {{ card.cost }}
+        <template v-if="!card.costAsterisk">
+          {{ card.cost }}
+        </template>
+        <shared-rule v-else class="card-cost-asterisk" :noUnderline=true :rule="{ rule: 10 }">
+          {{ card.cost }}*
+        </shared-rule>
       </span>
     </template>
   </v-card>
@@ -207,6 +212,10 @@ export default {
     
     &.small {
       font-size: 24px !important;
+    }
+
+    .card-cost-asterisk {
+      pointer-events: all;
     }
   }
   

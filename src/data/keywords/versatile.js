@@ -1,17 +1,41 @@
 export default [
   [
-    "When you play a card with the keyword ",
-    { bold: '“Versatile“' },
-    " you must first choose between Recruit and Fight. Once you have chosen, the card provides recruit or fight equal to the ",
-    { bold: 'Versatile' },
-    " value. For example, ",
-    { bold: 'Versatile 3' },
-    " gives you ",
-    { bold: '+3' },
-    { icon: 2 },
-    " or ",
-    { bold: '+3' },
-    { icon: 1 },
-    "."
-  ]
+    "This keyword represents Heroes who think quickly on their feet to react perfectly to any situation."
+  ],
+  {
+    points: [
+      [
+        "“",
+        { bold: "Versatile 2" },
+        "” means “",
+        { bold: "You get +2" },
+        { icon: 2 },
+        { bold: " or +2" },
+        { icon: 1 },
+        { bold: "." },
+        "” Other cards use different Versatile numbers."
+      ],
+      [
+        "You choose to get all ",
+        { icon: 2 },
+        " or all ",
+        { icon: 1 },
+        " when you play the card. You can’t divide it up."
+      ],
+      [
+        "However, if you play multiple Versatile cards in a turn, you can choose ",
+        { icon: 2 },
+        " for some cards and ",
+        { icon: 1 },
+        " for others, if you wish."
+      ],
+      [
+        "If you use Cheering Crowds to play a Versatile card twice, you could get ",
+        { icon: 2 },
+        " with one play and get ",
+        { icon: 1 },
+        " with the other play, or choose the same for both."
+      ],
+    ]
+  }
 ];

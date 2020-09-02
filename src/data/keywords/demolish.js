@@ -1,5 +1,17 @@
 export default [
   [
-    "“Demolish each player” means “Reveal the top card of the Ally Deck, note its cost, and put it on the bottom of the Ally Deck. Each player reveals their hand and discards a card with that cost.” This represents the Avengers and Nick Fury crushing the forces of Evil."
-  ]
+    "This keyword represents the Heroes being devastated by the enchanted weapons of the Wrecking Crew and enormous Monsters Unleashed."
+  ],
+  {
+    points: [
+      [
+        { bold: "“Demolish each player”" },
+        " means ",
+        { bold: "“Reveal the top card of the Ally/Hero Deck, note its cost, and put it on the bottom of the Ally/Hero Deck. Each player reveals their hand and discards a card with that cost.”" }
+      ],
+      [
+        "Reveal only one card from the Ally/Hero Deck — don’t reveal a different card from the Hero Deck for each player."
+      ]
+    ]
+  }
 ];

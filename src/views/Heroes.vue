@@ -537,6 +537,12 @@ export default {
               return;
             }
 
+            // check for asterisk
+            if(card.costAsterisk && rules.includes(10)) {
+              match = true;
+              return;
+            }
+
             // checks other rules
             const abs = card.abilities;
             const hasRule = ab => rules.indexOf(ab.rule) >= 0;

@@ -56,7 +56,7 @@ export default {
             ]
           },
           {
-            name: "Nova Flame ",
+            name: "Nova Flame",
             hc: 3,
             rarity: 3,
             cost: 8,
