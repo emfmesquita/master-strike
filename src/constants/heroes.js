@@ -18,7 +18,7 @@
 // Champ   152 - 156 done
 // WWH     157 - 171 done
 // AM      172 - 176 done
-// Venom   177 - 181
+// Venom   177 - 181 done
 // Dim     182 - 184 done
 // Rev     185 - 193 done
 // Shield  194 - 197

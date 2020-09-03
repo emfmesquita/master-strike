@@ -2,7 +2,7 @@ export default [
   [
     "In the theme of ",
     { italic: "Revelations" },
-    ", this new keyword represents the way The Hood and his gang find every dark secret in a Hero’s past and use it against them."
+    ", this keyword represents the way The Hood and his gang find every dark secret in a Hero’s past and use it against them."
   ],
   {
     points: [

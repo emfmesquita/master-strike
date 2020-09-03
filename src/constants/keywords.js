@@ -344,7 +344,7 @@ const SHIELD_LEVEL = {
     id: 61,
     inHeroes: true,
     value: "shieldlevel",
-    label: "Shield Level"
+    label: "S.H.I.E.L.D. Level"
 }
 const HYDRA_LEVEL = {
     id: 62,
