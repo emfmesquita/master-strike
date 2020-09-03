@@ -31,7 +31,7 @@ export default {
             attack: "2",
             abilities: [
               [
-               "Reveal the top card of the Bystander Deck. If it's a Special Bystander, rescue it. Otherwise, put it on the bottom of that deck."
+                "Reveal the top card of the Bystander Deck. If it's a Special Bystander, rescue it. Otherwise, put it on the bottom of that deck."
               ]
             ]
           },

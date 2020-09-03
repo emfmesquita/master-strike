@@ -68,7 +68,7 @@ export default [
       ],
       [
         { bold: "Note:" },
-        " For any Size-Changing card, it doesn’t matter how many Heroes of that Hero Class you played – it only matters whether or not you played any Heroes of that Hero Class."
+        " For a typical Size-Changing card, it doesn’t matter how many Heroes of that Hero Class you played – it only matters if you played any Heroes of that Hero Class or not."
       ],
       [
         "After you’ve recruited a card, Size-Changing doesn’t do anything else on that card."
@@ -87,7 +87,7 @@ export default [
         { hc: 5 },
         ", ",
         { hc: 3 },
-        ".” A card can’t have a normal Size-Changing for the same Hero Class twice."
+        ".” A card can’t have a typical Size-Changing for the same Hero Class twice."
       ]
     ]
   }
