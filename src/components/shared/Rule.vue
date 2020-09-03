@@ -21,7 +21,7 @@
 
         <v-card-text class="pa-5">
           <div v-for="(rule, idx) in rules" :key="idx">
-            <shared-bullet-point-description v-if="typeof rule === 'object' && rule.points" :points="rule.points" :padded=true />
+            <shared-bullet-point-description v-if="typeof rule === 'object' && rule.points" :points="rule.points" :noBullets="rule.noBullets" :padded=true />
             <shared-description-group v-else :description="rule" :padded=true />
           </div>
         </v-card-text>
