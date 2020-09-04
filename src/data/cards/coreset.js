@@ -973,6 +973,7 @@ export default {
     {
       id: 14,
       name: "Thor",
+      filterName: "Thor (Core)",
       set: [1, 20],
       team: 1,
       cards: [

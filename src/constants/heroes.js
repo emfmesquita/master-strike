@@ -21,7 +21,7 @@
 // Venom   177 - 181 done
 // Dim     182 - 184 done
 // Rev     185 - 193 done
-// Shield  194 - 197
-// HoA     198 - 202
+// Shield  194 - 197 done
+// HoA     198 - 202 done
 // NM      203 - 207
 // ItC     208 - 216
