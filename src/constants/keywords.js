@@ -459,71 +459,71 @@ export const keywords = Object.freeze({
 });
 
 export const keywordsArray = Object.freeze([
-    TELEPORT,                   // 1
+    TELEPORT,                   // 1  done
     BRIBE,                      // 2
-    VERSATILE,                  // 3
-    FOCUS,                      // 4
+    VERSATILE,                  // 3  done
+    FOCUS,                      // 4  done
     BURROW,                     // 5
     COSMIC_THREAT,              // 6
-    WALL_CRAWL,                 // 7
-    FEAST,                      // 8
-    DEMOLISH,                   // 9
+    WALL_CRAWL,                 // 7  done
+    FEAST,                      // 8  done
+    DEMOLISH,                   // 9  done
     DODGE,                      // 10
     ELUSIVE,                    // 11
     X_TREME_ATTACK,             // 12
-    ARTIFACT,                   // 13
-    THROWN_ARTIFACT,            // 14
+    ARTIFACT,                   // 13 done
+    THROWN_ARTIFACT,            // 14 done
     URU_ENCHANTED_WEAPONS,      // 15
     RISE_OF_THE_LIVING_DEAD,    // 16
-    CROSS_DIMENSIONAL_RAMPAGE,  // 17
-    SPECTRUM,                   // 18
-    PATROL,                     // 19
+    CROSS_DIMENSIONAL_RAMPAGE,  // 17 done
+    SPECTRUM,                   // 18 done
+    PATROL,                     // 19 done
     CIRCLE_OF_KUNG_FU,          // 20
     FATEFUL_RESURRECTION,       // 21
     CHARGE,                     // 22
-    MAN_OUT_OF_TIME,            // 23
-    SAVIOR,                     // 24
+    MAN_OUT_OF_TIME,            // 23 done
+    SAVIOR,                     // 24 done
     ABOMINATION,                // 25
-    SIZE_CHANGING,              // 26
+    SIZE_CHANGING,              // 26 done
     PHASING,                    // 27
     FORTIFY,                    // 28
     SHIELD_CLEARANCE,           // 29
-    EXCESSIVE_VIOLENCE,         // 30
+    EXCESSIVE_VIOLENCE,         // 30 done
     REVENGE,                    // 31
-    INVESTIGATE,                // 32
+    INVESTIGATE,                // 32 done
     HIDDEN_WITNESS,             // 33
-    X_GENE,                     // 34
-    PIERCING_ENERGY,            // 35
-    BERSERK,                    // 36
-    SOARING_FLIGHT,             // 37
-    LIGHTSHOW,                  // 38
+    X_GENE,                     // 34 done
+    PIERCING_ENERGY,            // 35 done
+    BERSERK,                    // 36 done
+    SOARING_FLIGHT,             // 37 done
+    LIGHTSHOW,                  // 38 done
     DOMINATE,                   // 39
     HUMAN_SHIELDS,              // 40
-    DANGER_SENSE,               // 41
-    STRIKER,                    // 42
-    COORDINATE,                 // 43    
-    CHEERING_CROWDS,            // 44
-    TRANSFORM,                  // 45
-    OUTWIT,                     // 46
-    SMASH,                      // 47
-    WOUNDED_FURY,               // 48
-    CONQUEROR,                  // 49
-    MICROSCOPIC_SIZE_CHANGING,  // 50
+    DANGER_SENSE,               // 41 done
+    STRIKER,                    // 42 done
+    COORDINATE,                 // 43 done
+    CHEERING_CROWDS,            // 44 done
+    TRANSFORM,                  // 45 done
+    OUTWIT,                     // 46 done
+    SMASH,                      // 47 done
+    WOUNDED_FURY,               // 48 done
+    CONQUEROR,                  // 49 done
+    MICROSCOPIC_SIZE_CHANGING,  // 50 done
     EMPOWERED,                  // 51
     CHIVALROUS_DUEL,            // 52
     SYMBIOTE_BONDS,             // 53
-    DIGEST,                     // 54
-    INDIGESTION,                // 55
-    SWITCHEROO,                 // 56
-    HYPERSPEED,                 // 57
-    DARK_MEMORIES,              // 58
-    LAST_STAND,                 // 59
-    UNDERCOVER,                 // 60
-    SHIELD_LEVEL,               // 61
+    DIGEST,                     // 54 done
+    INDIGESTION,                // 55 done
+    SWITCHEROO,                 // 56 done
+    HYPERSPEED,                 // 57 done
+    DARK_MEMORIES,              // 58 done
+    LAST_STAND,                 // 59 done
+    UNDERCOVER,                 // 60 done
+    SHIELD_LEVEL,               // 61 done
     HYDRA_LEVEL,                // 62
-    WORTHY,                     // 63
-    MOONLIGHT_SUNLIGHT,         // 64
-    WAKING_NIGHTMARE,           // 65
+    WORTHY,                     // 63 done
+    MOONLIGHT_SUNLIGHT,         // 64 done
+    WAKING_NIGHTMARE,           // 65 done
     BURN_SHARDS,                // 66
     CELESTIAL_BOON,             // 67
     CONTEST_OF_CHAMPIONS        // 68

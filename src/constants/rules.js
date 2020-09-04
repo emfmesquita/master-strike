@@ -68,14 +68,14 @@ export const rules = Object.freeze({
 });
 
 export const rulesArray = Object.freeze([
-    SHARDS,                     // 1
-    MULTICLASS_CARDS,           // 2
+    SHARDS,                     // 1  done
+    MULTICLASS_CARDS,           // 2  done
     MULTIPLE_MASTERMINDS,       // 3
-    DIVIDED,                    // 4
+    DIVIDED,                    // 4  done
     TRAPS,                      // 5
     LOCATIONS,                  // 6
     TRANSFORMING_SCHEMES,       // 7
     ADAPTING_MASTERMINDS,       // 8
     VILLAINOUS_WEAPONS,         // 9
-    ASTERISK                    // 10
+    ASTERISK                    // 10 done
 ]);
