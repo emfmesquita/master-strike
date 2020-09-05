@@ -178,7 +178,11 @@ export default {
           rarity: 3,
           cost: 7,
           abilities: [
-            "Gain three sidekicks.",
+            [
+              "Gain three ",
+              { rule: 11 },
+              "."
+            ],
             [
               { team: 15 },
               ": Put them on top of your deck."
@@ -420,10 +424,16 @@ export default {
           rarity: 1,
           cost: 2,
           abilities: [
-            "Gain a Sidekick.",
+            [
+              "Gain a ",
+              { rule: 11, text: "Sidekick" },
+              ".",
+            ],
             [
               {hc: 1},
-              ": Gain another Sidekick."
+              ": Gain another ",
+              { rule: 11, text: "Sidekick" },
+              "."
             ]
           ]
         },
@@ -453,7 +463,9 @@ export default {
           abilities: [
             {keyword: 1},
             [
-              "For each Sidekick you played this turn, you get ",
+              "For each ",
+              { rule: 11, text: "Sidekick" },
+              " you played this turn, you get ",
               { bold: "+1"},
               { icon: 1},
             ]
@@ -505,7 +517,9 @@ export default {
           abilities: [
             [
               {hc: 5},
-              ": Whenever you defeat a Villain this turn, you gain a Sidekick."
+              ": Whenever you defeat a Villain this turn, you gain a ",
+              { rule: 11, text: "Sidekick" },
+              "."
             ]
           ]
         },
@@ -559,7 +573,9 @@ export default {
           abilities: [
             [
               {hc: 2},
-              ": Gain a Sidekick."
+              ": Gain a ",
+              { rule: 11, text: "Sidekick" },
+              "."
             ]
           ]
         },
@@ -915,7 +931,11 @@ export default {
           rarity: 1,
           cost: 2,
           abilities: [
-            "Gain a Sidekick.",
+            [
+              "Gain a ",
+              { rule: 11, text: "Sidekick" },
+              ".",
+            ],
             [
              "Reveal the top card of your deck. If it costs 2 or less, draw it."
             ]

@@ -53,6 +53,12 @@ const ASTERISK = {
     value: "asterisk",
     label: "Asterisk Symbol"
 }
+const SIDEKICKS = {
+    id: 11,
+    inHeroes: true,
+    value: "sidekicks",
+    label: "Sidekicks"
+}
 
 export const rules = Object.freeze({
     SHARDS,
@@ -64,7 +70,8 @@ export const rules = Object.freeze({
     TRANSFORMING_SCHEMES,
     ADAPTING_MASTERMINDS,
     VILLAINOUS_WEAPONS,
-    ASTERISK
+    ASTERISK,
+    SIDEKICKS
 });
 
 export const rulesArray = Object.freeze([
@@ -77,5 +84,6 @@ export const rulesArray = Object.freeze([
     TRANSFORMING_SCHEMES,       // 7
     ADAPTING_MASTERMINDS,       // 8
     VILLAINOUS_WEAPONS,         // 9
-    ASTERISK                    // 10 done
+    ASTERISK,                   // 10 done
+    SIDEKICKS                   // 11 done
 ]);

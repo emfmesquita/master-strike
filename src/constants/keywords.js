@@ -152,7 +152,7 @@ const PHASING = {
 const FORTIFY = {
     id: 28,
     inHeroes: true,
-    value: "Fortify",
+    value: "fortify",
     label: "Fortify"
 }
 const SHIELD_CLEARANCE = {
@@ -485,8 +485,8 @@ export const keywordsArray = Object.freeze([
     SAVIOR,                     // 24 done
     ABOMINATION,                // 25
     SIZE_CHANGING,              // 26 done
-    PHASING,                    // 27
-    FORTIFY,                    // 28
+    PHASING,                    // 27 done
+    FORTIFY,                    // 28 done
     SHIELD_CLEARANCE,           // 29
     EXCESSIVE_VIOLENCE,         // 30 done
     REVENGE,                    // 31
