@@ -12,7 +12,7 @@
 
     <div class="card-abilities" :class="{ dense: card.dense }" v-if="card.abilities">
       <div v-for="(ability, idx) in card.abilities" :key="idx">
-        <shared-description-group :description="ability"/>
+        <shared-description-group :description="ability" :dense="card.dense"/>
       </div>
     </div>
 

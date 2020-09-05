@@ -3,9 +3,9 @@
     <span v-if="typeof descriptionComponent === 'string'">{{ descriptionComponent }}</span>
     <span class="font-weight-bold" v-else-if="descriptionComponent.bold">{{ descriptionComponent.bold }}</span>
     <span class="font-italic" v-else-if="descriptionComponent.italic">{{ descriptionComponent.italic }}</span>
-    <HeroClassIcon v-else-if="descriptionComponent.hc" :icon="descriptionComponent.hc" width="24px"/>
-    <TeamIcon v-else-if="descriptionComponent.team" :icon="descriptionComponent.team" width="26px"/>
-    <AbilityIcon v-else-if="descriptionComponent.icon" :icon="descriptionComponent.icon" width="32px"/>
+    <HeroClassIcon v-else-if="descriptionComponent.hc" :icon="descriptionComponent.hc" :width="hcWidth"/>
+    <TeamIcon v-else-if="descriptionComponent.team" :icon="descriptionComponent.team" :width="teamWidth"/>
+    <AbilityIcon v-else-if="descriptionComponent.icon" :icon="descriptionComponent.icon" :width="abilityWidth"/>
     <shared-rule v-else-if="descriptionComponent.keyword || descriptionComponent.rule" :rule="descriptionComponent"/>
     <v-divider class="ability-divider" v-else-if="descriptionComponent.divider"/>
   </span>
@@ -18,13 +18,24 @@ import AbilityIcon from "./AbilityIcon.vue";
 
 export default {
   name: "DescriptionComponent",
-  props: ["descriptionComponent"],
+  props: ["descriptionComponent", "dense"],
   components: {
     HeroClassIcon,
     TeamIcon,
     AbilityIcon
   },
-  data: () => ({})
+  data: () => ({}),
+  computed: {
+    hcWidth() {
+      return this.dense ? "18px" : "24px";
+    },
+    teamWidth() {
+      return this.dense ? "20px" : "26px";
+    },
+    abilityWidth() {
+      return this.dense ? "26px" : "32px";
+    }
+  }
 };
 </script>
 

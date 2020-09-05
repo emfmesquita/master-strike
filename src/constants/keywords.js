@@ -459,16 +459,16 @@ export const keywords = Object.freeze({
 });
 
 export const keywordsArray = Object.freeze([
-    TELEPORT,                   // 1  done
-    BRIBE,                      // 2
-    VERSATILE,                  // 3  done
-    FOCUS,                      // 4  done
-    BURROW,                     // 5
-    COSMIC_THREAT,              // 6
-    WALL_CRAWL,                 // 7  done
-    FEAST,                      // 8  done
-    DEMOLISH,                   // 9  done
-    DODGE,                      // 10
+    TELEPORT,                   // 01 done
+    BRIBE,                      // 02
+    VERSATILE,                  // 03 done
+    FOCUS,                      // 04 done
+    BURROW,                     // 05
+    COSMIC_THREAT,              // 06
+    WALL_CRAWL,                 // 07 done
+    FEAST,                      // 08 done
+    DEMOLISH,                   // 09 done
+    DODGE,                      // 10 done
     ELUSIVE,                    // 11
     X_TREME_ATTACK,             // 12
     ARTIFACT,                   // 13 done

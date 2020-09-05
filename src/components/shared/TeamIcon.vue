@@ -16,7 +16,7 @@ import { teamArray } from "../../constants/team";
 
 export default {
   name: "TeamIcon",
-  props: ["icon", "width", "classProp"],
+  props: ["icon", "width"],
   computed: {
     team() {
       const team = teamArray[this.icon].value;

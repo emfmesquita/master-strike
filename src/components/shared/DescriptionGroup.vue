@@ -1,7 +1,12 @@
 <template>
   <div v-if="description" :class="{ 'pa-1': padded }">
     <template v-if="Array.isArray(description)">
-        <shared-description-component v-for="(descriptionComponent, componetIdx) in description" :key="componetIdx" :descriptionComponent="descriptionComponent" />
+        <shared-description-component 
+          v-for="(descriptionComponent, componetIdx) in description" 
+          :key="componetIdx" 
+          :descriptionComponent="descriptionComponent"
+          :dense="dense"
+        />
     </template>
     <shared-description-component v-else  :descriptionComponent="description" />
   </div>
@@ -11,7 +16,7 @@
 
 export default {
   name: "DescriptionGroup",
-  props: ["description", "padded"],
+  props: ["description", "padded", "dense"],
   data: () => ({})
 };
 </script>
