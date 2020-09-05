@@ -3,7 +3,6 @@ export default {
     {
       id: 185,
       name: "Captain Marvel, Agent of S.H.I.E.L.D.",
-      filterName: "Captain Marvel (Rev)",
       set: 24,
       team: 2,
       cards: [
