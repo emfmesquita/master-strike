@@ -58,7 +58,7 @@
             </v-btn>
       </template>
     </shared-side-bar>
-    <v-container>
+    <v-container style="paddingBottom: 100px">
       <template v-if="heroes.length">
         <v-lazy min-height="410" :key="heroKey(hero)" v-for="hero in heroes">
           <v-row>

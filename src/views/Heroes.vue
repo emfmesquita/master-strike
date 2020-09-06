@@ -244,7 +244,7 @@
       </v-container>
     </shared-side-bar>
 
-    <v-container>
+    <v-container style="paddingBottom: 100px">
       <template v-if="heroes.length">
         <v-row>
           <v-col cols="12">
