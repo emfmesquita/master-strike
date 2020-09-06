@@ -2,7 +2,7 @@ export default {
   heroes: [
     {
       id: 132,
-      name: "Aurora and Northstar",
+      name: "Aurora & Northstar",
       set: 16,
       team: 4,
       cards: [
@@ -256,7 +256,8 @@ export default {
               { hc: 2 },
               ": You get ",
               { bold: "+2" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -271,7 +272,8 @@ export default {
             [
               { hc: 4 },
               ": The next Hero you recruit this turn has ",
-              { keyword: 37 }
+              { keyword: 37 },
+              "."
 
             ]
           ]
@@ -303,7 +305,8 @@ export default {
             [
               "If you played at least 6 other cards this turn, you get ",
               { bold: "+2" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         }
@@ -311,7 +314,7 @@ export default {
     },
     {
       id: 136,
-      name: "Colossus and Wolverine",
+      name: "Colossus & Wolverine",
       set: 16,
       team: 4,
       cards: [
@@ -323,8 +326,7 @@ export default {
           divided: 1,
           cost: 3,
           recruit: "2",
-          abilities: [
-          ]
+          abilities: []
         },
         {
           name: "Unpredictable",
@@ -425,16 +427,17 @@ export default {
           cost: 4,
           attack: "2+",
           abilities: [
-            { keyword: 38 },
             [
+              { keyword: 38 },
               ": You get ",
               { bold: "+2" },
               { icon: 1 },
+              "."
             ]
           ]
         },
         {
-          name: "City-Wide Mega Concert",
+          name: "Citywide Mega-Concert",
           hc: 5,
           rarity: 2,
           cost: 5,
@@ -472,6 +475,7 @@ export default {
           hc: 3,
           rarity: 1,
           cost: 3,
+          attack: "0+",
           recruit: "2",
           abilities: [
             [
@@ -513,7 +517,7 @@ export default {
               { icon: 1 },
               "for each ",
               { hc: 3 },
-              "card in your discard pile."
+              " card in your discard pile."
             ]
           ]
         },
@@ -632,7 +636,7 @@ export default {
             [
               "Put a card from the HQ on the bottom of the Hero deck. If that card had a ",
               { icon: 2 },
-              ", get",
+              ", get ",
               { bold: "+2" },
               { icon: 2 },
               ". If that card had an ",
@@ -640,7 +644,8 @@ export default {
               ", you get ",
               { bold: "+2" },
               { icon: 1 },
-              ". (If both, get both.)"
+              ". ",
+              { italic: "(If both, get both.)" }
             ]
           ]
         },
@@ -721,7 +726,8 @@ export default {
               { keyword: 36 },
               ": You get ",
               { bold: "+2" },
-              { icon: 2 }
+              { icon: 2 },
+              "."
             ]
           ]
         },
@@ -732,8 +738,7 @@ export default {
           divided: 1,
           cost: 3,
           attack: "2",
-          abilities: [
-          ]
+          abilities: []
         },
         {
           name: "Split Eardrums",
@@ -764,7 +769,7 @@ export default {
           rarity: 2,
           divided: 2,
           cost: 5,
-          piercing: "2",
+          attack: "0+",
           abilities: [
             [
               "You get ",
@@ -986,11 +991,11 @@ export default {
             [
               { keyword: 34 },
               { team: 4 },
-              ": You can use Recruit as Attack ",
+              ": You can use ",
               { icon: 2 },
               " as ",
               { icon: 1 },
-              "this turn, and vice versa. ",
+              " this turn, and vice versa.",
             ]
           ]
         }
@@ -1017,7 +1022,8 @@ export default {
               { hc: 2 },
               ": You get ",
               { bold: "+1" },
-              { icon: 6 }
+              { icon: 6 },
+              "."
             ]
           ]
         },
@@ -1044,7 +1050,8 @@ export default {
               { hc: 1 },
               ": You get ",
               { bold: "+1" },
-              { icon: 6 }
+              { icon: 6 },
+              "."
             ]
           ]
         },
@@ -1070,7 +1077,7 @@ export default {
       team: 4,
       cards: [
         {
-          name: "Adamantium Footclaws",
+          name: "Adamantium Foot Claws",
           hc: 5,
           rarity: 1,
           cost: 3,

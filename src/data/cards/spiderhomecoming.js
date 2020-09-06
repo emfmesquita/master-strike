@@ -115,7 +115,7 @@ export default {
               "You get ",
               { bold: "+3" },
               { icon: 1 },
-              " usable only against the Mastermind or Villains on the Rooftops or Streets."
+              ", usable only against the Mastermind or Villains on the Rooftops or Streets."
             ]
           ]
         }
@@ -132,6 +132,7 @@ export default {
           hc: 2,
           rarity: 1,
           cost: 2,
+          attack: "2+",
           abilities: [
             { keyword: 7 },
             [
@@ -147,6 +148,7 @@ export default {
           hc: 1,
           rarity: 1,
           cost: 2,
+          attack: "0+",
           abilities: [
             { keyword: 41, text: "Danger Sense 2" },
             "Reveal the top card of your deck. If it costs 2 or less, draw it."

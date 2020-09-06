@@ -24,7 +24,7 @@
     </shared-rule>
 
     <template v-if="card.recruit">
-      <AbilityIcon class="card-recruit-icon absolute-icon" noAdjust :icon="2" width="72px"/>
+      <AbilityIcon class="card-recruit-icon absolute-icon" noAdjust :icon="2" width="80px"/>
       <span 
         class="card-recruit icon-text text-center font-weight-black" 
         :class="{ small: card.recruit.length > 2 }">
@@ -220,8 +220,8 @@ export default {
   }
   
   .card-recruit-icon {
-    left: -4px;
-    bottom: 60px;
+    left: -7px;
+    bottom: 56px;
   }
   .card-recruit {
     left: 0px;

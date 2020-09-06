@@ -65,18 +65,19 @@ export default {
           ]
         },
         {
-          name: "Control Like a Puppet",
+          name: "Freedom Never Dies",
           hc: 3,
           rarity: 3,
-          cost: 8,
-          attack: "5+",
+          cost: 7,
+          attack: "5",
+          dense: true,
           abilities: [
             [
-              { team: 4 },
-              ": Choose a Villain in the city. You get ",
-              { bold: "+" },
-              { icon: 1 },
-              " equal to its VP, usable only against other Villains or the Mastermind."
+              "Whenever you play a ",
+              { rule: 11, text: "Sidekick" },
+              " or another ",
+              { team: 1 },
+              " Hero this turn set that card aside. At the end of your turn, put those cards on the bottom of your deck in random order before you draw your new hand."
             ]
           ]
         },
@@ -422,6 +423,7 @@ export default {
           rarity: 1,
           cost: 5,
           costAsterisk: true,
+          attack: "2",
           abilities: [
             [
               { keyword: 26 },
@@ -860,7 +862,9 @@ export default {
             ],
             [
               { hc: 2 },
-              ": Put that Sidekick on top of your deck."
+              ": Put that ",
+              { rule: 11, text: "Sidekick" },
+              " on top of your deck."
             ]
           ]
         },
@@ -1042,6 +1046,7 @@ export default {
         },
         {
           name: "Crush File Sizes",
+          subTitle: "Iron Lad",
           hc: 5,
           rarity: 1,
           cost: 5,
@@ -1323,7 +1328,7 @@ export default {
       team: 1,
       cards: [
         {
-          name: "Dual Existence",
+          name: "Solar Energy",
           hc: 3,
           rarity: 1,
           cost: 3,

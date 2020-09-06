@@ -303,7 +303,7 @@ export default {
           name: "Don't Make Me Angry",
           hc: 4,
           rarity: 1,
-          cost: 2,
+          cost: 3,
           attack: "0+",
           abilities: [
             [
@@ -434,7 +434,7 @@ export default {
               "Draw a card.",
             ],
             [
-              "If there are at least two Bystanders in your Victory Pile, ",
+              "If there are at least 2 Bystanders in your Victory Pile, ",
               {
                 keyword: 45
               },
@@ -520,7 +520,8 @@ export default {
               },
               {
                 icon: 1
-              }
+              },
+              "."
             ]
           ]
         },
@@ -561,7 +562,7 @@ export default {
               {
                 keyword: 45
               },
-              " this into Ultra-Massive Armor"
+              " this into Ultra-Massive Armor."
             ]
           ]
         },
@@ -585,17 +586,21 @@ export default {
           ]
         },
         {
-          name: "Blade of the People",
-          hc: 2,
+          name: "Final Battle",
+          hc: 5,
           rarity: 3,
-          cost: 7,
+          cost: 8,
+          attack: "5+",
           abilities: [
             [
-              "Choose one: Rescue three Bystanders, or defeat any Villain or Mastermind whose ",
-              {
-                icon: 1
-              },
-              " is less than the number of Bystanders in your Victory Pile."
+              "You get ",
+              { bold: "+2" },
+              { icon: 1 },
+              " for each other ",
+              { hc: 5 },
+              " and/or ",
+              { hc: 4 },
+              " card you played this turn.",
             ]
           ]
         }
@@ -652,10 +657,11 @@ export default {
           hc: 4,
           rarity: 2,
           cost: 6,
-          recruit: "3",
+          attack: "3",
           abilities: [
             [
-              "When you defeat a Villain this turn that has 6",
+              "When you defeat a Villain this turn that has ",
+              { bold: 6 },
               {
                 icon: 1
               },
@@ -887,7 +893,7 @@ export default {
               {
                 icon: 1
               },
-              "was KO'd from your deck this turn, ",
+              " icon was KO'd from your deck this turn, ",
               {
                 keyword: 45
               },
@@ -1098,7 +1104,7 @@ export default {
           ]
         },
         {
-          name: "World Spanning Hunger",
+          name: "World-Spanning Hunger",
           hc: 2,
           rarity: 3,
           cost: 8,
@@ -1253,7 +1259,6 @@ export default {
           hc: 1,
           rarity: 1,
           cost: 2,
-          attack: "1",
           abilities: [
             [
               {
@@ -1269,7 +1274,7 @@ export default {
           hc: 4,
           rarity: 1,
           cost: 6,
-          recruit: "0+",
+          attack: "0+",
           abilities: [
             [
               "You may ",
@@ -1528,7 +1533,8 @@ export default {
               ": ",
               {
                 keyword: 48
-              }
+              },
+              "."
             ]
           ]
         },

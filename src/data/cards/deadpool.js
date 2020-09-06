@@ -27,7 +27,7 @@ export default {
           attack: "1½ ",
           abilities: [
             [
-              "Reveal the top card of your deck. If it's HYDRA or S.H.I.E.L.D.",
+              "Reveal the top card of your deck. If it's ",
               { team: 13 },
               " or ",
               { team: 2 },
@@ -157,7 +157,10 @@ export default {
           abilities: [
             [
               { hc: 3 },
-              ": If any other players are taller than you, draw a card. If any other players are shorter than you, you get +1 Recruit. If both, get both!"
+              ": If any other players are taller than you, draw a card. If any other players are shorter than you, you get ",
+              { bold: "+1" },
+              { icon: 2 },
+              ". If both, get both!"
             ]
           ]
         },
@@ -215,9 +218,7 @@ export default {
           cost: 2,
           attack: "1½ ",
           recruit: "1½ ",
-          abilities: [
-
-          ]
+          abilities: []
         },
         {
           name: "Merc's Gotta Get Paid ",
@@ -231,7 +232,8 @@ export default {
               { keyword: 30 },
               ": You get ",
               { bold: "+1" },
-              { icon: 2 }
+              { icon: 2 },
+              "."
             ]
           ]
         },
@@ -256,11 +258,15 @@ export default {
           attack: "2½ ",
           abilities: [
             [
-              "Choose a Villain. Cut its Attack in half this turn."
+              "Choose a Villain. Cut its ",
+              { icon: 1 },
+              " in half this turn."
             ],
             [
               { team: 17 },
-              ": Cut the Mastermind's Attack in half for one fight this turn."
+              ": Cut the Mastermind's ",
+              { icon: 1 },
+              " in half for one fight this turn."
             ]
           ]
         }
@@ -273,12 +279,11 @@ export default {
       team: 17,
       cards: [
         {
-          name: "Nighttime Is the Right Time",
+          name: "Deck Chairs on the Titanic",
           hc: 5,
           rarity: 1,
           cost: 4,
           attack: "1½ ",
-          recruit: "0+",
           abilities: [
             [
               "Draw a card."
@@ -295,6 +300,9 @@ export default {
           cost: 2,
           attack: "1½+",
           abilities: [
+            [
+              "Draw a card."
+            ],
             [
               { hc: 5 },
               ": You get ",

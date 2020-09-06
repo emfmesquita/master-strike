@@ -148,7 +148,7 @@ export default {
               { bold: ", " },
               { hc: 1 }
             ],
-            { keyword: 3, text: "Versatile 2" },
+            { keyword: 3, text: "Versatile 4" },
             { keyword: 44 }
           ]
         }
@@ -200,6 +200,7 @@ export default {
               { hc: 3 },
               { bold: ": " },
               { keyword: 3, text: "Versatile 3" },
+              "."
             ]
           ]
         },
