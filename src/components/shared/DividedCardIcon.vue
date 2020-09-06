@@ -16,11 +16,15 @@
 
 export default {
   name: "DividedCardIcon",
-  props: ["left", "right", "size"],
+  props: {
+    "left": Boolean, 
+    "right": Boolean, 
+    "size": String
+  },
   computed: {
     icon() {
-      if(this.left !== undefined) return 'mdi-arrow-collapse-right';
-      if(this.right !== undefined) return 'mdi-arrow-collapse-left';
+      if(this.left) return 'mdi-arrow-collapse-right';
+      if(this.right) return 'mdi-arrow-collapse-left';
       return '';
     }
   },

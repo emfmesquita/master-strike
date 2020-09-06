@@ -28,7 +28,7 @@ export default {
     },
     iconClass() {
       return {
-        'adjust-icon': this.icon !== 3 && this.icon !== 5 && this.noAdjust === undefined
+        'adjust-icon': this.icon !== 5 && this.noAdjust === undefined
       };
     },
     label() {

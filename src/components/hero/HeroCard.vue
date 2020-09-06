@@ -51,7 +51,7 @@
     </template>
 
     <template v-if="card.cost">
-      <AbilityIcon class="card-cost-icon absolute-icon" noAdjust :icon="3" width="64px"/>
+      <AbilityIcon class="card-cost-icon absolute-icon" noAdjust :icon="3" width="90px"/>
       <span 
         class="card-cost icon-text text-center font-weight-black"
         :class="{ small: card.cost.length > 2 }">
@@ -202,8 +202,8 @@ export default {
   }
   
   .card-cost-icon {
-    right: 0px;
-    bottom: 0px;
+    right: -13px;
+    bottom: -13px;
   }
   .card-cost {
     right: 0px;

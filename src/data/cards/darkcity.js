@@ -42,7 +42,9 @@ export default {
               {
                 icon: 1
               },
-              " equal to that card's Cost."
+              " equal to that card's ",
+              { icon: 3 },
+              "."
             ]
           ]
         },
@@ -394,7 +396,8 @@ export default {
               },
               {
                 icon: 1
-              }
+              },
+              "."
             ]
           ]
         },
@@ -406,7 +409,7 @@ export default {
           attack: "4",
           abilities: [
             [
-              "Choose a number, then reveal the top card of your deck. If the card is that",
+              "Choose a number, then reveal the top card of your deck. If the card is that ",
               {
                 icon: 3
               },
@@ -422,7 +425,7 @@ export default {
           attack: "7",
           abilities: [
             [
-              "Choose a number, then reveal the top card of your deck. If the card is that",
+              "Choose a number, then reveal the top card of your deck. If the card is that ",
               {
                 icon: 3
               },
@@ -453,6 +456,7 @@ export default {
               {
                 team: 7
               },
+              ": ",
               {
                 keyword: 3
               },
@@ -493,7 +497,7 @@ export default {
               {
                 icon: 2
               },
-              "you get ",
+              " icon, you get ",
               {
                 bold: "+4"
               },
@@ -504,13 +508,14 @@ export default {
               {
                 icon: 1
               },
-              "icon, you get ",
+              " icon, you get ",
               {
                 bold: "+4"
               },
               {
                 icon: 1
-              }
+              },
+              "."
             ]
           ]
         },
@@ -518,7 +523,7 @@ export default {
           name: "Against All Odds",
           hc: 1,
           rarity: 3,
-          cost: 8,
+          cost: 7,
           attack: "0+",
           recruit: "0+",
           abilities: [
@@ -568,7 +573,8 @@ export default {
               },
               {
                 icon: 1
-              }
+              },
+              "."
             ]
           ]
         },
@@ -590,7 +596,8 @@ export default {
               },
               {
                 icon: 2
-              }
+              },
+              "."
             ]
           ]
         },
@@ -616,7 +623,7 @@ export default {
               {
                 icon: 3
               },
-              "or ",
+              " or ",
               {
                 bold: "2"
               },
@@ -647,7 +654,8 @@ export default {
               },
               {
                 icon: 2
-              }
+              },
+              "."
             ]
           ]
         }
@@ -776,7 +784,8 @@ export default {
               },
               {
                 icon: 2
-              }
+              },
+              "."
             ]
           ]
         },
@@ -839,7 +848,7 @@ export default {
           name: "Deep Freeze",
           hc: 3,
           rarity: 1,
-          cost: 5,
+          cost: 2,
           recruit: "0+",
           abilities: [
             "Draw a card.",
@@ -854,7 +863,7 @@ export default {
               {
                 icon: 2
               },
-              "for each other",
+              "for each other ",
               {
                 hc: 3
               },
@@ -880,7 +889,7 @@ export default {
               {
                 icon: 1
               },
-              "for each other",
+              "for each other ",
               {
                 hc: 3
               },
@@ -904,7 +913,7 @@ export default {
               {
                 hc: 3
               },
-              "Hero you played this turn."
+              " Hero you played this turn."
             ]
           ]
         },
@@ -990,6 +999,7 @@ export default {
              {
                hc: 4
              },
+             ": ",
              {
                keyword: 3
              },
@@ -1052,7 +1062,8 @@ export default {
              },
              {
                icon: 2
-             }
+             },
+             "."
             ]
           ]
         },
@@ -1080,7 +1091,8 @@ export default {
               },
               {
                 icon: 1
-              }
+              },
+              "."
             ],
             [
               {
@@ -1137,10 +1149,10 @@ export default {
           abilities: [
             [
               {
-                hc: 1
+                hc: 2
               },
               {
-                hc: 2
+                hc: 1
               },
               ": You get ",
               {
@@ -1148,7 +1160,8 @@ export default {
               },
               { 
                 icon: 1
-              }
+              },
+              "."
             ]
           ]
         },
@@ -1239,9 +1252,9 @@ export default {
               " equal to its ",
               { icon: 1 },
               ". ",
-              { italic: "[ You still get its " },
+              { italic: "( You still get its " },
               { icon: 4 },
-              { italic: "]" }
+              { italic: ".)" }
             ]
           ]
         }
@@ -1292,7 +1305,8 @@ export default {
               " equal to its printed ",
               {
                 icon: 4
-              }
+              },
+              "."
             ],
             [
               {
@@ -1333,14 +1347,14 @@ export default {
         },
         {
           name: "The Punisher",
-          hc: 4,
+          hc: 5,
           rarity: 3,
           cost: 8,
           attack: "4+",
           dense: true,
           abilities: [
             [
-              "Reveal cards from the Hero Deck until you have revealed two cards with the same",
+              "Reveal cards from the Hero Deck until you have revealed two cards with the same ",
               {
                 icon: 3
               },
@@ -1382,7 +1396,8 @@ export default {
               },
               {
                 icon: 1
-              }
+              },
+              "."
             ]
           ]
         },
@@ -1400,7 +1415,8 @@ export default {
               },
               {
                 icon: 1
-              }
+              },
+              "."
             ]
           ]
         },

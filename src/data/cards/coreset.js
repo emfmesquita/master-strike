@@ -257,11 +257,11 @@ export default {
               {
                 icon: 1
               },
-              " for each other Hero with an odd-numbered",
+              " for each other Hero with an odd-numbered ",
               {
                 icon: 3
               },
-              "you played this turn."
+              " you played this turn."
             ]
           ]
         },
@@ -844,7 +844,7 @@ export default {
               {
                 icon:3
               },
-              "or less, draw it."
+              " or less, draw it."
             ]
           ]
         },
@@ -863,7 +863,7 @@ export default {
               {
                 icon:3
               },
-              "or less, draw it."
+              " or less, draw it."
             ]
           ]
         },
@@ -884,7 +884,7 @@ export default {
               {
                 icon:3
               },
-              "or less, draw it."
+              " or less, draw it."
             ]
           ]
         },
@@ -902,7 +902,7 @@ export default {
               {
                 icon:3
               },
-              "or less into your hand. Put the rest back in any order."
+              " or less into your hand. Put the rest back in any order."
             ]
           ]
         }
