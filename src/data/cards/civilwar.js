@@ -46,14 +46,21 @@ export default {
           abilities: []
         },
         {
-          name: "Karmic Balance",
-          hc: 3,
+          name: "Secret Avengers Assemble!",
+          hc: 5,
           rarity: 2,
-          cost: 6,
-          recruit: "4",
+          cost: 5,
+          attack: "2+",
           abilities: [
             [
-              "Reveal the top card of the Hero Deck. You may recruit it this turn. If you do, you may KO one of your cards or a card from your discard pile."
+              "You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each ",
+              { rule: 11, text: "Sidekick" },
+              " and other ",
+              { team: 1 },
+              " Hero you played this turn."
             ]
           ]
         },

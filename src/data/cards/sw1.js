@@ -17,7 +17,8 @@ export default {
               { hc: 1 },
               ": You may KO a card from your hand or discard pile. If you do, you get ",
               { bold: "+1" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -58,7 +59,7 @@ export default {
           cost: 7,
           recruit: "5",
           abilities: [
-            "When any player defeats a Villain or Mastermind with a 'Fight' effect, you may discard this card to cancel that fight effect. If you do, draw three cards."
+            "When any player defeats a Villain or Mastermind with a “Fight“ effect, you may discard this card to cancel that fight effect. If you do, draw three cards."
           ]
         }
       ]
@@ -210,7 +211,8 @@ export default {
               { hc: 3 },
               " Hero you have played this turn, you get",
               { bold: "+1" },
-              { icon: 2 }
+              { icon: 2 },
+              "."
             ]
           ]
         },
@@ -223,7 +225,7 @@ export default {
           attack: "1",
           abilities: [
             [
-              "Draw a card"
+              "Draw a card."
             ]
           ]
         },
@@ -240,7 +242,8 @@ export default {
               { hc: 4 },
               " Hero you have played this turn, you get ",
               { bold: "+1" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -252,13 +255,14 @@ export default {
           attack: "5+",
           abilities: [
             [
-              { hc: 3 },
-              { hc: 3 },
               { hc: 4 },
               { hc: 4 },
+              { hc: 3 },
+              { hc: 3 },
               ": You get ",
               { bold: "+6" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
 
           ]
@@ -280,7 +284,7 @@ export default {
           abilities: [
             [
               { hc: 3 },
-              ": Reveal the top card of your deck. Draw it or Teleport ",
+              ": Reveal the top card of your deck. Draw it or ",
               { keyword: 1 },
               " it.",
 
@@ -293,13 +297,14 @@ export default {
           hc2: 3,
           rarity: 1,
           cost: 2,
-          recruit: "1",
+          recruit: "1+",
           abilities: [
             [
               { team: 15 },
               ": You may KO a card from your hand or discard pile. If you do, you get ",
               { bold: "+1" },
-              { icon: 2 }
+              { icon: 2 },
+              "."
             ]
           ]
         },
@@ -370,7 +375,8 @@ export default {
               { icon: 2 },
               " this turn, you get ",
               { bold: "+2" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -383,11 +389,12 @@ export default {
           attack: "4+",
           abilities: [
             [
-              { hc: 3 },
               { hc: 4 },
+              { hc: 3 },
               ": You get ",
               { bold: "+2" },
               { icon: 1 },
+              "."
             ]
           ]
         },
@@ -405,7 +412,8 @@ export default {
               { icon: 2 },
               " this turn, you get ",
               { bold: "+6" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
 
           ]
@@ -441,7 +449,7 @@ export default {
           name: "Travel through Limbo",
           hc: 3,
           rarity: 1,
-          cost: 4,
+          cost: 3,
           attack: "1+",
           abilities: [
             { keyword: 1 },
@@ -449,7 +457,8 @@ export default {
               { hc: 3 },
               ": You get ",
               { bold: "+2" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -458,7 +467,7 @@ export default {
           hc: 1,
           hc2: 3,
           rarity: 2,
-          cost: 6,
+          cost: 5,
           attack: "2+",
           abilities: [
             { keyword: 1 },
@@ -468,6 +477,7 @@ export default {
               " you played this turn, you get ",
               { bold: "+1" },
               { icon: 1 },
+              "."
             ]
           ]
         },
@@ -478,6 +488,7 @@ export default {
           cost: 7,
           attack: "2+",
           abilities: [
+            { keyword: 1 },
             [
               "Choose a Villain or Mastermind in your Victory Pile. You get ",
               { bold: "+" },
@@ -614,10 +625,10 @@ export default {
           abilities: [
             "Defeat a Villain for free.",
             [
-              { hc: 2 },
-              { hc: 2 },
               { hc: 4 },
               { hc: 4 },
+              { hc: 2 },
+              { hc: 2 },
               ": Instead, defeat the Mastermind once for free."
             ]
           ]
@@ -654,7 +665,8 @@ export default {
             [
               "If you don't recruit any heroes this turn, you get .",
               { bold: "+2" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -665,13 +677,13 @@ export default {
           cost: 6,
           attack: "3+",
           abilities: [
-            [{ hc: 2 },
-            { keyword: 17, text: ": Cross-Dimensional Wolverine Rampage." }
-            ],
             [
-              "For each other player who gained a Wound this way, you get ",
+              { hc: 2 },
+              { keyword: 17, text: ": Cross-Dimensional Wolverine Rampage." },
+              " For each other player who gained a Wound this way, you get ",
               { bold: "+1" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -710,9 +722,7 @@ export default {
           cost: 2,
           attack: "1",
           recruit: "1",
-          abilities: [
-
-          ]
+          abilities: []
         },
         {
           name: "Master Combatant",
@@ -732,7 +742,8 @@ export default {
               { icon: 1 },
               " icon, you get ",
               { bold: "+2" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -740,7 +751,7 @@ export default {
           name: "General of the Black Order",
           hc: 1,
           rarity: 2,
-          cost: 3,
+          cost: 5,
           attack: "3",
           recruit: "0+",
           abilities: [
@@ -748,7 +759,8 @@ export default {
               { hc: 2 },
               ": You get ",
               { bold: "+3 " },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -768,6 +780,7 @@ export default {
               " and ",
               { bold: "+4" },
               { icon: 1 },
+              "."
             ]
           ]
         }
@@ -790,7 +803,8 @@ export default {
               { hc: 5 },
               ": You get ",
               { bold: "+2" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -851,7 +865,8 @@ export default {
             [
               "You may KO a Bystander from your Victory Pile. If you do, you get ",
               { bold: "+2" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -883,7 +898,7 @@ export default {
               { hc: 3 },
               ": Each other player reveals a ",
               { hc: 3 },
-              " Hero or chooses a Bystander from their Victory Pile. You 'rescue' those bystanders.",
+              " Hero or chooses a Bystander from their Victory Pile. You “rescue“ those bystanders.",
             ]
           ]
         },
@@ -920,7 +935,8 @@ export default {
               { hc: 4 },
               ": You get ",
               { bold: "+2" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -952,7 +968,7 @@ export default {
               "You get ",
               { bold: "+2" },
               { icon: 1 },
-              " usable only against the Mastermind or Villains on the Rooftops or Bridge."
+              ", usable only against the Mastermind or Villains on the Rooftops or Bridge."
             ],
             [
               "Reveal the top card of your deck. If it costs 2 or less, draw it."

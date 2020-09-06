@@ -318,7 +318,7 @@ export default {
           recruit: "2",
           abilities: [
             [
-              "Choose an Artifact any player controls with a 'once per turn' ability. Play a copy of one of those abilities."
+              "Choose an Artifact any player controls with a “once per turn“ ability. Play a copy of one of those abilities."
             ]
           ]
         },

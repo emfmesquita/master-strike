@@ -112,7 +112,7 @@ export default {
           hc: 4,
           hc2: 1,
           rarity: 1,
-          cost: 2,
+          cost: 3,
           recruit: "2+",
           abilities: [
             { keyword: 7 },
@@ -447,7 +447,7 @@ export default {
           hc: 4,
           hc2: 1,
           rarity: 2,
-          cost: 6,
+          cost: 5,
           attack: "3",
           abilities: [
             [
@@ -598,7 +598,7 @@ export default {
               { icon: 1 },
               " equal to that Villain's printed ",
               { icon: 4 },
-              " value."
+              "."
             ]
           ]
         },
@@ -846,7 +846,7 @@ export default {
           hc: 2,
           hc2: 1,
           rarity: 1,
-          cost: 5,
+          cost: 4,
           attack: "2+",
           abilities: [
             { keyword: 7 },

@@ -316,7 +316,7 @@ export default {
               { icon: 1 },
               " for each card you discarded this turn."
             ],
-            { italic: '(Throwing an Artifact does not count as "discarding" it.)' }
+            { italic: "(Throwing an Artifact does not count as “discarding“ it.)" }
           ]
         },
         {

@@ -1,11 +1,11 @@
 export default [
   [
     "The Mastermind Carnage and his “Maximum Carnage” followers use the gruesome new Feast keyword ",
-    { bold: '“Feast”' },
+    { bold: "“Feast”" },
     " states that when you fight a Villain or Mastermind with this ability you treat it as a fight effect. IE:",
   ],
   [
-    { bold: '“Feast” = “Fight: KO the top card of your deck.”' }
+    { bold: "“Feast” = “Fight: KO the top card of your deck.”" }
   ],
   [
     "Some Maximum Carnage Villains create special effects when they feast on certain cards:"

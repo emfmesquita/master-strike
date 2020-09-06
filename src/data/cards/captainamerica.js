@@ -51,7 +51,8 @@ export default {
             [
               "Choose one: Gain a S.H.I.E.L.D. Officer, or you get ",
               { bold: "+2" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ],
             [
               { hc: 1 },
@@ -76,7 +77,8 @@ export default {
               { keyword: 24 },
               ": For each card KO'd this way, you get ",
               { bold: "+1" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         }
@@ -112,7 +114,8 @@ export default {
               { keyword: 24 },
               ": You get ",
               { bold: "+2" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -198,7 +201,7 @@ export default {
           abilities: [
             [
               { team: 1 },
-              ": Rescue a Bystander"
+              ": Rescue a Bystander."
             ],
             [
               { keyword: 24 },
@@ -274,7 +277,7 @@ export default {
           name: "Shadow of Wars Past",
           hc: 1,
           rarity: 2,
-          cost: 6,
+          cost: 4,
           attack: "2",
           abilities: [
             [
@@ -291,12 +294,13 @@ export default {
           cost: 8,
           attack: "4+",
           abilities: [
-            "Rescue a Bystander",
+            "Rescue a Bystander.",
             [
               { keyword: 24 },
               ": You get ",
               { bold: "+3" },
-              { icon: 1 }
+              { icon: 1 },
+              "."
             ]
           ]
         }
@@ -356,7 +360,7 @@ export default {
           name: "2>4",
           hc: 5,
           rarity: 3,
-          cost: 8,
+          cost: 7,
           attack: "4",
           abilities: [
             [
