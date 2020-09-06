@@ -41,7 +41,7 @@ export default {
               },
               {
                 icon: 1
-              } 
+              }
             ]
           ]
 
@@ -78,8 +78,8 @@ export default {
               }
             ],
             [
-              { 
-                hc:4
+              {
+                hc: 4
               },
               {
                 hc: 4
@@ -106,7 +106,7 @@ export default {
           abilities: [
             [
               {
-                hc:5
+                hc: 5
               },
               ": Draw a card."
             ]
@@ -170,7 +170,7 @@ export default {
               {
                 icon: 1
               },
-              ". (If both, you get both.)"  
+              ". (If both, you get both.)"
             ]
           ]
         },
@@ -239,7 +239,7 @@ export default {
           abilities: [
             [
               {
-                hc:2
+                hc: 2
               },
               ": : Choose one - Draw a card or you get ",
               {
@@ -291,7 +291,7 @@ export default {
               {
                 icon: 1
               },
-              "."  
+              "."
             ],
             [
               {
@@ -370,7 +370,7 @@ export default {
               {
                 icon: 1
               },
-              "for each card you discarded from your hand this turn."  
+              "for each card you discarded from your hand this turn."
             ]
           ]
         },
@@ -383,10 +383,10 @@ export default {
           abilities: [
             [
               {
-                team:1
+                team: 1
               },
               {
-                team:1
+                team: 1
               },
               ": ",
               {
@@ -424,7 +424,7 @@ export default {
             ],
             [
               {
-                hc:2
+                hc: 2
               },
               ": Instead, ",
               {
@@ -433,11 +433,11 @@ export default {
               },
               " for",
               {
-                icon:2
+                icon: 2
               },
-              "and" ,
+              "and",
               {
-                icon:1
+                icon: 1
               }
             ]
           ]
@@ -451,7 +451,7 @@ export default {
           abilities: [
             [
               {
-                hc:4
+                hc: 4
               },
               ": ",
               {
@@ -475,7 +475,7 @@ export default {
             ],
             [
               {
-                hc:2
+                hc: 2
               },
               ": You may KO the card you discarded this way."
             ]
@@ -496,16 +496,16 @@ export default {
             ],
             [
               {
-                team:1
+                team: 1
               },
               {
-                team:1
+                team: 1
               },
               {
-                team:1
+                team: 1
               },
               {
-                team:1
+                team: 1
               },
               ": Before you do that, put your discard pile on top of your deck."
             ]
@@ -529,7 +529,7 @@ export default {
             [
               "As you play this card, you may choose a color and/or a team icon. This card is that color and team icon this turn. (instead of",
               {
-                hc:1
+                hc: 1
               },
               "and",
               {
@@ -554,7 +554,7 @@ export default {
             ],
             [
               {
-                hc:3
+                hc: 3
               },
               ": Draw a card."
             ]
@@ -569,13 +569,13 @@ export default {
           attack: "2+",
           abilities: [
             [
-             {
-               hc:2
-             },
-             ": ",
-             {
-               keyword: 58
-             }
+              {
+                hc: 2
+              },
+              ": ",
+              {
+                keyword: 58
+              }
             ]
           ]
         },
@@ -593,7 +593,7 @@ export default {
             ],
             [
               {
-                hc:4
+                hc: 4
               },
               ": ",
               {
@@ -620,7 +620,7 @@ export default {
           abilities: [
             [
               {
-                hc:3
+                hc: 3
               },
               ": Discard the top card of any player's deck. You may play a copy of that card this turn."
             ]
@@ -639,7 +639,7 @@ export default {
             ],
             [
               {
-                hc:1
+                hc: 1
               },
               ": ",
               {
@@ -672,13 +672,13 @@ export default {
             ],
             [
               {
-                hc:1
+                hc: 1
               },
               {
-                hc:1
+                hc: 1
               },
               {
-                hc:1
+                hc: 1
               },
               ": ",
               {
@@ -710,7 +710,7 @@ export default {
             ],
             [
               {
-                hc:2
+                hc: 2
               },
               ": Instead, ",
               {
@@ -773,7 +773,7 @@ export default {
             ],
             [
               {
-                hc:1
+                hc: 1
               },
               ": ",
               {
@@ -841,7 +841,7 @@ export default {
             ],
             [
               {
-                hc:3
+                hc: 3
               },
               ": You may KO a card from your discard pile."
             ]

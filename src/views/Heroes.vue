@@ -295,6 +295,10 @@ const filterHeroes = allHeroes.map(hero => ({
 filterHeroes.sort((a, b) => a.label.localeCompare(b.label));
 const validHeroes = allHeroes.filter(hero => hero.id).map(hero => hero.id);
 
+let sets = setsArray.concat([]);
+sets = sets.filter(set => set.id !== 2); // no promo heroes yet
+sets = Object.freeze(sets);
+
 let teams = teamArray.concat([]);
 teams.sort((a, b) => a.label.localeCompare(b.label));
 teams = Object.freeze(teams);
@@ -316,7 +320,7 @@ export default {
   components: { Hero, TeamIcon, HeroClassIcon, AbilityIcon },
   data: () => ({
     filterHeroes,
-    sets: setsArray,
+    sets: sets,
     teams,
     heroClasses,
     keywords,
@@ -341,7 +345,7 @@ export default {
     const query = this.$route.query;
     this.filter.search = decodeURI(query.s || "");
     this.filter.hero = toIntArray(query.hero).filter(hero => validHeroes.indexOf(hero) >= 0);
-    this.filter.set = toIntArray(query.set).filter(set => setsArray[set]);
+    this.filter.set = toIntArray(query.set).filter(set => setsArray[set - 1]);
     this.filter.team = toIntArray(query.team).filter(team => teamArray[team]);
     this.filter.hc = toIntArray(query.hc).filter(hc => heroClassArray[hc]);
     this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);

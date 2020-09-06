@@ -14,7 +14,7 @@ export default {
           recruit: "2½ ",
           abilities: [
             [
-              {keyword: 30},
+              { keyword: 30 },
               ": Draw a card."
             ]
           ]
@@ -28,9 +28,9 @@ export default {
           abilities: [
             [
               "Reveal the top card of your deck. If it's HYDRA or S.H.I.E.L.D.",
-              { team: 13},
+              { team: 13 },
               " or ",
-              { team: 2},
+              { team: 2 },
               ", draw it."
             ]
           ]
@@ -58,9 +58,9 @@ export default {
             [
               { keyword: 30 },
               ": KO up to two ",
-              { team: 13},
+              { team: 13 },
               " and/or ",
-              { team: 2},
+              { team: 2 },
               " Heroes from your discard pile. Draw a card for each Hero KO'd this way."
 
             ]
@@ -156,7 +156,7 @@ export default {
           recruit: "2+",
           abilities: [
             [
-              { hc: 3},
+              { hc: 3 },
               ": If any other players are taller than you, draw a card. If any other players are shorter than you, you get +1 Recruit. If both, get both!"
             ]
           ]
@@ -169,7 +169,7 @@ export default {
           attack: "2½ ",
           abilities: [
             [
-              { keyword: 30},
+              { keyword: 30 },
               ": Rescue a Bystander."
             ]
           ]
@@ -182,7 +182,7 @@ export default {
           attack: "4½ ",
           abilities: [
             [
-              { keyword: 30},
+              { keyword: 30 },
               ": When you have a new hand of cards at the end of this turn, draw an extra card."
             ]
           ]
@@ -216,7 +216,7 @@ export default {
           attack: "1½ ",
           recruit: "1½ ",
           abilities: [
-           
+
           ]
         },
         {
@@ -228,10 +228,10 @@ export default {
           recruit: "0+",
           abilities: [
             [
-              { keyword: 30},
+              { keyword: 30 },
               ": You get ",
               { bold: "+1" },
-              { icon: 2}
+              { icon: 2 }
             ]
           ]
         },
@@ -243,7 +243,7 @@ export default {
           attack: "3½ ",
           abilities: [
             [
-              { hc: 5},
+              { hc: 5 },
               ": Does the top card of your deck have a gun in the art? If so, draw that gun!"
             ]
           ]
@@ -259,7 +259,7 @@ export default {
               "Choose a Villain. Cut its Attack in half this turn."
             ],
             [
-              { team: 17},
+              { team: 17 },
               ": Cut the Mastermind's Attack in half for one fight this turn."
             ]
           ]
@@ -296,10 +296,10 @@ export default {
           attack: "1½+",
           abilities: [
             [
-              { hc: 5},
+              { hc: 5 },
               ": You get ",
-              { bold: "+2"},
-              { icon: 1},
+              { bold: "+2" },
+              { icon: 1 },
               ", usable only against Villains in the Sewers or Bridge or the Mastermind."
             ]
           ]
@@ -312,7 +312,7 @@ export default {
           recruit: "3",
           abilities: [
             [
-              {keyword: 30},
+              { keyword: 30 },
               ": You may KO one of your cards or a card from your discard pile."
             ]
           ]
@@ -328,8 +328,8 @@ export default {
             [
               { team: 17 },
               ": You get ",
-              { bold: "+1/2"},
-              { icon: 1},
+              { bold: "+1/2" },
+              { icon: 1 },
               " for each Hero in the KO pile."
             ]
           ]

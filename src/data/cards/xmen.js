@@ -30,11 +30,11 @@ export default {
           recruit: "2+",
           abilities: [
             [
-                { keyword: 38 },
-                ": You get ",
-                { bold: "+2"},
-                { icon: 2 },
-                "."
+              { keyword: 38 },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 2 },
+              "."
             ]
           ]
         },
@@ -61,7 +61,7 @@ export default {
             [
               { keyword: 38 },
               ": You get ",
-              { bold: "+3"},
+              { bold: "+3" },
               { icon: 1 },
               "."
             ]
@@ -84,7 +84,7 @@ export default {
             [
               { keyword: 38 },
               ": You get ",
-              { bold: "+2"},
+              { bold: "+2" },
               { icon: 1 },
               "for each ",
               { keyword: 38 },
@@ -113,7 +113,7 @@ export default {
               { keyword: 34 },
               { hc: 1 },
               ": You get ",
-              { bold: "+1"},
+              { bold: "+1" },
               { icon: 6 },
               "."
             ]
@@ -206,7 +206,7 @@ export default {
               { keyword: 36 }
 
             ]
-         ]
+          ]
         },
         {
           name: "Calculated Rage",
@@ -255,7 +255,7 @@ export default {
             [
               { hc: 2 },
               ": You get ",
-              { bold: "+2"},
+              { bold: "+2" },
               { icon: 1 }
             ]
           ]
@@ -274,7 +274,7 @@ export default {
               { keyword: 37 }
 
             ]
-         ]
+          ]
         },
         {
           name: "Natural Leader",
@@ -283,11 +283,11 @@ export default {
           cost: 6,
           attack: "3",
           abilities: [
-            { keyword: 37},
+            { keyword: 37 },
             [
               { hc: 4 },
               ": Return a ",
-              { team: 2},
+              { team: 2 },
               "Hero from your discard pile to your hand."
             ]
           ]
@@ -302,8 +302,8 @@ export default {
             { keyword: 37 },
             [
               "If you played at least 6 other cards this turn, you get ",
-              { bold: "+2"},
-              { icon: 1}
+              { bold: "+2" },
+              { icon: 1 }
             ]
           ]
         }
@@ -387,7 +387,7 @@ export default {
             ],
             [
               "Then, draw a card for each",
-              { team: 4},
+              { team: 4 },
               "card you Berserked."
             ]
           ]
@@ -410,10 +410,10 @@ export default {
           abilities: [
             { keyword: 35 },
             [
-              { keyword: 38},
+              { keyword: 38 },
               ": You get ",
-              { bold: "+1"},
-              { icon: 6},
+              { bold: "+1" },
+              { icon: 6 },
               " for each Lightshow card you played this turn."
             ]
           ]
@@ -428,10 +428,10 @@ export default {
             { keyword: 38 },
             [
               ": You get ",
-              { bold: "+2"},
+              { bold: "+2" },
               { icon: 1 },
             ]
-         ]
+          ]
         },
         {
           name: "City-Wide Mega Concert",
@@ -441,7 +441,7 @@ export default {
           attack: "3",
           abilities: [
             [
-              { keyword: 38},
+              { keyword: 38 },
               ": When you draw a new hand of cards at the end of this turn, draw two extra cards."
             ]
           ]
@@ -475,10 +475,10 @@ export default {
           recruit: "2",
           abilities: [
             [
-              { keyword: 38},
+              { keyword: 38 },
               ": You get ",
-              { bold: "+3"},
-              { icon: 1},
+              { bold: "+3" },
+              { icon: 1 },
               " usable only against the Mastermind."
             ]
           ]
@@ -492,11 +492,11 @@ export default {
           abilities: [
             "To play this card, you must discard a card from your hand.",
             [
-              { keyword: 36},
+              { keyword: 36 },
               ", ",
-              { keyword: 36}
+              { keyword: 36 }
             ]
-         ]
+          ]
         },
         {
           name: "Concussive Plasma",
@@ -506,10 +506,10 @@ export default {
           attack: "2+",
           abilities: [
             [
-              { keyword: 34},
+              { keyword: 34 },
               { hc: 3 },
               ": You get ",
-              { bold: "+1"},
+              { bold: "+1" },
               { icon: 1 },
               "for each ",
               { hc: 3 },
@@ -524,14 +524,14 @@ export default {
           cost: 7,
           attack: "3+",
           abilities: [
-            { keyword: 36},
+            { keyword: 36 },
             [
               { keyword: 34 },
               { hc: 3 },
               ": You get the total printed",
-              { icon: 1},
+              { icon: 1 },
               "of all the ",
-              { hc: 3},
+              { hc: 3 },
               " cards in your discard pile."
             ]
           ]
@@ -553,10 +553,10 @@ export default {
           abilities: [
             "Draw a card.",
             [
-              { keyword: 38},
+              { keyword: 38 },
               ": You get ",
-              { bold: "+1"},
-              { icon: 2},
+              { bold: "+1" },
+              { icon: 2 },
               " for each Lightshow card you played this turn."
             ]
           ]
@@ -570,13 +570,13 @@ export default {
           abilities: [
             "Draw a card.",
             [
-              { keyword: 38},
+              { keyword: 38 },
               ": You get ",
-              { bold: "+1"},
-              { icon: 1},
+              { bold: "+1" },
+              { icon: 1 },
               " for each Lightshow card you played this turn."
             ]
-         ]
+          ]
         },
         {
           name: "Unexpected Explosion ",
@@ -586,7 +586,7 @@ export default {
           attack: "3",
           abilities: [
             [
-              { keyword: 38},
+              { keyword: 38 },
               ": Look at the top card of your deck. If it costs 0, KO it."
             ]
           ]
@@ -602,11 +602,11 @@ export default {
             [
               { keyword: 38 },
               ": You get ",
-              { bold: "+1"},
-              { icon: 2},
+              { bold: "+1" },
+              { icon: 2 },
               "and ",
-              { bold: "+1"},
-              { icon: 1},
+              { bold: "+1" },
+              { icon: 1 },
               "for each ",
               { keyword: 38 },
               " card you played this turn."
@@ -631,15 +631,15 @@ export default {
           abilities: [
             [
               "Put a card from the HQ on the bottom of the Hero deck. If that card had a ",
-              { icon: 2},
+              { icon: 2 },
               ", get",
-              { bold: "+2"},
-              { icon: 2},
+              { bold: "+2" },
+              { icon: 2 },
               ". If that card had an ",
-              { icon: 1},
+              { icon: 1 },
               ", you get ",
-              { bold: "+2"},
-              { icon: 1},
+              { bold: "+2" },
+              { icon: 1 },
               ". (If both, get both.)"
             ]
           ]
@@ -653,11 +653,11 @@ export default {
           recruit: "1",
           abilities: [
             [
-              { keyword: 34},
-              { team: 4},
+              { keyword: 34 },
+              { team: 4 },
               ": Draw a card."
             ]
-         ]
+          ]
         },
         {
           name: "Ghost in the Machine",
@@ -668,7 +668,7 @@ export default {
           abilities: [
             [
               "You get ",
-              { bold: "+1"},
+              { bold: "+1" },
               { icon: 1 },
               "for each different cost among the Heroes in the HQ."
             ]
@@ -683,10 +683,10 @@ export default {
           abilities: [
             { keyword: 37 },
             [
-             "Put a card from the HQ on the bottom of the Hero Deck. You get ",
-             {  bold: "+"},
-             {  icon: 1},
-             " equal to its cost."
+              "Put a card from the HQ on the bottom of the Hero Deck. You get ",
+              { bold: "+" },
+              { icon: 1 },
+              " equal to its cost."
             ]
           ]
         }
@@ -706,7 +706,7 @@ export default {
           cost: 2,
           attack: "1+",
           abilities: [
-            {keyword: 36}
+            { keyword: 36 }
           ]
         },
         {
@@ -768,8 +768,8 @@ export default {
           abilities: [
             [
               "You get ",
-              { bold: "+1"},
-              { icon: 1},
+              { bold: "+1" },
+              { icon: 1 },
               "for each different Hero Class in your discard pile."
             ]
           ]
@@ -783,9 +783,9 @@ export default {
           abilities: [
             { keyword: 37 },
             [
-             "Reveal the top three cards of the Hero Deck. You get their total printed ",
-             {  icon: 1},
-             ". Put them on the bottom of the Hero Deck."
+              "Reveal the top three cards of the Hero Deck. You get their total printed ",
+              { icon: 1 },
+              ". Put them on the bottom of the Hero Deck."
             ]
           ]
         }
@@ -816,13 +816,13 @@ export default {
           cost: 4,
           attack: "2+",
           abilities: [
-            {keyword: 36},
+            { keyword: 36 },
             [
-              { hc: 5},
+              { hc: 5 },
               ": ",
-              { keyword: 36}
+              { keyword: 36 }
             ]
-         ]
+          ]
         },
         {
           name: "Make My Own Luck",
@@ -847,10 +847,10 @@ export default {
           abilities: [
             "Reveal the top card of the Villain Deck. If it's a Villain, you may put it on the bottom of that Deck.",
             [
-              { team: 4},
+              { team: 4 },
               ": You get ",
-              { bold: "+"},
-              { icon: 1},
+              { bold: "+" },
+              { icon: 1 },
               "equal to the printed Victory Points of the card you revealed."
             ]
           ]
@@ -883,10 +883,10 @@ export default {
           cost: 4,
           piercing: "4",
           abilities: [
-            { keyword: 37},
-            { keyword: 35},
+            { keyword: 37 },
+            { keyword: 35 },
             "KO this card."
-         ]
+          ]
         },
         {
           name: "Reincarnating Phoenix",
@@ -919,8 +919,8 @@ export default {
             ],
             [
               "KO all the cards you Berserked. If this card makes at least ",
-              { bold: "13"},
-              { icon: 1},
+              { bold: "13" },
+              { icon: 1 },
               ", then the Phoenix Force becomes corrupted by power and devours the Earth. You win, Evil wins, and all other players lose."
             ]
           ]
@@ -940,9 +940,9 @@ export default {
           cost: 3,
           recruit: "2",
           abilities: [
-            { keyword: 37},
+            { keyword: 37 },
             [
-              { hc: 1},
+              { hc: 1 },
               ": When you draw a new hand of cards at the end of this turn, draw an extra card."
             ]
           ]
@@ -959,7 +959,7 @@ export default {
               { hc: 3 },
               ": Draw a card."
             ]
-         ]
+          ]
         },
         {
           name: "Subtle Attunement",
@@ -970,7 +970,7 @@ export default {
           abilities: [
             { keyword: 37 },
             [
-              { hc: 1},
+              { hc: 1 },
               ": Look at the top two cards of your deck. You may KO one of them. Put the rest back in any order."
             ]
           ]
@@ -982,10 +982,10 @@ export default {
           cost: 8,
           recruit: "4",
           abilities: [
-            { keyword: 37},
+            { keyword: 37 },
             [
-              { keyword: 34},
-              { team: 4},
+              { keyword: 34 },
+              { team: 4 },
               ": You can use Recruit as Attack ",
               { icon: 2 },
               " as ",
@@ -1011,13 +1011,13 @@ export default {
           abilities: [
             "Draw a card.",
             [
-              { keyword: 35},
+              { keyword: 35 },
             ],
             [
-              {hc: 2},
+              { hc: 2 },
               ": You get ",
-              { bold: "+1"},
-              { icon: 6}
+              { bold: "+1" },
+              { icon: 6 }
             ]
           ]
         },
@@ -1028,8 +1028,8 @@ export default {
           cost: 3,
           recruit: "2",
           abilities: [
-           "Reveal the top card of the Hero Deck. You may recruit it this turn. If you do, draw a card."
-         ]
+            "Reveal the top card of the Hero Deck. You may recruit it this turn. If you do, draw a card."
+          ]
         },
         {
           name: "Butterfly Effect ",
@@ -1040,11 +1040,11 @@ export default {
           abilities: [
             { keyword: 35 },
             [
-              { keyword: 34},
-              { hc: 1},
+              { keyword: 34 },
+              { hc: 1 },
               ": You get ",
-              { bold: "+1"},
-              { icon: 6}
+              { bold: "+1" },
+              { icon: 6 }
             ]
           ]
         },
@@ -1055,7 +1055,7 @@ export default {
           cost: 7,
           piercing: "3",
           abilities: [
-            { keyword: 35},
+            { keyword: 35 },
             [
               "Reveal the top card of the Hero Deck. The player of your choice puts it in their hand."
             ]
@@ -1078,7 +1078,7 @@ export default {
           abilities: [
             [
               { keyword: 34 },
-              { hc: 2},
+              { hc: 2 },
               ": Draw a card."
             ]
 
@@ -1091,9 +1091,9 @@ export default {
           cost: 4,
           attack: "2+",
           abilities: [
-            { keyword: 36},
+            { keyword: 36 },
             "You may KO a Wound from your hand or discard pile."
-         ]
+          ]
         },
         {
           name: "Bioengineered Assassin",
@@ -1104,8 +1104,8 @@ export default {
           abilities: [
             { keyword: 36 },
             [
-              { keyword: 34},
-              { hc: 2},
+              { keyword: 34 },
+              { hc: 2 },
               ": You may KO a card from your hand or discard pile."
             ]
           ]
@@ -1118,17 +1118,17 @@ export default {
           attack: "3+",
           abilities: [
             [
-              {keyword: 36},
+              { keyword: 36 },
               ", ",
-              {keyword: 36}
+              { keyword: 36 }
             ],
             [
-              { keyword: 34},
-              { hc: 2},
+              { keyword: 34 },
+              { hc: 2 },
               ": Count the",
-              { hc: 2},
+              { hc: 2 },
               " cards in your discard pile. ",
-              { keyword: 36},
+              { keyword: 36 },
               " that many times."
             ]
           ]

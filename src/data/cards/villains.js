@@ -122,7 +122,9 @@ export default {
           attack: "0+",
           abilities: [
             [
-              "Discard cards from the top of your deck until your deck runs out or you have discarded 8 cards (don't shuffle). Then you get ",
+              "Discard cards from the top of your deck until your deck runs out or you have discarded 8 cards ",
+              { italic: "(don't shuffle)" },
+              ". Then you get ",
               { bold: "+1" },
               { icon: 1 },
               " for each card you discarded this turn."
@@ -142,8 +144,7 @@ export default {
           name: "Electroshock Therapy",
           hc: 3,
           rarity: 1,
-          cost: 3,
-          recruit: "2",
+          cost: 2,
           abilities: [
             { keyword: 10 },
             [
@@ -793,7 +794,7 @@ export default {
               { icon: 1 },
               " equal to that card's printed ",
               { icon: 1 },
-              " equal to its printed Attack."
+              "."
             ],
             [
               { team: 9 },

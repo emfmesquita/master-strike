@@ -1504,7 +1504,7 @@ export default {
           abilities: [
             [
               {
-                hc:4
+                hc: 4
               },
               ": ",
               {
@@ -1523,7 +1523,7 @@ export default {
           abilities: [
             [
               {
-                hc:2
+                hc: 2
               },
               ": ",
               {
@@ -1560,9 +1560,9 @@ export default {
           attack: "3+",
           abilities: [
             [
-             {
-               keyword: 48
-             }
+              {
+                keyword: 48
+              }
             ]
           ]
         },

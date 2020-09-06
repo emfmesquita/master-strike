@@ -14,10 +14,10 @@ export default {
           attack: "2+",
           abilities: [
             [
-              { hc: 1},
+              { hc: 1 },
               ": You may KO a card from your hand or discard pile. If you do, you get ",
-              { bold: "+1"},
-              { icon: 1}
+              { bold: "+1" },
+              { icon: 1 }
             ]
           ]
         },
@@ -43,10 +43,10 @@ export default {
           abilities: [
             [
               "You get ",
-              { bold: "+1 "},
+              { bold: "+1 " },
               { icon: 1 },
               " for each ",
-              { hc: 5},
+              { hc: 5 },
               " Hero in the HQ."
             ]
           ]
@@ -78,8 +78,8 @@ export default {
           abilities: [
             [
               "You get ",
-              { bold: "+1"},
-              { icon: 1},
+              { bold: "+1" },
+              { icon: 1 },
               " if you reveal four cards with no rules text."
             ]
           ]
@@ -94,7 +94,7 @@ export default {
           attack: "1",
           abilities: [
             [
-              
+
             ]
           ]
         },
@@ -108,7 +108,7 @@ export default {
           abilities: [
             [
               "Choose a card you played this turn with no rules text. You get its ",
-              { icon: 2},
+              { icon: 2 },
               " and ",
               { icon: 1 },
               " again."
@@ -205,12 +205,12 @@ export default {
           recruit: "2+",
           abilities: [
             [
-              { hc: 3},
+              { hc: 3 },
               ": For each other ",
-              { hc: 3},
+              { hc: 3 },
               " Hero you have played this turn, you get",
-              { bold: "+1"},
-              { icon: 2}
+              { bold: "+1" },
+              { icon: 2 }
             ]
           ]
         },
@@ -235,12 +235,12 @@ export default {
           attack: "3+",
           abilities: [
             [
-              { hc: 4},
+              { hc: 4 },
               ": For each other ",
-              { hc: 4},
+              { hc: 4 },
               " Hero you have played this turn, you get ",
-              { bold: "+1"},
-              { icon: 1}
+              { bold: "+1" },
+              { icon: 1 }
             ]
           ]
         },
@@ -251,15 +251,15 @@ export default {
           cost: 7,
           attack: "5+",
           abilities: [
-           [
-            {hc: 3},
-            {hc: 3},
-            {hc: 4},
-            {hc: 4},
-            ": You get ",
-            { bold: "+6"},
-            { icon: 1}
-           ]
+            [
+              { hc: 3 },
+              { hc: 3 },
+              { hc: 4 },
+              { hc: 4 },
+              ": You get ",
+              { bold: "+6" },
+              { icon: 1 }
+            ]
 
           ]
         }
@@ -279,9 +279,9 @@ export default {
           attack: "2",
           abilities: [
             [
-              { hc: 3},
+              { hc: 3 },
               ": Reveal the top card of your deck. Draw it or Teleport ",
-              { keyword: 1},
+              { keyword: 1 },
               " it.",
 
             ]
@@ -296,10 +296,10 @@ export default {
           recruit: "1",
           abilities: [
             [
-              { team: 15},
+              { team: 15 },
               ": You may KO a card from your hand or discard pile. If you do, you get ",
-              {bold: "+1"},
-              { icon: 2}
+              { bold: "+1" },
+              { icon: 2 }
             ]
           ]
         },
@@ -311,10 +311,10 @@ export default {
           attack: "3+",
           abilities: [
             [
-              { hc: 2},
+              { hc: 2 },
               ": Reveal the top card of the Villain Deck. If it's a Villain, you get ",
-              { bold: "+2"},
-              { icon: 1},
+              { bold: "+2" },
+              { icon: 1 },
               " and may fight that Villain this turn."
             ]
           ]
@@ -325,11 +325,11 @@ export default {
           rarity: 3,
           cost: 7,
           abilities: [
-           [
-            "Reveal the top three cards of your deck. Draw any number of them and ",
-            { keyword: 1},
-            " the rest."
-           ]
+            [
+              "Reveal the top three cards of your deck. Draw any number of them and ",
+              { keyword: 1 },
+              " the rest."
+            ]
 
           ]
         }
@@ -350,8 +350,8 @@ export default {
           abilities: [
             [
               "Once per turn, if you made at least ",
-              { bold: "6"},
-              { icon: 2},
+              { bold: "6" },
+              { icon: 2 },
               " this turn, draw a card."
             ]
           ]
@@ -366,11 +366,11 @@ export default {
           abilities: [
             [
               "Once per turn, if you made at least ",
-              { bold: "6"},
-              { icon: 2},
+              { bold: "6" },
+              { icon: 2 },
               " this turn, you get ",
-              {bold: "+2"},
-              { icon: 1}
+              { bold: "+2" },
+              { icon: 1 }
             ]
           ]
         },
@@ -383,11 +383,11 @@ export default {
           attack: "4+",
           abilities: [
             [
-              { hc: 3},
-              { hc: 4},
+              { hc: 3 },
+              { hc: 4 },
               ": You get ",
-              { bold: "+2"},
-              { icon: 1},
+              { bold: "+2" },
+              { icon: 1 },
             ]
           ]
         },
@@ -399,14 +399,14 @@ export default {
           attack: "0+",
           recruit: "4",
           abilities: [
-           [
-            "Once per turn, if you made at least ",
-            { bold: "6"},
-            { icon: 2},
-            " this turn, you get ",
-            {bold: "+6"},
-            { icon: 1}
-           ]
+            [
+              "Once per turn, if you made at least ",
+              { bold: "6" },
+              { icon: 2 },
+              " this turn, you get ",
+              { bold: "+6" },
+              { icon: 1 }
+            ]
 
           ]
         }
@@ -430,7 +430,7 @@ export default {
               ".",
             ],
             [
-              {hc: 1},
+              { hc: 1 },
               ": Gain another ",
               { rule: 11, text: "Sidekick" },
               "."
@@ -444,12 +444,12 @@ export default {
           cost: 4,
           attack: "1+",
           abilities: [
-            {keyword: 1},
+            { keyword: 1 },
             [
-              {hc: 3},
+              { hc: 3 },
               ": You get ",
-              {bold: "+2"},
-              { icon: 1}
+              { bold: "+2" },
+              { icon: 1 }
             ]
           ]
         },
@@ -461,13 +461,13 @@ export default {
           cost: 6,
           attack: "2+",
           abilities: [
-            {keyword: 1},
+            { keyword: 1 },
             [
               "For each ",
               { rule: 11, text: "Sidekick" },
               " you played this turn, you get ",
-              { bold: "+1"},
-              { icon: 1},
+              { bold: "+1" },
+              { icon: 1 },
             ]
           ]
         },
@@ -478,12 +478,12 @@ export default {
           cost: 7,
           attack: "2+",
           abilities: [
-           [
-            "Choose a Villain or Mastermind in your Victory Pile. You get ",
-            { bold: "+"},
-            { icon: 1},
-            " equal to its printed VP."
-           ]
+            [
+              "Choose a Villain or Mastermind in your Victory Pile. You get ",
+              { bold: "+" },
+              { icon: 1 },
+              " equal to its printed VP."
+            ]
 
           ]
         }
@@ -503,7 +503,7 @@ export default {
           recruit: "2",
           abilities: [
             [
-              {hc: 1},
+              { hc: 1 },
               ": Defeat a Henchman Villain for free"
             ]
           ]
@@ -516,7 +516,7 @@ export default {
           attack: "2",
           abilities: [
             [
-              {hc: 5},
+              { hc: 5 },
               ": Whenever you defeat a Villain this turn, you gain a ",
               { rule: 11, text: "Sidekick" },
               "."
@@ -530,7 +530,7 @@ export default {
           rarity: 2,
           cost: 5,
           attack: "3",
-          abilities: [ 
+          abilities: [
             "You may have a Henchman Villain from your Victory Pile enter the city. If you do, draw a card."
           ]
         },
@@ -541,18 +541,18 @@ export default {
           cost: 7,
           attack: "4+",
           abilities: [
-           [
-            "Each other player reveals a",
-            {hc: 5},
-            " hero or chooses a Henchman Villain from their Victory Pile. You defeat all those Henchmen for free."
-           ],
-           [
-             {team: 14},
-             ": You get ",
-             { bold: "+1"},
-             { icon: 1},
-             "for each Henchman you defeated this turn."
-           ]
+            [
+              "Each other player reveals a",
+              { hc: 5 },
+              " hero or chooses a Henchman Villain from their Victory Pile. You defeat all those Henchmen for free."
+            ],
+            [
+              { team: 14 },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              "for each Henchman you defeated this turn."
+            ]
 
           ]
         }
@@ -572,7 +572,7 @@ export default {
           recruit: "2",
           abilities: [
             [
-              {hc: 2},
+              { hc: 2 },
               ": Gain a ",
               { rule: 11, text: "Sidekick" },
               "."
@@ -587,10 +587,10 @@ export default {
           attack: "2+",
           abilities: [
             [
-              {hc: 4},
+              { hc: 4 },
               ": You get ",
-              { bold: "+2"},
-              { icon: 1},
+              { bold: "+2" },
+              { icon: 1 },
               ", usable only against Villains on the Bridge or the Mastermind."
             ]
           ]
@@ -602,7 +602,7 @@ export default {
           rarity: 2,
           cost: 6,
           attack: "2",
-          abilities: [ 
+          abilities: [
             "You may KO a card from your hand or discard pile. If you do, draw a card."
           ]
         },
@@ -613,13 +613,13 @@ export default {
           cost: 7,
           abilities: [
             "Defeat a Villain for free.",
-           [
-            {hc: 2},
-            {hc: 2},
-            {hc: 4},
-            {hc: 4},
-            ": Instead, defeat the Mastermind once for free."
-           ]
+            [
+              { hc: 2 },
+              { hc: 2 },
+              { hc: 4 },
+              { hc: 4 },
+              ": Instead, defeat the Mastermind once for free."
+            ]
           ]
         }
       ]
@@ -638,7 +638,7 @@ export default {
           attack: "2",
           abilities: [
             [
-              {hc: 2},
+              { hc: 2 },
               ": You may KO a card from your hand or discard pile. If you KO a wound this way, draw a card."
             ]
           ]
@@ -653,8 +653,8 @@ export default {
           abilities: [
             [
               "If you don't recruit any heroes this turn, you get .",
-              {bold: "+2"},
-              { icon: 1}
+              { bold: "+2" },
+              { icon: 1 }
             ]
           ]
         },
@@ -664,14 +664,14 @@ export default {
           rarity: 2,
           cost: 6,
           attack: "3+",
-          abilities: [ 
-            [{hc: 2},
-            { keyword: 17, text: ": Cross-Dimensional Wolverine Rampage."}
+          abilities: [
+            [{ hc: 2 },
+            { keyword: 17, text: ": Cross-Dimensional Wolverine Rampage." }
             ],
             [
               "For each other player who gained a Wound this way, you get ",
-              {bold: "+1"},
-              { icon: 1}
+              { bold: "+1" },
+              { icon: 1 }
             ]
           ]
         },
@@ -682,16 +682,16 @@ export default {
           cost: 7,
           attack: "5+",
           abilities: [
-           [
-            "Reveal your hand. You get ",
-            { bold: "+5"},
-            { icon: 1},
-            " if you haven't played any ",
-            { team: 2},
-            " or ",
-            { team: 13},
-            " cards this turn and don't have any in your hand."
-           ]
+            [
+              "Reveal your hand. You get ",
+              { bold: "+5" },
+              { icon: 1 },
+              " if you haven't played any ",
+              { team: 2 },
+              " or ",
+              { team: 13 },
+              " cards this turn and don't have any in your hand."
+            ]
           ]
         }
       ]
@@ -711,7 +711,7 @@ export default {
           attack: "1",
           recruit: "1",
           abilities: [
-            
+
           ]
         },
         {
@@ -724,15 +724,15 @@ export default {
           abilities: [
             [
               "If the most recent Hero you have played this turn has a ",
-              { icon: 2},
+              { icon: 2 },
               " icon, you get ",
-              { bold: "+2"},
-              { icon: 2},
+              { bold: "+2" },
+              { icon: 2 },
               ". If it has an ",
-              { icon: 1},
+              { icon: 1 },
               " icon, you get ",
-              { bold: "+2"},
-              { icon: 1}
+              { bold: "+2" },
+              { icon: 1 }
             ]
           ]
         },
@@ -743,12 +743,12 @@ export default {
           cost: 3,
           attack: "3",
           recruit: "0+",
-          abilities: [ 
+          abilities: [
             [
-              {hc: 2},
+              { hc: 2 },
               ": You get ",
-              { bold: "+3 "},
-              { icon: 1}
+              { bold: "+3 " },
+              { icon: 1 }
             ]
           ]
         },
@@ -760,15 +760,15 @@ export default {
           attack: "4+",
           recruit: "4+",
           abilities: [
-           [
-            { hc: 1},
-            ": You get ",
-            { bold: "+4"},
-            { icon: 2},
-            " and ",
-            { bold: "+4"},
-            { icon: 1},
-           ]
+            [
+              { hc: 1 },
+              ": You get ",
+              { bold: "+4" },
+              { icon: 2 },
+              " and ",
+              { bold: "+4" },
+              { icon: 1 },
+            ]
           ]
         }
       ]
@@ -787,10 +787,10 @@ export default {
           attack: "1+",
           abilities: [
             [
-              { hc: 5},
+              { hc: 5 },
               ": You get ",
-              { bold: "+2"},
-              { icon: 1}
+              { bold: "+2" },
+              { icon: 1 }
             ]
           ]
         },
@@ -813,9 +813,9 @@ export default {
           rarity: 2,
           cost: 3,
           recruit: "2",
-          abilities: [ 
+          abilities: [
             [
-              {hc: 3},
+              { hc: 3 },
               ": Look at the top two cards of your deck. If one of them has a higher cost than the other, draw it. Put the rest back in any order.",
             ]
           ]
@@ -827,9 +827,9 @@ export default {
           cost: 8,
           attack: "5",
           abilities: [
-           [
-            "Draw a card for each other player who has fewer cards in their Victory Pile than you."
-           ]
+            [
+              "Draw a card for each other player who has fewer cards in their Victory Pile than you."
+            ]
           ]
         }
       ]
@@ -847,11 +847,11 @@ export default {
           cost: 5,
           attack: "2+",
           abilities: [
-            {keyword: 1},
+            { keyword: 1 },
             [
               "You may KO a Bystander from your Victory Pile. If you do, you get ",
-              { bold: "+2"},
-              { icon: 1}
+              { bold: "+2" },
+              { icon: 1 }
             ]
           ]
         },
@@ -864,10 +864,10 @@ export default {
           recruit: "2+",
           abilities: [
             [
-              {team: 14},
+              { team: 14 },
               ": KO a Bystander from the Bystander Stack. Then, you get ",
-              { bold: "+1"},
-              { icon: 2},
+              { bold: "+1" },
+              { icon: 2 },
               " for every three Bystanders in the KO pile."
             ]
           ]
@@ -878,11 +878,11 @@ export default {
           rarity: 2,
           cost: 6,
           attack: "4",
-          abilities: [ 
+          abilities: [
             [
-              {hc: 3},
+              { hc: 3 },
               ": Each other player reveals a ",
-              { hc: 3},
+              { hc: 3 },
               " Hero or chooses a Bystander from their Victory Pile. You 'rescue' those bystanders.",
             ]
           ]
@@ -893,11 +893,11 @@ export default {
           rarity: 3,
           cost: 8,
           abilities: [
-           [
-            "KO six Bystanders from the Bystander Stack. Then, defeat any Villain or Mastermind whose ",
-            { icon: 1},
-            " is less than the number of Bystanders in the KO pile."
-           ]
+            [
+              "KO six Bystanders from the Bystander Stack. Then, defeat any Villain or Mastermind whose ",
+              { icon: 1 },
+              " is less than the number of Bystanders in the KO pile."
+            ]
           ]
         }
       ]
@@ -917,10 +917,10 @@ export default {
           abilities: [
             "Reveal the top card of your deck. If it costs 2 or less, draw it.",
             [
-              { hc: 4},
+              { hc: 4 },
               ": You get ",
-              { bold: "+2"},
-              { icon: 1}
+              { bold: "+2" },
+              { icon: 1 }
             ]
           ]
         },
@@ -937,7 +937,7 @@ export default {
               ".",
             ],
             [
-             "Reveal the top card of your deck. If it costs 2 or less, draw it."
+              "Reveal the top card of your deck. If it costs 2 or less, draw it."
             ]
           ]
         },
@@ -947,11 +947,11 @@ export default {
           rarity: 2,
           cost: 2,
           attack: "0+",
-          abilities: [ 
+          abilities: [
             [
               "You get ",
-              { bold: "+2"},
-              { icon: 1},
+              { bold: "+2" },
+              { icon: 1 },
               " usable only against the Mastermind or Villains on the Rooftops or Bridge."
             ],
             [
@@ -966,12 +966,12 @@ export default {
           cost: 2,
           attack: "0+",
           abilities: [
-           [
-            "You get ",
-            { bold: "+2"},
-            { icon: 1},
-            " for each other card you have played this turn that costs 1 or 2."
-           ]
+            [
+              "You get ",
+              { bold: "+2" },
+              { icon: 1 },
+              " for each other card you have played this turn that costs 1 or 2."
+            ]
           ]
         }
       ]

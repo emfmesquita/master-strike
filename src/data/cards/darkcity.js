@@ -131,17 +131,17 @@ export default {
           abilities: [
             [
               "Discard the top four cards of your deck. You get ",
-              { bold: "+"},
+              { bold: "+" },
               { icon: 1 },
               " equal to those cards' printed",
               { icon: 1 },
               ". "
             ],
             [
-             {
-               team: 4
-             },
-             ": KO any number of those cards."
+              {
+                team: 4
+              },
+              ": KO any number of those cards."
             ]
           ]
         }
@@ -200,7 +200,7 @@ export default {
           abilities: [
             [
               "You get ",
-              { bold: "+1"},
+              { bold: "+1" },
               { icon: 1 },
               " for each Villain in your Victory Pile."
             ]
@@ -285,7 +285,7 @@ export default {
           abilities: [
             [
               "KO any number of cards from your hand. You get  ",
-              { bold: "+1"},
+              { bold: "+1" },
               { icon: 1 },
               " for each card KO'd this way."
             ]
@@ -532,7 +532,7 @@ export default {
                 keyword: 3
               },
               {
-                bold:  " 5"
+                bold: " 5"
               }
             ],
             [
@@ -585,7 +585,7 @@ export default {
           cost: 2,
           recruit: "0+",
           abilities: [
-              "Draw a card.",
+            "Draw a card.",
             [
               {
                 hc: 1
@@ -730,13 +730,13 @@ export default {
           attack: "5",
           abilities: [
             [
-             {
-               hc: 5
-             },
-             {
-               hc: 5
-             },
-             ": Defeat the Mastermind once for free."
+              {
+                hc: 5
+              },
+              {
+                hc: 5
+              },
+              ": Defeat the Mastermind once for free."
             ]
           ]
         }
@@ -829,10 +829,10 @@ export default {
               "for each Villain KO'd this way."
             ],
             [
-             {
-               team: 6
-             },
-             ": Put one of those Villains into your Victory Pile."
+              {
+                team: 6
+              },
+              ": Put one of those Villains into your Victory Pile."
             ]
           ]
         }
@@ -968,13 +968,13 @@ export default {
           attack: "0+",
           abilities: [
             [
-             "You get ",
-             {
-               bold: "+1"
-             },
-             {
-               icon: 1
-             },
+              "You get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 1
+              },
               "for each Hero with a different ",
               {
                 icon: 3
@@ -993,19 +993,19 @@ export default {
           abilities: [
             "Draw a card.",
             [
-             {
-               hc: 4
-             },
-             {
-               hc: 4
-             },
-             ": ",
-             {
-               keyword: 3
-             },
-             {
-               bold: " 2"
-             }
+              {
+                hc: 4
+              },
+              {
+                hc: 4
+              },
+              ": ",
+              {
+                keyword: 3
+              },
+              {
+                bold: " 2"
+              }
             ]
           ]
         },
@@ -1056,14 +1056,14 @@ export default {
           recruit: "3+",
           abilities: [
             [
-             "Whenever you rescue a Bystander this turn, you get ",
-             {
-               bold: "+1"
-             },
-             {
-               icon: 2
-             },
-             "."
+              "Whenever you rescue a Bystander this turn, you get ",
+              {
+                bold: "+1"
+              },
+              {
+                icon: 2
+              },
+              "."
             ]
           ]
         },
@@ -1122,9 +1122,9 @@ export default {
           recruit: "2",
           abilities: [
             [
-             {
-               keyword: 1
-             }
+              {
+                keyword: 1
+              }
             ]
           ]
         },
@@ -1135,9 +1135,9 @@ export default {
           cost: 4,
           attack: "2",
           abilities: [
-           {
-             keyword: 1
-           }
+            {
+              keyword: 1
+            }
           ]
         },
         {
@@ -1158,7 +1158,7 @@ export default {
               {
                 bold: "+3"
               },
-              { 
+              {
                 icon: 1
               },
               "."
@@ -1247,7 +1247,7 @@ export default {
           abilities: [
             [
               "Whenever you defeat a Villain this turn, you may gain it. It becomes a grey Hero with no text that gives ",
-              { bold: "+"},
+              { bold: "+" },
               { icon: 1 },
               " equal to its ",
               { icon: 1 },

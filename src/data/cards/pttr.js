@@ -61,14 +61,14 @@ export default {
           abilities: [
             [
               "Each other player reveals a ",
-              { hc: 1},
+              { hc: 1 },
               " Hero or chooses a Bystander from their Victory Pile. You rescue those Bystanders."
             ],
             [
-              { team: 3},
+              { team: 3 },
               ": You get ",
-              { bold: "+1"},
-              { icon: 1},
+              { bold: "+1" },
+              { icon: 1 },
               " for each Bystander you rescued this turn."
             ]
           ]
@@ -90,10 +90,11 @@ export default {
           abilities: [
             { keyword: 7 },
             [
-              { hc: 2},
+              { hc: 2 },
               ": You get ",
-              { bold: "+1"},
-              { icon: 2}
+              { bold: "+1" },
+              { icon: 2 },
+              "."
             ]
           ]
         },
@@ -119,10 +120,10 @@ export default {
           abilities: [
             [
               "Reveal the top card of your deck. If it's ",
-            { hc: 2},
-            " or ",
-            { hc: 5},
-            ", draw it."
+              { hc: 2 },
+              " or ",
+              { hc: 5 },
+              ", draw it."
             ]
           ]
         },
@@ -135,11 +136,11 @@ export default {
           abilities: [
             [
               "Whenever you defeat a Villain on the Rooftops this turn, rescue Bystanders equal to that Villain's printed ",
-              { icon: 4},
+              { icon: 4 },
               "."
             ],
             [
-              { hc: 5},
+              { hc: 5 },
               ": You may move a Villain to the Rooftops. If another Villain is already there, swap them."
             ]
           ]
@@ -161,7 +162,7 @@ export default {
           abilities: [
             { keyword: 7 },
             [
-              { team: 3},
+              { team: 3 },
               ": Draw a card.",
             ]
           ]
@@ -186,12 +187,13 @@ export default {
           cost: 6,
           attack: "3+",
           abilities: [
-            {keyword: 7},
+            { keyword: 7 },
             [
-            { hc: 2},
-            ": You get ",
-            { bold: "+2"},
-            { icon: 1}
+              { hc: 2 },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -225,7 +227,7 @@ export default {
             { keyword: 7 },
             [
               "Reveal the top card of your deck. If that card has an ",
-              { icon: 1},
+              { icon: 1 },
               " icon, draw it."
             ]
           ]
@@ -249,10 +251,10 @@ export default {
           cost: 6,
           attack: "3",
           abilities: [
-            {keyword: 7},
+            { keyword: 7 },
             [
               "Reveal the top card of your deck. If that card has a ",
-              { icon: 2},
+              { icon: 2 },
               " icon, draw it."
             ]
           ]
@@ -265,7 +267,7 @@ export default {
           abilities: [
             "Recruit a Hero from the HQ for free.",
             [
-              { team: 3},
+              { team: 3 },
               ": Put that Hero on top of your deck."
             ]
           ]
@@ -288,12 +290,13 @@ export default {
             { keyword: 7 },
             [
               "Reveal the top card of your deck. If it costs 1 ",
-              { icon: 3},
+              { icon: 3 },
               " or 2 ",
-              { icon: 3},
+              { icon: 3 },
               ", you get ",
-              { bold: "+2"},
-              { icon: 1}
+              { bold: "+2" },
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -305,7 +308,7 @@ export default {
           abilities: [
             [
               "Reveal the top two cards of your deck. Put any that cost 2 ",
-              { icon: 3},
+              { icon: 3 },
               " or less into your hand. Put the rest back in any order."
             ]
           ]
@@ -317,15 +320,16 @@ export default {
           cost: 2,
           attack: "1+",
           abilities: [
-            {keyword: 7},
+            { keyword: 7 },
             [
-              "You get +1 Attack",
-              { bold: "+1"},
-              { icon: 1},
+              "You get ",
+              { bold: "+1" },
+              { icon: 1 },
               " for each other Hero you played this turn that costs 1 ",
-              { icon: 3},
+              { icon: 3 },
               " or 2 ",
-              { icon: 3}
+              { icon: 3 },
+              "."
             ]
           ]
         },

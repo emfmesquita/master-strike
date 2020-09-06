@@ -17,14 +17,14 @@ export default {
               "If you control an ",
               { keyword: 13 },
               ", you get ",
-              { bold: "+2"},
+              { bold: "+2" },
               { icon: 1 },
               "."
             ]
           ]
         },
         {
-          name: "Greithoth, Breaker of Wills",
+          name: "Mace of Chains",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -32,7 +32,7 @@ export default {
             { keyword: 14 },
             [
               "When you throw this, you get ",
-              { bold: "+2"},
+              { bold: "+2" },
               { icon: 2 },
               "."
             ]
@@ -48,7 +48,7 @@ export default {
             [
               { hc: 1 },
               ": Each player discards the bottom card of their deck. For each non-grey card discard this way, you get ",
-              { bold: "+1"},
+              { bold: "+1" },
               { icon: 1 },
               "."
             ]
@@ -63,7 +63,7 @@ export default {
           abilities: [
             [
               "You get ",
-              { bold: "+"},
+              { bold: "+" },
               { icon: 1 },
               " equal to the total number of ",
               { keyword: 13, text: "Artifacts" },
@@ -90,7 +90,7 @@ export default {
           abilities: [
             [
               "Reveal the top or bottom card of your deck. If it costs 4 or more, you get ",
-              { bold: "+2"},
+              { bold: "+2" },
               { icon: 2 },
               "."
             ]
@@ -105,7 +105,7 @@ export default {
             { keyword: 14 },
             [
               "When you throw this, you get ",
-              { bold: "+2"},
+              { bold: "+2" },
               { icon: 1 },
               "."
             ]
@@ -121,7 +121,7 @@ export default {
             [
               { team: 10 },
               ": Discard the top card of any player's deck. Then reveal the top or bottom card of your deck. If the card you revealed has an equal or higher cost, you get ",
-              { bold: "+2"},
+              { bold: "+2" },
               { icon: 1 },
               "."
             ]
@@ -136,7 +136,7 @@ export default {
           abilities: [
             [
               "Reveal a card from your hand, the top card of your deck, and the bottom card of your deck. You get ",
-              { bold: "+"},
+              { bold: "+" },
               { icon: 1 },
               " equal to their total costs."
             ]
@@ -183,7 +183,7 @@ export default {
             { keyword: 14 },
             [
               "When you throw this, you get ",
-              { bold: "+3"},
+              { bold: "+3" },
               { icon: 1 },
               ", usable only against Adversaries on the Bridge or the Commander."
             ]
@@ -234,7 +234,7 @@ export default {
             { keyword: 14 },
             [
               "When you throw this, you get ",
-              { bold: "+2"},
+              { bold: "+2" },
               { icon: 1 },
               " for each ",
               { hc: 4 },
@@ -285,7 +285,7 @@ export default {
           abilities: [
             [
               { hc: 5 },
-              ": gain a Madame HYDRA."
+              ": Gain a Madame HYDRA."
             ]
           ]
         },
@@ -312,11 +312,11 @@ export default {
             { keyword: 14 },
             [
               "When you throw this, you get ",
-              { bold: "+2"},
+              { bold: "+2" },
               { icon: 1 },
               " for each card you discarded this turn."
             ],
-            { italic: '[Throwing an Artifact does not count as "discarding" it.]' }
+            { italic: '(Throwing an Artifact does not count as "discarding" it.)' }
           ]
         },
         {
@@ -328,7 +328,7 @@ export default {
             { keyword: 14 },
             [
               "When you throw this, you get ",
-              { bold: "+1"},
+              { bold: "+1" },
               { icon: 1 },
               " for each other",
               { team: 13 },
@@ -380,10 +380,10 @@ export default {
             { keyword: 14 },
             [
               "When you throw this, you get ",
-              { bold: "+1"},
+              { bold: "+1" },
               { icon: 1 },
               " for each card you've drawn this turn. ",
-              { italic: "[This doesn't count the six cards you draw at the end of your turn.]" }
+              { italic: "(This doesn't count the six cards you draw at the end of your turn.)" }
             ]
           ]
         },

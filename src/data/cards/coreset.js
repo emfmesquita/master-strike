@@ -15,7 +15,7 @@ export default {
           abilities: [
             [
               {
-                hc:1
+                hc: 1
               },
               ": You may KO a card from your hand or discard pile. If you do, rescue a Bystander."
             ]
@@ -103,13 +103,13 @@ export default {
           abilities: [
             [
               "You get ",
-            { 
-              bold: "+1"
-            },
-            {
-              icon: 1
-            },
-            "for each color of Hero you have."
+              {
+                bold: "+1"
+              },
+              {
+                icon: 1
+              },
+              "for each color of Hero you have."
             ]
           ]
         },
@@ -202,7 +202,7 @@ export default {
           cost: 8,
           attack: "6+",
           abilities: [
-            [ 
+            [
               {
                 team: 4
               },
@@ -284,7 +284,7 @@ export default {
           cost: 7,
           attack: "6",
           abilities: [
-            [ 
+            [
               "You may gain a Wound to your hand. Then each player passes a card from their hand to the player on their left."
             ]
           ]
@@ -318,7 +318,7 @@ export default {
           abilities: [
             [
               {
-                hc:1
+                hc: 1
               },
               ": You may play the top card of the Villain Deck. If you do, you get ",
               {
@@ -326,7 +326,7 @@ export default {
               },
               {
                 icon: 1
-              } ,
+              },
               "."
             ]
           ]
@@ -354,7 +354,7 @@ export default {
           cost: 7,
           attack: "5",
           abilities: [
-            [ 
+            [
               "Whenever you defeat a Villain or Mastermind this turn, you get ",
               {
                 bold: "+3"
@@ -414,7 +414,7 @@ export default {
             ],
             [
               {
-                hc:2
+                hc: 2
               },
               ": Do the same thing to each other player's deck."
             ]
@@ -427,7 +427,7 @@ export default {
           cost: 7,
           attack: "4+",
           abilities: [
-            [ 
+            [
               "Reveal the top card of your deck. You get ",
               {
                 bold: "+"
@@ -467,7 +467,7 @@ export default {
           attack: "2+",
           abilities: [
             [
-              { team: 1 }, 
+              { team: 1 },
               ": You get ",
               { bold: "+1" },
               { icon: 1 },
@@ -484,7 +484,7 @@ export default {
           abilities: [
             [
               {
-              hc: 5
+                hc: 5
               },
               ": Choose one: each other player draws a card or each other player discards a card."
             ]
@@ -497,7 +497,7 @@ export default {
           cost: 7,
           attack: "5",
           abilities: [
-            [ 
+            [
               "Whenever you defeat a Villain or Mastermind this turn, rescue three Bystanders.",
             ]
           ]
@@ -519,7 +519,7 @@ export default {
           abilities: [
             [
               {
-                hc:4
+                hc: 4
               },
               ": You get ",
               { bold: "+1" },
@@ -566,9 +566,9 @@ export default {
           cost: 8,
           attack: "5+",
           abilities: [
-            [ 
+            [
               {
-                hc:4
+                hc: 4
               },
               ": You get ",
               { bold: "+5" },
@@ -595,10 +595,10 @@ export default {
               "Draw a card."
             ],
             [
-                {
-                  hc:5
-                },
-                ": Draw another card."
+              {
+                hc: 5
+              },
+              ": Draw another card."
             ]
           ]
         },
@@ -611,7 +611,7 @@ export default {
           abilities: [
             [
               {
-                hc:3
+                hc: 3
               },
               ": You get ",
               { bold: "+1" },
@@ -629,14 +629,14 @@ export default {
           abilities: [
             [
               {
-                hc:5
+                hc: 5
               },
               ": You get ",
               { bold: "+1" },
               { icon: 1 },
               " for each other",
               {
-                hc:5
+                hc: 5
               },
               "Hero you played this turn."
             ]
@@ -648,15 +648,15 @@ export default {
           rarity: 3,
           cost: 7,
           abilities: [
-            
+
             "Draw two cards.",
             [
               {
-                hc:5
-               },
+                hc: 5
+              },
               ": Draw two more cards."
             ]
-            
+
           ]
         }
       ]
@@ -676,7 +676,7 @@ export default {
             [
               "You may KO a",
               {
-                team:2
+                team: 2
               },
               "Hero from your hand or discard pile. If you do, you may gain a S.H.I.E.L.D. Officer to your hand."
             ]
@@ -691,7 +691,7 @@ export default {
           abilities: [
             [
               {
-                hc:5
+                hc: 5
               },
               ": You get ",
               { bold: "+1" },
@@ -717,7 +717,7 @@ export default {
               },
               "for each other",
               {
-                team:2
+                team: 2
               },
               "Hero you played this turn."
             ]
@@ -732,11 +732,11 @@ export default {
             [
               "Defeat any Villain or Mastermind whose ",
               {
-                icon:1
+                icon: 1
               },
               "is less than the number of",
               {
-                team:2
+                team: 2
               },
               "Heroes in the KO pile."
             ]
@@ -759,7 +759,7 @@ export default {
           abilities: [
             [
               {
-                hc:4
+                hc: 4
               },
               ": You get ",
               {
@@ -781,14 +781,14 @@ export default {
           abilities: [
             [
               {
-                hc:1
+                hc: 1
               },
               ": You may KO a card from your hand or discard pile. If you do, you get ",
               {
                 bold: "+1"
               },
               {
-                icon:2
+                icon: 2
               },
               "."
             ]
@@ -803,7 +803,7 @@ export default {
             [
               "Play this card as a copy of another Hero you played this turn. This card is both",
               {
-                hc:1
+                hc: 1
               },
               "and the color you copy."
             ]
@@ -842,7 +842,7 @@ export default {
                 bold: " 2"
               },
               {
-                icon:3
+                icon: 3
               },
               " or less, draw it."
             ]
@@ -861,7 +861,7 @@ export default {
                 bold: " 2"
               },
               {
-                icon:3
+                icon: 3
               },
               " or less, draw it."
             ]
@@ -882,7 +882,7 @@ export default {
                 bold: " 2"
               },
               {
-                icon:3
+                icon: 3
               },
               " or less, draw it."
             ]
@@ -900,7 +900,7 @@ export default {
                 bold: "2"
               },
               {
-                icon:3
+                icon: 3
               },
               " or less into your hand. Put the rest back in any order."
             ]
@@ -923,7 +923,7 @@ export default {
           abilities: [
             [
               {
-                hc:3
+                hc: 3
               },
               ":  Draw a card."
             ]
@@ -942,7 +942,7 @@ export default {
                 bold: "-2"
               },
               {
-                icon:1
+                icon: 1
               },
               "."
             ]
@@ -970,29 +970,29 @@ export default {
           cost: 7,
           attack: "5",
           abilities: [
-              [
-                "Any Villain you fight on the Bridge this turn gets ",
-                {
-                  bold: "-2"
-                },
-                {
-                  icon:1
-                },
-                "."
-              ],
-              [
-                {
-                  hc:3
-                },
-                ": The Mastermind gets ",
-                {
-                  bold: "-2"
-                },
-                {
-                  icon:1
-                },
-                "this turn."
-              ]
+            [
+              "Any Villain you fight on the Bridge this turn gets ",
+              {
+                bold: "-2"
+              },
+              {
+                icon: 1
+              },
+              "."
+            ],
+            [
+              {
+                hc: 3
+              },
+              ": The Mastermind gets ",
+              {
+                bold: "-2"
+              },
+              {
+                icon: 1
+              },
+              "this turn."
+            ]
           ]
         }
       ]
@@ -1170,6 +1170,6 @@ export default {
           ]
         }
       ]
-    }   
+    }
   ]
 }

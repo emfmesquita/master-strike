@@ -771,7 +771,7 @@ export default {
           abilities: [
             [
               "When a card effect causes you to discard this card, if it is your turn, ",
-              { keyword: 1},
+              { keyword: 1 },
               " it instead. If it is not your turn, set it aside and add it to your hand at the end of this turn."
             ]
           ]
