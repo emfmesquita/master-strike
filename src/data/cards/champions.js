@@ -157,6 +157,7 @@ export default {
       {
         id: 154,
         name: "Nova",
+        filterName: "Nova (Champ)",
         set: 18,
         team: 18,
         cards: [

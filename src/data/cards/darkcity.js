@@ -1337,6 +1337,7 @@ export default {
           rarity: 3,
           cost: 8,
           attack: "4+",
+          dense: true,
           abilities: [
             [
               "Reveal cards from the Hero Deck until you have revealed two cards with the same",

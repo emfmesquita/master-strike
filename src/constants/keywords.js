@@ -28,6 +28,7 @@ const BURROW = {
 }
 const COSMIC_THREAT = {
     id: 6,
+    inHeroes: true,
     value: "cosmicthreat",
     label: "Cosmic Threat"
 }
@@ -464,7 +465,7 @@ export const keywordsArray = Object.freeze([
     VERSATILE,                  // 03 done
     FOCUS,                      // 04 done
     BURROW,                     // 05
-    COSMIC_THREAT,              // 06
+    COSMIC_THREAT,              // 06 done
     WALL_CRAWL,                 // 07 done
     FEAST,                      // 08 done
     DEMOLISH,                   // 09 done
@@ -524,7 +525,7 @@ export const keywordsArray = Object.freeze([
     WORTHY,                     // 63 done
     MOONLIGHT_SUNLIGHT,         // 64 done
     WAKING_NIGHTMARE,           // 65 done
-    BURN_SHARDS,                // 66
+    BURN_SHARDS,                // 66 done
     CELESTIAL_BOON,             // 67
-    CONTEST_OF_CHAMPIONS        // 68
+    CONTEST_OF_CHAMPIONS        // 68 done
 ]);

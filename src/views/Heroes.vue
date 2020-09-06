@@ -344,8 +344,8 @@ export default {
     this.filter.set = toIntArray(query.set).filter(set => setsArray[set]);
     this.filter.team = toIntArray(query.team).filter(team => teamArray[team]);
     this.filter.hc = toIntArray(query.hc).filter(hc => heroClassArray[hc]);
-    this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword]);
-    this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule + 1]);
+    this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
+    this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
     this.filter.cost = toIntPair(query.cost, 0, 9);
     this.filter.attack = toIntPair(query.attack, -1, 10);
     this.filter.recruit = toIntPair(query.recruit, -1, 5);

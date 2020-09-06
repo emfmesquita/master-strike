@@ -906,6 +906,7 @@ export default {
           rarity: 3,
           cost: 9,
           attack: "6+",
+          dense: true,
           abilities: [
             [
               { keyword: 36 },
