@@ -217,7 +217,7 @@ export default {
               {
                 team: 4
               },
-              "you played this turn."
+              "Hero you played this turn."
             ]
           ]
         }
@@ -467,9 +467,11 @@ export default {
           attack: "2+",
           abilities: [
             [
-              {
-                hc: 5
-              }, ": You get +1 Attack."
+              { team: 1 }, 
+              ": You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -519,7 +521,10 @@ export default {
               {
                 hc:4
               },
-              ": You get +1 Attack."
+              ": You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -565,7 +570,10 @@ export default {
               {
                 hc:4
               },
-              ": You get +5 Attack.",
+              ": You get ",
+              { bold: "+5" },
+              { icon: 1 },
+              "."
             ]
           ]
         }
@@ -582,7 +590,6 @@ export default {
           hc: 5,
           rarity: 1,
           cost: 3,
-          attack: "2+",
           abilities: [
             [
               "Draw a card."
@@ -606,7 +613,10 @@ export default {
               {
                 hc:3
               },
-              ": You get +1 Attack."
+              ": You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -621,7 +631,10 @@ export default {
               {
                 hc:5
               },
-              ": You get +1 Attack for each other",
+              ": You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each other",
               {
                 hc:5
               },
@@ -680,7 +693,10 @@ export default {
               {
                 hc:5
               },
-              ": You get +1 Attack."
+              ": You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              "."
             ]
           ]
         },
@@ -745,7 +761,7 @@ export default {
               {
                 hc:4
               },
-              ": You get",
+              ": You get ",
               {
                 bold: "+3"
               },
@@ -767,7 +783,7 @@ export default {
               {
                 hc:1
               },
-              "You may KO a card from your hand or discard pile. If you do, you get ",
+              ": You may KO a card from your hand or discard pile. If you do, you get ",
               {
                 bold: "+1"
               },
@@ -861,7 +877,14 @@ export default {
               "Rescue a Bystander."
             ],
             [
-              "Reveal the top card of your deck. If that card costs 2 or less, draw it."
+              "Reveal the top card of your deck. If that card costs",
+              {
+                bold: " 2"
+              },
+              {
+                icon:3
+              },
+              "or less, draw it."
             ]
           ]
         },
@@ -933,7 +956,10 @@ export default {
           attack: "4",
           abilities: [
             [
-              "You may move a Villain to a new city space. Rescue any Bystanders captured by that Villain. (If you move a Villain to a city space that already has Villain, swap them.)"
+              "You may move a Villain to a new city space. Rescue any Bystanders captured by that Villain."
+            ],
+            [
+              { italic: "(If you move a Villain to a city space that already has Villain, swap them.)" }
             ]
           ]
         },
@@ -951,7 +977,8 @@ export default {
                 },
                 {
                   icon:1
-                }
+                },
+                "."
               ],
               [
                 {
@@ -994,7 +1021,8 @@ export default {
               },
               {
                 icon: 2
-              }
+              },
+              "."
             ]
           ]
         },
