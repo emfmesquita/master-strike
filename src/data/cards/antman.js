@@ -146,7 +146,7 @@ export default {
               " equal to the printed ",
               { icon: 1 },
               " of a Villain in your Victory Pile. ",
-              { italic: "(Mastermind tactics aren't Villains)." }
+              { italic: "(Mastermind tactics aren't Villains.)" }
             ]
           ]
         }
@@ -376,7 +376,7 @@ export default {
               { bold: "+3" },
               { icon: 1 },
               ". ",
-              { italic: "(if both, get both)." }
+              { italic: "(if both, get both.)" }
             ]
           ]
         },

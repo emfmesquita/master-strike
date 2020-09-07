@@ -658,7 +658,7 @@ export default {
               { hc: 3 },
               ": ",
               { keyword: 66, text: "Burn any number of Shards" },
-              ": Defeat a Villain with printed VP equal to the number of Shards you turned. ",
+              ": Defeat a Villain with printed VP equal to the number of Shards you burned. ",
               { italic: "(This can't affect a Villain with 0 VP or no printed VP.)" }
             ]
           ]

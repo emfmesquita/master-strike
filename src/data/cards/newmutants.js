@@ -190,7 +190,7 @@ export default {
             [
               { keyword: 64, text: "Sunlight" },
               ": You get ",
-              { bold: "+2" },
+              { bold: "+1" },
               { icon: 1 },
               " for each other ",
               { team: 4 },

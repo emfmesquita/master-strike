@@ -14,15 +14,10 @@ export default {
           recruit: "2",
           abilities: [
             [
-              {
-                team: 2
-              },
-              {
-                team: 2
-              },
-              {
-                team: 2
-              },
+              { team: 2 },
+              { team: 2 },
+              { team: 2 },
+              { team: 2 },
               ": Draw a card."
             ]
           ]
@@ -41,7 +36,8 @@ export default {
               },
               {
                 icon: 1
-              }
+              },
+              "."
             ]
           ]
 
@@ -75,7 +71,8 @@ export default {
               "Choose one: Draw three cards or ",
               {
                 keyword: 59
-              }
+              },
+              "."
             ],
             [
               {
@@ -170,7 +167,8 @@ export default {
               {
                 icon: 1
               },
-              ". (If both, you get both.)"
+              ". ",
+              { italic: "(If both, you get both.)" }
             ]
           ]
         },
@@ -180,10 +178,12 @@ export default {
           rarity: 3,
           cost: 7,
           attack: "0+",
-          recent: "0+",
+          recruit: "0+",
           abilities: [
             [
-              "Whenever you Hyperspeed this turn, you get both",
+              "Whenever you ",
+              { keyword: 57 },
+              " this turn, you get both",
               {
                 icon: 2
               },
@@ -218,7 +218,8 @@ export default {
               {
                 keyword: 57,
                 text: "Hyperspeed 9"
-              }
+              },
+              "."
             ]
           ]
         }
@@ -241,13 +242,14 @@ export default {
               {
                 hc: 2
               },
-              ": : Choose one - Draw a card or you get ",
+              ": Choose one - Draw a card or you get ",
               {
                 bold: "+1"
               },
               {
                 icon: 1
-              }
+              },
+              "."
             ]
           ]
         },
@@ -271,7 +273,8 @@ export default {
               },
               {
                 icon: 2
-              }
+              },
+              "."
             ]
           ]
 
@@ -404,7 +407,7 @@ export default {
       team: 1,
       cards: [
         {
-          name: "Infrared Conversation",
+          name: "Too Fast to See",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -438,7 +441,8 @@ export default {
               "and",
               {
                 icon: 1
-              }
+              },
+              "."
             ]
           ]
         },
@@ -492,7 +496,8 @@ export default {
               {
                 keyword: 57
               },
-              " your entire remaining deck. (Don't reshuffle.)",
+              " your entire remaining deck. ",
+              { italic: "(Don't reshuffle.)" }
             ],
             [
               {
@@ -527,15 +532,16 @@ export default {
           attack: "2",
           abilities: [
             [
-              "As you play this card, you may choose a color and/or a team icon. This card is that color and team icon this turn. (instead of",
+              "As you play this card, you may choose a color and/or a team icon. This card is that color and team icon this turn. ",
+              { italic: "(instead of " },
               {
                 hc: 1
               },
-              "and",
+              { italic: "and" },
               {
                 team: 1
               },
-              ")."
+              { italic: ")" }
             ]
           ]
         },
@@ -739,25 +745,22 @@ export default {
           hc: 1,
           rarity: 2,
           cost: 5,
+          attack: "3",
           abilities: [
             [
-              "Choose a Hero Class. (",
-              {
-                hc: 4
-              },
-              {
-                hc: 2
-              },
-              {
-                hc: 1
-              },
-              {
-                hc: 5
-              },
-              {
-                hc: 3
-              },
-              " ) Reveal the top card of your deck. If it's the Hero Class you named, draw it. Otherwise, put it back on the top or bottom."
+              "Choose a Hero Class. ",
+              { italic: "(" },
+              { hc: 4 },
+              { italic: "," },
+              { hc: 2 },
+              { italic: "," },
+              { hc: 1 },
+              { italic: "," },
+              { hc: 5 },
+              { italic: "or " },
+              { hc: 3 },
+              { italic: ")" },
+              " Reveal the top card of your deck. If it's the Hero Class you named, draw it. Otherwise, put it back on the top or bottom."
             ]
           ]
         },
@@ -802,7 +805,8 @@ export default {
               {
                 hc: 5
               },
-              ": You may fight a Henchman from your Victory Pile this turn. If you do, KO it and rescue a Bystander. (Do that Henchman's Fight effect too.)"
+              ": You may fight a Henchman from your Victory Pile this turn. If you do, KO it and rescue a Bystander. ",
+              { italic: "(Do that Henchman's Fight effect too.)" },
             ]
           ]
         },
@@ -811,8 +815,8 @@ export default {
           hc: 5,
           rarity: 1,
           cost: 4,
-          recruit: "2",
-          attack: "0+",
+          recruit: "0+",
+          attack: "2",
           abilities: [
             [
               "Whenever you defeat a Villain this turn, you get ",
@@ -821,7 +825,8 @@ export default {
               },
               {
                 icon: 2
-              }
+              },
+              "."
             ]
           ]
 

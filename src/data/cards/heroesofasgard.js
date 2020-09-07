@@ -198,6 +198,9 @@ export default {
             [
               { keyword: 14 },
               " — When you throw this, you get ",
+              { bold: "+3" },
+              { icon: 1 },
+              ", then you get ",
               { bold: "+1" },
               { icon: 1 },
               " for each ",

@@ -319,7 +319,7 @@ export default {
           name: "Digest That Chimichanga",
           hc: 4,
           rarity: 1,
-          cost: 3,
+          cost: 2,
           attack: "0+",
           abilities: [
             [
@@ -351,7 +351,7 @@ export default {
           ]
         },
         {
-          name: "Can I Get a Little Gratitude",
+          name: "Can I Get a Little Gratitude?",
           hc: 2,
           rarity: 2,
           cost: 5,

@@ -7,7 +7,7 @@ export default {
       team: 6,
       cards: [
         {
-          name: "Find Tiny Friends",
+          name: "Alter Ego",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -103,7 +103,7 @@ export default {
               { team: 1 },
               " card and ",
               { keyword: 1 },
-              " it."
+              " that card."
             ]
           ]
         },
