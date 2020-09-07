@@ -1,5 +1,16 @@
 <template>
-  <v-navigation-drawer app clipped permanent :mini-variant="collapsed" :width="width" stateless>
+  <v-navigation-drawer 
+    app 
+    clipped 
+    permanent 
+    :mini-variant="collapsed" 
+    :width="width" 
+    stateless
+    v-touch="{
+      left: swipeClose,
+      right: swipeOpen
+    }"
+  >
     <div class="pa-1" v-if="collapsable">
       <div class="collapse-toolbar">
         <v-btn class="ma-2 float-right" icon color="pink" @click="toggleSideBar">
@@ -39,7 +50,17 @@ export default {
     }
   },
   methods: {
-    ...mapActions(["toggleSideBar"])
+    ...mapActions(["toggleSideBar"]),
+    swipeClose() {
+      if(this.collapsable && !this.$store.getters.sideBarCollapsed) {
+        this.toggleSideBar();
+      }
+    },
+    swipeOpen() {
+      if(this.collapsable && this.$store.getters.sideBarCollapsed) {
+        this.toggleSideBar();
+      }
+    }
   }
 }
 </script>

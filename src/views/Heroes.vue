@@ -3,254 +3,302 @@
     <shared-header />
 
     <shared-side-bar>
-      <v-container class="card-filter">
-        <v-row align="center">
-          <v-col cols="12">
-            <v-btn-toggle
-              class="d-flex justify-center"
-              v-model="sortMethod"
-              mandatory
-              @change="sortChanged"
-            >
-              <v-btn value="alpha">
-                <v-icon>mdi-sort-alphabetical-ascending</v-icon>
-                <span class="pa-2 subtitle-2">Alpha</span>
+      <template v-slot:default>
+        <v-container class="card-filter">
+          <v-row align="center">
+            <v-col cols="12">
+              <v-btn-toggle
+                class="d-flex justify-center"
+                v-model="sortMethod"
+                mandatory
+                @change="sortChanged"
+              >
+                <v-btn value="alpha">
+                  <v-icon small>mdi-sort-alphabetical-ascending</v-icon>
+                  <span class="pa-1 subtitle-2">Alpha</span>
+                </v-btn>
+                <v-btn value="results">
+                  <v-icon small>mdi-cards</v-icon>
+                  <span class="pa-1 subtitle-2">Results</span>
+                </v-btn>
+              </v-btn-toggle>
+            </v-col>
+          </v-row>
+          <v-row align="center" >
+            <v-col cols="12" class="pt-0 pb-0">
+              <v-btn small title="Clear Filter" @click="clearFilter" class="float-right">
+                <v-icon small>mdi-eraser</v-icon>
               </v-btn>
-              <v-btn value="results">
-                <v-icon>mdi-cards</v-icon>
-                <span class="pa-2 subtitle-2">Results</span>
-              </v-btn>
-            </v-btn-toggle>
-          </v-col>
-        </v-row>
-        <v-row align="center">
-          <v-col cols="12">
-            <v-text-field
-              v-model="filter.search"
-              label="Search"
-              maxlength="30"
-              clearable
-              @input="filterChangedDebounced"
-            ></v-text-field>
-          </v-col>
-        </v-row>
-        <v-row align="center">
-          <v-col cols="12">
-            <v-autocomplete
-              v-model="filter.hero"
-              :items="filterHeroes"
-              multiple
-              label="Hero"
-              item-text="label"
-              item-value="id" 
-              clearable
-              @change="filterChanged"
-            >
-              <template v-slot:selection="{ item }">
-                <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'hero')">
-                  {{item.label}}
-                </v-chip>
-              </template>
-            </v-autocomplete>
-          </v-col>
-        </v-row>
-        <v-row align="center">
-          <v-col cols="12">
-            <v-autocomplete
-              v-model="filter.set"
-              :items="sets"
-              multiple
-              label="Set"
-              item-text="label"
-              item-value="id" 
-              clearable
-              @change="filterChanged"
-            >
-              <template v-slot:selection="{ item }">
-                <v-tooltip top>
-                  <template v-slot:activator="{ on }" dense>
-                    <span v-on="on">
-                      <v-chip class="ma-1" style="cursor: pointer" @click.stop="remove(item.id, 'set')">
-                        {{item.initials}}
-                      </v-chip>
-                    </span>
-                  </template>
-                  <span>{{ item.label }}</span>
-                </v-tooltip>
-              </template>
-            </v-autocomplete>
-          </v-col>
-        </v-row>
-        <v-row align="center">
-          <v-col cols="12">
-            <v-autocomplete
-              v-model="filter.team"
-              :items="teams"
-              multiple
-              clearable
-              item-text="label"
-              item-value="id"
-              label="Team"
-              @change="filterChanged"
-            >
-              <template v-slot:selection="{ item }">
-                <span style="cursor: pointer" @click.stop="remove(item.id, 'team')">
-                  <TeamIcon :icon="item.id" width="40px"/>
-                </span>
-              </template>
-              <template v-slot:item="{ item }">
-                <TeamIcon :icon="item.id" width="40px" />
-                {{ item.label }}
-              </template>
-            </v-autocomplete>
-          </v-col>
-        </v-row>
-        <v-row align="center">
-          <v-col cols="12">
-            <v-autocomplete
-              v-model="filter.hc"
-              :items="heroClasses"
-              multiple
-              clearable
-              item-text="label"
-              item-value="id"
-              label="Hero Class"
-              @change="filterChanged"
-            >
-              <template v-slot:selection="{ item }">
-                <span style="cursor: pointer" @click.stop="remove(item.id, 'hc')">
-                  <HeroClassIcon :icon="item.id" width="32px"/>
-                </span>
-              </template>
-              <template v-slot:item="{ item }">
-                <HeroClassIcon :icon="item.id" width="32px" />
-                {{ item.label }}
-              </template>
-            </v-autocomplete>
-          </v-col>
-        </v-row>
-        <v-row align="center">
-          <v-col cols="12">
-            <v-autocomplete
-              v-model="filter.keyword"
-              :items="keywords"
-              multiple
-              clearable
-              item-text="label"
-              item-value="id"
-              label="Keyword"
-              @change="filterChanged"
-            >
-              <template v-slot:selection="{ item }">
-                <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'keyword')">
-                  {{item.label}}
-                </v-chip>
-              </template>
-            </v-autocomplete>
-          </v-col>
-        </v-row>
-        <v-row align="center">
-          <v-col cols="12">
-            <v-autocomplete
-              v-model="filter.rule"
-              :items="rules"
-              multiple
-              clearable
-              item-text="label"
-              item-value="id"
-              label="Special Rule"
-              @change="filterChanged"
-            >
-              <template v-slot:selection="{ item }">
-                <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'rule')">
-                  {{item.label}}
-                </v-chip>
-              </template>
-            </v-autocomplete>
-          </v-col>
-        </v-row>
-        <v-row align="center">
-          <v-col cols="12">
-            <v-range-slider
-              v-model="filter.cost"
-              :max="9"
-              :min="0"
-              ticks="always"
-              tick-size="4"
-              thumb-label="always"
-              thumb-size="0"
-              class="align-center"
-              @change="filterChanged"
-            >
-              <template v-slot:thumb-label="{ value }">
-                <AbilityIcon class="thumb absolute-icon" noAdjust :icon="3" width="32px"/>
-                <span 
-                  class="thumb card-cost icon-text text-center font-weight-black">
-                  {{ value }}
-                </span>
-              </template>
-            </v-range-slider>
-          </v-col>
-        </v-row>
-        <v-row align="center">
-          <v-col cols="12">
-            <v-range-slider
-              v-model="filter.attack"
-              :max="10"
-              :min="-1"
-              ticks="always"
-              tick-size="4"
-              thumb-label="always"
-              thumb-size="0"
-              class="align-center"
-              @change="filterChanged"
-            >
-              <template v-slot:thumb-label="{ value }">
-                <AbilityIcon class="thumb absolute-icon" noAdjust :icon="1" width="32px" :iconSrcOverride="value === -1 ? 'block' : null"/>
-                <span
-                  v-if="value !== -1"
-                  class="thumb card-cost icon-text text-center font-weight-black">
-                  {{ value }}
-                </span>
-              </template>
-            </v-range-slider>
-          </v-col>
-        </v-row>
-        <v-row align="center">
-          <v-col cols="12">
-            <v-range-slider
-              v-model="filter.recruit"
-              :max="5"
-              :min="-1"
-              ticks="always"
-              tick-size="4"
-              thumb-label="always"
-              thumb-size="0"
-              class="align-center"
-              @change="filterChanged"
-            >
-              <template v-slot:thumb-label="{ value }">
-                <AbilityIcon v-if="value === -1" class="thumb absolute-icon" noAdjust :icon="2" width="32px" iconSrcOverride="block"/>
-                <AbilityIcon v-else class="thumb absolute-icon" noAdjust style="top: -43px; left: -24px" :icon="2" width="48px"/>
-                <span
-                  v-if="value !== -1"
-                  class="thumb card-cost icon-text text-center font-weight-black">
-                  {{ value }}
-                </span>
-              </template>
-            </v-range-slider>
-          </v-col>
-        </v-row>
-      </v-container>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
+              <v-text-field
+                v-model="filter.search"
+                label="Search"
+                maxlength="30"
+                clearable
+                @input="filterChangedDebounced"
+              ></v-text-field>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
+              <v-autocomplete
+                v-model="filter.hero"
+                :items="filterHeroes"
+                multiple
+                label="Hero"
+                item-text="label"
+                item-value="id" 
+                clearable
+                @change="filterChanged"
+              >
+                <template v-slot:selection="{ item }">
+                  <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'hero')">
+                    {{item.label}}
+                  </v-chip>
+                </template>
+              </v-autocomplete>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
+              <v-select
+                v-model="filter.set"
+                :items="sets"
+                multiple
+                label="Set"
+                item-text="label"
+                item-value="id" 
+                clearable
+                @change="filterChanged"
+              >
+                <template v-slot:selection="{ item }">
+                  <v-tooltip top>
+                    <template v-slot:activator="{ on }" dense>
+                      <span v-on="on">
+                        <v-chip class="ma-1" style="cursor: pointer" @click.stop="remove(item.id, 'set')">
+                          {{item.initials}}
+                        </v-chip>
+                      </span>
+                    </template>
+                    <span>{{ item.label }}</span>
+                  </v-tooltip>
+                </template>
+              </v-select>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
+              <v-select
+                v-model="filter.team"
+                :items="teams"
+                multiple
+                clearable
+                item-text="label"
+                item-value="id"
+                label="Team"
+                @change="filterChanged"
+              >
+                <template v-slot:selection="{ item }">
+                  <span style="cursor: pointer" @click.stop="remove(item.id, 'team')">
+                    <TeamIcon :icon="item.id" width="40px"/>
+                  </span>
+                </template>
+                <template v-slot:item="{ item }">
+                  <TeamIcon :icon="item.id" width="40px" />
+                  {{ item.label }}
+                </template>
+              </v-select>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
+              <v-select
+                v-model="filter.hc"
+                :items="heroClasses"
+                multiple
+                clearable
+                item-text="label"
+                item-value="id"
+                label="Hero Class"
+                @change="filterChanged"
+              >
+                <template v-slot:selection="{ item }">
+                  <span style="cursor: pointer" @click.stop="remove(item.id, 'hc')">
+                    <HeroClassIcon :icon="item.id" width="32px"/>
+                  </span>
+                </template>
+                <template v-slot:item="{ item }">
+                  <HeroClassIcon :icon="item.id" width="32px" />
+                  {{ item.label }}
+                </template>
+              </v-select>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
+              <v-select
+                v-model="filter.keyword"
+                :items="keywords"
+                multiple
+                clearable
+                item-text="label"
+                item-value="id"
+                label="Keyword"
+                @change="filterChanged"
+              >
+                <template v-slot:selection="{ item }">
+                  <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'keyword')">
+                    {{item.label}}
+                  </v-chip>
+                </template>
+              </v-select>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
+              <v-select
+                v-model="filter.rule"
+                :items="rules"
+                multiple
+                clearable
+                item-text="label"
+                item-value="id"
+                label="Special Rule"
+                @change="filterChanged"
+              >
+                <template v-slot:selection="{ item }">
+                  <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'rule')">
+                    {{item.label}}
+                  </v-chip>
+                </template>
+              </v-select>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
+              <v-range-slider
+                v-model="filter.cost"
+                :max="9"
+                :min="0"
+                ticks="always"
+                tick-size="4"
+                thumb-label="always"
+                thumb-size="0"
+                class="align-center"
+                @change="filterChanged"
+              >
+                <template v-slot:thumb-label="{ value }">
+                  <AbilityIcon class="thumb absolute-icon" noAdjust :icon="3" width="32px"/>
+                  <span 
+                    class="thumb card-cost icon-text text-center font-weight-black">
+                    {{ value }}
+                  </span>
+                </template>
+              </v-range-slider>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
+              <v-range-slider
+                v-model="filter.attack"
+                :max="10"
+                :min="-1"
+                ticks="always"
+                tick-size="4"
+                thumb-label="always"
+                thumb-size="0"
+                class="align-center"
+                @change="filterChanged"
+              >
+                <template v-slot:thumb-label="{ value }">
+                  <AbilityIcon class="thumb absolute-icon" noAdjust :icon="1" width="32px" :iconSrcOverride="value === -1 ? 'block' : null"/>
+                  <span
+                    v-if="value !== -1"
+                    class="thumb card-cost icon-text text-center font-weight-black">
+                    {{ value }}
+                  </span>
+                </template>
+              </v-range-slider>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
+              <v-range-slider
+                v-model="filter.recruit"
+                :max="5"
+                :min="-1"
+                ticks="always"
+                tick-size="4"
+                thumb-label="always"
+                thumb-size="0"
+                class="align-center"
+                @change="filterChanged"
+              >
+                <template v-slot:thumb-label="{ value }">
+                  <AbilityIcon v-if="value === -1" class="thumb absolute-icon" noAdjust :icon="2" width="32px" iconSrcOverride="block"/>
+                  <AbilityIcon v-else class="thumb absolute-icon" noAdjust style="top: -43px; left: -24px" :icon="2" width="48px"/>
+                  <span
+                    v-if="value !== -1"
+                    class="thumb card-cost icon-text text-center font-weight-black">
+                    {{ value }}
+                  </span>
+                </template>
+              </v-range-slider>
+            </v-col>
+          </v-row>
+        </v-container>
+      </template>
+
+      <template v-slot:collapsed>
+        <v-btn small icon title="Clear Filter" @click="clearFilter" class="mb-2 ml-2">
+          <v-icon small>mdi-eraser</v-icon>
+        </v-btn>
+        <v-divider></v-divider>
+        <v-btn-toggle
+          style="flex-direction: column"
+          v-model="sortMethod"
+          mandatory
+          group
+          @change="sortChanged"
+        >
+          <v-btn small value="alpha" style="min-width: 0px">
+            <v-icon small>mdi-sort-alphabetical-ascending</v-icon>
+          </v-btn>
+          <v-btn small value="results" style="min-width: 0px">
+            <v-icon small>mdi-cards</v-icon>
+          </v-btn>
+        </v-btn-toggle>
+        <v-divider></v-divider>
+      </template>
     </shared-side-bar>
 
     <v-container style="paddingBottom: 100px">
+      <v-row v-if="$vuetify.breakpoint.mdAndDown && $store.getters.sideBarCollapsed">
+        <v-col class="py-0">
+          <v-text-field
+            v-model="filter.search"
+            label="Search"
+            maxlength="30"
+            clearable
+            @input="filterChangedDebounced"
+          ></v-text-field>
+        </v-col>
+      </v-row>
+      <v-row v-if="heroes.length">
+        <v-col cols="12">
+          <div class="text-center title">{{ heroes.length }} {{ heroFound }}</div>
+        </v-col>
+      </v-row>
+      <v-row v-else>
+        <v-col cols="12">
+          <div class="text-center title">No Heroes Founds</div>
+        </v-col>
+      </v-row>
+
       <template v-if="heroes.length">
-        <v-row>
-          <v-col cols="12">
-            <div class="text-center title">{{ heroes.length }} {{ heroFound }}</div>
-          </v-col>
-        </v-row>
         <v-lazy min-height="410" :key="heroKey(hero)" v-for="hero in heroes">
           <v-row>
             <v-col cols="12">
@@ -259,11 +307,6 @@
           </v-row>
         </v-lazy>
       </template>
-      <v-row v-else>
-        <v-col cols="12">
-          <div class="text-center title">No Heroes Founds</div>
-        </v-col>
-      </v-row>
     </v-container>
 
     <shared-footer />
@@ -315,6 +358,19 @@ let rules = rulesArray.filter(rule => rule.inHeroes);
 rules.sort((a, b) => a.label.localeCompare(b.label));
 rules = Object.freeze(rules);
 
+const baseFilter = () => ({
+  search: "",
+  hero: [],
+  set: [],
+  team: [],
+  hc: [],
+  keyword: [],
+  rule: [],
+  cost: [0,9],
+  attack: [-1,10],
+  recruit: [-1,5]
+});
+
 export default {
   name: "Heroes",
   components: { Hero, TeamIcon, HeroClassIcon, AbilityIcon },
@@ -326,18 +382,7 @@ export default {
     keywords,
     rules,
     sortMethod: "alpha",
-    filter: {
-      search: "",
-      hero: [],
-      set: [],
-      team: [],
-      hc: [],
-      keyword: [],
-      rule: [],
-      cost: [0,9],
-      attack: [-1,10],
-      recruit: [-1,5]
-    },
+    filter: baseFilter(),
     lastFilterTime: 0,
     heroes: []
   }),
@@ -359,7 +404,7 @@ export default {
   },
   computed: {
     heroFound() {
-      return this.heroes.length === 1 ? "Hero was found" : "Heroes were found";
+      return this.heroes.length === 1 ? "Hero" : "Heroes";
     },
     hasCostFilter() {
       return this.filter.cost[0] !== 0 || this.filter.cost[1] !== 9;
@@ -431,6 +476,10 @@ export default {
         path: this.$route.path,
         query
       });
+    },
+    clearFilter() {
+      this.filter = baseFilter();
+      this.filterChanged();
     },
     sortChanged() {
       this.$vuetify.goTo(0, { duration: 0 });

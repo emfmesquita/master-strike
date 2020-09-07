@@ -146,7 +146,7 @@ const SHIELD = {
     id: 25,
     value: "shield",
     label: "S.H.I.E.L.D.",
-    initials: "SHIELD"
+    initials: "S.H.I.E.L.D."
 };
 const HEROES_OF_ASGARD = {
     id: 26,
