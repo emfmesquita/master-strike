@@ -1,8 +1,6 @@
 export default [
     [
-      "“Shard“ tokens represents cosmic energy. These tokens can be gained by players, Villains, and Masterminds. Shards first appeared in ",
-      { italic: "Legendary®: Guardians of the Galaxy" },
-      " in 2014. Many players like to personalize their Shards by using glass beads, wooden cubes, or plastic tokens instead. There is no limit to the number of Shards that can be in the game at once. (This is a change from the past, when the number of Shards was limited.)"
+      "“Shard“ tokens represents cosmic energy. These tokens can be gained by players, Villains, and Masterminds. Many players like to personalize their Shards by using glass beads, wooden cubes, or plastic tokens instead. There is no limit to the number of Shards that can be in the game at once. (This is a change from the past, when the number of Shards was limited.)"
     ],
     {
       points: [

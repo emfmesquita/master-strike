@@ -1,6 +1,6 @@
 export default [
   [
-    "This popular keyword arrives in Marvel Legendary® for the first time from the Legendary® Encounters games. It represents how Tony Stark and May Parker act as mentors to Spider-Man in the movie, helping him reach his full potential and become a true hero."
+    "This keyword represents how Tony Stark and May Parker act as mentors to Spider-Man in the movie, helping him reach his full potential and become a true hero."
   ],
   [
     { bold: "Coordinating allows you to let another player “borrow” one of your cards." },

@@ -11,7 +11,7 @@ export default [
         "When you Dodge a card from your hand, you didn’t “play” that card, so the Dodged card’s Ally Class/color doesn’t help you use the Superpower abilities of other cards you play that turn."
       ],
       [
-        "Some Allies in this set count the number of cards you discarded this turn. This includes cards you discarded with Dodge."
+        "Some Allies count the number of cards you discarded this turn. This includes cards you discarded with Dodge."
       ]
     ]
   }

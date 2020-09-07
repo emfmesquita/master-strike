@@ -5,7 +5,7 @@ export default [
   {
     points: [
       [
-        "Some Heroes and Villains in this set say things like “Microscopic Size-Changing",
+        "Some Heroes and Villains say things like “Microscopic Size-Changing",
         { hc: 5 },
         { hc: 5 },
         { hc: 5 },
@@ -39,7 +39,7 @@ export default [
       ],
       [
         "The second twist is that Microscopic Size-Changing can actually ",
-        { bold: "reduce a card’s Recruit ost to zero or even a negative number!" },
+        { bold: "reduce a card’s Recruit cost to zero or even a negative number!" },
         " When you recruit a Microscopic Size-Changing Hero with a negative cost, ",
         { bold: "you actually gain that many Recruit points!" },
       ],

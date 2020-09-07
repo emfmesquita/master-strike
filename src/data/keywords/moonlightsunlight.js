@@ -15,7 +15,7 @@ export default [
         " Draw a card.”"
       ],
       [
-        { bold: "Moonlight abilities work only when most of the Heroes in the HO have odd-numbered costs. Likewise, Sunlight abilities work only when most of the Heroes in the HO have even-numbered costs." }
+        { bold: "Moonlight abilities work only when most of the Heroes in the HQ have odd-numbered costs. Likewise, Sunlight abilities work only when most of the Heroes in the HQ have even-numbered costs." }
       ],
       [
         "Besides Heroes, some Villains and Masterminds also say they get extra ",
@@ -23,10 +23,10 @@ export default [
         " or abilities during Moonlight or Sunlight."
       ],
       [
-        "If there are a tied number of odd and even-numbered Heroes in the HO (because some HO spaces have been added or destroyed), then neither Moonlight nor Sunlight is in effect."
+        "If there are a tied number of odd and even-numbered Heroes in the HQ (because some HQ spaces have been added or destroyed), then neither Moonlight nor Sunlight is in effect."
       ],
       [
-        "Only the printed costs matter. Abilities that change the costs of Heroes in the HO won't affect Moonlight and Sunlight."
+        "Only the printed costs matter. Abilities that change the costs of Heroes in the HQ won't affect Moonlight and Sunlight."
       ],
       [
         "“Divided Cards” from Civil War and other sets count as just one card for Moonlight/Sunlight."
@@ -39,19 +39,19 @@ export default [
   {
     points: [
       [
-        "Clever players can recruit cards out of the HO at crucial times to manipulate whether it is Moonlight or Sunlight."
+        "Clever players can recruit cards out of the HQ at crucial times to manipulate whether it is Moonlight or Sunlight."
       ],
       [
         "When Villains scape, KO’ing Heroes from the HQ, you can also use this opportunity to shift towards Moonlight or Sunlight."
       ],
       [
-        "In a game with many Moonlight and Sunlight effects, some players like to shift the odd-numbered cost cards in the HO down a little bit. This makes it easier to tell at a glance whether Moonlight or Sunlight is in effect."
+        "In a game with many Moonlight and Sunlight effects, some players like to shift the odd-numbered cost cards in the HQ down a little bit. This makes it easier to tell at a glance whether Moonlight or Sunlight is in effect."
       ],
       [
-        "If there are a tied number of odd and even-numbered Heroes in the HO (because some HO spaces have been added or destroyed), then neither Moonlight nor Sunlight is in effect."
+        "If there are a tied number of odd and even-numbered Heroes in the HQ (because some HQ spaces have been added or destroyed), then neither Moonlight nor Sunlight is in effect."
       ],
       [
-        "Only the printed costs matter. Abilities that change the costs of Heroes in the HO won't affect Moonlight and Sunlight."
+        "Only the printed costs matter. Abilities that change the costs of Heroes in the HQ won't affect Moonlight and Sunlight."
       ],
       [
         "“Divided Cards” from Civil War and other sets count as just one card for Moonlight/Sunlight."
@@ -69,7 +69,7 @@ export default [
       [
         "For example, Sunspot has a card that says “",
         { bold: "Moonlight" },
-        ": You may put a Hero from the HO on the bottom of the Hero Deck. ",
+        ": You may put a Hero from the HQ on the bottom of the Hero Deck. ",
         { bold: "Sunlight" },
         ": Draw a card.” Sunspot’s cards primarily benefit from Sunlight, so the Moonlight ability here mostly helps him push the HQ towards Sunlight.",
       ],

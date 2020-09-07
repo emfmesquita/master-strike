@@ -1,6 +1,6 @@
 export default [
   [
-    "Some Villain cards have a special ability called “Conqueror,” representing their desire to conquer and hold a specific part of the city. Same for Asgard’s fiercest enemies that lead legions of monsters to conquer all of the Nine Realms, including Midgard (Earth) and Asgard itself. Those Villains say things like ",
+    "Some Villain cards have a special ability called “Conqueror,” representing their desire to conquer and hold a specific part of the city. Same for Asgard’s fiercest enemies that lead legions of monsters to conquer all of the Nine Realms, including Midgard (Earth) and Asgard itself. Some Villains say things like ",
     { bold: "“Bridge Conqueror 3.“" }
   ],
   {

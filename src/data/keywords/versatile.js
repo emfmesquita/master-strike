@@ -30,7 +30,9 @@ export default [
         " for others, if you wish."
       ],
       [
-        "If you use Cheering Crowds to play a Versatile card twice, you could get ",
+        "If you use ",
+        { keyword: 44 },
+        " to play a Versatile card twice, you could get ",
         { icon: 2 },
         " with one play and get ",
         { icon: 1 },

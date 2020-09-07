@@ -35,7 +35,8 @@ export default [
       [
         "Some cards explicitly tell you to “Hyperspeed 3 for ",
         { icon: 2 },
-        ".” This means “Reveal the top 3 cards of your deck. You get +1 ",
+        ".” This means “Reveal the top 3 cards of your deck. You get ",
+        { bold: "+1" },
         { icon: 2 },
         " for each card with a ",
         { icon: 2 },

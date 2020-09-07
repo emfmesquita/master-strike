@@ -1,11 +1,11 @@
 export default [
   [
-    "As different Hulks rampage across planets and dimensions, only another Hulk can stop them! This keyword debuted in Legendary ®: Secret Wars"
+    "As different Hulks rampage across planets and dimensions, only another Hulk can stop them!"
   ],
   {
     points: [
       [
-        "“Cross-Dimensional Hulk Rampage” means",
+        "“Cross-Dimensional Hulk Rampage” means ",
         { bold: "“Each player reveals one of their Hulk Heroes or a Hulk card in their Victory Pile or gains a Wound.”" }
       ],
       [

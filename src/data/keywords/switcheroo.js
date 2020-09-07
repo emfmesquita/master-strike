@@ -11,7 +11,7 @@ export default [
       ],
       [
         "This means “",
-        { bold: "“You can reveal this card from your hand and put it on the bottom of the Hero Deck. If you do, you may put a Hero of the specified printed cost from the HQ into your hand." },
+        { bold: "You can reveal this card from your hand and put it on the bottom of the Hero Deck. If you do, you may put a Hero of the specified printed cost from the HQ into your hand." },
         "”"
       ],
       [

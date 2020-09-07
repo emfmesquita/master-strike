@@ -24,7 +24,8 @@ export default [
         "Heroes that use S.H.I.E.L.D. Level all have ways to get the needed cards into your Victory Pile."
       ],
       [
-        "Note: When playing with Hydra Villain Groups and/or multiple Heroes that use S.H.I.E.L.D. Levels, your S.H.I.E.L.D. Levels will naturally be higher."
+        { bold: "Note:" },
+        " When playing with Hydra Villain Groups and/or multiple Heroes that use S.H.I.E.L.D. Levels, your S.H.I.E.L.D. Levels will naturally be higher."
       ]
     ]
   }

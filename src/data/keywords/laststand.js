@@ -4,13 +4,13 @@ export default [
     points: [
       [
         "Some Villains say “Last Stand.” This means ",
-        { bold: "“This gets +1 " },
+        { bold: "“This gets +1" },
         { icon: 1 },
         { bold: " for each empty space in the city.“" }
       ],
       [
         "Some Captain Marvel and Photon cards also say “Last Stand,” representing how they fight their hardest near the end of a battle. Likewise, ",
-        { bold: "“You get +1 " },
+        { bold: "“You get +1" },
         { icon: 1 },
         { bold: "  for each empty space in the city.”" }
       ],
