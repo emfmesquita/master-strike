@@ -5,9 +5,27 @@
     <v-container class="pt-10 px-6">
       <v-row>
         <v-col cols="12" offset="0" lg="8" offset-lg="2">
-          <v-btn small color="primary" href="https://upperdeckstore.com/games-collectibles/legendary.html" target="_blank">Buy Legendary</v-btn>
-          <v-btn small color="primary" href="https://github.com/emfmesquita/master-strike/issues" target="_blank" class="ml-3">Bugs/Suggestions</v-btn>
-          <v-btn small color="primary" to="/donate" class="ml-3">Donate</v-btn>
+          <v-btn 
+            small
+            color="primary"
+            href="https://upperdeckstore.com/games-collectibles/legendary.html"
+            target="_blank"
+            class="ma-1"
+          >
+            Buy Legendary
+          </v-btn>
+          <v-btn 
+            small
+            color="primary"
+            href="https://github.com/emfmesquita/master-strike/issues"
+            target="_blank"
+            class="ma-1"
+          >
+            Report Bug
+          </v-btn>
+          <v-btn small color="primary" to="/donate" class="ma-1">
+            Donate
+          </v-btn>
         </v-col>
       </v-row>
       <v-row>
