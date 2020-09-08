@@ -45,11 +45,15 @@
           </p>
 
           <p>
-            We plan to keep this page up to date with new expansions and to add more card types, as our free time allows. If you want to give a morale boost check our <router-link to="/donate">donate page</router-link>.
+            We plan to keep this page up to date with new expansions and to add more card types, as our free time allows. If you want to give us a morale boost check our <router-link to="/donate">donate page</router-link>.
           </p>
 
           <p>
             Also, if you find any errors on cards, or have any suggestions, please file a new issue on our <a href="https://github.com/emfmesquita/master-strike/issues" target="_blank">project page on Github</a>.
+          </p>
+
+          <p>
+            A huge shout out to our comunity that built the <a href="https://www.boardgamegeek.com/wiki/page/Legendary_Marvel_Complete_Card_Text" target="_blank">wiki page with all cards text</a>. And to CaseyFowler that created <a href="https://marveldbg.wordpress.com/" target="_blank">a blog with all card images</a>. Those resources were fundamental to create Master Strike.
           </p>
         </v-col>
       </v-row>
