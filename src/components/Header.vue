@@ -13,7 +13,6 @@
             <span class="text-h6 logo-label" style="padding-left: 26px">Master Strike</span>
           </template>
         </router-link>
-        <!-- <router-link to="/about"><span>About</span></router-link> -->
       </div>
     </div>
 
@@ -59,6 +58,10 @@ const items = [
   {
     title: "About",
     to: "/about"
+  },
+  {
+    title: "Donate",
+    to: "/donate"
   },
 ];
 

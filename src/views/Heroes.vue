@@ -40,6 +40,7 @@
                 maxlength="30"
                 clearable
                 @input="filterChangedDebounced"
+                @keyup.enter="$event.target.blur()"
               ></v-text-field>
             </v-col>
           </v-row>
@@ -288,6 +289,7 @@
             maxlength="30"
             clearable
             @input="filterChangedDebounced"
+            @keyup.enter="$event.target.blur()"
           ></v-text-field>
         </v-col>
       </v-row>

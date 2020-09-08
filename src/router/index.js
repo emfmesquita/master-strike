@@ -8,28 +8,34 @@ const routes = [
     path: "/",
     name: "Home",
     component: () =>
-      import(/* webpackChunkName: "home" */ "../views/Home.vue")
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    import(/* webpackChunkName: "home" */ "../views/Home.vue")
   },
   {
     path: "/heroes",
     name: "Heroes",
     component: () =>
-      import(/* webpackChunkName: "heroes" */ "../views/Heroes.vue")
+    import(/* webpackChunkName: "heroes" */ "../views/Heroes.vue")
   },
   {
     path: "/random",
     name: "Random",
     component: () =>
-      import(/* webpackChunkName: "random" */ "../views/Random.vue")
+    import(/* webpackChunkName: "random" */ "../views/Random.vue")
   },
   {
     path: "/about",
     name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    import(/* webpackChunkName: "about" */ "../views/About.vue")
+  },
+  {
+    path: "/donate",
+    name: "Donate",
+    component: () =>
+    import(/* webpackChunkName: "donate" */ "../views/Donate.vue")
   },
   {
     path: "*",
@@ -41,7 +47,14 @@ const routes = [
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
+  scrollBehavior: function (to) {
+    if (to.hash) {
+      return {
+        selector: to.hash
+      }
+    }
+  },
 });
 
 export default router;

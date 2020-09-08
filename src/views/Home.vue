@@ -10,7 +10,7 @@
       </v-row>
       <v-row>
         <v-col class="logo-sub-title-container">
-          <div class="logo-sub-title" :class="subTitleClass">Legendary Card Database</div>
+          <div class="logo-sub-title" :class="subTitleClass">A Legendary Card Database</div>
         </v-col>
       </v-row>
       <v-row class="buttons">
@@ -83,7 +83,7 @@ export default {
     }
 
     .logo-sub-title {
-      padding-left: 300px;
+      padding-left: 280px;
     }
     
     .logo {
@@ -105,7 +105,7 @@ export default {
     }
 
     .logo-sub-title {
-      padding-left: 124px;
+      padding-left: 116px;
     }
     
     .logo {

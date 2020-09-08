@@ -18,7 +18,7 @@
         </v-row>
         <v-row align="center">
           <v-col cols="12">
-            <v-autocomplete
+            <v-select
               v-model="filter.set"
               :items="sets"
               multiple
@@ -30,7 +30,7 @@
               <template v-slot:selection="{ index }">
                 <template v-if="index === 0">{{ selectedSetsLabel }}</template>
               </template>
-            </v-autocomplete>
+            </v-select>
           </v-col>
         </v-row>
         <v-row align="center">
@@ -43,6 +43,7 @@
               required
               type="number"
               @change="numberOfHeroesChanged"
+              @keyup.enter="$event.target.blur()"
             />
           </v-col>
         </v-row>

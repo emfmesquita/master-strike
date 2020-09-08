@@ -2,7 +2,7 @@
   <div>
     <v-snackbar class="snackbar" color="primary" :value="$store.getters.disclaimer" multi-line timeout="-1">
       <p class="disclaimer text-center">
-        This page is an unofficial fan-based on <b>Legendary: A Marvel Deck Building Game</b>. Use it for research only. All card contents are <a href="http://www.upperdeck.com/" target="_blank">Upper Deck®</a> creatively owned. We strongly incentive you to <a href="https://upperdeckstore.com/games-collectibles/legendary.html" target="_blank">buy the game</a>.
+        This is an unofficial fan-base site for <b>Legendary: A Marvel Deck Building Game</b>. Use it for research only. All card contents are <a href="http://www.upperdeck.com/" target="_blank">Upper Deck®</a> creatively owned. We strongly incentive you to <a href="https://upperdeckstore.com/games-collectibles/legendary.html" target="_blank">buy the game</a>. <router-link to="/about#fairuse">More Info</router-link>
       </p>
 
       <template v-slot:action="{ attrs }">
