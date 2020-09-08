@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <shared-header />
+
+    <v-container class="text-center">
+      <v-row>
+        <v-col>
+          test
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <shared-footer />
   </div>
 </template>

@@ -24,10 +24,11 @@
               </v-btn-toggle>
             </v-col>
           </v-row>
-          <v-row align="center" >
-            <v-col cols="12" class="pt-0 pb-0">
-              <v-btn small title="Clear Filter" @click="clearFilter" class="float-right">
-                <v-icon small>mdi-eraser</v-icon>
+          <v-row align="center" justify="center">
+            <v-col cols="12" class="text-center">
+              <v-chip class="text-center font-weight-bold mr-2">{{ heroFound }}</v-chip>
+              <v-btn icon title="Clear Filter" @click="clearFilter">
+                <v-icon>mdi-eraser</v-icon>
               </v-btn>
             </v-col>
           </v-row>
@@ -253,6 +254,9 @@
       </template>
 
       <template v-slot:collapsed>
+        <div class="text-center">
+          <v-chip small class="text-center font-weight-bold mb-2">{{ heroes.length }}</v-chip>
+        </div>
         <v-btn small icon title="Clear Filter" @click="clearFilter" class="mb-2 ml-2">
           <v-icon small>mdi-eraser</v-icon>
         </v-btn>
@@ -287,14 +291,9 @@
           ></v-text-field>
         </v-col>
       </v-row>
-      <v-row v-if="heroes.length">
+      <v-row>
         <v-col cols="12">
-          <div class="text-center title">{{ heroes.length }} {{ heroFound }}</div>
-        </v-col>
-      </v-row>
-      <v-row v-else>
-        <v-col cols="12">
-          <div class="text-center title">No Heroes Founds</div>
+          <div class="text-center title">{{ heroFound }}</div>
         </v-col>
       </v-row>
 
@@ -404,7 +403,8 @@ export default {
   },
   computed: {
     heroFound() {
-      return this.heroes.length === 1 ? "Hero" : "Heroes";
+      if(this.heroes.length === 1) return "1 Hero";
+      return `${this.heroes.length} Heroes`;
     },
     hasCostFilter() {
       return this.filter.cost[0] !== 0 || this.filter.cost[1] !== 9;

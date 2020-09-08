@@ -1,5 +1,3 @@
-import Heroes from "../views/Heroes.vue";
-import Random from "../views/Random";
 import Vue from "vue";
 import VueRouter from "vue-router";
 
@@ -9,17 +7,20 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    redirect: "/heroes"
+    component: () =>
+      import(/* webpackChunkName: "home" */ "../views/Home.vue")
   },
   {
     path: "/heroes",
     name: "Heroes",
-    component: Heroes
+    component: () =>
+      import(/* webpackChunkName: "heroes" */ "../views/Heroes.vue")
   },
   {
     path: "/random",
     name: "Random",
-    component: Random
+    component: () =>
+      import(/* webpackChunkName: "random" */ "../views/Random.vue")
   },
   {
     path: "/about",
@@ -33,7 +34,7 @@ const routes = [
   {
     path: "*",
     name: "Fallback",
-    redirect: "/heroes"
+    redirect: "/"
   }
 ];
 
