@@ -61,6 +61,12 @@ export default {
         this.toggleSideBar();
       }
     }
+  },
+  mounted() {
+    // always starts collapsed
+    if(!this.$store.getters.sideBarCollapsed) {
+      this.toggleSideBar();
+    }
   }
 }
 </script>
