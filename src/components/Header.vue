@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="primary" class="header" dark clipped-left clipped-right>
+  <v-app-bar app color="primary" class="header" dark clipped-left clipped-right :hide-on-scroll="!lg">
     <div class="d-flex align-center">
 
       <div id="nav">
@@ -10,7 +10,7 @@
           </template>
           <template v-else>
             <img src="/masterstrike.svg" class="logo sm" />
-            <span class="text-h5 logo-label" style="padding-left: 26px">Master Strike</span>
+            <span class="text-h6 logo-label" style="padding-left: 26px">Master Strike</span>
           </template>
         </router-link>
         <!-- <router-link to="/about"><span>About</span></router-link> -->
@@ -20,13 +20,16 @@
     <v-spacer></v-spacer>
 
     <span v-if="lg" class="text-h5 logo-label">{{ $route.name }}</span>
-    <span v-else class="text-h6 logo-label">{{ $route.name }}</span>
+    <span v-else class="text-subtitle-1 logo-label">{{ $route.name }}</span>
 
     <slot name="right-toolbar">
       <v-menu tile offset-y nudge-bottom="10" offset-x>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn text :small="!lg" class="ml-3" v-bind="attrs" v-on="on">
-            <v-icon :small="!lg">mdi-menu</v-icon>
+          <v-btn v-if="lg" text class="ml-3" v-bind="attrs" v-on="on">
+            <v-icon>mdi-menu</v-icon>
+          </v-btn>
+          <v-btn v-else text small class="ml-2 px-0" style="min-width: 30px" v-bind="attrs" v-on="on">
+            <v-icon small>mdi-menu</v-icon>
           </v-btn>
         </template>
         <v-list color="primary" class="white--text">
