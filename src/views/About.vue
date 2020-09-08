@@ -41,7 +41,7 @@
           </p>
 
           <p>
-            Do not forget this is an unofficial page. And please use it for research only. All card contents are <a href="http://www.upperdeck.com/" target="_blank">Upper Deck®</a> creatively owned. We strongly incentive you to <a href="https://upperdeckstore.com/games-collectibles/legendary.html" target="_blank">buy the game</a> it is very fun and we love it.
+            Do not forget this is an unofficial page. And please use it for research only. All card contents are <a href="http://www.upperdeck.com/" target="_blank">Upper Deck®</a> creatively owned. We strongly incentive you to <a href="https://upperdeckstore.com/games-collectibles/legendary.html" target="_blank">buy the game</a>, it is very fun and we love it.
           </p>
 
           <p>
