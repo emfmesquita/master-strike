@@ -378,5 +378,162 @@ export default {
         }
       ]
     }
+  ],
+  masterminds: [
+    {
+      id: 29,
+      name: "Arnim Zola",
+      set: 12,
+      attack: "6",
+      vp: 6,
+      cards: [
+        {
+          name: "Arnim Zola",
+          attack: "6+",
+          abilities: [
+            [
+              { keyword: 25, text: "Ultimate Abomination" }
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Zola's Creations"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": For each Hero in the HQ that has less than 2 printed ",
+              { icon: 1 },
+              ", put that Hero on the bottom of the Hero Deck, and each player discards a card of that Hero's cost."
+            ]
+          ]
+        },
+        {
+          name: "Dominate the Weak",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": The player of your choice gains a Hero from the HQ that has less than 2 printed ",
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Computer-Uploaded Genius",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { hc: 5 },
+              " Hero or discards a card.",
+            ]
+          ]
+        },
+        {
+          name: "Pet Projects",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a Zola's Creations Villain from their Victory Pile or gains a Wound.",
+            ]
+          ]
+        },
+        {
+          name: "Imperial Edict",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO up to two of your Heroes that have less than 2 printed ",
+              { icon: 1 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 30,
+      name: "Baron Heinrich Zemo",
+      tacticName: "Baron Zemo",
+      set: 12,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "Baron Heinrich Zemo",
+          attack: "9+",
+          dense: true,
+          abilities: [
+            [
+              "Whenever you fight a Villain, you may use 2",
+              { icon: 2 },
+              " to rescue a Bystander. Baron Zemo gets ",
+              { bold: "+9" },
+              { icon: 1 },
+              " unless you are a ",
+              { keyword: 24 },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Masters of Evil (WWII)"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player KOs a Bystander from their Victory Pile. Any player who cannot do so gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Fallen Idols",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player that is not a ",
+              { keyword: 24 },
+              " discards a card."
+            ]
+          ]
+        },
+        {
+          name: "Finding Zemo",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top five cards of the Villain Deck. If you revealed any Bystanders, KO them and each other player gains a Wound. Put the rest back in random order.",
+            ]
+          ]
+        },
+        {
+          name: "Hatred for the Avengers",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": For each of your ",
+              { team: 1 },
+              " Heroes, rescue a Bystander."
+            ]
+          ]
+        },
+        {
+          name: "Prisoners of War",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals an ",
+              { team: 1 },
+              " Hero or chooses a Bystander from their Victory Pile, and you rescue that Bystander."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

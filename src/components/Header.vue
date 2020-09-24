@@ -56,6 +56,10 @@ const items = [
     to: "/heroes"
   },
   {
+    title: "Masterminds",
+    to: "/masterminds"
+  },
+  {
     title: "About",
     to: "/about"
   },

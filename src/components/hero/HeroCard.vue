@@ -6,7 +6,7 @@
     <shared-rule v-if="card.hc2" :rule="{ rule: 2 }">
       <HeroClassIcon class="card-second-hero-class"  :icon="card.hc2" width="32px"/>
     </shared-rule>
-    <RarityIcon class="card-rarity" :icon="card.rarity" width="24px"/>
+    <RarityIcon v-if="card.rarity" class="card-rarity" :icon="card.rarity" width="24px"/>
     <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
     <div :class="subTitleClasses">{{ subTitle }}</div>
 
@@ -51,7 +51,7 @@
     </template>
 
     <template v-if="card.cost">
-      <AbilityIcon class="card-cost-icon absolute-icon" noAdjust :icon="3" width="90px"/>
+      <AbilityIcon class="card-cost-icon absolute-icon" noAdjust :icon="card.gainAsHero ? 1 : 3" width="90px"/>
       <span 
         class="card-cost icon-text text-center font-weight-black"
         :class="{ small: card.cost.length > 2 }">
@@ -73,14 +73,7 @@ import RarityIcon from "../shared/RarityIcon.vue";
 import AbilityIcon from "../shared/AbilityIcon.vue";
 import DividedCardIcon from "../shared/DividedCardIcon.vue";
 import { heroClassArray } from "../../constants/hero-class";
-
-const getTextWidth = (text, font) => {
-  const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
-  const context = canvas.getContext("2d");
-  context.font = font;
-  const metrics = context.measureText(text);
-  return metrics.width;
-}
+import { getTextWidth } from "../../services/cardUtils";
 
 export default {
   name: "HeroCard",

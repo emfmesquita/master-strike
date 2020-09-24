@@ -1171,5 +1171,279 @@ export default {
         }
       ]
     }
+  ],
+  masterminds: [
+    {
+      id: 1,
+      name: "Dr. Doom",
+      set: 1,
+      attack: "9",
+      vp: 5,
+      cards: [
+        {
+          name: "Dr. Doom",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Doombot Legion"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player with exactly 6 cards in hand reveals a ",
+              { hc: 5 },
+              " Hero or puts 2 cards from their hand on top of their deck."
+            ]
+          ]
+        },
+        {
+          name: "Dark Technology",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You may recruit a ",
+              { hc: 5 },
+              " or ",
+              { hc: 3 },
+              " Hero from the HQ for free."
+            ]
+          ]
+        },
+        {
+          name: "Monarch's Decree",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Choose one: each other player draws a card or each other player discards a card."
+            ]
+          ]
+        },
+        {
+          name: "Secrets of Time Travel",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Take another turn after this one."
+            ]
+          ]
+        },
+        {
+          name: "Treasures of Latveria",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": When you draw a new hand of cards at the end of this turn, draw three extra cards."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: "Loki",
+      set: [1, 20],
+      attack: "10",
+      vp: 5,
+      cards: [
+        {
+          name: "Loki",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Enemies of Asgard"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals a ",
+              { hc: 4 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Cruel Ruler",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Defeat a Villain in the City for free."
+            ]
+          ]
+        },
+        {
+          name: "Maniacal Tyrant",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO up to four cards from your discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Vanishing Illusions",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player KOs a Villain from their Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Whispers and Lies",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player KOs two Bystanders from their Victory Pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "Magneto",
+      set: 1,
+      attack: "8",
+      vp: 5,
+      cards: [
+        {
+          name: "Magneto",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Brotherhood"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals an ",
+              { team: 4 },
+              " Hero or discards down to four cards."
+            ]
+          ]
+        },
+        {
+          name: "Bitter Captor",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Recruit an ",
+              { team: 4 },
+              " Hero from the HQ for free."
+            ]
+          ]
+        },
+        {
+          name: "Crushing Shockwave",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Choose one of your ",
+              { team: 4 },
+              " Hero or gains two Wounds."
+            ]
+          ]
+        },
+        {
+          name: "Electromagnetic Bubble",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Choose one of your ",
+              { team: 4 },
+              " Heroes. When you draw a new hand of cards at the end of this turn, add that Hero to your hand as a seventh card."
+            ]
+          ]
+        },
+        {
+          name: "Xavier's Nemesis",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": For each of your ",
+              { team: 4 },
+              " Heroes, rescue a Bystander."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Red Skull",
+      set: [1, 20],
+      attack: "7",
+      vp: 5,
+      cards: [
+        {
+          name: "Red Skull",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": HYDRA"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player KOs a Hero from their hand."
+            ]
+          ]
+        },
+        {
+          name: "Endless Resources",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+4" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "HYDRA Conspiracy",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Draw two cards. Then draw another card for each HYDRA Villain in your Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Negablast Grenades",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+3" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Ruthless Dictator",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Look at the top three cards of your deck. KO one, discard one and put one back on top of your deck."
+            ]
+          ]
+        }
+      ]
+    }
   ]
 }

@@ -280,7 +280,7 @@
       </template>
     </shared-side-bar>
 
-    <v-container style="paddingBottom: 100px">
+    <v-container style="paddingBottom: 100px" :class="{ xlzoom: $vuetify.breakpoint.xl }">
       <v-row v-if="$vuetify.breakpoint.mdAndDown && $store.getters.sideBarCollapsed">
         <v-col class="py-0">
           <v-text-field
@@ -303,7 +303,11 @@
         <v-lazy min-height="410" :key="heroKey(hero)" v-for="hero in heroes">
           <v-row>
             <v-col cols="12">
-              <Hero :hero="hero" />
+              <shared-card-group :group="hero">
+                <template v-slot:default="{ card }">
+                  <HeroCard :card="card" :hero="hero"/>
+                </template>
+              </shared-card-group>
             </v-col>
           </v-row>
         </v-lazy>
@@ -315,7 +319,7 @@
 </template>
 
 <script>
-import Hero from "../components/hero/Hero.vue";
+import HeroCard from "../components/hero/HeroCard.vue";
 import { setsArray } from "../constants/sets";
 import { teamArray } from "../constants/team";
 import { heroClassArray } from "../constants/hero-class";
@@ -325,9 +329,8 @@ import TeamIcon from "../components/shared/TeamIcon.vue";
 import HeroClassIcon from "../components/shared/HeroClassIcon.vue";
 import AbilityIcon from "../components/shared/AbilityIcon.vue";
 import { toIntArray, toIntPair } from "../services/queryUtils";
-import { getAllHeroes, numberOfHeroCards } from "../services/cardUtils";
+import { getAllHeroes, numberOfCards } from "../services/cardUtils";
 import { buildHeroSearch } from "../services/searchUtils";
-// import { disableBodyScroll, enableBodyScroll } from "../services/scrollUtils";
 
 const heroSearch = buildHeroSearch();
 
@@ -374,7 +377,7 @@ const baseFilter = () => ({
 
 export default {
   name: "Heroes",
-  components: { Hero, TeamIcon, HeroClassIcon, AbilityIcon },
+  components: { HeroCard, TeamIcon, HeroClassIcon, AbilityIcon },
   data: () => ({
     filterHeroes,
     sets: sets,
@@ -419,12 +422,6 @@ export default {
     }
   },
   methods: {
-    // enter() {
-    //   enableBodyScroll();
-    // },
-    // out() {
-    //   disableBodyScroll();
-    // },
     heroKey(hero) {
       return `${this.lastFilterTime}-${hero.team}-${hero.name}`;
     },
@@ -635,7 +632,7 @@ export default {
           return 0;
         });
 
-        hero.results = numberOfHeroCards(hero.filteredCards);
+        hero.results = numberOfCards(hero.filteredCards);
       });
 
       this.lastFilterTime = Date.now();

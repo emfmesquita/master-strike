@@ -345,5 +345,149 @@ export default {
         }
       ]
     }
+  ],
+  masterminds: [
+    {
+      id: 12,
+      name: "Carnage",
+      set: 5,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "Carnage",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Maximum Carnage"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": ",
+              { keyword: 8 },
+              " on each player. Whenever this Master Strike feasts on a player's 0-cost Hero, that player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Drooling Jaws",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each player reveals the top card of their deck. Then Carnage ",
+              { keyword: 8, text: "feasts" },
+              " on the player of your choice.",
+            ]
+          ]
+        },
+        {
+          name: "Endless Hunger",
+          tactic: true,
+          abilities: [
+            { keyword: 8 },
+            [
+              { bold: "Fight" },
+              ": If Carnage feasts on a 0-cost Hero this way, repeat this process."
+            ]
+          ]
+        },
+        {
+          name: "Feed Me",
+          tactic: true,
+          abilities: [
+            { keyword: 8 },
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+" },
+              { icon: 2 },
+              " equal to the ",
+              { icon: 3 },
+              "  of the card Carnage feasts on."
+            ]
+          ]
+        },
+        {
+          name: "Om Nom Nom",
+          tactic: true,
+          abilities: [
+            { keyword: 8 },
+            [
+              { bold: "Fight" },
+              ": If Carnage feasts on a 0-cost Hero this way, each other player KOs a Bystander from their Victory Pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 13,
+      name: "Mysterio",
+      set: 5,
+      attack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Mysterio",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Sinister Six"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Shuffle this Master Strike into Mysterio's face down Mastermind Tactics. That card becomes a Mastermind Tactic worth ",
+              { bold: "6" },
+              { icon: 4 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Blurring Images",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              " for each Mastermind Tactic Mysterio has left after this one."
+            ]
+          ]
+        },
+        {
+          name: "Captive Audience",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue a Bystander for each Mastermind Tactic Mysterio has left after this one."
+            ]
+          ]
+        },
+        {
+          name: "Master of Illusions",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this is not the final Tactic, shuffle a Master Strike Tactic from each other player's Victory Pile back into Mysterio's Mastermind Tactics.",
+            ]
+          ]
+        },
+        {
+          name: "Mists of Deception",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this is not the final Tactic, reveal the top five cards of the Villain Deck. Play all the Master Strikes you revealed. Put the rest on the bottom of that deck in random order."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

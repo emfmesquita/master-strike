@@ -403,5 +403,82 @@ export default {
         }
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 20,
+      name: "Uru-Enchanted Iron Man",
+      set: 8,
+      attack: "7",
+      vp: 6,
+      cards: [
+        {
+          name: "Uru-Enchanted Iron Man",
+          attackAsterisk: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": The Mighty"
+            ],
+            [
+              { bold: "Command Strike" },
+              ": ",
+              { keyword: 9 },
+              " each player. Then stack this Strike next to Iron Man. Uru-Enchanted Iron Man has an ",
+              { keyword: 15, text: "Uru-Enchanted Weapon" },
+              " for each Strike stacked here."
+            ]
+          ]
+        },
+        {
+          name: "Armor of the Destroyer",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": For each ",
+              { hc: 5 },
+              " Ally you have, ",
+              { keyword: 9, text: "demolish" },
+              " each other player."
+            ]
+          ]
+        },
+        {
+          name: "Pepper Potts in Rescue Armor",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": A Bystander from the Bystander Stack becomes a Command Strike that takes effect immediately."
+            ]
+          ]
+        },
+        {
+          name: "Quantum Inventions",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Draw two cards. Then, if you reveal a ",
+              { hc: 5 },
+              " card, draw two more cards.",
+            ]
+          ]
+        },
+        {
+          name: "Repulsor Coils",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { hc: 5 },
+              " Ally or gains a Bindings.",
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

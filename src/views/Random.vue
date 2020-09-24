@@ -59,12 +59,16 @@
             </v-btn>
       </template>
     </shared-side-bar>
-    <v-container style="paddingBottom: 100px">
+    <v-container style="paddingBottom: 100px" :class="{ xlzoom: $vuetify.breakpoint.xl }">
       <template v-if="heroes.length">
         <v-lazy min-height="410" :key="heroKey(hero)" v-for="hero in heroes">
           <v-row>
             <v-col cols="12">
-              <Hero :hero="hero" />
+              <shared-card-group :group="hero">
+                <template v-slot:default="{ card }">
+                  <HeroCard :card="card" :hero="hero"/>
+                </template>
+              </shared-card-group>
             </v-col>
           </v-row>
         </v-lazy>
@@ -76,7 +80,7 @@
 </template>
 
 <script>
-import Hero from "../components/hero/Hero.vue";
+import HeroCard from "../components/hero/HeroCard.vue";
 import { setsArray } from "../constants/sets";
 import { toIntArray, toInteger } from "../services/queryUtils";
 import { getAllHeroes } from "../services/cardUtils";
@@ -102,7 +106,7 @@ export default {
     },
     lastRandomizeTime: 0,
   }),
-  components: {Hero},
+  components: {HeroCard},
   created() {
     const query = this.$route.query;
     if(!query.fs) {
@@ -167,3 +171,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  .absolute-icon {
+    position: absolute;
+    user-select: none;
+  }
+</style>

@@ -344,5 +344,153 @@ export default {
         }
       ]
     }
+  ],
+  masterminds: [
+    {
+      id: 36,
+      name: "Evil Deadpool",
+      set: 14,
+      attack: "11",
+      vp: 6,
+      cards: [
+        {
+          name: "Evil Deadpool",
+          attack: "11+",
+          dense: true,
+          abilities: [
+            { keyword: 31, text: "Revenge for Mastermind Tactics" },
+            [
+              { bold: "Always Leads" },
+              ": Evil Deadpool Corpse"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Without talking, each player simultaneously discards a card. Whoever discards the lowest-costing card ",
+              { italic: "(or tied for lowest)" },
+              " gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Evil Even Oddball",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand. Whoever has the fewest cards with odd-numbered costs ",
+              { italic: "(or tied for fewest)" },
+              " gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Hyper-Insane Healing Factor",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this is not the final Tactic, you get ",
+              { bold: "+6" },
+              { icon: 2 },
+              " and shuffle this Tactic back into the other Tactics."
+            ]
+          ]
+        },
+        {
+          name: "Of Course it's Corpse",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": The other player with the fewest Evil Deadpool Corpse Villains in their Victory Pile ",
+              { italic: "(or tied for fewest)" },
+              " gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Stitched from Dead (Pool) Parts",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player discards the top card of their deck. Whoever discards the lowest-costing card ",
+              { italic: "(or tied for lowest)" },
+              " gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 37,
+      name: "Macho Gomez",
+      set: 14,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "Macho Gomez",
+          attack: "9+",
+          dense: true,
+          abilities: [
+            { keyword: 31, text: "Revenge for Deadpool's “Friends“" },
+            [
+              { bold: "Always Leads" },
+              ": Deadpool's “Friends“"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Put this Strike in front of you as a “Bounty on Your Head.“ Then, each player gains a Wound for each Bounty on them. Any number of times during your turn, you may pay 1",
+              { icon: 2 },
+              " to move a Bounty from you to the player on your left."
+            ]
+          ]
+        },
+        {
+          name: "Bounty Payout",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              " for each “Bounty on Your Head“ on other players."
+            ]
+          ]
+        },
+        {
+          name: "Interstellar Assassin",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get for each “Bounty on Your Head“ discards down to 4 cards."
+            ]
+          ]
+        },
+        {
+          name: "Renegotiate the Contract",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Redistribute the “Bounty on Your Head“ cards among any number of players."
+            ]
+          ]
+        },
+        {
+          name: "Super Macho Man",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue a Bystander for each “Bounty on Your Head“ on other players."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

@@ -1142,5 +1142,630 @@ export default {
         }
       ]
     }
+  ],
+  masterminds: [
+    {
+      id: 40,
+      name: "Arcade",
+      set: 16,
+      attack: "3",
+      vp: 5,
+      cards: [
+        {
+          name: "Arcade",
+          attackAsterisk: true,
+          abilities: [
+            [
+              { bold: "Start of Game" },
+              ": Arcade captures 5 ",
+              { keyword: 40 },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Murderworld"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Arcade captures a random Bystander from each player's Victory Pile as a ",
+              { keyword: 40, text: "Human Shield" },
+              ". Each player who didn't have a Bystander gains a Wound instead."
+            ]
+          ]
+        },
+        {
+          name: "Epic Arcade",
+          attack: "4",
+          attackAsterisk: true,
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Start of Game" },
+              ": Arcade captures 8 ",
+              { keyword: 40 },
+              ". Play a random Horror."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Murderworld"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Arcade captures two random Bystander from each player's Victory Pile as a ",
+              { keyword: 40, text: "Human Shield" },
+              ". Each player who didn't have a Bystander gains a Wound instead."
+            ]
+          ]
+        },
+        {
+          name: "I Love a Parade!",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Arcade captures two ",
+              { keyword: 40 },
+              ". Play an extra card from the Villain Deck next turn."
+            ]
+          ]
+        },
+        {
+          name: "I Need an Audience",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Arcade captures ",
+              { keyword: 40 },
+              " equal to the number of Villains in the city."
+            ]
+          ]
+        },
+        {
+          name: "Roulette Wheel of Death",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Arcade captures a random Bystander as a ",
+              { keyword: 40, text: "Human Shield" },
+              " from each of these places: The Bystander Stack, the Escape Pile, each city space, and each other player's Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Welcome to my Theme Park!",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Arcade and each Murderworld Villain in the city capture two ",
+              { keyword: 40 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 41,
+      name: "Dark Phoenix",
+      set: 16,
+      attack: "13",
+      vp: 7,
+      cards: [
+        {
+          name: "Dark Phoenix",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Hellfire Club"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": KO the top card of the Hero Deck and each card in the Hero Deck that shares a color with it. Shuffle the Hero Deck."
+            ],
+            [
+              { bold: "Dark Phoenix Wins" },
+              ": When the Hero Deck is empty."
+            ]
+          ]
+        },
+        {
+          name: "Epic Dark Phoenix",
+          attack: "15",
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Hellfire Club"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": KO the top card of the Hero Deck and each card in the Hero Deck that shares a color with it. Shuffle the Hero Deck. Then, each player plays a Hellfire Club card from their victory Pile. Next, play a random Horror."
+            ],
+            [
+              { bold: "Dark Phoenix Wins" },
+              ": When the Hero Deck is empty."
+            ]
+          ]
+        },
+        {
+          name: "Burn the World to Ashes",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player discards each card from their hand that has the same name as any card in the KO pile."
+            ]
+          ]
+        },
+        {
+          name: "Consume an Entire Galaxy",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player chooses a card from their discard pile that costs 1 or more and KOs it."
+            ]
+          ]
+        },
+        {
+          name: "Fiery Reincarnation",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Gain a Hero from the KO pile that costs 7 or more."
+            ]
+          ]
+        },
+        {
+          name: "Worship Me as a God",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player gains two 0-cost cards from the KO pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 42,
+      name: "Deathbird",
+      set: 16,
+      attack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Deathbird",
+          attack: "8+",
+          dense: true,
+          abilities: [
+            [
+              "Deathbird gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Shi'ar Villain in the city and Escape Pile."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Shi'ar Imperial Guard and a Shi'ar Henchmen Group."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": If there are already any Shi'ar Villains in the city, each player gains a Wound. Then this strike enters the city as a Shi'ar Battle Cruiser ",
+              { icon: 7 },
+              " Villain with 7",
+              { icon: 1 },
+              " worth 5 ",
+              { icon: 4 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Epic Deathbird",
+          attack: "10+",
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              "Deathbird gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              " for each Shi'ar Villain in the city and Escape Pile."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Shi'ar Imperial Guard and a Shi'ar Henchmen Group."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": If there are already any Shi'ar Villains in the city, play a random Horror. Then this strike enters the city as a Shi'ar Battle Cruiser ",
+              { icon: 7 },
+              " Villain with 9",
+              { icon: 1 },
+              " worth 6 ",
+              { icon: 4 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Shi'ar Elite Bodyguards",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue 4 Bystanders. This Tactic enters the city as a Villain whose only ability is “",
+              { bold: "Escape" },
+              ": Shuffle this card back into Deathbird's Mastermind Tactics as another Tactic.“"
+            ]
+          ]
+        },
+        {
+          name: "Shi'ar Extermination Legion",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue 4 Bystanders. This Tactic enters the city as a Villain whose only ability is “",
+              { bold: "Escape" },
+              ": Each player discards two cards.“"
+            ]
+          ]
+        },
+        {
+          name: "Shi'ar Hovertake Battalion",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue 4 Bystanders. This Tactic enters the city as a Villain whose only ability is “",
+              { bold: "Escape" },
+              ": Each player gains a Wound.“"
+            ]
+          ]
+        },
+        {
+          name: "Shi'ar Master Spies",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue 4 Bystanders. This Tactic enters the city as a Villain whose only ability is “",
+              { bold: "Escape" },
+              ": This card becomes a Scheme Twist that takes effect immediately.“"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 43,
+      name: "Mojo",
+      set: 16,
+      attack: "6",
+      vp: 5,
+      cards: [
+        {
+          name: "Mojo",
+          attackAsterisk: true,
+          abilities: [
+            [
+              { bold: "Start of Game" },
+              ": Mojo captures 3 ",
+              { keyword: 40 },
+              "."
+            ],
+            [
+              "All Bystanders in Victory Piles are worth 3 ",
+              { icon: 4 },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Mojoverse"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Mojo captures a ",
+              { keyword: 40, text: "Human Shield" },
+              ". Each player reveals a ",
+              { hc: 5 },
+              " Hero or discards a card at random."
+            ]
+          ]
+        },
+        {
+          name: "Epic Mojo",
+          attack: "7",
+          attackAsterisk: true,
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Start of Game" },
+              ": Mojo captures 6 ",
+              { keyword: 40 },
+              ". Play a random Horror."
+            ],
+            [
+              "All Bystanders in Victory Piles are worth 4 ",
+              { icon: 4 },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Mojoverse"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Mojo and each Mojoverse Villain capture a ",
+              { keyword: 40, text: "Human Shield" },
+              ". Each player reveals a ",
+              { hc: 5 },
+              " Hero or discards down to 4 cards each."
+            ]
+          ]
+        },
+        {
+          name: "Billions of TV Viewers",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each player reveals a ",
+              { hc: 5 },
+              " Hero or chooses a random Bystander from their Victory Pile. Mojo captures those Bystanders as ",
+              { keyword: 40 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Brain-Melting TV Marathon",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player without a Mojo Tactic in their Victory Pile gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Cross-Dimensional Marketing",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              " for each Bystander in your Victory Pile. Mojo captures a ",
+              { keyword: 40, text: "Human Shield" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Mojo Branding Opportunity",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Draw a card for each Mojoverse Villain in your Victory Pile. Mojo captures a ",
+              { keyword: 40, text: "Human Shield" },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 44,
+      name: "Onslaught",
+      set: 16,
+      attack: "10",
+      vp: 7,
+      cards: [
+        {
+          name: "Onslaught",
+          attack: "10+",
+          dense: true,
+          abilities: [
+            "Each player's hand size is 1 less.",
+            [
+              { bold: "Always Leads" },
+              ": Dark Descendants"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": KO all Heroes ",
+              { keyword: 39, text: "Dominated" },
+              " by Onslaught. Then each player reveals their hand and chooses one of their non-grey Heroes. Onslaught ",
+              { keyword: 39, text: "Dominated" },
+              " those Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Epic Onslaught",
+          attack: "12+",
+          epic: true,
+          dense: true,
+          abilities: [
+            "Each player's hand size is 1 less.",
+            [
+              { bold: "Always Leads" },
+              ": Dark Descendants"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": KO all Heroes ",
+              { keyword: 39, text: "Dominated" },
+              " by Onslaught. Then each player reveals their hand and chooses two of their non-grey Heroes. Onslaught ",
+              { keyword: 39, text: "Dominated" },
+              " those Heroes. Then play a random Horror."
+            ]
+          ]
+        },
+        {
+          name: "Godlike Psionic Entity",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Onslaught ",
+              { keyword: 39, text: "Dominates" },
+              " all five Heroes from the HQ.",
+            ]
+          ]
+        },
+        {
+          name: "Sins of X-Men Past",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals the top six cards of their deck and chooses an ",
+              { team: 4 },
+              " Hero revealed this way. Onslaught ",
+              { keyword: 39, text: "Dominates" },
+              " those Heroes. Put the rest back in random order."
+            ]
+          ]
+        },
+        {
+          name: "Xavier and Magneto Combined",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top three cards of the Hero Deck. Onslaught ",
+              { keyword: 39, text: "Dominates" },
+              " all the ",
+              { team: 4 },
+              " and ",
+              { team: 11 },
+              " Heroes you revealed. Put the rest back in random order."
+            ]
+          ]
+        },
+        {
+          name: "Worldwide Mental Control",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Onslaught ",
+              { keyword: 39, text: "Dominates" },
+              " four 0-cost Heroes from the KO pile. The next time a player fights Onslaught, KO those 0-cost Heroes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 45,
+      name: "Shadow King",
+      set: 16,
+      attack: "7",
+      vp: 6,
+      cards: [
+        {
+          name: "Shadow King",
+          attack: "7+",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Shadow-X"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": KO all Heroes ",
+              { keyword: 39, text: "Dominated" },
+              " by Shadow King. Then each player chooses a non-grey Hero from their discard pile. Shadow King ",
+              { keyword: 39, text: "Dominates" },
+              " those Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Epic Shadow King",
+          attack: "9+",
+          epic: true,
+          abilities: [
+            [
+              { bold: "Start of Game" },
+              ": Play two random Horrors."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Shadow-X"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": KO all Heroes ",
+              { keyword: 39, text: "Dominated" },
+              " by Shadow King. Then each player chooses a non-grey Hero from their discard pile. Shadow King ",
+              { keyword: 39, text: "Dominates" },
+              " those Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Fiend of the Astral Plane",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and shuffles two cards with ",
+              { icon: 2 },
+              " icons from their hand back into their deck."
+            ]
+          ]
+        },
+        {
+          name: "Poison their Minds",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and chooses one of their non-grey Heroes. Shadow King ",
+              { keyword: 39, text: "Dominates" },
+              " those Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Psychic Seduction",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Shadow King ",
+              { keyword: 39, text: "Dominates" },
+              " each Hero that costs 5 or less from the HQ."
+            ]
+          ]
+        },
+        {
+          name: "Telepathic Betrayal",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If the “Betrayal of the Shadow“ Trap is in any Victory Pile or the KO pile, put it on top of the Villain Deck."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

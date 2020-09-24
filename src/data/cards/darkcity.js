@@ -1448,5 +1448,364 @@ export default {
         }
       ]
     }
+  ],
+  masterminds: [
+    {
+      id: 5,
+      name: "Apocalypse",
+      set: 3,
+      attack: "12",
+      vp: 6,
+      cards: [
+        {
+          name: "Apocalypse",
+          dense: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Four Horsemen"
+            ],
+            [
+              "Four Horsemen Villains get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              { bold: "Apocalypse Wins" },
+              ": When Famine, Pestilence, War, and Death have escaped."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals their hand and puts all their Heroes that cost 1 ",
+              { icon: 3 },
+              " or more on top of their deck."
+            ]
+          ]
+        },
+        {
+          name: "Apocalyptic Destruction",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player KOs two Heroes from their discard pile that each cost 1 ",
+              { icon: 3 },
+              " or more."
+            ]
+          ]
+        },
+        {
+          name: "The End of All Things",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals the top three cards of their deck, KOs each one of those cards that cost 1 ",
+              { icon: 3 },
+              " or more, and puts the rest back in any order."
+            ]
+          ]
+        },
+        {
+          name: "Horsemen Are Drawing Nearer",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player plays a Four Horsemen Villain from their Victory Pile as if playing it from the Villain Deck."
+            ]
+          ]
+        },
+        {
+          name: "Immortal and Undefeated",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this is not the final Tactic, rescue six Bystanders and shuffle this Tactic back into the other Tactics."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 6,
+      name: "Kingpin",
+      set: 3,
+      attack: "13",
+      vp: 6,
+      cards: [
+        {
+          name: "Kingpin",
+          attackAsterisk: true, 
+          abilities: [
+            { keyword: 2 },
+            [
+              { bold: "Always Leads" },
+              ": Streets of New York"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals a ",
+              { team: 6 },
+              " Hero or discards their hand and draws 5 cards."
+            ]
+          ]
+        },
+        {
+          name: "Call a Hit",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Choose a Hero from each player's discard pile and KO it."
+            ]
+          ]
+        },
+        {
+          name: "Criminal Empire",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this is not the final Tactic, reveal the top three cards of the Villain Deck. Play all the Villains you revealed. Put the rest back in random order."
+            ]
+          ]
+        },
+        {
+          name: "Dirty Cops",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Put a 0 ",
+              { icon: 3 },
+              " Hero from the KO pile on top of each other player's deck."
+            ]
+          ]
+        },
+        {
+          name: "Mob War",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player plays a Henchman Villain from their Victory Pile as if playing it from the Villain Deck."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 7,
+      name: "Mephisto",
+      set: 3,
+      attack: "10",
+      vp: 6,
+      cards: [
+        {
+          name: "Mephisto",
+          abilities: [
+            "Whenever a player gains a Wound, put it on top of that player's deck.",
+            [
+              { bold: "Always Leads" },
+              ": Underworld"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals a ",
+              { team: 6 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Damned If You Do...",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player KOs a Bystander from their Victory Pile or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Devilish Torment",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player puts all 0 ",
+              { icon: 3 },
+              " cards from their discard pile on top of their deck in any order."
+            ]
+          ]
+        },
+        {
+          name: "Pain Begets Pain",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Choose any number of Wounds from your hand and discard pile. The player to your right gains them."
+            ]
+          ]
+        },
+        {
+          name: "The Price of Failure",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player without a Mastermind Tactic in their Victory Pile gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 8,
+      name: "Mr. Sinister",
+      set: 3,
+      attack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Mr. Sinister",
+          dense: true,
+          abilities: [
+            [
+              "Mr. Sinister gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Bystander he has."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Marauders"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Mr. Sinister captures a Bystander. Then each player with exactly 6 cards reveals a ",
+              { hc: 1 },
+              " Hero or discards cards equal to the number of Bystanders Mr. Sinister has."
+            ]
+          ]
+        },
+        {
+          name: "Human Experimentation",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Mr. Sinister captures Bystanders equal to the number of Villains in the city."
+            ]
+          ]
+        },
+        {
+          name: "Master Geneticist",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top seven cards of the Villain Deck. Mr. Sinister captures all of the Bystanders you revealed. Put the rest back in random order."
+            ]
+          ]
+        },
+        {
+          name: "Plans Within Plans",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Mr. Sinister captures a Bystander for each Mr. Sinister Tactic in players' Victory Piles, including this Tactic."
+            ]
+          ]
+        },
+        {
+          name: "Telepathic Manipulation",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Mr. Sinister captures a Bystander from each other player's Victory Pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 9,
+      name: "Stryfe",
+      set: 3,
+      attack: "7",
+      vp: 6,
+      cards: [
+        {
+          name: "Stryfe",
+          attack: "7+",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": MLF"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Stack this Master Strike next to Stryfe. Stryfe gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Master Strike stacked next to him. Each player reveals a ",
+              { team: 7 },
+              " Hero or discards a card at random."
+            ]
+          ]
+        },
+        {
+          name: "Furious Wrath",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top six cards of the Villain Deck. Play all the Master Strikes you revealed. Put the rest back in random order."
+            ]
+          ]
+        },
+        {
+          name: "Psychic Torment",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Look at the top five cards of your deck. Put one into your hand and discard the rest."
+            ]
+          ]
+        },
+        {
+          name: "Swift Vengeance",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": A Wound from the Wound Stack becomes a Master Strike that takes effect immediately."
+            ]
+          ]
+        },
+        {
+          name: "Tide of Retribution",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals an ",
+              { team: 7 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+
+
   ]
 }

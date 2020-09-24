@@ -3,7 +3,7 @@
     <v-dialog
       v-model="dialog"
       scrollable
-      max-width="500px"
+      :max-width="width"
     >
       <template v-slot:activator="{ on }">
         <span v-on="on" class="rule" :class="classes">
@@ -11,7 +11,7 @@
         </span>
       </template>
 
-      <v-card v-if="dialog">
+      <v-card v-if="dialog" :class="{ xlzoom: $vuetify.breakpoint.xl }">
         <v-card-title
           class="headline grey lighten-2"
           primary-title
@@ -28,7 +28,7 @@
 
         <v-divider></v-divider>
 
-        <v-card-actions>
+        <v-card-actions >
           <v-spacer></v-spacer>
           <v-btn
             color="primary"
@@ -66,6 +66,9 @@ export default {
       const val = obj(this.rule).value;
       const src = this.rule.rule ? rules : keywords;
       return src[val] || [];
+    },
+    width() {
+      return this.$vuetify.breakpoint.mdAndUp ? "800px" : "500px";
     },
     classes() {
       return {

@@ -327,5 +327,192 @@ export default {
         }
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 46,
+      name: "Adrian Toomes",
+      set: 17,
+      attack: "5",
+      vp: 6,
+      cards: [
+        {
+          name: "Adrian Toomes",
+          attack: "5+",
+          abilities: [
+            [
+              { keyword: 42, text: "Double Striker" }
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Salvagers"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Starting from the Sewers, each Villain in the city uses its “Escape“ ability."
+            ]
+          ]
+        },
+        {
+          name: "Epic Adrian Toomes",
+          attack: "5+",
+          epic: true,
+          abilities: [
+            [
+              { keyword: 42, text: "Triple Striker" }
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Salvagers"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Starting from the Sewers, each Villain in the city uses its “Ambush“ ability, then its “Escape“ ability."
+            ]
+          ]
+        },
+        {
+          name: "Don't Interfere",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 41, text: "Danger Sense 4" },
+              ". If this revealed any Bystanders, rescue them."
+            ]
+          ]
+        },
+        {
+          name: "More Harm than Good",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player discards a ",
+              { team: 3 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Take Everything",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You may put a card from your discard pile on top of your deck."
+            ]
+          ]
+        },
+        {
+          name: "The World's Changed",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 41, text: "Danger Sense 3" },
+              ". Put all Henchmen Villains revealed this way into your Victory Pile, then do their “Fight“ abilities."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 47,
+      name: "Vulture",
+      set: 17,
+      attack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Vulture",
+          attack: "8+",
+          dense: true,
+          abilities: [
+            [
+              { keyword: 42 }
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Vulture Tech"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Put a Wound from the Wound Stack below each HQ space as a “Winged Assault.“ Whenever a player gains or KOs a Hero from the HQ, the player on their right gains one of the Wounds below that HQ space."
+            ]
+          ]
+        },
+        {
+          name: "Epic Vulture",
+          attack: "10+",
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              { keyword: 42 }
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Vulture Tech"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Put a Wound from the Wound Stack or KO pile below each HQ space as a “Winged Assault.“ Whenever a player gains or KOs a Hero from the HQ, the player on their right gains one of the Wounds below that HQ space, putting it on top of their deck."
+            ]
+          ]
+        },
+        {
+          name: "Bird of Prey",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player discards a ",
+              { team: 3 },
+              " Hero or discards two cards."
+            ]
+          ]
+        },
+        {
+          name: "Lurking Shadow",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 41, text: "Danger Sense 2" },
+              ". If the Rooftops are empty, a Villain you revealed enters the Rooftops."
+            ]
+          ]
+        },
+        {
+          name: "Mid Air Heist",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+5" },
+              { icon: 2 },
+              " usable only to recruit ",
+              { hc: 5 },
+              " Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Winged Assault",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Put two “Winged Assault“ Wounds from under the HQ into each other player's discard pile."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

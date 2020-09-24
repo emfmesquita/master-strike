@@ -1,11 +1,11 @@
 <template>
-  <v-card class="mx-auto hero" outlined>
+  <v-card class="mx-auto card-group" outlined>
     <v-container>
       <v-row>
         <v-col cols="12">
           <SetChip v-for="set in setArray" :key="set" class="set-chip float-right" :short="numberOfColumns <= 2" :set="set"/>
-          <NumberOfCards class="hero-cards-number" :number="numberOfCards" size="16"/>
-          <span :class="titleClasses">{{ hero.name }}</span>
+          <NumberOfCards class="number-of-cards" :number="numberOfCards" size="16"/>
+          <span :class="titleClasses">{{ group.name }}</span>
         </v-col>
       </v-row>
       <v-row>
@@ -15,7 +15,7 @@
             :class="{'divided-column-left': card.divided === 1, 'divided-column-right': card.divided === 2}"  
             v-for="card in pages[0]" :key="card.name"
           >
-            <HeroCard :card="card" :hero="hero"/>
+            <slot :card="card"/>
           </v-col>
         </template>
         <v-col v-else cols="12" class="carousel-column">
@@ -32,7 +32,7 @@
                     :class="{'divided-column-left': card.divided === 1, 'divided-column-right': card.divided === 2}"  
                     v-for="card in page" :key="card.name"
                   >
-                    <HeroCard :card="card" :hero="hero"/>
+                    <slot :card="card"/>
                   </v-col>
                 </v-row>
               </v-sheet>
@@ -45,15 +45,14 @@
 </template>
 
 <script>
-import HeroCard from "./HeroCard.vue";
 import SetChip from "../shared/SetChip.vue";
 import NumberOfCards from "../shared/NumberOfCards";
-import { numberOfHeroCards } from "../../services/cardUtils";
+import { numberOfCards } from "../../services/cardUtils";
 
 export default {
-  name: "Hero",
-  props: ["hero"],
-  components: { HeroCard, SetChip, NumberOfCards },
+  name: "CardGroup",
+  props: ["group"],
+  components: { SetChip, NumberOfCards },
   data: () => ({}),
   computed: {
     numberOfColumns() {
@@ -71,10 +70,10 @@ export default {
       return 12 / this.numberOfColumns;
     },
     cards() {
-      return this.hero.filteredCards === undefined ? this.hero.cards : this.hero.filteredCards;
+      return this.group.filteredCards === undefined ? this.group.cards : this.group.filteredCards;
     },
     numberOfCards() {
-      return this.hero.results === undefined ? numberOfHeroCards(this.cards) : this.hero.results;
+      return this.group.results === undefined ? numberOfCards(this.cards) : this.group.results;
     },
     titleClasses() {
       const short = this.numberOfColumns === 1;
@@ -98,15 +97,19 @@ export default {
       return pages;
     },
     setArray() {
+      if(this.group.set === undefined) return [];
+
       // sets are reversed to consider float-right
-      return Array.isArray(this.hero.set) ? this.hero.set.slice(0).reverse() : [this.hero.set];
+      if(Array.isArray(this.group.set)) return this.group.set.slice(0).reverse()
+      
+      return [this.group.set];
     }
   }
 };
 </script>
 
 <style lang="scss">
-.hero {
+.card-group {
   background-color:#f2f2f2 !important;
   .set-chip {
     padding-left: 16px;
@@ -139,7 +142,7 @@ export default {
   .divided-column-right {
     padding-left: 0px;
   }
-  .hero-cards-number {
+  .number-of-cards {
     position: absolute;
     top: -16px;
     left: 4px;

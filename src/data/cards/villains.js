@@ -1107,5 +1107,292 @@ export default {
 
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 14,
+      name: "Dr. Strange",
+      set: 6,
+      attack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Dr. Strange",
+          dense: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Defenders"
+            ],
+            [
+              { bold: "Command Strike" },
+              ": Reveal the top three cards of the Adversary Deck. Put the Adversary you revealed with the highest printed ",
+              { icon: 1 },
+              " on top of that deck. Then play a Plot Twist from among the cards you revealed. Then put the rest of those cards on the bottom of that deck in random order."
+            ]
+          ]
+        },
+        {
+          name: "Book of the Vishanti",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { hc: 1 },
+              " Ally or discards all the cards in their hand, then draws as many cards as they discarded."
+            ]
+          ]
+        },
+        {
+          name: "Crimson Bands of Cyttorak",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand, then gains a Bindings for each non-grey Ally that player has."
+            ]
+          ]
+        },
+        {
+          name: "Eye of Agamotto",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal cards from the Ally Deck equal to the number of players. Put one of those cards into each player's discard pile.",
+            ]
+          ]
+        },
+        {
+          name: "Winds of Watoomb",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": After you draw a new hand of cards at the end of this turn, each player simultaneously passes a non-grey Ally from their hand to the hand of the player on their left."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 15,
+      name: "Nick Fury",
+      set: 6,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "Nick Fury",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Avengers"
+            ],
+            [
+              { bold: "Command Strike" },
+              ": Stack this Strike next to Nick Fury. Then ",
+              { keyword: 9, text: "demolish" },
+              " each player once for each Strike stacked here."
+            ]
+          ]
+        },
+        {
+          name: "Bounty on Fury's Head",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO any number of your ",
+              { team: 13 },
+              " Allies. For each Ally you KO'd this way, you may gain a Madame HYDRA."
+            ]
+          ]
+        },
+        {
+          name: "Purge Hydra",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discards two ",
+              { team: 13 },
+              " Allies."
+            ]
+          ]
+        },
+        {
+          name: "The Avengers Initiative",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { hc: 5 },
+              " Ally or chooses an Avengers Adversary from their Victory Pile and it enters the Bridge."
+            ]
+          ]
+        },
+        {
+          name: "Total Fury",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Defeat an Adversary whose Attack is less than the number of ",
+              { team: 13 },
+              " Allies in the KO pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 16,
+      name: "Odin",
+      set: 6,
+      attack: "10",
+      vp: 6,
+      cards: [
+        {
+          name: "Odin",
+          attack: "10+",
+          dense: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Asgardian Warriors"
+            ],
+            [
+              "Odin gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Asgardian Warrior in the city and in the Overrun Pile."
+            ],
+            [
+              { bold: "Command Strike" },
+              ": Each player puts an Asgardian Warrior from their Victory Pile into an empty city space. Any player who cannot do so gains a Bindings."
+            ]
+          ]
+        },
+        {
+          name: "Divine Justice",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player with a Bindings in their discard pile gains another Bindings."
+            ]
+          ]
+        },
+        {
+          name: "Might of Valhalla",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Draw a card for each Asgardian Warrior in your Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Riches of Asgard",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              " for each Asgardian Warrior in your Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Ride of the Valkyries",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { team: 10 },
+              " Ally or discards a card for each Asgardian Warrior in the Overrun Pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 17,
+      name: "Professor X",
+      set: 6,
+      attack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Professor X",
+          attack: "8+",
+          dense: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": X-men First Class"
+            ],
+            [
+              { bold: "Command Strike" },
+              ": Choose the two highest-cost Allies in the Lair. Stack them next to Professor X as “Telepathic Pawns.“ Professor X gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Ally stacked next to him. Players can recrut the top Ally in the stack next to Professor X."
+            ]
+          ]
+        },
+        {
+          name: "Cerebro Device",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top three cards of the Adversary Deck. Play any Adversaries you revealed that have “X-Treme Attack“. Put the rest back in random order."
+            ]
+          ]
+        },
+        {
+          name: "Mental Dominance",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Stack the top three cards of the Ally Deck next to Professor X in random order as “Telepathic Pawns.“"
+            ]
+          ]
+        },
+        {
+          name: "Mightiest Mutant Mind",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { team: 11 },
+              " Ally or stacks a non-grey Ally from their hand next to Professor X as a “Telepathic Pawn.“"
+            ]
+          ]
+        },
+        {
+          name: "Telepathic Imprisonment",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { team: 11 },
+              " Ally or gains a Bindings."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

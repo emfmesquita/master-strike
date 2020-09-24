@@ -207,41 +207,41 @@ const SOARING_FLIGHT = {
     value: "soaringflight",
     label: "Soaring Flight"
 }
-const LIGHTSHOW= {
+const LIGHTSHOW = {
     id: 38,
     inHeroes: true,
     value: "lightshow",
     label: "Lightshow"
 }
-const DOMINATE= {
+const DOMINATE = {
     id: 39,
     value: "dominate",
     label: "Dominate"
 }
-const HUMAN_SHIELDS= {
+const HUMAN_SHIELDS = {
     id: 40,
     value: "humanshield",
     label: "Human Shields"
 }
-const DANGER_SENSE= {
+const DANGER_SENSE = {
     id: 41,
     inHeroes: true,
     value: "dangersense",
     label: "Danger Sense"
 }
-const STRIKER= {
+const STRIKER = {
     id: 42,
     inHeroes: true,
     value: "striker",
     label: "Striker"
 }
-const COORDINATE= {
+const COORDINATE = {
     id: 43,
     inHeroes: true,
     value: "coordinate",
     label: "Coordinate"
 }
-const CHEERING_CROWDS= {
+const CHEERING_CROWDS = {
     id: 44,
     inHeroes: true,
     value: "cheeringcrowds",
@@ -253,7 +253,7 @@ const TRANSFORM = {
     value: "transform",
     label: "Transform"
 }
-const OUTWIT= {
+const OUTWIT = {
     id: 46,
     inHeroes: true,
     value: "outwit",
@@ -461,7 +461,7 @@ export const keywords = Object.freeze({
 
 export const keywordsArray = Object.freeze([
     TELEPORT,                   // 01 done
-    BRIBE,                      // 02
+    BRIBE,                      // 02 done
     VERSATILE,                  // 03 done
     FOCUS,                      // 04 done
     BURROW,                     // 05
@@ -474,32 +474,32 @@ export const keywordsArray = Object.freeze([
     X_TREME_ATTACK,             // 12
     ARTIFACT,                   // 13 done
     THROWN_ARTIFACT,            // 14 done
-    URU_ENCHANTED_WEAPONS,      // 15
-    RISE_OF_THE_LIVING_DEAD,    // 16
+    URU_ENCHANTED_WEAPONS,      // 15 done
+    RISE_OF_THE_LIVING_DEAD,    // 16 done
     CROSS_DIMENSIONAL_RAMPAGE,  // 17 done
     SPECTRUM,                   // 18 done
     PATROL,                     // 19 done
-    CIRCLE_OF_KUNG_FU,          // 20
-    FATEFUL_RESURRECTION,       // 21
-    CHARGE,                     // 22
+    CIRCLE_OF_KUNG_FU,          // 20 done
+    FATEFUL_RESURRECTION,       // 21 done
+    CHARGE,                     // 22 done
     MAN_OUT_OF_TIME,            // 23 done
     SAVIOR,                     // 24 done
-    ABOMINATION,                // 25
+    ABOMINATION,                // 25 done
     SIZE_CHANGING,              // 26 done
     PHASING,                    // 27 done
     FORTIFY,                    // 28 done
-    SHIELD_CLEARANCE,           // 29
+    SHIELD_CLEARANCE,           // 29 done
     EXCESSIVE_VIOLENCE,         // 30 done
-    REVENGE,                    // 31
+    REVENGE,                    // 31 done
     INVESTIGATE,                // 32 done
-    HIDDEN_WITNESS,             // 33
+    HIDDEN_WITNESS,             // 33 done
     X_GENE,                     // 34 done
     PIERCING_ENERGY,            // 35 done
     BERSERK,                    // 36 done
     SOARING_FLIGHT,             // 37 done
     LIGHTSHOW,                  // 38 done
-    DOMINATE,                   // 39
-    HUMAN_SHIELDS,              // 40
+    DOMINATE,                   // 39 done
+    HUMAN_SHIELDS,              // 40 done
     DANGER_SENSE,               // 41 done
     STRIKER,                    // 42 done
     COORDINATE,                 // 43 done

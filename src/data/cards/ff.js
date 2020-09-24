@@ -433,5 +433,179 @@ export default {
         }
       ]
     }
+  ],
+  masterminds: [
+    {
+      id: 10,
+      name: "Galactus",
+      set: 4,
+      attack: "20",
+      vp: 6,
+      cards: [
+        {
+          name: "Galactus",
+          attackAsterisk: true,
+          dense: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              ": ",
+              { hc: 4 },
+              { hc: 2 },
+              { hc: 1 },
+              { hc: 5 },
+              { hc: 3 },
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Heralds of Galactus"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Destroy the city space closest to Galactus. Any Villain there escapes. Put this Master Strike there."
+            ],
+            [
+              { bold: "Galactus Wins" },
+              ": When the city is destroyed."
+            ]
+          ]
+        },
+        {
+          name: "Cosmic Entity",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Choose ",
+              { hc: 4 },
+              ", ",
+              { hc: 2 },
+              ", ",
+              { hc: 1 },
+              ", ",
+              { hc: 5 },
+              " or ",
+              { hc: 3 },
+              ". Each player reveals any number of cards of that class, then draws that many cards."
+            ]
+          ]
+        },
+        {
+          name: "Force of Eternity",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": When you draw a new hand of cards at the end of this turn, draw six extra cards, then discard six cards."
+            ]
+          ]
+        },
+        {
+          name: "Panicked Mobs",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Choose ",
+              { hc: 4 },
+              ", ",
+              { hc: 2 },
+              ", ",
+              { hc: 1 },
+              ", ",
+              { hc: 5 },
+              " or ",
+              { hc: 3 },
+              ". Each player reveals any number of cards of that class, then rescues that many Bystanders."
+            ]
+          ]
+        },
+        {
+          name: "Sunder the Earth",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player KOs all Heroes from their discard pile with the same card name as a Hero in the HQ."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 11,
+      name: "Mole Man",
+      set: 4,
+      attack: "7",
+      vp: 6,
+      cards: [
+        {
+          name: "Mole Man",
+          attack: "7+",
+          abilities: [
+            [
+              "Mole Man gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Subterranea Villain that has escaped."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Subterranea"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": All Subterranea Villains in the city escape. If any Villains escaped this way, each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Dig to Freedom",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player chooses a Subterranea Villain in their Victory Pile and puts it into the Escaped Villains pile."
+            ]
+          ]
+        },
+        {
+          name: "Master of Monsters",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this is not the final Tactic, reveal the top six cards of the Villain Deck. Play all the Subterranea Villains you revealed. Put the rest on the bottom of the Villain Deck in random order."
+            ]
+          ]
+        },
+        {
+          name: "Secret Tunnel",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+6" },
+              { icon: 1 },
+              " usable only against Villains in the Streets."
+            ]
+          ]
+        },
+        {
+          name: "Underground Riches",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+6" },
+              { icon: 2 },
+              " usable only to recruit Heroes in the HQ space under the Streets."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

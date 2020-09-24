@@ -28,6 +28,11 @@ const PIERCING = {
     value: "piercing",
     label: "Piercing Energy"
 };
+const TOKEN = {
+    id: 7,
+    value: "token",
+    label: "Token Card"
+};
 
 export const icon = Object.freeze({
     ATTACK,
@@ -35,7 +40,8 @@ export const icon = Object.freeze({
     COST,
     VP,
     FOCUS,
-    PIERCING
+    PIERCING,
+    TOKEN
 });
 
 export const iconArray = Object.freeze([
@@ -44,5 +50,6 @@ export const iconArray = Object.freeze([
     COST,       // 3
     VP,         // 4
     FOCUS,      // 5
-    PIERCING    // 6
+    PIERCING,   // 6
+    TOKEN       // 7
 ]);

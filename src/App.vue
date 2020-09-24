@@ -38,6 +38,11 @@ export default {
     showScrollToTop() {
       const fullSizeSideBar = this.$vuetify.breakpoint.mdAndDown && !this.$store.getters.sideBarCollapsed;
       return this.scrolled && !fullSizeSideBar;
+    },
+    classes() {
+      return {
+        xl: this.$vuetify.breakpoint.xlOnly
+      }
     }
   },
   methods: {
@@ -48,8 +53,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
   .scroll-top {
     margin-bottom: 48px;
+  }
+
+  .xlzoom {
+    zoom: 1.25
   }
 </style>

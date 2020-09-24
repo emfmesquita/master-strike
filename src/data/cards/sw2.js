@@ -1167,5 +1167,306 @@ export default {
         }
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 25,
+      name: "Immortal Emperor Zheng-Zhu",
+      tacticName: "Zheng-Zhu",
+      set: 11,
+      attack: "7",
+      vp: 6,
+      cards: [
+        {
+          name: "Immortal Emperor Zheng-Zhu",
+          attack: "7+",
+          abilities: [
+            [
+              { keyword: 20, text: "7th Circle of Kung-Fu" }
+            ],
+            [
+              { bold: "Always Leads" },
+              ": K'un-Lun"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals a Hero that costs 7 or more, or they discard down to 3 cards."
+            ]
+          ]
+        },
+        {
+          name: "Ultimate Kung-Fu Mastery",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a card with “Circle of Kung-Fu“ from their Victory Pile or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Emperor's Justice",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { team: 6 },
+              " Hero or gains a Wound.",
+            ]
+          ]
+        },
+        {
+          name: "Humble the Pretenders",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { team: 6 },
+              " Hero or discards a card that costs less than 7.",
+            ]
+          ]
+        },
+        {
+          name: "Imperial Edict",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Choose any number of Heroes from the HQ. Put them on the bottom of the Hero Deck in random order."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 26,
+      name: "King Hyperion",
+      tacticName: "Hyperion",
+      set: 11,
+      attack: "12",
+      vp: 6,
+      cards: [
+        {
+          name: "King Hyperion",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Utopolis"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": King Hyperion enters the city if he was not already there. Then, he ",
+              { keyword: 22, text: "charges" },
+              " three spaces."
+            ],
+            [
+              { bold: "Escape" },
+              ": Each player gains a wound. Put King Hyperion on the Mastermind space."
+            ]
+          ]
+        },
+        {
+          name: "Worshipped by Millions",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If King Hyperion is in the city, put him back on the Mastermind space and shuffle this Tactic back into his Tactics. If you do, rescue six Bystanders."
+            ]
+          ]
+        },
+        {
+          name: "Royal Treasury",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If King Hyperion is in the city, put him back on the Mastermind space and shuffle this Tactic back into his Tactics. If you do, you get ",
+              { bold: "+5" },
+              { icon: 2 },
+              ".",
+            ]
+          ]
+        },
+        {
+          name: "Monarch of Utopolis",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If King Hyperion is in the city, put him back on the Mastermind space and shuffle this Tactic back into his Tactics. If you do, when you drew a new hand of cards at the end of this turn, draw three extra cards.",
+            ]
+          ]
+        },
+        {
+          name: "Rule with an Iron Fist",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If King Hyperion is in the city, put him back on the Mastermind space and shuffle this Tactic back into his Tactics. If you do, you may defeat a Villain in the city for free."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 27,
+      name: "Shiklah, the Demon Bride",
+      tacticName: "Shiklah",
+      set: 11,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "Shiklah, the Demon Bride",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Monster Metropolis"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Reveal the top three cards of the Villain Deck. Put all the Scheme Twists you revealed on top of the Villain Deck. Put the rest on the bottom of that deck in random order."
+            ]
+          ]
+        },
+        {
+          name: "Shiklah's Husband, Deadpool",
+          hc: 1,
+          cost: 9,
+          attack: "5+",
+          gainAsHero: true,
+          tactic: true,
+          subTitle: "Mastermind Tactic - Shiklah",
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Gain this as a Hero.",
+            ],
+            { divider: true },
+            [
+              "You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Hero with an odd-numbered cost you played this turn. ",
+              { italic: "(0 is even.)"}
+            ]
+          ]
+        },
+        {
+          name: "Enslavement Beam",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 21 },
+              ". If she resurrects, rescue four bystanders."
+            ]
+          ]
+        },
+        {
+          name: "Drain Life",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 21 },
+              ". If she resurrects, defeat a Villain in the city for free."
+            ]
+          ]
+        },
+        {
+          name: "Infernal Power",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 21 },
+              ". If she resurrects, draw two cards."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 28,
+      name: "Spider-Queen",
+      set: 11,
+      attack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Spider-Queen",
+          attack: "8+",
+          dense: true,
+          abilities: [
+            [
+              "Spider-Queen gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Bystander in the Escape pile."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Spider-Infected"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player puts a Spider-Infected from their Victory Pile into an empty city space. Any player who cannot do so gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Sonic Scream",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top eight cards of the Villain Deck. Put all the Bystanders you revealed into the Escape pile. Put the rest on the bottom of the Villain Deck in random orders."
+            ]
+          ]
+        },
+        {
+          name: "Infect the Entire City",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Put a Bystander from the Bystander Deck into the Escape Pile. Then, each Spider-Infected in the city captures a Bystander.",
+            ]
+          ]
+        },
+        {
+          name: "Control Arachnid Genes",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You may gain a ",
+              { team: 3 },
+              " Hero from the HQ."
+            ]
+          ]
+        },
+        {
+          name: "Web the Skyscrapers",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { team: 3 },
+              " Hero or puts a Bystander from their Victory Pile into the Escape pile."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

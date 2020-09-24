@@ -344,5 +344,169 @@ export default {
 
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 38,
+      name: "Charles Xavier",
+      set: 15,
+      attack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Charles Xavier",
+          attack: "8+",
+          abilities: [
+            [
+              "Charles Xavier gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Bystander in the HQ and city."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": X-Men Noir"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Four Heroes in the HQ capture ",
+              { keyword: 33 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Commit to the Asylum",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player ",
+              { keyword: 32, text: "Investigates" },
+              " their deck for a card with an Attack icon and KOs it. Players reveal all the cards they investigated."
+            ]
+          ]
+        },
+        {
+          name: "Master Manipulator",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 32 },
+              " the Hero Deck for an ",
+              { team: 4 },
+              " card and put it into your discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Corrupt Weak Minds",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player puts a random Bystander from their Victory Pile onto a Hero in the HQ as a ",
+              { keyword: 33 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "X-Con Men",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals an ",
+              { team: 4 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 39,
+      name: "The Goblin, Underworld Boss",
+      tacticName: "The Goblin",
+      set: 15,
+      attack: "10",
+      vp: 6,
+      cards: [
+        {
+          name: "The Goblin, Underworld Boss",
+          attackAsterisk: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Start of Game" },
+              ": The Goblin captures 2 ",
+              { keyword: 33 },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Goblin's Freak Show"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Two random Bystanders from each player's Victory Pile become ",
+              { keyword: 33 },
+              " held by The Goblin. Any player who didn't have two Bystanders gains a Wound instead."
+            ]
+          ]
+        },
+        {
+          name: "Sinister Dreams",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { team: 9 },
+              " or ",
+              { team: 3 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Blackmail the Judges",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": For each Goblin's Freak Show Villain in the city, The Goblin captures 2 ",
+              { keyword: 33 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Carnival of Carnage",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": For each Goblin's Freak Show Villain in the city, each other player discards a card."
+            ]
+          ]
+        },
+        {
+          name: "Blind Loyalty",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 32 },
+              " the Villain Deck for a Goblin's Freak Show Villain and put it into your Victory Pile."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

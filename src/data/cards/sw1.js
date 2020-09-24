@@ -992,5 +992,334 @@ export default {
         }
       ]
     }
+  ],
+  masterminds: [
+    {
+      id: 21,
+      name: "Madelyne Pryor, Goblin Queen",
+      tacticName: "Madelyne Pryor",
+      set: 10,
+      attack: "10",
+      vp: 6,
+      cards: [
+        {
+          name: "Madelyne Pryor, Goblin Queen",
+          attackAsterisk: true,
+          dense: true,
+          abilities: [
+            [
+              "Bystanders captured by Madelyne are “Demon Goblin“ Villains with ",
+              { bold: "2" },
+              { icon: 1 },
+              ". You can fight them to rescue them as Bystanders. You can't fight her while she has any Demon Goblins."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Limbo"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Madelyne captures 4 Bystanders. If she already had any Bystanders before that, then each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "City of Demon Goblins",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Madelyne captures five Bystanders."
+            ]
+          ]
+        },
+        {
+          name: "Corrupted Clone of Jean Grey",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals an ",
+              { team: 4 },
+              " Hero or gains a Wound.",
+            ]
+          ]
+        },
+        {
+          name: "Everyone's a Demon on the Inside",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Madelyne captures a Bystander from each other player's Victory Pile.",
+            ]
+          ]
+        },
+        {
+          name: "Gather the Harvest",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": For each Limbo Villain in the city and/or Escape Pile, Madelyne captures a Bystander."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 22,
+      name: "Nimrod, Super Sentinel",
+      tacticName: "Nimrod",
+      set: 10,
+      attack: "6",
+      vp: 6,
+      cards: [
+        {
+          name: "Nimrod, Super Sentinel",
+          attackAsterisk: true,
+          dense: true,
+          abilities: [
+            [
+              "You can't fight Nimrod unless you made at least ",
+              { bold: "6" },
+              { icon: 2 },
+              " this turn."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Sentinel Territories"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player who does not reveal a ",
+              { hc: 5 },
+              " Hero must choose ",
+              { icon: 2 },
+              " or ",
+              { icon: 1 },
+              ", then discard all their cards with that icon."
+            ]
+          ]
+        },
+        {
+          name: "Adapt and Destroy",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ":  Choose ",
+              { icon: 2 },
+              " or ",
+              { icon: 1 },
+              ". Each other player reveals their hand and discards a card with that icon."
+            ]
+          ]
+        },
+        {
+          name: "Detect Mutation",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ":  Choose ",
+              { icon: 2 },
+              " or ",
+              { icon: 1 },
+              ". Then, reveal the top card of your deck. If that card has that icon, draw it and repeat this process."
+            ]
+          ]
+        },
+        {
+          name: "Scatter the Mutants",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ":  Choose ",
+              { icon: 2 },
+              " or ",
+              { icon: 1 },
+              ". Put all Heroes from the HQ with that icon on the bottom of the Hero Deck."
+            ]
+          ]
+        },
+        {
+          name: "Teleport and Incarcerate",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ":  Choose ",
+              { icon: 2 },
+              " or ",
+              { icon: 1 },
+              ". Then, reveal the top card of that Hero Deck. If that card has that icon, gain that card, and Teleport it."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 23,
+      name: "Wasteland Hulk",
+      set: 10,
+      attack: "7",
+      vp: 6,
+      cards: [
+        {
+          name: "Wasteland Hulk",
+          attack: "7+",
+          abilities: [
+            [
+              "Wasteland Hulk gets ",
+              { bold: "+3" },
+              { icon: 1 },
+              " for each of his Mastermind Tactics among all players' Victory Piles."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Wasteland"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": ",
+              { keyword: 17, text: "Cross-Dimensional Hulk Rampage" }
+            ]
+          ]
+        },
+        {
+          name: "Brutal Beating",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player counts the number of Wounds in their discard pile, then discards that many cards."
+            ]
+          ]
+        },
+        {
+          name: "Memories of Pain",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player puts two Wounds from their discard pile on top of their deck.",
+            ]
+          ]
+        },
+        {
+          name: "Radioactive Regeneration",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO up to two Wounds from your hand and/or discard pile.",
+            ]
+          ]
+        },
+        {
+          name: "Revert to Bruce Banner",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You gain a ",
+              { hc: 5 },
+              "Hero from the HQ for free."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 24,
+      name: "Zombie Green Goblin",
+      tacticName: "Green Goblin",
+      set: 10,
+      attack: "11",
+      vp: 6,
+      cards: [
+        {
+          name: "Zombie Green Goblin",
+          attack: "11+",
+          dense: true,
+          abilities: [
+            [
+              "Zombie Green Goblin gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Hero in the KO pile that costs 7 or more."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": The Deadlands"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": ",
+              { keyword: 16 },
+              ". KO each Hero in the HQ that costs 7 or more. Then, each player discards a card for each Hero in the KO pile that costs 7 or more."
+            ]
+          ]
+        },
+        {
+          name: "Army of Cadavers",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 16 },
+              { italic: " (this effect never makes Mastermind Tactics return.)" },
+              " Then, each other player discards a card for each Villain in the city that has “",
+              { keyword: 16 },
+              ".“"
+            ]
+          ]
+        },
+        {
+          name: "The Hungry Dead",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 16 },
+              { italic: " (this effect never makes Mastermind Tactics return.)" },
+              " Then, each other player gains a Wound if there are any Villains in the city with “",
+              { keyword: 16 },
+              ".“"
+            ]
+          ]
+        },
+        {
+          name: "Love to Have You for Dinner",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 16 },
+              { italic: " (this effect never makes Mastermind Tactics return.)" },
+              " Then, reveal the top 5 cards of the Hero Deck. KO all those Heroes that cost 7 or more. Put the rest on the bottom of the Hero Deck in random order."
+            ]
+          ]
+        },
+        {
+          name: "Reign of Terror",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 16 },
+              { italic: " (this effect never makes Mastermind Tactics return.)" },
+              " Then, put all Heroes from the HQ that cost 6 or less on the bottom of the Hero Deck."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

@@ -1490,5 +1490,388 @@ export default {
 
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 31,
+      name: "Authoritarian Iron Man",
+      set: 13,
+      attack: "12",
+      vp: 6,
+      cards: [
+        {
+          name: "Authoritarian Iron Man",
+          attackAsterisk: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Superhuman Registration Act"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Authoritarian Iron Man ",
+              { keyword: 28, text: "fortifies" },
+              " the next city space to his right, starting with the Bridge. You can't fight him while there's a Villain in that space. Villains in that space get ",
+              { bold: "+3" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Armada of Armors",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+6" },
+              { icon: 2 },
+              " usable only to recruit ",
+              { hc: 3 },
+              " and/or ",
+              { hc: 5 },
+              " Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Freeze Domestic Assets",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discards all their cards with ",
+              { icon: 2 },
+              " icons."
+            ]
+          ]
+        },
+        {
+          name: "Man the Fortifications",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top card of the Villain Deck. If it's a Villain, it enters the city space that Authoritarian Iron Man is fortifying."
+            ]
+          ]
+        },
+        {
+          name: "Recall to Service",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": The Villain with the highest printed ",
+              { icon: 1 },
+              " in the Escape Pile enters the city space that Authoritarian Iron Man is fortifying."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 32,
+      name: "Baron Helmut Zemo",
+      tacticName: "Baron Zemo",
+      set: 13,
+      attack: "16",
+      vp: 6,
+      cards: [
+        {
+          name: "Baron Helmut Zemo",
+          attackAsterisk: true,
+          abilities: [
+            [
+              "Baron Zemo gets ",
+              { bold: "-1" },
+              { icon: 1 },
+              " for each Villain in your Victory Pile."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Thunderbolts"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player KOs a Villain from their Victory Pile. Any player who cannot do so gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Blasted Henchmen!",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { hc: 5 },
+              " Hero or KOs a Villain from their Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Cursed Dynasty",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": When you draw a new hand of cards at the end of this turn, draw two extra cards."
+            ]
+          ]
+        },
+        {
+          name: "Endless Minions",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { hc: 5 },
+              " Hero or chooses a Villain from their Victory Pile and it enters the city."
+            ]
+          ]
+        },
+        {
+          name: "Revenge for My Father",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand. Each player who revealed an ",
+              { team: 1 },
+              " Hero gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 33,
+      name: "Maria Hill, Director of S.H.I.E.L.D.",
+      tacticName: "Maria Hill",
+      set: 13,
+      attack: "7",
+      vp: 6,
+      cards: [
+        {
+          name: "Maria Hill, Director of S.H.I.E.L.D.",
+          attackAsterisk: true,
+          dense: true,
+          abilities: [
+            [
+              { keyword: 29, text: "Double S.H.I.E.L.D. Clearance" },
+              ". You can't fight Maria Hill while there are any S.H.I.E.L.D. Elite or Officers in the city."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": S.H.I.E.L.D. Elite"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Two S.H.I.E.L.D. Officers enter the city as 3",
+              { icon: 1 },
+              " Villains. When you fight them, gain them as Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Crash the Helicarrier",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO any number of your ",
+              { team: 2 },
+              " Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Declare Martial Law",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Put a S.H.I.E.L.D. Officer into each empty city space as 3",
+              { icon: 1 },
+              " Villains. When you fight them, gain them as Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Evacuation Code Epsilon",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discards a ",
+              { team: 2 },
+              " card."
+            ]
+          ]
+        },
+        {
+          name: "Rapid Response Team",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Two S.H.I.E.L.D. Officers enter the city as 3",
+              { icon: 1 },
+              " Villains. When you fight them, gain them as Heroes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 34,
+      name: "Misty Knight",
+      set: 13,
+      attack: "14",
+      vp: 6,
+      cards: [
+        {
+          name: "Misty Knight",
+          attackAsterisk: true,
+          abilities: [
+            { keyword: 2 },
+            [
+              { bold: "Always Leads" },
+              ": Heroes for Hire"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals 4 cards with ",
+              { icon: 2 },
+              " icons or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Bionic Repulsor Field",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { team: 6 },
+              " Hero or puts two cards from their hand on top of the deck."
+            ]
+          ]
+        },
+        {
+          name: "Cyborg Detective",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top three cards of the Villain Deck. Put them back in any order."
+            ]
+          ]
+        },
+        {
+          name: "Trusted Bodyguard",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Going clockwise, the fist other player with Colleen Wing in their Victory Pile rescues 5 Bystanders and returns Colleen Wing to play ",
+              { keyword: 28, text: "fortifying" },
+              " Misty Knight."
+            ]
+          ]
+        },
+        {
+          name: "Vibranium Cyber Arm",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { team: 6 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 35,
+      name: "Ragnarok",
+      set: 13,
+      attack: "6",
+      vp: 6,
+      cards: [
+        {
+          name: "Ragnarok",
+          attack: "6+",
+          abilities: [
+            [
+              "Ragnarok gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              " for each Hero Class among Heroes in the HQ.",
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Registration Enforcers"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player says “zero“ or “not zero.“ Then, each player discards all their cards with that cost."
+            ]
+          ]
+        },
+        {
+          name: "Electrical Charge",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Count how many ",
+              { hc: 3 },
+              " Heroes you have. Draw that many cards."
+            ]
+          ]
+        },
+        {
+          name: "God of Cyborg Thunder",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You can spend ",
+              { icon: 2 },
+              " as ",
+              { icon: 1 },
+              " this turn."
+            ]
+          ]
+        },
+        {
+          name: "Hammer Goliath",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO each Hero from the HQ that costs 7 or more."
+            ]
+          ]
+        },
+        {
+          name: "Unnatural Storm Clouds",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Put all Heroes from the HQ on the bottom of the Hero Deck in random order."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

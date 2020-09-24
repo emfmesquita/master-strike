@@ -350,5 +350,150 @@ export default {
         }
       ]
     }
+  ],
+  masterminds: [
+    {
+      id: 18,
+      name: "Supreme Intelligence of the Kree",
+      set: 7,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "Supreme Intelligence of the Kree",
+          dense: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Kree Starforce"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": The Supreme Intelligence gains a ",
+              { rule: 1, text: "Shard" },
+              ". Then each player reveals their hand and discards each with cost equal to, and cost one higher than, the number of Shards on the Supreme Intelligence."
+            ]
+          ]
+        },
+        {
+          name: "Combined Knowledge of All Kree",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": The Supreme Intelligence gains a ",
+              { rule: 1, text: "Shard" },
+              " for each Kree Villain in the city and/or the Escape Pile."
+            ]
+          ]
+        },
+        {
+          name: "Cosmic Omniscience",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": The Supreme Intelligence gains a ",
+              { rule: 1, text: "Shard" },
+              " for each Master Strike in the KO pile."
+            ]
+          ]
+        },
+        {
+          name: "Countermeasure Protocols",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": The Supreme Intelligence gains a ",
+              { rule: 1, text: "Shard" },
+              " for each Mastermind Tactic (including this one) in any player's Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Guide Kree Evolution",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": The Supreme Intelligence and Kree Villains in the city each gain a ",
+              { rule: 1, text: "Shard" },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 19,
+      name: "Thanos",
+      set: 7,
+      attack: "24",
+      vp: 7,
+      cards: [
+        {
+          name: "Thanos",
+          dense: true,
+          attackAsterisk: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Infinity Gems"
+            ],
+            [
+              "Thanos gets ",
+              { bold: "-2" },
+              { icon: 1 },
+              " for each Infinity Gem Artifact card controlled by any player."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals their hand and puts one of their non-grey Heroes next to Thanos in a “Bound Souls“ pile."
+            ]
+          ]
+        },
+        {
+          name: "Centuries of Envy",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player discards an Infinity Gem Artifact card they control."
+            ]
+          ]
+        },
+        {
+          name: "God of Death",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and gains a Wound for each card that player has with the same card name as any card in Thanos' Bound Souls pile."
+            ]
+          ]
+        },
+        {
+          name: "Keeper of Souls",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Gain a Hero from Thanos' Bound Souls pile. Then each other player puts a non-grey Hero from their discard pile into Thanos' Bound Souls pile."
+            ]
+          ]
+        },
+        {
+          name: "The Mad Titan",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discards all cards with the same card name as any card in Thanos' Bound Souls pile."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

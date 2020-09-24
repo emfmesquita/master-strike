@@ -1,5 +1,6 @@
 import App from "./App.vue";
 import BulletPointDescription from "./components/shared/BulletPointDescription.vue";
+import CardGroup from "./components/shared/CardGroup.vue";
 import DescriptionComponent from "./components/shared/DescriptionComponent.vue";
 import DescriptionGroup from "./components/shared/DescriptionGroup.vue";
 import Footer from './components/Footer.vue';
@@ -21,6 +22,7 @@ Vue.component('shared-rule', Rule);
 Vue.component('shared-header', Header);
 Vue.component('shared-footer', Footer);
 Vue.component('shared-side-bar', SideBar);
+Vue.component('shared-card-group', CardGroup);
 
 new Vue({
   router,
