@@ -1591,5 +1591,690 @@ export default {
         }
       ]
     }
+  ],
+  masterminds: [
+    {
+      id: 50,
+      name: "General Ross",
+      tacticName: "Ross/Red Hulk",
+      set: 19,
+      attack: "6",
+      vp: 6,
+      cards: [
+        {
+          name: "General “Thunderbolt” Ross",
+          attackAsterisk: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Start of Game" },
+              ": Stack 8 Bystanders next to General Ross as “Helicopter“ Villains with ",
+              { bold: "2" },
+              { icon: 1 },
+              ". You can fight them to rescue them as Bystanders. You can't fight General Ross while he has any Helicopters."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Code Red"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": General Ross ",
+              { keyword: 45, text: "Transforms" },
+              ", then ",
+              { keyword: 17, text: "Cross-Dimensional Hulk Rampage" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Red Hulk",
+          attack: "9+",
+          transformed: true,
+          dense: true,
+          abilities: [
+            { keyword: 48 },
+            [
+              "You can't fight Helicopters, and they don't stop you from fighting Red Hulk."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Red Hulk ",
+              { keyword: 45, text: "Transforms" },
+              ", then stack a random Bystander from each player's Victory Pile next to this as a Helicopter. Each player who didn't have a Bystander gains a Wound instead."
+            ]
+          ]
+        },
+        {
+          name: "Bust You Down to Private",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player puts a non-grey Hero from their hand on the bottom of the Hero Deck, then puts a 0-cost Hero from the KO pile into their hand."
+            ],
+            [
+              "This Mastermind ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Call Out the Army",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Put 3 Bystanders from the Bystander Stack next to this Mastermind as “Helicopters.“"
+            ],
+            [
+              "This Mastermind ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Personal Arsenal",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": For each Master Strike in the KO pile, put a Bystander from the Bystander Stack next to the Mastermind as a “Helicopter.“"
+            ],
+            [
+              "This Mastermind ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Urban Warfare",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Put a random Bystander next to the Mastermind as a “Helicopter“ from each of these places: The Bystander Stack, the Escape Pile, each city space, and each other player's Victory Pile."
+            ],
+            [
+              "This Mastermind ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 51,
+      name: "Illuminati, Secret Society",
+      tacticName: "Illuminati",
+      set: 19,
+      attack: "11",
+      vp: 7,
+      cards: [
+        {
+          name: "Illuminati, Secret Society",
+          attack: "11+",
+          abilities: [
+            [
+              "This Mastermind gets ",
+              { bold: "+4" },
+              { icon: 1 },
+              " unless you ",
+              { keyword: 46 },
+              " them."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Illuminati"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals their hand and discards two cards that each cost between 1 and 4. The Illuminati ",
+              { keyword: 45 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Illuminati, Open Warfare",
+          attack: "13",
+          transformed: true,
+          abilities: [
+            [
+              "Whenever a card effect causes a player to draw any number of cards, that player must then also discard a card."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals their hand and discards two cards that each cost between 5 and 8. The Illuminati ",
+              { keyword: 45 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Black Bolt's Omni-Shout",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discards two cards with no rules text."
+            ],
+            [
+              "The Illuminati ",
+              { keyword: 45 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Dr. Strange's Orb of Agamotto",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discards a ",
+              { hc: 3 },
+              " or ",
+              { hc: 2 },
+              " Hero."
+            ],
+            [
+              "The Illuminati ",
+              { keyword: 45 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Hulkbuster's Hammer Fist",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and KOs a ",
+              { hc: 5 },
+              " or ",
+              { hc: 4 },
+              " Hero from their hand or discard pile."
+            ],
+            [
+              "The Illuminati ",
+              { keyword: 45 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Zom's Manacles of Living Bondage",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { hc: 1 },
+              " Hero or gains a Wound."
+            ],
+            [
+              "The Illuminati ",
+              { keyword: 45 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 52,
+      name: "King Hulk, Sakaarson",
+      tacticName: "King Hulk",
+      set: 19,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "King Hulk, Sakaarson",
+          attack: "9+",
+          abilities: [
+            [
+              "King Hulk gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Warbound Villain in the city and in the Escape Pile."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Warbound"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player KO's a Warbound Villain from their Victory Pile or gains a Wound. King Hulk ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "King Hulk, Worldbreaker",
+          attack: "10+",
+          transformed: true,
+          abilities: [
+            { keyword: 48 },
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals their hand, then KO's a card from their hand or discard pile that has the same card name as a card in the HQ. King Hulk ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Fury of the Green Scar",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discards a Hero that isn't grey and isn't ",
+              { hc: 4 },
+              "."
+            ],
+            [
+              "King Hulk ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Oath of the Warbound",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": The Villain in the Escape Pile with the highest printed ",
+              { icon: 1 },
+              " enters the Sewers."
+            ],
+            [
+              "King Hulk ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Revenge from the Stars",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": After you put this in your Victory Pile, ",
+              { keyword: 17, text: "Cross-Dimensional Hulk Rampage" },
+              "."
+            ],
+            [
+              "King Hulk ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Rule By the Strongest",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              " for each of your ",
+              { hc: 4 },
+              " Heroes."
+            ],
+            [
+              "King Hulk ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 53,
+      name: "M.O.D.O.K.",
+      set: 19,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "M.O.D.O.K.",
+          abilities: [
+            [
+              "All cards' ",
+              { keyword: 46 },
+              " abilities require four different costs instead of three."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Intelligencia"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player who can't ",
+              { keyword: 46 },
+              " M.O.D.O.K. gains a Wound, then M.O.D.O.K. ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "M.O.D.O.K., Network Nightmare",
+          attack: "8",
+          attackAsterisk: true,
+          transformed: true,
+          abilities: [
+            [
+              "You can only fight M.O.D.O.K. with ",
+              { icon: 2 },
+              ", not ",
+              { icon: 1 },
+              "."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player who can't ",
+              { keyword: 46 },
+              " M.O.D.O.K. KO's a non-grey Hero from their discard pile. M.O.D.O.K. ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Brain Scramble",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player discards their hand, then draws as many cards as they discarded."
+            ],
+            [
+              "M.O.D.O.K. ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Designed Only For...K.O.ING",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top three cards of your deck. KO one of them, draw one, and discard one."
+            ],
+            [
+              "M.O.D.O.K. ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Don't Get a Big head About It",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Draw a card for each Intelligencia Villain in your Victory Pile."
+            ],
+            [
+              "M.O.D.O.K. ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Redundancy Algorithim",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discards two cards that hand the same cost."
+            ],
+            [
+              "M.O.D.O.K. ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 54,
+      name: "Red King, The",
+      tacticName: "Red King",
+      set: 19,
+      attack: "7",
+      vp: 6,
+      cards: [
+        {
+          name: "The Red King",
+          attackAsterisk: true,
+          abilities: [
+            [
+              "You can't fight the Red King while any Villains are in the city."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Sakaar Imperial Guard"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": The Red King ",
+              { keyword: 45, text: "Transforms" },
+              ", then each player reveals a ",
+              { hc: 5 },
+              " card or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "The Red King, Power Armored",
+          attack: "10",
+          transformed: true,
+          abilities: [
+            [
+              { bold: "Master Strike" },
+              ": The Red King ",
+              { keyword: 45, text: "Transforms" },
+              ", then play another card from the Villain Deck."
+            ]
+          ]
+        },
+        {
+          name: "Haughty Spite",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player without a Red King Tactic in their Victory Pile gains a Wound."
+            ],
+            [
+              "The Red King ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Royal Bodyguard",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal cards from the Villain Deck until you reveal a Sakaar Imperial Guard. If you find one, play it. Either way, shuffle all the other revealed cards back into the Villain Deck."
+            ],
+            [
+              "The Red King ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Treasury of Sakaar",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              " for each Sakaar Imperial Guard and Red King Tactic in your Victory Pile, including this one."
+            ],
+            [
+              "The Red King ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Vast Armies of Sakaar",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this is not the final Tactic, reveal the top three cards of the Villain Deck. Play all the Villains you revealed. Put the rest back in random order."
+            ],
+            [
+              "The Red King ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 55,
+      name: "Sentry, The",
+      tacticName: "Sentry/Void",
+      set: 19,
+      attack: "10",
+      vp: 6,
+      cards: [
+        {
+          name: "The Sentry",
+          abilities: [
+            [
+              { bold: "Start of Game" },
+              ": Shuffle 2 Wounds into each player's deck before drawing starting hands."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Aspects of the Void"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": The Sentry ",
+              { keyword: 45, text: "Transforms" },
+              ", then ",
+              { keyword: 17, text: "Cross-Dimensional Void Rampage" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "The Void",
+          attack: "11+",
+          transformed: true,
+          abilities: [
+            { keyword: 48 },
+            [
+              { bold: "Master Strike" },
+              ": ",
+              { keyword: 8 },
+              " on each player. If this feasts on a player's grey Hero, that player gains a Wound. The Void ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Pacifying Light",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discard two cards with ",
+              { icon: 2 },
+              " icons."
+            ],
+            [
+              "This Mastermind ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Power of a Million Exploding Suns",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Put all Heroes from the HQ on the bottom of the Hero Deck. Each other player reveals their hand and discards each card with the same card name as any of those cards."
+            ],
+            [
+              "This Mastermind ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Reflexive Teleportation",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Choose one of your Heroes that costs 5 or less. When you draw a new hand of cards at the end of this turn, add that Hero to your hand as an extra card."
+            ],
+            [
+              "This Mastermind ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Repressed Darkness",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { hc: 3 },
+              " Hero or plays an Aspects of the Void Villain from their Victory Pile as if playing it from the Villain Deck."
+            ],
+            [
+              "This Mastermind ",
+              { keyword: 45, text: "Transforms" },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 };

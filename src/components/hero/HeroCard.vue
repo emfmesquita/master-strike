@@ -58,7 +58,7 @@
         <template v-if="!card.costAsterisk">
           {{ card.cost }}
         </template>
-        <shared-rule v-else class="card-cost-asterisk" :noUnderline=true :rule="{ rule: 10 }">
+        <shared-rule v-else class="card-cost-asterisk" :rule="{ rule: 10, keywordStyle: true }">
           {{ card.cost }}*
         </shared-rule>
       </span>

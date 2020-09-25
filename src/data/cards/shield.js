@@ -366,5 +366,250 @@ export default {
 
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 65,
+      name: "Hydra High Council",
+      set: 25,
+      vp: 6,
+      cards: [
+        {
+          name: "Red Skull",
+          tactic: true,
+          attack: "7+",
+          dense: true,
+          abilities: [
+            [
+              "Red Skull gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each two ",
+              { keyword: 62, text: "Hydra Levels" },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Hydra Elite"
+            ],
+            [
+              { bold: "Start Game" },
+              ": ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player KOs one of their non-grey Heroes. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Fight" },
+              ": KO one of your grey Heroes. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Viper",
+          tactic: true,
+          attack: "9+",
+          dense: true,
+          abilities: [
+            [
+              "Viper gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Hydra Villain in the city."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": If there are any Hydra Villains in the city, each player gains a Wound. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Fight" },
+              ": Discard any number of cards, then draw that many cards. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Arnim Zola",
+          tactic: true,
+          attack: "6+",
+          dense: true,
+          abilities: [
+            [
+              "Arnim Zola gets ",
+              { bold: "+" },
+              { icon: 1 },
+              " equal to the total printed ",
+              { icon: 1 },
+              " of all heroes in the HQ."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player discards two Heroes with ",
+              { icon: 1 },
+              " icons. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Fight" },
+              ": You may gain a Hero from the HQ with an ",
+              { icon: 1 },
+              " icon. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Baron Helmut Zemo",
+          tactic: true,
+          attack: "16",
+          attackAsterisk: true,
+          dense: true,
+          abilities: [
+            [
+              "Baron Helmut Zemo gets ",
+              { bold: "-1" },
+              { icon: 1 },
+              " for each Villain in your Victory Pile."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player KOs a Hydra Villain from their Victory Pile or gains a Wound. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Fight" },
+              ": Each other player KOs a Hydra Villain from their Victory Pile or gains a Wound. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 66,
+      name: "Hydra Super-Adaptoid",
+      set: 25,
+      vp: 6,
+      cards: [
+        {
+          name: "Black Widow's Bite",
+          tactic: true,
+          attack: "8",
+          dense: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": A.I.M. Hydra Offshoot"
+            ],
+            [
+              { bold: "Start Game" },
+              ": ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player KOs two Bystanders from their Victory Pile or gains a Wound. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Fight" },
+              ": For each of your ",
+              { hc: 1 },
+              " Heroes, rescue a Bystander. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Captain America's Shield",
+          tactic: true,
+          attack: "10",
+          abilities: [
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals an ",
+              { hc: 2 },
+              " Hero or discards their hand and draws four cards. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              " for each color of Hero you have ",
+              { italic: "(including grey)" },
+              ". ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Iron Man's Armor",
+          tactic: true,
+          attack: "12",
+          abilities: [
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals a ",
+              { hc: 5 },
+              " Hero or discards down to 3 cards. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Fight" },
+              ": Count you ",
+              { hc: 5 },
+              " Heroes, then draw that many cards. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Thor's Hammer",
+          tactic: true,
+          attack: "14",
+          abilities: [
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals a ",
+              { hc: 3 },
+              " Hero or gains a Wound. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Fight" },
+              ": For each of your ",
+              { hc: 4 },
+              " Heroes, KO one of your Heroes. ",
+              { rule: 8, text: "Adapt", keywordStyle: true },
+              "."
+            ]
+          ]
+        },
+      ]
+    },
   ]
 }

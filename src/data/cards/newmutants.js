@@ -380,5 +380,221 @@ export default {
 
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 69,
+      name: "Belasco, Demon Lord of Limbo",
+      tacticName: "Belasco",
+      set: 27,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "Belasco, Demon Lord of Limbo",
+          attack: "9+",
+          dense: true,
+          abilities: [
+            [
+              "Belasco gets ",
+              { bold: "+" },
+              { icon: 1 },
+              " equal to the number of non-grey Heroes in the KO pile, divided by the number of players ",
+              { italic: "(round down)" },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Demons of Limbo"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": ",
+              { keyword: 64, text: "Sunlight" },
+              ": Each player KOs a non-grey Hero from their discard pile. ",
+              { keyword: 64, text: "Moonlight" },
+              ": Each player has a ",
+              { keyword: 65 },
+              ". KO Heroes discarded this way."
+            ]
+          ]
+        },
+        {
+          name: "Epic Belasco",
+          attack: "10+",
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              "Belasco gets ",
+              { bold: "+" },
+              { icon: 1 },
+              " equal to the number of non-grey Heroes in the KO pile, divided by the number of players ",
+              { italic: "(round down)" },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Demons of Limbo"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": ",
+              { keyword: 64, text: "Sunlight" },
+              ": Each player KOs a non-grey Hero from their discard pile. ",
+              { keyword: 64, text: "Moonlight" },
+              ": Each player has two ",
+              { keyword: 65 },
+              ". KO Heroes discarded this way."
+            ]
+          ]
+        },
+        {
+          name: "A Demon's Mercy",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player KOs a non-grey Hero from their hand or discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Bargain for Souls",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal cards from the Hero Deck equal to the number of players. Gain one of them and KO the rest."
+            ]
+          ]
+        },
+        {
+          name: "Rescue from Limbo",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You may KO one of your non-grey Heroes or a non-grey Hero from your discard pile. If you do, gain a Hero from the KO pile."
+            ]
+          ]
+        },
+        {
+          name: "Cleaving Demonblade",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each player chooses a different card in the HQ. Then KO all chosen cards."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 70,
+      name: "Emma Frost, The White Queen",
+      tacticName: "Emma Frost",
+      set: 27,
+      attack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Emma Frost, The White Queen",
+          attack: "8+",
+          abilities: [
+            [
+              "During your turn, Emma Frost gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each grey Hero you have."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Hellions"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Stack this Strike next to Emma Frost. Then each player has a ",
+              { keyword: 65 },
+              " for each Strike stacked here."
+            ]
+          ]
+        },
+        {
+          name: "Epic Emma Frost",
+          attack: "9+",
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              "During your turn, Emma Frost gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              " for each grey Hero you have."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Hellions"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Stack this Strike next to Emma Frost. Then each player has a ",
+              { keyword: 65 },
+              " for each Strike stacked here, then one more ",
+              { keyword: 65 },
+              ".",
+            ]
+          ]
+        },
+        {
+          name: "Tempting Bargain",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You may play the top card of the Villain Deck. If you do, you get ",
+              { bold: "+5" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Psychic X-Men Link",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player has a ",
+              { keyword: 65 },
+              ". Each of those players who did not discard an ",
+              { team: 4 },
+              " Hero this way gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Assume Diamond Form",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Emma Frost cannot be fought again until the start of your next turn."
+            ]
+          ]
+        },
+        {
+          name: "Contempt for Weakness",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Put a 0-cost Hero from the KO pile on top of each other player's deck."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

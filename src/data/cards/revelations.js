@@ -866,5 +866,368 @@ export default {
         }
       ]
     }
+  ],
+  masterminds: [
+    {
+      id: 62,
+      name: "Grim Reaper",
+      set: 24,
+      attack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Grim Reaper",
+          attack: "8+",
+          abilities: [
+            [
+              "Grim Reaper gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each ",
+              { rule: 6, text: "Location" },
+              " card in the city."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Lethal Legion"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": This Strike enters the city as a ",
+              { bold: "7" },
+              { icon: 1 },
+              " “Graveyard“ ",
+              { rule: 6, text: "Location" },
+              " that says “This gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              " while there's a Villain here.“ It's Worth 5VP."
+            ]
+          ]
+        },
+        {
+          name: "Epic Grim Reaper",
+          attack: "9+",
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              "Grim Reaper gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              " for each ",
+              { rule: 6, text: "Location" },
+              " card in the city."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Lethal Legion"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": This Strike enters the city as a ",
+              { bold: "8" },
+              { icon: 1 },
+              " “Graveyard“ ",
+              { rule: 6, text: "Location" },
+              " that says “This gets ",
+              { bold: "+3" },
+              { icon: 1 },
+              " while there's a Villain here.“ It's worth 6VP. Then, if there are at least three Location cards in the city, each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Carnival of Concussions",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this was not already a ",
+              { rule: 6, text: "Location", keywordStyle: true },
+              ", draw three cards, and this card enters the city as a Location with this ability:"
+            ],
+            { divider: true },
+            [
+              "Whenever you fight a Villain here, each other player KOs a Bystander from their Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Cult of Skulls",
+          tactic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this was not already a ",
+              { rule: 6, text: "Location", keywordStyle: true },
+              ", KO up to two cards from your discard pile, and this card enters the city as a Location with this ability:"
+            ],
+            { divider: true },
+            [
+              "Whenever you fight a Villain here, each other player reveals their hand and discards a non-grey card."
+            ]
+          ]
+        },
+        {
+          name: "Maze of Bones",
+          tactic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this was not already a ",
+              { rule: 6, text: "Location", keywordStyle: true },
+              ", look at the top four cards of your deck, KO any number of them, and put the rest back in any order. Then this card enters the city as a Location with this ability:"
+            ],
+            { divider: true },
+            [
+              "Whenever you fight a Villain here, each other player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "That Menace Spider-Man!",
+          tactic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this was not already a ",
+              { rule: 6, text: "Location", keywordStyle: true },
+              ", you get ",
+              { bold: "+5" },
+              { icon: 2 },
+              ", and this card enters the city as a Location with this ability:",
+            ],
+            { divider: true },
+            [
+              "Whenever you fight a Villain here, each other player puts a Villain from their Victory Pile into the Escape Pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 63,
+      name: "Hood, The",
+      tacticName: "The Hood",
+      set: 24,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "The Hood",
+          attack: "9+",
+          abilities: [
+            { keyword: 58 },
+            [
+              { bold: "Always Leads" },
+              ": Hood's Gang"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals the top 6 cards of their deck, discards all the non-grey Heroes revealed, and puts the rest back in any order."
+            ]
+          ]
+        },
+        {
+          name: "Epic Hood",
+          attack: "10+",
+          epic: true,
+          abilities: [
+            { keyword: 58, text: "Double Dark Memories" },
+            [
+              { bold: "Always Leads" },
+              ": Hood's Gang"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player discards their deck, then shuffles 6 random grey cards from their discard pile to form their new deck."
+            ]
+          ]
+        },
+        {
+          name: "Demonic Revelation",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discards a non-grey Hero."
+            ]
+          ]
+        },
+        {
+          name: "Focus Magic Through Guns",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { hc: 1 },
+              " Hero or discards a card."
+            ],
+            [
+              "Then each other player reveals a ",
+              { hc: 5 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Paean to Dormammu",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player discards their deck."
+            ]
+          ]
+        },
+        {
+          name: "The Hood's Warehouse",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this was not already a ",
+              { rule: 6, text: "Location", keywordStyle: true },
+              ", rescue 4 Bystanders, and this card enters the city as a Location with this ability:"
+            ],
+            { divider: true },
+            [
+              "When you fight a Villain here, play another card from the Villain Deck."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 64,
+      name: "Mandarin",
+      set: 24,
+      attack: "16",
+      vp: 6,
+      cards: [
+        {
+          name: "Mandarin",
+          attackAsterisk: true,
+          dense: true,
+          abilities: [
+            [
+              "All Mandarin's Rings get ",
+              { bold: "+1" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              "Mandarin gets ",
+              { bold: "-1" },
+              { icon: 1 },
+              " for each Mandarin's Ring among all players' Victory Piles. ",
+              { italic: "(" },
+              { bold: "-3" },
+              { icon: 1 },
+              { italic: " for each in solo.)" },
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Mandarin's Rings"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player chooses a Mandarin's Ring from their Victory Pile to enter the city. Any player who didn't have a Ring gains a Wound instead."
+            ]
+          ]
+        },
+        {
+          name: "Epic Mandarin",
+          attack: "26",
+          attackAsterisk: true,
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              "All Mandarin's Rings get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              "Mandarin gets ",
+              { bold: "-2" },
+              { icon: 1 },
+              " for each Mandarin's Ring among all players' Victory Piles. ",
+              { italic: "(" },
+              { bold: "-6" },
+              { icon: 1 },
+              { italic: " for each in solo.)" },
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Mandarin's Rings"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player chooses a Mandarin's Ring from their Victory Pile to enter the city. Any player who didn't have a Ring gains a Wound to the top of their deck instead."
+            ]
+          ]
+        },
+        {
+          name: "Circles Unbroken",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Draw a card for each Mandarin's Ring in your Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Dragon of Heaven Spaceship",
+          tactic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this was not already a ",
+              { rule: 6, text: "Location", keywordStyle: true },
+              ", KO up to two of your Heroes, and this card enters the city as a Location with this ability:"
+            ],
+            { divider: true },
+            [
+              "Whenever you fight a Villain here, each other player reveals their hand and KOs one of their non-grey Heroes."
+            ],
+            [
+              { bold: "Fight" },
+              ": KO up to two of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Intertwining Powers",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player without at least two Mandarin's Rings in their Victory Pile gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Rings Seek Their True Hand",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals a ",
+              { hc: 5 },
+              " Hero or puts a Mandarin's Ring from their Victory Pile into the Escape Pile."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 };

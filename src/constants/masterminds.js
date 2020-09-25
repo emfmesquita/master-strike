@@ -15,13 +15,13 @@
 // X       040 - 045 done
 // SMH     046 - 047 done
 // Champ   048 - 049 done
-// WWH     050 - 055
+// WWH     050 - 055 done
 // MS1     056 - 056 done
-// AM      057 - 058
-// Venom   059 - 060
-// Dim     061 - 061
-// Rev     062 - 064
-// Shield  065 - 066
-// HoA     067 - 068
-// NM      069 - 070
+// AM      057 - 058 done
+// Venom   059 - 060 done
+// Dim     061 - 061 done
+// Rev     062 - 064 done
+// Shield  065 - 066 done
+// HoA     067 - 068 done
+// NM      069 - 070 done
 // ItC     071 - 073

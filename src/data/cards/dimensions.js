@@ -215,5 +215,118 @@ export default {
         }
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 61,
+      name: "J. Jonah Jameson",
+      set: 23,
+      attack: "4",
+      vp: 5,
+      cards: [
+        {
+          name: "J. Jonah Jameson",
+          dense: true,
+          attackAsterisk: true,
+          abilities: [
+            [
+              { bold: "Start of Game" },
+              ": Put 2 S.H.I.E.L.D. Officers per player into a face down “Angry Mobs“ stack."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": You can spend ",
+              { bold: "4" },
+              { icon: 1 },
+              " to reveal a random Angry Mob and put it into any player's discard pile. You can't fight J. Jonah Jameson while he has Angry Mobs."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Spider-Slayers"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player ",
+              { keyword: 32, text: "Investigates" },
+              " their deck for a card and puts it into the Angry Mobs stack."
+            ]
+          ]
+        },
+        {
+          name: "Epic J. Jonah Jameson",
+          attack: "5",
+          attackAsterisk: true,
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Start of Game" },
+              ": Put 3 S.H.I.E.L.D. Officers per player into a face down “Angry Mobs“ stack."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": You can spend ",
+              { bold: "5" },
+              { icon: 1 },
+              " to reveal a random Angry Mob and put it into any player's discard pile. You can't fight J. Jonah Jameson while he has Angry Mobs."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Spider-Slayers"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player ",
+              { keyword: 32, text: "Investigates" },
+              " their deck for a card and puts it into the Angry Mobs stack. If that card cost 0, that player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Incite Violent Riots",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each player puts a Wound from the Wound Stack into the Angry Mobs stack."
+            ]
+          ]
+        },
+        {
+          name: "Promote Spider-Slayer Security",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player puts a Spider-Slayer from their Victory Pile into the Angry Mobs stack. When a Spider-Slayer is revealed from the Angry Mobs, it enters the city."
+            ]
+          ]
+        },
+        {
+          name: "Slanderous Editorial",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player ",
+              { keyword: 32, text: "Investigates" },
+              " their deck for a non-grey Hero and puts it into the Angry Mobs stack. Players reveal all the cards they investigated."
+            ]
+          ]
+        },
+        {
+          name: "That Menace Spider-Man!",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discard a ",
+              { team: 3 },
+              " Hero. Any player who cannot must instead put a non-grey card from their hand into the Angry Mobs stack."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

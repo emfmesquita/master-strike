@@ -9,10 +9,10 @@
       </div>
     </div>
 
-    <template v-if="mastermind.vp">
+    <template v-if="vp">
       <AbilityIcon class="card-vp-icon absolute-icon" noAdjust :icon="4" width="42px"/>
       <span class="card-vp icon-text text-center font-weight-black">
-        {{ mastermind.vp }}
+        {{ vp }}
       </span>
     </template>
 
@@ -22,7 +22,7 @@
         <template v-if="!card.attackAsterisk">
           {{ attack }}
         </template>
-        <shared-rule v-else class="card-attack-asterisk" :noUnderline=true :rule="{ rule: 10 }">
+        <shared-rule v-else class="card-attack-asterisk" :rule="{ rule: 10, keywordStyle: true }">
           {{ attack }}*
         </shared-rule>
       </span>
@@ -54,17 +54,21 @@ export default {
       const name = this.mastermind.tacticName || this.mastermind.name;
       if(this.card.tactic) return `${this.type} Tactic - ${name}`;
       if(this.card.epic) return `Epic ${this.type}`;
+      if(this.card.transformed) return `${this.type}, Transformed`;
       return this.type;
     },
     subTitleClasses() {
       return {
         'text-center card-sub-title': true,
-        'card-red-sub-title': !!this.card.epic
+        'card-red-sub-title': !!this.card.epic || !!this.card.transformed
       };
     },
     attack() {
       if(this.card.attack) return this.card.attack;
       return this.mastermind.attack;
+    },
+    vp() {
+      return this.card.vp !== undefined ? this.card.vp : this.mastermind.vp;
     },
     classes() {
       return {
@@ -152,7 +156,7 @@ export default {
 
   .card-header {
     line-height: 24px;
-    padding: 0px 24px;
+    padding: 0px 6px;
     &.small {
       font-size: 14px;
     }
@@ -163,7 +167,7 @@ export default {
 
   .card-sub-title {
     font-size: 12px;
-    padding: 0px 24px;
+    padding: 0px 6px;
     &.card-red-sub-title {
       color: #d00;
     }

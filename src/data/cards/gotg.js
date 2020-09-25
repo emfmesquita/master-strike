@@ -355,6 +355,7 @@ export default {
     {
       id: 18,
       name: "Supreme Intelligence of the Kree",
+      tacticName: "Supreme Intelligence",
       set: 7,
       attack: "9",
       vp: 6,

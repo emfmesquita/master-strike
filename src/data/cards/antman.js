@@ -405,5 +405,185 @@ export default {
         }
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 57,
+      name: "Morgan Le Fay",
+      set: 21,
+      attack: "7",
+      vp: 6,
+      cards: [
+        {
+          name: "Morgan Le Fay",
+          attackAsterisk: true,
+          abilities: [
+            { keyword: 52 },
+            [
+              { bold: "Always Leads" },
+              ": Queen's Vengeance"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player in turn reveals a ",
+              { hc: 1 },
+              " Hero or gains a 0-cost Hero or Wound from the KO pile."
+            ]
+          ]
+        },
+        {
+          name: "Epic Morgan Le Fay",
+          attack: "9",
+          attackAsterisk: true,
+          epic: true,
+          abilities: [
+            { keyword: 52 },
+            [
+              { bold: "Always Leads" },
+              ": Queen's Vengeance"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player in turn gains a Wound, then gains a 0-cost Hero from the KO pile."
+            ]
+          ]
+        },
+        {
+          name: "Reverse the Flow of Time",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": For the rest of the game, players take turns in the opposite order around the table."
+            ]
+          ]
+        },
+        {
+          name: "Sorcerous Blasts",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player discards a ",
+              { hc: 1 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Stolen Tomes of Merlin",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+4" },
+              { icon: 2 },
+              " usable only for recruiting ",
+              { hc: 1 },
+              " and/or ",
+              { hc: 3 },
+              " Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Transmogrify",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player in turn KOs a non-grey Hero from their discard pile, then gains a card from the KO pile that has a lower cost."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 58,
+      name: "Ultron",
+      set: 21,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "Ultron",
+          attack: "9+",
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Ultron's Legacy"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals a ",
+              { hc: 5 },
+              " Hero or puts a non-grey Hero from their discard pile into a “Threat Analysis pile“ next to Ultron. Ultron is ",
+              { keyword: 51 },
+              " by each color in his Threat Analysis pile."
+            ]
+          ]
+        },
+        {
+          name: "Epic Ultron",
+          attack: "10+",
+          epic: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Ultron's Legacy"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player puts a non-grey Hero from their hand into a “Threat Analysis pile“ next to Ultron. Ultron is ",
+              { keyword: 51, text: "Triple Empowered" },
+              " by each color in his Threat Analysis pile."
+            ]
+          ]
+        },
+        {
+          name: "Arrogant Blindspot",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You may gain a Hero from Ultron's Threat Analysis pile."
+            ]
+          ]
+        },
+        {
+          name: "Paralyzing Encephalo-Ray",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and discards each card that has the same card name as any card in Ultron's Threat Analysis pile."
+            ]
+          ]
+        },
+        {
+          name: "Predictive Analysis",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Put the top three cards of the Hero Deck into Ultron's Threat Analysis pile."
+            ]
+          ]
+        },
+        {
+          name: "Self-Repairing Legions",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player in turn reveals a ",
+              { hc: 5 },
+              " Hero or puts an Ultron's Legacy Villain from the Victory Pile into an empty city space."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

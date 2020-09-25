@@ -29,7 +29,7 @@ const TRAPS= {
 }
 const LOCATIONS = {
     id: 6,
-    value: "Locations",
+    value: "locations",
     label: "Locations"
 }
 const TRANSFORMING_SCHEMES = {
@@ -80,10 +80,10 @@ export const rulesArray = Object.freeze([
     MULTIPLE_MASTERMINDS,       // 3
     DIVIDED,                    // 4  done
     TRAPS,                      // 5
-    LOCATIONS,                  // 6
+    LOCATIONS,                  // 6  done
     TRANSFORMING_SCHEMES,       // 7
-    ADAPTING_MASTERMINDS,       // 8
-    VILLAINOUS_WEAPONS,         // 9
+    ADAPTING_MASTERMINDS,       // 8  done
+    VILLAINOUS_WEAPONS,         // 9  done
     ASTERISK,                   // 10 done
     SIDEKICKS                   // 11 done
 ]);

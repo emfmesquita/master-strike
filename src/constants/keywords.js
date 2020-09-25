@@ -510,9 +510,9 @@ export const keywordsArray = Object.freeze([
     WOUNDED_FURY,               // 48 done
     CONQUEROR,                  // 49 done
     MICROSCOPIC_SIZE_CHANGING,  // 50 done
-    EMPOWERED,                  // 51
-    CHIVALROUS_DUEL,            // 52
-    SYMBIOTE_BONDS,             // 53
+    EMPOWERED,                  // 51 done
+    CHIVALROUS_DUEL,            // 52 done
+    SYMBIOTE_BONDS,             // 53 done
     DIGEST,                     // 54 done
     INDIGESTION,                // 55 done
     SWITCHEROO,                 // 56 done
@@ -521,7 +521,7 @@ export const keywordsArray = Object.freeze([
     LAST_STAND,                 // 59 done
     UNDERCOVER,                 // 60 done
     SHIELD_LEVEL,               // 61 done
-    HYDRA_LEVEL,                // 62
+    HYDRA_LEVEL,                // 62 done
     WORTHY,                     // 63 done
     MOONLIGHT_SUNLIGHT,         // 64 done
     WAKING_NIGHTMARE,           // 65 done

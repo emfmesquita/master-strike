@@ -368,5 +368,265 @@ export default {
 
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 67,
+      name: "Hela, Goddess of Death",
+      tacticName: "Hela",
+      set: 26,
+      attack: "10",
+      vp: 6,
+      cards: [
+        {
+          name: "Hela, Goddess of Death",
+          attack: "10+",
+          dense: true,
+          abilities: [
+            { keyword: 49, text: "Bridge Conqueror 5, Streets Conqueror 5" },
+            [
+              { bold: "Always Leads" },
+              ": Omens of Ragnarok"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": This Strike enters the city as a ",
+              { bold: "5" },
+              { icon: 1 },
+              " “Army of the Dead“ Villain worth 3VP. Then choose a Villain worth 3VP or more from your Victory Pile ",
+              { italic: "(including an Army of the Dead)" },
+              " to enter the city. If you didn't have any, each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Epic Hela, Goddess of Death",
+          attack: "12+",
+          epic: true,
+          dense: true,
+          abilities: [
+            { keyword: 49, text: "Bridge Conqueror 6, Streets Conqueror 6, Rooftops Conqueror 6" },
+            [
+              { bold: "Always Leads" },
+              ": Omens of Ragnarok"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": This Strike enters the city as a ",
+              { bold: "6" },
+              { icon: 1 },
+              " “Army of the Dead“ Villain worth 4VP. Then choose a Villain worth 4VP or more from your Victory Pile ",
+              { italic: "(including an Army of the Dead)" },
+              " to enter the city. If you didn't have any, each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Hela's Cloak",
+          tactic: true,
+          attack: "+2",
+          vp: false,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue 4 Bystanders. Hela captures this card as a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              "."
+            ],
+            { divider: true },
+            [
+              { keyword: 13 },
+              " - Once during each player's turn, if you would gain a Wound, you may draw a card instead."
+            ]
+          ]
+        },
+        {
+          name: "The Nightsword",
+          tactic: true,
+          attack: "+3",
+          vp: false,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue 4 Bystanders. Hela captures this card as a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              "."
+            ],
+            { divider: true },
+            [
+              { keyword: 14 },
+              " - When you throw this, you get ",
+              { keyword: 49, text: "Bridge Conqueror 3" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Seize Bifrost, The Rainbow Bridge",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top card of the Villain Deck. If it's a Villain, that Villain enters the Bridge or Streets, if one of those spaces is empty."
+            ]
+          ]
+        },
+        {
+          name: "Naglfar, Longship of Fingernails",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": The player on your right reveals the Villain from their Victory Pile that's worth the most VP. That Villain enters the Bridge or Streets, if one of those spaces is empty."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 68,
+      name: "Malekith the Accursed",
+      tacticName: "Malekith",
+      set: 26,
+      attack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Malekith the Accursed",
+          dense: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Dark Council"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Malekith captures a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              " from the city or from any player's control or discard pile. Then this Master Strike enters the city as a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              " called “Darkspear“ that gives ",
+              { bold: "+2" },
+              { icon: 1 },
+              ". When you gain a Darkspear, it becomes a ",
+              { keyword: 14 },
+              " that gives ",
+              { bold: "+2" },
+              { icon: 1 },
+              " when thrown."
+            ]
+          ]
+        },
+        {
+          name: "Epic Malekith the Accursed",
+          attack: "10",
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Dark Council"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Malekith captures a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              " from the city, then captures one from any player's control or discard pile. Then this Master Strike enters the city as a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              " called “Darkspear“ that gives ",
+              { bold: "+3" },
+              { icon: 1 },
+              ". When you gain a Darkspear, it becomes a ",
+              { keyword: 14 },
+              " that gives ",
+              { bold: "+2" },
+              { icon: 1 },
+              " when thrown."
+            ]
+          ]
+        },
+        {
+          name: "Black Hammer of the Accursed",
+          tactic: true,
+          attack: "+4",
+          vp: false,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue 4 Bystanders. Malekith captures a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              " from the city or from any player's control or discard pile. The this Tactic enters the city as a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              "."
+            ],
+            { divider: true },
+            [
+              { keyword: 13 },
+              " - Once per turn, you may KO a Hero from your discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Dagger of Living Abyss",
+          tactic: true,
+          attack: "+2",
+          vp: false,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue 4 Bystanders. Malekith captures a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              " from the city or from any player's control or discard pile. The this Tactic enters the city as a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              "."
+            ],
+            { divider: true },
+            [
+              { keyword: 13 },
+              " - Once per turn, you may defeat a Villain worth 2VP or less."
+            ]
+          ]
+        },
+        {
+          name: "The Hunting Horn of Faerie",
+          tactic: true,
+          attack: "+3",
+          vp: false,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue 4 Bystanders. Malekith captures a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              " from the city or from any player's control or discard pile. The this Tactic enters the city as a ",
+              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              "."
+            ],
+            { divider: true },
+            [
+              { keyword: 13 },
+              " - Once per turn, draw a card."
+            ]
+          ]
+        },
+        {
+          name: "Vulnerable to Cold Iron",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 2 },
+              " for each ",
+              { hc: 5 },
+              " Hero you have."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

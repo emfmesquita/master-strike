@@ -54,7 +54,7 @@ const obj = (rule) => rule.rule ? rulesArray[rule.rule - 1] : keywordsArray[rule
 
 export default {
   name: "Rule",
-  props: ["rule", "noUnderline"],
+  props: ["rule"],
   computed: {
     label() {
       return obj(this.rule).label;
@@ -73,8 +73,8 @@ export default {
     classes() {
       return {
         'red-keyword': this.rule.keyword === 43,
-        'font-weight-bold': !!this.rule.keyword,
-        'extra-rule': !!this.rule.rule && !this.noUnderline
+        'font-weight-bold': !!this.rule.keyword || !!this.rule.keywordStyle,
+        'extra-rule': !!this.rule.rule && !this.rule.keywordStyle
       }
     }
   },
