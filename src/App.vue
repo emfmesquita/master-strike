@@ -61,4 +61,19 @@ export default {
   .xlzoom {
     zoom: 1.25
   }
+
+  .absolute-icon {
+    position: absolute;
+    user-select: none;
+  }
+
+  .chip-ellipsis {
+    cursor: pointer;
+    .v-chip__content {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: inline-block !important;
+      line-height: 32px;
+    }
+  }
 </style>

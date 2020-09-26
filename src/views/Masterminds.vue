@@ -17,12 +17,12 @@
         <v-lazy min-height="410" :key="mmKey(mm)" v-for="mm in masterminds">
           <v-row>
             <v-col cols="12">
-              <shared-card-group :group="mm">
+              <CardGroup :group="mm">
                 <template v-slot:default="{ card }">
                   <HeroCard v-if="card.gainAsHero" :card="card" :hero="mm" />
                   <MastermindCard v-else :card="card" :mastermind="mm"/>
                 </template>
-              </shared-card-group>
+              </CardGroup>
             </v-col>
           </v-row>
         </v-lazy>
@@ -36,6 +36,7 @@
 <script>
 import MastermindCard from "../components/mastermind/MastermindCard.vue";
 import HeroCard from "../components/hero/HeroCard.vue";
+import CardGroup from "../components/shared/CardGroup.vue";
 import { getAllMasterminds } from "../services/cardUtils";
 
 const masterminds = getAllMasterminds();
@@ -43,7 +44,7 @@ const masterminds = getAllMasterminds();
 
 export default {
   name: "Masterminds",
-  components: { MastermindCard, HeroCard },
+  components: { MastermindCard, HeroCard, CardGroup },
   data: () => ({
     masterminds,
     lastFilterTime: 0,
@@ -57,10 +58,4 @@ export default {
 </script>
 
 <style lang="scss">
-
-  .absolute-icon {
-    position: absolute;
-    user-select: none;
-  }
-
 </style>

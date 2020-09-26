@@ -1,391 +1,410 @@
 const TELEPORT = {
     id: 1,
-    inHeroes: true,
     value: "teleport",
-    label: "Teleport"
+    label: "Teleport",
+    cardTypes: [1],
 }
 const BRIBE = {
     id: 2,
     value: "bribe",
-    label: "Bribe"
+    label: "Bribe",
+    cardTypes: [2],
 }
 const VERSATILE = {
     id: 3,
-    inHeroes: true,
     value: "versatile",
-    label: "Versatile"
+    label: "Versatile",
+    cardTypes: [1],
 }
 const FOCUS = {
     id: 4,
-    inHeroes: true,
     value: "focus",
-    label: "Focus"
+    label: "Focus",
+    cardTypes: [1],
 }
 const BURROW = {
     id: 5,
     value: "burrow",
-    label: "Burrow"
+    label: "Burrow",
+    cardTypes: [],
 }
 const COSMIC_THREAT = {
     id: 6,
-    inHeroes: true,
     value: "cosmicthreat",
-    label: "Cosmic Threat"
+    label: "Cosmic Threat",
+    cardTypes: [1],
 }
 const WALL_CRAWL = {
     id: 7,
-    inHeroes: true,
     value: "wallcrawl",
-    label: "Wall-Crawl"
+    label: "Wall-Crawl",
+    cardTypes: [1],
 }
 const FEAST = {
     id: 8,
-    inHeroes: true,
     value: "feast",
-    label: "Feast"
+    label: "Feast",
+    cardTypes: [1],
 }
 const DEMOLISH = {
     id: 9,
-    inHeroes: true,
     value: "demolish",
-    label: "Demolish"
+    label: "Demolish",
+    cardTypes: [1],
 }
 const DODGE = {
     id: 10,
-    inHeroes: true,
     value: "dodge",
-    label: "Dodge"
+    label: "Dodge",
+    cardTypes: [1],
 }
 const ELUSIVE = {
     id: 11,
     value: "elusive",
-    label: "Elusive"
+    label: "Elusive",
+    cardTypes: [],
 }
 const X_TREME_ATTACK = {
     id: 12,
     value: "xtremeattack",
-    label: "X-Treme Attack"
+    label: "X-Treme Attack",
+    cardTypes: [],
 }
 const ARTIFACT = {
     id: 13,
-    inHeroes: true,
     value: "artifact",
-    label: "Artifact"
+    label: "Artifact",
+    cardTypes: [1],
 }
 const THROWN_ARTIFACT = {
     id: 14,
-    inHeroes: true,
     value: "thrownartifact",
-    label: "Thrown Artifact"
+    label: "Thrown Artifact",
+    cardTypes: [1],
 }
 const URU_ENCHANTED_WEAPONS = {
     id: 15,
     value: "uruenchantedweapons",
-    label: "Uru-Enchanted Weapons"
+    label: "Uru-Enchanted Weapons",
+    cardTypes: [],
 }
 const RISE_OF_THE_LIVING_DEAD = {
     id: 16,
     value: "riseofthelivingdead",
-    label: "Rise of The Living Dead"
+    label: "Rise of The Living Dead",
+    cardTypes: [],
 }
 const CROSS_DIMENSIONAL_RAMPAGE = {
     id: 17,
-    inHeroes: true,
     value: "crossdimensionalrampage",
-    label: "Cross-Dimensional Rampage"
+    label: "Cross-Dimensional Rampage",
+    cardTypes: [1],
 }
 const SPECTRUM = {
     id: 18,
-    inHeroes: true,
     value: "spectrum",
-    label: "Spectrum"
+    label: "Spectrum",
+    cardTypes: [1],
 }
 const PATROL = {
     id: 19,
-    inHeroes: true,
     value: "patrol",
-    label: "Patrol"
+    label: "Patrol",
+    cardTypes: [1],
 }
 const CIRCLE_OF_KUNG_FU = {
     id: 20,
     value: "circleofkungfu",
-    label: "Circle of Kung-Fu (and Quack-Fu)"
+    label: "Circle of Kung-Fu (and Quack-Fu)",
+    cardTypes: [],
 }
 const FATEFUL_RESURRECTION = {
     id: 21,
     value: "fatefulresurrection",
-    label: "Fateful Resurrection"
+    label: "Fateful Resurrection",
+    cardTypes: [],
 }
 const CHARGE = {
     id: 22,
     value: "charge",
-    label: "Charge"
+    label: "Charge",
+    cardTypes: [],
 }
 const MAN_OUT_OF_TIME = {
     id: 23,
-    inHeroes: true,
     value: "manoutoftime",
-    label: "Man/Woman Out of Time"
+    label: "Man/Woman Out of Time",
+    cardTypes: [1],
 }
 const SAVIOR = {
     id: 24,
-    inHeroes: true,
     value: "savior",
-    label: "Savior"
+    label: "Savior",
+    cardTypes: [1],
 }
 const ABOMINATION = {
     id: 25,
     value: "abomination",
-    label: "Abomination"
+    label: "Abomination",
+    cardTypes: [],
 }
 const SIZE_CHANGING = {
     id: 26,
-    inHeroes: true,
     value: "sizechanging",
-    label: "Size-Changing"
+    label: "Size-Changing",
+    cardTypes: [1],
 }
 const PHASING = {
     id: 27,
-    inHeroes: true,
     value: "phasing",
-    label: "Phasing"
+    label: "Phasing",
+    cardTypes: [1],
 }
 const FORTIFY = {
     id: 28,
-    inHeroes: true,
     value: "fortify",
-    label: "Fortify"
+    label: "Fortify",
+    cardTypes: [1],
 }
 const SHIELD_CLEARANCE = {
     id: 29,
     value: "shieldclearance",
-    label: "S.h.i.e.l.d. Clearance"
+    label: "S.h.i.e.l.d. Clearance",
+    cardTypes: [],
 }
 const EXCESSIVE_VIOLENCE = {
     id: 30,
-    inHeroes: true,
     value: "excessiveviolence",
-    label: "Excessive Violence"
+    label: "Excessive Violence",
+    cardTypes: [1],
 }
 const REVENGE = {
     id: 31,
     value: "revenge",
-    label: "Revenge"
+    label: "Revenge",
+    cardTypes: [],
 }
 const INVESTIGATE = {
     id: 32,
-    inHeroes: true,
     value: "investigate",
-    label: "Investigate"
+    label: "Investigate",
+    cardTypes: [1],
 }
 const HIDDEN_WITNESS = {
     id: 33,
     value: "hiddenwitness",
-    label: "Hidden Witness"
+    label: "Hidden Witness",
+    cardTypes: [],
 }
 const X_GENE = {
     id: 34,
-    inHeroes: true,
     value: "xgene",
-    label: "X-Gene"
+    label: "X-Gene",
+    cardTypes: [1],
 }
 const PIERCING_ENERGY = {
     id: 35,
-    inHeroes: true,
     value: "piercingenergy",
-    label: "Piercing Energy"
+    label: "Piercing Energy",
+    cardTypes: [1],
 }
 const BERSERK = {
     id: 36,
-    inHeroes: true,
     value: "berserk",
-    label: "Berserk"
+    label: "Berserk",
+    cardTypes: [1],
 }
 const SOARING_FLIGHT = {
     id: 37,
-    inHeroes: true,
     value: "soaringflight",
-    label: "Soaring Flight"
+    label: "Soaring Flight",
+    cardTypes: [1],
 }
 const LIGHTSHOW = {
     id: 38,
-    inHeroes: true,
     value: "lightshow",
-    label: "Lightshow"
+    label: "Lightshow",
+    cardTypes: [1],
 }
 const DOMINATE = {
     id: 39,
     value: "dominate",
-    label: "Dominate"
+    label: "Dominate",
+    cardTypes: [],
 }
 const HUMAN_SHIELDS = {
     id: 40,
     value: "humanshield",
-    label: "Human Shields"
+    label: "Human Shields",
+    cardTypes: [],
 }
 const DANGER_SENSE = {
     id: 41,
-    inHeroes: true,
     value: "dangersense",
-    label: "Danger Sense"
+    label: "Danger Sense",
+    cardTypes: [1],
 }
 const STRIKER = {
     id: 42,
-    inHeroes: true,
     value: "striker",
-    label: "Striker"
+    label: "Striker",
+    cardTypes: [1],
 }
 const COORDINATE = {
     id: 43,
-    inHeroes: true,
     value: "coordinate",
-    label: "Coordinate"
+    label: "Coordinate",
+    cardTypes: [1],
 }
 const CHEERING_CROWDS = {
     id: 44,
-    inHeroes: true,
     value: "cheeringcrowds",
-    label: "Cheering Crowds"
+    label: "Cheering Crowds",
+    cardTypes: [1],
 }
 const TRANSFORM = {
     id: 45,
-    inHeroes: true,
     value: "transform",
-    label: "Transform"
+    label: "Transform",
+    cardTypes: [1],
 }
 const OUTWIT = {
     id: 46,
-    inHeroes: true,
     value: "outwit",
-    label: "Outwit"
+    label: "Outwit",
+    cardTypes: [1],
 }
 const SMASH = {
     id: 47,
-    inHeroes: true,
     value: "smash",
-    label: "Smash"
+    label: "Smash",
+    cardTypes: [1],
 }
 const WOUNDED_FURY = {
     id: 48,
-    inHeroes: true,
     value: "woundedfury",
-    label: "Wounded Fury"
+    label: "Wounded Fury",
+    cardTypes: [1],
 }
 const CONQUEROR = {
     id: 49,
-    inHeroes: true,
     value: "conqueror",
-    label: "Conqueror"
+    label: "Conqueror",
+    cardTypes: [1],
 }
 const MICROSCOPIC_SIZE_CHANGING = {
     id: 50,
-    inHeroes: true,
     value: "microscopicsizechanging",
-    label: "Microscopic Size-Changing"
+    label: "Microscopic Size-Changing",
+    cardTypes: [1],
 }
 const EMPOWERED = {
     id: 51,
-    inHeroes: true,
     value: "empowered",
-    label: "Empowered"
+    label: "Empowered",
+    cardTypes: [1],
 }
 const CHIVALROUS_DUEL = {
     id: 52,
     value: "chivalrousduel",
-    label: "Chivalrous Duel"
+    label: "Chivalrous Duel",
+    cardTypes: [],
 }
 const SYMBIOTE_BONDS = {
     id: 53,
     value: "symbiontebonds",
-    label: "Symbionte Bonds"
+    label: "Symbionte Bonds",
+    cardTypes: [],
 }
 const DIGEST = {
     id: 54,
-    inHeroes: true,
     value: "digest",
-    label: "Digest"
+    label: "Digest",
+    cardTypes: [1],
 }
 const INDIGESTION = {
     id: 55,
-    inHeroes: true,
     value: "indigestion",
-    label: "Indigestion"
+    label: "Indigestion",
+    cardTypes: [1],
 }
 const SWITCHEROO = {
     id: 56,
-    inHeroes: true,
     value: "switcheroo",
-    label: "Switcheroo"
+    label: "Switcheroo",
+    cardTypes: [1],
 }
 const HYPERSPEED = {
     id: 57,
-    inHeroes: true,
     value: "hyperspeed",
-    label: "Hyperspeed"
+    label: "Hyperspeed",
+    cardTypes: [1],
 }
 const DARK_MEMORIES = {
     id: 58,
-    inHeroes: true,
     value: "darkmemories",
-    label: "Dark Memories"
+    label: "Dark Memories",
+    cardTypes: [1],
 }
 const LAST_STAND = {
     id: 59,
-    inHeroes: true,
     value: "laststand",
-    label: "Last Stand"
+    label: "Last Stand",
+    cardTypes: [1],
 }
 const UNDERCOVER = {
     id: 60,
-    inHeroes: true,
     value: "undercover",
-    label: "Undercover"
+    label: "Undercover",
+    cardTypes: [1],
 }
 const SHIELD_LEVEL = {
     id: 61,
-    inHeroes: true,
     value: "shieldlevel",
-    label: "S.H.I.E.L.D. Level"
+    label: "S.H.I.E.L.D. Level",
+    cardTypes: [1],
 }
 const HYDRA_LEVEL = {
     id: 62,
     value: "hydralevel",
-    label: "Hydra Level"
+    label: "Hydra Level",
+    cardTypes: [],
 }
 const WORTHY = {
     id: 63,
-    inHeroes: true,
     value: "worthy",
-    label: "Worthy"
+    label: "Worthy",
+    cardTypes: [1],
 }
 const MOONLIGHT_SUNLIGHT = {
     id: 64,
-    inHeroes: true,
     value: "moonlightsunlight",
-    label: "Moonlight and Sunlight"
+    label: "Moonlight and Sunlight",
+    cardTypes: [1],
 }
 const WAKING_NIGHTMARE = {
     id: 65,
-    inHeroes: true,
     value: "wakingnightmare",
-    label: "Waking Nightmare"
+    label: "Waking Nightmare",
+    cardTypes: [1],
 }
 const BURN_SHARDS = {
     id: 66,
-    inHeroes: true,
     value: "burnshards",
-    label: "Burn Shards"
+    label: "Burn Shards",
+    cardTypes: [1],
 }
 const CELESTIAL_BOON = {
     id: 67,
     value: "celestialboon",
-    label: "Celestial Boon"
+    label: "Celestial Boon",
+    cardTypes: [],
 }
 const CONTEST_OF_CHAMPIONS = {
     id: 68,
-    inHeroes: true,
     value: "contestofchampions",
-    label: "Contest of Champions"
+    label: "Contest of Champions",
+    cardTypes: [1],
 }
 
 export const keywords = Object.freeze({

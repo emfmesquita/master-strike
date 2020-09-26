@@ -7,21 +7,7 @@
         <v-container class="card-filter">
           <v-row align="center">
             <v-col cols="12">
-              <v-btn-toggle
-                class="d-flex justify-center"
-                v-model="sortMethod"
-                mandatory
-                @change="sortChanged"
-              >
-                <v-btn value="alpha">
-                  <v-icon small>mdi-sort-alphabetical-ascending</v-icon>
-                  <span class="pa-1 subtitle-2">Alpha</span>
-                </v-btn>
-                <v-btn value="results">
-                  <v-icon small>mdi-cards</v-icon>
-                  <span class="pa-1 subtitle-2">Results</span>
-                </v-btn>
-              </v-btn-toggle>
+              <SortToggle v-model="sortMethod" @input="sortChanged" />
             </v-col>
           </v-row>
           <v-row align="center" justify="center">
@@ -34,221 +20,52 @@
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <v-text-field
-                v-model="filter.search"
-                label="Search"
-                maxlength="30"
-                clearable
-                @input="filterChangedDebounced"
-                @keyup.enter="$event.target.blur()"
-              ></v-text-field>
+              <SearchFilter v-model="filter.search" @change="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <v-autocomplete
-                v-model="filter.hero"
-                :items="filterHeroes"
-                multiple
-                label="Hero"
-                item-text="label"
-                item-value="id" 
-                clearable
-                @change="filterChanged"
-              >
-                <template v-slot:selection="{ item }">
-                  <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'hero')">
-                    {{item.label}}
-                  </v-chip>
-                </template>
-              </v-autocomplete>
+              <HeroFilter v-model="filter.hero" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <v-select
-                v-model="filter.set"
-                :items="sets"
-                multiple
-                label="Set"
-                item-text="label"
-                item-value="id" 
-                clearable
-                @change="filterChanged"
-              >
-                <template v-slot:selection="{ item }">
-                  <v-tooltip top>
-                    <template v-slot:activator="{ on }" dense>
-                      <span v-on="on">
-                        <v-chip class="ma-1" style="cursor: pointer" @click.stop="remove(item.id, 'set')">
-                          {{item.initials}}
-                        </v-chip>
-                      </span>
-                    </template>
-                    <span>{{ item.label }}</span>
-                  </v-tooltip>
-                </template>
-              </v-select>
+              <SetFilter v-model="filter.set" :cardTypes="[1]" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <v-select
-                v-model="filter.team"
-                :items="teams"
-                multiple
-                clearable
-                item-text="label"
-                item-value="id"
-                label="Team"
-                @change="filterChanged"
-              >
-                <template v-slot:selection="{ item }">
-                  <span style="cursor: pointer" @click.stop="remove(item.id, 'team')">
-                    <TeamIcon :icon="item.id" width="40px"/>
-                  </span>
-                </template>
-                <template v-slot:item="{ item }">
-                  <TeamIcon :icon="item.id" width="40px" />
-                  {{ item.label }}
-                </template>
-              </v-select>
+              <TeamFilter v-model="filter.team" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <v-select
-                v-model="filter.hc"
-                :items="heroClasses"
-                multiple
-                clearable
-                item-text="label"
-                item-value="id"
-                label="Hero Class"
-                @change="filterChanged"
-              >
-                <template v-slot:selection="{ item }">
-                  <span style="cursor: pointer" @click.stop="remove(item.id, 'hc')">
-                    <HeroClassIcon :icon="item.id" width="32px"/>
-                  </span>
-                </template>
-                <template v-slot:item="{ item }">
-                  <HeroClassIcon :icon="item.id" width="32px" />
-                  {{ item.label }}
-                </template>
-              </v-select>
+              <HeroClassFilter v-model="filter.hc" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <v-select
-                v-model="filter.keyword"
-                :items="keywords"
-                multiple
-                clearable
-                item-text="label"
-                item-value="id"
-                label="Keyword"
-                @change="filterChanged"
-              >
-                <template v-slot:selection="{ item }">
-                  <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'keyword')">
-                    {{item.label}}
-                  </v-chip>
-                </template>
-              </v-select>
+              <KeywordFilter v-model="filter.keyword" :cardTypes="[1]" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <v-select
-                v-model="filter.rule"
-                :items="rules"
-                multiple
-                clearable
-                item-text="label"
-                item-value="id"
-                label="Special Rule"
-                @change="filterChanged"
-              >
-                <template v-slot:selection="{ item }">
-                  <v-chip class="ma-1 chip-ellipsis" @click.stop="remove(item.id, 'rule')">
-                    {{item.label}}
-                  </v-chip>
-                </template>
-              </v-select>
+              <RuleFilter v-model="filter.rule" :cardTypes="[1]" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <v-range-slider
-                v-model="filter.cost"
-                :max="9"
-                :min="0"
-                ticks="always"
-                tick-size="4"
-                thumb-label="always"
-                thumb-size="0"
-                class="align-center"
-                @change="filterChanged"
-              >
-                <template v-slot:thumb-label="{ value }">
-                  <AbilityIcon class="thumb absolute-icon" noAdjust :icon="3" width="32px"/>
-                  <span 
-                    class="thumb card-cost icon-text text-center font-weight-black">
-                    {{ value }}
-                  </span>
-                </template>
-              </v-range-slider>
+              <RangeFilter v-model="filter.cost" :icon="3" :min="0" :max="9" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <v-range-slider
-                v-model="filter.attack"
-                :max="10"
-                :min="-1"
-                ticks="always"
-                tick-size="4"
-                thumb-label="always"
-                thumb-size="0"
-                class="align-center"
-                @change="filterChanged"
-              >
-                <template v-slot:thumb-label="{ value }">
-                  <AbilityIcon class="thumb absolute-icon" noAdjust :icon="1" width="32px" :iconSrcOverride="value === -1 ? 'block' : null"/>
-                  <span
-                    v-if="value !== -1"
-                    class="thumb card-cost icon-text text-center font-weight-black">
-                    {{ value }}
-                  </span>
-                </template>
-              </v-range-slider>
+              <RangeFilter v-model="filter.attack" :icon="1" :min="-1" :max="10" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <v-range-slider
-                v-model="filter.recruit"
-                :max="5"
-                :min="-1"
-                ticks="always"
-                tick-size="4"
-                thumb-label="always"
-                thumb-size="0"
-                class="align-center"
-                @change="filterChanged"
-              >
-                <template v-slot:thumb-label="{ value }">
-                  <AbilityIcon v-if="value === -1" class="thumb absolute-icon" noAdjust :icon="2" width="32px" iconSrcOverride="block"/>
-                  <AbilityIcon v-else class="thumb absolute-icon" noAdjust style="top: -43px; left: -24px" :icon="2" width="48px"/>
-                  <span
-                    v-if="value !== -1"
-                    class="thumb card-cost icon-text text-center font-weight-black">
-                    {{ value }}
-                  </span>
-                </template>
-              </v-range-slider>
+              <RangeFilter v-model="filter.recruit" :icon="2" :min="-1" :max="5" @input="filterChanged"/>
             </v-col>
           </v-row>
         </v-container>
@@ -262,20 +79,7 @@
           <v-icon small>mdi-eraser</v-icon>
         </v-btn>
         <v-divider></v-divider>
-        <v-btn-toggle
-          style="flex-direction: column"
-          v-model="sortMethod"
-          mandatory
-          group
-          @change="sortChanged"
-        >
-          <v-btn small value="alpha" style="min-width: 0px">
-            <v-icon small>mdi-sort-alphabetical-ascending</v-icon>
-          </v-btn>
-          <v-btn small value="results" style="min-width: 0px">
-            <v-icon small>mdi-cards</v-icon>
-          </v-btn>
-        </v-btn-toggle>
+        <SortToggleCollapsed v-model="sortMethod" @input="sortChanged" />
         <v-divider></v-divider>
       </template>
     </shared-side-bar>
@@ -283,14 +87,7 @@
     <v-container style="paddingBottom: 100px" :class="{ xlzoom: $vuetify.breakpoint.xl }">
       <v-row v-if="$vuetify.breakpoint.mdAndDown && $store.getters.sideBarCollapsed">
         <v-col class="py-0">
-          <v-text-field
-            v-model="filter.search"
-            label="Search"
-            maxlength="30"
-            clearable
-            @input="filterChangedDebounced"
-            @keyup.enter="$event.target.blur()"
-          ></v-text-field>
+          <SearchFilter v-model="filter.search" @change="filterChanged"/>
         </v-col>
       </v-row>
       <v-row>
@@ -303,11 +100,11 @@
         <v-lazy min-height="410" :key="heroKey(hero)" v-for="hero in heroes">
           <v-row>
             <v-col cols="12">
-              <shared-card-group :group="hero">
+              <CardGroup :group="hero">
                 <template v-slot:default="{ card }">
                   <HeroCard :card="card" :hero="hero"/>
                 </template>
-              </shared-card-group>
+              </CardGroup>
             </v-col>
           </v-row>
         </v-lazy>
@@ -322,45 +119,38 @@
 import HeroCard from "../components/hero/HeroCard.vue";
 import { setsArray } from "../constants/sets";
 import { teamArray } from "../constants/team";
-import { heroClassArray } from "../constants/hero-class";
+import { heroClassArray } from "../constants/heroClass";
 import { keywordsArray } from "../constants/keywords";
 import { rulesArray } from "../constants/rules";
-import TeamIcon from "../components/shared/TeamIcon.vue";
-import HeroClassIcon from "../components/shared/HeroClassIcon.vue";
-import AbilityIcon from "../components/shared/AbilityIcon.vue";
+import { cardTypes } from "../constants/cardTypes";
+import CardGroup from "../components/shared/CardGroup.vue";
+import SetFilter from "../components/shared/filter/SetFilter.vue";
+import KeywordFilter from "../components/shared/filter/KeywordFilter.vue";
+import RuleFilter from "../components/shared/filter/RuleFilter.vue";
+import RangeFilter from "../components/shared/filter/RangeFilter.vue";
+import TeamFilter from "../components/shared/filter/TeamFilter.vue";
+import HeroClassFilter from "../components/shared/filter/HeroClassFilter.vue";
+import HeroFilter from "../components/shared/filter/HeroFilter.vue";
+import SearchFilter from "../components/shared/filter/SearchFilter.vue";
+import SortToggle from "../components/shared/filter/SortToggle.vue";
+import SortToggleCollapsed from "../components/shared/filter/SortToggleCollapsed.vue";
 import { toIntArray, toIntPair } from "../services/queryUtils";
 import { getAllHeroes, numberOfCards } from "../services/cardUtils";
-import { buildHeroSearch } from "../services/searchUtils";
-
-const heroSearch = buildHeroSearch();
+import { 
+  groupSearchSetup,
+  filterGruopBySearch, 
+  filterBySet, 
+  filterGroupByKeyword, 
+  filterGroupByRule,
+  filterGroupByMinMax,
+  filterGroupByTeam,
+  filterGroupByHeroClass,
+  filterById
+} from "../services/searchUtils";
+import { sortGroups, ALPHA_SORT, RESULTS_SORT } from "../services/sortUtils";
 
 const allHeroes = getAllHeroes();
-const filterHeroes = allHeroes.map(hero => ({
-  id: hero.id,
-  label: hero.filterName ? hero.filterName : hero.name
-}));
-filterHeroes.sort((a, b) => a.label.localeCompare(b.label));
 const validHeroes = allHeroes.filter(hero => hero.id).map(hero => hero.id);
-
-let sets = setsArray.concat([]);
-sets = sets.filter(set => set.id !== 2); // no promo heroes yet
-sets = Object.freeze(sets);
-
-let teams = teamArray.concat([]);
-teams.sort((a, b) => a.label.localeCompare(b.label));
-teams = Object.freeze(teams);
-
-let heroClasses = heroClassArray.concat([]);
-heroClasses.shift();
-heroClasses = Object.freeze(heroClasses);
-
-let keywords = keywordsArray.filter(keyword => keyword.inHeroes);
-keywords.sort((a, b) => a.label.localeCompare(b.label));
-keywords = Object.freeze(keywords);
-
-let rules = rulesArray.filter(rule => rule.inHeroes);
-rules.sort((a, b) => a.label.localeCompare(b.label));
-rules = Object.freeze(rules);
 
 const baseFilter = () => ({
   search: "",
@@ -377,15 +167,22 @@ const baseFilter = () => ({
 
 export default {
   name: "Heroes",
-  components: { HeroCard, TeamIcon, HeroClassIcon, AbilityIcon },
+  components: { 
+    HeroCard,
+    CardGroup, 
+    SetFilter, 
+    KeywordFilter, 
+    RuleFilter, 
+    RangeFilter,
+    TeamFilter,
+    HeroClassFilter,
+    HeroFilter,
+    SearchFilter,
+    SortToggle,
+    SortToggleCollapsed
+  },
   data: () => ({
-    filterHeroes,
-    sets: sets,
-    teams,
-    heroClasses,
-    keywords,
-    rules,
-    sortMethod: "alpha",
+    sortMethod: ALPHA_SORT,
     filter: baseFilter(),
     lastFilterTime: 0,
     heroes: []
@@ -402,7 +199,7 @@ export default {
     this.filter.cost = toIntPair(query.cost, 0, 9);
     this.filter.attack = toIntPair(query.attack, -1, 10);
     this.filter.recruit = toIntPair(query.recruit, -1, 5);
-    this.sortMethod = query.sort === "results" ? "results" : "alpha";
+    this.sortMethod = query.sort === RESULTS_SORT ? RESULTS_SORT : ALPHA_SORT;
     this.search();
     this.sort();
   },
@@ -429,32 +226,6 @@ export default {
       this.filter[filterName] = this.filter[filterName].filter(item => item !== id);
       this.filterChanged();
     },
-    filterByMinMax(filter, prop) {
-      this.heroes = this.heroes.filter(hero => {
-        let match = false;
-        hero.filteredCards.forEach(card => {
-          if(card.disabled) return;
-          const valueMatch = card[prop] >= filter[0] && card[prop] <= filter[1];
-          if(valueMatch) match = true;
-          card.disabled = !valueMatch;
-        });
-        return match;
-      });
-    },
-    filterBySearch() {
-      const cards = heroSearch.search(this.filter.search);
-      this.heroes = this.heroes.filter(hero => {
-        const cardsFound = cards.filter(card => card.heroId === hero.id);
-        let match = false;
-        hero.filteredCards.forEach(card => {
-          if(card.disabled) return;
-          const found = cardsFound.some(cardFound => cardFound.name === card.name);
-          if(found) match = true;
-          card.disabled = !found;
-        });
-        return match;
-      });
-    },
     setQuery() {
       const query = {};
       const filter = this.filter;
@@ -469,7 +240,7 @@ export default {
       if(this.hasAttackFilter) query.attack = filter.attack.join(",");
       if(this.hasRecruitFilter) query.recruit = filter.recruit.join(",");
 
-      if(this.sortMethod === "results") query.sort = "results";
+      if(this.sortMethod === RESULTS_SORT) query.sort = RESULTS_SORT;
       
       this.$router.replace({
         path: this.$route.path,
@@ -496,120 +267,24 @@ export default {
       this.setQuery();
     },
     sort() {
-      this.heroes.sort((a, b) => {
-        if(this.sortMethod === "alpha" || b.results === a.results) return (a.name || "").localeCompare(b.name || "");
-        return b.results - a.results;
-      });
-
+      sortGroups(this.heroes, this.sortMethod);
       this.lastFilterTime = Date.now();
     },
     search() {
       this.heroes = allHeroes;
-      this.heroes.forEach(hero => {
-        hero.filteredCards = (hero.cards || []).map(card => {
-          card.disabled = false;
-          return card;
-        });
-      });
 
-      if(this.filter.hero.length) {
-        const heroIds = this.filter.hero;
-        this.heroes = this.heroes.filter(hero => heroIds.indexOf(hero.id) >= 0);
-      }
+      groupSearchSetup(this.heroes);
 
-      if(this.filter.set.length) {
-        const fromSet = a => this.filter.set.includes(a);
-        const setCheck = hero => {
-          return Array.isArray(hero.set) ? hero.set.some(fromSet) : fromSet(hero.set);
-        }
-        this.heroes = this.heroes.filter(setCheck);
-      }
-
-      if(this.filter.team.length) {
-        const team = this.filter.team;
-        this.heroes = this.heroes.filter(hero => {
-          let match = team.indexOf(hero.team) >= 0;
-          if(!hero.filteredCards) return match;
-          hero.filteredCards.forEach(card => {
-            if(card.team === undefined) card.team = hero.team;
-            const matchTeam = team.indexOf(card.team) >= 0;
-            if(matchTeam) match = true;
-            card.disabled = !matchTeam;
-          });
-          return match;
-        });
-      }
-
-      if(this.filter.hc.length) {
-        const hc = this.filter.hc;
-        this.heroes = this.heroes.filter(hero => {
-          let match = false;
-          hero.filteredCards.forEach(card => {
-            if(card.disabled) return;
-            const matchHC = hc.indexOf(card.hc) >= 0 || hc.indexOf(card.hc2) >= 0;
-            if(matchHC) match = true;
-            card.disabled = !matchHC;
-          });
-          return match;
-        });
-      }
-
-      if(this.filter.keyword.length) {
-        const keyword = this.filter.keyword;
-        this.heroes = this.heroes.filter(hero => {
-          let match = false;
-          hero.filteredCards.forEach(card => {
-            if(card.disabled || !card.abilities) return;
-            const abs = card.abilities;
-            const hasKey = ab => keyword.indexOf(ab.keyword) >= 0;
-            const matchKey = abs.some(ab => Array.isArray(ab) ? ab.some(hasKey) : hasKey(ab));
-            if(matchKey) match = true;
-            card.disabled = !matchKey;
-          });
-          return match;
-        });
-      }
-
-      if(this.filter.rule.length) {
-        const rules = this.filter.rule;
-        this.heroes = this.heroes.filter(hero => {
-          let match = false;
-          hero.filteredCards.forEach(card => {
-            if(card.disabled || !card.abilities) return;
-
-            // checks for multiclass
-            if(card.hc2 && rules.includes(2)) {
-              match = true;
-              return;
-            }
-
-            // checks for divided
-            if(card.divided && rules.includes(4)) {
-              match = true;
-              return;
-            }
-
-            // check for asterisk
-            if(card.costAsterisk && rules.includes(10)) {
-              match = true;
-              return;
-            }
-
-            // checks other rules
-            const abs = card.abilities;
-            const hasRule = ab => rules.indexOf(ab.rule) >= 0;
-            const matchRule = abs.some(ab => Array.isArray(ab) ? ab.some(hasRule) : hasRule(ab));
-            if(matchRule) match = true;
-            card.disabled = !matchRule;
-          });
-          return match;
-        });
-      }
-
-      if(this.hasCostFilter) this.filterByMinMax(this.filter.cost, "cost");
-      if(this.hasAttackFilter) this.filterByMinMax(this.filter.attack, "attackNum");
-      if(this.hasRecruitFilter) this.filterByMinMax(this.filter.recruit, "recruitNum");
-      if(this.filter.search) this.filterBySearch();
+      this.heroes = filterById(this.heroes, this.filter.hero);
+      this.heroes = filterBySet(this.heroes, this.filter.set);
+      this.heroes = filterGroupByTeam(this.heroes, this.filter.team);
+      this.heroes = filterGroupByHeroClass(this.heroes, this.filter.hc);
+      this.heroes = filterGroupByKeyword(this.heroes, this.filter.keyword);
+      this.heroes = filterGroupByRule(this.heroes, this.filter.rule);
+      if(this.hasCostFilter) this.heroes = filterGroupByMinMax(this.heroes, "cost", this.filter.cost);
+      if(this.hasAttackFilter) this.heroes = filterGroupByMinMax(this.heroes, "attackNum", this.filter.attack);
+      if(this.hasRecruitFilter) this.heroes = filterGroupByMinMax(this.heroes, "recruitNum", this.filter.recruit);
+      this.heroes = filterGruopBySearch(this.heroes, cardTypes.HERO.id, this.filter.search);
 
       this.heroes.forEach(hero => {
         // make sure divided cards disabled status is consistent
@@ -640,38 +315,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-  .chip-ellipsis {
-    cursor: pointer;
-    .v-chip__content {
-      text-overflow: ellipsis;
-      overflow: hidden;
-      display: inline-block !important;
-      line-height: 32px;
-    }
-  }
-
-  .absolute-icon {
-    position: absolute;
-    user-select: none;
-  }
-
-  .card-filter {
-    .thumb {
-      top: -32px;
-      left: -16px;
-    }
-    .icon-text {
-      position: absolute;
-      width: 32px;
-      font-size: 16px;
-      -webkit-text-fill-color: #fff;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #000;
-      line-height: 32px;
-      user-select: none;
-      pointer-events: none;
-    }
-  }
-</style>

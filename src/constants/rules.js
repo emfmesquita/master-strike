@@ -1,63 +1,69 @@
 
 const SHARDS = {
     id: 1,
-    inHeroes: true,
     value: "shards",
-    label: "Shards"
+    label: "Shards",
+    cardTypes: [1, 2],
 }
 const MULTICLASS_CARDS = {
     id: 2,
-    inHeroes: true,
     value: "multiclasscards",
-    label: "Multiclass Cards"
+    label: "Multiclass Cards",
+    cardTypes: [1],
 }
 const MULTIPLE_MASTERMINDS = {
     id: 3,
     value: "multiplemasterminds",
-    label: "Multiple Masterminds"
+    label: "Multiple Masterminds",
+    cardTypes: [],
 }
 const DIVIDED = {
     id: 4,
-    inHeroes: true,
     value: "divided",
-    label: "Divided Card"
+    label: "Divided Card",
+    cardTypes: [1],
 }
 const TRAPS= {
     id: 5,
     value: "traps",
-    label: "Traps"
+    label: "Traps",
+    cardTypes: [],
 }
 const LOCATIONS = {
     id: 6,
     value: "locations",
-    label: "Locations"
+    label: "Locations",
+    cardTypes: [2],
 }
 const TRANSFORMING_SCHEMES = {
     id: 7,
     value: "transformingschemes",
-    label: "Transforming Schemes"
+    label: "Transforming Schemes",
+    cardTypes: [],
 }
 const ADAPTING_MASTERMINDS= {
     id: 8,
     value: "adaptingmasterminds",
-    label: "Adapting Masterminds"
+    label: "Adapting Masterminds",
+    cardTypes: [2],
 }
 const VILLAINOUS_WEAPONS = {
     id: 9,
     value: "villainousweapons",
-    label: "Villainous Weapons"
+    label: "Villainous Weapons",
+    cardTypes: [2],
 }
 const ASTERISK = {
     id: 10,
-    inHeroes: true,
     value: "asterisk",
-    label: "Asterisk Symbol"
+    label: "Asterisk Symbol",
+    cardTypes: [1, 2],
 }
 const SIDEKICKS = {
     id: 11,
-    inHeroes: true,
     value: "sidekicks",
-    label: "Sidekicks"
+    label: "Sidekicks",
+    cardTypes: [1],
 }
 
 export const rules = Object.freeze({

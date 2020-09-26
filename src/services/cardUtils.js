@@ -1,5 +1,5 @@
 import { cards } from "../data";
-import { heroClassArray } from "../constants/hero-class"
+import { heroClassArray } from "../constants/heroClass"
 import { iconArray } from "../constants/icon"
 import { keywordsArray } from "../constants/keywords"
 import { rulesArray } from "../constants/rules"
@@ -12,7 +12,11 @@ const toNumber = (value) => {
   return Number.isNaN(number) ? -1 : number;
 }
 
+const GROUP_CACHE = {}
+
 const getAllCardGroups = type => {
+  if(GROUP_CACHE[type]) return GROUP_CACHE[type];
+
   let allGroups = [];
   Object.values(cards).forEach(setData => {
     const setGroups = setData[type];
@@ -28,6 +32,7 @@ const getAllCardGroups = type => {
     });
   });
 
+  GROUP_CACHE[type] = allGroups;
   return allGroups;
 };
 
@@ -59,13 +64,13 @@ const abilitiesToText = abilities => {
 }
 
 /**
- * Calculates the card text of a hero object.
- * @param {*} hero 
+ * Calculates the card text for each card of a group.
+ * @param {*} group 
  */
-export const processHeroText = (hero) => {
-  hero.cards.forEach(card => {
-    card.heroId = hero.id;
-    card.heroName = hero.name;
+export const processGroupCardText = (group) => {
+  group.cards.forEach(card => {
+    card.groupId = group.id;
+    card.groupName = group.name;
     card.abilitiesText = abilitiesToText(card.abilities);
   });
 }

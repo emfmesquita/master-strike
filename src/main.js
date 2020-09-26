@@ -1,6 +1,5 @@
 import App from "./App.vue";
 import BulletPointDescription from "./components/shared/BulletPointDescription.vue";
-import CardGroup from "./components/shared/CardGroup.vue";
 import DescriptionComponent from "./components/shared/DescriptionComponent.vue";
 import DescriptionGroup from "./components/shared/DescriptionGroup.vue";
 import Footer from './components/Footer.vue';
@@ -12,6 +11,8 @@ import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
 
+window.hasIntersection = (a, b) => a.some(item => b.includes(item));
+
 Vue.config.productionTip = false;
 
 // shared components
@@ -22,7 +23,6 @@ Vue.component('shared-rule', Rule);
 Vue.component('shared-header', Header);
 Vue.component('shared-footer', Footer);
 Vue.component('shared-side-bar', SideBar);
-Vue.component('shared-card-group', CardGroup);
 
 new Vue({
   router,

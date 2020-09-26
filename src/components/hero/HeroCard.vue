@@ -72,7 +72,7 @@ import HeroClassIcon from "../shared/HeroClassIcon.vue";
 import RarityIcon from "../shared/RarityIcon.vue";
 import AbilityIcon from "../shared/AbilityIcon.vue";
 import DividedCardIcon from "../shared/DividedCardIcon.vue";
-import { heroClassArray } from "../../constants/hero-class";
+import { heroClassArray } from "../../constants/heroClass";
 import { getTextWidth } from "../../services/cardUtils";
 
 export default {

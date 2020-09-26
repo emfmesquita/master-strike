@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { heroClassArray } from "../../constants/hero-class";
+import { heroClassArray } from "../../constants/heroClass";
 
 export default {
   name: "TeamIcon",

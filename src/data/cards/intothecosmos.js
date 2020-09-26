@@ -718,5 +718,378 @@ export default {
 
       ]
     },
+  ],
+  masterminds: [
+    {
+      id: 71,
+      name: "Beyonder, The",
+      tacticName: "Beyonder",
+      set: 28,
+      attack: "21",
+      vp: 7,
+      cards: [
+        {
+          name: "The Beyonder",
+          attackAsterisk: true,
+          dense: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              " for cards that cost 5 or more."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": From Beyond"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals a card that costs 5 or more or gains a Wound. Then put this Strike under an HQ space ",
+              { italic: "(that doesn't already have a Strike)" },
+              " pulling that space into a Pocket Dimension. To recruit a card from a Pocket Dimension, you must pay ",
+              { bold: "1" },
+              { icon: 1 },
+              " for each Pocket Dimension in play."
+            ]
+          ]
+        },
+        {
+          name: "Epic Beyonder",
+          attack: "24",
+          attackAsterisk: true,
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              " for cards that cost 6 or more."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": From Beyond"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Each player reveals a card that costs 6 or more or gains a Wound. Then put this Strike under an HQ space ",
+              { italic: "(that doesn't already have a Strike)" },
+              " pulling that space into a Pocket Dimension. To recruit a card from a Pocket Dimension, you must pay ",
+              { bold: "1" },
+              { icon: 1 },
+              " for each Pocket Dimension in play."
+            ]
+          ]
+        },
+        {
+          name: "Playthings of a Petulant God",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals their hand and KOs a card from their hand or discard pile with the same card name as any card in a Pocket Dimension."
+            ]
+          ]
+        },
+        {
+          name: "Dimensional Collapse",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Destroy an HQ space that's in a Pocket Dimension. ",
+              { italic: "(That space doesn't refill.)" },
+              " To mark this, turn the Hero there face down. The Pocket Dimension card stays in play."
+            ]
+          ]
+        },
+        {
+          name: "Pull Earth Into The Beyond",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue four Bystanders. Put this card above the Sewers, pulling it into a Pocket Dimension. To fight a Villain there, you must also pay ",
+              { bold: "1" },
+              { icon: 1 },
+              " for each Pocket Dimension in play."
+            ]
+          ]
+        },
+        {
+          name: "Create the Secret Wars",
+          tactic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Choose a team ",
+              { italic: "(e.g. " },
+              { team: 2 },
+              { italic: "," },
+              { team: 1 },
+              { italic: "," },
+              { team: 4 },
+              { italic: "," },
+              { team: 12 },
+              { italic: ", etc.)" },
+              ". ",
+              { keyword: 68 },
+              " for that team icon, with Evil selecting from 4 cards from the Hero Deck. Each other player that loses gains a Wound. If you win, the player of your choice gains a Hero from a Pocket Dimension."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 72,
+      name: "Grandmaster, The",
+      tacticName: "Grandmaster",
+      set: 28,
+      attack: "10",
+      vp: 6,
+      cards: [
+        {
+          name: "The Grandmaster",
+          dense: true,
+          abilities: [
+            [
+              { bold: "Always Leads" },
+              ": Elders of the Universe"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Reveal the top card of the Hero Deck then put it back. ",
+              { keyword: 68 },
+              " for that card's color(s). Each player that loses gains a Wound. If the Grandmaster wins, he gains a ",
+              { rule: 1, text: "Shard" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Epic Grandmaster",
+          attack: "11",
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              "Evil adds ",
+              { bold: "+2" },
+              " to its final total in every ",
+              { keyword: 68 },
+              " caused by any card."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Elders of the Universe"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Reveal the top card of the Hero Deck then put it back. ",
+              { keyword: 68 },
+              " for that card's color(s). Each player that loses gains a Wound. If the Grandmaster wins, he gains 2 ",
+              { rule: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Deal With Death",
+          tactic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 68 },
+              " ",
+              { hc: 1 },
+              ", with Evil selecting from 4 cards from the Hero Deck. Each other player that loses must KO a non-grey Hero from their discard pile. If you win, you may gain a non-grey Hero from the KO pile. If the Grandmaster wins, he gains a ",
+              { rule: 1, text: "Shard" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Galactic Marathon",
+          tactic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 68 },
+              " ",
+              { hc: 2 },
+              ", with Evil selecting from 4 cards from the Hero Deck. Each other player that loses must discard down to four cards. If you win, draw two cards. If the Grandmaster wins, he gains 2 ",
+              { rule: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Cheat Against Thanos",
+          tactic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 68 },
+              " ",
+              { hc: 3 },
+              ", with Evil selecting from 4 cards from the Hero Deck. Each other player that loses must KO half the Bystanders (round up) from their Victory Pile. If you win, rescue three Bystanders. If the Grandmaster Wins, he gains 3 ",
+              { rule: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Match Offenders vs. Defenders",
+          tactic: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 68 },
+              " ",
+              { hc: 4 },
+              ", with Evil selecting from 4 cards from the Hero Deck. Each other player that loses must gain a 0-cost card from the KO pile. If you win, reveal the top four cards of your deck, KO any number of them, and put the rest back in any order. If the Grandmaster wins, he gains 4 ",
+              { rule: 1 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 73,
+      name: "Magus",
+      set: 28,
+      attack: "9",
+      vp: 6,
+      cards: [
+        {
+          name: "Magus",
+          attack: "9+",
+          dense: true,
+          abilities: [
+            [
+              "Magus gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Villain in the city that has any ",
+              { rule: 1 },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Universal Church of Truth"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": If there are already any Villains with ",
+              { rule: 1 },
+              " in the city, each player gains a Wound. Then this Strike enters the city as a “Cosmic Wraith“ Villain with ",
+              { bold: "4" },
+              { icon: 1 },
+              " worth 4 VP. Then put a ",
+              { rule: 1, text: "Shard" },
+              " on each Villain in the city."
+            ]
+          ]
+        },
+        {
+          name: "Epic Magus",
+          attack: "11+",
+          epic: true,
+          dense: true,
+          abilities: [
+            [
+              "Magus gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              " for each Villain in the city that has any ",
+              { rule: 1 },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Universal Church of Truth"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": If there are already any Villains with ",
+              { rule: 1 },
+              " in the city, each player gains a Wound to the top of their deck. Then this Strike enters the city as a “Cosmic Wraith“ Villain with ",
+              { bold: "6" },
+              { icon: 1 },
+              " worth 6 VP. Then put a ",
+              { rule: 1, text: "Shard" },
+              " on each Villain in the city."
+            ]
+          ]
+        },
+        {
+          name: "Dark Side of Adam Warlock",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Magus gains a ",
+              { rule: 1, text: "Shard" },
+              ". Then Magus takes a ",
+              { rule: 1, text: "Shard" },
+              " from each other player that does not reveal a ",
+              { hc: 1 },
+              " Hero."
+            ]
+          ]
+        },
+        {
+          name: "Seize Cosmic Power",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Magus takes a ",
+              { rule: 1, text: "Shard" },
+              " from each Villain in the city. Then the Villain with the highest ",
+              { icon: 1 },
+              " gains a ",
+              { rule: 1, text: "Shard" },
+              "."
+
+            ]
+          ]
+        },
+        {
+          name: "Conjured Shade of Thanos",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Rescue 4 Bystanders. This Tactic enters the city as a Villain. Then each Villain in the city gains a ",
+              { rule: 1, text: "Shard" },
+              ". ",
+              { italic: "(You win when the Mastermind has no more Tactics stacked under it.)" }
+            ]
+          ]
+        },
+        {
+          name: "Resurrected as the Child Magus",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Until the start of your next turn, Magus can only be fought with ",
+              { icon: 2 },
+              " instead of ",
+              { icon: 1 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

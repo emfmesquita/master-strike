@@ -18,19 +18,7 @@
         </v-row>
         <v-row align="center">
           <v-col cols="12">
-            <v-select
-              v-model="filter.set"
-              :items="sets"
-              multiple
-              label="Sets"
-              item-text="label"
-              item-value="id"
-              @change="filterChanged"
-            >
-              <template v-slot:selection="{ index }">
-                <template v-if="index === 0">{{ selectedSetsLabel }}</template>
-              </template>
-            </v-select>
+            <SetFilter v-model="filter.set" :cardTypes="[1,2]" @input="filterChanged"/>
           </v-col>
         </v-row>
         <v-row align="center">
@@ -64,11 +52,11 @@
         <v-lazy min-height="410" :key="heroKey(hero)" v-for="hero in heroes">
           <v-row>
             <v-col cols="12">
-              <shared-card-group :group="hero">
+              <CardGroup :group="hero">
                 <template v-slot:default="{ card }">
                   <HeroCard :card="card" :hero="hero"/>
                 </template>
-              </shared-card-group>
+              </CardGroup>
             </v-col>
           </v-row>
         </v-lazy>
@@ -81,10 +69,12 @@
 
 <script>
 import HeroCard from "../components/hero/HeroCard.vue";
+import CardGroup from "../components/shared/CardGroup.vue";
 import { setsArray } from "../constants/sets";
 import { toIntArray, toInteger } from "../services/queryUtils";
 import { getAllHeroes } from "../services/cardUtils";
 import { randomArray } from "../services/randomUtils";
+import SetFilter from "../components/shared/filter/SetFilter.vue";
 
 const allHeroes = getAllHeroes();
 
@@ -106,7 +96,7 @@ export default {
     },
     lastRandomizeTime: 0,
   }),
-  components: {HeroCard},
+  components: { HeroCard, CardGroup, SetFilter },
   created() {
     const query = this.$route.query;
     if(!query.fs) {
@@ -173,8 +163,4 @@ export default {
 </script>
 
 <style lang="scss">
-  .absolute-icon {
-    position: absolute;
-    user-select: none;
-  }
 </style>
