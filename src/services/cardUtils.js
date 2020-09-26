@@ -27,8 +27,9 @@ const getAllCardGroups = type => {
 
   allGroups.forEach(group => {
     (group.cards || []).forEach(card => {
-      card.attackNum = toNumber(card.attack);
+      card.attackNum = toNumber(card.attack || group.attack);
       card.recruitNum = toNumber(card.recruit);
+      card.vp = card.vp || group.vp || -1;
     });
   });
 

@@ -4,7 +4,7 @@
 
     <shared-side-bar>
       <template v-slot:default>
-        <v-container class="card-filter">
+        <v-container>
           <v-row align="center">
             <v-col cols="12">
               <SortToggle v-model="sortMethod" @input="sortChanged" />
@@ -116,29 +116,31 @@
 </template>
 
 <script>
+import CardGroup from "../components/shared/CardGroup.vue";
 import HeroCard from "../components/hero/HeroCard.vue";
-import { setsArray } from "../constants/sets";
-import { teamArray } from "../constants/team";
+import HeroClassFilter from "../components/shared/filter/HeroClassFilter.vue";
+import HeroFilter from "../components/shared/filter/HeroFilter.vue";
+import KeywordFilter from "../components/shared/filter/KeywordFilter.vue";
+import RangeFilter from "../components/shared/filter/RangeFilter.vue";
+import RuleFilter from "../components/shared/filter/RuleFilter.vue";
+import SearchFilter from "../components/shared/filter/SearchFilter.vue";
+import SetFilter from "../components/shared/filter/SetFilter.vue";
+import SortToggle from "../components/shared/filter/SortToggle.vue";
+import SortToggleCollapsed from "../components/shared/filter/SortToggleCollapsed.vue";
+import TeamFilter from "../components/shared/filter/TeamFilter.vue";
+
+import { cardTypes } from "../constants/cardTypes";
 import { heroClassArray } from "../constants/heroClass";
 import { keywordsArray } from "../constants/keywords";
 import { rulesArray } from "../constants/rules";
-import { cardTypes } from "../constants/cardTypes";
-import CardGroup from "../components/shared/CardGroup.vue";
-import SetFilter from "../components/shared/filter/SetFilter.vue";
-import KeywordFilter from "../components/shared/filter/KeywordFilter.vue";
-import RuleFilter from "../components/shared/filter/RuleFilter.vue";
-import RangeFilter from "../components/shared/filter/RangeFilter.vue";
-import TeamFilter from "../components/shared/filter/TeamFilter.vue";
-import HeroClassFilter from "../components/shared/filter/HeroClassFilter.vue";
-import HeroFilter from "../components/shared/filter/HeroFilter.vue";
-import SearchFilter from "../components/shared/filter/SearchFilter.vue";
-import SortToggle from "../components/shared/filter/SortToggle.vue";
-import SortToggleCollapsed from "../components/shared/filter/SortToggleCollapsed.vue";
-import { toIntArray, toIntPair } from "../services/queryUtils";
+import { setsArray } from "../constants/sets";
+import { teamArray } from "../constants/team";
+
 import { getAllHeroes, numberOfCards } from "../services/cardUtils";
+import { toIntArray, toIntPair } from "../services/queryUtils";
 import { 
   groupSearchSetup,
-  filterGruopBySearch, 
+  filterGroupBySearch, 
   filterBySet, 
   filterGroupByKeyword, 
   filterGroupByRule,
@@ -167,19 +169,19 @@ const baseFilter = () => ({
 
 export default {
   name: "Heroes",
-  components: { 
+  components: {
+    CardGroup,
     HeroCard,
-    CardGroup, 
-    SetFilter, 
-    KeywordFilter, 
-    RuleFilter, 
-    RangeFilter,
-    TeamFilter,
     HeroClassFilter,
     HeroFilter,
+    KeywordFilter, 
+    RangeFilter,
+    RuleFilter, 
     SearchFilter,
+    SetFilter, 
     SortToggle,
-    SortToggleCollapsed
+    SortToggleCollapsed,
+    TeamFilter,
   },
   data: () => ({
     sortMethod: ALPHA_SORT,
@@ -222,10 +224,6 @@ export default {
     heroKey(hero) {
       return `${this.lastFilterTime}-${hero.team}-${hero.name}`;
     },
-    remove(id, filterName) {
-      this.filter[filterName] = this.filter[filterName].filter(item => item !== id);
-      this.filterChanged();
-    },
     setQuery() {
       const query = {};
       const filter = this.filter;
@@ -256,10 +254,6 @@ export default {
       this.sort();
       this.setQuery();
     },
-    filterChangedDebounced() {
-      clearTimeout(this._debounceTimerId);
-      this._debounceTimerId = setTimeout(() => this.filterChanged(), 750);
-    },
     filterChanged() {
       this.$vuetify.goTo(0, { duration: 0 });
       this.search();
@@ -284,7 +278,7 @@ export default {
       if(this.hasCostFilter) this.heroes = filterGroupByMinMax(this.heroes, "cost", this.filter.cost);
       if(this.hasAttackFilter) this.heroes = filterGroupByMinMax(this.heroes, "attackNum", this.filter.attack);
       if(this.hasRecruitFilter) this.heroes = filterGroupByMinMax(this.heroes, "recruitNum", this.filter.recruit);
-      this.heroes = filterGruopBySearch(this.heroes, cardTypes.HERO.id, this.filter.search);
+      this.heroes = filterGroupBySearch(this.heroes, cardTypes.HERO.id, this.filter.search);
 
       this.heroes.forEach(hero => {
         // make sure divided cards disabled status is consistent

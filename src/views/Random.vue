@@ -3,7 +3,7 @@
     <shared-header />
 
     <shared-side-bar>
-      <v-container class="card-filter">
+      <v-container>
         <v-row align="center">
           <v-col cols="12">
             <v-btn 
@@ -161,6 +161,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-</style>

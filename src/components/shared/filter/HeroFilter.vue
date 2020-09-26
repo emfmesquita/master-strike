@@ -40,8 +40,8 @@ export default {
     filterChanged(newValue) {
       this.$emit('input', newValue);
     },
-    remove(id) {
-      this.filterChanged(this.value.filter(setId => setId !== id));
+    remove(toRemoveId) {
+      this.filterChanged(this.value.filter(id => id !== toRemoveId));
     }
   }
 }

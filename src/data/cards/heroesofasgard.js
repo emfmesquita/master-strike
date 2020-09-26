@@ -425,7 +425,7 @@ export default {
           name: "Hela's Cloak",
           tactic: true,
           attack: "+2",
-          vp: false,
+          vp: -1,
           abilities: [
             [
               { bold: "Fight" },
@@ -444,7 +444,7 @@ export default {
           name: "The Nightsword",
           tactic: true,
           attack: "+3",
-          vp: false,
+          vp: -1,
           abilities: [
             [
               { bold: "Fight" },
@@ -549,7 +549,7 @@ export default {
           name: "Black Hammer of the Accursed",
           tactic: true,
           attack: "+4",
-          vp: false,
+          vp: -1,
           dense: true,
           abilities: [
             [
@@ -571,7 +571,7 @@ export default {
           name: "Dagger of Living Abyss",
           tactic: true,
           attack: "+2",
-          vp: false,
+          vp: -1,
           dense: true,
           abilities: [
             [
@@ -593,7 +593,7 @@ export default {
           name: "The Hunting Horn of Faerie",
           tactic: true,
           attack: "+3",
-          vp: false,
+          vp: -1,
           dense: true,
           abilities: [
             [

@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <template v-if="vp">
+    <template v-if="vp > 0">
       <AbilityIcon class="card-vp-icon absolute-icon" noAdjust :icon="4" width="42px"/>
       <span class="card-vp icon-text text-center font-weight-black">
         {{ vp }}
@@ -64,11 +64,10 @@ export default {
       };
     },
     attack() {
-      if(this.card.attack) return this.card.attack;
-      return this.mastermind.attack;
+      return this.card.attack ? this.card.attack : this.mastermind.attack;
     },
     vp() {
-      return this.card.vp !== undefined ? this.card.vp : this.mastermind.vp;
+      return this.card.vp ? this.card.vp : this.mastermind.vp;
     },
     classes() {
       return {

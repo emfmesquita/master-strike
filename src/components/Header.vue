@@ -36,7 +36,7 @@
             v-for="(item, index) in items"
             :key="index"
           >
-            <v-btn text small color="white" :to="item.to">{{ item.title }}</v-btn>
+            <v-btn text small block color="white" :to="item.to">{{ item.title }}</v-btn>
           </v-list-item>
         </v-list>
       </v-menu>

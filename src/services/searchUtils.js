@@ -52,7 +52,7 @@ export const filterGroupByRule = (groups, rules) => {
   return groups.filter(group => {
     let match = false;
     const cards = group.filteredCards || group.cards;
-    cards.filteredCards.forEach(card => {
+    cards.forEach(card => {
       if(card.disabled || !card.abilities) return;
 
       // checks for multiclass
@@ -162,7 +162,7 @@ const getCardSearch = cardType => {
   return SEARCH_CACHE[cardType];
 }
 
-export const filterGruopBySearch = (groups, cardType, search) => {
+export const filterGroupBySearch = (groups, cardType, search) => {
   if(!search) return groups;
 
   const cardsFound = getCardSearch(cardType).search(search);
