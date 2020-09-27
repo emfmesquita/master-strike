@@ -18,6 +18,9 @@
           <v-btn color="primary" x-large to="/heroes" class="ma-3">Heroes</v-btn>
           <v-btn color="primary" x-large to="/masterminds" class="ma-3">Masterminds</v-btn>
           <v-btn color="primary" x-large to="/about" class="ma-3">About</v-btn>
+          <v-btn color="primary" x-large to="/donate" class="ma-3">
+            <v-icon>mdi-cookie</v-icon>
+          </v-btn>
         </v-col>
       </v-row>
     </v-container>
