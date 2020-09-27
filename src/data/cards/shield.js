@@ -513,7 +513,7 @@ export default {
           abilities: [
             [
               { bold: "Always Leads" },
-              ": A.I.M. Hydra Offshoot"
+              ": A.I.M., Hydra Offshoot"
             ],
             [
               { bold: "Start Game" },

@@ -1240,7 +1240,9 @@ export default {
           abilities: [
             [
               { bold: "Fight" },
-              ": Defeat an Adversary whose Attack is less than the number of ",
+              ": Defeat an Adversary whose ",
+              { icon: 1 },
+              " is less than the number of ",
               { team: 13 },
               " Allies in the KO pile."
             ]
@@ -1354,7 +1356,9 @@ export default {
           abilities: [
             [
               { bold: "Fight" },
-              ": Reveal the top three cards of the Adversary Deck. Play any Adversaries you revealed that have “X-Treme Attack“. Put the rest back in random order."
+              ": Reveal the top three cards of the Adversary Deck. Play any Adversaries you revealed that have “",
+              { keyword: 12 },
+              "“. Put the rest back in random order."
             ]
           ]
         },

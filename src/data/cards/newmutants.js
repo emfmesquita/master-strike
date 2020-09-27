@@ -441,7 +441,7 @@ export default {
               { bold: "Master Strike" },
               ": ",
               { keyword: 64, text: "Sunlight" },
-              ": Each player KOs a non-grey Hero from their discard pile. ",
+              ": Each player KOs two non-grey Hero from their discard pile. ",
               { keyword: 64, text: "Moonlight" },
               ": Each player has two ",
               { keyword: 65 },
@@ -585,7 +585,7 @@ export default {
           ]
         },
         {
-          name: "Contempt for Weakness",
+          name: "Contempt for Weaklings",
           tactic: true,
           abilities: [
             [

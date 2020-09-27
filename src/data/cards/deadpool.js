@@ -466,7 +466,7 @@ export default {
           abilities: [
             [
               { bold: "Fight" },
-              ": You get for each “Bounty on Your Head“ discards down to 4 cards."
+              ": Each other player with at least one “Bounty on Your Head“ discards down to 4 cards."
             ]
           ]
         },

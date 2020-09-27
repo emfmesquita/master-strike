@@ -1345,7 +1345,7 @@ export default {
           abilities: [
             [
               { bold: "Fight" },
-              ": Choose one of your ",
+              ": Each other player reveals an ",
               { team: 4 },
               " Hero or gains two Wounds."
             ]

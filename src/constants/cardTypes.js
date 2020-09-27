@@ -1,9 +1,11 @@
 const HERO = {
     id: 1,
+    value: "heroes",
     label: "Hero",
 };
 const MASTERMIND = {
     id: 2,
+    value: "masterminds",
     label: "Mastermind",
 };
 const HENCHMEN_VILLAIN = {

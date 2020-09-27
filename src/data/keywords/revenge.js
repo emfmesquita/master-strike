@@ -17,10 +17,10 @@ export default [
         ".“",
       ],
       [
-        "This counts only the Victory Pile of the player fighting. Evil Deadpool Corpse Villains on other players Victory Piles do not increase the Villain attack.",
+        "This counts only the Victory Pile of the player fighting. Evil Deadpool Corpse Villains on other players’ Victory Piles do not increase the Villain attack.",
       ],
       [
-        "Revenge is not limited to just Villains, and can also target other types of cards.",
+        "Revenge is not limited just to Villains, and can also target other types of cards.",
       ]
     ]
   }

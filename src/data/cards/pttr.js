@@ -387,8 +387,7 @@ export default {
           abilities: [
             { keyword: 8 },
             [
-              { bold: "Fight" },
-              ": If Carnage feasts on a 0-cost Hero this way, repeat this process."
+              "If Carnage feasts on a 0-cost Hero this way, repeat this process."
             ]
           ]
         },
@@ -398,8 +397,7 @@ export default {
           abilities: [
             { keyword: 8 },
             [
-              { bold: "Fight" },
-              ": You get ",
+              "You get ",
               { bold: "+" },
               { icon: 2 },
               " equal to the ",
@@ -414,8 +412,7 @@ export default {
           abilities: [
             { keyword: 8 },
             [
-              { bold: "Fight" },
-              ": If Carnage feasts on a 0-cost Hero this way, each other player KOs a Bystander from their Victory Pile."
+              "If Carnage feasts on a 0-cost Hero this way, each other player KOs a Bystander from their Victory Pile."
             ]
           ]
         }

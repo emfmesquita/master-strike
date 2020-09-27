@@ -1,6 +1,6 @@
 <template>
   <v-card class="mx-auto hero-card" :class="classes" raised :style="{ background }">
-    <TeamIcon class="card-team" v-if="team" :icon="team" width="40px"/>
+    <TeamIcon class="card-team" v-if="card.team" :icon="card.team" width="40px"/>
     <HeroClassIcon class="card-hero-class" v-if="card.hc" :icon="card.hc" width="32px"/>
 
     <shared-rule v-if="card.hc2" :rule="{ rule: 2 }">
@@ -8,7 +8,7 @@
     </shared-rule>
     <RarityIcon v-if="card.rarity" class="card-rarity" :icon="card.rarity" width="24px"/>
     <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
-    <div :class="subTitleClasses">{{ subTitle }}</div>
+    <div :class="subTitleClasses">{{ card.subTitle }}</div>
 
     <div class="card-abilities" :class="{ dense: card.dense }" v-if="card.abilities">
       <div v-for="(ability, idx) in card.abilities" :key="idx">
@@ -56,10 +56,10 @@
         class="card-cost icon-text text-center font-weight-black"
         :class="{ small: card.cost.length > 2 }">
         <template v-if="!card.costAsterisk">
-          {{ card.cost }}
+          {{ card.costText }}
         </template>
         <shared-rule v-else class="card-cost-asterisk" :rule="{ rule: 10, keywordStyle: true }">
-          {{ card.cost }}*
+          {{ card.costText }}
         </shared-rule>
       </span>
     </template>
@@ -95,16 +95,10 @@ export default {
       const secondColor = heroClassArray[this.card.hc2 || 0].bgColor;
       return `linear-gradient(${baseColor} 35%, ${secondColor} 65%)`;
     },
-    team() {
-      return this.card.team !== undefined ? this.card.team : this.hero.team;
-    },
-    subTitle() {
-      return this.card.redSubTitle || this.card.subTitle || this.hero.name;
-    },
     subTitleClasses() {
       return {
         'text-center card-sub-title': true,
-        'card-red-sub-title': !!this.card.redSubTitle
+        'card-red-sub-title': !!this.card.transformed
       };
     },
     classes() {

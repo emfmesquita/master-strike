@@ -925,7 +925,7 @@ export default {
             ],
             [
               { bold: "Master Strike" },
-              ": This Strike enters the city as a ",
+              ": This Strike enters the city as an ",
               { bold: "8" },
               { icon: 1 },
               " “Graveyard“ ",
@@ -988,7 +988,7 @@ export default {
           ]
         },
         {
-          name: "That Menace Spider-Man!",
+          name: "Prison of Coffins",
           tactic: true,
           dense: true,
           abilities: [
@@ -1186,6 +1186,7 @@ export default {
         },
         {
           name: "Dragon of Heaven Spaceship",
+          attack: "9",
           tactic: true,
           dense: true,
           abilities: [

@@ -1,3 +1,4 @@
+import { cardTypes } from "../constants/cardTypes"
 import { cards } from "../data";
 import { heroClassArray } from "../constants/heroClass"
 import { iconArray } from "../constants/icon"
@@ -13,37 +14,6 @@ const toNumber = (value) => {
 }
 
 const GROUP_CACHE = {}
-
-const getAllCardGroups = type => {
-  if(GROUP_CACHE[type]) return GROUP_CACHE[type];
-
-  let allGroups = [];
-  Object.values(cards).forEach(setData => {
-    const setGroups = setData[type];
-    if(setGroups && setGroups.length) {
-      allGroups = allGroups.concat(setGroups);
-    }
-  });
-
-  allGroups.forEach(group => {
-    (group.cards || []).forEach(card => {
-      card.attackNum = toNumber(card.attack || group.attack);
-      card.recruitNum = toNumber(card.recruit);
-      card.vp = card.vp || group.vp || -1;
-    });
-  });
-
-  GROUP_CACHE[type] = allGroups;
-  return allGroups;
-};
-
-export const getAllHeroes = () => {
-  return getAllCardGroups("heroes");
-};
-
-export const getAllMasterminds = () => {
-  return getAllCardGroups("masterminds");
-};
 
 const abilitiesToText = abilities => {
   if(!abilities) return "";
@@ -62,18 +32,6 @@ const abilitiesToText = abilities => {
     else if(ability.rule) append(ability.text || rulesArray[ability.rule - 1].label);
   });
   return textTokens.join(" ");
-}
-
-/**
- * Calculates the card text for each card of a group.
- * @param {*} group 
- */
-export const processGroupCardText = (group) => {
-  group.cards.forEach(card => {
-    card.groupId = group.id;
-    card.groupName = group.name;
-    card.abilitiesText = abilitiesToText(card.abilities);
-  });
 }
 
 /**
@@ -121,3 +79,74 @@ export const paginate = (cards, pageSize) => {
   }
   return pages;
 }
+
+const mastermindSubtitle = (card, group) => {
+  const type = [6, 8].includes(group.set) ? "Commander": "Mastermind";
+  const mmName = group.tacticName || group.name;
+  if(card.tactic) return `${type} Tactic - ${mmName}`;
+  if(card.epic) return `Epic ${type}`;
+  if(card.transformed) return `${type}, Transformed`;
+  return type;
+}
+
+/**
+ * Process card properties used both to display them and on search/filter.
+ * @param {*} cardType 
+ * @param {*} card 
+ * @param {*} group 
+ */
+const processCard = (cardType, card, group) => {
+  card.groupId = group.id;
+  card.uid = `${group.id}_${card.name}`;
+
+  if(cardTypes.HERO === cardType) {
+    card.team = card.team !== undefined ? card.team : group.team;
+    card.attackNum = toNumber(card.attack);
+    card.recruitNum = toNumber(card.recruit);
+    card.attackText = card.attack ? card.attack + "" : "";
+    card.recruitText = card.recruit ? card.recruit + "" : "";
+    card.piercingText = card.piercing ? card.piercing + "" : "";
+    card.costText = card.costAsterisk ? card.cost + "*" : card.cost + "";
+    card.abilitiesText = abilitiesToText(card.abilities);
+    card.subTitle = card.subTitle || group.name;
+    return;
+  }
+
+  if(cardTypes.MASTERMIND === cardType) {
+    card.attack = card.attack || group.attack;
+    card.attackNum = toNumber(card.attack);
+    card.attackText = card.attackAsterisk ? card.attack + "*" : card.attack + "";
+    card.vp = card.vp || group.vp || -1;
+    card.vpText = card.vp > 0 ? card.vp + "" : "";
+    card.abilitiesText = abilitiesToText(card.abilities);
+    card.subTitle = mastermindSubtitle(card, group);
+  }
+}
+
+const processCardGroups = cardType => {
+  if(GROUP_CACHE[cardType.id]) return GROUP_CACHE[cardType.id];
+
+  let allGroups = [];
+  Object.values(cards).forEach(setData => {
+    const setGroups = setData[cardType.value];
+    if(setGroups && setGroups.length) {
+      allGroups = allGroups.concat(setGroups);
+    }
+  });
+
+  allGroups.forEach(group => {
+    const cards = group.cards || [];
+    cards.forEach(card => processCard(cardType, card, group));
+  });
+
+  GROUP_CACHE[cardType.id] = allGroups;
+  return allGroups;
+};
+
+export const getAllHeroes = () => {
+  return processCardGroups(cardTypes.HERO);
+};
+
+export const getAllMasterminds = () => {
+  return processCardGroups(cardTypes.MASTERMIND);
+};

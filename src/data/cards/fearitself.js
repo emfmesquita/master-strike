@@ -408,6 +408,7 @@ export default {
     {
       id: 20,
       name: "Uru-Enchanted Iron Man",
+      tacticName: "Uru Iron Man",
       set: 8,
       attack: "7",
       vp: 6,

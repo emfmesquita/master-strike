@@ -145,9 +145,9 @@ import {
   filterGroupByKeyword, 
   filterGroupByRule,
   filterGroupByMinMax,
-  filterGroupByTeam,
   filterGroupByHeroClass,
-  filterById
+  filterById,
+  filterGroupByCardProp
 } from "../services/searchUtils";
 import { sortGroups, ALPHA_SORT, RESULTS_SORT } from "../services/sortUtils";
 
@@ -271,7 +271,7 @@ export default {
 
       this.heroes = filterById(this.heroes, this.filter.hero);
       this.heroes = filterBySet(this.heroes, this.filter.set);
-      this.heroes = filterGroupByTeam(this.heroes, this.filter.team);
+      this.heroes = filterGroupByCardProp(this.heroes, "team", this.filter.team);
       this.heroes = filterGroupByHeroClass(this.heroes, this.filter.hc);
       this.heroes = filterGroupByKeyword(this.heroes, this.filter.keyword);
       this.heroes = filterGroupByRule(this.heroes, this.filter.rule);

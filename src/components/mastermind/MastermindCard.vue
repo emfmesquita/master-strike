@@ -1,7 +1,7 @@
 <template>
   <v-card class="mx-auto mm-card" :class="classes" raised :style="{ background }">
     <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
-    <div :class="subTitleClasses">{{ subTitle }}</div>
+    <div :class="subTitleClasses">{{ card.subTitle }}</div>
 
     <div class="card-abilities" :class="{ dense: card.dense }" v-if="card.abilities">
       <div v-for="(ability, idx) in card.abilities" :key="idx">
@@ -9,21 +9,21 @@
       </div>
     </div>
 
-    <template v-if="vp > 0">
+    <template v-if="card.vp > 0">
       <AbilityIcon class="card-vp-icon absolute-icon" noAdjust :icon="4" width="42px"/>
       <span class="card-vp icon-text text-center font-weight-black">
-        {{ vp }}
+        {{ card.vp }}
       </span>
     </template>
 
-    <template v-if="attack">
+    <template v-if="card.attack">
       <AbilityIcon class="card-attack-icon absolute-icon" noAdjust :icon="1" width="90px"/> 
       <span class="card-attack icon-text text-center font-weight-black">
         <template v-if="!card.attackAsterisk">
-          {{ attack }}
+          {{ card.attackText }}
         </template>
         <shared-rule v-else class="card-attack-asterisk" :rule="{ rule: 10, keywordStyle: true }">
-          {{ attack }}*
+          {{ card.attackText }}
         </shared-rule>
       </span>
     </template>
@@ -47,27 +47,11 @@ export default {
     background() {
       return this.card.tactic ? "#E6CDE6" : "#CE9CCE";
     },
-    type() {
-      return [6, 8].includes(this.mastermind.set) ? "Commander": "Mastermind";
-    },
-    subTitle() {
-      const name = this.mastermind.tacticName || this.mastermind.name;
-      if(this.card.tactic) return `${this.type} Tactic - ${name}`;
-      if(this.card.epic) return `Epic ${this.type}`;
-      if(this.card.transformed) return `${this.type}, Transformed`;
-      return this.type;
-    },
     subTitleClasses() {
       return {
         'text-center card-sub-title': true,
         'card-red-sub-title': !!this.card.epic || !!this.card.transformed
       };
-    },
-    attack() {
-      return this.card.attack ? this.card.attack : this.mastermind.attack;
-    },
-    vp() {
-      return this.card.vp ? this.card.vp : this.mastermind.vp;
     },
     classes() {
       return {

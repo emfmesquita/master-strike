@@ -2,7 +2,7 @@ const TELEPORT = {
     id: 1,
     value: "teleport",
     label: "Teleport",
-    cardTypes: [1],
+    cardTypes: [1, 2],
 }
 const BRIBE = {
     id: 2,
@@ -68,7 +68,7 @@ const X_TREME_ATTACK = {
     id: 12,
     value: "xtremeattack",
     label: "X-Treme Attack",
-    cardTypes: [],
+    cardTypes: [2],
 }
 const ARTIFACT = {
     id: 13,
@@ -490,7 +490,7 @@ export const keywordsArray = Object.freeze([
     DEMOLISH,                   // 09 done
     DODGE,                      // 10 done
     ELUSIVE,                    // 11
-    X_TREME_ATTACK,             // 12
+    X_TREME_ATTACK,             // 12 done
     ARTIFACT,                   // 13 done
     THROWN_ARTIFACT,            // 14 done
     URU_ENCHANTED_WEAPONS,      // 15 done

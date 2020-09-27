@@ -1194,7 +1194,7 @@ export default {
               { bold: "Master Strike" },
               ": Arcade captures two random Bystander from each player's Victory Pile as a ",
               { keyword: 40, text: "Human Shield" },
-              ". Each player who didn't have a Bystander gains a Wound instead."
+              ". Each player who didn't have two Bystanders gains a Wound instead."
             ]
           ]
         },
@@ -1358,7 +1358,7 @@ export default {
             ],
             [
               { bold: "Master Strike" },
-              ": If there are already any Shi'ar Villains in the city, each player gains a Wound. Then this strike enters the city as a Shi'ar Battle Cruiser ",
+              ": If there are already any Shi'ar Villains in the city, each player gains a Wound. Then this strike enters the city as a “Shi'ar Battleship“ ",
               { icon: 7 },
               " Villain with 7",
               { icon: 1 },
@@ -1386,7 +1386,7 @@ export default {
             ],
             [
               { bold: "Master Strike" },
-              ": If there are already any Shi'ar Villains in the city, play a random Horror. Then this strike enters the city as a Shi'ar Battle Cruiser ",
+              ": If there are already any Shi'ar Villains in the city, play a random Horror. Then this strike enters the city as a “Shi'ar Battleship“ ",
               { icon: 7 },
               " Villain with 9",
               { icon: 1 },
@@ -1510,7 +1510,7 @@ export default {
               { keyword: 40, text: "Human Shield" },
               ". Each player reveals a ",
               { hc: 5 },
-              " Hero or discards down to 4 cards each."
+              " Hero or discards down to 4 cards."
             ]
           ]
         },
@@ -1589,7 +1589,7 @@ export default {
               ": KO all Heroes ",
               { keyword: 39, text: "Dominated" },
               " by Onslaught. Then each player reveals their hand and chooses one of their non-grey Heroes. Onslaught ",
-              { keyword: 39, text: "Dominated" },
+              { keyword: 39, text: "Dominates" },
               " those Heroes."
             ]
           ]
@@ -1610,7 +1610,7 @@ export default {
               ": KO all Heroes ",
               { keyword: 39, text: "Dominated" },
               " by Onslaught. Then each player reveals their hand and chooses two of their non-grey Heroes. Onslaught ",
-              { keyword: 39, text: "Dominated" },
+              { keyword: 39, text: "Dominates" },
               " those Heroes. Then play a random Horror."
             ]
           ]

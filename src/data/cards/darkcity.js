@@ -1673,6 +1673,7 @@ export default {
       cards: [
         {
           name: "Mr. Sinister",
+          attack: "8+",
           dense: true,
           abilities: [
             [

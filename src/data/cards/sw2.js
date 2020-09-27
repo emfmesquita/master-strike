@@ -1174,12 +1174,11 @@ export default {
       name: "Immortal Emperor Zheng-Zhu",
       tacticName: "Zheng-Zhu",
       set: 11,
-      attack: "7",
-      vp: 6,
+      attack: "7+",
+      vp: 5,
       cards: [
         {
           name: "Immortal Emperor Zheng-Zhu",
-          attack: "7+",
           abilities: [
             [
               { keyword: 20, text: "7th Circle of Kung-Fu" }
@@ -1200,7 +1199,9 @@ export default {
           abilities: [
             [
               { bold: "Fight" },
-              ": Each other player reveals a card with “Circle of Kung-Fu“ from their Victory Pile or gains a Wound."
+              ": Each other player reveals a card with “",
+              { keyword: 20, text: "Circle of Kung-Fu" },
+              "“ from their Victory Pile or gains a Wound."
             ]
           ]
         },
@@ -1337,9 +1338,11 @@ export default {
           name: "Shiklah's Husband, Deadpool",
           hc: 1,
           cost: 9,
+          costText: "9",
           attack: "5+",
           gainAsHero: true,
           tactic: true,
+          vp: -1,
           subTitle: "Mastermind Tactic - Shiklah",
           abilities: [
             [
@@ -1398,12 +1401,11 @@ export default {
       id: 28,
       name: "Spider-Queen",
       set: 11,
-      attack: "8",
+      attack: "8+",
       vp: 6,
       cards: [
         {
           name: "Spider-Queen",
-          attack: "8+",
           dense: true,
           abilities: [
             [

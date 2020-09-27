@@ -440,7 +440,7 @@ export default {
       name: "Galactus",
       set: 4,
       attack: "20",
-      vp: 6,
+      vp: 7,
       cards: [
         {
           name: "Galactus",

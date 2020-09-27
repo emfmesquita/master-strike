@@ -1154,7 +1154,9 @@ export default {
               { icon: 2 },
               " or ",
               { icon: 1 },
-              ". Then, reveal the top card of that Hero Deck. If that card has that icon, gain that card, and Teleport it."
+              ". Then, reveal the top card of that Hero Deck. If that card has that icon, gain that card, and ",
+              { keyword: 1 },
+              " it."
             ]
           ]
         }

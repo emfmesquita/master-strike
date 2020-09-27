@@ -5,9 +5,6 @@ export default [
   {
     points: [
       [
-        "Whether you defeat that enemy or not, put all the cards you revealed from the Adversary Deck on the bottom of that deck in random order."
-      ],
-      [
         "If a Villain says “S.H.I.E.L.D. Clearance,” ",
         { bold: "then you must discard a " },
         { team: 2 },

@@ -1574,7 +1574,7 @@ export default {
     {
       id: 32,
       name: "Baron Helmut Zemo",
-      tacticName: "Baron Zemo",
+      tacticName: "Helmut Zemo",
       set: 13,
       attack: "16",
       vp: 6,

@@ -348,13 +348,14 @@ export default {
   masterminds: [
     {
       id: 38,
-      name: "Charles Xavier",
+      name: "Charles Xavier, Professor of Crime",
+      tacticName: "Charles Xavier",
       set: 15,
       attack: "8",
       vp: 6,
       cards: [
         {
-          name: "Charles Xavier",
+          name: "Charles Xavier, Professor of Crime",
           attack: "8+",
           abilities: [
             [
@@ -383,7 +384,11 @@ export default {
               { bold: "Fight" },
               ": Each other player ",
               { keyword: 32, text: "Investigates" },
-              " their deck for a card with an Attack icon and KOs it. Players reveal all the cards they investigated."
+              " their deck for a card with an ",
+              { icon: 1 },
+              " icon and KOs it. Players reveal all the cards they ",
+              { keyword: 32, text: "Investigated" },
+              "."
             ]
           ]
         },

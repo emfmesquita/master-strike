@@ -40,7 +40,8 @@ export default {
         },
         {
           name: "Like Totally Smart Hulk",
-          redSubTitle: "Amadeus Cho, transformed",
+          subTitle: "Amadeus Cho, transformed",
+          transformed: true,
           hc: 4,
           rarity: 1,
           cost: 5,
@@ -152,7 +153,8 @@ export default {
         },
         {
           name: "Savage Hulk Unleashed",
-          redSubTitle: "Bruce Banner, transformed",
+          subTitle: "Bruce Banner, transformed",
+          transformed: true,
           hc: 4,
           rarity: 1,
           cost: 5,
@@ -277,7 +279,8 @@ export default {
         },
         {
           name: "Vengeful Destructor",
-          redSubTitle: "Caiera, transformed",
+          subTitle: "Caiera, transformed",
+          transformed: true,
           hc: 4,
           rarity: 3,
           cost: 7,
@@ -341,7 +344,8 @@ export default {
         },
         {
           name: "Hulk Is King",
-          redSubTitle: "Gladiator Hulk, transformed",
+          subTitle: "Gladiator Hulk, transformed",
+          transformed: true,
           hc: 4,
           rarity: 1,
           cost: 5,
@@ -444,7 +448,8 @@ export default {
         },
         {
           name: "Hiroim Redeemed",
-          redSubTitle: "Hiroim, transformed",
+          subTitle: "Hiroim, transformed",
+          transformed: true,
           hc: 4,
           rarity: 2,
           cost: 5,
@@ -568,7 +573,8 @@ export default {
         },
         {
           name: "Ultra-Massive Armor",
-          redSubTitle: "Hulkbuster Iron Man, transformed",
+          subTitle: "Hulkbuster Iron Man, transformed",
+          transformed: true,
           hc: 5,
           rarity: 2,
           cost: 6,
@@ -675,7 +681,8 @@ export default {
         },
         {
           name: "Underworld Boss",
-          redSubTitle: "Joe Fixit, Grey Hulk, transformed",
+          subTitle: "Joe Fixit, Grey Hulk, transformed",
+          transformed: true,
           hc: 2,
           rarity: 2,
           cost: 6,
@@ -787,7 +794,8 @@ export default {
         },
         {
           name: "Lord of Granite",
-          redSubTitle: "Korg, transformed",
+          subTitle: "Korg, transformed",
+          transformed: true,
           hc: 1,
           rarity: 2,
           cost: 5,
@@ -903,7 +911,8 @@ export default {
         },
         {
           name: "Hive King Miek",
-          redSubTitle: "Miek, The Unhived, transformed",
+          subTitle: "Miek, The Unhived, transformed",
+          transformed: true,
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -985,7 +994,8 @@ export default {
         },
         {
           name: "Master of Depths",
-          redSubTitle: "Namora, transformed",
+          subTitle: "Namora, transformed",
+          transformed: true,
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -1092,7 +1102,8 @@ export default {
         },
         {
           name: "Torrent of Broodlings",
-          redSubTitle: "No-Name, Brood Queen, transformed",
+          subTitle: "No-Name, Brood Queen, transformed",
+          transformed: true,
           hc: 1,
           rarity: 2,
           cost: 5,
@@ -1171,7 +1182,8 @@ export default {
         },
         {
           name: "Captain Marvel",
-          redSubTitle: "Rick Jones, transformed",
+          subTitle: "Rick Jones, transformed",
+          transformed: true,
           hc: 3,
           team: 1,
           rarity: 1,
@@ -1201,7 +1213,8 @@ export default {
         },
         {
           name: "A-Bomb",
-          redSubTitle: "Rick Jones, transformed",
+          subTitle: "Rick Jones, transformed",
+          transformed: true,
           hc: 4,
           team: 0,
           rarity: 2,
@@ -1234,7 +1247,8 @@ export default {
         },
         {
           name: "The Destiny Force",
-          redSubTitle: "Rick Jones, transformed",
+          subTitle: "Rick Jones, transformed",
+          transformed: true,
           hc: 3,
           team: 1,
           rarity: 3,
@@ -1270,7 +1284,8 @@ export default {
         },
         {
           name: "Golden Guardian of Good",
-          redSubTitle: "Sentry, transformed",
+          subTitle: "Sentry, transformed",
+          transformed: true,
           hc: 4,
           rarity: 1,
           cost: 6,
@@ -1333,7 +1348,8 @@ export default {
         },
         {
           name: "The Void Unchained",
-          redSubTitle: "Sentry, transformed",
+          subTitle: "Sentry, transformed",
+          transformed: true,
           team: 0,
           hc: 1,
           rarity: 2,
@@ -1414,7 +1430,8 @@ export default {
         },
         {
           name: "Hurl Trucks",
-          redSubTitle: "She-Hulk, transformed",
+          subTitle: "She-Hulk, transformed",
+          transformed: true,
           hc: 4,
           rarity: 1,
           cost: 6,
@@ -1559,7 +1576,8 @@ export default {
         },
         {
           name: "Raging Savage",
-          redSubTitle: "Skaar, Son of Hulk, transformed",
+          subTitle: "Skaar, Son of Hulk, transformed",
+          transformed: true,
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -1595,7 +1613,7 @@ export default {
   masterminds: [
     {
       id: 50,
-      name: "General Ross",
+      name: "General “Thunderbolt” Ross",
       tacticName: "Ross/Red Hulk",
       set: 19,
       attack: "6",

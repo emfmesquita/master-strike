@@ -441,7 +441,7 @@ export default {
           ]
         },
         {
-          name: "Imperial Edict",
+          name: "Crush Pacifist Resistance",
           tactic: true,
           abilities: [
             [

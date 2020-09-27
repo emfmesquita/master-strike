@@ -745,7 +745,7 @@ export default {
               { bold: "Master Strike" },
               ": Each player reveals a card that costs 5 or more or gains a Wound. Then put this Strike under an HQ space ",
               { italic: "(that doesn't already have a Strike)" },
-              " pulling that space into a Pocket Dimension. To recruit a card from a Pocket Dimension, you must pay ",
+              ", pulling that space into a Pocket Dimension. To recruit a card from a Pocket Dimension, you must also pay ",
               { bold: "1" },
               { icon: 1 },
               " for each Pocket Dimension in play."
@@ -771,7 +771,7 @@ export default {
               { bold: "Master Strike" },
               ": Each player reveals a card that costs 6 or more or gains a Wound. Then put this Strike under an HQ space ",
               { italic: "(that doesn't already have a Strike)" },
-              " pulling that space into a Pocket Dimension. To recruit a card from a Pocket Dimension, you must pay ",
+              ", pulling that space into a Pocket Dimension. To recruit a card from a Pocket Dimension, you must also pay ",
               { bold: "1" },
               { icon: 1 },
               " for each Pocket Dimension in play."
@@ -936,7 +936,9 @@ export default {
               { keyword: 68 },
               " ",
               { hc: 3 },
-              ", with Evil selecting from 4 cards from the Hero Deck. Each other player that loses must KO half the Bystanders (round up) from their Victory Pile. If you win, rescue three Bystanders. If the Grandmaster Wins, he gains 3 ",
+              ", with Evil selecting from 4 cards from the Hero Deck. Each other player that loses must KO half the Bystanders ",
+              { italic: "(round up)" },
+              " from their Victory Pile. If you win, rescue three Bystanders. If the Grandmaster Wins, he gains 3 ",
               { rule: 1 },
               "."
             ]
@@ -992,7 +994,7 @@ export default {
               " in the city, each player gains a Wound. Then this Strike enters the city as a “Cosmic Wraith“ Villain with ",
               { bold: "4" },
               { icon: 1 },
-              " worth 4 VP. Then put a ",
+              " worth 4VP. Then put a ",
               { rule: 1, text: "Shard" },
               " on each Villain in the city."
             ]
@@ -1018,12 +1020,12 @@ export default {
             ],
             [
               { bold: "Master Strike" },
-              ": If there are already any Villains with ",
+              ": If there are already any Villains in the city with ",
               { rule: 1 },
-              " in the city, each player gains a Wound to the top of their deck. Then this Strike enters the city as a “Cosmic Wraith“ Villain with ",
+              ", each player gains a Wound to the top of their deck. Then this Strike enters the city as a “Cosmic Wraith“ Villain with ",
               { bold: "6" },
               { icon: 1 },
-              " worth 6 VP. Then put a ",
+              " worth 6VP. Then put a ",
               { rule: 1, text: "Shard" },
               " on each Villain in the city."
             ]
