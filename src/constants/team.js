@@ -110,32 +110,6 @@ const HEROES_OF_ASGARD= {
 };
 
 export const team = Object.freeze({
-    UNAFFILIATED,
-    AVENGERS,
-    SHIELD,
-    SPIDER_FRIENDS,
-    X_MEN,
-    CRIME_SYNDICATE,
-    FANTASTIC_FOUR,
-    MARVEL_KNIGHTS,
-    X_FORCE,
-    SINISTER_SIX,
-    FOES_OF_ASGARD,
-    BROTHERHOOD,
-    GUARDIANS_OF_THE_GALAXY,
-    HYDRA,
-    CABAL,
-    ILLUMINATI,
-    NEW_WARRIORS,
-    MERCS_FOR_MONEY,
-    CHAMPIONS,
-    WARBOUND,
-    VENOMVERSE,
-    HEROES_OF_ASGARD
-    
-});
-
-export const teamArray = Object.freeze([
     UNAFFILIATED,                   //0
     AVENGERS,                       //1
     SHIELD,                         //2
@@ -158,4 +132,6 @@ export const teamArray = Object.freeze([
     WARBOUND,                       //19
     VENOMVERSE,                     //20   
     HEROES_OF_ASGARD                //21
-]);
+});
+
+export const teamArray = Object.freeze(Object.values(team));

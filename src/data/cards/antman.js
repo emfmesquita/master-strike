@@ -411,12 +411,12 @@ export default {
       id: 57,
       name: "Morgan Le Fay",
       set: 21,
-      attack: "7",
+      vAttack: "7",
       vp: 6,
       cards: [
         {
           name: "Morgan Le Fay",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           abilities: [
             { keyword: 52 },
             [
@@ -433,8 +433,8 @@ export default {
         },
         {
           name: "Epic Morgan Le Fay",
-          attack: "9",
-          attackAsterisk: true,
+          vAttack: "9",
+          vAttackAsterisk: true,
           epic: true,
           abilities: [
             { keyword: 52 },
@@ -503,12 +503,12 @@ export default {
       id: 58,
       name: "Ultron",
       set: 21,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
           name: "Ultron",
-          attack: "9+",
+          vAttack: "9+",
           abilities: [
             [
               { bold: "Always Leads" },
@@ -526,7 +526,7 @@ export default {
         },
         {
           name: "Epic Ultron",
-          attack: "10+",
+          vAttack: "10+",
           epic: true,
           abilities: [
             [

@@ -35,16 +35,6 @@ const TOKEN = {
 };
 
 export const icon = Object.freeze({
-    ATTACK,
-    RECRUIT,
-    COST,
-    VP,
-    FOCUS,
-    PIERCING,
-    TOKEN
-});
-
-export const iconArray = Object.freeze([
     ATTACK,     // 1
     RECRUIT,    // 2
     COST,       // 3
@@ -52,4 +42,6 @@ export const iconArray = Object.freeze([
     FOCUS,      // 5
     PIERCING,   // 6
     TOKEN       // 7
-]);
+});
+
+export const iconArray = Object.freeze(Object.values(icon));

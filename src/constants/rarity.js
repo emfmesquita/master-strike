@@ -12,13 +12,9 @@ const RARE = {
 };
 
 export const rarity = Object.freeze({
-    COMMON,
-    UNCOMMON,
-    RARE
-});
-
-export const rarityArray = Object.freeze([
     COMMON,     // 1
     UNCOMMON,   // 2
     RARE        // 3
-]);
+});
+
+export const rarityArray = Object.freeze(Object.values(rarity));

@@ -54,7 +54,7 @@
             <v-col cols="12">
               <CardGroup :group="hero">
                 <template v-slot:default="{ card }">
-                  <HeroCard :card="card" :hero="hero"/>
+                  <HeroCard :card="card" />
                 </template>
               </CardGroup>
             </v-col>
@@ -68,13 +68,13 @@
 </template>
 
 <script>
-import HeroCard from "../components/hero/HeroCard.vue";
+import HeroCard from "../components/cards/HeroCard.vue";
 import CardGroup from "../components/shared/CardGroup.vue";
 import { setsArray } from "../constants/sets";
 import { toIntArray, toInteger } from "../services/queryUtils";
 import { getAllHeroes } from "../services/cardUtils";
 import { randomArray } from "../services/randomUtils";
-import SetFilter from "../components/shared/filter/SetFilter.vue";
+import SetFilter from "../components/filters/SetFilter.vue";
 
 const allHeroes = getAllHeroes();
 

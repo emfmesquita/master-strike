@@ -1174,7 +1174,7 @@ export default {
       name: "Immortal Emperor Zheng-Zhu",
       tacticName: "Zheng-Zhu",
       set: 11,
-      attack: "7+",
+      vAttack: "7+",
       vp: 5,
       cards: [
         {
@@ -1246,7 +1246,7 @@ export default {
       name: "King Hyperion",
       tacticName: "Hyperion",
       set: 11,
-      attack: "12",
+      vAttack: "12",
       vp: 6,
       cards: [
         {
@@ -1318,7 +1318,7 @@ export default {
       name: "Shiklah, the Demon Bride",
       tacticName: "Shiklah",
       set: 11,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
@@ -1337,10 +1337,8 @@ export default {
         {
           name: "Shiklah's Husband, Deadpool",
           hc: 1,
-          cost: 9,
-          costText: "9",
           attack: "5+",
-          gainAsHero: true,
+          overrideType: 1,
           tactic: true,
           vp: -1,
           subTitle: "Mastermind Tactic - Shiklah",
@@ -1401,7 +1399,7 @@ export default {
       id: 28,
       name: "Spider-Queen",
       set: 11,
-      attack: "8+",
+      vAttack: "8+",
       vp: 6,
       cards: [
         {
@@ -1468,6 +1466,72 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  henchmen: [
+    {
+      id: 16,
+      name: "Khonshu Guardians",
+      set: 11,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              "While in the Sewers, Rooftops or Bridge, this is in “wolf form“ and gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 17,
+      name: "Magma Men",
+      set: 11,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes."
+            ],
+            { keyword: 21 }
+          ]
+        },
+      ]
+    },
+    {
+      id: 18,
+      name: "Spider-Infected",
+      set: 11,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Ambush" },
+              ": This captures a Bystander."
+            ],
+            [
+              { bold: "Fight" },
+              ": The next Hero you gain this turn has ",
+              { keyword: 7 },
+              "."
+            ]
+          ]
+        },
       ]
     },
   ]

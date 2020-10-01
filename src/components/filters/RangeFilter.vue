@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import AbilityIcon from "../AbilityIcon.vue";
+import AbilityIcon from "../icons/AbilityIcon.vue";
 
 export default {
   name: "RangeFilter",
@@ -36,6 +36,7 @@ export default {
   data: () => ({}),
   methods: {
     filterChanged(newValue) {
+      if(this.value[0] === newValue[0] && this.value[1] === newValue[1]) return;
       this.$emit('input', newValue);
     },
     isRecruit(value) {

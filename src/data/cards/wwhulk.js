@@ -1616,12 +1616,12 @@ export default {
       name: "General “Thunderbolt” Ross",
       tacticName: "Ross/Red Hulk",
       set: 19,
-      attack: "6",
+      vAttack: "6",
       vp: 6,
       cards: [
         {
           name: "General “Thunderbolt” Ross",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           dense: true,
           abilities: [
             [
@@ -1647,7 +1647,7 @@ export default {
         },
         {
           name: "Red Hulk",
-          attack: "9+",
+          vAttack: "9+",
           transformed: true,
           dense: true,
           abilities: [
@@ -1730,12 +1730,12 @@ export default {
       name: "Illuminati, Secret Society",
       tacticName: "Illuminati",
       set: 19,
-      attack: "11",
+      vAttack: "11",
       vp: 7,
       cards: [
         {
           name: "Illuminati, Secret Society",
-          attack: "11+",
+          vAttack: "11+",
           abilities: [
             [
               "This Mastermind gets ",
@@ -1759,7 +1759,7 @@ export default {
         },
         {
           name: "Illuminati, Open Warfare",
-          attack: "13",
+          vAttack: "13",
           transformed: true,
           abilities: [
             [
@@ -1850,12 +1850,12 @@ export default {
       name: "King Hulk, Sakaarson",
       tacticName: "King Hulk",
       set: 19,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
           name: "King Hulk, Sakaarson",
-          attack: "9+",
+          vAttack: "9+",
           abilities: [
             [
               "King Hulk gets ",
@@ -1877,7 +1877,7 @@ export default {
         },
         {
           name: "King Hulk, Worldbreaker",
-          attack: "10+",
+          vAttack: "10+",
           transformed: true,
           abilities: [
             { keyword: 48 },
@@ -1966,7 +1966,7 @@ export default {
       id: 53,
       name: "M.O.D.O.K.",
       set: 19,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
@@ -1993,8 +1993,8 @@ export default {
         },
         {
           name: "M.O.D.O.K., Network Nightmare",
-          attack: "8",
-          attackAsterisk: true,
+          vAttack: "8",
+          vAttackAsterisk: true,
           transformed: true,
           abilities: [
             [
@@ -2081,12 +2081,12 @@ export default {
       name: "Red King, The",
       tacticName: "Red King",
       set: 19,
-      attack: "7",
+      vAttack: "7",
       vp: 6,
       cards: [
         {
           name: "The Red King",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           abilities: [
             [
               "You can't fight the Red King while any Villains are in the city."
@@ -2107,7 +2107,7 @@ export default {
         },
         {
           name: "The Red King, Power Armored",
-          attack: "10",
+          vAttack: "10",
           transformed: true,
           abilities: [
             [
@@ -2188,7 +2188,7 @@ export default {
       name: "Sentry, The",
       tacticName: "Sentry/Void",
       set: 19,
-      attack: "10",
+      vAttack: "10",
       vp: 6,
       cards: [
         {
@@ -2214,7 +2214,7 @@ export default {
         },
         {
           name: "The Void",
-          attack: "11+",
+          vAttack: "11+",
           transformed: true,
           abilities: [
             { keyword: 48 },
@@ -2294,5 +2294,67 @@ export default {
         }
       ]
     },
+  ],
+  henchmen: [
+    {
+      id: 26,
+      name: "Cytoplasm Spikes",
+      set: 19,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 8 },
+              ". If Cytoplasm Spikes feasts on a non-grey Hero, you get ",
+              { bold: "+2" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 27,
+      name: "Death's Heads",
+      set: 19,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If you ",
+              { keyword: 46 },
+              " these Death's Heads, KO one of your cards that costs 0."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 27,
+      name: "Sakaaran Hivelings",
+      set: 19,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Look at the top card of your deck. Put it back on the top or bottom. Then ",
+              { keyword: 8 },
+              "."
+            ]
+          ]
+        },
+      ]
+    }
   ]
 };

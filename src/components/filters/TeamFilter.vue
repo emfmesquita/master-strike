@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import { teamArray } from "../../../constants/team";
-import TeamIcon from "../TeamIcon.vue";
+import { teamArray } from "../../constants/team";
+import TeamIcon from "../icons/TeamIcon.vue";
 
 export default {
   name: "TeamFilter",

@@ -725,12 +725,12 @@ export default {
       name: "Beyonder, The",
       tacticName: "Beyonder",
       set: 28,
-      attack: "21",
+      vAttack: "21",
       vp: 7,
       cards: [
         {
           name: "The Beyonder",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           dense: true,
           abilities: [
             [
@@ -754,8 +754,8 @@ export default {
         },
         {
           name: "Epic Beyonder",
-          attack: "24",
-          attackAsterisk: true,
+          vAttack: "24",
+          vAttackAsterisk: true,
           epic: true,
           dense: true,
           abilities: [
@@ -843,7 +843,7 @@ export default {
       name: "Grandmaster, The",
       tacticName: "Grandmaster",
       set: 28,
-      attack: "10",
+      vAttack: "10",
       vp: 6,
       cards: [
         {
@@ -866,7 +866,7 @@ export default {
         },
         {
           name: "Epic Grandmaster",
-          attack: "11",
+          vAttack: "11",
           epic: true,
           dense: true,
           abilities: [
@@ -967,12 +967,12 @@ export default {
       id: 73,
       name: "Magus",
       set: 28,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
           name: "Magus",
-          attack: "9+",
+          vAttack: "9+",
           dense: true,
           abilities: [
             [
@@ -1002,7 +1002,7 @@ export default {
         },
         {
           name: "Epic Magus",
-          attack: "11+",
+          vAttack: "11+",
           epic: true,
           dense: true,
           abilities: [
@@ -1091,6 +1091,60 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  henchmen: [
+    {
+      id: 35,
+      name: "Sidera Maris, Bridge Builders",
+      set: 28,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Ambush" },
+              ": ",
+              { italic: "(After this enters the city)" },
+              " If there's a Villain on the Bridge, that Villain and this Henchman each gain a ",
+              { rule: 1, text: "Shard" },
+              ". Otherwise, move this to the Bridge."
+            ],
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 36,
+      name: "Universal Church of Truth",
+      set: 28,
+      vAttack: "2",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Ambush" },
+              ": Each Henchman Villain in the city gains a ",
+              { rule: 1, text: "Shard" },
+              ". If Magus is the Mastermind, one Cosmic Wraith also gains a ",
+              { rule: 1, text: "Shard" },
+              "."
+            ],
+            [
+              { bold: "Fight" },
+              ": ",
+              { keyword: 66, text: "Burn 2 Shards" },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
       ]
     },
   ]

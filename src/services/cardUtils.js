@@ -89,6 +89,48 @@ const mastermindSubtitle = (card, group) => {
   return type;
 }
 
+const henchmanSubtitle = (card, group) => {
+  if(group.subTitle) return group.subTitle;
+  if(card.subTitle) return card.subTitle;
+  if(group.set === 6) return "Backup Adversary";
+  return "Henchman Villain";
+}
+
+
+const processHero = (card, group) => {
+  card.team = card.team !== undefined ? card.team : group.team;
+  card.attackNum = toNumber(card.attack);
+  card.recruitNum = toNumber(card.recruit);
+  card.attackText = card.attack ? card.attack + "" : "";
+  card.recruitText = card.recruit ? card.recruit + "" : "";
+  card.piercingText = card.piercing ? card.piercing + "" : "";
+  card.costText = card.costAsterisk ? card.cost + "*" : card.cost + "";
+}
+
+const processVillain = (card, group) => {
+  card.vAttack = card.vAttack || group.vAttack;
+  card.vAttackNum = toNumber(card.vAttack);
+  card.vAttackText = card.vAttackAsterisk ? card.vAttack + "*" : card.vAttack + "";
+  card.vp = card.vp || group.vp || -1;
+  card.vpText = card.vp > 0 ? card.vp + "" : "";
+  card.abilitiesText = abilitiesToText(card.abilities);
+
+  if(card.overrideType === cardTypes.HERO.id) {
+    card.cost = card.vAttack;
+    processHero(card, group);
+  }
+}
+
+const processSet = (card, group) => {
+  if(!group.set) return;
+  if(Array.isArray(group.set)) {
+    card.set = group.set[0];
+    card.set2 = group.set[1];
+  } else {
+    card.set = group.set;
+  }
+}
+
 /**
  * Process card properties used both to display them and on search/filter.
  * @param {*} cardType 
@@ -98,28 +140,28 @@ const mastermindSubtitle = (card, group) => {
 const processCard = (cardType, card, group) => {
   card.groupId = group.id;
   card.uid = `${group.id}_${card.name}`;
+  card.type = cardType.id;
 
   if(cardTypes.HERO === cardType) {
     card.team = card.team !== undefined ? card.team : group.team;
-    card.attackNum = toNumber(card.attack);
-    card.recruitNum = toNumber(card.recruit);
-    card.attackText = card.attack ? card.attack + "" : "";
-    card.recruitText = card.recruit ? card.recruit + "" : "";
-    card.piercingText = card.piercing ? card.piercing + "" : "";
-    card.costText = card.costAsterisk ? card.cost + "*" : card.cost + "";
     card.abilitiesText = abilitiesToText(card.abilities);
     card.subTitle = card.subTitle || group.name;
+    card.type
+    processHero(card, group);
     return;
   }
 
   if(cardTypes.MASTERMIND === cardType) {
-    card.attack = card.attack || group.attack;
-    card.attackNum = toNumber(card.attack);
-    card.attackText = card.attackAsterisk ? card.attack + "*" : card.attack + "";
-    card.vp = card.vp || group.vp || -1;
-    card.vpText = card.vp > 0 ? card.vp + "" : "";
-    card.abilitiesText = abilitiesToText(card.abilities);
+    processVillain(card, group);
     card.subTitle = mastermindSubtitle(card, group);
+    return;
+  }
+
+  if(cardTypes.HENCHMEN === cardType) {
+    processVillain(card, group);
+    processSet(card, group);
+    card.name = card.name || group.name;
+    card.subTitle = henchmanSubtitle(card, group);
   }
 }
 
@@ -150,3 +192,7 @@ export const getAllHeroes = () => {
 export const getAllMasterminds = () => {
   return processCardGroups(cardTypes.MASTERMIND);
 };
+
+export const getAllHenchmen = () => {
+  return processCardGroups(cardTypes.HENCHMEN);
+}

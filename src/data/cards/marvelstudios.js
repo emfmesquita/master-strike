@@ -4,12 +4,12 @@ export default {
       id: 56,
       name: "Iron Monger",
       set: 20,
-      attack: "9",
+      vAttack: "9",
       vp: 5,
       cards: [
         {
           name: "Iron Monger",
-          attack: "9+",
+          vAttack: "9+",
           abilities: [
             [
               { keyword: 49, text: "Bank Conqueror 4" }
@@ -73,6 +73,79 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  henchmen: [
+    {
+      id: 29,
+      name: "Hammer Drone Army",
+      set: 20,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Look at the top two cards of your deck. KO one of them and put the other back."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 30,
+      name: "HYDRA Pilots",
+      set: 20,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 31,
+      name: "HYDRA Spies",
+      set: 20,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": When you draw a new hand of cards at the end of this turn, draw an extra card."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 32,
+      name: "Ten Rings Fanatics",
+      set: 20,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
       ]
     },
   ]

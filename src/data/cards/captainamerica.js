@@ -384,12 +384,12 @@ export default {
       id: 29,
       name: "Arnim Zola",
       set: 12,
-      attack: "6",
+      vAttack: "6",
       vp: 6,
       cards: [
         {
           name: "Arnim Zola",
-          attack: "6+",
+          vAttack: "6+",
           abilities: [
             [
               { keyword: 25, text: "Ultimate Abomination" }
@@ -459,12 +459,12 @@ export default {
       name: "Baron Heinrich Zemo",
       tacticName: "Baron Zemo",
       set: 12,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
           name: "Baron Heinrich Zemo",
-          attack: "9+",
+          vAttack: "9+",
           dense: true,
           abilities: [
             [

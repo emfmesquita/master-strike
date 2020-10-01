@@ -1177,7 +1177,7 @@ export default {
       id: 1,
       name: "Dr. Doom",
       set: 1,
-      attack: "9",
+      vAttack: "9",
       vp: 5,
       cards: [
         {
@@ -1245,7 +1245,7 @@ export default {
       id: 2,
       name: "Loki",
       set: [1, 20],
-      attack: "10",
+      vAttack: "10",
       vp: 5,
       cards: [
         {
@@ -1309,7 +1309,7 @@ export default {
       id: 3,
       name: "Magneto",
       set: 1,
-      attack: "8",
+      vAttack: "8",
       vp: 5,
       cards: [
         {
@@ -1381,7 +1381,7 @@ export default {
       id: 4,
       name: "Red Skull",
       set: [1, 20],
-      attack: "7",
+      vAttack: "7",
       vp: 5,
       cards: [
         {
@@ -1445,5 +1445,78 @@ export default {
         }
       ]
     }
+  ],
+  henchmen: [
+    {
+      id: 1,
+      name: "Doombot Legion",
+      set: 1,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Look at the top two cards of your deck. KO one of them and put the other back."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 2,
+      name: "Hand Ninjas",
+      set: 1,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 3,
+      name: "Savage Land Mutates",
+      set: 1,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": When you draw a new hand of cards at the end of this turn, draw an extra card."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 4,
+      name: "Sentinel",
+      set: 1,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+      ]
+    },
   ]
 }

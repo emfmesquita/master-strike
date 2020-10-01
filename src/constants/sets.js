@@ -3,13 +3,13 @@ const CORE_SET = {
     value: "coreset",
     label: "Core Set",
     initials: "C",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 const PROMO = {
     id: 2,
     value: "promo",
     label: "Promo Cards",
-    initials: "★",
+    initials: "$",
     cardTypes: [],
 };
 const DARK_CITY = {
@@ -17,7 +17,7 @@ const DARK_CITY = {
     value: "darkcity",
     label: "Dark City",
     initials: "DC",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 const FANTASTIC_FOUR = {
     id: 4,
@@ -38,7 +38,7 @@ const VILLAINS = {
     value: "villains",
     label: "Villains",
     initials: "V",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 const GUARDIANS_OF_THE_GALAXY = {
     id: 7,
@@ -59,21 +59,21 @@ const THREE_DIMENSION = {
     value: "3d",
     label: "Playable Marvel 3D Trading Cards",
     initials: "3D",
-    cardTypes: [1],
+    cardTypes: [1,3],
 };
 const SECRET_WARS_1 = {
     id: 10,
     value: "sw1",
     label: "Secret Wars, Volume 1",
     initials: "SW1",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 const SECRET_WARS_2 = {
     id: 11,
     value: "sw2",
     label: "Secret Wars, Volume 2",
     initials: "SW2",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 const CAPTAIN_AMERICA = {
     id: 12,
@@ -87,7 +87,7 @@ const CIVIL_WAR = {
     value: "civilwar",
     label: "Civil War",
     initials: "CW",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 const DEADPOOL = {
     id: 14,
@@ -108,7 +108,7 @@ const X_MEN = {
     value: "xmen",
     label: "X-Men",
     initials: "X",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 const SPIDER_HOMECOMING = {
     id: 17,
@@ -129,14 +129,14 @@ const WW_HULK = {
     value: "wwhulk",
     label: "World War Hulk",
     initials: "WWH",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 const MARVEL_STUDIOS = {
     id: 20,
     value: "marvelstudios",
     label: "Marvel Studios, Phase 1",
     initials: "MS1",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 const ANT_MAN = {
     id: 21,
@@ -157,14 +157,14 @@ const DIMENSIONS = {
     value: "dimensions",
     label: "Dimensions",
     initials: "Dim",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 const REVELATIONS = {
     id: 24,
     value: "revelations",
     label: "Revelations",
     initials: "Rev",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 const SHIELD = {
     id: 25,
@@ -192,41 +192,10 @@ const INTO_THE_COSMOS = {
     value: "intothecosmos",
     label: "Into the Cosmos",
     initials: "ItC",
-    cardTypes: [1,2],
+    cardTypes: [1,2,3],
 };
 
 export const sets = Object.freeze({
-    CORE_SET,
-    PROMO,
-    DARK_CITY,
-    FANTASTIC_FOUR,
-    VILLAINS,
-    PAINT_THE_TOWN_RED,
-    GUARDIANS_OF_THE_GALAXY,
-    FEAR_ITSELF,
-    SECRET_WARS_1,
-    SECRET_WARS_2,
-    THREE_DIMENSION,
-    CAPTAIN_AMERICA,
-    DEADPOOL,
-    CIVIL_WAR,
-    NOIR,
-    X_MEN,
-    SPIDER_HOMECOMING,
-    CHAMPIONS,
-    WW_HULK,
-    MARVEL_STUDIOS,
-    ANT_MAN,
-    VENOM,
-    DIMENSIONS,
-    REVELATIONS,
-    SHIELD,
-    HEROES_OF_ASGARD,
-    NEW_MUTANTS,
-    INTO_THE_COSMOS
-});
-
-export const setsArray = Object.freeze([
     CORE_SET,                   // 1
     PROMO,                      // 2
     DARK_CITY,                  // 3
@@ -255,4 +224,6 @@ export const setsArray = Object.freeze([
     HEROES_OF_ASGARD,           // 26
     NEW_MUTANTS,                // 27
     INTO_THE_COSMOS             // 28
-]);
+});
+
+export const setsArray = Object.freeze(Object.values(sets));

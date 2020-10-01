@@ -872,12 +872,12 @@ export default {
       id: 62,
       name: "Grim Reaper",
       set: 24,
-      attack: "8",
+      vAttack: "8",
       vp: 6,
       cards: [
         {
           name: "Grim Reaper",
-          attack: "8+",
+          vAttack: "8+",
           abilities: [
             [
               "Grim Reaper gets ",
@@ -907,7 +907,7 @@ export default {
         },
         {
           name: "Epic Grim Reaper",
-          attack: "9+",
+          vAttack: "9+",
           epic: true,
           dense: true,
           abilities: [
@@ -940,6 +940,8 @@ export default {
         {
           name: "Carnival of Concussions",
           tactic: true,
+          overrideType: 4,
+          overrideSubType: 2,
           abilities: [
             [
               { bold: "Fight" },
@@ -957,6 +959,8 @@ export default {
           name: "Cult of Skulls",
           tactic: true,
           dense: true,
+          overrideType: 4,
+          overrideSubType: 2,
           abilities: [
             [
               { bold: "Fight" },
@@ -974,6 +978,8 @@ export default {
           name: "Maze of Bones",
           tactic: true,
           dense: true,
+          overrideType: 4,
+          overrideSubType: 2,
           abilities: [
             [
               { bold: "Fight" },
@@ -991,6 +997,8 @@ export default {
           name: "Prison of Coffins",
           tactic: true,
           dense: true,
+          overrideType: 4,
+          overrideSubType: 2,
           abilities: [
             [
               { bold: "Fight" },
@@ -1014,12 +1022,12 @@ export default {
       name: "Hood, The",
       tacticName: "The Hood",
       set: 24,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
           name: "The Hood",
-          attack: "9+",
+          vAttack: "9+",
           abilities: [
             { keyword: 58 },
             [
@@ -1034,7 +1042,7 @@ export default {
         },
         {
           name: "Epic Hood",
-          attack: "10+",
+          vAttack: "10+",
           epic: true,
           abilities: [
             { keyword: 58, text: "Double Dark Memories" },
@@ -1088,6 +1096,8 @@ export default {
         {
           name: "The Hood's Warehouse",
           tactic: true,
+          overrideType: 4,
+          overrideSubType: 2,
           abilities: [
             [
               { bold: "Fight" },
@@ -1107,12 +1117,12 @@ export default {
       id: 64,
       name: "Mandarin",
       set: 24,
-      attack: "16",
+      vAttack: "16",
       vp: 6,
       cards: [
         {
           name: "Mandarin",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           dense: true,
           abilities: [
             [
@@ -1143,8 +1153,8 @@ export default {
         },
         {
           name: "Epic Mandarin",
-          attack: "26",
-          attackAsterisk: true,
+          vAttack: "26",
+          vAttackAsterisk: true,
           epic: true,
           dense: true,
           abilities: [
@@ -1186,9 +1196,11 @@ export default {
         },
         {
           name: "Dragon of Heaven Spaceship",
-          attack: "9",
+          vAttack: "9",
           tactic: true,
           dense: true,
+          overrideType: 4,
+          overrideSubType: 2,
           abilities: [
             [
               { bold: "Fight" },
@@ -1228,6 +1240,138 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  henchmen: [
+    {
+      id: 33,
+      name: "HYDRA Base",
+      set: 24,
+      vAttack: "2+",
+      vp: 1,
+      cards: [
+        {
+          subTitle: "Henchman Location",
+          subType: 2,
+          abilities: [
+            [
+              "HYDRA Base gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              " while there's a Villain here."
+            ],
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 34,
+      name: "Mandarin's Rings",
+      subTitle: "Henchman Villain - Mandarin's Rings",
+      set: 24,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          name: "Daimonic, The White Light",
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Draw a card."
+            ]
+          ]
+        },
+        {
+          name: "Incandescence, The Flame Blast",
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You may KO a card from your discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Influence, The Impact Beam",
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Liar, The Mento-Intensifier",
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Look at the top card of another player's deck. Say it is “Good“ or “Bad.“ That player chooses to put it in your discard pile or their discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Lightning, The Electro-Blast",
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top card of your deck. You may KO it."
+            ]
+          ]
+        },
+        {
+          name: "Nightbringer, The Black Light",
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top three cards of the Villain Deck. You may defeat a Villain you revealed worth 2VP or less. ",
+              { italic: "(Do its Fight effect.)" },
+              " Put the rest back in any order."
+            ]
+          ]
+        },
+        {
+          name: "Remaker, The Matter Rearranger",
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You may choose a card from your hand or discard pile. The player on your right puts it in their hand."
+            ]
+          ]
+        },
+        {
+          name: "Spectral, The Disintegration Beam",
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Spin, The Vortex Beam",
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top six cards of your deck. Discard all of them that cost 0, then put the rest back in any order."
+            ]
+          ]
+        },
+        {
+          name: "Zero, The Ice Blast",
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Choose a card you played this turn that costs 0. When you draw a new hand of cards at the end of this turn, add that card to your hand as an extra card."
+            ]
+          ]
+        },
       ]
     },
   ]

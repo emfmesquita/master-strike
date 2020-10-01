@@ -377,7 +377,7 @@ export default {
         {
           name: "Red Skull",
           tactic: true,
-          attack: "7+",
+          vAttack: "7+",
           dense: true,
           abilities: [
             [
@@ -415,7 +415,7 @@ export default {
         {
           name: "Viper",
           tactic: true,
-          attack: "9+",
+          vAttack: "9+",
           dense: true,
           abilities: [
             [
@@ -441,7 +441,7 @@ export default {
         {
           name: "Arnim Zola",
           tactic: true,
-          attack: "6+",
+          vAttack: "6+",
           dense: true,
           abilities: [
             [
@@ -473,8 +473,8 @@ export default {
         {
           name: "Baron Helmut Zemo",
           tactic: true,
-          attack: "16",
-          attackAsterisk: true,
+          vAttack: "16",
+          vAttackAsterisk: true,
           dense: true,
           abilities: [
             [
@@ -508,7 +508,7 @@ export default {
         {
           name: "Black Widow's Bite",
           tactic: true,
-          attack: "8",
+          vAttack: "8",
           dense: true,
           abilities: [
             [
@@ -540,7 +540,7 @@ export default {
         {
           name: "Captain America's Shield",
           tactic: true,
-          attack: "10",
+          vAttack: "10",
           abilities: [
             [
               { bold: "Master Strike" },
@@ -566,7 +566,7 @@ export default {
         {
           name: "Iron Man's Armor",
           tactic: true,
-          attack: "12",
+          vAttack: "12",
           abilities: [
             [
               { bold: "Master Strike" },
@@ -589,7 +589,7 @@ export default {
         {
           name: "Thor's Hammer",
           tactic: true,
-          attack: "14",
+          vAttack: "14",
           abilities: [
             [
               { bold: "Master Strike" },

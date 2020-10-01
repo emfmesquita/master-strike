@@ -1,12 +1,12 @@
 <template>
-  <v-autocomplete
+  <v-select
     :value="value"
-    :items="heroes"
+    :items="keywords"
     multiple
-    label="Hero"
-    item-text="label"
-    item-value="id" 
     clearable
+    item-text="label"
+    item-value="id"
+    label="Keyword"
     @change="filterChanged"
   >
     <template v-slot:selection="{ item }">
@@ -14,27 +14,24 @@
         {{item.label}}
       </v-chip>
     </template>
-  </v-autocomplete>
+  </v-select>
 </template>
 
 <script>
-import { getAllHeroes } from "../../../services/cardUtils";
+import { keywordsArray } from "../../constants/keywords";
 
 export default {
-  name: "HeroFilter",
-  props: ["value"],
+  name: "KeywordFilter",
+  props: ["value", "cardTypes"],
   data() {
     return {
-      heroes: []
+      keywords: []
     }
   },
   mounted() {
-    const heroes = getAllHeroes().map(hero => ({
-      id: hero.id,
-      label: hero.filterName ? hero.filterName : hero.name
-    }));
-    heroes.sort((a, b) => a.label.localeCompare(b.label));
-    this.heroes = Object.freeze(heroes);
+    const keywords = keywordsArray.filter(keyword => window.hasIntersection(keyword.cardTypes, this.cardTypes));
+    keywords.sort((a, b) => a.label.localeCompare(b.label));
+    this.keywords = Object.freeze(keywords);
   },
   methods: {
     filterChanged(newValue) {

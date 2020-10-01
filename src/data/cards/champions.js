@@ -407,12 +407,12 @@ export default {
       id: 48,
       name: "Fin Fang Foom",
       set: 18,
-      attack: "20",
+      vAttack: "20",
       vp: 7,
       cards: [
         {
           name: "Fin Fang Foom",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           abilities: [
             [
               { keyword: 26 },
@@ -441,9 +441,9 @@ export default {
         },
         {
           name: "Epic Fin Fang Foom",
-          attack: "24",
+          vAttack: "24",
           epic: true,
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           dense: true,
           abilities: [
             [
@@ -561,7 +561,7 @@ export default {
       id: 49,
       name: "Pagliacci",
       set: 18,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
@@ -585,7 +585,7 @@ export default {
         },
         {
           name: "Epic Pagliacci",
-          attack: "11",
+          vAttack: "11",
           epic: true,
           abilities: [
             [

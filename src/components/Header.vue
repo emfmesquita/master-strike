@@ -60,6 +60,10 @@ const items = [
     to: "/masterminds"
   },
   {
+    title: "Henchmen",
+    to: "/henchmen"
+  },
+  {
     title: "About",
     to: "/about"
   },
@@ -87,6 +91,7 @@ export default {
 <style lang="scss" scoped>
   .header {
     padding-top: 2px;
+    z-index: 999;
 
     .logo {
       position: absolute;

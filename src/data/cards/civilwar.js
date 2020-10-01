@@ -1496,12 +1496,12 @@ export default {
       id: 31,
       name: "Authoritarian Iron Man",
       set: 13,
-      attack: "12",
+      vAttack: "12",
       vp: 6,
       cards: [
         {
           name: "Authoritarian Iron Man",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           abilities: [
             [
               { bold: "Always Leads" },
@@ -1576,12 +1576,12 @@ export default {
       name: "Baron Helmut Zemo",
       tacticName: "Helmut Zemo",
       set: 13,
-      attack: "16",
+      vAttack: "16",
       vp: 6,
       cards: [
         {
           name: "Baron Helmut Zemo",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           abilities: [
             [
               "Baron Zemo gets ",
@@ -1652,12 +1652,12 @@ export default {
       name: "Maria Hill, Director of S.H.I.E.L.D.",
       tacticName: "Maria Hill",
       set: 13,
-      attack: "7",
+      vAttack: "7",
       vp: 6,
       cards: [
         {
           name: "Maria Hill, Director of S.H.I.E.L.D.",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           dense: true,
           abilities: [
             [
@@ -1730,12 +1730,12 @@ export default {
       id: 34,
       name: "Misty Knight",
       set: 13,
-      attack: "14",
+      vAttack: "14",
       vp: 6,
       cards: [
         {
           name: "Misty Knight",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           abilities: [
             { keyword: 2 },
             [
@@ -1802,12 +1802,12 @@ export default {
       id: 35,
       name: "Ragnarok",
       set: 13,
-      attack: "6",
+      vAttack: "6",
       vp: 6,
       cards: [
         {
           name: "Ragnarok",
-          attack: "6+",
+          vAttack: "6+",
           abilities: [
             [
               "Ragnarok gets ",
@@ -1871,6 +1871,50 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  henchmen: [
+    {
+      id: 19,
+      name: "Mandroid",
+      set: 13,
+      vAttack: "2+",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              "This gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each other Mandroid in your Victory Pile."
+            ],
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 20,
+      name: "Cape-Killers",
+      set: 13,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 29 },
+            [
+              { bold: "Fight" },
+              ": KO a card from your discard pile."
+            ]
+          ]
+        },
       ]
     },
   ]

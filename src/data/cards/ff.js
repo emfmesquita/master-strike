@@ -439,12 +439,12 @@ export default {
       id: 10,
       name: "Galactus",
       set: 4,
-      attack: "20",
+      vAttack: "20",
       vp: 7,
       cards: [
         {
           name: "Galactus",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           dense: true,
           abilities: [
             [
@@ -536,12 +536,12 @@ export default {
       id: 11,
       name: "Mole Man",
       set: 4,
-      attack: "7",
+      vAttack: "7",
       vp: 6,
       cards: [
         {
           name: "Mole Man",
-          attack: "7+",
+          vAttack: "7+",
           abilities: [
             [
               "Mole Man gets ",

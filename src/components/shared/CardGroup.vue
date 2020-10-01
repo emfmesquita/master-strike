@@ -1,10 +1,12 @@
 <template>
-  <v-card class="mx-auto card-group" outlined>
-    <v-container>
+  <v-card class="mx-auto card-group" :class="{ 'pb-0': dense, 'dense': dense }" outlined>
+    <v-container :class="{ 'pb-0': dense, 'pt-2': dense }">
       <v-row>
-        <v-col cols="12">
-          <SetChip v-for="set in setArray" :key="set" class="set-chip float-right" :short="numberOfColumns <= 2" :set="set"/>
-          <NumberOfCards class="number-of-cards" :number="numberOfCards" size="16"/>
+        <v-col cols="12" :class="{ 'py-0': dense }" class="pb-0">
+          <template v-if="!dense">
+            <SetIcon v-for="set in setArray" :key="set" class="set float-right" :set="set" width="42px" />
+          </template>
+          <NumberOfCards v-if="!dense" class="number-of-cards" :number="numberOfCards" size="16"/>
           <span :class="titleClasses">{{ group.name }}</span>
         </v-col>
       </v-row>
@@ -20,16 +22,19 @@
         </template>
         <v-col v-else cols="12" class="carousel-column">
           <v-carousel
-            height="350"
+            v-model="currentPage"
+            :height="dense ? 274 : 350"
             hide-delimiter-background
-            show-arrows-on-hover
+            :hide-delimiters="manyPages"
+            :show-arrows-on-hover="!manyPages"
+            :show-arrows="!dense || manyPages"
           >
             <v-carousel-item v-for="(page, i) in pages" :key="i">
               <v-sheet height="100%" >
                 <v-row class="inner-carousel-row">
                   <v-col
                     :cols="columnSize"
-                    :class="{'divided-column-left': card.divided === 1, 'divided-column-right': card.divided === 2}"  
+                    :class="{'divided-column-left': card.divided === 1, 'divided-column-right': card.divided === 2, 'pa-1': dense}"  
                     v-for="card in page" :key="card.name"
                   >
                     <slot :card="card"/>
@@ -38,6 +43,7 @@
               </v-sheet>
             </v-carousel-item>
           </v-carousel>
+          <div v-if="manyPages" class="page-indicator font-weight-bold">{{currentPage+1}}/{{pages.length}}</div>
         </v-col>
       </v-row>
     </v-container>
@@ -45,26 +51,22 @@
 </template>
 
 <script>
-import SetChip from "../shared/SetChip.vue";
+// import SetChip from "../shared/SetChip.vue";
+import SetIcon from "../icons/SetIcon.vue";
 import NumberOfCards from "../shared/NumberOfCards";
 import { numberOfCards } from "../../services/cardUtils";
+import { numberOfColumns, pages } from "../../services/pageUtils";
 
 export default {
   name: "CardGroup",
-  props: ["group"],
-  components: { SetChip, NumberOfCards },
-  data: () => ({}),
+  props: ["group", "pageSize", "dense"],
+  components: { SetIcon, NumberOfCards },
+  data: () => ({
+    currentPage: 0
+  }),
   computed: {
     numberOfColumns() {
-      const expandedSideBar = !this.$store.getters.sideBarCollapsed;
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return 1
-        case 'sm': return expandedSideBar ? 1 : 2
-        case 'md': return expandedSideBar ? 2 : 3
-        case 'lg': return 4
-        case 'xl': return 4
-      }
-      return 4;
+      return this.pageSize || numberOfColumns(this);
     },
     columnSize() {
       return 12 / this.numberOfColumns;
@@ -76,25 +78,17 @@ export default {
       return this.group.results === undefined ? numberOfCards(this.cards) : this.group.results;
     },
     titleClasses() {
-      const short = this.numberOfColumns === 1;
+      const short = this.numberOfColumns === 1 || this.dense;
       return {
         'title': !short,
         'subtitle-1 font-weight-bold': short
       };
     }, 
     pages() {
-      const cards = this.cards;
-      const numberOfPages = Math.ceil(cards.length / this.numberOfColumns);
-      const pages = [];
-      for (let pageNumber = 0; pageNumber < numberOfPages; pageNumber++) {
-        const page = [];
-        for (let column = 0; column < this.numberOfColumns; column++) {
-          const card = cards[pageNumber * this.numberOfColumns + column];
-          if(card) page.push(card);
-        }
-        pages.push(page);
-      }
-      return pages;
+      return pages(this.cards, this.numberOfColumns);
+    },
+    manyPages() {
+      return this.pages.length > 4;
     },
     setArray() {
       if(this.group.set === undefined) return [];
@@ -111,8 +105,49 @@ export default {
 <style lang="scss">
 .card-group {
   background-color:#f2f2f2 !important;
-  .set-chip {
-    padding-left: 16px;
+
+  &.dense {
+    .v-window__prev, .v-window__next {
+      bottom: 3px;
+      top: initial;
+      z-index: 99;
+
+      .v-btn {
+        width: 24px;
+        height: 20px;
+      }
+
+      .v-icon {
+        font-size: 20px !important;
+      }
+    }
+
+    .page-indicator {
+      bottom: 3px;
+    }
+  }
+  &:not(.dense) {
+    .v-window__prev, .v-window__next {
+      bottom: 6px;
+      top: initial;
+      z-index: 99;
+    }
+
+    .page-indicator {
+      bottom: 26px;
+    }
+  }
+
+  .page-indicator {
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+  }
+  .set {
+    padding-right: 4px;
+    padding-right: 4px;
     margin-bottom: 2px;
   }
   .carousel-column {
@@ -121,11 +156,6 @@ export default {
   .inner-carousel-row {
     padding-left: 12px;
     padding-right: 12px;
-  }
-  .v-window__prev, .v-window__next {
-    bottom: 6px;
-    top: initial;
-    z-index: 99;
   }
   .v-sheet {
     background: initial;

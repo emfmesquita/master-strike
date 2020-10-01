@@ -130,5 +130,47 @@ export default {
         }
       ]
     },
+  ],
+  henchmen: [
+    {
+      id: 11,
+      name: "Circus of Crime",
+      set: [9, 23],
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top card of your deck. If it costs ",
+              { bold: "0" },
+              { icon: 3 },
+              ", KO it. Otherwise, draw it."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 12,
+      name: "Spider-Slayer",
+      set: [9, 23],
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top two cards of your deck. Put any that cost ",
+              { bold: "2" },
+              { icon: 3 },
+              " or less into your hand. Put the rest back in any order."
+            ]
+          ]
+        },
+      ]
+    },
   ]
 }

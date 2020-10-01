@@ -350,12 +350,12 @@ export default {
       id: 36,
       name: "Evil Deadpool",
       set: 14,
-      attack: "11",
+      vAttack: "11",
       vp: 6,
       cards: [
         {
           name: "Evil Deadpool",
-          attack: "11+",
+          vAttack: "11+",
           dense: true,
           abilities: [
             { keyword: 31, text: "Revenge for Mastermind Tactics" },
@@ -426,12 +426,12 @@ export default {
       id: 37,
       name: "Macho Gomez",
       set: 14,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
           name: "Macho Gomez",
-          attack: "9+",
+          vAttack: "9+",
           dense: true,
           abilities: [
             { keyword: 31, text: "Revenge for Deadpool's “Friends“" },

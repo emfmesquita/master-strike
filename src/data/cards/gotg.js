@@ -357,7 +357,7 @@ export default {
       name: "Supreme Intelligence of the Kree",
       tacticName: "Supreme Intelligence",
       set: 7,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
@@ -430,13 +430,13 @@ export default {
       id: 19,
       name: "Thanos",
       set: 7,
-      attack: "24",
+      vAttack: "24",
       vp: 7,
       cards: [
         {
           name: "Thanos",
           dense: true,
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           abilities: [
             [
               { bold: "Always Leads" },

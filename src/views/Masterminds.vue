@@ -50,7 +50,7 @@
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <RangeFilter v-model="filter.attack" :icon="1" :min="2" :max="26" @input="filterChanged"/>
+              <RangeFilter v-model="filter.vAttack" :icon="1" :min="2" :max="26" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
@@ -92,8 +92,9 @@
             <v-col cols="12">
               <CardGroup :group="mm">
                 <template v-slot:default="{ card }">
-                  <HeroCard v-if="card.gainAsHero" :card="card" :hero="mm" />
-                  <MastermindCard v-else :card="card" :mastermind="mm"/>
+                  <HeroCard v-if="card.overrideType === 1" :card="card" />
+                  <VillainCard v-if="card.overrideType === 4" :card="card" />
+                  <MastermindCard v-else :card="card"/>
                 </template>
               </CardGroup>
             </v-col>
@@ -108,16 +109,17 @@
 
 <script>
 import CardGroup from "../components/shared/CardGroup.vue";
-import HeroCard from "../components/hero/HeroCard.vue";
-import KeywordFilter from "../components/shared/filter/KeywordFilter.vue";
-import MastermindCard from "../components/mastermind/MastermindCard.vue";
-import MastermindFilter from "../components/shared/filter/MastermindFilter.vue";
-import RangeFilter from "../components/shared/filter/RangeFilter.vue";
-import RuleFilter from "../components/shared/filter/RuleFilter.vue";
-import SearchFilter from "../components/shared/filter/SearchFilter.vue";
-import SetFilter from "../components/shared/filter/SetFilter.vue";
-import SortToggle from "../components/shared/filter/SortToggle.vue";
-import SortToggleCollapsed from "../components/shared/filter/SortToggleCollapsed.vue";
+import HeroCard from "../components/cards/HeroCard.vue";
+import KeywordFilter from "../components/filters/KeywordFilter.vue";
+import MastermindCard from "../components/cards/MastermindCard.vue";
+import MastermindFilter from "../components/filters/MastermindFilter.vue";
+import RangeFilter from "../components/filters/RangeFilter.vue";
+import RuleFilter from "../components/filters/RuleFilter.vue";
+import SearchFilter from "../components/filters/SearchFilter.vue";
+import SetFilter from "../components/filters/SetFilter.vue";
+import SortToggle from "../components/filters/SortToggle.vue";
+import SortToggleCollapsed from "../components/filters/SortToggleCollapsed.vue";
+import VillainCard from "../components/cards/VillainCard.vue";
 
 
 import { cardTypes } from "../constants/cardTypes";
@@ -149,7 +151,7 @@ const baseFilter = () => ({
   keyword: [],
   rule: [],
   epic: false,
-  attack: [2,26],
+  vAttack: [2,26],
   vp: [-1,7]
 });
 
@@ -168,6 +170,7 @@ export default {
     SetFilter, 
     SortToggle,
     SortToggleCollapsed,
+    VillainCard,
   },
   data: () => ({
     sortMethod: ALPHA_SORT,
@@ -181,7 +184,7 @@ export default {
       return `${this.masterminds.length} Masterminds`;
     },
     hasAttackFilter() {
-      return this.filter.attack[0] !== 2 || this.filter.attack[1] !== 26;
+      return this.filter.vAttack[0] !== 2 || this.filter.vAttack[1] !== 26;
     },
     hasVpFilter() {
       return this.filter.vp[0] !== -1 || this.filter.vp[1] !== 7;
@@ -195,7 +198,7 @@ export default {
     this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
     this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
     this.filter.epic = query.rule === "1";
-    this.filter.attack = toIntPair(query.attack, 2, 26);
+    this.filter.vAttack = toIntPair(query.attack, 2, 26);
     this.filter.vp = toIntPair(query.vp, -1, 7);
     this.sortMethod = query.sort === RESULTS_SORT ? RESULTS_SORT : ALPHA_SORT;
     this.search();
@@ -214,7 +217,7 @@ export default {
       if(filter.keyword.length) query.keyword = filter.keyword.join(",");
       if(filter.rule.length) query.rule = filter.rule.join(",");
       if(filter.epic) query.epic = "1";
-      if(this.hasAttackFilter) query.attack = filter.attack.join(",");
+      if(this.hasAttackFilter) query.attack = filter.vAttack.join(",");
       if(this.hasVpFilter) query.vp = filter.vp.join(",");
 
       if(this.sortMethod === RESULTS_SORT) query.sort = RESULTS_SORT;
@@ -253,7 +256,7 @@ export default {
       this.masterminds = filterGroupByKeyword(this.masterminds, this.filter.keyword);
       this.masterminds = filterGroupByRule(this.masterminds, this.filter.rule);
       if(this.filter.epic) this.masterminds = filterGroupByCardProp(this.masterminds, "epic", [true]);
-      if(this.hasAttackFilter) this.masterminds = filterGroupByMinMax(this.masterminds, "attackNum", this.filter.attack);
+      if(this.hasAttackFilter) this.masterminds = filterGroupByMinMax(this.masterminds, "vAttackNum", this.filter.vAttack);
       if(this.hasVpFilter) this.masterminds = filterGroupByMinMax(this.masterminds, "vp", this.filter.vp);
       this.masterminds = filterGroupBySearch(this.masterminds, cardTypes.MASTERMIND.id, this.filter.search);
 

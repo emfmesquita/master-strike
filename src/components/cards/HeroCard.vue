@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto hero-card" :class="classes" raised :style="{ background }">
+  <v-card class="mx-auto hero-card" :class="classes" raised :style="{ background, height: height || '280px' }">
     <TeamIcon class="card-team" v-if="card.team" :icon="card.team" width="40px"/>
     <HeroClassIcon class="card-hero-class" v-if="card.hc" :icon="card.hc" width="32px"/>
 
@@ -7,6 +7,7 @@
       <HeroClassIcon class="card-second-hero-class"  :icon="card.hc2" width="32px"/>
     </shared-rule>
     <RarityIcon v-if="card.rarity" class="card-rarity" :icon="card.rarity" width="24px"/>
+    <SetIcon v-else-if="card.set" class="set-icon" :set="card.set" width="24px" />
     <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
     <div :class="subTitleClasses">{{ card.subTitle }}</div>
 
@@ -51,7 +52,7 @@
     </template>
 
     <template v-if="card.cost">
-      <AbilityIcon class="card-cost-icon absolute-icon" noAdjust :icon="card.gainAsHero ? 1 : 3" width="90px"/>
+      <AbilityIcon class="card-cost-icon absolute-icon" noAdjust :icon="card.overrideType === 1 ? 1 : 3" width="90px"/>
       <span 
         class="card-cost icon-text text-center font-weight-black"
         :class="{ small: card.cost.length > 2 }">
@@ -67,17 +68,18 @@
 </template>
 
 <script>
-import TeamIcon from "../shared/TeamIcon.vue";
-import HeroClassIcon from "../shared/HeroClassIcon.vue";
-import RarityIcon from "../shared/RarityIcon.vue";
-import AbilityIcon from "../shared/AbilityIcon.vue";
-import DividedCardIcon from "../shared/DividedCardIcon.vue";
+import TeamIcon from "../icons/TeamIcon.vue";
+import HeroClassIcon from "../icons/HeroClassIcon.vue";
+import RarityIcon from "../icons/RarityIcon.vue";
+import AbilityIcon from "../icons/AbilityIcon.vue";
+import SetIcon from "../icons/SetIcon.vue";
+import DividedCardIcon from "../icons/DividedCardIcon.vue";
 import { heroClassArray } from "../../constants/heroClass";
 import { getTextWidth } from "../../services/cardUtils";
 
 export default {
   name: "HeroCard",
-  props: ["card", "hero"],
+  props: ["card", "height"],
   data: () => ({
       
   }),
@@ -86,7 +88,8 @@ export default {
     HeroClassIcon,
     RarityIcon,
     AbilityIcon,
-    DividedCardIcon
+    DividedCardIcon,
+    SetIcon,
   },
   computed: {
     background() {
@@ -120,7 +123,6 @@ export default {
 
 <style scoped lang="scss">
 .hero-card {
-  height: 280px;
   padding: 6px;
   color: #000;
   border: solid 1px rgba(#000, .2);
@@ -151,6 +153,12 @@ export default {
     right: 0;
     z-index: -1;
     box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  .set-icon {
+    position: absolute;
+    top: 6px;
+    right: 8px;
   }
 
   .card-team {

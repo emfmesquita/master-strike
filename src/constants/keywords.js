@@ -8,7 +8,7 @@ const BRIBE = {
     id: 2,
     value: "bribe",
     label: "Bribe",
-    cardTypes: [2],
+    cardTypes: [2, 3],
 }
 const VERSATILE = {
     id: 3,
@@ -38,13 +38,13 @@ const WALL_CRAWL = {
     id: 7,
     value: "wallcrawl",
     label: "Wall-Crawl",
-    cardTypes: [1],
+    cardTypes: [1, 3],
 }
 const FEAST = {
     id: 8,
     value: "feast",
     label: "Feast",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 3],
 }
 const DEMOLISH = {
     id: 9,
@@ -92,7 +92,7 @@ const RISE_OF_THE_LIVING_DEAD = {
     id: 16,
     value: "riseofthelivingdead",
     label: "Rise of The Living Dead",
-    cardTypes: [2],
+    cardTypes: [2, 3],
 }
 const CROSS_DIMENSIONAL_RAMPAGE = {
     id: 17,
@@ -122,7 +122,7 @@ const FATEFUL_RESURRECTION = {
     id: 21,
     value: "fatefulresurrection",
     label: "Fateful Resurrection",
-    cardTypes: [2],
+    cardTypes: [2, 3],
 }
 const CHARGE = {
     id: 22,
@@ -170,7 +170,7 @@ const SHIELD_CLEARANCE = {
     id: 29,
     value: "shieldclearance",
     label: "S.H.I.E.L.D. Clearance",
-    cardTypes: [2],
+    cardTypes: [2, 3],
 }
 const EXCESSIVE_VIOLENCE = {
     id: 30,
@@ -218,7 +218,7 @@ const SOARING_FLIGHT = {
     id: 37,
     value: "soaringflight",
     label: "Soaring Flight",
-    cardTypes: [1],
+    cardTypes: [1, 3],
 }
 const LIGHTSHOW = {
     id: 38,
@@ -236,7 +236,7 @@ const HUMAN_SHIELDS = {
     id: 40,
     value: "humanshield",
     label: "Human Shields",
-    cardTypes: [2],
+    cardTypes: [2, 3],
 }
 const DANGER_SENSE = {
     id: 41,
@@ -272,7 +272,7 @@ const OUTWIT = {
     id: 46,
     value: "outwit",
     label: "Outwit",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 3],
 }
 const SMASH = {
     id: 47,
@@ -392,7 +392,7 @@ const BURN_SHARDS = {
     id: 66,
     value: "burnshards",
     label: "Burn Shards",
-    cardTypes: [1],
+    cardTypes: [1, 3],
 }
 const CELESTIAL_BOON = {
     id: 67,
@@ -408,77 +408,6 @@ const CONTEST_OF_CHAMPIONS = {
 }
 
 export const keywords = Object.freeze({
-    TELEPORT,
-    BRIBE,
-    VERSATILE,
-    FOCUS,
-    BURROW,
-    COSMIC_THREAT,
-    WALL_CRAWL,
-    FEAST,
-    DEMOLISH,
-    DODGE,
-    ELUSIVE,
-    X_TREME_ATTACK,
-    ARTIFACT,
-    THROWN_ARTIFACT,
-    URU_ENCHANTED_WEAPONS,
-    RISE_OF_THE_LIVING_DEAD,
-    CROSS_DIMENSIONAL_RAMPAGE,
-    SPECTRUM,
-    PATROL,
-    CIRCLE_OF_KUNG_FU,
-    FATEFUL_RESURRECTION,
-    CHARGE,
-    MAN_OUT_OF_TIME,
-    SAVIOR,
-    ABOMINATION,
-    SIZE_CHANGING,
-    PHASING,
-    FORTIFY,
-    SHIELD_CLEARANCE,
-    EXCESSIVE_VIOLENCE,
-    REVENGE,
-    INVESTIGATE,
-    HIDDEN_WITNESS,
-    X_GENE,
-    PIERCING_ENERGY,
-    BERSERK,
-    SOARING_FLIGHT,
-    LIGHTSHOW,
-    DOMINATE,
-    HUMAN_SHIELDS,
-    DANGER_SENSE,
-    STRIKER,
-    COORDINATE,
-    CHEERING_CROWDS,
-    TRANSFORM,
-    OUTWIT,
-    SMASH,
-    WOUNDED_FURY,
-    CONQUEROR,
-    MICROSCOPIC_SIZE_CHANGING,
-    EMPOWERED,
-    CHIVALROUS_DUEL,
-    SYMBIOTE_BONDS,
-    DIGEST,
-    INDIGESTION,
-    SWITCHEROO,
-    HYPERSPEED,
-    DARK_MEMORIES,
-    LAST_STAND,
-    UNDERCOVER,
-    SHIELD_LEVEL,
-    HYDRA_LEVEL,
-    WORTHY,
-    MOONLIGHT_SUNLIGHT,
-    WAKING_NIGHTMARE,
-    BURN_SHARDS,
-    CELESTIAL_BOON,
-    CONTEST_OF_CHAMPIONS
-});
-
-export const keywordsArray = Object.freeze([
     TELEPORT,                   // 01 done
     BRIBE,                      // 02 done
     VERSATILE,                  // 03 done
@@ -547,4 +476,6 @@ export const keywordsArray = Object.freeze([
     BURN_SHARDS,                // 66 done
     CELESTIAL_BOON,             // 67
     CONTEST_OF_CHAMPIONS        // 68 done
-]);
+});
+
+export const keywordsArray = Object.freeze(Object.values(keywords));

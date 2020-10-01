@@ -1,7 +1,15 @@
 <template>
-  <v-card class="mx-auto mm-card" :class="classes" raised :style="{ background }">
+  <v-card class="mx-auto villain-card" :class="classes" raised :style="{ height: height || '280px' }">
     <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
-    <div :class="subTitleClasses">{{ card.subTitle }}</div>
+    <div :class="subTitleClasses">
+      <shared-rule v-if="card.subType === 1" :rule="{ rule: 5, text: card.subTitle }" />
+      <shared-rule v-else-if="card.subType === 2" :rule="{ rule: 6, text: card.subTitle }" />
+      <shared-rule v-else-if="card.subType === 3" :rule="{ rule: 9, text: card.subTitle }" />
+      <template v-else>{{ card.subTitle }}</template>
+    </div>
+
+    <SetIcon v-if="card.set" class="set-icon" :set="card.set" width="24px" />
+    <SetIcon v-if="card.set2" class="set-icon2" :set="card.set2" width="24px" />
 
     <div class="card-abilities" :class="{ dense: card.dense }" v-if="card.abilities">
       <div v-for="(ability, idx) in card.abilities" :key="idx">
@@ -16,14 +24,14 @@
       </span>
     </template>
 
-    <template v-if="card.attack">
+    <template v-if="card.vAttack">
       <AbilityIcon class="card-attack-icon absolute-icon" noAdjust :icon="1" width="90px"/> 
       <span class="card-attack icon-text text-center font-weight-black">
-        <template v-if="!card.attackAsterisk">
-          {{ card.attackText }}
+        <template v-if="!card.vAttackAsterisk">
+          {{ card.vAttackText }}
         </template>
         <shared-rule v-else class="card-attack-asterisk" :rule="{ rule: 10, keywordStyle: true }">
-          {{ card.attackText }}
+          {{ card.vAttackText }}
         </shared-rule>
       </span>
     </template>
@@ -31,22 +39,22 @@
 </template>
 
 <script>
-import AbilityIcon from "../shared/AbilityIcon.vue";
+import AbilityIcon from "../icons/AbilityIcon.vue";
+import SetIcon from "../icons/SetIcon.vue";
 import { getTextWidth } from "../../services/cardUtils";
+import { cardSubTypes, cardTypes } from "../../constants/cardTypes";
 
 export default {
-  name: "MastermindCard",
-  props: ["card", "mastermind"],
+  name: "VillainCard",
+  props: ["card", "height"],
   data: () => ({
       
   }),
   components: {
-    AbilityIcon
+    AbilityIcon,
+    SetIcon
   },
   computed: {
-    background() {
-      return this.card.tactic ? "#E6CDE6" : "#CE9CCE";
-    },
     subTitleClasses() {
       return {
         'text-center card-sub-title': true,
@@ -54,8 +62,14 @@ export default {
       };
     },
     classes() {
+      const subType = this.card.subType || this.card.overrideSubType;
       return {
-        "disabled": this.card.disabled
+        "disabled": this.card.disabled,
+        "henchman": !subType && this.card.type === cardTypes.HENCHMEN.id,
+        "villain": !subType && this.card.type === cardTypes.VILLAIN.id,
+        "location": subType === cardSubTypes.LOCATION.id,
+        "trap": subType === cardSubTypes.TRAP.id,
+        "villainous-weapon": subType === cardSubTypes.VILLAINOUS_WEAPON.id,
       }
     },
     smallName() {
@@ -69,11 +83,42 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.mm-card {
-  height: 280px;
+.villain-card {
   padding: 6px;
   color: #000;
   border: solid 1px rgba(#000, .2);
+
+  .set-icon {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+  }
+
+  .set-icon2 {
+    position: absolute;
+    top: 24px;
+    right: 8px;
+  }
+
+  &.villain {
+    background-color: #ffd9b3;
+  }
+
+  &.henchman {
+    background-color: #ffd9b3;
+  }
+
+  &.location {
+    background-color: #e6ffcc;
+  }
+
+  &.trap {
+    background-color: #e6ffcc;
+  }
+
+  &.villainous-weapon {
+    background: radial-gradient(circle, #F0F0F0 35%, #b9b9b9 100%);
+  }
 
   &.disabled {
     filter: blur(0px) grayscale(60%) opacity(0.4);
@@ -151,9 +196,6 @@ export default {
   .card-sub-title {
     font-size: 12px;
     padding: 0px 6px;
-    &.card-red-sub-title {
-      color: #d00;
-    }
   }
 }
 </style>

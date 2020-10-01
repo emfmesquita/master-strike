@@ -3,13 +3,13 @@ const SHARDS = {
     id: 1,
     value: "shards",
     label: "Shards",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 3],
 }
 const MULTICLASS_CARDS = {
     id: 2,
     value: "multiclasscards",
     label: "Multiclass Cards",
-    cardTypes: [1],
+    cardTypes: [1, 3],
 }
 const MULTIPLE_MASTERMINDS = {
     id: 3,
@@ -33,7 +33,7 @@ const LOCATIONS = {
     id: 6,
     value: "locations",
     label: "Locations",
-    cardTypes: [2],
+    cardTypes: [2, 3],
 }
 const TRANSFORMING_SCHEMES = {
     id: 7,
@@ -57,7 +57,7 @@ const ASTERISK = {
     id: 10,
     value: "asterisk",
     label: "Asterisk Symbol",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 3],
 }
 const SIDEKICKS = {
     id: 11,
@@ -67,20 +67,6 @@ const SIDEKICKS = {
 }
 
 export const rules = Object.freeze({
-    SHARDS,
-    MULTICLASS_CARDS,
-    MULTIPLE_MASTERMINDS,
-    DIVIDED,
-    TRAPS,
-    LOCATIONS,
-    TRANSFORMING_SCHEMES,
-    ADAPTING_MASTERMINDS,
-    VILLAINOUS_WEAPONS,
-    ASTERISK,
-    SIDEKICKS
-});
-
-export const rulesArray = Object.freeze([
     SHARDS,                     // 1  done
     MULTICLASS_CARDS,           // 2  done
     MULTIPLE_MASTERMINDS,       // 3
@@ -92,4 +78,6 @@ export const rulesArray = Object.freeze([
     VILLAINOUS_WEAPONS,         // 9  done
     ASTERISK,                   // 10 done
     SIDEKICKS                   // 11 done
-]);
+});
+
+export const rulesArray = Object.freeze(Object.values(rules));

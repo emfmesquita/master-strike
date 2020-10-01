@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import { heroClassArray } from "../../../constants/heroClass";
-import HeroClassIcon from "../HeroClassIcon.vue";
+import { heroClassArray } from "../../constants/heroClass";
+import HeroClassIcon from "../icons/HeroClassIcon.vue";
 
 export default {
   name: "HeroClassFilter",

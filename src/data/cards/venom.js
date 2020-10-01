@@ -402,7 +402,7 @@ export default {
       id: 59,
       name: "Hybrid",
       set: 22,
-      attack: "6",
+      vAttack: "6",
       vp: 6,
       cards: [
         {
@@ -426,7 +426,7 @@ export default {
         },
         {
           name: "Epic Hybrid",
-          attack: "8",
+          vAttack: "8",
           epic: true,
           dense: true,
           abilities: [
@@ -502,12 +502,12 @@ export default {
       id: 60,
       name: "Poison Thanos",
       set: 22,
-      attack: "12",
+      vAttack: "12",
       vp: 7,
       cards: [
         {
           name: "Poison Thanos",
-          attack: "12+",
+          vAttack: "12+",
           dense: true,
           abilities: [
             [
@@ -528,7 +528,7 @@ export default {
         },
         {
           name: "Epic Poison Thanos",
-          attack: "13+",
+          vAttack: "13+",
           dense: true,
           epic: true,
           abilities: [

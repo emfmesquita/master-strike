@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import HeroClassIcon from "./HeroClassIcon.vue";
-import TeamIcon from "./TeamIcon.vue";
-import AbilityIcon from "./AbilityIcon.vue";
+import HeroClassIcon from "../icons/HeroClassIcon.vue";
+import TeamIcon from "../icons/TeamIcon.vue";
+import AbilityIcon from "../icons/AbilityIcon.vue";
 
 export default {
   name: "DescriptionComponent",

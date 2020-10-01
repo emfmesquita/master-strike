@@ -351,7 +351,7 @@ export default {
       id: 12,
       name: "Carnage",
       set: 5,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
@@ -422,7 +422,7 @@ export default {
       id: 13,
       name: "Mysterio",
       set: 5,
-      attack: "8",
+      vAttack: "8",
       vp: 6,
       cards: [
         {

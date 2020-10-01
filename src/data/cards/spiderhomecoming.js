@@ -333,12 +333,12 @@ export default {
       id: 46,
       name: "Adrian Toomes",
       set: 17,
-      attack: "5",
+      vAttack: "5",
       vp: 6,
       cards: [
         {
           name: "Adrian Toomes",
-          attack: "5+",
+          vAttack: "5+",
           abilities: [
             [
               { keyword: 42, text: "Double Striker" }
@@ -355,7 +355,7 @@ export default {
         },
         {
           name: "Epic Adrian Toomes",
-          attack: "5+",
+          vAttack: "5+",
           epic: true,
           abilities: [
             [
@@ -423,12 +423,12 @@ export default {
       id: 47,
       name: "Vulture",
       set: 17,
-      attack: "8",
+      vAttack: "8",
       vp: 6,
       cards: [
         {
           name: "Vulture",
-          attack: "8+",
+          vAttack: "8+",
           dense: true,
           abilities: [
             [
@@ -446,7 +446,7 @@ export default {
         },
         {
           name: "Epic Vulture",
-          attack: "10+",
+          vAttack: "10+",
           epic: true,
           dense: true,
           abilities: [

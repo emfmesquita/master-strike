@@ -410,12 +410,12 @@ export default {
       name: "Uru-Enchanted Iron Man",
       tacticName: "Uru Iron Man",
       set: 8,
-      attack: "7",
+      vAttack: "7",
       vp: 6,
       cards: [
         {
           name: "Uru-Enchanted Iron Man",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           abilities: [
             [
               { bold: "Always Leads" },

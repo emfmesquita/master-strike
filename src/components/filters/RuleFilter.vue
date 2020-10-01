@@ -1,12 +1,12 @@
 <template>
-  <v-autocomplete
+  <v-select
     :value="value"
-    :items="masterminds"
+    :items="rules"
     multiple
-    label="Mastermind"
-    item-text="label"
-    item-value="id" 
     clearable
+    item-text="label"
+    item-value="id"
+    label="Extra Rules"
     @change="filterChanged"
   >
     <template v-slot:selection="{ item }">
@@ -14,27 +14,24 @@
         {{item.label}}
       </v-chip>
     </template>
-  </v-autocomplete>
+  </v-select>
 </template>
 
 <script>
-import { getAllMasterminds } from "../../../services/cardUtils";
+import { rulesArray } from "../../constants/rules";
 
 export default {
-  name: "MastermindFilter",
-  props: ["value"],
+  name: "RuleFilter",
+  props: ["value", "cardTypes"],
   data() {
     return {
-      masterminds: []
+      rules: []
     }
   },
   mounted() {
-    const masterminds = getAllMasterminds().map(mm => ({
-      id: mm.id,
-      label: mm.name
-    }));
-    masterminds.sort((a, b) => a.label.localeCompare(b.label));
-    this.masterminds = Object.freeze(masterminds);
+    const rules = rulesArray.filter(rule => window.hasIntersection(rule.cardTypes, this.cardTypes));
+    rules.sort((a, b) => a.label.localeCompare(b.label));
+    this.rules = Object.freeze(rules);
   },
   methods: {
     filterChanged(newValue) {

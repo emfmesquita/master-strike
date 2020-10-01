@@ -351,12 +351,12 @@ export default {
       name: "Charles Xavier, Professor of Crime",
       tacticName: "Charles Xavier",
       set: 15,
-      attack: "8",
+      vAttack: "8",
       vp: 6,
       cards: [
         {
           name: "Charles Xavier, Professor of Crime",
-          attack: "8+",
+          vAttack: "8+",
           abilities: [
             [
               "Charles Xavier gets ",
@@ -437,12 +437,12 @@ export default {
       name: "The Goblin, Underworld Boss",
       tacticName: "The Goblin",
       set: 15,
-      attack: "10",
+      vAttack: "10",
       vp: 6,
       cards: [
         {
           name: "The Goblin, Underworld Boss",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           dense: true,
           abilities: [
             [

@@ -1113,7 +1113,7 @@ export default {
       id: 14,
       name: "Dr. Strange",
       set: 6,
-      attack: "8",
+      vAttack: "8",
       vp: 6,
       cards: [
         {
@@ -1180,7 +1180,7 @@ export default {
       id: 15,
       name: "Nick Fury",
       set: 6,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
@@ -1254,12 +1254,12 @@ export default {
       id: 16,
       name: "Odin",
       set: 6,
-      attack: "10",
+      vAttack: "10",
       vp: 6,
       cards: [
         {
           name: "Odin",
-          attack: "10+",
+          vAttack: "10+",
           dense: true,
           abilities: [
             [
@@ -1329,12 +1329,12 @@ export default {
       id: 17,
       name: "Professor X",
       set: 6,
-      attack: "8",
+      vAttack: "8",
       vp: 6,
       cards: [
         {
           name: "Professor X",
-          attack: "8+",
+          vAttack: "8+",
           dense: true,
           abilities: [
             [
@@ -1396,6 +1396,76 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  henchmen: [
+    {
+      id: 7,
+      name: "Asgardian Warriors",
+      set: 6,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Draw a card."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 8,
+      name: "Cops",
+      set: 6,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Gain a New Recruit."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 9,
+      name: "Multiple Man",
+      set: 6,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO one of your Allies for each other Multiple Man in your Victory Pile."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 10,
+      name: "S.H.I.E.L.D. Assault Squad",
+      set: 6,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Discard the top card of your deck. Then KO an Ally from your discard pile."
+            ]
+          ]
+        },
       ]
     },
   ]

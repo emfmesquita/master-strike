@@ -1,10 +1,22 @@
 import * as JsSearch from 'js-search'
 
-import { getAllHeroes, getAllMasterminds } from "./cardUtils"
+import { cardSubTypes, cardTypes } from "../constants/cardTypes";
+import { getAllHenchmen, getAllHeroes, getAllMasterminds } from "./cardUtils"
 
-import { cardTypes } from "../constants/cardTypes";
+import { rules as R } from "../constants/rules"
 
 const SEARCH_CACHE = {};
+const SEARCH_INDEXES = [
+  "name",
+  "subTitle",
+  "attackText",
+  "recruitText",
+  "piercingText",
+  "costText",
+  "vAttackText",
+  "vpText",
+  "abilitiesText",
+];
 
 export const groupSearchSetup = groups => {
   groups.forEach(group => {
@@ -54,19 +66,37 @@ export const filterGroupByRule = (groups, rules) => {
       if(card.disabled || !card.abilities) return;
 
       // checks for multiclass
-      if(card.hc2 && rules.includes(2)) {
+      if(card.hc2 && rules.includes(R.MULTICLASS_CARDS.id)) {
         match = true;
         return;
       }
 
       // checks for divided
-      if(card.divided && rules.includes(4)) {
+      if(card.divided && rules.includes(R.DIVIDED.id)) {
         match = true;
         return;
       }
 
       // check for asterisk
-      if((card.costAsterisk || card.attackAsterisk) && rules.includes(10)) {
+      if((card.costAsterisk || card.vAttackAsterisk) && rules.includes(R.ASTERISK.id)) {
+        match = true;
+        return;
+      }
+
+      // check for trap
+      if(card.subType === cardSubTypes.TRAP.id && rules.includes(R.TRAPS.id)) {
+        match = true;
+        return;
+      }
+
+      // check for location
+      if(card.subType === cardSubTypes.LOCATION.id && rules.includes(R.LOCATIONS.id)) {
+        match = true;
+        return;
+      }
+
+      // check for villainous weapon
+      if(card.subType === cardSubTypes.VILLAINOUS_WEAPON.id && rules.includes(R.VILLAINOUS_WEAPONS.id)) {
         match = true;
         return;
       }
@@ -123,9 +153,9 @@ export const filterGroupByCardProp = (groups, propName, valuesArray) => {
   });
 }
 
-const buildGroupSearch = (groups, indexes) => {
+const buildGroupSearch = groups => {
   const search = new JsSearch.Search("uid");
-  indexes.forEach(index => search.addIndex(index));
+  SEARCH_INDEXES.forEach(index => search.addIndex(index));
   let cards = [];
   groups.forEach(group => {
     cards = cards.concat(group.cards);
@@ -134,33 +164,10 @@ const buildGroupSearch = (groups, indexes) => {
   return search;
 }
 
-const buildHeroesSearch = () => {
-  const indexes = [
-    "name",
-    "subTitle",
-    "attackText",
-    "recruitText",
-    "piercingText",
-    "costText",
-    "abilitiesText"
-  ];
-  return buildGroupSearch(getAllHeroes(), indexes);
-}
-
-const buildMastermindsSearch = () => {
-  const indexes = [
-    "name",
-    "subTitle",
-    "attackText",
-    "vpText",
-    "abilitiesText"
-  ];
-  return buildGroupSearch(getAllMasterminds(), indexes);
-}
-
 const buildCardSearch = cardType => {
-  if(cardTypes.HERO.id === cardType) return buildHeroesSearch();
-  if(cardTypes.MASTERMIND.id === cardType) return buildMastermindsSearch();
+  if(cardTypes.HERO.id === cardType) return buildGroupSearch(getAllHeroes());
+  if(cardTypes.MASTERMIND.id === cardType) return buildGroupSearch(getAllMasterminds());
+  if(cardTypes.HENCHMEN.id === cardType) return buildGroupSearch(getAllHenchmen());
   return null;
 }
 

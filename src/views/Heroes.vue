@@ -102,7 +102,7 @@
             <v-col cols="12">
               <CardGroup :group="hero">
                 <template v-slot:default="{ card }">
-                  <HeroCard :card="card" :hero="hero"/>
+                  <HeroCard :card="card"/>
                 </template>
               </CardGroup>
             </v-col>
@@ -117,17 +117,17 @@
 
 <script>
 import CardGroup from "../components/shared/CardGroup.vue";
-import HeroCard from "../components/hero/HeroCard.vue";
-import HeroClassFilter from "../components/shared/filter/HeroClassFilter.vue";
-import HeroFilter from "../components/shared/filter/HeroFilter.vue";
-import KeywordFilter from "../components/shared/filter/KeywordFilter.vue";
-import RangeFilter from "../components/shared/filter/RangeFilter.vue";
-import RuleFilter from "../components/shared/filter/RuleFilter.vue";
-import SearchFilter from "../components/shared/filter/SearchFilter.vue";
-import SetFilter from "../components/shared/filter/SetFilter.vue";
-import SortToggle from "../components/shared/filter/SortToggle.vue";
-import SortToggleCollapsed from "../components/shared/filter/SortToggleCollapsed.vue";
-import TeamFilter from "../components/shared/filter/TeamFilter.vue";
+import HeroCard from "../components/cards/HeroCard.vue";
+import HeroClassFilter from "../components/filters/HeroClassFilter.vue";
+import HeroFilter from "../components/filters/HeroFilter.vue";
+import KeywordFilter from "../components/filters/KeywordFilter.vue";
+import RangeFilter from "../components/filters/RangeFilter.vue";
+import RuleFilter from "../components/filters/RuleFilter.vue";
+import SearchFilter from "../components/filters/SearchFilter.vue";
+import SetFilter from "../components/filters/SetFilter.vue";
+import SortToggle from "../components/filters/SortToggle.vue";
+import SortToggleCollapsed from "../components/filters/SortToggleCollapsed.vue";
+import TeamFilter from "../components/filters/TeamFilter.vue";
 
 import { cardTypes } from "../constants/cardTypes";
 import { heroClassArray } from "../constants/heroClass";

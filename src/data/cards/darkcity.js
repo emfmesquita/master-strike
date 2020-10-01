@@ -1454,7 +1454,7 @@ export default {
       id: 5,
       name: "Apocalypse",
       set: 3,
-      attack: "12",
+      vAttack: "12",
       vp: 6,
       cards: [
         {
@@ -1533,12 +1533,12 @@ export default {
       id: 6,
       name: "Kingpin",
       set: 3,
-      attack: "13",
+      vAttack: "13",
       vp: 6,
       cards: [
         {
           name: "Kingpin",
-          attackAsterisk: true, 
+          vAttackAsterisk: true, 
           abilities: [
             { keyword: 2 },
             [
@@ -1601,7 +1601,7 @@ export default {
       id: 7,
       name: "Mephisto",
       set: 3,
-      attack: "10",
+      vAttack: "10",
       vp: 6,
       cards: [
         {
@@ -1668,12 +1668,12 @@ export default {
       id: 8,
       name: "Mr. Sinister",
       set: 3,
-      attack: "8",
+      vAttack: "8",
       vp: 6,
       cards: [
         {
           name: "Mr. Sinister",
-          attack: "8+",
+          vAttack: "8+",
           dense: true,
           abilities: [
             [
@@ -1740,12 +1740,12 @@ export default {
       id: 9,
       name: "Stryfe",
       set: 3,
-      attack: "7",
+      vAttack: "7",
       vp: 6,
       cards: [
         {
           name: "Stryfe",
-          attack: "7+",
+          vAttack: "7+",
           abilities: [
             [
               { bold: "Always Leads" },
@@ -1808,5 +1808,47 @@ export default {
     },
 
 
+  ],
+  henchmen: [
+    {
+      id: 5,
+      name: "Maggia Goons",
+      set: 3,
+      vAttack: "4",
+      vp: 1,
+      cards: [
+        {
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 2 },
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 6,
+      name: "Phalanx",
+      set: 3,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal a ",
+              { hc: 5 },
+              " Hero or KO one of your Heroes with a ",
+              { icon: 1 },
+              " icon.",
+            ]
+          ]
+        },
+      ]
+    },
   ]
 }

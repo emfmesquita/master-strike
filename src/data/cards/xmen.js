@@ -1148,12 +1148,12 @@ export default {
       id: 40,
       name: "Arcade",
       set: 16,
-      attack: "3",
+      vAttack: "3",
       vp: 5,
       cards: [
         {
           name: "Arcade",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           abilities: [
             [
               { bold: "Start of Game" },
@@ -1175,8 +1175,8 @@ export default {
         },
         {
           name: "Epic Arcade",
-          attack: "4",
-          attackAsterisk: true,
+          vAttack: "4",
+          vAttackAsterisk: true,
           epic: true,
           dense: true,
           abilities: [
@@ -1252,7 +1252,7 @@ export default {
       id: 41,
       name: "Dark Phoenix",
       set: 16,
-      attack: "13",
+      vAttack: "13",
       vp: 7,
       cards: [
         {
@@ -1274,7 +1274,7 @@ export default {
         },
         {
           name: "Epic Dark Phoenix",
-          attack: "15",
+          vAttack: "15",
           epic: true,
           dense: true,
           abilities: [
@@ -1338,12 +1338,12 @@ export default {
       id: 42,
       name: "Deathbird",
       set: 16,
-      attack: "8",
+      vAttack: "8",
       vp: 6,
       cards: [
         {
           name: "Deathbird",
-          attack: "8+",
+          vAttack: "8+",
           dense: true,
           abilities: [
             [
@@ -1370,7 +1370,7 @@ export default {
         },
         {
           name: "Epic Deathbird",
-          attack: "10+",
+          vAttack: "10+",
           epic: true,
           dense: true,
           abilities: [
@@ -1450,12 +1450,12 @@ export default {
       id: 43,
       name: "Mojo",
       set: 16,
-      attack: "6",
+      vAttack: "6",
       vp: 5,
       cards: [
         {
           name: "Mojo",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           abilities: [
             [
               { bold: "Start of Game" },
@@ -1484,8 +1484,8 @@ export default {
         },
         {
           name: "Epic Mojo",
-          attack: "7",
-          attackAsterisk: true,
+          vAttack: "7",
+          vAttackAsterisk: true,
           epic: true,
           dense: true,
           abilities: [
@@ -1571,12 +1571,12 @@ export default {
       id: 44,
       name: "Onslaught",
       set: 16,
-      attack: "10",
+      vAttack: "10",
       vp: 7,
       cards: [
         {
           name: "Onslaught",
-          attack: "10+",
+          vAttack: "10+",
           dense: true,
           abilities: [
             "Each player's hand size is 1 less.",
@@ -1596,7 +1596,7 @@ export default {
         },
         {
           name: "Epic Onslaught",
-          attack: "12+",
+          vAttack: "12+",
           epic: true,
           dense: true,
           abilities: [
@@ -1675,12 +1675,12 @@ export default {
       id: 45,
       name: "Shadow King",
       set: 16,
-      attack: "7",
+      vAttack: "7",
       vp: 6,
       cards: [
         {
           name: "Shadow King",
-          attack: "7+",
+          vAttack: "7+",
           abilities: [
             [
               { bold: "Always Leads" },
@@ -1698,7 +1698,7 @@ export default {
         },
         {
           name: "Epic Shadow King",
-          attack: "9+",
+          vAttack: "9+",
           epic: true,
           abilities: [
             [
@@ -1765,6 +1765,111 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  henchmen: [
+    {
+      id: 21,
+      name: "The Brood",
+      set: 16,
+      vAttack: "1+",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              "This Villain gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Bystander in the KO pile."
+            ],
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes. Then KO a Bystander from the Bystander Stack."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 22,
+      name: "Hellfire Cult",
+      set: 16,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top card of your deck. If it costs 0, KO it. Otherwise, you get ",
+              { bold: "+1" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 23,
+      name: "Sapien League",
+      set: 16,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes. Then, reveal the top card of the Villain Deck. If it's a Henchman Villain, play it."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 24,
+      name: "Shi'ar Death Commandos",
+      set: 16,
+      vAttack: "2",
+      vp: 1,
+      cards: [
+        {
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { bold: "Ambush" },
+              ": This Villain captures a ",
+              { keyword: 40, text: "Human Shield" },
+              "."
+            ],
+            [
+              { bold: "Fight" },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 25,
+      name: "Shi'ar Patrol Craft",
+      set: 16,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": The next Hero you recruit this turn has ",
+              { keyword: 37 },
+              "."
+            ]
+          ]
+        },
       ]
     },
   ]

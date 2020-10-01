@@ -387,12 +387,12 @@ export default {
       name: "Belasco, Demon Lord of Limbo",
       tacticName: "Belasco",
       set: 27,
-      attack: "9",
+      vAttack: "9",
       vp: 6,
       cards: [
         {
           name: "Belasco, Demon Lord of Limbo",
-          attack: "9+",
+          vAttack: "9+",
           dense: true,
           abilities: [
             [
@@ -421,7 +421,7 @@ export default {
         },
         {
           name: "Epic Belasco",
-          attack: "10+",
+          vAttack: "10+",
           epic: true,
           dense: true,
           abilities: [
@@ -496,12 +496,12 @@ export default {
       name: "Emma Frost, The White Queen",
       tacticName: "Emma Frost",
       set: 27,
-      attack: "8",
+      vAttack: "8",
       vp: 6,
       cards: [
         {
           name: "Emma Frost, The White Queen",
-          attack: "8+",
+          vAttack: "8+",
           abilities: [
             [
               "During your turn, Emma Frost gets ",
@@ -523,7 +523,7 @@ export default {
         },
         {
           name: "Epic Emma Frost",
-          attack: "9+",
+          vAttack: "9+",
           epic: true,
           dense: true,
           abilities: [

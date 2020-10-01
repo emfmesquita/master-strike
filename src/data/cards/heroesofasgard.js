@@ -375,12 +375,12 @@ export default {
       name: "Hela, Goddess of Death",
       tacticName: "Hela",
       set: 26,
-      attack: "10",
+      vAttack: "10",
       vp: 6,
       cards: [
         {
           name: "Hela, Goddess of Death",
-          attack: "10+",
+          vAttack: "10+",
           dense: true,
           abilities: [
             { keyword: 49, text: "Bridge Conqueror 5, Streets Conqueror 5" },
@@ -401,7 +401,7 @@ export default {
         },
         {
           name: "Epic Hela, Goddess of Death",
-          attack: "12+",
+          vAttack: "12+",
           epic: true,
           dense: true,
           abilities: [
@@ -424,8 +424,10 @@ export default {
         {
           name: "Hela's Cloak",
           tactic: true,
-          attack: "+2",
+          vAttack: "+2",
           vp: -1,
+          overrideType: 4,
+          overrideSubType: 3,
           abilities: [
             [
               { bold: "Fight" },
@@ -443,8 +445,10 @@ export default {
         {
           name: "The Nightsword",
           tactic: true,
-          attack: "+3",
+          vAttack: "+3",
           vp: -1,
+          overrideType: 4,
+          overrideSubType: 3,
           abilities: [
             [
               { bold: "Fight" },
@@ -488,7 +492,7 @@ export default {
       name: "Malekith the Accursed",
       tacticName: "Malekith",
       set: 26,
-      attack: "8",
+      vAttack: "8",
       vp: 6,
       cards: [
         {
@@ -519,7 +523,7 @@ export default {
         },
         {
           name: "Epic Malekith the Accursed",
-          attack: "10",
+          vAttack: "10",
           epic: true,
           dense: true,
           abilities: [
@@ -548,8 +552,10 @@ export default {
         {
           name: "Black Hammer of the Accursed",
           tactic: true,
-          attack: "+4",
+          vAttack: "+4",
           vp: -1,
+          overrideType: 4,
+          overrideSubType: 3,
           dense: true,
           abilities: [
             [
@@ -570,8 +576,10 @@ export default {
         {
           name: "Dagger of Living Abyss",
           tactic: true,
-          attack: "+2",
+          vAttack: "+2",
           vp: -1,
+          overrideType: 4,
+          overrideSubType: 3,
           dense: true,
           abilities: [
             [
@@ -592,8 +600,10 @@ export default {
         {
           name: "The Hunting Horn of Faerie",
           tactic: true,
-          attack: "+3",
+          vAttack: "+3",
           vp: -1,
+          overrideType: 4,
+          overrideSubType: 3,
           dense: true,
           abilities: [
             [

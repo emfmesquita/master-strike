@@ -10,26 +10,21 @@
     @input="filterChanged"
   >
     <template v-slot:selection="{ item }">
-      <v-tooltip top>
-        <template v-slot:activator="{ on }" dense>
-          <span v-on="on">
-            <v-chip class="ma-1" style="cursor: pointer" @click.stop="remove(item.id)">
-              {{item.initials}}
-            </v-chip>
-          </span>
-        </template>
-        <span>{{ item.label }}</span>
-      </v-tooltip>
+      <div class="pa-1" @click.stop="remove(item.id)">
+        <SetIcon :set="item.id" width="32px" />
+      </div>
     </template>
   </v-select>
 </template>
 
 <script>
-import { setsArray } from "../../../constants/sets";
+import SetIcon from "../icons/SetIcon.vue";
+import { setsArray } from "../../constants/sets";
 
 export default {
   name: "SetFilter",
   props: ["value", "cardTypes"],
+  components: { SetIcon },
   data() {
     return {
       sets: []

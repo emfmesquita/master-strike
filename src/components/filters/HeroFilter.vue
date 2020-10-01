@@ -1,12 +1,12 @@
 <template>
-  <v-select
+  <v-autocomplete
     :value="value"
-    :items="rules"
+    :items="heroes"
     multiple
-    clearable
+    label="Hero"
     item-text="label"
-    item-value="id"
-    label="Extra Rules"
+    item-value="id" 
+    clearable
     @change="filterChanged"
   >
     <template v-slot:selection="{ item }">
@@ -14,24 +14,27 @@
         {{item.label}}
       </v-chip>
     </template>
-  </v-select>
+  </v-autocomplete>
 </template>
 
 <script>
-import { rulesArray } from "../../../constants/rules";
+import { getAllHeroes } from "../../services/cardUtils";
 
 export default {
-  name: "RuleFilter",
-  props: ["value", "cardTypes"],
+  name: "HeroFilter",
+  props: ["value"],
   data() {
     return {
-      rules: []
+      heroes: []
     }
   },
   mounted() {
-    const rules = rulesArray.filter(rule => window.hasIntersection(rule.cardTypes, this.cardTypes));
-    rules.sort((a, b) => a.label.localeCompare(b.label));
-    this.rules = Object.freeze(rules);
+    const heroes = getAllHeroes().map(hero => ({
+      id: hero.id,
+      label: hero.filterName ? hero.filterName : hero.name
+    }));
+    heroes.sort((a, b) => a.label.localeCompare(b.label));
+    this.heroes = Object.freeze(heroes);
   },
   methods: {
     filterChanged(newValue) {

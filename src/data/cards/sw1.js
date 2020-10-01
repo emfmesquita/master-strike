@@ -999,12 +999,12 @@ export default {
       name: "Madelyne Pryor, Goblin Queen",
       tacticName: "Madelyne Pryor",
       set: 10,
-      attack: "10",
+      vAttack: "10",
       vp: 6,
       cards: [
         {
           name: "Madelyne Pryor, Goblin Queen",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           dense: true,
           abilities: [
             [
@@ -1072,12 +1072,12 @@ export default {
       name: "Nimrod, Super Sentinel",
       tacticName: "Nimrod",
       set: 10,
-      attack: "6",
+      vAttack: "6",
       vp: 6,
       cards: [
         {
           name: "Nimrod, Super Sentinel",
-          attackAsterisk: true,
+          vAttackAsterisk: true,
           dense: true,
           abilities: [
             [
@@ -1166,12 +1166,12 @@ export default {
       id: 23,
       name: "Wasteland Hulk",
       set: 10,
-      attack: "7",
+      vAttack: "7",
       vp: 6,
       cards: [
         {
           name: "Wasteland Hulk",
-          attack: "7+",
+          vAttack: "7+",
           abilities: [
             [
               "Wasteland Hulk gets ",
@@ -1239,12 +1239,12 @@ export default {
       name: "Zombie Green Goblin",
       tacticName: "Green Goblin",
       set: 10,
-      attack: "11",
+      vAttack: "11",
       vp: 6,
       cards: [
         {
           name: "Zombie Green Goblin",
-          attack: "11+",
+          vAttack: "11+",
           dense: true,
           abilities: [
             [
@@ -1321,6 +1321,87 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  henchmen: [
+    {
+      id: 13,
+      name: "Ghost Racers",
+      set: 10,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Ambush" },
+              ": ",
+              { keyword: 16 }
+            ],
+            [
+              { bold: "Fight" },
+              ": Reveal a ",
+              { hc: 1 },
+              " Hero or KO one of your Heroes with an ",
+              { icon: 1 },
+              " icon."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 14,
+      name: "M.O.D.O.K.s",
+      set: 10,
+      vAttack: "3",
+      vp: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": KO a Hero from your discard pile or the HQ. If that Hero has a ",
+              { icon: 2 },
+              " icon, you get ",
+              { bold: "+1" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+      ]
+    },
+    {
+      id: 15,
+      name: "Thor Corps",
+      set: 10,
+      vp: 1,
+      vAttack: "3",
+      cards: [
+        {
+          hc: 4,
+          hc2: 3,
+          team: 1,
+          recruit: "2+",
+          overrideType: 1,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Gain this as a Hero."
+            ],
+            { divider: true },
+            [
+              { hc: 4 },
+              { hc: 3 },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
       ]
     },
   ]
