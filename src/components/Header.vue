@@ -91,7 +91,7 @@ export default {
 <style lang="scss" scoped>
   .header {
     padding-top: 2px;
-    z-index: 999;
+    z-index: 102 !important;
 
     .logo {
       position: absolute;
