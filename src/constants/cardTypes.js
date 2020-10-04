@@ -19,6 +19,7 @@ const VILLAIN = {
 };
 const SCHEME = {
   id: 5,
+  value: "schemes",
   label: "Scheme",
 };
 const BYSTANDER = {

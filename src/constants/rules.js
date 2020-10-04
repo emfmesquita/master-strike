@@ -3,7 +3,7 @@ const SHARDS = {
     id: 1,
     value: "shards",
     label: "Shards",
-    cardTypes: [1, 2, 3],
+    cardTypes: [1, 2, 3, 5],
 }
 const MULTICLASS_CARDS = {
     id: 2,
@@ -15,7 +15,7 @@ const MULTIPLE_MASTERMINDS = {
     id: 3,
     value: "multiplemasterminds",
     label: "Multiple Masterminds",
-    cardTypes: [],
+    cardTypes: [1, 5],
 }
 const DIVIDED = {
     id: 4,
@@ -39,7 +39,7 @@ const TRANSFORMING_SCHEMES = {
     id: 7,
     value: "transformingschemes",
     label: "Transforming Schemes",
-    cardTypes: [],
+    cardTypes: [5],
 }
 const ADAPTING_MASTERMINDS= {
     id: 8,
@@ -63,13 +63,13 @@ const SIDEKICKS = {
     id: 11,
     value: "sidekicks",
     label: "Sidekicks",
-    cardTypes: [1],
+    cardTypes: [1, 5],
 }
 
 export const rules = Object.freeze({
     SHARDS,                     // 1  done
     MULTICLASS_CARDS,           // 2  done
-    MULTIPLE_MASTERMINDS,       // 3
+    MULTIPLE_MASTERMINDS,       // 3  done
     DIVIDED,                    // 4  done
     TRAPS,                      // 5
     LOCATIONS,                  // 6  done

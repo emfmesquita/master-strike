@@ -2,7 +2,7 @@
   <v-container v-if="pages.length">
     <v-lazy min-height="300" :key="idx" v-for="(page, idx) in pages">
       <v-row>
-        <v-col :cols="columnSize" :key="group.id" v-for="group in page">
+        <v-col :class="{ 'px-1': dense }" :cols="columnSize" :key="group.id" v-for="group in page">
           <template v-if="!group.cards"></template>
           <template v-else-if="group.cards.length === 1">
             <slot :card="group.cards[0]" :multipleCards="false" />
@@ -24,7 +24,7 @@ import { numberOfColumns, pages } from "../../services/pageUtils";
 
 export default {
   name: "PaginatedSingleCardGroupList",
-  props: ["groups"],
+  props: ["groups", "dense"],
   components: { CardGroup },
   data: () => ({}),
   computed: {

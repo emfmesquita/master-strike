@@ -496,5 +496,125 @@ export default {
         }
       ]
     },
+  ],
+  schemes: [
+    {
+      id: 33,
+      name: "Forge the Infinity Gauntlet",
+      set: 7,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Always include the Infinity Gems Villain Group."
+            ],
+            [
+              { bold: "Twist" },
+              ": Starting to your left and going clockwise, the first player with an Infinity Gem Artifact card in play or in their discard pile chooses on of those Infinity Gems to enter the city. Then put a ",
+              { rule: 1, text: "Shard" },
+              " on each Infinity Gem in the city."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 6 Infinity Gem Villains are in the city and/or the Escape Pile."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When a player controls 4 Infinity Gem Artifacts, that player is corrupted by power. That player wins, Evil wins, and all other players lose."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 34,
+      name: "Intergalactic Kree Nega-Bomb",
+      set: 7,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Make a face down 'Nega-Bomb Deck' of 6 Bystanders."
+            ],
+            [
+              { bold: "Twist" },
+              ": Shuffle this Twist into the Nega-Bomb Deck. Then reveal a random card from that deck. If it's a Bystander, rescue it. If it's a Twist, KO it, KO all Heroes from the HQ, and each player gains a Wound."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 16 non-grey Heroes are in the KO pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 35,
+      name: "The Kree-Skrull War",
+      set: 7,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Always include Kree Starforce and Skrull Villain Groups."
+            ],
+            [
+              { bold: "Twists 1-7" },
+              ": All Kree and Skrulls escape from the city. Then, if there are more Kree than Skrulls in the Escape Pile, stack this Twist next to the Mastermind as a Kree Conquest. If there are more Skrulls than Kree in the Escape Pile, stack this Twist next to the Villain Deck as a Skrull Conquest."
+            ],
+            [
+              { bold: "Twist 8" },
+              ": Stack this Twist on the side with the most Conquests."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 4 Kree Conquests or 4 Skrull Conquests."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 36,
+      name: "Unite the Shards",
+      set: 7,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 30 ",
+              { rule: 1 },
+              " in the supply. Twists equal to the number of players plus 5."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Scheme. Then for each Twist in that stack, the Mastermind gains a ",
+              { rule: 1, text: "Shard" },
+              "."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": During your turn, any number of times, you may spend 2",
+              { icon: 2 },
+              " to gain one of the Mastermind's ",
+              { rule: 1 },
+              "."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the Mastermind has 10 ",
+              { rule: 1 },
+              " or when there are no more ",
+              { rule: 1 },
+              " in the supply.",
+            ],
+          ]
+        },
+      ]
+    },
   ]
 }

@@ -64,6 +64,10 @@ const items = [
     to: "/henchmen"
   },
   {
+    title: "Schemes",
+    to: "/schemes"
+  },
+  {
     title: "About",
     to: "/about"
   },

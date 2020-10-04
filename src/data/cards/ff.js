@@ -607,5 +607,113 @@ export default {
         }
       ]
     },
+  ],
+  schemes: [
+    {
+      id: 17,
+      name: "Bathe the Earth in Cosmic Rays",
+      set: 4,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Each player in turn does the following: Reveal your hand. KO one of your non-grey Heroes. Choose a Hero from the HQ with the same or lower cost and put it into your hand."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the number of non-grey Heroes in the KO pile is six times the number of players."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 18,
+      name: "Flood the Planet with Melted Glaciers",
+      set: 4,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack the Twist next to the Scheme as “Rising Waters.“ Then KO each Hero from the HQ whose cost is less than or equal to the number of Rising Waters in that stack."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 20 non-grey Heroes are KO'd."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 19,
+      name: "Invincible Force Field",
+      set: 4,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 7 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Mastermind as a “Force Field.“"
+            ],
+            [
+              { bold: "Special Rules" },
+              ": To fight the Mastermind, you must also spend ",
+              { bold: "1" },
+              { icon: 1 },
+              " or ",
+              { bold: "1" },
+              { icon: 2 },
+              " for each Force Field next to them."
+            ],
+            [
+              { bold: "Twist 7" },
+              ": Evil Wins!"
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 20,
+      name: "Pull Reality Into the Negative Zone",
+      set: 4,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist 2, 4, and 6" },
+              ": Until the next Twist, Enemies cost ",
+              { icon: 2 },
+              " to fight and Heroes cost ",
+              { icon: 1 },
+              " to recruit."
+            ],
+            [
+              { bold: "Twist 7" },
+              ": Evil Wins!"
+            ],
+          ]
+        },
+      ]
+    },
   ]
 }

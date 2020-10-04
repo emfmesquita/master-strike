@@ -262,6 +262,7 @@ export default {
 
   .card-sub-title {
     font-size: 12px;
+    line-height: 16px;
     padding: 0px 24px;
     &.card-red-sub-title {
       color: #d00;

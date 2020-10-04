@@ -95,6 +95,11 @@ const henchmanSubtitle = (card, group) => {
   if(group.set === 6) return "Backup Adversary";
   return "Henchman Villain";
 }
+const schemeSubtitle = (card, group) => {
+  if([6, 8].includes(group.set)) return "Plot";
+  if(card.transformed) return "Scheme, Transformed";
+  return "Scheme";
+}
 
 
 const processHero = (card, group) => {
@@ -113,7 +118,6 @@ const processVillain = (card, group) => {
   card.vAttackText = card.vAttackAsterisk ? card.vAttack + "*" : card.vAttack + "";
   card.vp = card.vp || group.vp || -1;
   card.vpText = card.vp > 0 ? card.vp + "" : "";
-  card.abilitiesText = abilitiesToText(card.abilities);
 
   if(card.overrideType === cardTypes.HERO.id) {
     card.cost = card.vAttack;
@@ -141,10 +145,10 @@ const processCard = (cardType, card, group) => {
   card.groupId = group.id;
   card.uid = `${group.id}_${card.name}`;
   card.type = cardType.id;
+  card.abilitiesText = abilitiesToText(card.abilities);
 
   if(cardTypes.HERO === cardType) {
     card.team = card.team !== undefined ? card.team : group.team;
-    card.abilitiesText = abilitiesToText(card.abilities);
     card.subTitle = card.subTitle || group.name;
     card.type
     processHero(card, group);
@@ -162,6 +166,12 @@ const processCard = (cardType, card, group) => {
     processSet(card, group);
     card.name = card.name || group.name;
     card.subTitle = henchmanSubtitle(card, group);
+  }
+
+  if(cardTypes.SCHEME === cardType) {
+    processSet(card, group);
+    card.name = card.name || group.name;
+    card.subTitle = schemeSubtitle(card, group);
   }
 }
 
@@ -195,4 +205,7 @@ export const getAllMasterminds = () => {
 
 export const getAllHenchmen = () => {
   return processCardGroups(cardTypes.HENCHMEN);
+}
+export const getAllSchemes = () => {
+  return processCardGroups(cardTypes.SCHEME);
 }

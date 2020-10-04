@@ -1,7 +1,7 @@
 import * as JsSearch from 'js-search'
 
 import { cardSubTypes, cardTypes } from "../constants/cardTypes";
-import { getAllHenchmen, getAllHeroes, getAllMasterminds } from "./cardUtils"
+import { getAllHenchmen, getAllHeroes, getAllMasterminds, getAllSchemes } from "./cardUtils"
 
 import { rules as R } from "../constants/rules"
 
@@ -168,6 +168,7 @@ const buildCardSearch = cardType => {
   if(cardTypes.HERO.id === cardType) return buildGroupSearch(getAllHeroes());
   if(cardTypes.MASTERMIND.id === cardType) return buildGroupSearch(getAllMasterminds());
   if(cardTypes.HENCHMEN.id === cardType) return buildGroupSearch(getAllHenchmen());
+  if(cardTypes.SCHEME.id === cardType) return buildGroupSearch(getAllSchemes());
   return null;
 }
 

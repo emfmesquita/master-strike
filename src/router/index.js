@@ -32,6 +32,12 @@ const routes = [
     import(/* webpackChunkName: "henchmen" */ "../views/Henchmen.vue")
   },
   {
+    path: "/schemes",
+    name: "Schemes",
+    component: () =>
+    import(/* webpackChunkName: "schemes" */ "../views/Schemes.vue")
+  },
+  {
     path: "/random",
     name: "Random",
     component: () =>

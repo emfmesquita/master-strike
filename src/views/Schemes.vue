@@ -7,7 +7,7 @@
         <v-container>
           <v-row align="center" justify="center">
             <v-col cols="12" class="text-center">
-              <v-chip class="text-center font-weight-bold mr-2">{{ hmFound }}</v-chip>
+              <v-chip class="text-center font-weight-bold mr-2">{{ schemesFound }}</v-chip>
               <v-btn icon title="Clear Filter" @click="clearFilter">
                 <v-icon>mdi-eraser</v-icon>
               </v-btn>
@@ -20,22 +20,17 @@
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <SetFilter v-model="filter.set" :cardTypes="[3]" @input="filterChanged"/>
+              <SetFilter v-model="filter.set" :cardTypes="[5]" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <KeywordFilter v-model="filter.keyword" :cardTypes="[3]" @input="filterChanged"/>
+              <KeywordFilter v-model="filter.keyword" :cardTypes="[5]" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <RuleFilter v-model="filter.rule" :cardTypes="[3]" @input="filterChanged"/>
-            </v-col>
-          </v-row>
-          <v-row align="center">
-            <v-col cols="12">
-              <RangeFilter v-model="filter.vAttack" :icon="1" :min="1" :max="4" @input="filterChanged"/>
+              <RuleFilter v-model="filter.rule" :cardTypes="[5]" @input="filterChanged"/>
             </v-col>
           </v-row>
         </v-container>
@@ -43,7 +38,7 @@
 
       <template v-slot:collapsed>
         <div class="text-center">
-          <v-chip small class="text-center font-weight-bold mb-2">{{ henchmen.length }}</v-chip>
+          <v-chip small class="text-center font-weight-bold mb-2">{{ schemes.length }}</v-chip>
         </div>
         <v-btn small icon title="Clear Filter" @click="clearFilter" class="mb-2 ml-2">
           <v-icon small>mdi-eraser</v-icon>
@@ -59,15 +54,14 @@
       </v-row>
       <v-row>
         <v-col cols="12">
-          <div class="text-center title">{{ hmFound }}</div>
+          <div class="text-center title">{{ schemesFound }}</div>
         </v-col>
       </v-row>
 
-      <template v-if="henchmen.length">
-        <PaginatedSingleCardGroupList :groups="henchmen" :key="lastFilterTime">
+      <template v-if="schemes.length">
+        <PaginatedSingleCardGroupList :groups="schemes" :dense="true" :key="lastFilterTime">
           <template v-slot:default="{ card, multipleCards }">
-            <HeroCard v-if="card.overrideType === 1" :card="card" :height="multipleCards ? '240px' : '310px'" />
-            <VillainCard v-else :card="card" :height="multipleCards ? '238px' : '310px'" />
+            <SchemeCard :card="card" :height="multipleCards ? '238px' : '340px'" />
           </template>
         </PaginatedSingleCardGroupList>
       </template>
@@ -78,14 +72,12 @@
 </template>
 
 <script>
-import HeroCard from "../components/cards/HeroCard.vue";
 import KeywordFilter from "../components/filters/KeywordFilter.vue";
 import PaginatedSingleCardGroupList from "../components/shared/PaginatedSingleCardGroupList.vue";
-import RangeFilter from "../components/filters/RangeFilter.vue";
 import RuleFilter from "../components/filters/RuleFilter.vue";
+import SchemeCard from "../components/cards/SchemeCard.vue";
 import SearchFilter from "../components/filters/SearchFilter.vue";
 import SetFilter from "../components/filters/SetFilter.vue";
-import VillainCard from "../components/cards/VillainCard.vue";
 
 
 import { cardTypes } from "../constants/cardTypes";
@@ -93,52 +85,45 @@ import { keywordsArray } from "../constants/keywords";
 import { rulesArray } from "../constants/rules";
 import { setsArray } from "../constants/sets";
 
-import { getAllHenchmen, numberOfCards } from "../services/cardUtils";
-import { toIntArray, toIntPair } from "../services/queryUtils";
+import { getAllSchemes, numberOfCards } from "../services/cardUtils";
+import { toIntArray } from "../services/queryUtils";
 import { 
   groupSearchSetup,
   filterGroupBySearch, 
   filterBySet, 
   filterGroupByKeyword, 
   filterGroupByRule,
-  filterGroupByMinMax,
 } from "../services/searchUtils";
 import { sortGroups, ALPHA_SORT } from "../services/sortUtils";
 
-const henchmen = getAllHenchmen();
+const schemes = getAllSchemes();
 
 const baseFilter = () => ({
   search: "",
   set: [],
   keyword: [],
   rule: [],
-  vAttack: [1,4]
 });
 
 export default {
-  name: "Henchmen",
+  name: "Schemes",
   components: {
-    HeroCard,
     KeywordFilter,
     PaginatedSingleCardGroupList,
-    RangeFilter,
     RuleFilter, 
+    SchemeCard,
     SearchFilter,
     SetFilter,
-    VillainCard,
   },
   data: () => ({
     filter: baseFilter(),
     lastFilterTime: 0,
-    henchmen,
+    schemes,
   }),
   computed: {
-    hmFound() {
-      if(this.henchmen.length === 1) return "1 Henchman";
-      return `${this.henchmen.length} Henchmen`;
-    },
-    hasAttackFilter() {
-      return this.filter.vAttack[0] !== 1 || this.filter.vAttack[1] !== 4;
+    schemesFound() {
+      if(this.schemes.length === 1) return "1 Scheme";
+      return `${this.schemes.length} Schemes`;
     }
   },
   created() {
@@ -147,7 +132,6 @@ export default {
     this.filter.set = toIntArray(query.set).filter(set => setsArray[set - 1]);
     this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
     this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
-    this.filter.vAttack = toIntPair(query.attack, 1, 4);
     this.search();
   },
   methods: {
@@ -158,7 +142,6 @@ export default {
       if(filter.set.length) query.set = filter.set.join(",");
       if(filter.keyword.length) query.keyword = filter.keyword.join(",");
       if(filter.rule.length) query.rule = filter.rule.join(",");
-      if(this.hasAttackFilter) query.attack = filter.vAttack.join(",");
       
       this.$router.replace({
         path: this.$route.path,
@@ -175,26 +158,25 @@ export default {
       this.setQuery();
     },
     search() {
-      this.henchmen = henchmen;
-      groupSearchSetup(this.henchmen);
+      this.schemes = schemes;
+      groupSearchSetup(this.schemes);
 
-      this.henchmen = filterBySet(this.henchmen, this.filter.set);
-      this.henchmen = filterGroupByKeyword(this.henchmen, this.filter.keyword);
-      this.henchmen = filterGroupByRule(this.henchmen, this.filter.rule);
-      if(this.hasAttackFilter) this.henchmen = filterGroupByMinMax(this.henchmen, "vAttackNum", this.filter.vAttack);
-      this.henchmen = filterGroupBySearch(this.henchmen, cardTypes.HENCHMEN.id, this.filter.search);
+      this.schemes = filterBySet(this.schemes, this.filter.set);
+      this.schemes = filterGroupByKeyword(this.schemes, this.filter.keyword);
+      this.schemes = filterGroupByRule(this.schemes, this.filter.rule);
+      this.schemes = filterGroupBySearch(this.schemes, cardTypes.SCHEME.id, this.filter.search);
 
-      this.henchmen.forEach(hm => {
-        hm.filteredCards.sort((a,b) => {
+      this.schemes.forEach(scheme => {
+        scheme.filteredCards.sort((a,b) => {
           if(a.disabled && !b.disabled) return 1;
           if(!a.disabled && b.disabled) return -1;
           return a.name.localeCompare(b.name);
         });
 
-        hm.results = numberOfCards(hm.filteredCards);
+        scheme.results = numberOfCards(scheme.filteredCards);
       });
 
-      sortGroups(this.henchmen, ALPHA_SORT);
+      sortGroups(this.schemes, ALPHA_SORT);
 
       this.lastFilterTime = Date.now();
     }

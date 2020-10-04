@@ -14,6 +14,10 @@
         <SetIcon :set="item.id" width="32px" />
       </div>
     </template>
+    <template v-slot:item="{ item }">
+      <SetIcon class="pr-3" :set="item.id" width="32px" />
+      <span class="mt-1">{{ item.label }}</span>
+    </template>
   </v-select>
 </template>
 

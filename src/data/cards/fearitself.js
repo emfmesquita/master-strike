@@ -481,5 +481,101 @@ export default {
         }
       ]
     },
+  ],
+  schemes: [
+    {
+      id: 37,
+      name: "Fear Itself",
+      set: 8,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 10 Twists."
+            ],
+            [
+              "Earth's Fear Level starts at 8. The number of Allies in the Lair is always equal to the Fear Level."
+            ],
+            [
+              { bold: "Twist" },
+              ": KO an Ally from the Lair. The Fear Level goes down by 1."
+            ],
+            [
+              { bold: "Good Wins" },
+              ": When the Fear Level is 0."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 38,
+      name: "Last Stand at Avengers Tower",
+      set: 8,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist above the Rooftops as StarkTech Defenses. If there is an Adversary on the Rooftops, choose 3 Allies from the Lair and KO them."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": While an Adversary is on the Rooftops, it gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each StarkTech Defenses."
+            ],
+            [
+              { bold: "Good Wins" },
+              ": When there are 13 non-grey Allies in the KO pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 39,
+      name: "The Traitor",
+      set: 8,
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 2+ players only. 8 Twists. Shuffle a 'Betrayal Deck' of 3 Bindings per player and a 9th Twist."
+            ],
+            [
+              { bold: "Twists 1-3" },
+              ": If there is no revealed Traitor, each player puts a 'Betrayal Card' from the Betrayal Deck face down in front of them and looks at it."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": During your turn, you may reveal a Twist from your Betrayal Cards to become 'the Traitor'. If you do, each other player gains all the Bindings from their Betrayal Cards."
+            ],
+            [
+              "During your turns, you may spend ",
+              { bold: "4" },
+              { icon: 1 },
+              " any number of times to play an additional card from the Adversary Deck."
+            ],
+            [
+              { bold: "Twists 8" },
+              ": Good wins! The Traitor reveals themself and also wins."
+            ],
+            [
+              { bold: "When the players win" },
+              ": The Traitor reveals themself and loses."
+            ],
+          ]
+        },
+      ]
+    },
   ]
 }

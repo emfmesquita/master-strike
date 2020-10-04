@@ -1393,7 +1393,9 @@ export default {
               {
                 keyword: 45
               },
-              " this card into The Void Mastermind and add it to the game at the start of the next turn with one random Tactic."
+              " this card into ",
+              { rule: 3, text: "The Void Mastermind" },
+              " and add it to the game at the start of the next turn with one random Tactic."
             ]
           ]
         }

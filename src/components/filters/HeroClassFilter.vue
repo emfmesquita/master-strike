@@ -15,8 +15,8 @@
       </span>
     </template>
     <template v-slot:item="{ item }">
-      <HeroClassIcon :icon="item.id" width="32px" />
-      {{ item.label }}
+      <HeroClassIcon class="pr-2" :icon="item.id" width="32px" />
+      <span class="mt-1">{{ item.label }}</span>
     </template>
   </v-select>
 </template>

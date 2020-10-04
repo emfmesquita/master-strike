@@ -1850,5 +1850,254 @@ export default {
         },
       ]
     },
+  ],
+  schemes: [
+    {
+      id: 9,
+      name: "Capture Baby Hope",
+      set: 3,
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Put a token on this Scheme to represent the baby, Hope Summers."
+            ],
+            [
+              { bold: "Twist" },
+              ": If a Villain has the baby, that Villain escapes. Otherwise, the baby is captured by the closest Villain to the Villain Deck. ",
+              { italic: "(If there are no Villains, do nothing.)" }
+            ],
+            [
+              { bold: "Special Rules" },
+              ": The Villain with the baby gets ",
+              { bold: "+4" },
+              { icon: 1 },
+              ". If you defeat that Villain, rescue the baby to your Victory Pile ",
+              { italic: "(until the next Twist)" },
+              ". The baby is worth ",
+              { bold: "+6" },
+              { icon: 4 },
+              " at the end of the game. If a Villain escapes with the baby, stack a Twist next to the Mastermind and return the baby to this Scheme card."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 3 Twists stacked next to the Mastermind."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 10,
+      name: "Detonate the Helicarrier",
+      set: 3,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. 6 Heroes in the Hero Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Whenever a Hero is KO'd from the HQ, turn that Hero face down on that HQ space, representing an Explosion on the Helicarrier. When an HQ space has 6 Explosions, that space is Destroyed and can't hold Heroes anymore."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Scheme. Then for each Twist in that stack, KO the leftmost Hero in the HQ and immediately refill that space."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When all HQ spaces are Destroyed or the Hero Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 11,
+      name: "Massive Earthquake Generator",
+      set: 3,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Each player reveals a ",
+              { hc: 4 },
+              " Hero or KOs the top card of their deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the number of non grey Heroes in the KO pile is 3 times the number of players."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 12,
+      name: "Organized Crime Wave",
+      set: 3,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Include 10 Maggia Goons as one of the Henchman Groups."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Goons also have the ability “Ambush: Play another card from the Villain Deck.“"
+            ],
+            [
+              { bold: "Twist" },
+              ": Each Goon in the city escapes. Shuffle all Goons from each players' Victory Piles into the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 5 Goons escape."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 13,
+      name: "Save Humanity",
+      set: 3,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. 24 Bystanders in the Hero Deck. ",
+              { italic: "(1 player: 12 Bystanders in the Hero Deck)" }
+            ],
+            [
+              { bold: "Special Rules" },
+              ": You may spend ",
+              { bold: "2" },
+              { icon: 2 },
+              " to rescue a Bystander from the HQ."
+            ],
+            [
+              { bold: "Twist" },
+              ": KO all Bystanders in the HQ. Then each player reveals an ",
+              { hc: 2 },
+              " Hero or KOs a Bystander from their Victory Pile."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the number of Bystanders KO'd and/or carried off is 4 times the number of players."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 14,
+      name: "Steal the Weaponized Plutonium",
+      set: 3,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists representing Plutonium. Add an extra Villain Group."
+            ],
+            [
+              { bold: "Twist" },
+              ": This Plutonium is captured by the closest Villain to the Villain Deck. If there are no Villains in the city, KO this Plutonium. Either way, play another card from the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Each Villain gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Plutonium it has. When a Villain with any Plutonium is defeated, shuffle that Plutonium back into the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 4 Plutonium have been carried off by Villains."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 15,
+      name: "Transform Citizens Into Demons",
+      set: 3,
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Villain Deck includes 14 extra Jean Grey cards and no Bystanders."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack 5 Bystanders face down next to the Scheme. Bystanders stacked here are “Demon Goblin“ Villains. They have ",
+              { bold: "2" },
+              { icon: 1 },
+              ". Players can fight these Demon Goblins to rescue them as Bystanders."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Each Jean Grey card counts as a “Goblin Queen“ Villain. It's worth ",
+              { bold: "4" },
+              { icon: 4 },
+              " . It has ",
+              { icon: 1 },
+              " equal to its ",
+              { icon: 3 },
+              " plus the number of Demon Goblins stacked next to the Scheme."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 4 Goblin Queen cards escape."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 16,
+      name: "X-Cutioner's Song",
+      set: 3,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Villain Deck includes 14 cards for an extra Hero and no Bystanders."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Whenever you play a Hero from the Villain Deck, that Hero is captured by the closest enemy to the Villain Deck. Each Villain gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              " for each Hero it has. When you fight an enemy, gain all the Heroes captured by that enemy."
+            ],
+            [
+              { bold: "Twist" },
+              ": KO all Heroes captured by enemies. Then play another card from the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": 9 non grey Heroes are KO'd or carried off."
+            ],
+          ]
+        },
+      ]
+    },
   ]
 }

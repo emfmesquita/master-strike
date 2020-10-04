@@ -3,7 +3,7 @@ const CORE_SET = {
     value: "coreset",
     label: "Core Set",
     initials: "C",
-    cardTypes: [1,2,3],
+    cardTypes: [1,2,3,5],
 };
 const PROMO = {
     id: 2,
@@ -17,42 +17,42 @@ const DARK_CITY = {
     value: "darkcity",
     label: "Dark City",
     initials: "DC",
-    cardTypes: [1,2,3],
+    cardTypes: [1,2,3,5],
 };
 const FANTASTIC_FOUR = {
     id: 4,
     value: "ff",
     label: "Fantastic Four",
     initials: "FF",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const PAINT_THE_TOWN_RED = {
     id: 5,
     value: "pttr",
     label: "Paint the Town Red",
     initials: "PtTR",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const VILLAINS = {
     id: 6,
     value: "villains",
     label: "Villains",
     initials: "V",
-    cardTypes: [1,2,3],
+    cardTypes: [1,2,3,5],
 };
 const GUARDIANS_OF_THE_GALAXY = {
     id: 7,
     value: "gotg",
     label: "Guardians of the Galaxy",
     initials: "GotG",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const FEAR_ITSELF = {
     id: 8,
     value: "fearitself",
     label: "Fear Itself",
     initials: "FI",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const THREE_DIMENSION = {
     id: 9,
@@ -66,91 +66,91 @@ const SECRET_WARS_1 = {
     value: "sw1",
     label: "Secret Wars, Volume 1",
     initials: "SW1",
-    cardTypes: [1,2,3],
+    cardTypes: [1,2,3,5],
 };
 const SECRET_WARS_2 = {
     id: 11,
     value: "sw2",
     label: "Secret Wars, Volume 2",
     initials: "SW2",
-    cardTypes: [1,2,3],
+    cardTypes: [1,2,3,5],
 };
 const CAPTAIN_AMERICA = {
     id: 12,
     value: "captainamerica",
     label: "Captain America 75th Anniversary",
     initials: "CA",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const CIVIL_WAR = {
     id: 13,
     value: "civilwar",
     label: "Civil War",
     initials: "CW",
-    cardTypes: [1,2,3],
+    cardTypes: [1,2,3,5],
 };
 const DEADPOOL = {
     id: 14,
     value: "deadpool",
     label: "Deadpool",
     initials: "DP",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const NOIR = {
     id: 15,
     value: "noir",
     label: "Noir",
     initials: "Noir",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const X_MEN = {
     id: 16,
     value: "xmen",
     label: "X-Men",
     initials: "X",
-    cardTypes: [1,2,3],
+    cardTypes: [1,2,3,5],
 };
 const SPIDER_HOMECOMING = {
     id: 17,
     value: "spiderhomecoming",
     label: "Spider-Man Homecoming",
     initials: "SMH",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const CHAMPIONS = {
     id: 18,
     value: "champions",
     label: "Champions",
     initials: "Champ",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const WW_HULK = {
     id: 19,
     value: "wwhulk",
     label: "World War Hulk",
     initials: "WWH",
-    cardTypes: [1,2,3],
+    cardTypes: [1,2,3,5],
 };
 const MARVEL_STUDIOS = {
     id: 20,
     value: "marvelstudios",
     label: "Marvel Studios, Phase 1",
     initials: "MS1",
-    cardTypes: [1,2,3],
+    cardTypes: [1,2,3,5],
 };
 const ANT_MAN = {
     id: 21,
     value: "antman",
     label: "Ant-Man",
     initials: "AM",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const VENOM = {
     id: 22,
     value: "venom",
     label: "Venom",
     initials: "Venom",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const DIMENSIONS = {
     id: 23,
@@ -164,35 +164,35 @@ const REVELATIONS = {
     value: "revelations",
     label: "Revelations",
     initials: "Rev",
-    cardTypes: [1,2,3],
+    cardTypes: [1,2,3,5],
 };
 const SHIELD = {
     id: 25,
     value: "shield",
     label: "S.H.I.E.L.D.",
     initials: "S.H.I.E.L.D.",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const HEROES_OF_ASGARD = {
     id: 26,
     value: "heroesofasgard",
     label: "Heroes of Asgard",
     initials: "HoA",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const NEW_MUTANTS = {
     id: 27,
     value: "newmutants",
     label: "The New Mutants",
     initials: "NM",
-    cardTypes: [1,2],
+    cardTypes: [1,2,5],
 };
 const INTO_THE_COSMOS = {
     id: 28,
     value: "intothecosmos",
     label: "Into the Cosmos",
     initials: "ItC",
-    cardTypes: [1,2,3],
+    cardTypes: [1,2,3,5],
 };
 
 export const sets = Object.freeze({

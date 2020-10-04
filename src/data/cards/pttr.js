@@ -486,5 +486,124 @@ export default {
         }
       ]
     },
+  ],
+  schemes: [
+    {
+      id: 21,
+      name: "The Clone Saga",
+      set: 5,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Each player reveals two non-grey Heroes with the same card name or discards down to 3 cards."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 2 Villains with the same card name have escaped or the Villain Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 22,
+      name: "Invade the Daily Bugle News HQ",
+      set: 5,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Add 6 extra Henchmen from a single Henchman Group to the Hero Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": You can fight Villains in the HQ."
+            ],
+            [
+              { bold: "Twist" },
+              ": KO a Hero from the HQ. Put the highest-",
+              { icon: 1 },
+              " Villain from the city into that HQ space."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 5 Villains in the HQ."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 23,
+      name: "Splice Humans with Spider DNA",
+      set: 5,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Include Sinister Six as one of the Villain Groups."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Sinister Six Villains get ",
+              { bold: "+3" },
+              { icon: 1 },
+              ". All Hero cards have ",
+              { keyword: 7 },
+              "."
+            ],
+            [
+              { bold: "Twist" },
+              ": Each player puts a Sinister Six Villain from their Victory Pile on top of the Villain Deck. No matter how many players did so, play a single card from the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 6 Sinister Six Villains have escaped or the Villain Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 24,
+      name: "Weave a Web of Lies",
+      set: 5,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 7 Twists."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Whenever you defeat a Villain, you may pay ",
+              { bold: "1" },
+              { icon: 2 },
+              ". If you do, rescue a Bystander.",
+            ],
+            [
+              "You can't fight the Mastermind unless you have a Bystander in your Victory Pile for each Twist next to the Mastermind.",
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Mastermind."
+            ],
+            [
+              { bold: "Twist 7" },
+              ": Evil Wins!"
+            ],
+          ]
+        },
+      ]
+    },
   ]
 }

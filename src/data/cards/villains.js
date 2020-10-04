@@ -1468,5 +1468,225 @@ export default {
         },
       ]
     },
+  ],
+  schemes: [
+    {
+      id: 25,
+      name: "Build an Underground MegaVault Prison",
+      set: 6,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. The Bindings stack holds 5 Bindings per player."
+            ],
+            [
+              { bold: "Twist" },
+              ": If there is an Adversary in the Sewers, each player gains a Bindings. Otherwise, reveal the top card of the Adversary Deck. If that card is an Adversary, it enters the Sewers."
+            ],
+            [
+              { bold: "Good Wins" },
+              ": When the Bindings stack runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 26,
+      name: "Cage Villains in Power-Suppressing Cells",
+      set: 6,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Stack 2 Cops per player next to this Plot."
+            ],
+            [
+              { bold: "Twist" },
+              ": Each player returns all Cops from their Victory Pile to the Cop Stack. Then each player puts a non-grey Ally from their hand in front of them. Put a Cop from the Cop Stack on top of each of those Allies."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": You can fight any Cop on top of Allies. If you do, the player of your choice gains that Ally."
+            ],
+            [
+              { bold: "Good Wins" },
+              ": When a Twist must put out a Cop, but the Cop Stack is already empty."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 27,
+      name: "Crown Thor King of Asgard",
+      set: 6,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Put the Thor Adversary next to this Plot."
+            ],
+            [
+              { bold: "Twist" },
+              ": If Thor is in the city, he overruns. Otherwise, Thor enters the Bridge from wherever he is, and Thor guards 3 Bystanders."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Whenever Thor overruns, stack a Plot Twist from the KO pile next to this Plot as a “Triumph of Asgard.“"
+            ],
+            [
+              { bold: "Good Wins" },
+              ": When there are 3 Triumphs of Asgard next to this Plot."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 28,
+      name: "Crush HYDRA",
+      set: 6,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twists 1-7" },
+              ": Each Adversary in the city captures a New Recruit, or if there are no more New Recruits, a Madame HYDRA."
+            ],
+            [
+              { bold: "Twist 8" },
+              ": Put all captured Allies from the city into the Overrun Pile."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": An Adversary gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Ally it has captured. When you fight that Adversary, gain those Allies."
+            ],
+            [
+              { bold: "Good Wins" },
+              ": When there are 11 Allies in the Overrun Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 29,
+      name: "Graduation at Xavier's X-Academy",
+      set: 6,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Stack 8 Bystanders next to this Plot as “Young Mutants.“"
+            ],
+            [
+              { bold: "Twist" },
+              ": Put a Bystander from next to this Plot into the Overrun Pile."
+            ],
+            [
+              { bold: "Good Wins" },
+              ": When there are 8 Bystanders in the Overrun Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 30,
+      name: "Infiltrate the Lair with Spies",
+      set: 6,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists, Stack 21 Bystanders next to this Plot as “Infiltrating Spies.“"
+            ],
+            [
+              { bold: "Twist" },
+              ": Put all Bystanders from the Lair into the Overrun pile. Then put a Bystander from next to this Plot into each Lair space under the Bridge, Streets, and Sewers."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": When you recruit an Ally, kidnap any Bystander in that Lair space. When an Ally leaves the Lair in any other way, put any Bystander from that Lair space into the Overrun Pile."
+            ],
+            [
+              { bold: "Good Wins" },
+              ": When there are 12 Bystanders in the Overrun Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 31,
+      name: "Mass Produce War Machine Armor",
+      set: 6,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists, Include 10 S.H.I.E.L.D. Assault Squads as one of the Backup Adversary groups."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Plot as “War Machine Technology.“ An Assault Squad from the current player's Victory Pile enters the Bridge."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Assault Squads get ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each War Machine Technology next to the Plot."
+            ],
+            [
+              { bold: "Good Wins" },
+              ": When there are 3 Assault Squads in the Overrun Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 32,
+      name: "Resurrect Heroes with Norn Stones",
+      set: 6,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twists 1-6" },
+              ": An Adversary from the current player's Victory Pile enters the Bridge. Then play the top card of the Adversary Deck."
+            ],
+            [
+              { bold: "Twists 7-8" },
+              ": Each player puts an Adversary from their Victory Pile into the Overrun Pile."
+            ],
+            [
+              { bold: "Good Wins" },
+              ": When there are 3 Adversaries per player in the Overrun Pile."
+            ],
+          ]
+        },
+      ]
+    },
   ]
 }

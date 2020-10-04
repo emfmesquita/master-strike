@@ -74,7 +74,9 @@ export default {
               { team: 1 },
               ": ",
               { keyword: 66, text: "Burn 8 Shards" },
-              ": Defeat the Mastermind once. Then reveal the top card of the Villain Deck. If it's a Master Strike, then Adam Warlock is corrupted by power. At the start of next turn, add the Magus Mastermind to the game with one random Tactic. ",
+              ": Defeat the Mastermind once. Then reveal the top card of the Villain Deck. If it's a Master Strike, then Adam Warlock is corrupted by power. At the start of next turn, add the ",
+              { rule: 3, text: "Magus Mastermind" },
+              " to the game with one random Tactic. ",
               { italic: "(If he has never been in this game.)" },
             ]
           ]

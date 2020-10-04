@@ -1534,5 +1534,278 @@ export default {
         },
       ]
     },
+  ],
+  schemes: [
+    {
+      id: 48,
+      name: "Deadlands Hordes Charge the Wall",
+      set: 11,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Add an extra Villain Group."
+            ],
+            [
+              { bold: "Twist" },
+              ": Each Villain simultaneously ",
+              { keyword: 22, text: "charges" },
+              " two spaces. Play another card from the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the number of escaped Villains equals the number of players plus 6."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 49,
+      name: "Deadlands Hordes Charge the Wall",
+      set: 11,
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twists 1-7" },
+              ": The Villain in the city or Escape Pile with the highest printed ",
+              { icon: 1 },
+              " ascends to become a ",
+              { rule: 3, text: "second Mastermind" },
+              ". It gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              ". It gains the ability “",
+              { bold: "Master Strike" },
+              ": Each Player discards a card with cost equal to this Mastermind's printed ",
+              { icon: 4 },
+              ".“ ",
+              { italic: "(Keep them separate from any Villains who ascend through Escape effects.)" }
+            ],
+            [
+              { bold: "Twist 8" },
+              ": The Villain in each player's Victory Pile with the highest printed ",
+              { icon: 1 },
+              " ascends the same way."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are six Masterminds."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 50,
+      name: "The Fountain of Eternal Life",
+      set: 11,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. (1 player: 4 Twists.)"
+            ],
+            [
+              { bold: "Special Rules" },
+              ": All Villains and Mastermind Tactics have “",
+              { bold: "Fight" },
+              ": ",
+              { keyword: 21 },
+              ".“"
+            ],
+            [
+              { bold: "Twist" },
+              ": A Villain from your Victory Pile enters the Sewers. Put this Twist on the bottom of the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the number of escaped Villains is 3 times the number of players."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 51,
+      name: "The God-Emperor of Battleworld",
+      set: 11,
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist 1" },
+              ":This Scheme ascends to becomes a new ",
+              { bold: "9" },
+              { icon: 1 },
+              " ",
+              { rule: 3, text: "“God-Emperor“ Mastermind" },
+              " worth ",
+              { bold: "9" },
+              { icon: 4 },
+              ". It has “",
+              { bold: "Master Strike" },
+              ": Each player with exactly six cards in hand reveals a ",
+              { hc: 5 },
+              "Hero or puts two cards from their hand on top of their deck.“"
+            ],
+            [
+              { bold: "Twist 2-6" },
+              ": Stack this Twist next to the Scheme. The God-Emperor gets another ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              { bold: "Twist 7" },
+              ": If the God-Emperor lives, it KOs all other Masterminds."
+            ],
+            [
+              { bold: "Twist 8" },
+              ": Evil wins! ",
+              { italic: "(If any Mastermind still lives.)" }
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 52,
+      name: "The Mark of Khonshu",
+      set: 11,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 10 Twists. Always include Khonshu Guardians. Add all fourteen cards for an extra Hero to the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Heroes in the Villain Deck are “Khonshu Guardian“ Villains with ",
+              { icon: 1 },
+              " equal to their printed cost. While in the Sewers, Rooftops, or Bridge, they are in “wolf form“ and have double their ",
+              { icon: 1 },
+              ". When you defeat one, gain it as a Hero."
+            ],
+            [
+              { bold: "Twist" },
+              ": Play two cards from the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 7 Khonshu Guardians escape."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 53,
+      name: "Master the Mysteries of Kung-Fu",
+      set: 11,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Scheme."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Villains and the Mastermind have the ",
+              { keyword: 20, text: "Circle of Kung-Fu" },
+              " matching the number of Twists stacked here."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the number of escaped Villains is double the number of players."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 54,
+      name: "Secret Wars",
+      set: 11,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twists 1-3" },
+              ": Add ",
+              { rule: 3, text: "another random Mastermind" },
+              " to the game with one Tactic."
+            ],
+            [
+              { bold: "Twist 8" },
+              ": Evil wins!"
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 55,
+      name: "Sinister Ambitions",
+      set: 11,
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists. Add 10 random Ambition cards to the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Ambition cards are Villains with their printed ",
+              { icon: 1 },
+              ". Add ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Twist stacked next to the Scheme. They are worth ",
+              { bold: "4" },
+              { icon: 4 },
+              ". Whenever an Ambition Villain escapes, do its Ambition effect."
+            ],
+            [
+              { bold: "Twist 1-5" },
+              ": Stack this Twist next to the Scheme. Play another card from the Villain Deck."
+            ],
+            [
+              { bold: "Twist 6" },
+              ": Each Ambition Villain in the city escapes."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 4 Ambition Villains escape."
+            ],
+          ]
+        },
+      ]
+    },
   ]
 }

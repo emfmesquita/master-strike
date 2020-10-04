@@ -38,7 +38,7 @@ const WALL_CRAWL = {
     id: 7,
     value: "wallcrawl",
     label: "Wall-Crawl",
-    cardTypes: [1, 3],
+    cardTypes: [1, 3, 5],
 }
 const FEAST = {
     id: 8,
@@ -116,19 +116,19 @@ const CIRCLE_OF_KUNG_FU = {
     id: 20,
     value: "circleofkungfu",
     label: "Circle of Kung-Fu (and Quack-Fu)",
-    cardTypes: [2],
+    cardTypes: [2, 5],
 }
 const FATEFUL_RESURRECTION = {
     id: 21,
     value: "fatefulresurrection",
     label: "Fateful Resurrection",
-    cardTypes: [2, 3],
+    cardTypes: [2, 3, 5],
 }
 const CHARGE = {
     id: 22,
     value: "charge",
     label: "Charge",
-    cardTypes: [2],
+    cardTypes: [2, 5],
 }
 const MAN_OUT_OF_TIME = {
     id: 23,

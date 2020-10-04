@@ -1404,5 +1404,255 @@ export default {
         },
       ]
     },
+  ],
+  schemes: [
+    {
+      id: 40,
+      name: "Build an Army of Annihilation",
+      set: 10,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 9 Twists. Put 10 extra Annihilation Wave Henchmen in that KO pile."
+            ],
+            [
+              { bold: "Twist" },
+              ": KO all Annihilation Henchmen from the players' Victory Piles. Stack this Twist next to the Scheme. Then, for each Twist in that stack, put an Annihilation Henchman from the KO pile next to the Mastermind. Players can fight those Henchmen.",
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 10 Annihilation Henchmen next to the Mastermind."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 41,
+      name: "Corrupt the Next Generation of Heroes",
+      set: 10,
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Add 10 Sidekicks to the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Sidekicks in the Villain Deck and city are Villains. Their ",
+              { icon: 1 },
+              " is 2 plus the number of Twists stacked next to this Scheme. When you defeat a Sidekick, gain it to the top of your deck."
+            ],
+            [
+              { bold: "Twists 1-7" },
+              ": Each player returns a ",
+              { rule: 11, text: "Sidekick"},
+              " from their discard pile to the ",
+              { rule: 11, text: "Sidekick"},
+              " Stack. Then, two ",
+              { rule: 11 },
+              " from the ",
+              { rule: 11, text: "Sidekick"},
+              " Stack enter the city.",
+            ],
+            [
+              { bold: "Twist 8" },
+              ": All ",
+              { rule: 11 },
+              " in the city escape.",
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 4 ",
+              { rule: 11 },
+              " escape."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 42,
+      name: "Crush Them With My Bare Hands",
+      set: 10,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 5 Twists. If playing solo, add an extra Villain Group."
+            ],
+            [
+              { bold: "Twist" },
+              ": This Twist becomes a Master Strike that takes effect immediately.",
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 8 Master Strikes have taken effect."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 43,
+      name: "Dark Alliance",
+      set: 10,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist 1" },
+              ": Add a random ",
+              { rule: 3, text: "second Mastermind" },
+              " to the game with one Mastermind Tactic."
+            ],
+            [
+              { bold: "Twist 2-4" },
+              ": If the ",
+              { rule: 3, text: "second Mastermind" },
+              " is still in play, it gains another Mastermind Tactic."
+            ],
+            [
+              { bold: "Twist 7" },
+              ": Each Mastermind captures a Bystander."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": Evil Wins!"
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 44,
+      name: "Fragmented Realities",
+      set: 10,
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": Add an extra Villain Group. Shuffle the Villain Deck, then split it as evenly as possible into a Villain Deck for each player. Then, shuffle 2 Twists into each player's Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": The normal city does not exist. Instead, each player has a different dimension in front of them with one city space. Villains and Bystanders from your Villain Deck enter your dimension. You can fight Villains in any dimension."
+            ],
+            [
+              { bold: "Twist" },
+              ": Play two card from your Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the number of non-grey Heroes in the KO pile is 5 times the number of players."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 45,
+      name: "Master of Tyrants",
+      set: 10,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Choose 3 other Masterminds, and shuffle their 12 Tactics into the Villain Deck. Those Tactics are “Tyrant Villains“ with their printed ",
+              { icon: 1 },
+              " and no abilities."
+            ],
+            [
+              { bold: "Twist 1-7" },
+              ": Put this Twist under a Tyrant Villain as “Dark Power.“ It gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              { bold: "Twist 8" },
+              ": All Tyrant Villains in the city escape."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 5 Tyrant Villains escape."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 46,
+      name: "Pan-Dimensional Plague",
+      set: 10,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 10 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": KO all Wounds from next to the HQ. Then, put a Wound from the Wound Stack next to each Hero in the HQ."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": When a player recruits a Hero with a Wound next to it, that player can either gain that Wound or pay ",
+              { bold: "+1" },
+              { icon: 2 },
+              " to return that Wound to the Wound Stack."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the Wound Stack runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 47,
+      name: "Smash Two Dimensions Together",
+      set: 10,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Add an extra Villain Group. Put the Villain Deck on the Bank space."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": The Sewers and Bank do not exist, so the city is only 3 spaces. There is a parallel dimension with 3 city spaces above the main city. Whenever a Villain enters the city, the current player chooses which city it enters."
+            ],
+            [
+              { bold: "Twist 1-7" },
+              ": Play two cards from the Villain Deck."
+            ],
+            [
+              { bold: "Twist 8" },
+              ": All Villains in both dimensions escape."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 10 Villains escape."
+            ],
+          ]
+        },
+      ]
+    },
   ]
 }

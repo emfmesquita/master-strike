@@ -1518,5 +1518,233 @@ export default {
         },
       ]
     },
+  ],
+  schemes: [
+    {
+      id: 1,
+      name: "Midtown Bank Robbery",
+      set: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. 12 total Bystanders in the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Each Villain gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Bystander it has."
+            ],
+            [
+              { bold: "Twist" },
+              ": Any Villain in the Bank captures 2 Bystanders. Then play the top card of the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 8 Bystanders are carried away by escaping Villains."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 2,
+      name: "Secret Invasion of the Skrull Shapeshifters",
+      set: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. 6 Heroes. Skrull Villain Group required. Shuffle 12 random Heroes from the Hero Deck into the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Heroes in the Villain Deck count as Skrull Villains with ",
+              { icon: 1 },
+              " equal to the Hero's ",
+              { icon: 3 },
+              { bold: "+2" },
+              ". If you defeat that Hero, you gain it."
+            ],
+            [
+              { bold: "Twist" },
+              ": The highest-cost Hero from the HQ moves into the Sewers as a Skrull Villain, as above."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": If 6 Heroes get into the Escaped Villains pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 3,
+      name: "The Legacy Virus",
+      set: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Wound stack holds 6 Wounds per player."
+            ],
+            [
+              { bold: "Twist" },
+              ": Each player reveals a ",
+              { hc: 5 },
+              " Hero or gains a Wound."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": If the Wound stack runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 4,
+      name: "Negative Zone Prison Breakout",
+      set: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Add an extra Henchman group to the Villain Deck."
+            ],
+            [
+              { bold: "Twist" },
+              ": Play the top 2 cards of the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": If 12 Villains escape."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 5,
+      name: "Portals to the Dark Dimension",
+      set: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 7 Twists. Each Twist is a Dark Portal."
+            ],
+            [
+              { bold: "Twist 1" },
+              ": Put the Dark Portal above the Mastermind. The Mastermind gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              { bold: "Twists 2-6" },
+              ": Put the Dark Portal in the leftmost city space that doesn't yet have a Dark Portal. Villains in that city space get ",
+              { bold: "+1" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              { bold: "Twist 7" },
+              ": Evil Wins!"
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 6,
+      name: "Replace Earth's Leaders with Killbots",
+      set: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 5 Twists. 3 additional Twists next to this Scheme. 18 total Bystanders in the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Bystanders in the Villain Deck count as Killbot Villains, with ",
+              { icon: 1 },
+              " equal to the number of Twists next to this Scheme."
+            ],
+            [
+              { bold: "Twist" },
+              ": Put the Twist next to this Scheme."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": If 5 “Killbots“ escape."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 7,
+      name: "Super Hero Civil War",
+      set: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": For 2-3 players, use 8 Twists. For 4-5 players, use 5 Twists. If only 2 players, use only 4 Heroes in the Hero Deck."
+            ],
+            [
+              { bold: "Twist" },
+              ": KO all the Heroes in the HQ."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": If the Hero Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 8,
+      name: "Unleash the Power of the Cosmic Cube",
+      set: 1,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Put the Twist next to this Scheme."
+            ],
+            [
+              { bold: "Twist 5-6" },
+              ": Each player gains a Wound."
+            ],
+            [
+              { bold: "Twist 7" },
+              ": Each player gains 3 Wounds."
+            ],
+            [
+              { bold: "Twist 8" },
+              ": Evil Wins!"
+            ],
+          ]
+        },
+      ]
+    },
   ]
 }

@@ -535,5 +535,149 @@ export default {
         }
       ]
     },
+  ],
+  schemes: [
+    {
+      id: 56,
+      name: "Brainwash the Military",
+      set: 12,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 7 Twists. Add 12 S.H.I.E.L.D. Officers to the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": S.H.I.E.L.D. Officers in the Villain Deck are Villains. Their ",
+              { icon: 1 },
+              " is 3 plus the number of Twists stacked next to this Scheme. When you defeat a S.H.I.E.L.D. Officer, gain it as a Hero."
+            ],
+            [
+              { bold: "Twist 1-6" },
+              ": Stack this Twists next to the Scheme as a “Traitor Battalion.“ Play another card from the Villain Deck."
+            ],
+            [
+              { bold: "Twist 7" },
+              ": All S.H.I.E.L.D. Officers in the city escape."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 5 S.H.I.E.L.D. Officers escape."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 57,
+      name: "Change the Outcome of WWII",
+      set: 12,
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 7 Twists. Add an extra Villain Group."
+            ],
+            [
+              { bold: "Twist" },
+              ": The Axis invades a new country. Put all Villains and Bystanders from the city on the bottom of the Villain Deck. The number of city spaces changes. Play 2 cards from the Villain Deck. If any Villains escape this country, stack a Twist next to the scheme as a “conquered capital.“"
+            ],
+            [
+              { bold: "Twist 1" },
+              ": Poland: 4 spaces."
+            ],
+            [
+              { bold: "Twist 2" },
+              ": France: 3 spaces."
+            ],
+            [
+              { bold: "Twist 3" },
+              ": USSR: 6 spaces."
+            ],
+            [
+              { bold: "Twist 4" },
+              ": England: 3 spaces."
+            ],
+            [
+              { bold: "Twist 5" },
+              ": USA: 5 spaces."
+            ],
+            [
+              { bold: "Twist 6" },
+              ": Australia: 2 spaces."
+            ],
+            [
+              { bold: "Twist 7" },
+              ": Switzerland: 1 space."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 3 capitals are conquered."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 58,
+      name: "Go Back in Time to Slay Heroes' Ancestors",
+      set: 12,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 9 Twists. 8 Heroes in Hero deck."
+            ],
+            [
+              { bold: "Twist" },
+              ": Put a Hero form the HQ next to the Scheme, “Purged from the Timestream.“"
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Whenever a Hero is in the HQ whose Hero Name has been Purged from the Timestream, KO that Hero."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the Hero Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 59,
+      name: "The Unbreakable Enigma Code",
+      set: 12,
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists."
+            ],
+            [
+              { bold: "Twists 1-5" },
+              ": Put a card from the Hero Deck face down next to the scheme as part of the “Enigma Code.“ Mix up those cards face-down."
+            ],
+            [
+              { bold: "Twist 6" },
+              ": Evil Wins!"
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Whenever you fight a Villain, you may pay ",
+              { bold: "1" },
+              { icon: 2 },
+              " to look at one of the face-down Enigma Cards. When you fight the Mastermind, first guess the color of each Enigma card, and then reveal them. If you guessed them right, fight the Mastermind as normal. If not, your turn ends, and mix up the Enigma cards face-down."
+            ],
+          ]
+        },
+      ]
+    },
   ]
 }
