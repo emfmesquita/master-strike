@@ -1,9 +1,9 @@
 export default {
+  id: 26,
   heroes: [
     {
       id: 198,
       name: "Beta Ray Bill",
-      set: 26,
       team: 21,
       cards: [
         {
@@ -70,7 +70,6 @@ export default {
     {
       id: 199,
       name: "Lady Sif",
-      set: 26,
       team: 21,
       cards: [
         {
@@ -146,7 +145,6 @@ export default {
       id: 200,
       name: "Thor",
       filterName: "Thor (HoA)",
-      set: 26,
       team: 21,
       cards: [
         {
@@ -233,7 +231,6 @@ export default {
     {
       id: 201,
       name: "Valkyrie",
-      set: 26,
       team: 21,
       cards: [
         {
@@ -300,7 +297,6 @@ export default {
     {
       id: 202,
       name: "Warriors Three, The",
-      set: 26,
       team: 21,
       cards: [
         {
@@ -374,7 +370,6 @@ export default {
       id: 67,
       name: "Hela, Goddess of Death",
       tacticName: "Hela",
-      set: 26,
       vAttack: "10",
       vp: 6,
       cards: [
@@ -491,7 +486,6 @@ export default {
       id: 68,
       name: "Malekith the Accursed",
       tacticName: "Malekith",
-      set: 26,
       vAttack: "8",
       vp: 6,
       cards: [
@@ -636,6 +630,173 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 122,
+      name: "Asgardian Test of Worth",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists."
+            ],
+            [
+              { bold: "Twist 1-7" },
+              ": Each player who is not ",
+              { keyword: 63 },
+              " discards a card. Then, if at least half the players ",
+              { italic: "(round up)" },
+              " are not ",
+              { keyword: 63 },
+              ", put this Twist next to the Scheme as a “Moral Failing.“"
+            ],
+            [
+              { bold: "Twist 8-11" },
+              ": Put this Twist next to the Scheme as a “Moral Failing.“"
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 5 Moral Failings."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 123,
+      name: "Dark World of Svartalfheim, The",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 10 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Put this Twist next to a city space of HQ space that doesn't already have one, as “Eternal Darkness.“"
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Villains in city spaces with Eternal Darkness get ",
+              { bold: "+1" },
+              { icon: 1 },
+              ". To recruit a Hero in an HQ space with Eternal Darkness, you must pay an extra ",
+              { bold: "+1" },
+              { icon: 2 },
+              "."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When all city spaces or all HQ spaces are covered in Eternal Darkness."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 124,
+      name: "War of the Frost Giants",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 9 Twists."
+            ],
+            [
+              { bold: "Twist 1-7" },
+              ": This Twist enters the city as a “Frost Giant Invader“ Villain worth 6VP with ",
+              { bold: "6" },
+              { icon: 1 },
+              " and the ability “If you are not ",
+              { keyword: 63 },
+              ", this gets ",
+              { bold: "+4" },
+              { icon: 1 },
+              ".“"
+            ],
+            [
+              { bold: "Twist 8-9" },
+              ": Same effect, then a Frost Giant Invader from each player's Victory Pile enters the city."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 5 Frost Giant Invaders in the city and/or Escape Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 125,
+      name: "Ragnarok, Twilight of the Gods",
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Choose a Villain from your Victory Pile worth at least 2VP to enter the city. Then, if the total ",
+              { icon: 1 },
+              " of Villains in the city is at least as high as the Guardian ",
+              { icon: 1 },
+              " listed below, put this Twist next to the Scheme as a “Guardian Defeated.“"
+            ],
+            [
+              { bold: "Twist 1" },
+              ": Balder, 11",
+              { icon: 1 }
+            ],
+            [
+              { bold: "Twist 2" },
+              ": Odin, 24",
+              { icon: 1 }
+            ],
+            [
+              { bold: "Twist 3" },
+              ": Vidar, 19",
+              { icon: 1 }
+            ],
+            [
+              { bold: "Twist 4" },
+              ": Tyr, 16",
+              { icon: 1 }
+            ],
+            [
+              { bold: "Twist 5" },
+              ": Heimdall, 12",
+              { icon: 1 }
+            ],
+            [
+              { bold: "Twist 6" },
+              ": Frey, 7",
+              { icon: 1 }
+            ],
+            [
+              { bold: "Twist 7" },
+              ": Frigga, 8",
+              { icon: 1 }
+            ],
+            [
+              { bold: "Twist 8-11" },
+              ": Warriors of Valhalla, 6",
+              { icon: 1 }
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 5 Guardians Defeated."
+            ],
+          ]
+        },
       ]
     },
   ]

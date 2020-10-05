@@ -1,9 +1,9 @@
 export default {
+  id: 10,
   heroes: [
     {
       id: 71,
       name: "Apocalyptic Kitty Pryde",
-      set: 10,
       team: 4,
       cards: [
         {
@@ -67,7 +67,6 @@ export default {
     {
       id: 72,
       name: "Black Bolt",
-      set: 10,
       team: 15,
       cards: [
         {
@@ -131,7 +130,6 @@ export default {
     {
       id: 73,
       name: "Black Panther",
-      set: 10,
       team: 15,
       cards: [
         {
@@ -195,7 +193,6 @@ export default {
     {
       id: 74,
       name: "Captain Marvel",
-      set: 10,
       team: 1,
       cards: [
         {
@@ -272,7 +269,6 @@ export default {
     {
       id: 75,
       name: "Dr. Strange",
-      set: 10,
       team: 15,
       cards: [
         {
@@ -343,7 +339,6 @@ export default {
     {
       id: 76,
       name: "Lady Thor",
-      set: 10,
       team: 1,
       cards: [
         {
@@ -423,7 +418,6 @@ export default {
     {
       id: 77,
       name: "Magik",
-      set: 10,
       team: 4,
       cards: [
         {
@@ -503,7 +497,6 @@ export default {
     {
       id: 78,
       name: "Maximus",
-      set: 10,
       team: 14,
       cards: [
         {
@@ -572,7 +565,6 @@ export default {
     {
       id: 79,
       name: "Namor, the Sub-Mariner",
-      set: 10,
       team: 14,
       cards: [
         {
@@ -638,7 +630,6 @@ export default {
     {
       id: 80,
       name: "Old Man Logan",
-      set: 10,
       team: 4,
       cards: [
         {
@@ -711,7 +702,6 @@ export default {
     {
       id: 81,
       name: "Proxima Midnight",
-      set: 10,
       team: 14,
       cards: [
         {
@@ -789,7 +779,6 @@ export default {
     {
       id: 82,
       name: "Superior Iron Man",
-      set: 10,
       team: 15,
       cards: [
         {
@@ -851,7 +840,6 @@ export default {
     {
       id: 83,
       name: "Thanos",
-      set: 10,
       team: 14,
       cards: [
         {
@@ -920,7 +908,6 @@ export default {
     {
       id: 84,
       name: "Ultimate Spider-Man",
-      set: 10,
       team: 3,
       cards: [
         {
@@ -998,7 +985,6 @@ export default {
       id: 21,
       name: "Madelyne Pryor, Goblin Queen",
       tacticName: "Madelyne Pryor",
-      set: 10,
       vAttack: "10",
       vp: 6,
       cards: [
@@ -1071,7 +1057,6 @@ export default {
       id: 22,
       name: "Nimrod, Super Sentinel",
       tacticName: "Nimrod",
-      set: 10,
       vAttack: "6",
       vp: 6,
       cards: [
@@ -1165,7 +1150,6 @@ export default {
     {
       id: 23,
       name: "Wasteland Hulk",
-      set: 10,
       vAttack: "7",
       vp: 6,
       cards: [
@@ -1238,7 +1222,6 @@ export default {
       id: 24,
       name: "Zombie Green Goblin",
       tacticName: "Green Goblin",
-      set: 10,
       vAttack: "11",
       vp: 6,
       cards: [
@@ -1328,7 +1311,6 @@ export default {
     {
       id: 13,
       name: "Ghost Racers",
-      set: 10,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1354,7 +1336,6 @@ export default {
     {
       id: 14,
       name: "M.O.D.O.K.s",
-      set: 10,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1376,7 +1357,6 @@ export default {
     {
       id: 15,
       name: "Thor Corps",
-      set: 10,
       vp: 1,
       vAttack: "3",
       cards: [
@@ -1409,7 +1389,6 @@ export default {
     {
       id: 40,
       name: "Build an Army of Annihilation",
-      set: 10,
       cards: [
         {
           abilities: [
@@ -1432,7 +1411,6 @@ export default {
     {
       id: 41,
       name: "Corrupt the Next Generation of Heroes",
-      set: 10,
       cards: [
         {
           dense: true,
@@ -1478,7 +1456,6 @@ export default {
     {
       id: 42,
       name: "Crush Them With My Bare Hands",
-      set: 10,
       cards: [
         {
           abilities: [
@@ -1501,7 +1478,6 @@ export default {
     {
       id: 43,
       name: "Dark Alliance",
-      set: 10,
       cards: [
         {
           abilities: [
@@ -1536,7 +1512,6 @@ export default {
     {
       id: 44,
       name: "Fragmented Realities",
-      set: 10,
       cards: [
         {
           dense: true,
@@ -1564,7 +1539,6 @@ export default {
     {
       id: 45,
       name: "Master of Tyrants",
-      set: 10,
       cards: [
         {
           abilities: [
@@ -1596,7 +1570,6 @@ export default {
     {
       id: 46,
       name: "Pan-Dimensional Plague",
-      set: 10,
       cards: [
         {
           abilities: [
@@ -1626,7 +1599,6 @@ export default {
     {
       id: 47,
       name: "Smash Two Dimensions Together",
-      set: 10,
       cards: [
         {
           abilities: [

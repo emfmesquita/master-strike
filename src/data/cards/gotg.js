@@ -1,9 +1,9 @@
 export default {
+  id: 7,
   heroes: [
     {
       id: 58,
       name: "Drax the Destroyer",
-      set: 7,
       team: 12,
       cards: [
         {
@@ -70,7 +70,6 @@ export default {
     {
       id: 59,
       name: "Gamora",
-      set: 7,
       team: 12,
       cards: [
         {
@@ -158,7 +157,6 @@ export default {
     {
       id: 60,
       name: "Groot",
-      set: 7,
       team: 12,
       cards: [
         {
@@ -226,7 +224,6 @@ export default {
     {
       id: 61,
       name: "Rocket Raccoon",
-      set: 7,
       team: 12,
       cards: [
         {
@@ -293,7 +290,6 @@ export default {
     {
       id: 62,
       name: "Star-Lord",
-      set: 7,
       team: 12,
       cards: [
         {
@@ -356,7 +352,6 @@ export default {
       id: 18,
       name: "Supreme Intelligence of the Kree",
       tacticName: "Supreme Intelligence",
-      set: 7,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -429,7 +424,6 @@ export default {
     {
       id: 19,
       name: "Thanos",
-      set: 7,
       vAttack: "24",
       vp: 7,
       cards: [
@@ -501,7 +495,6 @@ export default {
     {
       id: 33,
       name: "Forge the Infinity Gauntlet",
-      set: 7,
       cards: [
         {
           abilities: [
@@ -530,7 +523,6 @@ export default {
     {
       id: 34,
       name: "Intergalactic Kree Nega-Bomb",
-      set: 7,
       cards: [
         {
           abilities: [
@@ -552,8 +544,7 @@ export default {
     },
     {
       id: 35,
-      name: "The Kree-Skrull War",
-      set: 7,
+      name: "Kree-Skrull War, The",
       cards: [
         {
           abilities: [
@@ -580,7 +571,6 @@ export default {
     {
       id: 36,
       name: "Unite the Shards",
-      set: 7,
       cards: [
         {
           abilities: [

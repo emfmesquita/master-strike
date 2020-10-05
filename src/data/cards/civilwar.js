@@ -1,9 +1,9 @@
 export default {
+  id: 13,
   heroes: [
     {
       id: 106,
       name: "Captain America, Secret Avenger",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -87,7 +87,6 @@ export default {
     {
       id: 107,
       name: "Cloak & Dagger",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -209,7 +208,6 @@ export default {
       id: 108,
       name: "Daredevil",
       filterName: "Daredevil (CW)",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -290,7 +288,6 @@ export default {
     {
       id: 109,
       name: "Falcon",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -382,7 +379,6 @@ export default {
     {
       id: 110,
       name: "Goliath",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -484,7 +480,6 @@ export default {
     {
       id: 111,
       name: "Hercules",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -569,7 +564,6 @@ export default {
     {
       id: 112,
       name: "Hulkling",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -675,7 +669,6 @@ export default {
     {
       id: 113,
       name: "Luke Cage",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -749,7 +742,6 @@ export default {
     {
       id: 114,
       name: "Patriot",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -831,7 +823,6 @@ export default {
     {
       id: 115,
       name: "Peter Parker",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -916,7 +907,6 @@ export default {
     {
       id: 116,
       name: "Speedball",
-      set: 13,
       team: 16,
       cards: [
         {
@@ -995,7 +985,6 @@ export default {
     {
       id: 117,
       name: "Stature",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -1116,7 +1105,6 @@ export default {
     {
       id: 118,
       name: "Storm & Black Panther",
-      set: 13,
       team: 4,
       cards: [
         {
@@ -1237,7 +1225,6 @@ export default {
     {
       id: 119,
       name: "Tigra",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -1324,7 +1311,6 @@ export default {
     {
       id: 120,
       name: "Vision",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -1410,7 +1396,6 @@ export default {
     {
       id: 121,
       name: "Wiccan",
-      set: 13,
       team: 1,
       cards: [
         {
@@ -1495,7 +1480,6 @@ export default {
     {
       id: 31,
       name: "Authoritarian Iron Man",
-      set: 13,
       vAttack: "12",
       vp: 6,
       cards: [
@@ -1575,7 +1559,6 @@ export default {
       id: 32,
       name: "Baron Helmut Zemo",
       tacticName: "Helmut Zemo",
-      set: 13,
       vAttack: "16",
       vp: 6,
       cards: [
@@ -1651,7 +1634,6 @@ export default {
       id: 33,
       name: "Maria Hill, Director of S.H.I.E.L.D.",
       tacticName: "Maria Hill",
-      set: 13,
       vAttack: "7",
       vp: 6,
       cards: [
@@ -1729,7 +1711,6 @@ export default {
     {
       id: 34,
       name: "Misty Knight",
-      set: 13,
       vAttack: "14",
       vp: 6,
       cards: [
@@ -1801,7 +1782,6 @@ export default {
     {
       id: 35,
       name: "Ragnarok",
-      set: 13,
       vAttack: "6",
       vp: 6,
       cards: [
@@ -1878,7 +1858,6 @@ export default {
     {
       id: 19,
       name: "Mandroid",
-      set: 13,
       vAttack: "2+",
       vp: 1,
       cards: [
@@ -1901,7 +1880,6 @@ export default {
     {
       id: 20,
       name: "Cape-Killers",
-      set: 13,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1913,6 +1891,210 @@ export default {
               { bold: "Fight" },
               ": KO a card from your discard pile."
             ]
+          ]
+        },
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 60,
+      name: "Avengers vs. X-Men",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 9 Twists. Hero Deck has 3 Heroes of one Team and 3 Heroes of another Team. (",
+              { team: 1 },
+              ",",
+              { team: 4 },
+              ",",
+              { team: 3 },
+              ",",
+              { team: 6 },
+              ", etc.)"
+            ],
+            [
+              { bold: "Twist 1-7" },
+              ": Each player reveals their hand. Each player that has cards of both those teams gains a Wound."
+            ],
+            [
+              { bold: "Twist 8" },
+              ": Evil wins!"
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 61,
+      name: "Dark Reign of H.A.M.M.E.R. Officers",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 7 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Scheme. Then, for each Twist in that stack, put a S.H.I.E.L.D. Officer next to the Mastermind as a 3",
+              { icon: 1 },
+              " Villain with ",
+              { keyword: 29 },
+              ". You can fight them to gain them as Heroes."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 7 Officers next to the Mastermind."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 62,
+      name: "Epic Super Hero Civil War",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 1 player: 4 Heroes in Hero Deck. 1-3 players: 9 Twists. 4-5 players: 6 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Scheme. Then, for each Twist in that stack, KO a Hero from the HQ and immediately refill that HQ space."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the Hero Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 63,
+      name: "Imprison Unregistered Superhumans",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists."
+            ],
+            [
+              { bold: "Twist 1, 3, 5, 7, 9" },
+              ": This Scheme ",
+              { keyword: 28, text: "fortifies " },
+              " the city space to its right starting with the Bridge. Villains in that space get ",
+              { bold: "+1" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              { bold: "Other Twists" },
+              ": If there's a Villain in that fortified city space, KO a bystander."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 3 Bystanders are in the KO pile and/or Escape Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 64,
+      name: "Nitro the Supervillain Threatens Crowds",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": KO all Bystanders held by Villains. Then, the Villain with the highest ",
+              { icon: 1 },
+              " captures 3 Bystanders."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 15 Bystanders are in the KO pile and/or Escape Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 65,
+      name: "Predict Future Crime",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists. Add an extra Villain Group."
+            ],
+            [
+              { bold: "Twist" },
+              ": Reveal the top 3 cards of the Villain Deck. Play each Villain you revealed. Put the rest back in any order."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 2 Villains per player in the Escape Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 66,
+      name: "Reveal Heroes' Secret Identities",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists. 7 Heroes in Hero Deck."
+            ],
+            [
+              { bold: "Twist" },
+              ": Put a Hero from the HQ next to the Scheme as an “Unmasked“ Hero. All cards with “Unmasked“ Hero Names cost ",
+              { bold: "+1" },
+              { icon: 2 },
+              " to recruit. You can't Unmask a Hero Name that has already been Unmasked."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 5 Heroes are Unmasked."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 67,
+      name: "United States Split by Civil War",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 10 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": If there is a Villain on the Streets or Bridge, put this Twist in a stack of “Western States Victories.“ Otherwise, if there is a Villain in the Sewers, put this Twist in a stack of “Eastern States Victories.“"
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 3 Western Victories or 3 Eastern Victories."
+            ],
           ]
         },
       ]

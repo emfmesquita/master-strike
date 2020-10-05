@@ -1,9 +1,9 @@
 export default {
+  id: 17,
   heroes: [
     {
       id: 147,
       name: "Happy Hogan",
-      set: 17,
       team: 0,
       cards: [
         {
@@ -58,7 +58,6 @@ export default {
     {
       id: 148,
       name: "High Tech Spider-Man",
-      set: 17,
       team: 3,
       cards: [
         {
@@ -124,7 +123,6 @@ export default {
     {
       id: 149,
       name: "Peter Parker, Homecoming",
-      set: 17,
       team: 3,
       cards: [
         {
@@ -190,7 +188,6 @@ export default {
     {
       id: 150,
       name: "Peter's Allies",
-      set: 17,
       team: 3,
       cards: [
         {
@@ -263,7 +260,6 @@ export default {
     {
       id: 151,
       name: "Tony Stark",
-      set: 17,
       team: 1,
       cards: [
         {
@@ -332,7 +328,6 @@ export default {
     {
       id: 46,
       name: "Adrian Toomes",
-      set: 17,
       vAttack: "5",
       vp: 6,
       cards: [
@@ -422,7 +417,6 @@ export default {
     {
       id: 47,
       name: "Vulture",
-      set: 17,
       vAttack: "8",
       vp: 6,
       cards: [
@@ -512,6 +506,117 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 84,
+      name: "Distract the Hero",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Use at least 1",
+              { team: 3 },
+              " Hero."
+            ],
+            [
+              { bold: "Twist" },
+              ": If you get any Victory Points this turn, put this Twist on the bottom of the Villain Deck. Otherwise, stack this Twist next to the Scheme as a “Villainous Interruption.“"
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there have been 5 Villainous Interruptions."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 85,
+      name: "Explosion at the Washington Monument",
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Shuffle 18 Bystanders and 14 Wounds, then deal them evenly into eight decks. Put these decks in a row, as Floors of the Washington Monument."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Whenever you fight a Villain, you may reveal any face-down card from any Floor. If it's a Bystander, rescue it. If it's a Wound, put it back face-up."
+            ],
+            [
+              { bold: "Twist" },
+              ": KO the topmost Floor of the Washington Monument. You gain one of the Wounds KO'd this way."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 10 Bystanders are in the KO pile and/or Escape Pile, or all Floors are KO'd."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 86,
+      name: "Ferry Disaster",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 9 Twists. Put the Bystander Stack above the Sewers as the “Ferry.“"
+            ],
+            [
+              { bold: "Twist 1-4" },
+              ": If there's a Villain in the city space below the Ferry, KO 2 Bystanders from the Ferry. Whether you KO'd or not, the Ferry moves one space left."
+            ],
+            [
+              { bold: "Twist 5-8" },
+              ": Same effect, but it moves right."
+            ],
+            [
+              { bold: "Twist 9" },
+              ": KO half the Bystanders from the Bystander deck, rounding up."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 7 Bystanders are in the KO pile and/or Escape Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 87,
+      name: "Scavenge Alien Weaponry",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 7 Twists. Add an extra Henchmen Group of 10 cards as Smugglers."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Smugglers have ",
+              { keyword: 42 },
+              "."
+            ],
+            [
+              { bold: "Twist" },
+              ": Play two cards from the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 3 Villains per player have escaped or the Villain Deck runs out."
+            ],
+          ]
+        },
       ]
     },
   ]

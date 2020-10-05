@@ -1,9 +1,9 @@
 export default {
+  id: 21,
   heroes: [
     {
       id: 172,
       name: "Ant-Man",
-      set: 21,
       team: 1,
       cards: [
         {
@@ -90,7 +90,6 @@ export default {
     {
       id: 173,
       name: "Black Knight",
-      set: 21,
       team: 1,
       cards: [
         {
@@ -155,7 +154,6 @@ export default {
     {
       id: 174,
       name: "Jocasta",
-      set: 21,
       team: 1,
       cards: [
         {
@@ -224,7 +222,6 @@ export default {
     {
       id: 175,
       name: "Wasp",
-      set: 21,
       team: 1,
       cards: [
         {
@@ -319,7 +316,6 @@ export default {
     {
       id: 176,
       name: "Wonder Man",
-      set: 21,
       team: 1,
       cards: [
         {
@@ -410,7 +406,6 @@ export default {
     {
       id: 57,
       name: "Morgan Le Fay",
-      set: 21,
       vAttack: "7",
       vp: 6,
       cards: [
@@ -502,7 +497,6 @@ export default {
     {
       id: 58,
       name: "Ultron",
-      set: 21,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -583,6 +577,122 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 106,
+      name: "Age of Ultron",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists. 4-5 Players: Add another Hero."
+            ],
+            [
+              { bold: "Twist" },
+              ": Put the top card of the Hero Deck next to the Scheme in an “Evolution“ Pile. Then this Twist enters the city as an “Evolved Ultron“ Villain."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Evolved Ultrons have ",
+              { bold: "4" },
+              { icon: 1 },
+              " and are ",
+              { keyword: 51 },
+              " by each color in the Evolution pile. They're worth 6VP."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 7 Evolved Ultrons are in the city and/or Escape Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 107,
+      name: "Pull Earth into Medieval Times",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 9 Twists."
+            ],
+            [
+              { bold: "Twist 1-6" },
+              ": Until the start of your next turn, all Villains and Mastermind everywhere have ",
+              { keyword: 52 },
+              "."
+            ],
+            [
+              { bold: "Twist 7-9" },
+              ": Each player puts a Villains from the Victory Pile into the Escape Pile."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 3 Villains per player have escaped."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 108,
+      name: "Transform Commuters into Giant Ants",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": Twists equal to the number of players plus 6."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Scheme. Then for each Twist in that stack, put a Bystander face down next to the Mastermind as a ",
+              { bold: "2" },
+              { icon: 1 },
+              " “Giant Ant“ Villain. When you fight one, rescue it as a Bystander."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When ther are 10 Giant Ants next to the Mastermind."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 109,
+      name: "Trap Heroes in the Microverse",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists. Add all 14 cards for and extra Hero the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Heroes in the Villain Deck are “Micro-Sized“ Villains with ",
+              { icon: 1 },
+              " equal to their printed cost. They have ",
+              { keyword: 26 },
+              " for their card color and no outher abilites while in the city. When you fight one, choose any player to gain it as a Hero."
+            ],
+            [
+              { bold: "Twist" },
+              ": Play two cards from the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 3 Villains per player have escaped or the Villain Deck runs out."
+            ],
+          ]
+        },
       ]
     },
   ]

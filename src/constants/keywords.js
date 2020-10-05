@@ -98,7 +98,7 @@ const CROSS_DIMENSIONAL_RAMPAGE = {
     id: 17,
     value: "crossdimensionalrampage",
     label: "Cross-Dimensional Rampage",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 5],
 }
 const SPECTRUM = {
     id: 18,
@@ -152,7 +152,7 @@ const SIZE_CHANGING = {
     id: 26,
     value: "sizechanging",
     label: "Size-Changing",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 5],
 }
 const PHASING = {
     id: 27,
@@ -164,13 +164,13 @@ const FORTIFY = {
     id: 28,
     value: "fortify",
     label: "Fortify",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 5],
 }
 const SHIELD_CLEARANCE = {
     id: 29,
     value: "shieldclearance",
     label: "S.H.I.E.L.D. Clearance",
-    cardTypes: [2, 3],
+    cardTypes: [2, 3, 5],
 }
 const EXCESSIVE_VIOLENCE = {
     id: 30,
@@ -182,19 +182,19 @@ const REVENGE = {
     id: 31,
     value: "revenge",
     label: "Revenge",
-    cardTypes: [2],
+    cardTypes: [2, 5],
 }
 const INVESTIGATE = {
     id: 32,
     value: "investigate",
     label: "Investigate",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 5],
 }
 const HIDDEN_WITNESS = {
     id: 33,
     value: "hiddenwitness",
     label: "Hidden Witness",
-    cardTypes: [2],
+    cardTypes: [2, 5],
 }
 const X_GENE = {
     id: 34,
@@ -248,7 +248,7 @@ const STRIKER = {
     id: 42,
     value: "striker",
     label: "Striker",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 5],
 }
 const COORDINATE = {
     id: 43,
@@ -302,19 +302,19 @@ const EMPOWERED = {
     id: 51,
     value: "empowered",
     label: "Empowered",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 5],
 }
 const CHIVALROUS_DUEL = {
     id: 52,
     value: "chivalrousduel",
     label: "Chivalrous Duel",
-    cardTypes: [2],
+    cardTypes: [2, 5],
 }
 const SYMBIOTE_BONDS = {
     id: 53,
     value: "symbiontebonds",
     label: "Symbionte Bonds",
-    cardTypes: [2],
+    cardTypes: [2, 5],
 }
 const DIGEST = {
     id: 54,
@@ -356,7 +356,7 @@ const UNDERCOVER = {
     id: 60,
     value: "undercover",
     label: "Undercover",
-    cardTypes: [1],
+    cardTypes: [1, 5],
 }
 const SHIELD_LEVEL = {
     id: 61,
@@ -368,19 +368,19 @@ const HYDRA_LEVEL = {
     id: 62,
     value: "hydralevel",
     label: "Hydra Level",
-    cardTypes: [2],
+    cardTypes: [2, 5],
 }
 const WORTHY = {
     id: 63,
     value: "worthy",
     label: "Worthy",
-    cardTypes: [1],
+    cardTypes: [1, 5],
 }
 const MOONLIGHT_SUNLIGHT = {
     id: 64,
     value: "moonlightsunlight",
     label: "Moonlight and Sunlight",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 5],
 }
 const WAKING_NIGHTMARE = {
     id: 65,
@@ -404,7 +404,7 @@ const CONTEST_OF_CHAMPIONS = {
     id: 68,
     value: "contestofchampions",
     label: "Contest of Champions",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 5],
 }
 
 export const keywords = Object.freeze({

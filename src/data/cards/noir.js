@@ -1,9 +1,9 @@
 export default {
+  id: 15,
   heroes: [
     {
       id: 127,
       name: "Angel Noir",
-      set: 15,
       team: 4,
       cards: [
         {
@@ -73,7 +73,6 @@ export default {
     {
       id: 128,
       name: "Daredevil Noir",
-      set: 15,
       team: 6,
       cards: [
         {
@@ -139,7 +138,6 @@ export default {
     {
       id: 129,
       name: "Iron Man Noir",
-      set: 15,
       team: 1,
       cards: [
         {
@@ -213,7 +211,6 @@ export default {
     {
       id: 130,
       name: "Luke Cage Noir",
-      set: 15,
       team: 6,
       cards: [
         {
@@ -279,7 +276,6 @@ export default {
     {
       id: 131,
       name: "Spider-Man Noir",
-      set: 15,
       team: 3,
       cards: [
         {
@@ -350,7 +346,6 @@ export default {
       id: 38,
       name: "Charles Xavier, Professor of Crime",
       tacticName: "Charles Xavier",
-      set: 15,
       vAttack: "8",
       vp: 6,
       cards: [
@@ -436,7 +431,6 @@ export default {
       id: 39,
       name: "The Goblin, Underworld Boss",
       tacticName: "The Goblin",
-      set: 15,
       vAttack: "10",
       vp: 6,
       cards: [
@@ -511,6 +505,123 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 72,
+      name: "Find the Split Personality Killer",
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist 1-5" },
+              ": Shuffle 3 Bystanders from the Bystander Stack and the top card of the Hero Deck face down next to this Scheme as a deck of “Murder Suspects.“"
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Whenever you defeat a Villain, you may pay 1 ",
+              { icon: 1 },
+              " extra to ",
+              { keyword: 32 },
+              " the Murder Suspects for a Bystander and rescue it."
+            ],
+            [
+              { bold: "Twist 6" },
+              ": Each player writes down their guess for which Hero Name is the Split Personality Killer. Reveal the entire Murder Suspects Deck. The Hero Name with the most cards in the Murder Suspect Deck ",
+              { italic: "(or tied for most)" },
+              " is the Split Personality Killer. Each player who guessed right wins. All other players lose."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 73,
+      name: "Silence the Witnesses",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": This Scheme captures 3 ",
+              { keyword: 33, text: "Hidden Witnesses" },
+              ". If it already had any ",
+              { keyword: 33, text: "Hidden Witnesses" },
+              ", put those into the Escape Pile."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 6 Bystanders are in the Escape Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 74,
+      name: "Five Families of Crime",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Add two extra Villain Groups. Split the Villain Deck into 5 shuffled decks, one above each city space."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Each Villain Deck uses its own city of one city space. Each turn, you choose which Villain Deck plays a card."
+            ],
+            [
+              { bold: "Twist" },
+              ": Play two cards from a Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 8 Villains escape or all Villain Decks run out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 75,
+      name: "Hidden Heart of Darkness",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Shuffle the Mastermind Tactics into the Villain Deck as Villains."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": If there are no Tactics in the city, you can win the game by fighting the Mastermind card."
+            ],
+            [
+              { bold: "Twist" },
+              ": Each player shuffles a Tactic from their victory pile into the Villain Deck. Any player who did so draws two cards. Then, ",
+              { keyword: 32 },
+              " the Villain Deck for a Tactic and that Tactic enters the city. Reveal all the cards you ",
+              { keyword: 32, text: "Investigated" },
+              "."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 2 Tactics escape."
+            ],
+          ]
+        },
       ]
     },
   ]

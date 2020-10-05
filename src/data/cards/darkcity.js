@@ -1,9 +1,9 @@
 export default {
+  id: 3,
   heroes: [
     {
       id: 16,
       name: "Angel",
-      set: 3,
       team: 4,
       cards: [
         {
@@ -65,7 +65,6 @@ export default {
     {
       id: 17,
       name: "Bishop",
-      set: 3,
       team: 4,
       cards: [
         {
@@ -150,7 +149,6 @@ export default {
     {
       id: 18,
       name: "Blade",
-      set: 3,
       team: 6,
       cards: [
         {
@@ -211,7 +209,6 @@ export default {
     {
       id: 19,
       name: "Cable",
-      set: 3,
       team: 7,
       cards: [
         {
@@ -296,7 +293,6 @@ export default {
     {
       id: 20,
       name: "Colossus",
-      set: 3,
       team: 7,
       cards: [
         {
@@ -363,7 +359,6 @@ export default {
       id: 21,
       name: "Daredevil",
       filterName: "Daredevil (DC)",
-      set: 3,
       team: 6,
       cards: [
         {
@@ -438,7 +433,6 @@ export default {
     {
       id: 22,
       name: "Domino",
-      set: 3,
       team: 7,
       cards: [
         {
@@ -556,7 +550,6 @@ export default {
     {
       id: 23,
       name: "Elektra",
-      set: 3,
       team: 6,
       cards: [
         {
@@ -664,7 +657,6 @@ export default {
     {
       id: 24,
       name: "Forge",
-      set: 3,
       team: 7,
       cards: [
         {
@@ -745,7 +737,6 @@ export default {
     {
       id: 25,
       name: "Ghost Rider",
-      set: 3,
       team: 6,
       cards: [
         {
@@ -841,7 +832,6 @@ export default {
     {
       id: 26,
       name: "Iceman",
-      set: 3,
       team: 4,
       cards: [
         {
@@ -934,7 +924,6 @@ export default {
     {
       id: 27,
       name: "Iron Fist",
-      set: 3,
       team: 6,
       cards: [
         {
@@ -1030,7 +1019,6 @@ export default {
     {
       id: 28,
       name: "Jean Grey",
-      set: 3,
       team: 4,
       cards: [
         {
@@ -1111,7 +1099,6 @@ export default {
     {
       id: 29,
       name: "Nightcrawler",
-      set: 3,
       team: 4,
       cards: [
         {
@@ -1195,7 +1182,6 @@ export default {
     {
       id: 30,
       name: "Professor X",
-      set: 3,
       team: 4,
       cards: [
         {
@@ -1263,7 +1249,6 @@ export default {
     {
       id: 31,
       name: "Punisher",
-      set: 3,
       team: 6,
       cards: [
         {
@@ -1375,7 +1360,6 @@ export default {
       id: 32,
       name: "Wolverine",
       filterName: "Wolverine (DC)",
-      set: 3,
       team: 7,
       cards: [
         {
@@ -1453,7 +1437,6 @@ export default {
     {
       id: 5,
       name: "Apocalypse",
-      set: 3,
       vAttack: "12",
       vp: 6,
       cards: [
@@ -1532,7 +1515,6 @@ export default {
     {
       id: 6,
       name: "Kingpin",
-      set: 3,
       vAttack: "13",
       vp: 6,
       cards: [
@@ -1600,7 +1582,6 @@ export default {
     {
       id: 7,
       name: "Mephisto",
-      set: 3,
       vAttack: "10",
       vp: 6,
       cards: [
@@ -1667,7 +1648,6 @@ export default {
     {
       id: 8,
       name: "Mr. Sinister",
-      set: 3,
       vAttack: "8",
       vp: 6,
       cards: [
@@ -1739,7 +1719,6 @@ export default {
     {
       id: 9,
       name: "Stryfe",
-      set: 3,
       vAttack: "7",
       vp: 6,
       cards: [
@@ -1813,7 +1792,6 @@ export default {
     {
       id: 5,
       name: "Maggia Goons",
-      set: 3,
       vAttack: "4",
       vp: 1,
       cards: [
@@ -1832,7 +1810,6 @@ export default {
     {
       id: 6,
       name: "Phalanx",
-      set: 3,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1855,7 +1832,6 @@ export default {
     {
       id: 9,
       name: "Capture Baby Hope",
-      set: 3,
       cards: [
         {
           dense: true,
@@ -1892,7 +1868,6 @@ export default {
     {
       id: 10,
       name: "Detonate the Helicarrier",
-      set: 3,
       cards: [
         {
           abilities: [
@@ -1919,7 +1894,6 @@ export default {
     {
       id: 11,
       name: "Massive Earthquake Generator",
-      set: 3,
       cards: [
         {
           abilities: [
@@ -1944,7 +1918,6 @@ export default {
     {
       id: 12,
       name: "Organized Crime Wave",
-      set: 3,
       cards: [
         {
           abilities: [
@@ -1971,7 +1944,6 @@ export default {
     {
       id: 13,
       name: "Save Humanity",
-      set: 3,
       cards: [
         {
           abilities: [
@@ -2004,7 +1976,6 @@ export default {
     {
       id: 14,
       name: "Steal the Weaponized Plutonium",
-      set: 3,
       cards: [
         {
           abilities: [
@@ -2034,7 +2005,6 @@ export default {
     {
       id: 15,
       name: "Transform Citizens Into Demons",
-      set: 3,
       cards: [
         {
           dense: true,
@@ -2072,7 +2042,6 @@ export default {
     {
       id: 16,
       name: "X-Cutioner's Song",
-      set: 3,
       cards: [
         {
           abilities: [

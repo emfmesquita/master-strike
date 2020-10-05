@@ -1,9 +1,9 @@
 export default {
+  id: 5,
   heroes: [
     {
       id: 38,
       name: "Black Cat",
-      set: 5,
       team: 3,
       cards: [
         {
@@ -78,7 +78,6 @@ export default {
     {
       id: 39,
       name: "Moon Knight",
-      set: 5,
       team: 6,
       cards: [
         {
@@ -150,7 +149,6 @@ export default {
     {
       id: 40,
       name: "Scarlet Spider",
-      set: 5,
       team: 3,
       cards: [
         {
@@ -214,7 +212,6 @@ export default {
     {
       id: 41,
       name: "Spider-Woman",
-      set: 5,
       team: 3,
       cards: [
         {
@@ -277,7 +274,6 @@ export default {
     {
       id: 42,
       name: "Symbiote Spider-Man",
-      set: 5,
       team: 3,
       cards: [
         {
@@ -350,7 +346,6 @@ export default {
     {
       id: 12,
       name: "Carnage",
-      set: 5,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -421,7 +416,6 @@ export default {
     {
       id: 13,
       name: "Mysterio",
-      set: 5,
       vAttack: "8",
       vp: 6,
       cards: [
@@ -490,8 +484,7 @@ export default {
   schemes: [
     {
       id: 21,
-      name: "The Clone Saga",
-      set: 5,
+      name: "Clone Saga, The",
       cards: [
         {
           abilities: [
@@ -514,7 +507,6 @@ export default {
     {
       id: 22,
       name: "Invade the Daily Bugle News HQ",
-      set: 5,
       cards: [
         {
           abilities: [
@@ -543,7 +535,6 @@ export default {
     {
       id: 23,
       name: "Splice Humans with Spider DNA",
-      set: 5,
       cards: [
         {
           abilities: [
@@ -575,7 +566,6 @@ export default {
     {
       id: 24,
       name: "Weave a Web of Lies",
-      set: 5,
       cards: [
         {
           abilities: [

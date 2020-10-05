@@ -1,9 +1,9 @@
 export default {
+  id: 11,
   heroes: [
     {
       id: 85,
       name: "Agent Venom",
-      set: 11,
       team: 3,
       cards: [
         {
@@ -104,7 +104,6 @@ export default {
     {
       id: 86,
       name: "Arkon the Magnificent",
-      set: 11,
       team: 0,
       cards: [
         {
@@ -181,7 +180,6 @@ export default {
       id: 87,
       name: "Beast",
       filterName: "Beast (SW2)",
-      set: 11,
       team: 15,
       cards: [
         {
@@ -264,7 +262,6 @@ export default {
     {
       id: 88,
       name: "Black Swan",
-      set: 11,
       team: 14,
       cards: [
         {
@@ -339,7 +336,6 @@ export default {
     {
       id: 89,
       name: "Captain and the Devil, The",
-      set: 11,
       team: 1,
       cards: [
         {
@@ -409,7 +405,6 @@ export default {
     {
       id: 90,
       name: "Captain Britain",
-      set: 11,
       team: 15,
       cards: [
         {
@@ -473,7 +468,6 @@ export default {
     {
       id: 91,
       name: "Corvus Glaive",
-      set: 11,
       team: 14,
       cards: [
         {
@@ -547,7 +541,6 @@ export default {
     {
       id: 92,
       name: "Dr. Punisher, Soldier Supreme",
-      set: 11,
       team: 6,
       cards: [
         {
@@ -624,7 +617,6 @@ export default {
     {
       id: 93,
       name: "Elsa Bloodstone",
-      set: 11,
       team: 2,
       cards: [
         {
@@ -699,7 +691,6 @@ export default {
     {
       id: 94,
       name: "Phoenix Force Cyclops",
-      set: 11,
       team: 4,
       cards: [
         {
@@ -759,7 +750,6 @@ export default {
     {
       id: 95,
       name: "Ruby Summers",
-      set: 11,
       team: 4,
       cards: [
         {
@@ -825,7 +815,6 @@ export default {
     {
       id: 96,
       name: "Shang-Chi",
-      set: 11,
       team: 6,
       cards: [
         {
@@ -893,7 +882,6 @@ export default {
     {
       id: 97,
       name: "Silk",
-      set: 11,
       team: 3,
       cards: [
         {
@@ -956,7 +944,6 @@ export default {
     {
       id: 98,
       name: "Soulsword Colossus",
-      set: 11,
       team: 4,
       cards: [
         {
@@ -1028,7 +1015,6 @@ export default {
     {
       id: 99,
       name: "Spider-Gwen",
-      set: 11,
       team: 3,
       cards: [
         {
@@ -1106,7 +1092,6 @@ export default {
     {
       id: 100,
       name: "Time-Traveling Jean Grey",
-      set: 11,
       team: 4,
       cards: [
         {
@@ -1173,7 +1158,6 @@ export default {
       id: 25,
       name: "Immortal Emperor Zheng-Zhu",
       tacticName: "Zheng-Zhu",
-      set: 11,
       vAttack: "7+",
       vp: 5,
       cards: [
@@ -1245,7 +1229,6 @@ export default {
       id: 26,
       name: "King Hyperion",
       tacticName: "Hyperion",
-      set: 11,
       vAttack: "12",
       vp: 6,
       cards: [
@@ -1317,7 +1300,6 @@ export default {
       id: 27,
       name: "Shiklah, the Demon Bride",
       tacticName: "Shiklah",
-      set: 11,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -1398,7 +1380,6 @@ export default {
     {
       id: 28,
       name: "Spider-Queen",
-      set: 11,
       vAttack: "8+",
       vp: 6,
       cards: [
@@ -1473,7 +1454,6 @@ export default {
     {
       id: 16,
       name: "Khonshu Guardians",
-      set: 11,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1496,7 +1476,6 @@ export default {
     {
       id: 17,
       name: "Magma Men",
-      set: 11,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1514,7 +1493,6 @@ export default {
     {
       id: 18,
       name: "Spider-Infected",
-      set: 11,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1539,7 +1517,6 @@ export default {
     {
       id: 48,
       name: "Deadlands Hordes Charge the Wall",
-      set: 11,
       cards: [
         {
           abilities: [
@@ -1564,7 +1541,6 @@ export default {
     {
       id: 49,
       name: "Deadlands Hordes Charge the Wall",
-      set: 11,
       cards: [
         {
           dense: true,
@@ -1605,8 +1581,7 @@ export default {
     },
     {
       id: 50,
-      name: "The Fountain of Eternal Life",
-      set: 11,
+      name: "Fountain of Eternal Life, The",
       cards: [
         {
           abilities: [
@@ -1636,8 +1611,7 @@ export default {
     },
     {
       id: 51,
-      name: "The God-Emperor of Battleworld",
-      set: 11,
+      name: "God-Emperor of Battleworld, The",
       cards: [
         {
           dense: true,
@@ -1684,8 +1658,7 @@ export default {
     },
     {
       id: 52,
-      name: "The Mark of Khonshu",
-      set: 11,
+      name: "Mark of Khonshu, The",
       cards: [
         {
           abilities: [
@@ -1716,7 +1689,6 @@ export default {
     {
       id: 53,
       name: "Master the Mysteries of Kung-Fu",
-      set: 11,
       cards: [
         {
           abilities: [
@@ -1745,7 +1717,6 @@ export default {
     {
       id: 54,
       name: "Secret Wars",
-      set: 11,
       cards: [
         {
           abilities: [
@@ -1770,7 +1741,6 @@ export default {
     {
       id: 55,
       name: "Sinister Ambitions",
-      set: 11,
       cards: [
         {
           dense: true,

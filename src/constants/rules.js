@@ -27,7 +27,7 @@ const TRAPS= {
     id: 5,
     value: "traps",
     label: "Traps",
-    cardTypes: [],
+    cardTypes: [5],
 }
 const LOCATIONS = {
     id: 6,
@@ -38,7 +38,7 @@ const LOCATIONS = {
 const TRANSFORMING_SCHEMES = {
     id: 7,
     value: "transformingschemes",
-    label: "Transforming Schemes",
+    label: "Double-Sided Transforming Schemes",
     cardTypes: [5],
 }
 const ADAPTING_MASTERMINDS= {
@@ -71,9 +71,9 @@ export const rules = Object.freeze({
     MULTICLASS_CARDS,           // 2  done
     MULTIPLE_MASTERMINDS,       // 3  done
     DIVIDED,                    // 4  done
-    TRAPS,                      // 5
+    TRAPS,                      // 5  done
     LOCATIONS,                  // 6  done
-    TRANSFORMING_SCHEMES,       // 7
+    TRANSFORMING_SCHEMES,       // 7  done
     ADAPTING_MASTERMINDS,       // 8  done
     VILLAINOUS_WEAPONS,         // 9  done
     ASTERISK,                   // 10 done

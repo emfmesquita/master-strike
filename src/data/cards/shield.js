@@ -1,9 +1,9 @@
 export default {
+  id: 25,
   heroes: [
     {
       id: 194,
       name: "Agent Phil Coulson",
-      set: 25,
       team: 2,
       cards: [
         {
@@ -90,7 +90,6 @@ export default {
     {
       id: 195,
       name: "Deathlok",
-      set: 25,
       team: 2,
       cards: [
         {
@@ -182,7 +181,6 @@ export default {
     {
       id: 196,
       name: "Mockingbird",
-      set: 25,
       team: 2,
       cards: [
         {
@@ -272,7 +270,6 @@ export default {
     {
       id: 197,
       name: "Quake",
-      set: 25,
       team: 2,
       cards: [
         {
@@ -371,7 +368,6 @@ export default {
     {
       id: 65,
       name: "Hydra High Council",
-      set: 25,
       vp: 6,
       cards: [
         {
@@ -502,7 +498,6 @@ export default {
     {
       id: 66,
       name: "Hydra Super-Adaptoid",
-      set: 25,
       vp: 6,
       cards: [
         {
@@ -607,6 +602,121 @@ export default {
               { rule: 8, text: "Adapt", keywordStyle: true },
               "."
             ]
+          ]
+        },
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 118,
+      name: "S.H.I.E.L.D. vs. HYDRA War",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 7 Twists. Include either the “Hydra Elite“ or “A.I.M., Hydra Offshoot“ Villain Group, but not both."
+            ],
+            [
+              { bold: "Twist" },
+              ": Each player puts a card from the S.H.I.E.L.D. Officer Stack face up next to the Scheme as a ",
+              { bold: "3" },
+              { icon: 1 },
+              " “Double Agent“ Villain. If any Double Agents were already there, put one into the Escape Pile and put the rest on the bottom of the S.H.I.E.L.D. Officer Stack. You can fight any Double Agent next to the Scheme to gain it or send it ",
+              { keyword: 60 },
+              "."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the ",
+              { keyword: 62 },
+              " is 11."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 119,
+      name: "Hail Hydra",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists."
+            ],
+            [
+              { bold: "Twist 1-9" },
+              ": Choose one:"
+            ],
+            [
+              "-Say “I'd never abandon S.H.I.E.L.D.“, and you can't fight this turn."
+            ],
+            [
+              "-Or whisper “Hail Hydra“, you can't recruit this turn, and a Villain captures a Bystander."
+            ],
+            [
+              { bold: "Twist 10" },
+              ": Evil Wins!"
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 120,
+      name: "Hydra Helicarriers Hunt Heroes",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Add an extra Hero."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Scheme. Then for each Twist stacked there, choose a different Hero Class ",
+              { italic: "(" },
+              { hc: 4 },
+              ",",
+              { hc: 2 },
+              ",",
+              { hc: 1 },
+              ",",
+              { hc: 5 },
+              ",",
+              { hc: 3 },
+              { italic: ")" },
+              ", to a maximum of 5. KO each Hero from the HQ that has any of those Hero Classes."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 18 non-grey Heroes in the KO pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 121,
+      name: "Secret Empire of Betrayal",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists. Randomly pick 5 cards that cost 5 or less from an additional Hero. Shuffle them to form a “Dark Loyalty“ deck."
+            ],
+            [
+              { bold: "Twist" },
+              ": Shuffle this Twist into the Dark Loyalty deck as a “Vicious Betrayal.“ Then reveal the top card of that deck. If it's a Hero, gain it. If it's a Vicious Betrayal, put it next to the Scheme and each other player gains a Wound."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 6 Vicious Betrayals next to the Scheme."
+            ],
           ]
         },
       ]

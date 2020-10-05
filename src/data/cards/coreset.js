@@ -1,4 +1,5 @@
 export default {
+  id: 1,
   heroes: [
     {
       id: 1,
@@ -156,7 +157,6 @@ export default {
     {
       id: 3,
       name: "Cyclops",
-      set: 1,
       team: 4,
       cards: [
         {
@@ -227,7 +227,6 @@ export default {
       id: 4,
       name: "Deadpool",
       filterName: "Deadpool (Core)",
-      set: 1,
       team: 0,
       cards: [
         {
@@ -294,7 +293,6 @@ export default {
     {
       id: 5,
       name: "Emma Frost",
-      set: 1,
       team: 4,
       cards: [
         {
@@ -372,7 +370,6 @@ export default {
     {
       id: 6,
       name: "Gambit",
-      set: 1,
       team: 4,
       cards: [
         {
@@ -747,7 +744,6 @@ export default {
     {
       id: 11,
       name: "Rogue",
-      set: 1,
       team: 4,
       cards: [
         {
@@ -826,7 +822,6 @@ export default {
     {
       id: 12,
       name: "Spider-Man",
-      set: 1,
       team: 3,
       cards: [
         {
@@ -911,7 +906,6 @@ export default {
     {
       id: 13,
       name: "Storm",
-      set: 1,
       team: 4,
       cards: [
         {
@@ -1103,7 +1097,6 @@ export default {
       id: 15,
       name: "Wolverine",
       filterName: "Wolverine (Core)",
-      set: 1,
       team: 4,
       cards: [
         {
@@ -1176,7 +1169,6 @@ export default {
     {
       id: 1,
       name: "Dr. Doom",
-      set: 1,
       vAttack: "9",
       vp: 5,
       cards: [
@@ -1308,7 +1300,6 @@ export default {
     {
       id: 3,
       name: "Magneto",
-      set: 1,
       vAttack: "8",
       vp: 5,
       cards: [
@@ -1450,7 +1441,6 @@ export default {
     {
       id: 1,
       name: "Doombot Legion",
-      set: 1,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1467,7 +1457,6 @@ export default {
     {
       id: 2,
       name: "Hand Ninjas",
-      set: 1,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1487,7 +1476,6 @@ export default {
     {
       id: 3,
       name: "Savage Land Mutates",
-      set: 1,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1504,7 +1492,6 @@ export default {
     {
       id: 4,
       name: "Sentinel",
-      set: 1,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1523,7 +1510,6 @@ export default {
     {
       id: 1,
       name: "Midtown Bank Robbery",
-      set: 1,
       cards: [
         {
           abilities: [
@@ -1553,7 +1539,6 @@ export default {
     {
       id: 2,
       name: "Secret Invasion of the Skrull Shapeshifters",
-      set: 1,
       cards: [
         {
           abilities: [
@@ -1584,8 +1569,7 @@ export default {
     },
     {
       id: 3,
-      name: "The Legacy Virus",
-      set: 1,
+      name: "Legacy Virus, The",
       cards: [
         {
           abilities: [
@@ -1610,7 +1594,6 @@ export default {
     {
       id: 4,
       name: "Negative Zone Prison Breakout",
-      set: 1,
       cards: [
         {
           abilities: [
@@ -1633,7 +1616,6 @@ export default {
     {
       id: 5,
       name: "Portals to the Dark Dimension",
-      set: 1,
       cards: [
         {
           abilities: [
@@ -1666,7 +1648,6 @@ export default {
     {
       id: 6,
       name: "Replace Earth's Leaders with Killbots",
-      set: 1,
       cards: [
         {
           abilities: [
@@ -1694,8 +1675,8 @@ export default {
     },
     {
       id: 7,
+      set: [1, 20],
       name: "Super Hero Civil War",
-      set: 1,
       cards: [
         {
           abilities: [
@@ -1717,8 +1698,8 @@ export default {
     },
     {
       id: 8,
+      set: [1, 20],
       name: "Unleash the Power of the Cosmic Cube",
-      set: 1,
       cards: [
         {
           abilities: [

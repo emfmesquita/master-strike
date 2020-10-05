@@ -101,6 +101,12 @@ export const filterGroupByRule = (groups, rules) => {
         return;
       }
 
+      // check for transforming schemes
+      if(card.type === cardTypes.SCHEME.id && group.set === 24 && rules.includes(R.TRANSFORMING_SCHEMES.id)) {
+        match = true;
+        return;
+      }
+
       // checks other rules
       const abs = card.abilities;
       const hasRule = ab => rules.includes(ab.rule);

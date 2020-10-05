@@ -1,9 +1,9 @@
 export default {
+  id: 16,
   heroes: [
     {
       id: 132,
       name: "Aurora & Northstar",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -97,7 +97,6 @@ export default {
     {
       id: 133,
       name: "Banshee",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -174,7 +173,6 @@ export default {
       id: 134,
       name: "Beast",
       filterName: "Beast (X-Men)",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -241,7 +239,6 @@ export default {
     {
       id: 135,
       name: "Cannonball",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -315,7 +312,6 @@ export default {
     {
       id: 136,
       name: "Colossus & Wolverine",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -399,7 +395,6 @@ export default {
     {
       id: 137,
       name: "Dazzler",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -467,7 +462,6 @@ export default {
     {
       id: 138,
       name: "Havok",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -545,7 +539,6 @@ export default {
     {
       id: 139,
       name: "Jubilee",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -622,7 +615,6 @@ export default {
     {
       id: 140,
       name: "Kitty Pryde",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -700,7 +692,6 @@ export default {
     {
       id: 141,
       name: "Legion",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -799,7 +790,6 @@ export default {
     {
       id: 142,
       name: "Longshot",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -865,7 +855,6 @@ export default {
     {
       id: 143,
       name: "Phoenix",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -935,7 +924,6 @@ export default {
     {
       id: 144,
       name: "Polaris",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -1004,7 +992,6 @@ export default {
     {
       id: 145,
       name: "Psylocke",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -1073,7 +1060,6 @@ export default {
     {
       id: 146,
       name: "X-23",
-      set: 16,
       team: 4,
       cards: [
         {
@@ -1147,7 +1133,6 @@ export default {
     {
       id: 40,
       name: "Arcade",
-      set: 16,
       vAttack: "3",
       vp: 5,
       cards: [
@@ -1251,7 +1236,6 @@ export default {
     {
       id: 41,
       name: "Dark Phoenix",
-      set: 16,
       vAttack: "13",
       vp: 7,
       cards: [
@@ -1337,7 +1321,6 @@ export default {
     {
       id: 42,
       name: "Deathbird",
-      set: 16,
       vAttack: "8",
       vp: 6,
       cards: [
@@ -1449,7 +1432,6 @@ export default {
     {
       id: 43,
       name: "Mojo",
-      set: 16,
       vAttack: "6",
       vp: 5,
       cards: [
@@ -1570,7 +1552,6 @@ export default {
     {
       id: 44,
       name: "Onslaught",
-      set: 16,
       vAttack: "10",
       vp: 7,
       cards: [
@@ -1674,7 +1655,6 @@ export default {
     {
       id: 45,
       name: "Shadow King",
-      set: 16,
       vAttack: "7",
       vp: 6,
       cards: [
@@ -1771,8 +1751,7 @@ export default {
   henchmen: [
     {
       id: 21,
-      name: "The Brood",
-      set: 16,
+      name: "Brood, The",
       vAttack: "1+",
       vp: 1,
       cards: [
@@ -1795,7 +1774,6 @@ export default {
     {
       id: 22,
       name: "Hellfire Cult",
-      set: 16,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1815,7 +1793,6 @@ export default {
     {
       id: 23,
       name: "Sapien League",
-      set: 16,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1832,7 +1809,6 @@ export default {
     {
       id: 24,
       name: "Shi'ar Death Commandos",
-      set: 16,
       vAttack: "2",
       vp: 1,
       cards: [
@@ -1856,7 +1832,6 @@ export default {
     {
       id: 25,
       name: "Shi'ar Patrol Craft",
-      set: 16,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1868,6 +1843,221 @@ export default {
               { keyword: 37 },
               "."
             ]
+          ]
+        },
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 76,
+      name: "Alien Brood Encounters",
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Add 10 Brood as extra Henchmen. No Bystanders in Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Cards are played from the Villain Deck face-down. You may spend 1",
+              { icon: 1 },
+              " to “scan“ a face-down card in the city, turning it face-up and doing any Ambush effect, Twist, ",
+              { rule: 5, text: "Trap" },
+              ", or Master Strike. If a face-down card would escape, scan it, and then it escapes if it's a Villain."
+            ],
+            [
+              { bold: "Twist" },
+              ": The player on your right gains this Twist as a “Brood Infection.“ When drawn, they KO it and gain 2 Wounds."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 3 Villains per player have escaped."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 77,
+      name: "Anti-Mutant Hatred",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists. 30 Wounds."
+            ],
+            [
+              { bold: "Twist" },
+              ": Put this Twist into your discard pile as an “Angry Mob.“"
+            ],
+            [
+              { bold: "Special Rules" },
+              ": At the start of your turn, for each Angry Mob in your hand, the player on your right gains a Wound and gains that Angry Mob."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the Wound Stack or Villain Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 78,
+      name: "Dark Phoenix Saga, The",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 10 Twists. Include Hellfire Club as one of the Villain Groups. Add 14 Jean Grey Hero cards to the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Jean Grey cards in the Villain Deck are Villains with attack equal to their cost, “",
+              { bold: "Ambush" },
+              ": Play another Villain card“ and “",
+              { bold: "Fight" },
+              ": Gain this as a Hero.“"
+            ],
+            [
+              { bold: "Twist" },
+              ": Shuffle all Jean Grey cards from the KO pile and from all players' hands and discard piles into the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 5 Jean Grey cards have escaped."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 79,
+      name: "Horror of Horrors",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists."
+            ],
+            [
+              { bold: "Twist 1-5" },
+              ": Play a random Horror."
+            ],
+            [
+              { bold: "Twist 6" },
+              ": Evil wins!"
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 80,
+      name: "Mutant-Hunting Super Sentinels",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 9 Twists. Include 10 Sentinels as extra Henchmen ",
+              { italic: "(or substitute another Henchman group.)" }
+            ],
+            [
+              { bold: "Twist" },
+              ": tack this Twist next to the Scheme as a “Sentinel Upgrade.“ Shuffle all Sentinels from players' Victory Piles into the Villain Deck. Play another card from the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": All Sentinels get ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Sentinel Upgrade next to the Scheme."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 3 Sentinels have Escaped."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 81,
+      name: "Nuclear Armageddon",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 5 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Destroy the city space closest to the Mastermind. Any Villain There escapes. Put this Twist there."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the city is destroyed."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 82,
+      name: "Televised Deathtraps of Mojoworld",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists. 6 Wounds per player in Wound Stack."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Scheme as a “Deathtrap.“ This turn, you may pay 1",
+              { icon: 1 },
+              " for each Deathtrap stacked there. If you don't, each player gains a Wound."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the Wound Stack or Villain Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 83,
+      name: "X-Men Danger Room Goes Berserk",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": ",
+              { bold: "Trap! By End of Turn" },
+              ": You may pay 2",
+              { icon: 2 },
+              ". If you do, shuffle this Twist back into the Villain Deck, then play a card from the Villain Deck. ",
+              { bold: "Or Suffer" },
+              ": Stack this Twist next to the scheme as an “Airborne Neurotoxin.“"
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 5 Airborne Neurotoxins."
+            ],
           ]
         },
       ]

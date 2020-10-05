@@ -1,9 +1,9 @@
 export default {
+  id: 23,
   heroes: [
     {
       id: 182,
       name: "Jessica Jones",
-      set: 23,
       team: 6,
       cards: [
         {
@@ -70,7 +70,6 @@ export default {
     {
       id: 183,
       name: "Ms. America",
-      set: 23,
       team: 1,
       cards: [
         {
@@ -142,7 +141,6 @@ export default {
     {
       id: 184,
       name: "Squirrel Girl",
-      set: 23,
       team: 1,
       cards: [
         {
@@ -220,7 +218,6 @@ export default {
     {
       id: 61,
       name: "J. Jonah Jameson",
-      set: 23,
       vAttack: "4",
       vp: 5,
       cards: [

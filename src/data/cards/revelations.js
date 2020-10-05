@@ -1,9 +1,9 @@
 export default {
+  id: 24,
   heroes: [
     {
       id: 185,
       name: "Captain Marvel, Agent of S.H.I.E.L.D.",
-      set: 24,
       team: 2,
       cards: [
         {
@@ -90,7 +90,6 @@ export default {
     {
       id: 186,
       name: "Darkhawk",
-      set: 24,
       team: 1,
       cards: [
         {
@@ -228,7 +227,6 @@ export default {
     {
       id: 187,
       name: "Hellcat",
-      set: 24,
       team: 1,
       cards: [
         {
@@ -321,7 +319,6 @@ export default {
     {
       id: 188,
       name: "Photon",
-      set: 24,
       team: 1,
       cards: [
         {
@@ -403,7 +400,6 @@ export default {
     {
       id: 189,
       name: "Quicksilver",
-      set: 24,
       team: 1,
       cards: [
         {
@@ -521,7 +517,6 @@ export default {
     {
       id: 190,
       name: "Ronin",
-      set: 24,
       team: 1,
       cards: [
         {
@@ -614,7 +609,6 @@ export default {
     {
       id: 191,
       name: "Scarlet Witch",
-      set: 24,
       team: 1,
       cards: [
         {
@@ -698,7 +692,6 @@ export default {
     {
       id: 192,
       name: "Speed",
-      set: 24,
       team: 1,
       cards: [
         {
@@ -791,7 +784,6 @@ export default {
     {
       id: 193,
       name: "War Machine",
-      set: 24,
       team: 1,
       cards: [
         {
@@ -871,7 +863,6 @@ export default {
     {
       id: 62,
       name: "Grim Reaper",
-      set: 24,
       vAttack: "8",
       vp: 6,
       cards: [
@@ -1021,7 +1012,6 @@ export default {
       id: 63,
       name: "Hood, The",
       tacticName: "The Hood",
-      set: 24,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -1116,7 +1106,6 @@ export default {
     {
       id: 64,
       name: "Mandarin",
-      set: 24,
       vAttack: "16",
       vp: 6,
       cards: [
@@ -1247,7 +1236,6 @@ export default {
     {
       id: 33,
       name: "HYDRA Base",
-      set: 24,
       vAttack: "2+",
       vp: 1,
       cards: [
@@ -1273,7 +1261,6 @@ export default {
       id: 34,
       name: "Mandarin's Rings",
       subTitle: "Henchman Villain - Mandarin's Rings",
-      set: 24,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1370,6 +1357,227 @@ export default {
               { bold: "Fight" },
               ": Choose a card you played this turn that costs 0. When you draw a new hand of cards at the end of this turn, add that card to your hand as an extra card."
             ]
+          ]
+        },
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 114,
+      name: "Earthquake Drains the Ocean",
+      cards: [
+        {
+          name: "Earthquake Drains the Ocean",
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists. Add an extra Villain Group."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": There are two extra “Low Tide“ city spaces on the left side of the city, so the city has 7 spaces total."
+            ],
+            [
+              { bold: "Twist" },
+              ": The tide rushes in. This Scheme ",
+              { rule: 7, text: "Transforms", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 3 Villains per player have escaped or the Villain Deck runs out."
+            ],
+          ]
+        },
+        {
+          name: "Tsunami Crushes the Coast",
+          transformed: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Special Rules" },
+              ": The Low Tide, Bridge, and Streets city spaces no longer exist. The city has 3 spaces total. Put this Scheme on the Streets to mark the edge of the city. Villains in destroyed city spaces escape, starting from the left."
+            ],
+            [
+              { bold: "Twist" },
+              ": The tide rushes out. This Scheme ",
+              { rule: 7, text: "Transforms", keywordStyle: true },
+              ", then play another card from the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 3 Villains per player have escaped or the Villain Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 115,
+      name: "House of M",
+      cards: [
+        {
+          name: "House of M",
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Hero Deck is 4",
+              { team: 4 },
+              " Heroes and 2 non-",
+              { team: 4 },
+              " Heroes. ",
+              { italic: "(Or substitute another team for all " },
+              { team: 4 },
+              { italic: " icons on both sides.)" },
+              " Add 14 Scarlet Witch Hero cards to the Villain Deck."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Each Scarlet Witch in the city is a Villain with ",
+              { icon: 1 },
+              " equal to its ",
+              { icon: 3 },
+              { bold: "+3" },
+              ". If you fight one, gain it as a Hero."
+            ],
+            [
+              { bold: "Twist" },
+              ": KO all non-",
+              { team: 4 },
+              " Heroes from the HQ. If there are at least 2 Scarlet Witch cards in the city, this Scheme ",
+              { rule: 7, text: "Transforms", keywordStyle: true },
+              ". Otherwise play another card from the Villain Deck."
+            ],
+          ]
+        },
+        {
+          name: "”No More Mutants”",
+          transformed: true,
+          abilities: [
+            [
+              { bold: "Special Rules" },
+              ": Each Scarlet Witch in the city is a Villain with ",
+              { icon: 1 },
+              " equal to its ",
+              { icon: 3 },
+              { bold: "+4" },
+              ". If you fight one, gain it as a Hero."
+            ],
+            [
+              { bold: "Twist" },
+              ": KO all ",
+              { team: 4 },
+              " Heroes from the HQ. Play another card from the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the number of non-grey Heroes in the KO pile is ten plus double the number of players."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 116,
+      name: "Secret HYDRA Corruption",
+      cards: [
+        {
+          name: "Secret HYDRA Corruption",
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 30 Officers in the S.H.I.E.L.D. Officer stack. 1 player: 7 Twists. 2-3 players: 9 Twists. 4-5 players: 11 Twists."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Officers stacked next to this Scheme are “Hydra Sympathizers.“ You may pay ",
+              { bold: "3" },
+              { icon: 2 },
+              " to have the player of your choice gain one as a Hero."
+            ],
+            [
+              { bold: "Twist" },
+              ": For each Twist in the KO pile ",
+              { italic: "(including this one)" },
+              ", put a card from the S.H.I.E.L.D. Officer stack next to this Scheme. Then this Scheme ",
+              { rule: 7, text: "Transforms", keywordStyle: true },
+              "."
+            ],
+          ]
+        },
+        {
+          name: "Open HYDRA Revolution",
+          transformed: true,
+          dense: true,
+          abilities: [
+            [
+              { bold: "Special Rules" },
+              ": Officers next to this Scheme are ",
+              { bold: "3" },
+              { icon: 1 },
+              " “Hydra Traitor“ Villains. When you fight one, return it to the Officer Stack and KO one of your Heroes."
+            ],
+            [
+              { bold: "Twist" },
+              ": For each Twist in the KO pile ",
+              { italic: "(including this one)" },
+              ", put a card from the S.H.I.E.L.D. Officer stack next to this Scheme, Then if Evil hasn't won yet, this Scheme ",
+              { rule: 7, text: "Transforms", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 15 Officers next to this Scheme or the S.H.I.E.L.D. Officer Stack runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 117,
+      name: "Korvac Saga, The",
+      cards: [
+        {
+          name: "The Korvac Saga",
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Each player must discard down to four cards or KO a Bystander from their Victory Pile to “search for the Korvac Entity.“ This Scheme ",
+              { rule: 7, text: "Transforms", keywordStyle: true },
+              "."
+            ],
+          ]
+        },
+        {
+          name: "Korvac Revealed",
+          transformed: true,
+          abilities: [
+            [
+              { bold: "Special Rules" },
+              ": This Scheme counts as a ",
+              { bold: "19" },
+              { icon: 1 },
+              " “Korvac“ Villain worth 9VP. If you defeat Korvac, KO the Mastermind and all its Tactics."
+            ],
+            [
+              { bold: "Twist: 2,4,6" },
+              ": Each player discards an ",
+              { team: 1 },
+              " Hero or gains a Wound. This Scheme ",
+              { rule: 7, text: "Transforms", keywordStyle: true },
+              "."
+            ],
+            [
+              { bold: "Twist 8" },
+              ": Evil Wins!"
+            ],
           ]
         },
       ]

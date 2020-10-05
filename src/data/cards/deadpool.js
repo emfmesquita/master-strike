@@ -1,9 +1,9 @@
 export default {
+  id: 14,
   heroes: [
     {
       id: 122,
       name: "Bob, Agent of HYDRA",
-      set: 14,
       team: 13,
       cards: [
         {
@@ -71,7 +71,6 @@ export default {
     {
       id: 123,
       name: "Deadpool",
-      set: 14,
       team: 17,
       cards: [
         {
@@ -145,7 +144,6 @@ export default {
     {
       id: 124,
       name: "Slapstick",
-      set: 14,
       team: 17,
       cards: [
         {
@@ -208,7 +206,6 @@ export default {
     {
       id: 125,
       name: "Solo",
-      set: 14,
       team: 17,
       cards: [
         {
@@ -275,7 +272,6 @@ export default {
     {
       id: 126,
       name: "Stingray",
-      set: 14,
       team: 17,
       cards: [
         {
@@ -349,7 +345,6 @@ export default {
     {
       id: 36,
       name: "Evil Deadpool",
-      set: 14,
       vAttack: "11",
       vp: 6,
       cards: [
@@ -425,7 +420,6 @@ export default {
     {
       id: 37,
       name: "Macho Gomez",
-      set: 14,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -490,6 +484,133 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 68,
+      name: "Deadpool Kills the Marvel Universe",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": Use Deadpool as one of the Heroes. 2 players: Use 4 Heroes total. 1-3 players: 6 Twists. 4-5 Players: 5 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Reveal cards from the Hero Deck until you reveal a Deadpool card. KO all the cards you revealed."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the Hero Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 69,
+      name: "Deadpool Wants a Chimichanga",
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists. 12 total Bystanders in the Villain Deck. All Bystanders represent “Chimichangas.“ ",
+              { italic: "(They're Bystanders too.)" },
+              " 3-5 players: Add a Villain Group."
+            ],
+            [
+              { bold: "Nobody Eats Just One Chimichanga!" },
+              " Whenever you play a Chimichanga from the Villain Deck, play another card from the Villain Deck."
+            ],
+            [
+              { bold: "Twist" },
+              ": Put each Chimichanga from the city into the Escape Pile. Then, each player shuffles a Chimichanga from their Victory Pile back into the Villain Deck. Any player who cannot do so gains a Wound."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 6 Chimichangas are in the Escape Pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 70,
+      name: "Deadpool Writes a Scheme",
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": Hey, writing these doesn't seem so tough. Use the best Hero in the game: Deadpool! Add 6 Twists of Lemon, shake vigorously, and I'll make it up as I go."
+            ],
+            [
+              { bold: "Twist 1" },
+              ": Everybody draw 1 card. Wait, are these supposed to be bad?"
+            ],
+            [
+              { bold: "Twist 2" },
+              ": Anyone without a Deadpool in hand is doing it wrong -- discard 2 cards."
+            ],
+            [
+              { bold: "Twist 3" },
+              ": Play 3 cards from the Villain Deck. That sounds pretty bad, right?"
+            ],
+            [
+              { bold: "Twist 4" },
+              ": Each Villain captures 4 Bystanders. Hey, I'm not a balance expert."
+            ],
+            [
+              { bold: "Twist 5" },
+              ": Each player gains 5 Wounds. Is that a good number?"
+            ],
+            [
+              { bold: "Twist 6" },
+              ": Deadpool wins 6 times! Wow, I'm way better at this game than you."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 71,
+      name: "Everybody Hates Deadpool",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists. Use at least 1 ",
+              { team: 17 },
+              " Hero."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": All Villains have ",
+              { keyword: 31 },
+              " for their own Villain Groups. ",
+              { italic: "(If they already have Revenge, double it.)" }
+            ],
+            [
+              { bold: "Twist" },
+              ": Everyone reveals their hand. Whoever reveals the fewest ",
+              { team: 17 },
+              " cards ",
+              { italic: "(or tied for fewest)" },
+              " gains a Wound."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 3 Villains per player have escaped."
+            ],
+          ]
+        },
       ]
     },
   ]

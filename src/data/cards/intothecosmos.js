@@ -1,9 +1,9 @@
 export default {
+  id: 28,
   heroes: [
     {
       id: 208,
       name: "Adam Warlock",
-      set: 28,
       team: 1,
       cards: [
         {
@@ -87,7 +87,6 @@ export default {
     {
       id: 209,
       name: "Captain Mar-Vell",
-      set: 28,
       team: 1,
       cards: [
         {
@@ -171,7 +170,6 @@ export default {
     {
       id: 210,
       name: "Moondragon",
-      set: 28,
       team: 1,
       cards: [
         {
@@ -244,7 +242,6 @@ export default {
     {
       id: 211,
       name: "Nebula",
-      set: 28,
       team: 12,
       cards: [
         {
@@ -324,7 +321,6 @@ export default {
       id: 212,
       name: "Nova",
       filterName: "Nova (ItC)",
-      set: 28,
       team: 1,
       cards: [
         {
@@ -406,7 +402,6 @@ export default {
     {
       id: 213,
       name: "Phyla-Vell",
-      set: 28,
       team: 12,
       cards: [
         {
@@ -485,7 +480,6 @@ export default {
     {
       id: 214,
       name: "Quasar",
-      set: 28,
       team: 1,
       cards: [
         {
@@ -564,7 +558,6 @@ export default {
     {
       id: 215,
       name: "Ronan the Accuser",
-      set: 28,
       team: 0,
       cards: [
         {
@@ -642,7 +635,6 @@ export default {
     {
       id: 216,
       name: "Yondu",
-      set: 28,
       team: 12,
       cards: [
         {
@@ -726,7 +718,6 @@ export default {
       id: 71,
       name: "Beyonder, The",
       tacticName: "Beyonder",
-      set: 28,
       vAttack: "21",
       vp: 7,
       cards: [
@@ -844,7 +835,6 @@ export default {
       id: 72,
       name: "Grandmaster, The",
       tacticName: "Grandmaster",
-      set: 28,
       vAttack: "10",
       vp: 6,
       cards: [
@@ -968,7 +958,6 @@ export default {
     {
       id: 73,
       name: "Magus",
-      set: 28,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -1100,7 +1089,6 @@ export default {
     {
       id: 35,
       name: "Sidera Maris, Bridge Builders",
-      set: 28,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1125,7 +1113,6 @@ export default {
     {
       id: 36,
       name: "Universal Church of Truth",
-      set: 28,
       vAttack: "2",
       vp: 1,
       cards: [
@@ -1145,6 +1132,130 @@ export default {
               { keyword: 66, text: "Burn 2 Shards" },
               ": KO one of your Heroes."
             ]
+          ]
+        },
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 130,
+      name: "Contest of Champions, The",
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists. Add an extra Hero. Put 11 random cards from the Hero Deck face up in a “Contest Row.“"
+            ],
+            [
+              { bold: "Twist 1-4" },
+              ": KO the leftmost card in the Contest Row, then ",
+              { keyword: 68 },
+              " for that cards color(s). Each player that loses discards a card. If the Mastermind wins, put a Wound next to this Scheme as an “Evil Triumph.“"
+            ],
+            [
+              { bold: "Twist 5-8" },
+              ": Same effect, but in the Contest, Evil selects from 4 cards from the Hero Deck."
+            ],
+            [
+              { bold: "Twist 9-11" },
+              ": Same effect, but in the Contest, Evil selects from 6 cards from the Hero Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 6 Evil Triumphs."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 131,
+      name: "Turn the Soul of Adam Warlock",
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 14 Twists ",
+              { italic: "(using 3 Wounds to represent extra Scheme Twists)" },
+              ". Put 14 Adam Warlock Hero cards in a face up stack, ordered from lowest-cost on top, to highest-cost on the bottom."
+            ],
+            [
+              { bold: "Twist" },
+              ": Set aside the top card of the Adam Warlock stack. This turn you may “Purify“ it by spending ",
+              { icon: 1 },
+              " equal to double its cost. If you do, choose a player to gain that card, then you rescue a Bystander, and you may KO one of your Heroes. If you don't do this by the end of your turn, put that Adam Warlock card into a “Soul's Corruption“ stack next to the Scheme."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 8 Souls Corruptions."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 132,
+      name: "Destroy the Nova Corps",
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 9 Twists. Exactly one Hero must be a Nova Hero. 1 player: 5 Heroes. Each player's starting deck adds 2 Wounds, 1 S.H.I.E.L.D. Officer, and a Nova card that costs 2."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": All S.H.I.E.L.D. Officers and a Nova Heroes count as “Nova Centurions.“"
+            ],
+            [
+              { bold: "Twist 1-5" },
+              ": Each player must reveal their hand and discard a Nova Centurion. Each player that discarded this way gains a Shard. Each player that didn't discard this way must KO a card from the S.H.I.E.L.D. Officer Stack."
+            ],
+            [
+              { bold: "Twist 6-9" },
+              ": Each player must KO a Nova Centurion from the S.H.I.E.L.D. Officer Stack or from their hand or discard pile."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 5 KO'd Nova Centurions per player."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 133,
+      name: "Annihilation: Conquest",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists. Add an extra Hero."
+            ],
+            [
+              { bold: "Twist" },
+              ": Put this Twist next to the Scheme as a “Phalanx Conquest.“ The highest-cost Hero from the HQ enters the city as a “Phalanx-Infected“ Villain."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Each “Phalanx-Infected“ Villain has ",
+              { icon: 1 },
+              " equal to its cost, ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each two Phalanx Conquests. If you fight one, choose a player to gain it as a Hero."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 6 Phalanx-Infected in the city and/or Escape Pile, or the Villain Deck runs out."
+            ],
           ]
         },
       ]

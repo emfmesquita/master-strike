@@ -1,9 +1,9 @@
 export default {
+  id: 27,
   heroes: [
     {
       id: 203,
       name: "Karma",
-      set: 27,
       team: 4,
       cards: [
         {
@@ -71,7 +71,6 @@ export default {
     {
       id: 204,
       name: "Mirage",
-      set: 27,
       team: 4,
       cards: [
         {
@@ -143,7 +142,6 @@ export default {
     {
       id: 205,
       name: "Sunspot",
-      set: 27,
       team: 4,
       cards: [
         {
@@ -223,7 +221,6 @@ export default {
     {
       id: 206,
       name: "Warlock",
-      set: 27,
       team: 4,
       cards: [
         {
@@ -315,7 +312,6 @@ export default {
     {
       id: 207,
       name: "Wolfsbane",
-      set: 27,
       team: 4,
       cards: [
         {
@@ -386,7 +382,6 @@ export default {
       id: 69,
       name: "Belasco, Demon Lord of Limbo",
       tacticName: "Belasco",
-      set: 27,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -495,7 +490,6 @@ export default {
       id: 70,
       name: "Emma Frost, The White Queen",
       tacticName: "Emma Frost",
-      set: 27,
       vAttack: "8",
       vp: 6,
       cards: [
@@ -594,6 +588,125 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 126,
+      name: "Demon Bear Saga, The",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Include Demons of Limbo as one of the Villain Groups. Put the Demon Bear Villain from that groups next to the Scheme."
+            ],
+            [
+              { bold: "Twist" },
+              ": If the Demon Bear is in the city, it escapes. Otherwise, the Demon Bear enters the city from wherever it is. If it was in a player's Victory Pile, that player rescues 4 Bystanders."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Whenever the Demon Bear escapes, stack a Twist next to the Scheme as a “Dream Horror.“"
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 3 Dream Horrors."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 127,
+      name: "Crash the Moon into the Sun",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists."
+            ],
+            [
+              { bold: "Twist 1,3,5,7" },
+              ": ",
+              { keyword: 64, text: "Moonlight" },
+              ": Stack this Twist next to the Scheme as an “Altered Orbit.“"
+            ],
+            [
+              { bold: "Twist 2,4,6,8" },
+              ": ",
+              { keyword: 64, text: "Sunlight" },
+              ": Same effect."
+            ],
+            [
+              { bold: "Twist 9,10,11" },
+              ": Same effect."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 4 Altered Orbits."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 128,
+      name: "Trapped in the Insane Asylum",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 1 Twist, plus 2 Twists per player."
+            ],
+            [
+              { bold: "Twist" },
+              ": You face a “Sanity Test“: Either keep this Twist in front of you as a “Psychotic Break“, or discard a card and pass this Twist to the PLayer on your left and that player faces a Sanity Test."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": On each of your turns, before you play other cards from your hand, you must play two randomly-selected cards from your hand for each Psychotic Break you have."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When a player has 3 Psychotic Breaks."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 129,
+      name: "Superhuman Baseball Game",
+      cards: [
+        {
+          dense: true,
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 9 Twists. Add an extra Villain Group."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": The Bank nd the Streets do not exist. Put the Villain Deck under the HQ as “Home Plate.“ The Sewers, Rooftops, and Bridge are First, Second, and Third Base."
+            ],
+            [
+              { bold: "Twist" },
+              ": Play the top card of the Villain Deck. If it's a Bystander, rescue that “Cheering Fan.“ If it's a Master Strike, then after it resolves, any Villain on Third Base “Steals Home“ and Escapes. If it's a Villain, it “Hits a Double,“ pushes to Second Base ",
+              { italic: "(the Rooftops)" },
+              " and you play the top card from the Villain Deck."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When Evil has 4 “runs“ ",
+              { italic: "(Villains in the Escape Pile)" },
+              " per player."
+            ],
+          ]
+        },
       ]
     },
   ]

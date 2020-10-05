@@ -1,9 +1,9 @@
 export default {
+  id: 6,
   heroes: [
     {
       id: 43,
       name: "Bullseye",
-      set: 6,
       team: 8,
       cards: [
         {
@@ -71,7 +71,6 @@ export default {
     {
       id: 44,
       name: "Dr. Octopus",
-      set: 6,
       team: 9,
       cards: [
         {
@@ -137,7 +136,6 @@ export default {
     {
       id: 45,
       name: "Electro",
-      set: 6,
       team: 9,
       cards: [
         {
@@ -216,7 +214,6 @@ export default {
     {
       id: 46,
       name: "Enchantress",
-      set: 6,
       team: 10,
       cards: [
         {
@@ -294,7 +291,6 @@ export default {
     {
       id: 47,
       name: "Green Goblin",
-      set: 6,
       team: 9,
       cards: [
         {
@@ -363,7 +359,6 @@ export default {
     {
       id: 48,
       name: "Juggernaut",
-      set: 6,
       team: 11,
       cards: [
         {
@@ -438,7 +433,6 @@ export default {
     {
       id: 49,
       name: "Kingpin",
-      set: 6,
       team: 8,
       cards: [
         {
@@ -505,7 +499,6 @@ export default {
     {
       id: 50,
       name: "Kraven",
-      set: 6,
       team: 9,
       cards: [
         {
@@ -576,7 +569,6 @@ export default {
     {
       id: 51,
       name: "Loki",
-      set: 6,
       team: 10,
       cards: [
         {
@@ -642,7 +634,6 @@ export default {
     {
       id: 52,
       name: "Magneto",
-      set: 6,
       team: 11,
       cards: [
         {
@@ -716,7 +707,6 @@ export default {
     {
       id: 53,
       name: "Mysterio",
-      set: 6,
       team: 9,
       cards: [
         {
@@ -811,7 +801,6 @@ export default {
     {
       id: 54,
       name: "Mystique",
-      set: 6,
       team: 11,
       cards: [
         {
@@ -880,7 +869,6 @@ export default {
     {
       id: 55,
       name: "Sabretooth",
-      set: 6,
       team: 11,
       cards: [
         {
@@ -952,7 +940,6 @@ export default {
     {
       id: 56,
       name: "Ultron",
-      set: 6,
       team: 0,
       cards: [
         {
@@ -1036,7 +1023,6 @@ export default {
       id: 57,
       name: "Venom",
       filterName: "Venom (Villains)",
-      set: 6,
       team: 9,
       cards: [
         {
@@ -1112,7 +1098,6 @@ export default {
     {
       id: 14,
       name: "Dr. Strange",
-      set: 6,
       vAttack: "8",
       vp: 6,
       cards: [
@@ -1179,7 +1164,6 @@ export default {
     {
       id: 15,
       name: "Nick Fury",
-      set: 6,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -1253,7 +1237,6 @@ export default {
     {
       id: 16,
       name: "Odin",
-      set: 6,
       vAttack: "10",
       vp: 6,
       cards: [
@@ -1328,7 +1311,6 @@ export default {
     {
       id: 17,
       name: "Professor X",
-      set: 6,
       vAttack: "8",
       vp: 6,
       cards: [
@@ -1403,7 +1385,6 @@ export default {
     {
       id: 7,
       name: "Asgardian Warriors",
-      set: 6,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1420,7 +1401,6 @@ export default {
     {
       id: 8,
       name: "Cops",
-      set: 6,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1437,7 +1417,6 @@ export default {
     {
       id: 9,
       name: "Multiple Man",
-      set: 6,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1454,7 +1433,6 @@ export default {
     {
       id: 10,
       name: "S.H.I.E.L.D. Assault Squad",
-      set: 6,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1473,7 +1451,6 @@ export default {
     {
       id: 25,
       name: "Build an Underground MegaVault Prison",
-      set: 6,
       cards: [
         {
           abilities: [
@@ -1496,7 +1473,6 @@ export default {
     {
       id: 26,
       name: "Cage Villains in Power-Suppressing Cells",
-      set: 6,
       cards: [
         {
           abilities: [
@@ -1523,7 +1499,6 @@ export default {
     {
       id: 27,
       name: "Crown Thor King of Asgard",
-      set: 6,
       cards: [
         {
           abilities: [
@@ -1550,7 +1525,6 @@ export default {
     {
       id: 28,
       name: "Crush HYDRA",
-      set: 6,
       cards: [
         {
           abilities: [
@@ -1584,7 +1558,6 @@ export default {
     {
       id: 29,
       name: "Graduation at Xavier's X-Academy",
-      set: 6,
       cards: [
         {
           abilities: [
@@ -1607,7 +1580,6 @@ export default {
     {
       id: 30,
       name: "Infiltrate the Lair with Spies",
-      set: 6,
       cards: [
         {
           abilities: [
@@ -1634,7 +1606,6 @@ export default {
     {
       id: 31,
       name: "Mass Produce War Machine Armor",
-      set: 6,
       cards: [
         {
           abilities: [
@@ -1664,7 +1635,6 @@ export default {
     {
       id: 32,
       name: "Resurrect Heroes with Norn Stones",
-      set: 6,
       cards: [
         {
           abilities: [

@@ -57,8 +57,7 @@ export default {
   computed: {
     subTitleClasses() {
       return {
-        'text-center card-sub-title': true,
-        'card-red-sub-title': !!this.card.epic || !!this.card.transformed
+        'text-center card-sub-title': true
       };
     },
     classes() {

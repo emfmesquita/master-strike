@@ -7,7 +7,7 @@
             <SetIcon v-for="set in setArray" :key="set" class="set float-right" :set="set" width="42px" />
           </template>
           <NumberOfCards v-if="!dense" class="number-of-cards" :number="numberOfCards" size="16"/>
-          <span :class="titleClasses">{{ group.name }}</span>
+          <span class="group-title" :class="titleClasses">{{ group.name }}</span>
         </v-col>
       </v-row>
       <v-row>
@@ -23,7 +23,7 @@
         <v-col v-else cols="12" class="carousel-column">
           <v-carousel
             v-model="currentPage"
-            :height="dense ? 274 : 350"
+            :height="carouselHeight"
             hide-delimiter-background
             :hide-delimiters="manyPages"
             :show-arrows-on-hover="!manyPages"
@@ -51,7 +51,6 @@
 </template>
 
 <script>
-// import SetChip from "../shared/SetChip.vue";
 import SetIcon from "../icons/SetIcon.vue";
 import NumberOfCards from "../shared/NumberOfCards";
 import { numberOfCards } from "../../services/cardUtils";
@@ -59,7 +58,18 @@ import { numberOfColumns, pages } from "../../services/pageUtils";
 
 export default {
   name: "CardGroup",
-  props: ["group", "pageSize", "dense"],
+  props: {
+    group: Object, 
+    pageSize: Number,
+    dense: {
+      type: Boolean,
+      default: false
+    },
+    cardHeight: {
+      type: Number,
+      default: 280
+    }
+  },
   components: { SetIcon, NumberOfCards },
   data: () => ({
     currentPage: 0
@@ -97,6 +107,10 @@ export default {
       if(Array.isArray(this.group.set)) return this.group.set.slice(0).reverse()
       
       return [this.group.set];
+    },
+    carouselHeight() {
+      const extra = this.dense ? 36 : 70;
+      return this.cardHeight + extra;
     }
   }
 };
@@ -125,6 +139,10 @@ export default {
     .page-indicator {
       bottom: 3px;
     }
+
+    .v-carousel__controls {
+      height: 31px;
+    }
   }
   &:not(.dense) {
     .v-window__prev, .v-window__next {
@@ -138,6 +156,9 @@ export default {
     }
   }
 
+  .group-title {
+    white-space: nowrap;
+  }
   .page-indicator {
     color: black;
     font-size: 14px;

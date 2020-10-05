@@ -1,9 +1,9 @@
 import { cardTypes } from "../constants/cardTypes"
-import { cards } from "../data";
 import { heroClassArray } from "../constants/heroClass"
 import { iconArray } from "../constants/icon"
 import { keywordsArray } from "../constants/keywords"
 import { rulesArray } from "../constants/rules"
+import { cards as sets } from "../data";
 import { teamArray } from "../constants/team"
 
 const toNumber = (value) => {
@@ -179,9 +179,12 @@ const processCardGroups = cardType => {
   if(GROUP_CACHE[cardType.id]) return GROUP_CACHE[cardType.id];
 
   let allGroups = [];
-  Object.values(cards).forEach(setData => {
+  Object.values(sets).forEach(setData => {
     const setGroups = setData[cardType.value];
     if(setGroups && setGroups.length) {
+      setGroups.forEach(group => {
+        if(!group.set) group.set = setData.id
+      });
       allGroups = allGroups.concat(setGroups);
     }
   });

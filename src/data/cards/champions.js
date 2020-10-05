@@ -1,9 +1,9 @@
 export default {
+  id: 18,
   heroes: [
     {
       id: 152,
       name: "Gwenpool",
-      set: 18,
       team: 18,
       cards: [
         {
@@ -73,7 +73,6 @@ export default {
     {
       id: 153,
       name: "Ms. Marvel",
-      set: 18,
       team: 18,
       cards: [
         {
@@ -158,7 +157,6 @@ export default {
       id: 154,
       name: "Nova",
       filterName: "Nova (Champ)",
-      set: 18,
       team: 18,
       cards: [
         {
@@ -240,7 +238,6 @@ export default {
     {
       id: 155,
       name: "Totally Awesome Hulk",
-      set: 18,
       team: 18,
       cards: [
         {
@@ -328,7 +325,6 @@ export default {
     {
       id: 156,
       name: "Viv Vision",
-      set: 18,
       team: 18,
       cards: [
         {
@@ -406,7 +402,6 @@ export default {
     {
       id: 48,
       name: "Fin Fang Foom",
-      set: 18,
       vAttack: "20",
       vp: 7,
       cards: [
@@ -560,7 +555,6 @@ export default {
     {
       id: 49,
       name: "Pagliacci",
-      set: 18,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -652,6 +646,125 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 88,
+      name: "Clash of the Monsters Unleashed",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 10 Twists. 6 Wounds per player in the Wound Stack. Shuffle 8 Monsters Unleashed Villains into a face-down “Monster Pit“ deck."
+            ],
+            [
+              { bold: "Twist 3-10" },
+              ": Each player chooses a Villain from their Victory Pile as their “Gladiator.“ Then the top card of the Monster Pit enteres the city. Each player whose Gladiator has a lower printed ",
+              { icon: 1 },
+              " than that Monster gains a Wound."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the Wound Stack or Monster Pit Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 89,
+      name: "Divide and Conquer",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ":  8 Twists. 7 Heroes. Sort the Hero Deck by Hero Class: ",
+              { hc: 4 },
+              ",",
+              { hc: 2 },
+              ",",
+              { hc: 1 },
+              ",",
+              { hc: 5 },
+              ",",
+              { hc: 3 },
+              ". ",
+              { italic: "(If a card has multiple Classes, break ties at random.)" },
+              " Put these 5 smaller, shuffled Hero Decks beneath the 5 HQ Spaces."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": Whenever an HQ Space is empty, fill it with the top card of the Hero Deck below that space."
+            ],
+            [
+              { bold: "Twist 1-3" },
+              ": KO all Heroes in the HQ."
+            ],
+            [
+              { bold: "Twist 4-8" },
+              ": KO one of the Hero Decks."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When all Hero Decks are gone."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 90,
+      name: "Hypnotize Every Human",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Add another Henchman Villain Group. No Bystanders in the Villain Deck."
+            ],
+            [
+              { bold: "Twist 1-6" },
+              ": Put a Bystander from the Bystander Stack above each city space as a facedown ",
+              { bold: "2" },
+              { icon: 1 },
+              " “Hypno-Thrall“ Villain. They don't move. When you fight one, rescue it as a Bystander. You can't fight a Villain in a city space that has any Hypno-Thralls above it."
+            ],
+            [
+              { bold: "Twist 7-8" },
+              ": Each player puts a Villain from their Victory Pile into the Escape pile."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 8 Villains are in the Escape pile."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 91,
+      name: "Steal All Oxygen on Earth",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. The “Oxygen Level“ starts at 8."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Scheme. The Oxygen Level decreases by 1. Then KO each Hero from the HQ whose cost is greater than the Oxygen Level."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 20 non-grey Heroes are KO'd."
+            ],
+          ]
+        },
       ]
     },
   ]

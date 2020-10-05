@@ -1,9 +1,9 @@
 export default {
+  id: 22,
   heroes: [
     {
       id: 177,
       name: "Carnage",
-      set: 22,
       team: 20,
       cards: [
         {
@@ -72,7 +72,6 @@ export default {
       id: 178,
       name: "Venom",
       filterName: "Venom (Venom)",
-      set: 22,
       team: 20,
       cards: [
         {
@@ -182,7 +181,6 @@ export default {
     {
       id: 179,
       name: "Venom Rocket",
-      set: 22,
       team: 20,
       cards: [
         {
@@ -244,7 +242,6 @@ export default {
     {
       id: 180,
       name: "Venomized Dr. Strange",
-      set: 22,
       team: 20,
       cards: [
         {
@@ -312,7 +309,6 @@ export default {
     {
       id: 181,
       name: "Venompool",
-      set: 22,
       team: 20,
       cards: [
         {
@@ -401,7 +397,6 @@ export default {
     {
       id: 59,
       name: "Hybrid",
-      set: 22,
       vAttack: "6",
       vp: 6,
       cards: [
@@ -501,7 +496,6 @@ export default {
     {
       id: 60,
       name: "Poison Thanos",
-      set: 22,
       vAttack: "12",
       vp: 7,
       cards: [
@@ -590,6 +584,117 @@ export default {
             ]
           ]
         }
+      ]
+    },
+  ],
+  schemes: [
+    {
+      id: 110,
+      name: "Invasion of the Venom Symbiotes",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Add an extra Henchman Group."
+            ],
+            [
+              { bold: "Twist" },
+              ": This Twist enters the city as a ",
+              { bold: "3" },
+              { icon: 1 },
+              " “Symbiote“ Villain worth 3VP with “",
+              { bold: "Ambush" },
+              ": This ",
+              { keyword: 53 },
+              " with another Villain in the city. Play another card from the Villain Deck.“"
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the Escape Pile has 3 cards per player, or the Villain Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 111,
+      name: "Maximum Carnage",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 10 Twists. Wound Stack has 6 Wounds per player."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Scheme. If the Streets are empty, put a Bystander there as a “Possessed Psychotic“ Villain. If the Streets weren't empty, each player gains a Wound."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": “Possessed Psychotics“ have ",
+              { icon: 1 },
+              " equal to the number of Twists next to the Scheme. When you fight one, rescue it as a Bystander."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 6 Bystanders in the Escape Pile or the Wound Stack runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 112,
+      name: "Paralyzing Venom",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists. All Bystanders are also “Biochemists.“"
+            ],
+            [
+              { bold: "Twist" },
+              ": Each player KOs a Biochemist from their Victory Pile or discards down to 4 cards in hand."
+            ],
+            [
+              { bold: "Twist 6" },
+              ": Evil Wins!"
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 113,
+      name: "Symbiotic Absorption",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists. Set aside a second “Drained“ Mastermind and its 4 Tactics, out of play. Add its “Always Leads“ Villains as an extra Villain Group."
+            ],
+            [
+              { bold: "Twist 1-4" },
+              ": Shuffle one of the Drained Mastermind's Tactics into the main Mastermind's Tactics."
+            ],
+            [
+              { bold: "Twist 6, 8, 10" },
+              ": The Mastermind uses this Twist to copy the Master Strike ability of the Drained Mastermind."
+            ],
+            [
+              { bold: "Twist 11" },
+              ": Evil Wins!"
+            ],
+            [
+              { bold: "Special Rules" },
+              ": If Tactics or Master Strikes mention the Drained Mastermind, use the main Mastermind instead."
+            ],
+          ]
+        },
       ]
     },
   ]

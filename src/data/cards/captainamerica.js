@@ -1,9 +1,9 @@
 export default {
+  id: 12,
   heroes: [
     {
       id: 101,
       name: "Agent X-13",
-      set: 12,
       team: 2,
       cards: [
         {
@@ -87,7 +87,6 @@ export default {
     {
       id: 102,
       name: "Captain America (Falcon)",
-      set: 12,
       team: 1,
       cards: [
         {
@@ -157,7 +156,6 @@ export default {
     {
       id: 103,
       name: "Captain America 1941",
-      set: 12,
       team: 1,
       cards: [
         {
@@ -230,7 +228,6 @@ export default {
       id: 104,
       name: "Steve Rogers, Director of S.H.I.E.L.D.",
       filterName: "Steve Rogers",
-      set: 12,
       team: 2,
       cards: [
         {
@@ -309,7 +306,6 @@ export default {
     {
       id: 105,
       name: "Winter Soldier",
-      set: 12,
       team: 0,
       cards: [
         {
@@ -383,7 +379,6 @@ export default {
     {
       id: 29,
       name: "Arnim Zola",
-      set: 12,
       vAttack: "6",
       vp: 6,
       cards: [
@@ -458,7 +453,6 @@ export default {
       id: 30,
       name: "Baron Heinrich Zemo",
       tacticName: "Baron Zemo",
-      set: 12,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -540,7 +534,6 @@ export default {
     {
       id: 56,
       name: "Brainwash the Military",
-      set: 12,
       cards: [
         {
           abilities: [
@@ -573,7 +566,6 @@ export default {
     {
       id: 57,
       name: "Change the Outcome of WWII",
-      set: 12,
       cards: [
         {
           dense: true,
@@ -625,7 +617,6 @@ export default {
     {
       id: 58,
       name: "Go Back in Time to Slay Heroes' Ancestors",
-      set: 12,
       cards: [
         {
           abilities: [
@@ -651,8 +642,7 @@ export default {
     },
     {
       id: 59,
-      name: "The Unbreakable Enigma Code",
-      set: 12,
+      name: "Unbreakable Enigma Code, The",
       cards: [
         {
           abilities: [

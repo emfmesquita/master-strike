@@ -20,6 +20,11 @@
           </v-row>
           <v-row align="center">
             <v-col cols="12">
+              <SchemeFilter v-model="filter.scheme" @input="filterChanged"/>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
               <SetFilter v-model="filter.set" :cardTypes="[5]" @input="filterChanged"/>
             </v-col>
           </v-row>
@@ -59,9 +64,9 @@
       </v-row>
 
       <template v-if="schemes.length">
-        <PaginatedSingleCardGroupList :groups="schemes" :dense="true" :key="lastFilterTime">
-          <template v-slot:default="{ card, multipleCards }">
-            <SchemeCard :card="card" :height="multipleCards ? '238px' : '340px'" />
+        <PaginatedSingleCardGroupList :groups="schemes" :dense="true" :key="lastFilterTime" :lineHeight="364">
+          <template v-slot:default="{ card, cardHeight }">
+            <SchemeCard :card="card" :height="cardHeight + 'px'" />
           </template>
         </PaginatedSingleCardGroupList>
       </template>
@@ -76,6 +81,7 @@ import KeywordFilter from "../components/filters/KeywordFilter.vue";
 import PaginatedSingleCardGroupList from "../components/shared/PaginatedSingleCardGroupList.vue";
 import RuleFilter from "../components/filters/RuleFilter.vue";
 import SchemeCard from "../components/cards/SchemeCard.vue";
+import SchemeFilter from "../components/filters/SchemeFilter.vue";
 import SearchFilter from "../components/filters/SearchFilter.vue";
 import SetFilter from "../components/filters/SetFilter.vue";
 
@@ -93,13 +99,16 @@ import {
   filterBySet, 
   filterGroupByKeyword, 
   filterGroupByRule,
+  filterById,
 } from "../services/searchUtils";
 import { sortGroups, ALPHA_SORT } from "../services/sortUtils";
 
 const schemes = getAllSchemes();
+const validSchemes = schemes.filter(scheme => scheme.id).map(scheme => scheme.id);
 
 const baseFilter = () => ({
   search: "",
+  scheme: [],
   set: [],
   keyword: [],
   rule: [],
@@ -112,6 +121,7 @@ export default {
     PaginatedSingleCardGroupList,
     RuleFilter, 
     SchemeCard,
+    SchemeFilter,
     SearchFilter,
     SetFilter,
   },
@@ -129,6 +139,7 @@ export default {
   created() {
     const query = this.$route.query;
     this.filter.search = decodeURI(query.s || "");
+    this.filter.scheme = toIntArray(query.scheme).filter(scheme => validSchemes.includes(scheme));
     this.filter.set = toIntArray(query.set).filter(set => setsArray[set - 1]);
     this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
     this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
@@ -139,6 +150,7 @@ export default {
       const query = {};
       const filter = this.filter;
       if(filter.search) query.s = encodeURI(filter.search);
+      if(filter.scheme.length) query.scheme = filter.scheme.join(",");
       if(filter.set.length) query.set = filter.set.join(",");
       if(filter.keyword.length) query.keyword = filter.keyword.join(",");
       if(filter.rule.length) query.rule = filter.rule.join(",");
@@ -161,6 +173,7 @@ export default {
       this.schemes = schemes;
       groupSearchSetup(this.schemes);
 
+      this.schemes = filterById(this.schemes, this.filter.scheme);
       this.schemes = filterBySet(this.schemes, this.filter.set);
       this.schemes = filterGroupByKeyword(this.schemes, this.filter.keyword);
       this.schemes = filterGroupByRule(this.schemes, this.filter.rule);
@@ -170,6 +183,8 @@ export default {
         scheme.filteredCards.sort((a,b) => {
           if(a.disabled && !b.disabled) return 1;
           if(!a.disabled && b.disabled) return -1;
+          if(a.transformed && !b.transformed) return 1;
+          if(!a.transformed && b.transformed) return -1;
           return a.name.localeCompare(b.name);
         });
 

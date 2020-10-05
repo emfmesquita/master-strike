@@ -1,9 +1,9 @@
 export default {
+  id: 19,
   heroes: [
     {
       id: 157,
       name: "Amadeus Cho",
-      set: 19,
       team: 18,
       cards: [
         {
@@ -114,7 +114,6 @@ export default {
     {
       id: 158,
       name: "Bruce Banner",
-      set: 19,
       team: 1,
       cards: [
         {
@@ -203,7 +202,6 @@ export default {
     {
       id: 159,
       name: "Caiera",
-      set: 19,
       team: 19,
       cards: [
         {
@@ -299,7 +297,6 @@ export default {
     {
       id: 160,
       name: "Gladiator Hulk",
-      set: 19,
       team: 19,
       cards: [
         {
@@ -409,7 +406,6 @@ export default {
     {
       id: 161,
       name: "Hiroim",
-      set: 19,
       team: 19,
       cards: [
         {
@@ -502,7 +498,6 @@ export default {
     {
       id: 162,
       name: "Hulkbuster Iron Man",
-      set: 19,
       team: 1,
       cards: [
         {
@@ -615,7 +610,6 @@ export default {
     {
       id: 163,
       name: "Joe Fixit, Grey Hulk",
-      set: 19,
       team: 8,
       cards: [
         {
@@ -725,7 +719,6 @@ export default {
     {
       id: 164,
       name: "Korg",
-      set: 19,
       team: 19,
       cards: [
         {
@@ -833,7 +826,6 @@ export default {
     {
       id: 165,
       name: "Miek, The Unhived",
-      set: 19,
       team: 19,
       cards: [
         {
@@ -932,7 +924,6 @@ export default {
     {
       id: 166,
       name: "Namora",
-      set: 19,
       team: 18,
       cards: [
         {
@@ -1043,7 +1034,6 @@ export default {
     {
       id: 167,
       name: "No-Name, Brood Queen",
-      set: 19,
       team: 19,
       cards: [
         {
@@ -1142,7 +1132,6 @@ export default {
     {
       id: 168,
       name: "Rick Jones",
-      set: 19,
       team: 2,
       cards: [
         {
@@ -1265,7 +1254,6 @@ export default {
     {
       id: 169,
       name: "Sentry",
-      set: 19,
       team: 1,
       cards: [
         {
@@ -1404,7 +1392,6 @@ export default {
     {
       id: 170,
       name: "She-Hulk",
-      set: 19,
       team: 1,
       cards: [
         {
@@ -1516,7 +1503,6 @@ export default {
     {
       id: 171,
       name: "Skaar, Son of Hulk",
-      set: 19,
       team: 1,
       cards: [
         {
@@ -1617,7 +1603,6 @@ export default {
       id: 50,
       name: "General “Thunderbolt” Ross",
       tacticName: "Ross/Red Hulk",
-      set: 19,
       vAttack: "6",
       vp: 6,
       cards: [
@@ -1731,7 +1716,6 @@ export default {
       id: 51,
       name: "Illuminati, Secret Society",
       tacticName: "Illuminati",
-      set: 19,
       vAttack: "11",
       vp: 7,
       cards: [
@@ -1851,7 +1835,6 @@ export default {
       id: 52,
       name: "King Hulk, Sakaarson",
       tacticName: "King Hulk",
-      set: 19,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -1967,7 +1950,6 @@ export default {
     {
       id: 53,
       name: "M.O.D.O.K.",
-      set: 19,
       vAttack: "9",
       vp: 6,
       cards: [
@@ -2082,7 +2064,6 @@ export default {
       id: 54,
       name: "Red King, The",
       tacticName: "Red King",
-      set: 19,
       vAttack: "7",
       vp: 6,
       cards: [
@@ -2189,7 +2170,6 @@ export default {
       id: 55,
       name: "Sentry, The",
       tacticName: "Sentry/Void",
-      set: 19,
       vAttack: "10",
       vp: 6,
       cards: [
@@ -2301,7 +2281,6 @@ export default {
     {
       id: 26,
       name: "Cytoplasm Spikes",
-      set: 19,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -2323,7 +2302,6 @@ export default {
     {
       id: 27,
       name: "Death's Heads",
-      set: 19,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -2342,7 +2320,6 @@ export default {
     {
       id: 27,
       name: "Sakaaran Hivelings",
-      set: 19,
       vAttack: "3",
       vp: 1,
       cards: [
@@ -2358,5 +2335,220 @@ export default {
         },
       ]
     }
+  ],
+  schemes: [
+    {
+      id: 92,
+      name: "Break the Planet Asunder",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 9 Twists. 7 Heroes."
+            ],
+            [
+              { bold: "Twist" },
+              ": Stack this Twist next to the Scheme as a “Tectonic Break.“ Then KO each Hero from the HQ whose printed ",
+              { icon: 1 },
+              " is less than the number of Tectonic Breaks ",
+              { italic: "(no printed " },
+              { icon: 1 },
+              { italic: " counts as 0)." }
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 25 non-grey Heroes are KO'd."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 93,
+      name: "Cytoplasm Spike Invasion",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 10 Twists. Shuffle together 20 Bystanders and 10 Cytoplasm Spike Henchmen as an “Infected Deck.“"
+            ],
+            [
+              { bold: "Twist" },
+              ": Reveal the top three cards of the Infected Deck. KO all Bystanders you revealed. All Spikes you revealed enter the city."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the KO pile and Escape Pile combine to have 18 Bystanders and/or Spikes."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 94,
+      name: "Fall of the Hulks",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 10 Twists. 6 Wounds per player in Wound Stack. Use exactly two Heroes with “Hulk“ in their Hero Names."
+            ],
+            [
+              { bold: "Twist 3-6" },
+              ": ",
+              { keyword: 17, text: "Cross-Dimension Hulk Rampage" },
+              "."
+            ],
+            [
+              { bold: "Twist 7-10" },
+              ": Each player gains a Wound."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When the Wound Stack runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 95,
+      name: "Gladiator Pits of Sakaar",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 6 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Until the start of your next turn, each player can only play cards from a single Team of their choice during their turn. ",
+              { italic: "(e.g. " },
+              { team: 2 },
+              ",",
+              { team: 1 },
+              ",",
+              { team: 4 },
+              ",",
+              { team: 19 },
+              { italic: ", etc.)" }
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When 2 Villains per player have escaped or the Villain Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 96,
+      name: "Mutating Gamma Rays",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 7 Twists. Take 14 cards from an extra Hero with “Hulk“ in its Hero Name. Put them in a face-up “Mutation Pile.“"
+            ],
+            [
+              { bold: "Twist 1-6" },
+              ": Each player in turn does the following: Put a non-grey Hero from your hand into the Mutation Pile. Then you may put a different card name with the same cost from the Mutation Pile into your discard pile."
+            ],
+            [
+              { bold: "Twist 7" },
+              ": Evil Wins!"
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 97,
+      name: "Shoot Hulk into Space",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 8 Twists. Take 14 cards from an extra Hero with “Hulk“ in its Hero Name. Shuffle them into a “Hulk Deck.“"
+            ],
+            [
+              { bold: "Twist" },
+              ": Put 2 cards from the Hulk Deck into a face-up “Prison Ship“ stack next to the S.H.I.E.L.D. Officer Stack."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": You may recruit the top card of the Prison Ship stack."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When there are 10 cards in the Prison Ship or the Hulk Deck runs out."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 98,
+      name: "Subjugate with Obedience Disks",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 11 Twists."
+            ],
+            [
+              { bold: "Twist" },
+              ": Put this Twist under an HQ space as an “Obedience Disk.“ No space can have two more Obedience Disks than any other space."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": To recruit a Hero in the HQ, you must also pay ",
+              { bold: "1" },
+              { icon: 2 },
+              " for each Obedience Disk under it."
+            ],
+            [
+              { bold: "Evil Wins" },
+              ": When each HQ space has 2 Obedience Disks."
+            ],
+          ]
+        },
+      ]
+    },
+    {
+      id: 99,
+      name: "World War Hulk",
+      cards: [
+        {
+          abilities: [
+            [
+              { bold: "Setup" },
+              ": 9 Twists. Put ",
+              { rule: 3, text: "three additional Masterminds" },
+              " out of play, “Lurking.“ Each of the four Masterminds has two random Tactics."
+            ],
+            [
+              { bold: "Special Rules" },
+              ": When you defeat all of a Mastermind's Tactics, KO its face card and a random Lurking Mastermind enters play."
+            ],
+            [
+              { bold: "Twist 1-8" },
+              ": Swap the current Mastermind with a random Lurking Mastermind."
+            ],
+            [
+              { bold: "Twist 9" },
+              ": Evil Wins!"
+            ],
+          ]
+        },
+      ]
+    },
   ]
 };

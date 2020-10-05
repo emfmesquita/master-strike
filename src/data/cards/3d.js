@@ -1,4 +1,5 @@
 export default {
+  id: 9,
   heroes: [
     {
       id: 69,

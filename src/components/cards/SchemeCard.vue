@@ -31,7 +31,7 @@ export default {
     subTitleClasses() {
       return {
         'text-center card-sub-title': true,
-        'card-red-sub-title': !!this.card.epic || !!this.card.transformed
+        'card-red-sub-title': !!this.card.transformed
       };
     },
     classes() {
@@ -102,6 +102,9 @@ export default {
     font-size: 12px;
     line-height: 16px;
     padding: 0px 20px;
+    &.card-red-sub-title {
+      color: #d00;
+    }
   }
 }
 </style>

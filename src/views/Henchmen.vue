@@ -20,6 +20,11 @@
           </v-row>
           <v-row align="center">
             <v-col cols="12">
+              <HenchmenFilter v-model="filter.henchman" @input="filterChanged"/>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
               <SetFilter v-model="filter.set" :cardTypes="[3]" @input="filterChanged"/>
             </v-col>
           </v-row>
@@ -64,10 +69,10 @@
       </v-row>
 
       <template v-if="henchmen.length">
-        <PaginatedSingleCardGroupList :groups="henchmen" :key="lastFilterTime">
-          <template v-slot:default="{ card, multipleCards }">
-            <HeroCard v-if="card.overrideType === 1" :card="card" :height="multipleCards ? '240px' : '310px'" />
-            <VillainCard v-else :card="card" :height="multipleCards ? '238px' : '310px'" />
+        <PaginatedSingleCardGroupList :groups="henchmen" :key="lastFilterTime" :lineHeight="334">
+          <template v-slot:default="{ card, cardHeight }">
+            <HeroCard v-if="card.overrideType === 1" :card="card" :height="cardHeight + 'px'" />
+            <VillainCard v-else :card="card" :height="cardHeight + 'px'" />
           </template>
         </PaginatedSingleCardGroupList>
       </template>
@@ -78,6 +83,7 @@
 </template>
 
 <script>
+import HenchmenFilter from "../components/filters/HenchmenFilter.vue";
 import HeroCard from "../components/cards/HeroCard.vue";
 import KeywordFilter from "../components/filters/KeywordFilter.vue";
 import PaginatedSingleCardGroupList from "../components/shared/PaginatedSingleCardGroupList.vue";
@@ -102,13 +108,16 @@ import {
   filterGroupByKeyword, 
   filterGroupByRule,
   filterGroupByMinMax,
+  filterById,
 } from "../services/searchUtils";
 import { sortGroups, ALPHA_SORT } from "../services/sortUtils";
 
 const henchmen = getAllHenchmen();
+const validHenchmen = henchmen.filter(hm => hm.id).map(hm => hm.id);
 
 const baseFilter = () => ({
   search: "",
+  henchman: [],
   set: [],
   keyword: [],
   rule: [],
@@ -118,6 +127,7 @@ const baseFilter = () => ({
 export default {
   name: "Henchmen",
   components: {
+    HenchmenFilter,
     HeroCard,
     KeywordFilter,
     PaginatedSingleCardGroupList,
@@ -144,6 +154,7 @@ export default {
   created() {
     const query = this.$route.query;
     this.filter.search = decodeURI(query.s || "");
+    this.filter.henchman = toIntArray(query.hm).filter(hm => validHenchmen.includes(hm));
     this.filter.set = toIntArray(query.set).filter(set => setsArray[set - 1]);
     this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
     this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
@@ -155,6 +166,7 @@ export default {
       const query = {};
       const filter = this.filter;
       if(filter.search) query.s = encodeURI(filter.search);
+      if(filter.henchman.length) query.hm = filter.henchman.join(",");
       if(filter.set.length) query.set = filter.set.join(",");
       if(filter.keyword.length) query.keyword = filter.keyword.join(",");
       if(filter.rule.length) query.rule = filter.rule.join(",");
@@ -178,6 +190,7 @@ export default {
       this.henchmen = henchmen;
       groupSearchSetup(this.henchmen);
 
+      this.henchmen = filterById(this.henchmen, this.filter.henchman);
       this.henchmen = filterBySet(this.henchmen, this.filter.set);
       this.henchmen = filterGroupByKeyword(this.henchmen, this.filter.keyword);
       this.henchmen = filterGroupByRule(this.henchmen, this.filter.rule);

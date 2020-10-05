@@ -1,9 +1,9 @@
 export default {
+  id: 8,
   heroes: [
     {
       id: 63,
       name: "Greithoth, Breaker of Wills",
-      set: 8,
       team: 10,
       cards: [
         {
@@ -78,7 +78,6 @@ export default {
     {
       id: 64,
       name: "Kuurth, Breaker of Stone",
-      set: 8,
       team: 10,
       cards: [
         {
@@ -147,7 +146,6 @@ export default {
     {
       id: 65,
       name: "Nerkkod, Breaker of Oceans",
-      set: 8,
       team: 10,
       cards: [
         {
@@ -207,7 +205,6 @@ export default {
     {
       id: 66,
       name: "Nul, Breaker of Worlds",
-      set: 8,
       team: 10,
       cards: [
         {
@@ -273,7 +270,6 @@ export default {
     {
       id: 67,
       name: "Skadi",
-      set: 8,
       team: 13,
       cards: [
         {
@@ -341,7 +337,6 @@ export default {
     {
       id: 68,
       name: "Skirn, Breaker of Men",
-      set: 8,
       team: 10,
       cards: [
         {
@@ -409,7 +404,6 @@ export default {
       id: 20,
       name: "Uru-Enchanted Iron Man",
       tacticName: "Uru Iron Man",
-      set: 8,
       vAttack: "7",
       vp: 6,
       cards: [
@@ -486,7 +480,6 @@ export default {
     {
       id: 37,
       name: "Fear Itself",
-      set: 8,
       cards: [
         {
           abilities: [
@@ -512,7 +505,6 @@ export default {
     {
       id: 38,
       name: "Last Stand at Avengers Tower",
-      set: 8,
       cards: [
         {
           abilities: [
@@ -541,8 +533,7 @@ export default {
     },
     {
       id: 39,
-      name: "The Traitor",
-      set: 8,
+      name: "Traitor, The",
       cards: [
         {
           dense: true,

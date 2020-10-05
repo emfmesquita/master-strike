@@ -1,9 +1,9 @@
 export default {
+  id: 4,
   heroes: [
     {
       id: 33,
       name: "Human Torch",
-      set: 4,
       team: 5,
       cards: [
         {
@@ -82,7 +82,6 @@ export default {
     {
       id: 34,
       name: "Invisible Woman",
-      set: 4,
       team: 5,
       cards: [
         {
@@ -161,7 +160,6 @@ export default {
     {
       id: 35,
       name: "Mr. Fantastic",
-      set: 4,
       team: 5,
       cards: [
         {
@@ -252,7 +250,6 @@ export default {
     {
       id: 36,
       name: "Silver Surfer",
-      set: 4,
       team: 0,
       cards: [
         {
@@ -328,7 +325,6 @@ export default {
     {
       id: 37,
       name: "Thing",
-      set: 4,
       team: 5,
       cards: [
         {
@@ -438,7 +434,6 @@ export default {
     {
       id: 10,
       name: "Galactus",
-      set: 4,
       vAttack: "20",
       vp: 7,
       cards: [
@@ -535,7 +530,6 @@ export default {
     {
       id: 11,
       name: "Mole Man",
-      set: 4,
       vAttack: "7",
       vp: 6,
       cards: [
@@ -612,7 +606,6 @@ export default {
     {
       id: 17,
       name: "Bathe the Earth in Cosmic Rays",
-      set: 4,
       cards: [
         {
           abilities: [
@@ -635,7 +628,6 @@ export default {
     {
       id: 18,
       name: "Flood the Planet with Melted Glaciers",
-      set: 4,
       cards: [
         {
           abilities: [
@@ -658,7 +650,6 @@ export default {
     {
       id: 19,
       name: "Invincible Force Field",
-      set: 4,
       cards: [
         {
           abilities: [
@@ -691,7 +682,6 @@ export default {
     {
       id: 20,
       name: "Pull Reality Into the Negative Zone",
-      set: 4,
       cards: [
         {
           abilities: [
