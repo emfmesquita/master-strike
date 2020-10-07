@@ -488,7 +488,7 @@ export default {
               ": 10 Twists."
             ],
             [
-              "Earth's Fear Level starts at 8. The number of Allies in the Lair is always equal to the Fear Level."
+              "Earth's “Fear Level“ starts at 8. The number of Allies in the Lair is always equal to the Fear Level."
             ],
             [
               { bold: "Twist" },
@@ -514,7 +514,7 @@ export default {
             ],
             [
               { bold: "Twist" },
-              ": Stack this Twist above the Rooftops as StarkTech Defenses. If there is an Adversary on the Rooftops, choose 3 Allies from the Lair and KO them."
+              ": Stack this Twist above the Rooftops as “StarkTech Defenses.“ If there is an Adversary on the Rooftops, choose 3 Allies from the Lair & KO them."
             ],
             [
               { bold: "Special Rules" },

@@ -1939,7 +1939,8 @@ export default {
             ],
             [
               { bold: "Twist" },
-              ": Stack this Twist next to the Scheme. Then, for each Twist in that stack, put a S.H.I.E.L.D. Officer next to the Mastermind as a 3",
+              ": Stack this Twist next to the Scheme. Then, for each Twist in that stack, put a S.H.I.E.L.D. Officer next to the Mastermind as a ",
+              { bold: "3" },
               { icon: 1 },
               " Villain with ",
               { keyword: 29 },
@@ -1996,7 +1997,7 @@ export default {
             ],
             [
               { bold: "Other Twists" },
-              ": If there's a Villain in that fortified city space, KO a bystander."
+              ": If there's a Villain in that fortified city space, KO a Bystander."
             ],
             [
               { bold: "Evil Wins" },

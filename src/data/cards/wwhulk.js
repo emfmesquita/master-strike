@@ -2530,9 +2530,7 @@ export default {
           abilities: [
             [
               { bold: "Setup" },
-              ": 9 Twists. Put ",
-              { rule: 3, text: "three additional Masterminds" },
-              " out of play, “Lurking.“ Each of the four Masterminds has two random Tactics."
+              ": 9 Twists. Put three additional Masterminds out of play, “Lurking.“ Each of the four Masterminds has two random Tactics."
             ],
             [
               { bold: "Special Rules" },

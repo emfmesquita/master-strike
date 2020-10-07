@@ -1540,7 +1540,7 @@ export default {
     },
     {
       id: 49,
-      name: "Deadlands Hordes Charge the Wall",
+      name: "Enthrone the Barons of Battleworld",
       cards: [
         {
           dense: true,
@@ -1554,7 +1554,7 @@ export default {
               ": The Villain in the city or Escape Pile with the highest printed ",
               { icon: 1 },
               " ascends to become a ",
-              { rule: 3, text: "second Mastermind" },
+              { rule: 3, text: "new Mastermind" },
               ". It gets ",
               { bold: "+2" },
               { icon: 1 },
@@ -1573,7 +1573,7 @@ export default {
             ],
             [
               { bold: "Evil Wins" },
-              ": When there are six Masterminds."
+              ": When there are 6 Masterminds."
             ],
           ]
         },
@@ -1661,6 +1661,7 @@ export default {
       name: "Mark of Khonshu, The",
       cards: [
         {
+          dense: true,
           abilities: [
             [
               { bold: "Setup" },
@@ -1680,7 +1681,9 @@ export default {
             ],
             [
               { bold: "Evil Wins" },
-              ": When 7 Khonshu Guardians escape."
+              ": When 7 Khonshu Guardians escape ",
+              { italic: "(includes both Villain and Henchman)" },
+              "."
             ],
           ]
         },

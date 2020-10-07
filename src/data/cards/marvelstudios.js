@@ -218,7 +218,7 @@ export default {
             ],
             [
               { bold: "Twist" },
-              ": The highest-cost Hero from the HQ moves into the Sewers as an “Enslaved“ Villain, as above."
+              ": The highest-cost Hero from the HQ moves into the Sewers as an “Enslaved“ Villain as above."
             ],
             [
               { bold: "Evil Wins" },

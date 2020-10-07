@@ -588,7 +588,8 @@ export default {
             ],
             [
               { bold: "Special Rules" },
-              ": During your turn, any number of times, you may spend 2",
+              ": During your turn, any number of times, you may spend ",
+              { bold: "2" },
               { icon: 2 },
               " to gain one of the Mastermind's ",
               { rule: 1 },

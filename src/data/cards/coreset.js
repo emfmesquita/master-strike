@@ -351,6 +351,7 @@ export default {
           rarity: 3,
           cost: 7,
           attack: "5",
+          recruit: "0+",
           abilities: [
             [
               "Whenever you defeat a Villain or Mastermind this turn, you get ",

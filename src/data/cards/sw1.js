@@ -1417,13 +1417,19 @@ export default {
           abilities: [
             [
               { bold: "Setup" },
-              ": 8 Twists. Add 10 Sidekicks to the Villain Deck."
+              ": 8 Twists. Add 10 ",
+              { rule: 11 },
+              " to the Villain Deck."
             ],
             [
               { bold: "Special Rules" },
-              ": Sidekicks in the Villain Deck and city are Villains. Their ",
+              ": ",
+              { rule: 11 },
+              " in the Villain Deck and city are Villains. Their ",
               { icon: 1 },
-              " is 2 plus the number of Twists stacked next to this Scheme. When you defeat a Sidekick, gain it to the top of your deck."
+              " is 2 plus the number of Twists stacked next to this Scheme. When you defeat a ",
+              { rule: 11, text: "Sidekick"},
+              ", gain it to the top of your deck."
             ],
             [
               { bold: "Twists 1-7" },
@@ -1498,11 +1504,11 @@ export default {
               " is still in play, it gains another Mastermind Tactic."
             ],
             [
-              { bold: "Twist 7" },
+              { bold: "Twist 5-6" },
               ": Each Mastermind captures a Bystander."
             ],
             [
-              { bold: "Evil Wins" },
+              { bold: "Twist 7" },
               ": Evil Wins!"
             ],
           ]
@@ -1584,7 +1590,7 @@ export default {
             [
               { bold: "Special Rules" },
               ": When a player recruits a Hero with a Wound next to it, that player can either gain that Wound or pay ",
-              { bold: "+1" },
+              { bold: "1" },
               { icon: 2 },
               " to return that Wound to the Wound Stack."
             ],

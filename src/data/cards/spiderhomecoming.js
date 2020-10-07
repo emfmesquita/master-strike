@@ -599,7 +599,7 @@ export default {
           abilities: [
             [
               { bold: "Setup" },
-              ": 7 Twists. Add an extra Henchmen Group of 10 cards as Smugglers."
+              ": 7 Twists. Add an extra Henchmen Group of 10 cards as “Smugglers.“"
             ],
             [
               { bold: "Special Rules" },

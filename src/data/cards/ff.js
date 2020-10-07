@@ -665,10 +665,10 @@ export default {
               { bold: "Special Rules" },
               ": To fight the Mastermind, you must also spend ",
               { bold: "1" },
-              { icon: 1 },
+              { icon: 2 },
               " or ",
               { bold: "1" },
-              { icon: 2 },
+              { icon: 1 },
               " for each Force Field next to them."
             ],
             [

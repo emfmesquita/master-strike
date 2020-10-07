@@ -526,7 +526,8 @@ export default {
             ],
             [
               { bold: "Special Rules" },
-              ": Whenever you defeat a Villain, you may pay 1 ",
+              ": Whenever you defeat a Villain, you may pay ",
+              { bold: "1" },
               { icon: 1 },
               " extra to ",
               { keyword: 32 },

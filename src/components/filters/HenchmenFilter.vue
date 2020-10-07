@@ -1,5 +1,5 @@
 <template>
-  <v-autocomplete
+  <v-select
     :value="value"
     :items="henchmen"
     multiple
@@ -14,7 +14,7 @@
         {{item.label}}
       </v-chip>
     </template>
-  </v-autocomplete>
+  </v-select>
 </template>
 
 <script>

@@ -1862,7 +1862,8 @@ export default {
             ],
             [
               { bold: "Special Rules" },
-              ": Cards are played from the Villain Deck face-down. You may spend 1",
+              ": Cards are played from the Villain Deck face-down. You may spend ",
+              { bold: "1" },
               { icon: 1 },
               " to “scan“ a face-down card in the city, turning it face-up and doing any Ambush effect, Twist, ",
               { rule: 5, text: "Trap" },
@@ -1967,11 +1968,11 @@ export default {
             [
               { bold: "Setup" },
               ": 9 Twists. Include 10 Sentinels as extra Henchmen ",
-              { italic: "(or substitute another Henchman group.)" }
+              { italic: "(or substitute another Henchman group)." }
             ],
             [
               { bold: "Twist" },
-              ": tack this Twist next to the Scheme as a “Sentinel Upgrade.“ Shuffle all Sentinels from players' Victory Piles into the Villain Deck. Play another card from the Villain Deck."
+              ": Stack this Twist next to the Scheme as a “Sentinel Upgrade.“ Shuffle all Sentinels from players' Victory Piles into the Villain Deck. Play another card from the Villain Deck."
             ],
             [
               { bold: "Special Rules" },
@@ -2022,7 +2023,8 @@ export default {
             ],
             [
               { bold: "Twist" },
-              ": Stack this Twist next to the Scheme as a “Deathtrap.“ This turn, you may pay 1",
+              ": Stack this Twist next to the Scheme as a “Deathtrap.“ This turn, you may pay ",
+              { bold: "1" },
               { icon: 1 },
               " for each Deathtrap stacked there. If you don't, each player gains a Wound."
             ],
@@ -2047,8 +2049,9 @@ export default {
             [
               { bold: "Twist" },
               ": ",
-              { bold: "Trap! By End of Turn" },
-              ": You may pay 2",
+              { rule: 5, text: "Trap! By End of Turn", keywordStyle: true},
+              ": You may pay ",
+              { bold: "2" },
               { icon: 2 },
               ". If you do, shuffle this Twist back into the Villain Deck, then play a card from the Villain Deck. ",
               { bold: "Or Suffer" },

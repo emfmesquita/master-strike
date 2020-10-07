@@ -686,7 +686,7 @@ export default {
               { bold: "+1" },
               { icon: 1 },
               ". To recruit a Hero in an HQ space with Eternal Darkness, you must pay an extra ",
-              { bold: "+1" },
+              { bold: "1" },
               { icon: 2 },
               "."
             ],

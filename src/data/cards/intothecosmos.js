@@ -1215,7 +1215,9 @@ export default {
             ],
             [
               { bold: "Twist 1-5" },
-              ": Each player must reveal their hand and discard a Nova Centurion. Each player that discarded this way gains a Shard. Each player that didn't discard this way must KO a card from the S.H.I.E.L.D. Officer Stack."
+              ": Each player must reveal their hand and discard a Nova Centurion. Each player that discarded this way gains a ",
+              { rule: 1, text: "Shard" },
+              ". Each player that didn't discard this way must KO a card from the S.H.I.E.L.D. Officer Stack."
             ],
             [
               { bold: "Twist 6-9" },

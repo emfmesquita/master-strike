@@ -664,7 +664,7 @@ export default {
             ],
             [
               { bold: "Twist" },
-              ": You face a “Sanity Test“: Either keep this Twist in front of you as a “Psychotic Break“, or discard a card and pass this Twist to the PLayer on your left and that player faces a Sanity Test."
+              ": You face a “Sanity Test“: Either keep this Twist in front of you as a “Psychotic Break“, or discard a card and pass this Twist to the player on your left and that player faces a Sanity Test."
             ],
             [
               { bold: "Special Rules" },

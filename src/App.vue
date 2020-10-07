@@ -55,7 +55,7 @@ export default {
 
 <style lang="scss">
   .scroll-top {
-    margin-bottom: 48px;
+    margin-bottom: 6px;
   }
 
   .xlzoom {
