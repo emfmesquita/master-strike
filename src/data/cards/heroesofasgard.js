@@ -36,7 +36,6 @@ export default {
           hc: 3,
           rarity: 2,
           cost: 4,
-          dense: true,
           abilities: [
             [
               "You cannot throw Stormbreaker unless you are ",
@@ -376,7 +375,6 @@ export default {
         {
           name: "Hela, Goddess of Death",
           vAttack: "10+",
-          dense: true,
           abilities: [
             { keyword: 49, text: "Bridge Conqueror 5, Streets Conqueror 5" },
             [
@@ -398,7 +396,6 @@ export default {
           name: "Epic Hela, Goddess of Death",
           vAttack: "12+",
           epic: true,
-          dense: true,
           abilities: [
             { keyword: 49, text: "Bridge Conqueror 6, Streets Conqueror 6, Rooftops Conqueror 6" },
             [
@@ -491,7 +488,6 @@ export default {
       cards: [
         {
           name: "Malekith the Accursed",
-          dense: true,
           abilities: [
             [
               { bold: "Always Leads" },
@@ -519,7 +515,6 @@ export default {
           name: "Epic Malekith the Accursed",
           vAttack: "10",
           epic: true,
-          dense: true,
           abilities: [
             [
               { bold: "Always Leads" },
@@ -550,7 +545,6 @@ export default {
           vp: -1,
           overrideType: 4,
           overrideSubType: 3,
-          dense: true,
           abilities: [
             [
               { bold: "Fight" },
@@ -574,7 +568,6 @@ export default {
           vp: -1,
           overrideType: 4,
           overrideSubType: 3,
-          dense: true,
           abilities: [
             [
               { bold: "Fight" },
@@ -598,7 +591,6 @@ export default {
           vp: -1,
           overrideType: 4,
           overrideSubType: 3,
-          dense: true,
           abilities: [
             [
               { bold: "Fight" },
@@ -737,7 +729,6 @@ export default {
       name: "Ragnarok, Twilight of the Gods",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },

@@ -5,7 +5,7 @@ export default [
   {
     points: [
       [
-        "Some Heroes and Villains say things like “Microscopic Size-Changing",
+        "Some Heroes and Villains say things like “Microscopic Size-Changing ",
         { hc: 5 },
         { hc: 5 },
         { hc: 5 },

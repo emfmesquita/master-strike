@@ -13,8 +13,7 @@
     <template v-slot:thumb-label="{ value }">
       <AbilityIcon 
         class="absolute-icon" 
-        :class="thumbClass(value)" 
-        noAdjust 
+        :class="thumbClass(value)"
         :icon="icon" 
         :width="width(value)" 
         :iconSrcOverride="value < 0 ? 'block' : null"

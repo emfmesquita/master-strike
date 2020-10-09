@@ -536,7 +536,6 @@ export default {
       name: "Traitor, The",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },

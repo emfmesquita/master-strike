@@ -92,9 +92,13 @@
             <v-col cols="12">
               <CardGroup :group="mm">
                 <template v-slot:default="{ card }">
-                  <HeroCard v-if="card.overrideType === 1" :card="card" />
-                  <VillainCard v-if="card.overrideType === 4" :card="card" />
-                  <MastermindCard v-else :card="card"/>
+                  <CardWrapper>
+                    <template v-slot:default="{ contentHeight }">
+                      <HeroCard v-if="card.overrideType === 1" :card="card" :contentHeight="contentHeight" />
+                      <VillainCard v-else-if="card.overrideType === 4" :card="card" :contentHeight="contentHeight" />
+                      <MastermindCard v-else :card="card" :contentHeight="contentHeight" />
+                    </template>
+                  </CardWrapper>
                 </template>
               </CardGroup>
             </v-col>
@@ -109,6 +113,7 @@
 
 <script>
 import CardGroup from "../components/shared/CardGroup.vue";
+import CardWrapper from "../components/cards/CardWrapper.vue";
 import HeroCard from "../components/cards/HeroCard.vue";
 import KeywordFilter from "../components/filters/KeywordFilter.vue";
 import MastermindCard from "../components/cards/MastermindCard.vue";
@@ -160,6 +165,7 @@ export default {
   name: "Masterminds",
   components: { 
     CardGroup,
+    CardWrapper,
     HeroCard,
     KeywordFilter, 
     MastermindCard, 

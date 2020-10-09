@@ -31,12 +31,8 @@ export default {
           abilities: [
             [
               "If you drew any extra cards this turn, you get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+1" },
+              { icon: 1 },
               "."
             ]
           ]
@@ -50,13 +46,9 @@ export default {
           attack: "2+",
           abilities: [
             [
-              {
-                hc: 3
-              },
+              { hc: 3 },
               ": ",
-              {
-                keyword: 59
-              }
+              { keyword: 59 }
             ]
           ]
         },
@@ -69,18 +61,12 @@ export default {
           abilities: [
             [
               "Choose one: Draw three cards or ",
-              {
-                keyword: 59
-              },
+              { keyword: 59 },
               "."
             ],
             [
-              {
-                hc: 4
-              },
-              {
-                hc: 4
-              },
+              { hc: 4 },
+              { hc: 4 },
               ": Instead, do both."
             ]
           ]
@@ -101,9 +87,7 @@ export default {
           attack: "1",
           abilities: [
             [
-              {
-                hc: 5
-              },
+              { hc: 5 },
               ": Draw a card."
             ]
           ]
@@ -117,19 +101,12 @@ export default {
           recruit: "0+",
           abilities: [
             [
-              "Choose",
-              {
-                icon: 2
-              },
-              "or",
-              {
-                icon: 1
-              },
+              "Choose ",
+              { icon: 2 },
+              " or ",
+              { icon: 1 },
               ". Then ",
-              {
-                keyword: 57,
-                text: "Hyperspeed 4"
-              },
+              { keyword: 57, text: "Hyperspeed 4" },
               " for that icon."
             ]
           ]
@@ -144,28 +121,16 @@ export default {
           recruit: "0+",
           abilities: [
             [
-              "If the most recent Hero you played this turn has a",
-              {
-                icon: 2
-              },
-              "icon, you get ",
-              {
-                bold: "+3"
-              },
-              {
-                icon: 2
-              },
-              ". If it has an",
-              {
-                icon: 1
-              },
-              "icon, you get ",
-              {
-                bold: "+3"
-              },
-              {
-                icon: 1
-              },
+              "If the most recent Hero you played this turn has a ",
+              { icon: 2 },
+              " icon, you get ",
+              { bold: "+3" },
+              { icon: 2 },
+              ". If it has an ",
+              { icon: 1 },
+              " icon, you get ",
+              { bold: "+3" },
+              { icon: 1 },
               ". ",
               { italic: "(If both, you get both.)" }
             ]
@@ -182,42 +147,24 @@ export default {
             [
               "Whenever you ",
               { keyword: 57 },
-              " this turn, you get both",
-              {
-                icon: 2
-              },
-              "from",
-              {
-                icon: 2
-              },
-              "icons and",
-              {
-                icon: 1
-              },
-              "from",
-              {
-                icon: 1
-              },
-              "icons."
+              " this turn, you get both ",
+              { icon: 2 },
+              " from ",
+              { icon: 2 },
+              " icons and ",
+              { icon: 1 },
+              " from ",
+              { icon: 1 },
+              " icons."
             ],
             [
-              {
-                keyword: 57,
-                text: "Hyperspeed 7"
-              }
+              { keyword: 57, text: "Hyperspeed 7" }
             ],
             [
-              {
-                hc: 5
-              },
-              {
-                hc: 5
-              },
+              { hc: 5 },
+              { hc: 5 },
               ": Instead, ",
-              {
-                keyword: 57,
-                text: "Hyperspeed 9"
-              },
+              { keyword: 57, text: "Hyperspeed 9" },
               "."
             ]
           ]
@@ -237,16 +184,10 @@ export default {
           attack: "1",
           abilities: [
             [
-              {
-                hc: 2
-              },
+              { hc: 2 },
               ": Choose one - Draw a card or you get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+1" },
+              { icon: 1 },
               "."
             ]
           ]
@@ -262,16 +203,10 @@ export default {
               "Reveal the top card of any deck. If it's not a Scheme Twist, you may put it on the bottom of that deck."
             ],
             [
-              {
-                hc: 2
-              },
+              { hc: 2 },
               ": Choose one - Draw a card or you get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 2
-              },
+              { bold: "+1" },
+              { icon: 2 },
               "."
             ]
           ]
@@ -286,18 +221,12 @@ export default {
           abilities: [
             [
               "Guess Villain, Bystander, Strike, or Twist. Then reveal the top card of the Villain Deck. If you guessed right, you get ",
-              {
-                bold: "+2"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+2" },
+              { icon: 1 },
               "."
             ],
             [
-              {
-                team: 1
-              },
+              { team: 1 },
               ": If it was a Villain, you may fight it this turn."
             ]
           ]
@@ -343,14 +272,9 @@ export default {
               "To play this, you must discard a card."
             ],
             [
-              {
-                hc: 3
-              },
+              { hc: 3 },
               ": ",
-              {
-                keyword: 57,
-                text: "Hyperspeed 3"
-              }
+              { keyword: 57, text: "Hyperspeed 3" }
             ]
           ]
 
@@ -364,13 +288,9 @@ export default {
           abilities: [
             [
               "You get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 1
-              },
-              "for each card you discarded from your hand this turn."
+              { bold: "+1" },
+              { icon: 1 },
+              " for each card you discarded from your hand this turn."
             ]
           ]
         },
@@ -382,16 +302,10 @@ export default {
           attack: "6+",
           abilities: [
             [
-              {
-                team: 1
-              },
-              {
-                team: 1
-              },
+              { team: 1 },
+              { team: 1 },
               ": ",
-              {
-                keyword: 59
-              }
+              { keyword: 59 }
             ]
           ]
         }
@@ -411,33 +325,19 @@ export default {
           attack: "0+",
           abilities: [
             [
-              {
-                keyword: 57,
-                text: "Hyperspeed 3"
-              },
+              { keyword: 57, text: "Hyperspeed 3" },
               " for",
-              {
-                icon: 2
-              },
+              { icon: 2 },
               "."
             ],
             [
-              {
-                hc: 2
-              },
+              { hc: 2 },
               ": Instead, ",
-              {
-                keyword: 57,
-                text: "Hyperspeed 3"
-              },
-              " for",
-              {
-                icon: 2
-              },
-              "and",
-              {
-                icon: 1
-              },
+              { keyword: 57, text: "Hyperspeed 3" },
+              " for ",
+              { icon: 2 },
+              " and ",
+              { icon: 1 },
               "."
             ]
           ]
@@ -450,14 +350,9 @@ export default {
           attack: "2+",
           abilities: [
             [
-              {
-                hc: 4
-              },
+              { hc: 4 },
               ": ",
-              {
-                keyword: 57,
-                text: "Hyperspeed 4"
-              }
+              { keyword: 57, text: "Hyperspeed 4" }
             ]
           ]
 
@@ -474,9 +369,7 @@ export default {
               "Look at the top card of your deck. Discard it or put it back."
             ],
             [
-              {
-                hc: 2
-              },
+              { hc: 2 },
               ": You may KO the card you discarded this way."
             ]
           ]
@@ -489,25 +382,15 @@ export default {
           attack: "0+",
           abilities: [
             [
-              {
-                keyword: 57
-              },
+              { keyword: 57 },
               " your entire remaining deck. ",
               { italic: "(Don't reshuffle.)" }
             ],
             [
-              {
-                team: 1
-              },
-              {
-                team: 1
-              },
-              {
-                team: 1
-              },
-              {
-                team: 1
-              },
+              { team: 1 },
+              { team: 1 },
+              { team: 1 },
+              { team: 1 },
               ": Before you do that, put your discard pile on top of your deck."
             ]
           ]
@@ -529,13 +412,9 @@ export default {
             [
               "As you play this card, you may choose a color and/or a team icon. This card is that color and team icon this turn. ",
               { italic: "(instead of " },
-              {
-                hc: 1
-              },
-              { italic: "and" },
-              {
-                team: 1
-              },
+              { hc: 1 },
+              { italic: " and " },
+              { team: 1 },
               { italic: ")" }
             ]
           ]
@@ -548,15 +427,10 @@ export default {
           attack: "0+",
           abilities: [
             [
-              {
-                keyword: 57,
-                text: "Hyperspeed 4"
-              }
+              { keyword: 57, text: "Hyperspeed 4" }
             ],
             [
-              {
-                hc: 3
-              },
+              { hc: 3 },
               ": Draw a card."
             ]
           ]
@@ -570,13 +444,9 @@ export default {
           attack: "2+",
           abilities: [
             [
-              {
-                hc: 2
-              },
+              { hc: 2 },
               ": ",
-              {
-                keyword: 58
-              }
+              { keyword: 58 }
             ]
           ]
         },
@@ -588,18 +458,12 @@ export default {
           attack: "3+",
           abilities: [
             [
-              {
-                keyword: 58
-              }
+              { keyword: 58 }
             ],
             [
-              {
-                hc: 4
-              },
+              { hc: 4 },
               ": ",
-              {
-                keyword: 58
-              },
+              { keyword: 58 },
               " again."
             ]
           ]
@@ -619,9 +483,7 @@ export default {
           attack: "1",
           abilities: [
             [
-              {
-                hc: 3
-              },
+              { hc: 3 },
               ": Discard the top card of any player's deck. You may play a copy of that card this turn."
             ]
           ]
@@ -638,13 +500,9 @@ export default {
               "Reveal the top card of your deck. Discard it or put it back."
             ],
             [
-              {
-                hc: 1
-              },
+              { hc: 1 },
               ": ",
-              {
-                keyword: 58
-              }
+              { keyword: 58 }
             ]
           ]
 
@@ -671,19 +529,11 @@ export default {
               "Reveal the top three cards of the Hero Deck. Put one of them in your hand. Put the rest on the top or bottom of the Hero Deck in any order."
             ],
             [
-              {
-                hc: 1
-              },
-              {
-                hc: 1
-              },
-              {
-                hc: 1
-              },
+              { hc: 1 },
+              { hc: 1 },
+              { hc: 1 },
               ": ",
-              {
-                keyword: 58
-              }
+              { keyword: 58 }
             ]
           ]
         }
@@ -702,20 +552,12 @@ export default {
           attack: "0+",
           abilities: [
             [
-              {
-                keyword: 57,
-                text: "Hyperspeed 2"
-              }
+              { keyword: 57, text: "Hyperspeed 2" }
             ],
             [
-              {
-                hc: 2
-              },
+              { hc: 2 },
               ": Instead, ",
-              {
-                keyword: 57,
-                text: "Hyperspeed 6"
-              }
+              { keyword: 57, text: "Hyperspeed 6" }
             ]
           ]
         },
@@ -750,7 +592,7 @@ export default {
               { hc: 1 },
               { italic: "," },
               { hc: 5 },
-              { italic: "or " },
+              { italic: " or " },
               { hc: 3 },
               { italic: ")" },
               " Reveal the top card of your deck. If it's the Hero Class you named, draw it. Otherwise, put it back on the top or bottom."
@@ -768,9 +610,7 @@ export default {
               "Look at the top six cards of your deck, draw two of them, and put the rest back on the top or bottom in any order."
             ],
             [
-              {
-                hc: 1
-              },
+              { hc: 1 },
               ": ",
               {
                 keyword: 57,
@@ -794,9 +634,7 @@ export default {
           attack: "2",
           abilities: [
             [
-              {
-                hc: 5
-              },
+              { hc: 5 },
               ": You may fight a Henchman from your Victory Pile this turn. If you do, KO it and rescue a Bystander. ",
               { italic: "(Do that Henchman's Fight effect too.)" },
             ]
@@ -812,12 +650,8 @@ export default {
           abilities: [
             [
               "Whenever you defeat a Villain this turn, you get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 2
-              },
+              { bold: "+1" },
+              { icon: 2 },
               "."
             ]
           ]
@@ -831,15 +665,10 @@ export default {
           attack: "0+",
           abilities: [
             [
-              {
-                keyword: 57,
-                text: "Hyperspeed 5"
-              }
+              { keyword: 57, text: "Hyperspeed 5" }
             ],
             [
-              {
-                hc: 3
-              },
+              { hc: 3 },
               ": You may KO a card from your discard pile."
             ]
           ]
@@ -900,7 +729,6 @@ export default {
           name: "Epic Grim Reaper",
           vAttack: "9+",
           epic: true,
-          dense: true,
           abilities: [
             [
               "Grim Reaper gets ",
@@ -949,7 +777,6 @@ export default {
         {
           name: "Cult of Skulls",
           tactic: true,
-          dense: true,
           overrideType: 4,
           overrideSubType: 2,
           abilities: [
@@ -968,7 +795,6 @@ export default {
         {
           name: "Maze of Bones",
           tactic: true,
-          dense: true,
           overrideType: 4,
           overrideSubType: 2,
           abilities: [
@@ -987,7 +813,6 @@ export default {
         {
           name: "Prison of Coffins",
           tactic: true,
-          dense: true,
           overrideType: 4,
           overrideSubType: 2,
           abilities: [
@@ -1112,7 +937,6 @@ export default {
         {
           name: "Mandarin",
           vAttackAsterisk: true,
-          dense: true,
           abilities: [
             [
               "All Mandarin's Rings get ",
@@ -1145,7 +969,6 @@ export default {
           vAttack: "26",
           vAttackAsterisk: true,
           epic: true,
-          dense: true,
           abilities: [
             [
               "All Mandarin's Rings get ",
@@ -1187,7 +1010,6 @@ export default {
           name: "Dragon of Heaven Spaceship",
           vAttack: "9",
           tactic: true,
-          dense: true,
           overrideType: 4,
           overrideSubType: 2,
           abilities: [
@@ -1393,7 +1215,6 @@ export default {
         {
           name: "Tsunami Crushes the Coast",
           transformed: true,
-          dense: true,
           abilities: [
             [
               { bold: "Special Rules" },
@@ -1419,7 +1240,6 @@ export default {
       cards: [
         {
           name: "House of M",
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },
@@ -1485,7 +1305,6 @@ export default {
       cards: [
         {
           name: "Secret HYDRA Corruption",
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },
@@ -1511,7 +1330,6 @@ export default {
         {
           name: "Open HYDRA Revolution",
           transformed: true,
-          dense: true,
           abilities: [
             [
               { bold: "Special Rules" },

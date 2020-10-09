@@ -16,6 +16,7 @@ export default {
           abilities: [
             [
               { keyword: 26 },
+              " ",
               { hc: 5 }
             ],
             "Draw a card."
@@ -31,6 +32,7 @@ export default {
           abilities: [
             [
               { keyword: 50 },
+              " ",
               { hc: 5 },
               { hc: 5 },
               { hc: 5 }
@@ -51,6 +53,7 @@ export default {
           abilities: [
             [
               { keyword: 26 },
+              " ",
               { hc: 5 }
             ],
             [
@@ -71,6 +74,7 @@ export default {
           abilities: [
             [
               { keyword: 50 },
+              " ",
               { hc: 5 },
               { hc: 5 },
               { hc: 5 },
@@ -80,6 +84,7 @@ export default {
             [
               "A hero in the HQ with no Size-Changing abilities gain ",
               { keyword: 26 },
+              " ",
               { hc: 5 },
               " this turn."
             ]
@@ -197,6 +202,7 @@ export default {
           abilities: [
             [
               { keyword: 26 },
+              " ",
               { hc: 5 }
             ],
             "Draw two cards."
@@ -234,6 +240,7 @@ export default {
           abilities: [
             [
               { keyword: 50 },
+              " ",
               { hc: 1 },
               { hc: 1 }
             ],
@@ -256,6 +263,7 @@ export default {
           abilities: [
             [
               { keyword: 26 },
+              " ",
               { hc: 1 }
             ],
             [
@@ -274,6 +282,7 @@ export default {
           abilities: [
             [
               { keyword: 26 },
+              " ",
               { hc: 1 }
             ],
             [
@@ -294,6 +303,7 @@ export default {
           abilities: [
             [
               { keyword: 50 },
+              " ",
               { hc: 1 },
               { hc: 1 },
               { hc: 1 },
@@ -386,6 +396,7 @@ export default {
           abilities: [
             [
               { keyword: 26 },
+              " ",
               { hc: 4 }
             ],
             [

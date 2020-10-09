@@ -70,7 +70,6 @@ export default {
           cost: 7,
           attack: "0+",
           recruit: "0+",
-          dense: true,
           abilities: [
             { keyword: 7 },
             [
@@ -1385,7 +1384,6 @@ export default {
       cards: [
         {
           name: "Spider-Queen",
-          dense: true,
           abilities: [
             [
               "Spider-Queen gets ",
@@ -1543,7 +1541,6 @@ export default {
       name: "Enthrone the Barons of Battleworld",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },
@@ -1614,7 +1611,6 @@ export default {
       name: "God-Emperor of Battleworld, The",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },
@@ -1661,7 +1657,6 @@ export default {
       name: "Mark of Khonshu, The",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },
@@ -1746,7 +1741,6 @@ export default {
       name: "Sinister Ambitions",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },

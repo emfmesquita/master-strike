@@ -62,7 +62,6 @@ export default {
           hc: 3,
           rarity: 3,
           cost: 8,
-          dense: true,
           abilities: [
             [
               "Gain 4 ",
@@ -724,7 +723,6 @@ export default {
         {
           name: "The Beyonder",
           vAttackAsterisk: true,
-          dense: true,
           abilities: [
             [
               { keyword: 6 },
@@ -750,7 +748,6 @@ export default {
           vAttack: "24",
           vAttackAsterisk: true,
           epic: true,
-          dense: true,
           abilities: [
             [
               { keyword: 6 },
@@ -809,7 +806,6 @@ export default {
         {
           name: "Create the Secret Wars",
           tactic: true,
-          dense: true,
           abilities: [
             [
               { bold: "Fight" },
@@ -840,7 +836,6 @@ export default {
       cards: [
         {
           name: "The Grandmaster",
-          dense: true,
           abilities: [
             [
               { bold: "Always Leads" },
@@ -860,7 +855,6 @@ export default {
           name: "Epic Grandmaster",
           vAttack: "11",
           epic: true,
-          dense: true,
           abilities: [
             [
               "Evil adds ",
@@ -886,7 +880,6 @@ export default {
         {
           name: "Deal With Death",
           tactic: true,
-          dense: true,
           abilities: [
             [
               { bold: "Fight" },
@@ -903,7 +896,6 @@ export default {
         {
           name: "Galactic Marathon",
           tactic: true,
-          dense: true,
           abilities: [
             [
               { bold: "Fight" },
@@ -920,7 +912,6 @@ export default {
         {
           name: "Cheat Against Thanos",
           tactic: true,
-          dense: true,
           abilities: [
             [
               { bold: "Fight" },
@@ -939,7 +930,6 @@ export default {
         {
           name: "Match Offenders vs. Defenders",
           tactic: true,
-          dense: true,
           abilities: [
             [
               { bold: "Fight" },
@@ -964,7 +954,6 @@ export default {
         {
           name: "Magus",
           vAttack: "9+",
-          dense: true,
           abilities: [
             [
               "Magus gets ",
@@ -995,7 +984,6 @@ export default {
           name: "Epic Magus",
           vAttack: "11+",
           epic: true,
-          dense: true,
           abilities: [
             [
               "Magus gets ",
@@ -1143,7 +1131,6 @@ export default {
       name: "Contest of Champions, The",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },
@@ -1176,7 +1163,6 @@ export default {
       name: "Turn the Soul of Adam Warlock",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },
@@ -1203,7 +1189,6 @@ export default {
       name: "Destroy the Nova Corps",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },

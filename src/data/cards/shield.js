@@ -66,7 +66,6 @@ export default {
           rarity: 3,
           cost: 8,
           attack: "4+",
-          dense: true,
           abilities: [
             [
               "During any player's turn, when another ",
@@ -314,7 +313,6 @@ export default {
           rarity: 2,
           cost: 6,
           attack: "2+",
-          dense: true,
           abilities: [
             [
               "Whenever you fight a Villain this turn, if its ",
@@ -342,7 +340,6 @@ export default {
           rarity: 3,
           cost: 7,
           attack: "0+",
-          dense: true,
           abilities: [
             [
               "You may send a ",
@@ -374,7 +371,6 @@ export default {
           name: "Red Skull",
           tactic: true,
           vAttack: "7+",
-          dense: true,
           abilities: [
             [
               "Red Skull gets ",
@@ -412,7 +408,6 @@ export default {
           name: "Viper",
           tactic: true,
           vAttack: "9+",
-          dense: true,
           abilities: [
             [
               "Viper gets ",
@@ -438,7 +433,6 @@ export default {
           name: "Arnim Zola",
           tactic: true,
           vAttack: "6+",
-          dense: true,
           abilities: [
             [
               "Arnim Zola gets ",
@@ -471,7 +465,6 @@ export default {
           tactic: true,
           vAttack: "16",
           vAttackAsterisk: true,
-          dense: true,
           abilities: [
             [
               "Baron Helmut Zemo gets ",
@@ -504,7 +497,6 @@ export default {
           name: "Black Widow's Bite",
           tactic: true,
           vAttack: "8",
-          dense: true,
           abilities: [
             [
               { bold: "Always Leads" },

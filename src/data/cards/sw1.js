@@ -991,7 +991,6 @@ export default {
         {
           name: "Madelyne Pryor, Goblin Queen",
           vAttackAsterisk: true,
-          dense: true,
           abilities: [
             [
               "Bystanders captured by Madelyne are “Demon Goblin“ Villains with ",
@@ -1063,7 +1062,6 @@ export default {
         {
           name: "Nimrod, Super Sentinel",
           vAttackAsterisk: true,
-          dense: true,
           abilities: [
             [
               "You can't fight Nimrod unless you made at least ",
@@ -1228,7 +1226,6 @@ export default {
         {
           name: "Zombie Green Goblin",
           vAttack: "11+",
-          dense: true,
           abilities: [
             [
               "Zombie Green Goblin gets ",
@@ -1413,7 +1410,6 @@ export default {
       name: "Corrupt the Next Generation of Heroes",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },
@@ -1520,7 +1516,6 @@ export default {
       name: "Fragmented Realities",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },

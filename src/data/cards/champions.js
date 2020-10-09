@@ -439,7 +439,6 @@ export default {
           vAttack: "24",
           epic: true,
           vAttackAsterisk: true,
-          dense: true,
           abilities: [
             [
               { keyword: 26 },

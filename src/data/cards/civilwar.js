@@ -70,7 +70,6 @@ export default {
           rarity: 3,
           cost: 7,
           attack: "5",
-          dense: true,
           abilities: [
             [
               "Whenever you play a ",
@@ -1640,7 +1639,6 @@ export default {
         {
           name: "Maria Hill, Director of S.H.I.E.L.D.",
           vAttackAsterisk: true,
-          dense: true,
           abilities: [
             [
               { keyword: 29, text: "Double S.H.I.E.L.D. Clearance" },

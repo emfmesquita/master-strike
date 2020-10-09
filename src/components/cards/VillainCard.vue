@@ -1,31 +1,33 @@
 <template>
-  <v-card class="mx-auto villain-card" :class="classes" raised :style="{ height: height || '280px' }">
-    <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
-    <div :class="subTitleClasses">
-      <shared-rule v-if="card.subType === 1" :rule="{ rule: 5, text: card.subTitle }" />
-      <shared-rule v-else-if="card.subType === 2" :rule="{ rule: 6, text: card.subTitle }" />
-      <shared-rule v-else-if="card.subType === 3" :rule="{ rule: 9, text: card.subTitle }" />
-      <template v-else>{{ card.subTitle }}</template>
+  <v-card class="mx-auto villain-card" :class="classes" raised :style="cardHeightStyle">
+    <div ref="cardHeader">
+      <div class="text-center font-weight-black card-title" :class="titleClasses">{{ card.name }}</div>
+      <div :class="subTitleClasses">
+        <shared-rule v-if="card.subType === 1" :rule="{ rule: 5, text: card.subTitle }" />
+        <shared-rule v-else-if="card.subType === 2" :rule="{ rule: 6, text: card.subTitle }" />
+        <shared-rule v-else-if="card.subType === 3" :rule="{ rule: 9, text: card.subTitle }" />
+        <template v-else>{{ card.subTitle }}</template>
+      </div>
+    </div>
+
+    <div v-if="card.abilities" class="card-abilities" :class="{ dense }" ref="cardAbilities">
+      <div v-for="(ability, idx) in card.abilities" :key="idx">
+        <shared-description-group :description="ability" :dense="dense"/>
+      </div>
     </div>
 
     <SetIcon v-if="card.set" class="set-icon" :set="card.set" width="24px" />
     <SetIcon v-if="card.set2" class="set-icon2" :set="card.set2" width="24px" />
 
-    <div class="card-abilities" :class="{ dense: card.dense }" v-if="card.abilities">
-      <div v-for="(ability, idx) in card.abilities" :key="idx">
-        <shared-description-group :description="ability" :dense="card.dense"/>
-      </div>
-    </div>
-
     <template v-if="card.vp > 0">
-      <AbilityIcon class="card-vp-icon absolute-icon" noAdjust :icon="4" width="42px"/>
+      <AbilityIcon class="card-vp-icon absolute-icon" :icon="4" width="42px"/>
       <span class="card-vp icon-text text-center font-weight-black">
         {{ card.vp }}
       </span>
     </template>
 
     <template v-if="card.vAttack">
-      <AbilityIcon class="card-attack-icon absolute-icon" noAdjust :icon="1" width="90px"/> 
+      <AbilityIcon class="card-attack-icon absolute-icon" :icon="1" width="90px"/> 
       <span class="card-attack icon-text text-center font-weight-black">
         <template v-if="!card.vAttackAsterisk">
           {{ card.vAttackText }}
@@ -39,17 +41,14 @@
 </template>
 
 <script>
+import CardMixin from "./cardMixin";
 import AbilityIcon from "../icons/AbilityIcon.vue";
 import SetIcon from "../icons/SetIcon.vue";
-import { getTextWidth } from "../../services/cardUtils";
 import { cardSubTypes, cardTypes } from "../../constants/cardTypes";
 
 export default {
   name: "VillainCard",
-  props: ["card", "height"],
-  data: () => ({
-      
-  }),
+  mixins: [CardMixin(62)],
   components: {
     AbilityIcon,
     SetIcon
@@ -70,12 +69,6 @@ export default {
         "trap": subType === cardSubTypes.TRAP.id,
         "villainous-weapon": subType === cardSubTypes.VILLAINOUS_WEAPON.id,
       }
-    },
-    smallName() {
-      return getTextWidth(this.card.name, "16px Roboto") > 152;
-    },
-    smallerName() {
-      return getTextWidth(this.card.name, "14px Roboto") > 152;
     }
   }
 };
@@ -125,15 +118,13 @@ export default {
 
   .card-abilities {
     font-size: 12px;
-    padding-top: 30px;
+    padding-top: 16px;
     padding-left: 16px;
-    padding-right: 32px;
+    padding-right: 24px;
 
     &.dense {
       font-size: 10px;
-      padding-top: 16px;
       padding-left: 10px;
-      padding-right: 24px;
     }
   }
   
@@ -181,7 +172,7 @@ export default {
     }
   }
 
-  .card-header {
+  .card-title {
     line-height: 24px;
     padding: 0px 6px;
     &.small {

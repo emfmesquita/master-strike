@@ -223,7 +223,6 @@ export default {
       cards: [
         {
           name: "J. Jonah Jameson",
-          dense: true,
           vAttackAsterisk: true,
           abilities: [
             [
@@ -254,7 +253,6 @@ export default {
           vAttack: "5",
           vAttackAsterisk: true,
           epic: true,
-          dense: true,
           abilities: [
             [
               { bold: "Start of Game" },

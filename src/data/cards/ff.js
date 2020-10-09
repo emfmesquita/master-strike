@@ -15,12 +15,8 @@ export default {
           abilities: [
             [
               "You may KO a Wound from your hand or discard pile. If you do, you get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 2
-              },
+              { bold: "+1" },
+              { icon: 2 },
               "."
             ]
           ]
@@ -47,6 +43,7 @@ export default {
             [
               { keyword: 4, text: "Focus 6" },
               { icon: 2 },
+              "  ",
               { icon: 5 },
               " You get ",
               { bold: "+4 " },
@@ -63,16 +60,10 @@ export default {
           attack: "6+",
           abilities: [
             [
-              {
-                team: 5
-              },
+              { team: 5 },
               ": You get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+1" },
+              { icon: 1 },
               " for each city space that contains a Villain."
             ]
           ]
@@ -92,16 +83,11 @@ export default {
           recruit: "2",
           abilities: [
             [
-              {
-                keyword: 4, text: "Focus 2"
-              },
-              {
-                icon: 2
-              },
-              {
-                icon: 5
-              },
-              "You may KO a card from your hand or discard pile."
+              { keyword: 4, text: "Focus 2" },
+              { icon: 2 },
+              "  ",
+              { icon: 5 },
+              " You may KO a card from your hand or discard pile."
             ]
           ]
         },
@@ -114,16 +100,10 @@ export default {
           abilities: [
             [
               "If you played any other cards that cost 4 ",
-              {
-                icon: 3
-              },
+              { icon: 3 },
               " this turn, you get ",
-              {
-                bold: "+2"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+2" },
+              { icon: 1 },
               "."
             ]
           ]
@@ -138,6 +118,7 @@ export default {
             [
               { keyword: 4, text: "Focus 2" },
               { icon: 2 },
+              "  ",
               { icon: 5 },
               " Rescue a Bystander. You may only use this ability up to four times this turn.",
             ]
@@ -170,16 +151,11 @@ export default {
           recruit: "2",
           abilities: [
             [
-              {
-                keyword: 4, text: "Focus 2"
-              },
-              {
-                icon: 2
-              },
-              {
-                icon: 5
-              },
-              "When you draw a new hand of cards at the end of this turn, draw an extra card."
+              { keyword: 4, text: "Focus 2" },
+              { icon: 2 },
+              "  ",
+              { icon: 5 },
+              " When you draw a new hand of cards at the end of this turn, draw an extra card."
             ]
           ]
         },
@@ -200,16 +176,10 @@ export default {
           attack: "1+",
           abilities: [
             [
-              {
-                team: 5
-              },
+              { team: 5 },
               ": You get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+1" },
+              { icon: 1 },
               " for each card in your hand."
             ]
           ]
@@ -225,22 +195,13 @@ export default {
               "If an Enemy you fight this turn would have a fight effect, you may cancel that effect instead."
             ],
             [
-              {
-                keyword: 4, text: "Focus 1"
-              },
-              {
-                icon: 2
-              },
-              {
-                icon: 5
-              },
+              { keyword: 4, text: "Focus 1" },
+              { icon: 2 },
+              "  ",
+              { icon: 5 },
               " You get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+1" },
+              { icon: 1 },
               " usable only against the Mastermind."
             ]
           ]
@@ -262,8 +223,9 @@ export default {
             [
               { keyword: 4, text: "Focus 2" },
               { icon: 2 },
+              "  ",
               { icon: 5 },
-              "Draw a card."
+              " Draw a card."
             ]
           ]
         },
@@ -277,6 +239,7 @@ export default {
             [
               { keyword: 4, text: "Focus 6" },
               { icon: 2 },
+              "  ",
               { icon: 5 },
               " Defeat a Villain of ",
               { bold: "5 " },
@@ -299,6 +262,7 @@ export default {
             [
               { keyword: 4, text: "Focus 9" },
               { icon: 2 },
+              "  ",
               { icon: 5 },
               " You get ",
               { bold: "+9 " },
@@ -335,16 +299,10 @@ export default {
           recruit: "2+",
           abilities: [
             [
-              {
-                team: 5
-              },
+              { team: 5 },
               ": You get ",
-              {
-                bold: "+2"
-              },
-              {
-                icon: 2
-              },
+              { bold: "+2" },
+              { icon: 2 },
               "."
             ]
           ]
@@ -358,22 +316,13 @@ export default {
           attack: "0+",
           abilities: [
             [
-              {
-                keyword: 4, text: "Focus 3"
-              },
-              {
-                icon: 2
-              },
-              {
-                icon: 5
-              },
-              "You get ",
-              {
-                bold: "+2"
-              },
-              {
-                icon: 1
-              },
+              { keyword: 4, text: "Focus 3" },
+              { icon: 2 },
+              "  ",
+              { icon: 5 },
+              " You get ",
+              { bold: "+2" },
+              { icon: 1 },
               "."
             ]
           ]
@@ -387,16 +336,11 @@ export default {
           abilities: [
             "Whenever you defeat a Villain in the Bank this turn, rescue a Bystander.",
             [
-              {
-                keyword: 4, text: "Focus 1"
-              },
-              {
-                icon: 2
-              },
-              {
-                icon: 5
-              },
-              "Move a Villain to an adjacent city space. If another Villain is already there, swap them."
+              { keyword: 4, text: "Focus 1" },
+              { icon: 2 },
+              "  ",
+              { icon: 5 },
+              " Move a Villain to an adjacent city space. If another Villain is already there, swap them."
             ]
           ]
         },
@@ -408,20 +352,12 @@ export default {
           attack: "5+",
           abilities: [
             [
-              {
-                hc: 4
-              },
+              { hc: 4 },
               ": You get ",
-              {
-                bold: "+3"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+3" },
+              { icon: 1 },
               "for each other ",
-              {
-                hc: 4
-              },
+              { hc: 4 },
               "card you played this turn."
             ]
 
@@ -440,7 +376,6 @@ export default {
         {
           name: "Galactus",
           vAttackAsterisk: true,
-          dense: true,
           abilities: [
             [
               { keyword: 6 },

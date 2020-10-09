@@ -423,7 +423,6 @@ export default {
         {
           name: "Vulture",
           vAttack: "8+",
-          dense: true,
           abilities: [
             [
               { keyword: 42 }
@@ -442,7 +441,6 @@ export default {
           name: "Epic Vulture",
           vAttack: "10+",
           epic: true,
-          dense: true,
           abilities: [
             [
               { keyword: 42 }
@@ -539,7 +537,6 @@ export default {
       name: "Explosion at the Washington Monument",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },

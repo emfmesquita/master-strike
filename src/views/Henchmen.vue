@@ -71,8 +71,12 @@
       <template v-if="henchmen.length">
         <PaginatedSingleCardGroupList :groups="henchmen" :key="lastFilterTime" :lineHeight="334">
           <template v-slot:default="{ card, cardHeight }">
-            <HeroCard v-if="card.overrideType === 1" :card="card" :height="cardHeight + 'px'" />
-            <VillainCard v-else :card="card" :height="cardHeight + 'px'" />
+            <CardWrapper>
+              <template v-slot:default="{ contentHeight }">
+                <HeroCard v-if="card.overrideType === 1" :card="card" :height="cardHeight" :contentHeight="contentHeight" />
+                <VillainCard v-else :card="card" :height="cardHeight" :contentHeight="contentHeight" />
+              </template>
+            </CardWrapper>
           </template>
         </PaginatedSingleCardGroupList>
       </template>
@@ -83,6 +87,7 @@
 </template>
 
 <script>
+import CardWrapper from "../components/cards/CardWrapper.vue";
 import HenchmenFilter from "../components/filters/HenchmenFilter.vue";
 import HeroCard from "../components/cards/HeroCard.vue";
 import KeywordFilter from "../components/filters/KeywordFilter.vue";
@@ -127,6 +132,7 @@ const baseFilter = () => ({
 export default {
   name: "Henchmen",
   components: {
+    CardWrapper,
     HenchmenFilter,
     HeroCard,
     KeywordFilter,

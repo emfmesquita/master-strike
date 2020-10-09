@@ -250,7 +250,6 @@ export default {
           rarity: 2,
           cost: 6,
           recruit: "3",
-          dense: true,
           abilities: [
             [
               "Choose an Adversary. You can spend any combination of ",
@@ -771,7 +770,6 @@ export default {
           cost: 7,
           attack: "0+",
           recruit: "0+",
-          dense: true,
           abilities: [
             [
               "Put a card from the Lair on the bottom of the Ally Deck. You get ",
@@ -1103,7 +1101,6 @@ export default {
       cards: [
         {
           name: "Dr. Strange",
-          dense: true,
           abilities: [
             [
               { bold: "Always Leads" },
@@ -1243,7 +1240,6 @@ export default {
         {
           name: "Odin",
           vAttack: "10+",
-          dense: true,
           abilities: [
             [
               { bold: "Always Leads" },
@@ -1317,7 +1313,6 @@ export default {
         {
           name: "Professor X",
           vAttack: "8+",
-          dense: true,
           abilities: [
             [
               { bold: "Always Leads" },

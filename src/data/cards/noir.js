@@ -437,7 +437,6 @@ export default {
         {
           name: "The Goblin, Underworld Boss",
           vAttackAsterisk: true,
-          dense: true,
           abilities: [
             [
               { bold: "Start of Game" },
@@ -514,7 +513,6 @@ export default {
       name: "Find the Split Personality Killer",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },

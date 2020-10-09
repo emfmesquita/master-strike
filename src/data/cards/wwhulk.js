@@ -14,9 +14,7 @@ export default {
           recruit: "1",
           abilities: [
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": Draw a card."
             ]
           ]
@@ -32,9 +30,7 @@ export default {
             ],
             [
               "Then, if you drew two cards this turn, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Like Totally Smart Hulk."
             ]]
         },
@@ -48,16 +44,10 @@ export default {
           attack: "2+",
           abilities: [
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": You get ",
-              {
-                bold: "+2"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+2" },
+              { icon: 1 },
               "."
             ]
           ]
@@ -71,18 +61,12 @@ export default {
           abilities: [
             [
               "You get ",
-              {
-                bold: "+1 "
-              },
-              {
-                icon: 1
-              },
+              { bold: "+1 " },
+              { icon: 1 },
               "for each different cost of Hero you have."
             ],
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": Draw a card."
             ]
           ]
@@ -96,15 +80,11 @@ export default {
           abilities: [
             [
               "Whenever you use an ",
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               " ability this turn, you may use it an extra time. "
             ],
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": Look at the top card of your deck. KO it or put it back."
             ]
           ]
@@ -124,9 +104,7 @@ export default {
           attack: "1",
           abilities: [
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": When you draw a new hand of cards at the end of this turn, draw an extra card."
             ]
           ]
@@ -139,13 +117,9 @@ export default {
           recruit: "2",
           abilities: [
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Savage Hulk Unleashed."
             ]
           ]
@@ -175,9 +149,7 @@ export default {
           attack: "3",
           abilities: [
             [
-              {
-                hc: 5
-              },
+              { hc: 5 },
               ": Reveal the top card of your deck. If it costs 0, KO it."
             ]
           ]
@@ -190,9 +162,7 @@ export default {
           attack: "4",
           abilities: [
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": Look at the top three cards of your deck. Draw one of them, KO one, and put one back."
             ]
           ]
@@ -212,9 +182,7 @@ export default {
           attack: "1",
           abilities: [
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": Draw a card."
             ]
           ]
@@ -227,9 +195,7 @@ export default {
           attack: "2+",
           abilities: [
             [
-              {
-                hc: 1
-              },
+              { hc: 1 },
               ": ",
               {
                 keyword: 47,
@@ -246,9 +212,7 @@ export default {
           attack: "2",
           abilities: [
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": You may KO a card from your hand or discard pile."
             ]
           ]
@@ -261,16 +225,12 @@ export default {
           abilities: [
             [
               "Double the ",
-              {
-                icon: 2
-              },
+              { icon: 2 },
               " you have."
             ],
             [
               "If there are at least 3 Heroes per player in the KO pile, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Vengeful Destructor."
             ]
           ]
@@ -285,9 +245,7 @@ export default {
           abilities: [
             [
               "Double the ",
-              {
-                icon: 1
-              },
+              { icon: 1 },
               " you have."
             ]
           ]
@@ -332,9 +290,7 @@ export default {
             ],
             [
               "Then, if you discarded at least two cards this turn, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Hulk Is King and put it on top of your deck."
             ]
           ]
@@ -361,9 +317,7 @@ export default {
           attack: "3+",
           abilities: [
             [
-              {
-                hc: 4
-              },
+              { hc: 4 },
               ": ",
               {
                 keyword: 17,
@@ -372,9 +326,7 @@ export default {
             ],
             [
               "If any players gained a Wound this way, you get ",
-              {
-                keyword: 48
-              },
+              { keyword: 48 },
               "."
             ]
           ]
@@ -388,9 +340,7 @@ export default {
           abilities: [
             [
               "You get double",
-              {
-                icon: 1
-              },
+              { icon: 1 },
               " from each Smash this turn."
             ],
             [
@@ -416,9 +366,7 @@ export default {
           attack: "2",
           abilities: [
             [
-              {
-                hc: 1
-              },
+              { hc: 1 },
               ": The first time you defeat a Villain this turn, rescue a Bystander."
             ]
           ]
@@ -435,9 +383,7 @@ export default {
             ],
             [
               "If there are at least 2 Bystanders in your Victory Pile, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Hiroim Redeemed."
             ]
           ]
@@ -453,12 +399,8 @@ export default {
           abilities: [
             [
               "You get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+1" },
+              { icon: 1 },
               "for every two Bystanders in your Victory Pile."
             ]
           ]
@@ -471,9 +413,7 @@ export default {
           attack: "2",
           abilities: [
             [
-              {
-                team: 19
-              },
+              { team: 19 },
               ": You may KO a 0-cost card from any player's discard pile. If you KO a Wound this way, rescue a Bystander."
             ]
           ]
@@ -486,9 +426,7 @@ export default {
           abilities: [
             [
               "Choose one: Rescue three Bystanders, or defeat any Villain or Mastermind whose ",
-              {
-                icon: 1
-              },
+              { icon: 1 },
               " is less than the number of Bystanders in your Victory Pile."
             ]
           ]
@@ -511,16 +449,10 @@ export default {
               "Draw a card."
             ],
             [
-              {
-                hc: 5
-              },
+              { hc: 5 },
               ": You get ",
-              {
-                bold: "+2"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+2" },
+              { icon: 1 },
               "."
             ]
           ]
@@ -533,9 +465,7 @@ export default {
           attack: "2+",
           abilities: [
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": ",
               {
                 keyword: 47,
@@ -552,16 +482,10 @@ export default {
           recruit: "3",
           abilities: [
             [
-              {
-                hc: 5
-              },
-              {
-                hc: 4
-              },
+              { hc: 5 },
+              { hc: 4 },
               ": ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Ultra-Massive Armor."
             ]
           ]
@@ -621,9 +545,7 @@ export default {
           attack: "0+",
           abilities: [
             [
-              {
-                hc: 4
-              },
+              { hc: 4 },
               ": ",
               {
                 keyword: 47,
@@ -641,13 +563,9 @@ export default {
           abilities: [
             [
               "Choose a Villain. You can spend any combination of",
-              {
-                icon: 2
-              },
+              { icon: 2 },
               "and",
-              {
-                icon: 1
-              },
+              { icon: 1 },
               "to fight it this turn."
             ]
           ]
@@ -662,13 +580,9 @@ export default {
             [
               "When you defeat a Villain this turn that has ",
               { bold: 6 },
-              {
-                icon: 1
-              },
+              { icon: 1 },
               " or more, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Underworld Boss and put it on top of your deck."
             ]
           ]
@@ -684,12 +598,8 @@ export default {
           abilities: [
             [
               "Choose a Villain in your Victory Pile, You get ",
-              {
-                bold: "+"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+" },
+              { icon: 1 },
               " equal to it's printed VP."
             ]
           ]
@@ -703,13 +613,9 @@ export default {
           abilities: [
             [
               "You can spend any combination of",
-              {
-                icon: 2
-              },
+              { icon: 2 },
               "and",
-              {
-                icon: 1
-              },
+              { icon: 1 },
               "to fight the Mastermind this turn."
             ]
           ]
@@ -732,18 +638,14 @@ export default {
               "Draw a card."
             ],
             [
-              {
-                hc: 4
-              },
+              { hc: 4 },
               ": ",
               {
                 keyword: 47,
                 text: "Smash 2"
               },
               ". If you ",
-              {
-                keyword: 47
-              },
+              { keyword: 47 },
               " a Wound this way, KO it."
             ]
           ]
@@ -756,9 +658,7 @@ export default {
           attack: "2",
           abilities: [
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": Draw a card."
             ]
           ]
@@ -771,16 +671,10 @@ export default {
           recruit: "2",
           abilities: [
             [
-              {
-                hc: 4
-              },
-              {
-                hc: 4
-              },
+              { hc: 4 },
+              { hc: 4 },
               ": ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Lord of Granite."
             ]
           ]
@@ -814,9 +708,7 @@ export default {
           abilities: [
             [
               "Put all cards from the HQ on the bottom of the Hero Deck in random order. You get their total printed",
-              {
-                icon: 1
-              },
+              { icon: 1 },
               "."
             ]
           ]
@@ -854,13 +746,9 @@ export default {
               "Look at the top card of your deck. Put it back on the top or bottom."
             ],
             [
-              {
-                hc: 2
-              },
+              { hc: 2 },
               ": You may ",
-              {
-                keyword: 8
-              },
+              { keyword: 8 },
               "."
             ]
           ]
@@ -886,17 +774,11 @@ export default {
           abilities: [
             [
               "You may ",
-              {
-                keyword: 8
-              },
+              { keyword: 8 },
               ". Then, if a card with an",
-              {
-                icon: 1
-              },
+              { icon: 1 },
               " icon was KO'd from your deck this turn, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Hive King Miek."
             ]
           ]
@@ -912,9 +794,7 @@ export default {
           abilities: [
             [
               "Look at the top three cards of your deck and put them back in any order. Then you may ",
-              {
-                keyword: 8
-              },
+              { keyword: 8 },
               "."
             ]
           ]
@@ -937,9 +817,7 @@ export default {
               "Draw a card."
             ],
             [
-              {
-                hc: 3
-              },
+              { hc: 3 },
               ": ",
               {
                 keyword: 47,
@@ -957,12 +835,8 @@ export default {
           abilities: [
             [
               "You get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+1" },
+              { icon: 1 },
               ", usable only against Villains in the Sewers or Bridge or the Mastermind."
             ]
           ]
@@ -976,9 +850,7 @@ export default {
           abilities: [
             [
               "When you defeat a Villain in the Sewers or Bridge, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Master of Depths and put it on top of your deck."
             ]
           ]
@@ -1000,9 +872,7 @@ export default {
             ],
             [
               "If you ",
-              {
-                keyword: 47
-              },
+              { keyword: 47 },
               " a 0-cost Hero this way, KO it."
             ]
           ]
@@ -1015,16 +885,10 @@ export default {
           attack: "5",
           abilities: [
             [
-              {
-                hc: 1
-              },
+              { hc: 1 },
               ": If the Bridge is empty, you may move a Villain there from another city space. A Villain moved this way gets",
-              {
-                bold: " -3"
-              },
-              {
-                icon: 1
-              },
+              { bold: " -3" },
+              { icon: 1 },
               " this turn."
             ]
           ]
@@ -1059,13 +923,9 @@ export default {
               "Look at the top card of your deck. Discard it or put it back."
             ],
             [
-              {
-                hc: 1
-              },
+              { hc: 1 },
               ": You may ",
-              {
-                keyword: 8
-              },
+              { keyword: 8 },
               "."
             ]
           ]
@@ -1079,13 +939,9 @@ export default {
           abilities: [
             [
               "You may ",
-              {
-                keyword: 8
-              },
+              { keyword: 8 },
               ". Then, if a non-grey Hero was KO'd from your deck this turn, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Torrent of Broodlings."
             ]
           ]
@@ -1113,16 +969,10 @@ export default {
           abilities: [
             [
               "Look at the top card of your deck. Then ",
-              {
-                keyword: 8
-              },
+              { keyword: 8 },
               " up to three times. You get ",
-              {
-                bold: "+2"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+2" },
+              { icon: 1 },
               " for each non-grey Hero that was KO'd from your deck this turn."
             ]
           ]
@@ -1142,13 +992,9 @@ export default {
           attack: "2",
           abilities: [
             [
-              {
-                hc: 5
-              },
+              { hc: 5 },
               ": Reveal the top card of your deck. If it's a",
-              {
-                team: 2
-              },
+              { team: 2 },
               ", draw it."
             ]
           ]
@@ -1162,9 +1008,7 @@ export default {
           abilities: [
             [
               "Reveal the top card of your deck. If it costs 3 or more, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Captain Marvel."
             ]
           ]
@@ -1193,9 +1037,7 @@ export default {
           abilities: [
             [
               "If you have at least 5 Villains in your Victory Pile, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into A-Bomb and put it on top of your deck."
             ]
           ]
@@ -1227,9 +1069,7 @@ export default {
           abilities: [
             [
               "If you defeat two Villains this turn, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into The Destiny Force and put it on top of your deck."
             ]
           ]
@@ -1263,9 +1103,7 @@ export default {
           cost: 2,
           abilities: [
             [
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Golden Guardian of Good and put it in your discard pile."
             ]
           ]
@@ -1281,16 +1119,10 @@ export default {
           abilities: [
             [
               "You may ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Agoraphobia and put it in your discard pile. If you do, you get ",
-              {
-                bold: "+4"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+4" },
+              { icon: 1 },
               "."
             ]
           ]
@@ -1304,16 +1136,10 @@ export default {
           abilities: [
             [
               "You get ",
-              {
-                bold: "+1"
-              },
-              {
-                icon: 1
-              },
+              { bold: "+1" },
+              { icon: 1 },
               "for each card that ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this turn."
             ]
           ]
@@ -1327,9 +1153,7 @@ export default {
           abilities: [
             [
               "Reveal the top card of your deck. If it costs 1 or more, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into The Void Unchained and put it on top of your deck."
             ]
           ]
@@ -1346,13 +1170,9 @@ export default {
           abilities: [
             [
               "Reveal the top card of your deck. If it costs 0, then ",
-              {
-                keyword: 8
-              },
+              { keyword: 8 },
               ". Otherwise, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Mournful Sentinel and put it in your discard pile."
             ]
           ]
@@ -1363,24 +1183,15 @@ export default {
           rarity: 3,
           cost: 8,
           attack: "0+",
-          dense: true,
           abilities: [
             [
               "Reveal the top five cards of the Hero Deck, gain their total printed",
-              {
-                icon: 1
-              },
+              { icon: 1 },
               ", and put them on the bottom of that deck. If this card makes ",
-              {
-                bold: 12
-              },
-              {
-                icon: 1
-              },
+              { bold: 12 },
+              { icon: 1 },
               " or more, then ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this card into ",
               { rule: 3, text: "The Void Mastermind" },
               " and add it to the game at the start of the next turn with one random Tactic."
@@ -1403,16 +1214,10 @@ export default {
           abilities: [
             [
               "Once this turn, if you made at least ",
-              {
-                bold: "6"
-              },
-              {
-                icon: 2
-              },
+              { bold: "6" },
+              { icon: 2 },
               "this turn, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Hurl Trucks."
             ]
           ]
@@ -1448,9 +1253,7 @@ export default {
           recruit: "2",
           abilities: [
             [
-              {
-                keyword: 46
-              },
+              { keyword: 46 },
               ": Draw a card."
             ]
           ]
@@ -1464,12 +1267,8 @@ export default {
           abilities: [
             [
               "Once this turn, if you made at least ",
-              {
-                bold: "6"
-              },
-              {
-                icon: 2
-              },
+              { bold: "6" },
+              { icon: 2 },
               "this turn, you may KO a card from your hand or discard pile."
             ]
           ]
@@ -1484,16 +1283,10 @@ export default {
           abilities: [
             [
               "For every ",
-              {
-                bold: "2"
-              },
-              {
-                icon: 2
-              },
+              { bold: "2" },
+              { icon: 2 },
               "you made this turn, Reveal the top card of the Hero Deck, put it on the bottom of that deck, and you get that card's printed",
-              {
-                icon: 1
-              },
+              { icon: 1 },
               "."
             ]
           ]
@@ -1513,9 +1306,7 @@ export default {
           attack: "1+",
           abilities: [
             [
-              {
-                hc: 4
-              },
+              { hc: 4 },
               ": ",
               {
                 keyword: 47,
@@ -1532,13 +1323,9 @@ export default {
           attack: "2+",
           abilities: [
             [
-              {
-                hc: 2
-              },
+              { hc: 2 },
               ": ",
-              {
-                keyword: 48
-              },
+              { keyword: 48 },
               "."
             ]
           ]
@@ -1551,13 +1338,9 @@ export default {
           recruit: "3",
           abilities: [
             [
-              {
-                hc: 2
-              },
+              { hc: 2 },
               ": You may gain a Wound. If you do, ",
-              {
-                keyword: 45
-              },
+              { keyword: 45 },
               " this into Raging Savage."
             ]
           ]
@@ -1572,9 +1355,7 @@ export default {
           attack: "3+",
           abilities: [
             [
-              {
-                keyword: 48
-              }
+              { keyword: 48 }
             ]
           ]
         },
@@ -1586,9 +1367,7 @@ export default {
           attack: "4+",
           abilities: [
             [
-              {
-                keyword: 48
-              }
+              { keyword: 48 }
             ],
             [
               "Then, you may KO any number of Wounds from your hand and/or discard pile, then draw that many cards."
@@ -1609,7 +1388,6 @@ export default {
         {
           name: "General “Thunderbolt” Ross",
           vAttackAsterisk: true,
-          dense: true,
           abilities: [
             [
               { bold: "Start of Game" },
@@ -1636,7 +1414,6 @@ export default {
           name: "Red Hulk",
           vAttack: "9+",
           transformed: true,
-          dense: true,
           abilities: [
             { keyword: 48 },
             [

@@ -388,7 +388,6 @@ export default {
         {
           name: "Belasco, Demon Lord of Limbo",
           vAttack: "9+",
-          dense: true,
           abilities: [
             [
               "Belasco gets ",
@@ -418,7 +417,6 @@ export default {
           name: "Epic Belasco",
           vAttack: "10+",
           epic: true,
-          dense: true,
           abilities: [
             [
               "Belasco gets ",
@@ -519,7 +517,6 @@ export default {
           name: "Epic Emma Frost",
           vAttack: "9+",
           epic: true,
-          dense: true,
           abilities: [
             [
               "During your turn, Emma Frost gets ",
@@ -683,7 +680,6 @@ export default {
       name: "Superhuman Baseball Game",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },

@@ -402,7 +402,6 @@ export default {
       cards: [
         {
           name: "Hybrid",
-          dense: true,
           abilities: [
             [
               "If you fight Hybrid while he's bonded to a Villain, defeat that Villain and rescue three Bystanders instead of taking a Tactic."
@@ -423,7 +422,6 @@ export default {
           name: "Epic Hybrid",
           vAttack: "8",
           epic: true,
-          dense: true,
           abilities: [
             [
               "If you fight Hybrid while he's bonded to a Villain, defeat that Villain and rescue three Bystanders instead of taking a Tactic."
@@ -502,7 +500,6 @@ export default {
         {
           name: "Poison Thanos",
           vAttack: "12+",
-          dense: true,
           abilities: [
             [
               "Poison Thanos gets ",
@@ -523,7 +520,6 @@ export default {
         {
           name: "Epic Poison Thanos",
           vAttack: "13+",
-          dense: true,
           epic: true,
           abilities: [
             [

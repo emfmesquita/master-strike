@@ -459,7 +459,6 @@ export default {
         {
           name: "Baron Heinrich Zemo",
           vAttack: "9+",
-          dense: true,
           abilities: [
             [
               "Whenever you fight a Villain, you may use 2",
@@ -568,7 +567,6 @@ export default {
       name: "Change the Outcome of WWII",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },

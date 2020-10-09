@@ -1,5 +1,16 @@
 <template>
-  <v-card class="mx-auto hero-card" :class="classes" raised :style="{ background, height: height || '280px' }">
+  <v-card class="mx-auto hero-card" :class="classes" raised :style="{ background, height: cardHeight }">
+    <div ref="cardHeader">
+      <div class="text-center font-weight-black card-title" :class="titleClasses">{{ card.name }}</div>
+      <div :class="subTitleClasses">{{ card.subTitle }}</div>
+    </div>
+
+    <div class="card-abilities" :class="{ dense }" v-if="card.abilities" ref="cardAbilities">
+      <div v-for="(ability, idx) in card.abilities" :key="idx">
+        <shared-description-group :description="ability" :dense="dense"/>
+      </div>
+    </div>
+
     <TeamIcon class="card-team" v-if="card.team" :icon="card.team" width="40px"/>
     <HeroClassIcon class="card-hero-class" v-if="card.hc" :icon="card.hc" width="32px"/>
 
@@ -8,14 +19,6 @@
     </shared-rule>
     <RarityIcon v-if="card.rarity" class="card-rarity" :icon="card.rarity" width="24px"/>
     <SetIcon v-else-if="card.set" class="set-icon" :set="card.set" width="24px" />
-    <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
-    <div :class="subTitleClasses">{{ card.subTitle }}</div>
-
-    <div class="card-abilities" :class="{ dense: card.dense }" v-if="card.abilities">
-      <div v-for="(ability, idx) in card.abilities" :key="idx">
-        <shared-description-group :description="ability" :dense="card.dense"/>
-      </div>
-    </div>
 
     <shared-rule v-if="card.divided === 1" :rule="{ rule: 4 }">
       <DividedCardIcon class="divided-card-icon-left" size="12px" left />
@@ -25,7 +28,7 @@
     </shared-rule>
 
     <template v-if="card.recruit">
-      <AbilityIcon class="card-recruit-icon absolute-icon" noAdjust :icon="2" width="80px"/>
+      <AbilityIcon class="card-recruit-icon absolute-icon" :icon="2" width="80px"/>
       <span 
         class="card-recruit icon-text text-center font-weight-black" 
         :class="{ small: card.recruit.length > 2 }">
@@ -34,7 +37,7 @@
     </template>
 
     <template v-if="card.attack">
-      <AbilityIcon class="card-attack-icon absolute-icon" noAdjust :icon="1" width="64px"/>
+      <AbilityIcon class="card-attack-icon absolute-icon" :icon="1" width="64px"/>
       <span 
         class="card-attack icon-text text-center font-weight-black" 
         :class="{ small: card.attack.length > 2 }">
@@ -43,7 +46,7 @@
     </template>
 
     <template v-if="card.piercing">
-      <AbilityIcon class="card-attack-icon absolute-icon" noAdjust :icon="6" width="64px"/>
+      <AbilityIcon class="card-attack-icon absolute-icon" :icon="6" width="64px"/>
       <span 
         class="card-attack icon-text text-center font-weight-black" 
         :class="{ small: card.piercing.length > 2 }">
@@ -52,7 +55,7 @@
     </template>
 
     <template v-if="card.cost">
-      <AbilityIcon class="card-cost-icon absolute-icon" noAdjust :icon="card.overrideType === 1 ? 1 : 3" width="90px"/>
+      <AbilityIcon class="card-cost-icon absolute-icon" :icon="card.overrideType === 1 ? 1 : 3" width="90px"/>
       <span 
         class="card-cost icon-text text-center font-weight-black"
         :class="{ small: card.cost.length > 2 }">
@@ -68,6 +71,7 @@
 </template>
 
 <script>
+import CardMixin from "./cardMixin";
 import TeamIcon from "../icons/TeamIcon.vue";
 import HeroClassIcon from "../icons/HeroClassIcon.vue";
 import RarityIcon from "../icons/RarityIcon.vue";
@@ -75,14 +79,10 @@ import AbilityIcon from "../icons/AbilityIcon.vue";
 import SetIcon from "../icons/SetIcon.vue";
 import DividedCardIcon from "../icons/DividedCardIcon.vue";
 import { heroClassArray } from "../../constants/heroClass";
-import { getTextWidth } from "../../services/cardUtils";
 
 export default {
   name: "HeroCard",
-  props: ["card", "height"],
-  data: () => ({
-      
-  }),
+  mixins: [CardMixin(62)],
   components: {
     TeamIcon,
     HeroClassIcon,
@@ -110,12 +110,6 @@ export default {
         "hero-divided-right": this.card.divided === 2,
         "disabled": this.card.disabled
       }
-    },
-    smallName() {
-      return getTextWidth(this.card.name, "16px Roboto") > 152;
-    },
-    smallerName() {
-      return getTextWidth(this.card.name, "14px Roboto") > 152;
     }
   }
 };
@@ -184,13 +178,12 @@ export default {
 
   .card-abilities {
     font-size: 12px;
-    padding-top: 30px;
+    padding-top: 16px;
     padding-left: 50px;
     padding-right: 16px;
 
     &.dense {
       font-size: 10px;
-      padding-top: 16px;
       padding-left: 46px;
       padding-right: 10px;
     }
@@ -249,7 +242,7 @@ export default {
     }
   }
 
-  .card-header {
+  .card-title {
     line-height: 24px;
     padding: 0px 24px;
     &.small {

@@ -5,8 +5,8 @@
       <template v-slot:activator="{ on }">
         <span v-on="on">
           <template v-if="icon">
-            <v-icon v-if="icon === 5" :style="{ fontSize: width + 'px', paddingBottom: '4px' }" style="color: #000">mdi-arrow-right-thick </v-icon>
-            <img v-else class="ability-icon" :class="iconClass"  :src="iconSrc" :width="width" draggable="false"/>
+            <v-icon v-if="icon === 5" :style="focusStyle" style="color: #000">mdi-arrow-right-thick</v-icon>
+            <img v-else class="ability-icon"  :src="iconSrc" :width="width" draggable="false"/>
           </template>
         </span>
       </template>
@@ -20,19 +20,22 @@ import { iconArray } from "../../constants/icon";
 
 export default {
   name: "AbilityIcon",
-  props: ["icon", "width", "noAdjust", "iconSrcOverride"],
+  props: ["icon", "width", "iconSrcOverride"],
   computed: {
     iconSrc() {
       const icon = this.iconSrcOverride || iconArray[this.icon - 1].value;
       return require(`../../assets/icons/${icon}.svg`);
     },
-    iconClass() {
-      return {
-        'adjust-icon': this.icon !== 5 && this.noAdjust === undefined
-      };
-    },
     label() {
       return iconArray[this.icon - 1].label;
+    },
+    focusStyle() {
+      return {
+        fontSize: this.width + 'px',
+        position: "relative",
+        top: "4px",
+        left: "3px"
+      }
     }
   },
   data: () => ({})
@@ -43,10 +46,5 @@ export default {
 .ability-icon {
   user-select: none;
   vertical-align: middle;
-}
-
-.adjust-icon {
-  margin: -6px;
-  padding-bottom: 4px;
 }
 </style>

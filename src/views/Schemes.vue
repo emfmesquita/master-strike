@@ -66,7 +66,11 @@
       <template v-if="schemes.length">
         <PaginatedSingleCardGroupList :groups="schemes" :dense="true" :key="lastFilterTime" :lineHeight="364">
           <template v-slot:default="{ card, cardHeight }">
-            <SchemeCard :card="card" :height="cardHeight + 'px'" />
+            <CardWrapper :height="cardHeight">
+              <template v-slot:default="{ contentHeight }">
+                <SchemeCard :card="card" :height="cardHeight" :contentHeight="contentHeight" />
+              </template>
+            </CardWrapper>
           </template>
         </PaginatedSingleCardGroupList>
       </template>
@@ -77,6 +81,7 @@
 </template>
 
 <script>
+import CardWrapper from "../components/cards/CardWrapper.vue";
 import KeywordFilter from "../components/filters/KeywordFilter.vue";
 import PaginatedSingleCardGroupList from "../components/shared/PaginatedSingleCardGroupList.vue";
 import RuleFilter from "../components/filters/RuleFilter.vue";
@@ -117,6 +122,7 @@ const baseFilter = () => ({
 export default {
   name: "Schemes",
   components: {
+    CardWrapper,
     KeywordFilter,
     PaginatedSingleCardGroupList,
     RuleFilter, 

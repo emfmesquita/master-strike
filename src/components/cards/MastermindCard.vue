@@ -1,23 +1,25 @@
 <template>
-  <v-card class="mx-auto mm-card" :class="classes" raised :style="{ background, height: height || '280px' }">
-    <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
-    <div :class="subTitleClasses">{{ card.subTitle }}</div>
+  <v-card class="mx-auto mm-card" :class="classes" raised :style="{ background, height: cardHeight }">
+    <div ref="cardHeader">
+      <div class="text-center font-weight-black card-title" :class="titleClasses">{{ card.name }}</div>
+      <div :class="subTitleClasses">{{ card.subTitle }}</div>
+    </div>
 
-    <div class="card-abilities" :class="{ dense: card.dense }" v-if="card.abilities">
+    <div v-if="card.abilities" class="card-abilities" :class="{ dense }" ref="cardAbilities">
       <div v-for="(ability, idx) in card.abilities" :key="idx">
-        <shared-description-group :description="ability" :dense="card.dense"/>
+        <shared-description-group :description="ability" :dense="dense"/>
       </div>
     </div>
 
     <template v-if="card.vp > 0">
-      <AbilityIcon class="card-vp-icon absolute-icon" noAdjust :icon="4" width="42px"/>
+      <AbilityIcon class="card-vp-icon absolute-icon" :icon="4" width="42px"/>
       <span class="card-vp icon-text text-center font-weight-black">
         {{ card.vp }}
       </span>
     </template>
 
     <template v-if="card.vAttack">
-      <AbilityIcon class="card-attack-icon absolute-icon" noAdjust :icon="1" width="90px"/> 
+      <AbilityIcon class="card-attack-icon absolute-icon" :icon="1" width="90px"/> 
       <span class="card-attack icon-text text-center font-weight-black">
         <template v-if="!card.vAttackAsterisk">
           {{ card.vAttackText }}
@@ -31,15 +33,12 @@
 </template>
 
 <script>
+import CardMixin from "./cardMixin";
 import AbilityIcon from "../icons/AbilityIcon.vue";
-import { getTextWidth } from "../../services/cardUtils";
 
 export default {
   name: "MastermindCard",
-  props: ["card", "height"],
-  data: () => ({
-      
-  }),
+  mixins: [CardMixin(62)],
   components: {
     AbilityIcon
   },
@@ -58,12 +57,6 @@ export default {
         "disabled": this.card.disabled
       }
     },
-    smallName() {
-      return getTextWidth(this.card.name, "16px Roboto") > 152;
-    },
-    smallerName() {
-      return getTextWidth(this.card.name, "14px Roboto") > 152;
-    }
   }
 };
 </script>
@@ -80,15 +73,13 @@ export default {
 
   .card-abilities {
     font-size: 12px;
-    padding-top: 30px;
+    padding-top: 16px;
     padding-left: 16px;
-    padding-right: 32px;
+    padding-right: 24px;
 
     &.dense {
       font-size: 10px;
-      padding-top: 16px;
       padding-left: 10px;
-      padding-right: 24px;
     }
   }
   
@@ -136,7 +127,7 @@ export default {
     }
   }
 
-  .card-header {
+  .card-title {
     line-height: 24px;
     padding: 0px 6px;
     &.small {

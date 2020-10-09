@@ -351,7 +351,6 @@ export default {
         {
           name: "Evil Deadpool",
           vAttack: "11+",
-          dense: true,
           abilities: [
             { keyword: 31, text: "Revenge for Mastermind Tactics" },
             [
@@ -426,7 +425,6 @@ export default {
         {
           name: "Macho Gomez",
           vAttack: "9+",
-          dense: true,
           abilities: [
             { keyword: 31, text: "Revenge for Deadpool's “Friends“" },
             [
@@ -515,7 +513,6 @@ export default {
       name: "Deadpool Wants a Chimichanga",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },
@@ -544,7 +541,6 @@ export default {
       name: "Deadpool Writes a Scheme",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },
@@ -586,7 +582,7 @@ export default {
           abilities: [
             [
               { bold: "Setup" },
-              ": 6 Twists. Use at least 1 ",
+              ": 6 Twists. Use at least 1",
               { team: 17 },
               " Hero."
             ],

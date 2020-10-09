@@ -1,29 +1,30 @@
 <template>
-  <v-card class="mx-auto scheme-card" :class="classes" raised :style="{ height: height || '280px' }">
-    <div class="text-center font-weight-black card-header" :class="{ small: smallName, smaller: smallerName }">{{ card.name }}</div>
-    <div :class="subTitleClasses">
-      <template>{{ card.subTitle }}</template>
+  <v-card class="mx-auto scheme-card" :class="classes" raised :style="cardHeightStyle">
+    <div ref="cardHeader">
+      <div class="text-center font-weight-black card-title" :class="titleClasses">{{ card.name }}</div>
+      <div :class="subTitleClasses">
+        <template>{{ card.subTitle }}</template>
+      </div>
+    </div>
+
+    <div v-if="card.abilities" class="card-abilities" :class="{ dense }" ref="cardAbilities">
+      <div v-for="(ability, idx) in card.abilities" :key="idx">
+        <shared-description-group :description="ability" :dense="dense"/>
+      </div>
     </div>
 
     <SetIcon v-if="card.set" class="set-icon" :set="card.set" width="24px" />
     <SetIcon v-if="card.set2" class="set-icon2" :set="card.set2" width="24px" />
-
-    <div class="card-abilities" :class="{ dense: card.dense }" v-if="card.abilities">
-      <div v-for="(ability, idx) in card.abilities" :key="idx">
-        <shared-description-group :description="ability" :dense="card.dense"/>
-      </div>
-    </div>
   </v-card>
 </template>
 
 <script>
+import CardMixin from "./cardMixin";
 import SetIcon from "../icons/SetIcon.vue";
-import { getTextWidth } from "../../services/cardUtils";
 
 export default {
   name: "SchemeCard",
-  props: ["card", "height"],
-  data: () => ({}),
+  mixins: [CardMixin(12)],
   components: {
     SetIcon
   },
@@ -38,12 +39,6 @@ export default {
       return {
         "disabled": this.card.disabled
       }
-    },
-    smallName() {
-      return getTextWidth(this.card.name, "16px Roboto") > 152;
-    },
-    smallerName() {
-      return getTextWidth(this.card.name, "14px Roboto") > 152;
     }
   }
 };
@@ -85,7 +80,7 @@ export default {
     }
   }
 
-  .card-header {
+  .card-title {
     line-height: 24px;
     padding: 0px 20px;
     &.small {

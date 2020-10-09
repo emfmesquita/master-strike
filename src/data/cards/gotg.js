@@ -357,7 +357,6 @@ export default {
       cards: [
         {
           name: "Supreme Intelligence of the Kree",
-          dense: true,
           abilities: [
             [
               { bold: "Always Leads" },
@@ -429,7 +428,6 @@ export default {
       cards: [
         {
           name: "Thanos",
-          dense: true,
           vAttackAsterisk: true,
           abilities: [
             [

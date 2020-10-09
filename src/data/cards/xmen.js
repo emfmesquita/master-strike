@@ -110,6 +110,7 @@ export default {
             { keyword: 35 },
             [
               { keyword: 34 },
+              " ",
               { hc: 1 },
               ": You get ",
               { bold: "+1" },
@@ -184,6 +185,7 @@ export default {
           abilities: [
             [
               { keyword: 34 },
+              " ",
               { hc: 5 },
               ": Draw a card."
             ]
@@ -199,6 +201,7 @@ export default {
             { keyword: 36 },
             [
               { keyword: 34 },
+              " ",
               { hc: 4 },
               ": ",
               { keyword: 36 }
@@ -229,6 +232,7 @@ export default {
             { keyword: 36 },
             [
               { keyword: 34 },
+              " ",
               { team: 4 },
               ": You may return a 0-cost, 3-cost, and 4-cost card from your discard pile to your hand."
             ]
@@ -350,6 +354,7 @@ export default {
             { keyword: 37 },
             [
               { keyword: 34 },
+              " ",
               { hc: 2 },
               ": ",
               { keyword: 36 }
@@ -384,9 +389,9 @@ export default {
               { keyword: 36 }
             ],
             [
-              "Then, draw a card for each",
+              "Then, draw a card for each ",
               { team: 4 },
-              "card you Berserked."
+              " card you Berserked."
             ]
           ]
         }
@@ -505,6 +510,7 @@ export default {
           abilities: [
             [
               { keyword: 34 },
+              " ",
               { hc: 3 },
               ": You get ",
               { bold: "+1" },
@@ -525,6 +531,7 @@ export default {
             { keyword: 36 },
             [
               { keyword: 34 },
+              " ",
               { hc: 3 },
               ": You get the total printed",
               { icon: 1 },
@@ -651,6 +658,7 @@ export default {
           abilities: [
             [
               { keyword: 34 },
+              " ",
               { team: 4 },
               ": Draw a card."
             ]
@@ -900,7 +908,6 @@ export default {
           rarity: 3,
           cost: 9,
           attack: "6+",
-          dense: true,
           abilities: [
             [
               { keyword: 36 },
@@ -978,6 +985,7 @@ export default {
             { keyword: 37 },
             [
               { keyword: 34 },
+              " ",
               { team: 4 },
               ": You can use ",
               { icon: 2 },
@@ -1034,6 +1042,7 @@ export default {
             { keyword: 35 },
             [
               { keyword: 34 },
+              " ",
               { hc: 1 },
               ": You get ",
               { bold: "+1" },
@@ -1071,6 +1080,7 @@ export default {
           abilities: [
             [
               { keyword: 34 },
+              " ",
               { hc: 2 },
               ": Draw a card."
             ]
@@ -1098,6 +1108,7 @@ export default {
             { keyword: 36 },
             [
               { keyword: 34 },
+              " ",
               { hc: 2 },
               ": You may KO a card from your hand or discard pile."
             ]
@@ -1117,6 +1128,7 @@ export default {
             ],
             [
               { keyword: 34 },
+              " ",
               { hc: 2 },
               ": Count the",
               { hc: 2 },
@@ -1163,7 +1175,6 @@ export default {
           vAttack: "4",
           vAttackAsterisk: true,
           epic: true,
-          dense: true,
           abilities: [
             [
               { bold: "Start of Game" },
@@ -1260,7 +1271,6 @@ export default {
           name: "Epic Dark Phoenix",
           vAttack: "15",
           epic: true,
-          dense: true,
           abilities: [
             [
               { bold: "Always Leads" },
@@ -1327,7 +1337,6 @@ export default {
         {
           name: "Deathbird",
           vAttack: "8+",
-          dense: true,
           abilities: [
             [
               "Deathbird gets ",
@@ -1355,7 +1364,6 @@ export default {
           name: "Epic Deathbird",
           vAttack: "10+",
           epic: true,
-          dense: true,
           abilities: [
             [
               "Deathbird gets ",
@@ -1469,7 +1477,6 @@ export default {
           vAttack: "7",
           vAttackAsterisk: true,
           epic: true,
-          dense: true,
           abilities: [
             [
               { bold: "Start of Game" },
@@ -1558,7 +1565,6 @@ export default {
         {
           name: "Onslaught",
           vAttack: "10+",
-          dense: true,
           abilities: [
             "Each player's hand size is 1 less.",
             [
@@ -1579,7 +1585,6 @@ export default {
           name: "Epic Onslaught",
           vAttack: "12+",
           epic: true,
-          dense: true,
           abilities: [
             "Each player's hand size is 1 less.",
             [
@@ -1854,7 +1859,6 @@ export default {
       name: "Alien Brood Encounters",
       cards: [
         {
-          dense: true,
           abilities: [
             [
               { bold: "Setup" },

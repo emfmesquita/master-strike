@@ -102,7 +102,11 @@
             <v-col cols="12">
               <CardGroup :group="hero">
                 <template v-slot:default="{ card }">
-                  <HeroCard :card="card"/>
+                  <CardWrapper>
+                    <template v-slot:default="{ contentHeight }">
+                      <HeroCard :card="card" :contentHeight="contentHeight" />
+                    </template>
+                  </CardWrapper>
                 </template>
               </CardGroup>
             </v-col>
@@ -117,6 +121,7 @@
 
 <script>
 import CardGroup from "../components/shared/CardGroup.vue";
+import CardWrapper from "../components/cards/CardWrapper.vue";
 import HeroCard from "../components/cards/HeroCard.vue";
 import HeroClassFilter from "../components/filters/HeroClassFilter.vue";
 import HeroFilter from "../components/filters/HeroFilter.vue";
@@ -171,6 +176,7 @@ export default {
   name: "Heroes",
   components: {
     CardGroup,
+    CardWrapper,
     HeroCard,
     HeroClassFilter,
     HeroFilter,

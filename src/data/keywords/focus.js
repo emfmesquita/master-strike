@@ -8,6 +8,7 @@ export default [
     "“",
     { bold: "Focus" },
     { icon: 2 },
+    " ",
     { icon: 5 },
     " [EFFECT]”"
   ],
@@ -22,6 +23,7 @@ export default [
     "“",
     { bold: "Focus 2" },
     { icon: 2 },
+    " ",
     { icon: 5 },
     " Draw a card.”"
   ],
