@@ -58,10 +58,6 @@ export default {
     margin-bottom: 6px;
   }
 
-  .xlzoom {
-    zoom: 1.25
-  }
-
   .absolute-icon {
     position: absolute;
     user-select: none;

@@ -72,6 +72,10 @@ export default {
 </script>
 
 <style>
+.v-navigation-drawer {
+  z-index: 101 !important;
+}
+
 .collapse-toolbar{
   height: 52px;
 }

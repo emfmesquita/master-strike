@@ -11,7 +11,7 @@
         </span>
       </template>
 
-      <v-card v-if="dialog" :class="{ xlzoom: $vuetify.breakpoint.xl }">
+      <v-card v-if="dialog">
         <v-card-title
           class="headline grey lighten-2"
           primary-title

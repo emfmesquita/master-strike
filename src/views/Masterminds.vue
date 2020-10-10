@@ -74,7 +74,7 @@
       </template>
     </shared-side-bar>
 
-    <v-container style="paddingBottom: 100px" :class="{ xlzoom: $vuetify.breakpoint.xl }">
+    <v-container style="paddingBottom: 100px">
       <v-row v-if="$vuetify.breakpoint.mdAndDown && $store.getters.sideBarCollapsed">
         <v-col class="py-0">
           <SearchFilter v-model="filter.search" @change="filterChanged"/>
