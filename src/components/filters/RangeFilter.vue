@@ -17,6 +17,7 @@
         :icon="icon" 
         :width="width(value)" 
         :iconSrcOverride="value < 0 ? 'block' : null"
+        allowClickOnMobile
       />
       <span v-if="value >= 0" class="thumb icon-text text-center font-weight-black">
         {{ value }}

@@ -12,6 +12,7 @@ import store from "./store";
 import vuetify from "./plugins/vuetify";
 
 window.hasIntersection = (a, b) => a.some(item => b.includes(item));
+window.isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 Vue.config.productionTip = false;
 

@@ -373,6 +373,7 @@ export default {
             [
               "A Villain gains ",
               { keyword: 6 },
+              " ",
               { hc: 5 },
               " this turn. ",
               { italic: "(It loses any previous Cosmic Threat abilities and penalties it had.)" }
@@ -389,6 +390,7 @@ export default {
             [
               "Choose one: Draw three cards or a Mastermind gains ",
               { keyword: 6 },
+              " ",
               { hc: 3 },
               " this turn. ",
               { italic: "(It loses any previous Cosmic Threat abilities and penalties it had.)" }

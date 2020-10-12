@@ -84,18 +84,7 @@
       </template>
     </shared-side-bar>
 
-    <v-container style="paddingBottom: 100px">
-      <v-row v-if="$vuetify.breakpoint.mdAndDown && $store.getters.sideBarCollapsed">
-        <v-col class="py-0">
-          <SearchFilter v-model="filter.search" @change="filterChanged"/>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="12">
-          <div class="text-center title">{{ heroFound }}</div>
-        </v-col>
-      </v-row>
-
+    <ResizableCardList v-model="filter.search" :foundText="heroFound" @change="filterChanged">
       <template v-if="heroes.length">
         <v-lazy min-height="410" :key="heroKey(hero)" v-for="hero in heroes">
           <v-row>
@@ -113,7 +102,7 @@
           </v-row>
         </v-lazy>
       </template>
-    </v-container>
+    </ResizableCardList>
 
     <shared-footer />
   </div>
@@ -127,6 +116,7 @@ import HeroClassFilter from "../components/filters/HeroClassFilter.vue";
 import HeroFilter from "../components/filters/HeroFilter.vue";
 import KeywordFilter from "../components/filters/KeywordFilter.vue";
 import RangeFilter from "../components/filters/RangeFilter.vue";
+import ResizableCardList from "../components/shared/ResizableCardList.vue";
 import RuleFilter from "../components/filters/RuleFilter.vue";
 import SearchFilter from "../components/filters/SearchFilter.vue";
 import SetFilter from "../components/filters/SetFilter.vue";
@@ -182,6 +172,7 @@ export default {
     HeroFilter,
     KeywordFilter, 
     RangeFilter,
+    ResizableCardList,
     RuleFilter, 
     SearchFilter,
     SetFilter, 

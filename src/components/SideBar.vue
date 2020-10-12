@@ -20,10 +20,10 @@
       </div>
       <v-divider></v-divider>
     </div>
-    <div class="pa-1" v-if="collapsed">
+    <div class="pa-1" v-show="collapsed">
       <slot name="collapsed" v-if="collapsed"></slot>
     </div>
-    <div v-else class="pa-2">
+    <div v-show="!collapsed" class="pa-2">
       <slot></slot>
     </div>
   </v-navigation-drawer>
@@ -31,6 +31,7 @@
 
 <script>
 import { mapActions } from 'vuex'
+import { bus } from "../services/eventBus"
 
 export default {
   name: "SideBar",
@@ -66,6 +67,11 @@ export default {
     // always starts collapsed
     if(!this.$store.getters.sideBarCollapsed) {
       this.toggleSideBar();
+    }
+  },
+  watch: {
+    collapsed(newValue) {
+      bus.$emit(bus.E.TOGGLE_SIDE_BAR, newValue);
     }
   }
 }

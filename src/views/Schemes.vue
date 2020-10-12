@@ -51,18 +51,7 @@
       </template>
     </shared-side-bar>
 
-    <v-container style="paddingBottom: 100px">
-      <v-row v-if="$vuetify.breakpoint.mdAndDown && $store.getters.sideBarCollapsed">
-        <v-col class="py-0">
-          <SearchFilter v-model="filter.search" @change="filterChanged"/>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="12">
-          <div class="text-center title">{{ schemesFound }}</div>
-        </v-col>
-      </v-row>
-
+    <ResizableCardList v-model="filter.search" :foundText="schemesFound" @change="filterChanged">
       <template v-if="schemes.length">
         <PaginatedSingleCardGroupList :groups="schemes" :dense="true" :key="lastFilterTime" :lineHeight="364">
           <template v-slot:default="{ card, cardHeight }">
@@ -74,7 +63,7 @@
           </template>
         </PaginatedSingleCardGroupList>
       </template>
-    </v-container>
+    </ResizableCardList>
 
     <shared-footer />
   </div>
@@ -84,6 +73,7 @@
 import CardWrapper from "../components/cards/CardWrapper.vue";
 import KeywordFilter from "../components/filters/KeywordFilter.vue";
 import PaginatedSingleCardGroupList from "../components/shared/PaginatedSingleCardGroupList.vue";
+import ResizableCardList from "../components/shared/ResizableCardList.vue";
 import RuleFilter from "../components/filters/RuleFilter.vue";
 import SchemeCard from "../components/cards/SchemeCard.vue";
 import SchemeFilter from "../components/filters/SchemeFilter.vue";
@@ -125,6 +115,7 @@ export default {
     CardWrapper,
     KeywordFilter,
     PaginatedSingleCardGroupList,
+    ResizableCardList,
     RuleFilter, 
     SchemeCard,
     SchemeFilter,

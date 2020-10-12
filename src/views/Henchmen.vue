@@ -56,22 +56,11 @@
       </template>
     </shared-side-bar>
 
-    <v-container style="paddingBottom: 100px">
-      <v-row v-if="$vuetify.breakpoint.mdAndDown && $store.getters.sideBarCollapsed">
-        <v-col class="py-0">
-          <SearchFilter v-model="filter.search" @change="filterChanged"/>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="12">
-          <div class="text-center title">{{ hmFound }}</div>
-        </v-col>
-      </v-row>
-
+    <ResizableCardList v-model="filter.search" :foundText="hmFound" @change="filterChanged">
       <template v-if="henchmen.length">
         <PaginatedSingleCardGroupList :groups="henchmen" :key="lastFilterTime" :lineHeight="334">
           <template v-slot:default="{ card, cardHeight }">
-            <CardWrapper>
+            <CardWrapper :height="cardHeight">
               <template v-slot:default="{ contentHeight }">
                 <HeroCard v-if="card.overrideType === 1" :card="card" :height="cardHeight" :contentHeight="contentHeight" />
                 <VillainCard v-else :card="card" :height="cardHeight" :contentHeight="contentHeight" />
@@ -80,7 +69,7 @@
           </template>
         </PaginatedSingleCardGroupList>
       </template>
-    </v-container>
+    </ResizableCardList>
 
     <shared-footer />
   </div>
@@ -93,6 +82,7 @@ import HeroCard from "../components/cards/HeroCard.vue";
 import KeywordFilter from "../components/filters/KeywordFilter.vue";
 import PaginatedSingleCardGroupList from "../components/shared/PaginatedSingleCardGroupList.vue";
 import RangeFilter from "../components/filters/RangeFilter.vue";
+import ResizableCardList from "../components/shared/ResizableCardList.vue";
 import RuleFilter from "../components/filters/RuleFilter.vue";
 import SearchFilter from "../components/filters/SearchFilter.vue";
 import SetFilter from "../components/filters/SetFilter.vue";
@@ -138,6 +128,7 @@ export default {
     KeywordFilter,
     PaginatedSingleCardGroupList,
     RangeFilter,
+    ResizableCardList,
     RuleFilter, 
     SearchFilter,
     SetFilter,

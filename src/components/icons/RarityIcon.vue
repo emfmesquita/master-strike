@@ -1,23 +1,21 @@
 <template>
-  <span>
-    <v-tooltip top>
-      <template v-slot:activator="{ on }">
-        <span v-on="on">
-          <img class="rarity-icon" v-if="icon" :src="rarity" :width="width" draggable="false"/>
-        </span>
-      </template>
-      <span>{{ label }}</span>
-    </v-tooltip>
-  </span>
-  
+  <Icon :label="label" :allowClickOnMobile="allowClickOnMobile">
+    <template v-slot:default="{ on }">
+      <img v-on="on" class="rarity-icon" v-if="icon" :src="rarity" :width="width" draggable="false"/>
+    </template>
+  </Icon>
 </template>
 
 <script>
 import { rarityArray } from "../../constants/rarity";
+import IconMixin from "./iconMixin";
+import Icon from "./Icon.vue";
 
 export default {
   name: "RarityIcon",
   props: ["icon", "width"],
+  mixins: [IconMixin],
+  components: { Icon },
   computed: {
     rarity() {
       const rarity = rarityArray[this.icon - 1].value;
@@ -26,8 +24,7 @@ export default {
     label() {
       return rarityArray[this.icon - 1].label;
     }
-  },
-  data: () => ({})
+  }
 };
 </script>
 

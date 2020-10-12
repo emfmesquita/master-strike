@@ -1,14 +1,34 @@
 <template>
-  <div v-resize="calculateContentHeightDebounced" :style="wrapperStyle">
-    <slot :contentHeight="contentHeight"></slot>
-    <div class="dummy" ref="dummyCard">
-      <slot :contentHeight="-1"></slot>
+  <div>
+    <div @click="cardClick" :class="classes">
+      <DynamicCard :height="height">
+        <template v-slot:default="{ contentHeight }">
+          <slot :contentHeight="contentHeight"></slot>
+        </template>
+      </DynamicCard>
     </div>
+    <v-dialog
+      v-if="$store.getters.canZoom && showZoom"
+      v-model="showZoom"
+      :max-width="zoomDialogWidth"
+    >
+      <div class="zoom-card-container" :style="zoomCardContainerStyle">
+        <div class="zoom-card" @click="zoomedCardClick" :style="zoomCardStyle">
+          <DynamicCard :height="height">
+            <template v-slot:default="{ contentHeight }">
+              <slot :contentHeight="contentHeight"></slot>
+            </template>
+          </DynamicCard>
+        </div>
+      </div>
+    </v-dialog>
   </div>
 </template>
 
 <script>
-import { get } from "lodash";
+import DynamicCard from "./DynamicCard.vue";
+import { screenHeight, screenWidth } from "../../services/sceenUtils";
+import { bus } from "../../services/eventBus";
 
 export default {
   name: "CardWrapper",
@@ -18,55 +38,76 @@ export default {
       default: 280
     },
   },
+  components: { DynamicCard },
   data() {
     return {
-      loaded: false,
-      contentHeight: -1,
-      timeout: null
+      timeout: null,
+      zoomLvl: 0,
+      showZoom: false
     }
   },
   mounted() {
-    // calculates only when all children are rendered
-    this.$nextTick(() => {
-      this.calculateContentHeight();
-      this.loaded = true;
+    bus.$on(bus.E.SCREEN_RESIZE, () => {
+      this.showZoom = false;
     });
   },
-  updated() {
-    this.calculateContentHeightDebounced();
-  },
-  beforeDestroy() {
-    if (this.timeout) clearTimeout(this.timeout);
-  },
   computed: {
-    wrapperStyle() {
+    classes() {
       return {
-        height: this.height + "px"
+        'zoomable-card': this.$store.getters.canZoom
       }
+    },
+    zoomCardStyle() {
+      if(!this.showZoom) return {};
+      const width = Math.floor(this.height * 0.75 / 0.9);
+      return {
+        transform: `scale(${this.zoomLvl})`,
+        width: width + "px"
+      }
+    },
+    zoomCardContainerStyle() {
+      if(!this.showZoom) return {};
+      const height = Math.floor(this.zoomLvl * this.height);
+      return {
+        height: height + "px",
+      }
+    },
+    zoomDialogWidth() {
+      return  Math.floor(this.zoomLvl * this.height * 0.75 / 0.9) + "px";
     }
   },
   methods: {
-    calculateContentHeightDebounced() {
-      if(!this.loaded) return;
-      if(this.timeout) clearTimeout(this.timeout);
-      this.timeout = setTimeout(this.calculateContentHeight, 50);
+    calculate() {
+      const sHeight = screenHeight();
+      const sWidth = screenWidth();
+      const ratioByHeight = 0.9 * (sHeight / this.height);
+      const ratioByWidth = 0.9 * (sWidth - 48) / (this.height * 0.75);
+      const safeRation = ratioByHeight > ratioByWidth ? ratioByWidth : ratioByHeight;
+      this.zoomLvl = Math.floor(10 * safeRation) / 10;
     },
-    calculateContentHeight() {
-      const headerEl = get(this, "$children[1].$refs.cardHeader");
-      const abilitiesEl = get(this, "$children[1].$refs.cardAbilities");
-      if(!headerEl || !abilitiesEl) {
-        this.contentHeight = -1;
-      } else {
-        this.contentHeight = headerEl.offsetHeight + abilitiesEl.offsetHeight;
-      }
-    }
+    cardClick() {
+      if(!this.$store.getters.canZoom) return;
+      this.calculate();
+      this.showZoom = true;
+    },
+    zoomedCardClick() {
+      this.showZoom = false;
+    },
   }
 }
 </script>
 
-<style lang="scss" scoped>
-.dummy {
-  visibility: hidden;
-  position: relative;
+<style lang="scss">
+.zoomable-card {
+  cursor: zoom-in;
+}
+
+.zoom-card-container {
+  overflow: hidden;
+
+  .zoom-card {
+    transform-origin: 0 0;
+    cursor: zoom-out;
+  }
 }
 </style>

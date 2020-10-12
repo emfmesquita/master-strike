@@ -1,22 +1,21 @@
 <template>
-  <span>
-    <v-tooltip top>
-      <template v-slot:activator="{ on }">
-        <span v-on="on">
-          <img class="hero-class-icon" v-if="icon" :src="hc" :width="width" draggable="false"/>
-        </span>
-      </template>
-      <span>{{ label }}</span>
-    </v-tooltip>
-  </span>
+  <Icon :label="label" :allowClickOnMobile="allowClickOnMobile">
+    <template v-slot:default="{ on }">
+      <img v-on="on" class="hero-class-icon" v-if="icon" :src="hc" :width="width" draggable="false"/>
+    </template>
+  </Icon>
 </template>
 
 <script>
 import { heroClassArray } from "../../constants/heroClass";
+import IconMixin from "./iconMixin";
+import Icon from "./Icon.vue";
 
 export default {
-  name: "TeamIcon",
+  name: "HeroClassIcon",
   props: ["icon", "width"],
+  mixins: [IconMixin],
+  components: { Icon },
   computed: {
     hc() {
       const hc = heroClassArray[this.icon].value;
@@ -26,8 +25,7 @@ export default {
       const label = heroClassArray[this.icon].label;
       return `Hero Class: ${label}`;
     }
-  },
-  data: () => ({})
+  }
 };
 </script>
 

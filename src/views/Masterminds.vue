@@ -74,29 +74,18 @@
       </template>
     </shared-side-bar>
 
-    <v-container style="paddingBottom: 100px">
-      <v-row v-if="$vuetify.breakpoint.mdAndDown && $store.getters.sideBarCollapsed">
-        <v-col class="py-0">
-          <SearchFilter v-model="filter.search" @change="filterChanged"/>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="12">
-          <div class="text-center title">{{ mmFound }}</div>
-        </v-col>
-      </v-row>
-
+    <ResizableCardList v-model="filter.search" :foundText="mmFound" @change="filterChanged">
       <template v-if="masterminds.length">
-        <v-lazy min-height="410" :key="mmKey(mm)" v-for="mm in masterminds">
+        <v-lazy min-height="483" :key="mmKey(mm)" v-for="mm in masterminds">
           <v-row>
             <v-col cols="12">
-              <CardGroup :group="mm">
+              <CardGroup :group="mm" :cardHeight="cardHeight">
                 <template v-slot:default="{ card }">
-                  <CardWrapper>
+                  <CardWrapper :height="cardHeight">
                     <template v-slot:default="{ contentHeight }">
-                      <HeroCard v-if="card.overrideType === 1" :card="card" :contentHeight="contentHeight" />
-                      <VillainCard v-else-if="card.overrideType === 4" :card="card" :contentHeight="contentHeight" />
-                      <MastermindCard v-else :card="card" :contentHeight="contentHeight" />
+                      <HeroCard v-if="card.overrideType === 1" :height="cardHeight" :card="card" :contentHeight="contentHeight" />
+                      <VillainCard v-else-if="card.overrideType === 4" :height="cardHeight" :card="card" :contentHeight="contentHeight" />
+                      <MastermindCard v-else :card="card" :height="cardHeight" :contentHeight="contentHeight" />
                     </template>
                   </CardWrapper>
                 </template>
@@ -105,7 +94,7 @@
           </v-row>
         </v-lazy>
       </template>
-    </v-container>
+    </ResizableCardList>
 
     <shared-footer />
   </div>
@@ -119,6 +108,7 @@ import KeywordFilter from "../components/filters/KeywordFilter.vue";
 import MastermindCard from "../components/cards/MastermindCard.vue";
 import MastermindFilter from "../components/filters/MastermindFilter.vue";
 import RangeFilter from "../components/filters/RangeFilter.vue";
+import ResizableCardList from "../components/shared/ResizableCardList.vue";
 import RuleFilter from "../components/filters/RuleFilter.vue";
 import SearchFilter from "../components/filters/SearchFilter.vue";
 import SetFilter from "../components/filters/SetFilter.vue";
@@ -171,6 +161,7 @@ export default {
     MastermindCard, 
     MastermindFilter,
     RangeFilter,
+    ResizableCardList,
     RuleFilter, 
     SearchFilter,
     SetFilter, 
@@ -179,6 +170,7 @@ export default {
     VillainCard,
   },
   data: () => ({
+    cardHeight: 310,
     sortMethod: ALPHA_SORT,
     filter: baseFilter(),
     lastFilterTime: 0,

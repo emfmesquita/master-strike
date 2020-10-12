@@ -102,8 +102,8 @@ export default {
     bottom: 82px;
   }
   .card-vp {
-    right: 7px;
-    bottom: 93px;
+    right: 6px;
+    bottom: 92px;
     width: 20px !important;
     line-height: 20px !important;
     font-size: 16px !important;

@@ -1,5 +1,15 @@
 <template>
-  <v-app-bar app color="primary" class="header" dark clipped-left clipped-right :hide-on-scroll="!lg">
+  <v-app-bar 
+      app 
+      dark 
+      clipped-right 
+      clipped-left 
+      color="primary" 
+      class="header" 
+      :hide-on-scroll="!lg"
+      :value="show || lg"
+      @input="onInput"
+    >
     <div class="d-flex align-center">
 
       <div id="nav">
@@ -81,12 +91,18 @@ export default {
   name: "Header",
   data() {
     return {
-      items
+      items,
+      show: true
     };
   },
   computed: {
     lg() {
       return this.$vuetify.breakpoint.mdAndUp;
+    }
+  },
+  methods: {
+    onInput(newValue) {
+      this.show = newValue;
     }
   }
 }

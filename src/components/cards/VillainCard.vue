@@ -147,8 +147,8 @@ export default {
     bottom: 82px;
   }
   .card-vp {
-    right: 7px;
-    bottom: 93px;
+    right: 6px;
+    bottom: 92px;
     width: 20px !important;
     line-height: 20px !important;
     font-size: 16px !important;
@@ -174,7 +174,7 @@ export default {
 
   .card-title {
     line-height: 24px;
-    padding: 0px 6px;
+    padding: 0px 20px;
     &.small {
       font-size: 14px;
     }
@@ -186,7 +186,7 @@ export default {
   .card-sub-title {
     font-size: 12px;
     line-height: 16px;
-    padding: 0px 6px;
+    padding: 0px 20px;
   }
 }
 </style>

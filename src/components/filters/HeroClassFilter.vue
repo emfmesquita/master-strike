@@ -11,11 +11,11 @@
   >
     <template v-slot:selection="{ item }">
       <span style="cursor: pointer" @click.stop="remove(item.id)">
-        <HeroClassIcon :icon="item.id" width="32px"/>
+        <HeroClassIcon :icon="item.id" width="32px" allowClickOnMobile />
       </span>
     </template>
     <template v-slot:item="{ item }">
-      <HeroClassIcon class="pr-2" :icon="item.id" width="32px" />
+      <HeroClassIcon class="pr-2" :icon="item.id" width="32px" allowClickOnMobile />
       <span class="mt-1">{{ item.label }}</span>
     </template>
   </v-select>

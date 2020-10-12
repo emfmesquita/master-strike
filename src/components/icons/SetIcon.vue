@@ -1,22 +1,21 @@
 <template>
-  <span>
-    <v-tooltip top>
-      <template v-slot:activator="{ on }">
-        <span v-on="on">
-          <img class="set-icon" :src="setIcon" :width="width" draggable="false"/>
-        </span>
-      </template>
-      <span>{{ label }}</span>
-    </v-tooltip>
-  </span>
+  <Icon :label="label" :allowClickOnMobile="allowClickOnMobile">
+    <template v-slot:default="{ on }">
+      <v-img v-on="on" class="set-icon" :src="setIcon" :width="width" :min-width="width" :min-height="width" :max-width="width" :max-height="width" draggable="false"/>
+    </template>
+  </Icon>
 </template>
 
 <script>
 import { setsArray } from "../../constants/sets";
+import IconMixin from "./iconMixin";
+import Icon from "./Icon.vue";
 
 export default {
-  name: "TeamIcon",
+  name: "SetIcon",
   props: ["set", "width"],
+  mixins: [IconMixin],
+  components: { Icon },
   computed: {
     setIcon() {
       const set = setsArray[this.set - 1].value;
@@ -32,8 +31,7 @@ export default {
       const label = setsArray[this.set - 1].label;
       return `Set: ${label}`;
     }
-  },
-  data: () => ({})
+  }
 };
 </script>
 
