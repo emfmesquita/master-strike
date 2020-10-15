@@ -1382,6 +1382,684 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 28,
+      name: "Deadlands, The",
+      subTitle: "Villain - The Deadlands",
+      cards: [
+        {
+          name: "Zombie Baron Zemo",
+          qtd: 1,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 16 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": For each of your ",
+              { team: 1 },
+              " Heroes, rescue a Bystander."
+            ]
+          ]
+        },
+        {
+          name: "Zombie Loki",
+          qtd: 1,
+          vAttack: "8",
+          vp: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 16 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Loki ascends to become a ",
+              { rule: 3, text: "new Mastermind" },
+              ". He gains the ability, “",
+              { bold: "Master Strike" },
+              ": Each player reveals a ",
+              { hc: 4 },
+              " Hero or gains a Wound.“"
+            ]
+          ]
+        },
+        {
+          name: "Zombie Madame Hydra",
+          qtd: 1,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 16 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your ",
+              { team: 2 },
+              " Heroes or ",
+              { team: 13 },
+              " Allies."
+            ]
+          ]
+        },
+        {
+          name: "Zombie Mr. Sinister",
+          qtd: 1,
+          vAttack: "7",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 16 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Sinister ascends to become a ",
+              { rule: 3, text: "new Mastermind" },
+              ". He gains the ability, “",
+              { bold: "Master Strike" },
+              ": Sinister captures a Bystander. Then, each player with exactly 6 cards reveals a ",
+              { hc: 1 },
+              " Hero or discards cards equal to the number of Bystanders Sinister has.“"
+            ]
+          ]
+        },
+        {
+          name: "Zombie M.O.D.O.K.",
+          qtd: 1,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 16 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your heroes with a ",
+              { icon: 2 },
+              " icon."
+            ]
+          ]
+        },
+        {
+          name: "Zombie Mysterio",
+          qtd: 1,
+          vAttack: "6",
+          vp: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 16 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Shuffle this card into the Mastermind's face-down Mastermind Tactics. It becomes a Mastermind Tactic that says “",
+              { bold: "Fight" },
+              ": Draw two cards.“"
+            ]
+          ]
+        },
+        {
+          name: "Zombie Thanos",
+          qtd: 1,
+          vAttack: "9",
+          vp: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 16 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Thanos ascends to become a ",
+              { rule: 3, text: "new Mastermind" },
+              ". He gains the ability, “",
+              { bold: "Master Strike" },
+              ": Each player reveals their hand and KOs one of their non-grey Heroes.“"
+            ]
+          ]
+        },
+        {
+          name: "Zombie Venom",
+          qtd: 1,
+          vAttack: "5",
+          vp: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 16 }
+            ],
+            [
+              "You can't defeat Zombie Venom unless you have a ",
+              { hc: 1 },
+              " Hero."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 29,
+      name: "Domain of Apocalypse",
+      cards: [
+        {
+          name: "Apocalyptic Blink",
+          qtd: 3,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of your deck. Draw it or ",
+              { keyword: 1 },
+              " it."
+            ]
+          ]
+        },
+        {
+          name: "Apocalyptic Magneto",
+          qtd: 1,
+          vAttack: "8",
+          vp: "6",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain an ",
+              { team: 4 },
+              " Hero from the HQ for free."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Magneto ascends to become a ",
+              { rule: 3, text: "new Mastermind" },
+              ". He gains the ability, “",
+              { bold: "Master Strike" },
+              ": Each player reveals an ",
+              { team: 4 },
+              " Hero or discards down to 4 cards.“"
+            ]
+          ]
+        },
+        {
+          name: "Apocalyptic Rogue",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of the Hero deck. The player of your choice gains it."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Reveal the top card of the Hero deck. Each player reveals their hand and discards a card of that class."
+            ]
+          ]
+        },
+        {
+          name: "Apocalyptic Weapon X",
+          qtd: 2,
+          vAttack: "7",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your heroes."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 17, text: "Cross-Dimensional Wolverine Rampage" }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 30,
+      name: "Limbo",
+      cards: [
+        {
+          name: "Inferno Colossus",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": The Mastermind captures a Bystander."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Inferno Cyclops",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Inferno Cyclops captures a Bystander."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": The Mastermind captures all the Bystanders this Villain had."
+            ],
+            { italic: "(Players still discard for the Bystander being carried away.)" }
+          ]
+        },
+        {
+          name: "Inferno Darkchilde",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of your deck. KO it or ",
+              { keyword: 1 },
+              " it."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player ",
+              { keyword: 1, text: "Teleports" },
+              " a random card from their hand."
+            ]
+          ]
+        },
+        {
+          name: "Inferno Nightcrawler",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Up to two cards in your hand that have a ",
+              { icon: 2 },
+              " icon gain ",
+              { keyword: 1 },
+              " this turn."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 31,
+      name: "Manhattan (Earth-1610)",
+      cards: [
+        {
+          name: "Ultimate Captain America",
+          qtd: 2,
+          vAttack: "6",
+          hc: 4,
+          team: 1,
+          overrideType: 1,
+          attack: "0+",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            { divider: true },
+            [
+              "You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each color of Hero you have. ",
+              { italic: "(including " },
+              { hc: 4 },
+              { italic: " and grey)" }
+            ]
+          ]
+        },
+        {
+          name: "Ultimate Captain Marvel",
+          qtd: 2,
+          vAttack: "4",
+          hc: 3,
+          team: 1,
+          overrideType: 1,
+          recruit: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            { divider: true },
+            { keyword: 1 }
+          ]
+        },
+        {
+          name: "Ultimate Thor",
+          qtd: 2,
+          vAttack: "7",
+          hc: 3,
+          team: 1,
+          overrideType: 1,
+          attack: "3+",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 17, text: "Cross-Dimensional Thor Rampage" }
+            ],
+            { divider: true },
+            [
+              { hc: 3 },
+              ": You get ",
+              { bold: "+3" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Ultimate Wasp",
+          qtd: 2,
+          vAttack: "5",
+          hc: 1,
+          team: 1,
+          overrideType: 1,
+          attack: "2+",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            { divider: true },
+            [
+              { hc: 1 },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 32,
+      name: "Sentinel Territories",
+      cards: [
+        {
+          name: "Colossus of Future Past",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { italic: "Colossus alters the future" },
+              ": Don't play a Villain card at the beginning of next turn."
+            ]
+          ]
+        },
+        {
+          name: "Kate Pryde of Future Past",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              ". Then, ",
+              { italic: "Kate Pryde alters the future" },
+              ": At the beginning of the next player's turn, that player gets ",
+              { bold: "+1" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Rachel Summers of Future Past",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { italic: "Rachel Summers alters the future" },
+              ": During the next player's turn, all Villains and the Mastermind get ",
+              { bold: "-1" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": This turn, all Villains and the Mastermind get ",
+              { bold: "+1" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Wolverine of Future Past",
+          qtd: 2,
+          vAttack: "7",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { italic: "Wolverine alters the future" },
+              ": At the start of the next player's turn, you draw a card, and that player draws a card."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 17, text: "Cross-Dimensional Wolverine Rampage" }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 33,
+      name: "Wasteland",
+      cards: [
+        {
+          name: "The Hulk Gang",
+          qtd: 3,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 17, text: "Cross-Dimensional Hulk Rampage" }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Wasteland Kingpin",
+          qtd: 1,
+          vAttack: "11",
+          vp: "6",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 2 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Kingpin ascends to become a ",
+              { rule: 3, text: "new Mastermind" },
+              ". He gains the ability, “",
+              { bold: "Master Strike" },
+              ": Each player reveals an ",
+              { hc: 2 },
+              " Hero or discards their hand and draws 5 cards.“"
+            ]
+          ]
+        },
+        {
+          name: "Wasteland Hawkeye",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Wasteland Hawkeye captures a Bystander."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each other player draws a card, or each other player discards a card."
+            ],
+          ]
+        },
+        {
+          name: "Wasteland Spider-Girl",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of your deck. If it costs 2 or less, KO it."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 40,

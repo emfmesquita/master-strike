@@ -507,6 +507,272 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 51,
+      name: "Goblin's Freak Show",
+      cards: [
+        {
+          name: "Vulture, Carnival Cannibal",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": The Vulture captures 2 ",
+              { keyword: 33, text: "Hidden Witnesses" },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each other player KOs a Bystander from their Victory Pile or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "The Chameleon",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Chameleon captures a ",
+              { keyword: 33 },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of the Villain Deck. If it's a Villain, it enters the city space where The Chameleon was."
+            ]
+          ]
+        },
+        {
+          name: "Kraven, Animal Trainer",
+          qtd: 1,
+          vAttack: "",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": For each Hero in the HQ that costs 7 or more, Kraven captures a ",
+              { keyword: 33 },
+              ". Kraven's ",
+              { icon: 1 },
+              " is equal to the cost of the highest-cost card in the HQ."
+            ]
+          ]
+        },
+        {
+          name: "Ox",
+          qtd: 1,
+          vAttack: "5",
+          vp: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each other player reveals a ",
+              { hc: 4 },
+              " Hero or Ox captures a random Bystander from their Victory Pile as a ",
+              { keyword: 33 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Montana",
+          qtd: 1,
+          vAttack: "4",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each Goblin's Freak Show Villain captures a ",
+              { keyword: 33 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Fancy Dan",
+          qtd: 1,
+          vAttack: "1",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Fancy Dan captures 3 ",
+              { keyword: 33, text: "Hidden Witnesses" },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 52,
+      name: "X-Men Noir",
+      cards: [
+        {
+          name: "Bobby “Iceman“ Drake",
+          qtd: 1,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 32 },
+              " for a card with a ",
+              { icon: 2 },
+              " icon."
+            ]
+          ]
+        },
+        {
+          name: "Comrade Rasputin, Steel Wall",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 32 },
+              " for a Hero that costs 0 and KO it."
+            ]
+          ]
+        },
+        {
+          name: "Henry “Beast“ McCoy",
+          qtd: 1,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 32 },
+              " for any card that's ",
+              { hc: 5 },
+              " or ",
+              { hc: 4 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Jean Grey Noir",
+          qtd: 1,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": When you draw a new hand of cards at the end of your turn, ",
+              { keyword: 32 },
+              " for an extra card."
+            ]
+          ]
+        },
+        {
+          name: "Scott “Cyclops“ Summers",
+          qtd: 1,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player ",
+              { keyword: 32, text: "Investigates" },
+              " their deck for a card that costs 1 or more and KOs it. Players reveal the cards they ",
+              { keyword: 32, text: "Investigated" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Warden Emma Frost",
+          qtd: 1,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 32 },
+              " the Villain Deck for a Scheme Twist and play it. Reveal all the cards you ",
+              { keyword: 32, text: "Investigated" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Ororo Munroe, Storm-Tossed",
+          qtd: 1,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO a Hero from the HQ. ",
+              { keyword: 32 },
+              " the Hero Deck for a card to put in that emptied HQ space."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 72,
@@ -609,7 +875,7 @@ export default {
             ],
             [
               { bold: "Twist" },
-              ": Each player shuffles a Tactic from their victory pile into the Villain Deck. Any player who did so draws two cards. Then, ",
+              ": Each player shuffles a Tactic from their Victory Pile into the Villain Deck. Any player who did so draws two cards. Then, ",
               { keyword: 32 },
               " the Villain Deck for a Tactic and that Tactic enters the city. Reveal all the cards you ",
               { keyword: 32, text: "Investigated" },

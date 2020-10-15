@@ -206,7 +206,7 @@ export default {
     {
       id: 108,
       name: "Daredevil",
-      filterName: "Daredevil (CW)",
+      filterName: "Daredevil (Civil War)",
       team: 1,
       cards: [
         {
@@ -1893,6 +1893,595 @@ export default {
         },
       ]
     },
+  ],
+  villains: [
+    {
+      id: 42,
+      name: "CSA Special Marshals",
+      cards: [
+        {
+          name: "Bullseye",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your heroes with a ",
+              { icon: 2 },
+              " icon."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player KOs one of their Heroes that has printed ",
+              { icon: 1 },
+              " of 2 or more."
+            ]
+          ]
+        },
+        {
+          name: "Moonstone",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each other player discards two cards, and then draws a card."
+            ]
+          ]
+        },
+        {
+          name: "Penance",
+          qtd: 2,
+          vAttack: "2+",
+          vp: "3",
+          abilities: [
+            [
+              "Penance gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Villain in your Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Venom",
+          qtd: 2,
+          vAttack: "7",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 1 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 28 },
+              " the Bystander Stack. While it's fortified, if a Bystander would be rescued from there, KO that Bystander instead."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 43,
+      name: "Great Lakes Avengers",
+      cards: [
+        {
+          name: "Big Bertha",
+          qtd: 2,
+          vAttack: "7",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 4 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals a ",
+              { hc: 4 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Flatman",
+          qtd: 2,
+          vAttack: "5",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 1 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO a card from your discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Mr. Immortal",
+          qtd: 2,
+          vAttack: "2",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of the Villain Deck. If it's a Villain or Bystander, Mr. Immortal reenters the Sewers."
+            ]
+          ]
+        },
+        {
+          name: "Squirrel Girl",
+          qtd: 2,
+          vAttack: "3",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "You can't fight Squirrel Girl if you played more than one card this turn."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 28 },
+              " the Sidekick Stack. While it's fortified, ",
+              { rule: 11 },
+              " can't be recruited or gained."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 44,
+      name: "Heroes for Hire",
+      cards: [
+        {
+          name: "Colleen Wing",
+          qtd: 2,
+          vAttack: "9",
+          vp: "5",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 2 },
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 28 },
+              " the Mastermind. While it's fortified, the Mastermind can't be fought."
+            ]
+          ]
+        },
+        {
+          name: "Humbug",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 2 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Shang-Chi",
+          qtd: 2,
+          vAttack: "3",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 2 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you have any cards in your discard pile, then shuffle them into your deck, and Shang-Chi reenters the Sewers."
+            ]
+          ]
+        },
+        {
+          name: "Tarantula",
+          qtd: 2,
+          vAttack: "7",
+          vp: "5",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 2 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player discards two cards or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 45,
+      name: "Registration Enforcers",
+      cards: [
+        {
+          name: "Blade",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you fight Blade in the Sewers or Rooftops, you get ",
+              { bold: "+2" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Captain Marvel",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player swaps a card from their hand with the top card of their deck."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player swaps their hand with the top four cards of their deck."
+            ]
+          ]
+        },
+        {
+          name: "Deadpool",
+          qtd: 2,
+          vAttack: "5",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals a card that costs 5 or discards down to 5 cards."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Same effect."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Micromax",
+          qtd: 2,
+          vAttack: "6",
+          vp: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 2 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 46,
+      name: "S.H.I.E.L.D. Elite",
+      cards: [
+        {
+          name: "Agent Eric Marshall",
+          qtd: 2,
+          vAttack: "1",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 29 },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": A S.H.I.E.L.D. Officer enters the city as a ",
+              { bold: "3" },
+              { icon: 1 },
+              " Villain. When you fight it, gain it as a Hero."
+            ]
+          ]
+        },
+        {
+          name: "Agent Gabe Jones",
+          qtd: 2,
+          vAttack: "2",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 29 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": A S.H.I.E.L.D. Officer enters the city as a ",
+              { bold: "3" },
+              { icon: 1 },
+              " Villain. When you fight it, gain it as a Hero."
+            ]
+          ]
+        },
+        {
+          name: "Dum Dum Dugan",
+          qtd: 2,
+          vAttack: "4",
+          vp: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 29 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player with no S.H.I.E.L.D. Officers in their discard pile gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Sharon Carter, Agent 13",
+          qtd: 2,
+          vAttack: "6",
+          vp: "5",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 29 },
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 28 },
+              " the S.H.I.E.L.D. Officer stack. While it's fortified, whenever any number of S.H.I.E.L.D. Officers become Villains, an extra one becomes a Villain."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 47,
+      name: "Superhuman Registration Act",
+      cards: [
+        {
+          name: "Iron Spider",
+          qtd: 2,
+          vAttack: "2",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 28 },
+              " your deck. While Iron Spider fortifies a players deck, that player draws one fewer card at the end of their turn."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of the Villain Deck. If that card is worth 2VP or less, Iron Spider fortifies the deck of the player on your left."
+            ]
+          ]
+        },
+        {
+          name: "Ms. Marvel",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 28 },
+              " an HQ space. While its fortified, Heroes can't be gained from that space."
+            ]
+          ]
+        },
+        {
+          name: "She-Hulk",
+          qtd: 2,
+          vAttack: "8",
+          vp: "5",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 4 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 28 },
+              " the Villain deck. When a Master Strike is completed from that deck, each player gains a Wound and She-Hulk enters the Sewers."
+            ]
+          ]
+        },
+        {
+          name: "Yellowjacket",
+          qtd: 2,
+          vAttack: "7",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 5 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 28 },
+              " the Hero Deck. While it's fortified, whenever a Hero in the HQ costs 7 or more, KO that Hero."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 48,
+      name: "Thunderbolts",
+      cards: [
+        {
+          name: "Fixer",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Look at the top three cards of your deck. KO one and put the rest back in any order."
+            ]
+          ]
+        },
+        {
+          name: "Mach-IV",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals a ",
+              { hc: 5 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Radioactive Man",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 28 },
+              " the Wound Stack. While it's fortified, whenever a player gains a Wound, that player gains an extra Wound."
+            ]
+          ]
+        },
+        {
+          name: "Songbird",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player without another Thunderbolts Villain in their Victory Pile gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        }
+      ]
+    }
   ],
   schemes: [
     {

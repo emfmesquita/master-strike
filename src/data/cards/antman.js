@@ -591,6 +591,359 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 76,
+      name: "Ultron's Legacy",
+      cards: [
+        {
+          name: "Ultron Roboticks",
+          qtd: 1,
+          vp: "2",
+          vAttack: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 50 },
+              " ",
+              { hc: 5 },
+              { hc: 5 },
+              { hc: 5 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Original Ultron-1",
+          qtd: 1,
+          vp: "2",
+          vAttack: "3+",
+          abilities: [
+            [
+              { keyword: 51 },
+              " by ",
+              { hc: 3 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Legions of Ultron",
+          qtd: 1,
+          vp: "3",
+          vAttack: "4+",
+          abilities: [
+            [
+              { keyword: 51 },
+              " by ",
+              { hc: 5 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Draw a card."
+            ]
+          ]
+        },
+        {
+          name: "Alkhema",
+          qtd: 1,
+          vp: "3",
+          vAttack: "4+",
+          abilities: [
+            [
+              { keyword: 51 },
+              " by ",
+              { hc: 2 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO a card from your discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Ultron-Pym",
+          qtd: 1,
+          vp: "3",
+          vAttack: "6",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 50 },
+              " ",
+              { hc: 5 },
+              { hc: 5 },
+              { hc: 5 },
+              { hc: 5 },
+              { hc: 5 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": A Hero in the HQ with no Size-Changing abilites gains ",
+              { keyword: 26 },
+              " ",
+              { hc: 5 },
+              " this turn."
+            ]
+          ]
+        },
+        {
+          name: "Future Ultron Prime",
+          qtd: 1,
+          vp: "5",
+          vAttack: "5+",
+          abilities: [
+            [
+              { keyword: 51, text: "Double Empowered" },
+              " by ",
+              { hc: 5 }
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put all non-",
+              { hc: 5 },
+              " Heroes from the HQ on the bottom of the Hero Deck."
+            ]
+          ]
+        },
+        {
+          name: "Brutish Ultron-14",
+          qtd: 1,
+          vp: "4",
+          vAttack: "5+",
+          abilities: [
+            [
+              { keyword: 51 },
+              " by ",
+              { hc: 4 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals a ",
+              { hc: 4 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Crimson Cowl",
+          qtd: 1,
+          vp: "4",
+          vAttack: "5+",
+          abilities: [
+            [
+              { keyword: 51 },
+              " by ",
+              { hc: 1 }
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Crimson Cowl captures a Bystander."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 77,
+      name: "Queen's Vengeance",
+      cards: [
+        {
+          name: "Daystar",
+          qtd: 1,
+          vp: "2",
+          vAttack: "5",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 50 },
+              " ",
+              { hc: 3 },
+              { hc: 3 },
+              { hc: 3 },
+              { hc: 3 },
+              { hc: 3 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of your deck. You may KO it."
+            ]
+          ]
+        },
+        {
+          name: "Blackbird",
+          qtd: 1,
+          vp: "3",
+          vAttack: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 52 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Gigantus",
+          qtd: 1,
+          vp: "4",
+          vAttack: "7",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 50 },
+              " ",
+              { hc: 4 },
+              { hc: 4 },
+              { hc: 4 },
+              { hc: 4 },
+              { hc: 4 },
+              { hc: 4 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Iron Knight",
+          qtd: 1,
+          vp: "4",
+          vAttack: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 52 },
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals a ",
+              { hc: 5 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Yeoman America",
+          qtd: 1,
+          vp: "5",
+          vAttack: "5",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 52 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              " for each color of Hero you have ",
+              { italic: "(including grey)" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Star-Knight",
+          qtd: 1,
+          vp: "3",
+          vAttack: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 52 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO a card from your discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Pixie",
+          qtd: 1,
+          vp: "2",
+          vAttack: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 50 },
+              " ",
+              { hc: 1 },
+              { hc: 1 },
+              { hc: 1 },
+              { hc: 1 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal a ",
+              { hc: 1 },
+              " Hero or play another card from the Villain Deck."
+            ]
+          ]
+        },
+        {
+          name: "Mordred the Evil",
+          qtd: 1,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Choose a card in your discard pile. The player to your right gains it."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player simultaneously does that same effect."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 106,

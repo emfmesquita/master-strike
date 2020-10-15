@@ -1442,6 +1442,677 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 18,
+      name: "Avengers",
+      cards: [
+        {
+          name: "Ant-Man",
+          qtd: 2,
+          vAttack: "3",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 11, text: "Elusive 4" }
+            ]
+          ]
+        },
+        {
+          name: "Captain America",
+          qtd: 1,
+          vAttack: "4+",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals three colors of Allies or gains a Bindings. ",
+              { italic: "(Grey is a color.)" },
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Same effect."
+            ],
+            [
+              "Captain America gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each color of Ally in the Lair."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": ",
+              { keyword: 9 },
+              " each player."
+            ]
+          ]
+        },
+        {
+          name: "Hulk",
+          qtd: 1,
+          vAttack: "8",
+          vp: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 9 },
+              " each player twice."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Same effect."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Iron Man",
+          qtd: 1,
+          vAttack: "7",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals a ",
+              { hc: 5 },
+              " Ally or gains a Bindings."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Same effect."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": ",
+              { keyword: 9 },
+              " each player."
+            ]
+          ]
+        },
+        {
+          name: "Thor",
+          qtd: 1,
+          vAttack: "7",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": KO each Ally from the Lair that costs 7",
+              { icon: 3 },
+              " or more."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Same effect."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": ",
+              { keyword: 9 },
+              " each player."
+            ]
+          ]
+        },
+        {
+          name: "Wasp",
+          qtd: 2,
+          vAttack: "1",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 11, text: "Elusive 7" }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 19,
+      name: "Defenders",
+      cards: [
+        {
+          name: "Daredevil",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": The next Ally you recruit this turn goes on top of your deck."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Each player reveals the top card of their deck and if it costs 1",
+              { icon: 3 },
+              " or more, discards it."
+            ]
+          ]
+        },
+        {
+          name: "Iron Fist",
+          qtd: 2,
+          vAttack: "3",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "To fight Iron Fist, you must also reveal three Allies with different costs."
+            ]
+          ]
+        },
+        {
+          name: "Namor, The Sub-Mariner",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": If any other Defenders Adversaries are in the city, each player gains a Bindings."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Same Effect."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Same Effect."
+            ]
+          ]
+        },
+        {
+          name: "Luke Cage",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals the top three cards of their deck. You choose which players discard them and which players put them back on top in the order of their choice."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 20,
+      name: "Marvel Knights",
+      cards: [
+        {
+          name: "Black Panther",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player draws a card."
+            ]
+          ]
+        },
+        {
+          name: "Elektra",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Allies. Then KO a Bindings from your hand or discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Punisher",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of your deck. If it costs 0",
+              { icon: 3 },
+              ", KO it."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Each player reveals the top card of their deck and if it costs 1",
+              { icon: 3 },
+              " or more, KOs it."
+            ]
+          ]
+        },
+        {
+          name: "Ghost Rider",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": You may KO another Adversary from your Victory Pile. If you do, you get ",
+              { bold: "+3" },
+              { icon: 2 },
+              "."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Each player may KO an Adversary from their Victory Pile. Any player who does not do so gains a Bindings."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 21,
+      name: "Spider Friends",
+      cards: [
+        {
+          name: "Black Cat",
+          qtd: 2,
+          vAttack: "2",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 11, text: "Elusive 6" }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals the top card of their deck. Choose any number of those cards to be discarded."
+            ]
+          ]
+        },
+        {
+          name: "Firestar",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of your deck. If it has a ",
+              { icon: 2 },
+              " icon, KO it."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Each player reveals the top card of their deck, and if it has an ",
+              { icon: 1 },
+              " icon, KO it."
+            ]
+          ]
+        },
+        {
+          name: "Moon Knight",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Allies. Then, if you fought Moon Knight on the Rooftops, KO another of your Allies."
+            ]
+          ]
+        },
+        {
+          name: "Spider-Man",
+          qtd: 2,
+          vAttack: "2",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of the Adversary Deck. If that card is worth 2",
+              { icon: 4 },
+              " or less, play it. If you play a card from the Adversary Deck this way, put Spider-Man back on top of the Adversary Deck."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Each player gains a Bindings."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 22,
+      name: "Uncanny Avengers",
+      cards: [
+        {
+          name: "Havok",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "2",
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player who does not reveal a ",
+              { hc: 3 },
+              " Ally discards two cards, then draws a card."
+            ]
+          ]
+        },
+        {
+          name: "Rogue",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "2",
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each other player discards the top card of their deck. Play a copy of one of those Allies."
+            ]
+          ]
+        },
+        {
+          name: "Scarlet Witch",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top three cards of your deck. Put any that have odd-numbered costs into your hand and discard the rest. ",
+              { italic: "(0 is even.)" }
+            ]
+          ]
+        },
+        {
+          name: "Wolverine",
+          qtd: 2,
+          vAttack: "7+",
+          vp: "5",
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              "Wolverine gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each card you've drawn this turn."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Each player reveals an ",
+              { hc: 2 },
+              " Ally or gains a Bindings. Then shuffle Wolverine back into the Adversary deck."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 23,
+      name: "Uncanny X-Men",
+      cards: [
+        {
+          name: "Colossus",
+          qtd: 2,
+          vAttack: "5+",
+          vp: "3",
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": You may KO a Bindings from your hand or discard pile. If you don't, each other player gains a Bindings."
+            ]
+          ]
+        },
+        {
+          name: "Nightcrawler",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "2",
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Choose an Ally you played this turn. When you draw a new hand of cards at the end of this turn, add that Ally to your new hand as an extra card."
+            ]
+          ]
+        },
+        {
+          name: "Shadowcat",
+          qtd: 2,
+          vAttack: "2*+",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              { keyword: 11, text: "Elusive 5" }
+            ]
+          ]
+        },
+        {
+          name: "Storm",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "2",
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { italic: "(After Storm enters the city)" },
+              ". Move Storm to the Rooftops. If another Adversary is already there, swap them."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you fight Storm on the Rooftops, each other player gains a Bindings."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 24,
+      name: "X-Men First Class",
+      cards: [
+        {
+          name: "Angel",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "2",
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Draws two cards, then discard a card."
+            ]
+          ]
+        },
+        {
+          name: "Iceman",
+          qtd: 2,
+          vAttack: "5+",
+          vp: "3",
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Draw a card for each ",
+              { hc: 3 },
+              " Ally you played this turn."
+            ]
+          ]
+        },
+        {
+          name: "Jean Grey",
+          qtd: 1,
+          vAttack: "6+",
+          vp: "4",
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Jean Grey guards a Bystander for each Adversary in the city with X-Treme Attack ",
+              { italic: "(including Jean)" },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              " for each Bystander you kidnapped this turn."
+            ]
+          ]
+        },
+        {
+          name: "Beast",
+          qtd: 2,
+          vAttack: "5+",
+          vp: "3",
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Allies. Then KO another of your Allies if there are any other Adversaries in the city with X-Treme Attack."
+            ]
+          ]
+        },
+        {
+          name: "Cyclops",
+          qtd: 1,
+          vAttack: "6+",
+          vp: "4",
+          abilities: [
+            [
+              { keyword: 12 }
+            ],
+            [
+              "To Fight Cyclops, you must also discard a card."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Each player reveals a ",
+              { team: 11 },
+              " Ally or discards a card."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 25,

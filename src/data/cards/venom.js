@@ -583,6 +583,327 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 78,
+      name: "Life Foundation",
+      cards: [
+        {
+          name: "Agony",
+          qtd: 1,
+          vp: "3",
+          vAttack: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top three cards of the Villain Deck. A Villain you revealed ",
+              { keyword: 53 },
+              " with Agony. Put the rest back in any order."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals a ",
+              { hc: 1 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Dr. Carlton Drake",
+          qtd: 1,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each ",
+              { hc: 2 },
+              " and ",
+              { hc: 5 },
+              " Hero currently in the HQ costs 1 less this turn."
+            ]
+          ]
+        },
+        {
+          name: "Lasher",
+          qtd: 2,
+          vp: "2",
+          vAttack: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": A Henchman Villain from your Victory Pile ",
+              { keyword: 53 },
+              " with Lasher."
+            ]
+          ]
+        },
+        {
+          name: "Phage",
+          qtd: 1,
+          vp: "3",
+          vAttack: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": A Villain from the Escape Pile or your Victory Pile ",
+              { keyword: 53 },
+              " with Phage."
+            ]
+          ]
+        },
+        {
+          name: "Riot",
+          qtd: 2,
+          vp: "2",
+          vAttack: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top card of the Villain Deck. If it's a Villain, it ",
+              { keyword: 53 },
+              " with Riot."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Scream",
+          qtd: 1,
+          vp: "4",
+          vAttack: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top card of the Villain Deck. If it's a Henchman or Life Foundation Villain, it ",
+              { keyword: 53 },
+              " with Scream."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 79,
+      name: "Poisons",
+      cards: [
+        {
+          name: "Poison Captain America",
+          qtd: 1,
+          vAttack: "4",
+          hc: 2,
+          team: 20,
+          overrideType: 1,
+          attack: "0+",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": This ",
+              { keyword: 53 },
+              " with another Villain in the city. If already bonded or unable to bond, gain this as a Hero instead."
+            ],
+            { divider: true },
+            [
+              "You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each color of Hero you have. ",
+              { italic: "(including " },
+              { hc: 2 },
+              { italic: " and grey)" }
+            ]
+          ]
+        },
+        {
+          name: "Poison Dr. Octopus",
+          qtd: 1,
+          vAttack: "3",
+          hc: 5,
+          team: 20,
+          overrideType: 1,
+          attack: "1",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": This ",
+              { keyword: 53 },
+              " with a Villain in the Bank. If already bonded or unable to bond, gain this as a Hero instead."
+            ],
+            { divider: true },
+            [
+              "Draw a card."
+            ]
+          ]
+        },
+        {
+          name: "Poison Hulk",
+          qtd: 1,
+          vAttack: "5",
+          hc: 4,
+          team: 20,
+          overrideType: 1,
+          attack: "2+",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": This ",
+              { keyword: 53 },
+              " with a Henchman Villain in the city. If already bonded or unable to bond, gain this as a Hero instead."
+            ],
+            { divider: true },
+            [
+              { hc: 4 },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Poison Sabretooth",
+          qtd: 1,
+          vAttack: "4",
+          hc: 2,
+          team: 20,
+          overrideType: 1,
+          attack: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": This ",
+              { keyword: 53 },
+              " with a Villain in the Streets. If already bonded or unable to bond, gain this as a Hero instead."
+            ],
+            { divider: true },
+            [
+              { hc: 2 },
+              ": Look at the top card of your deck. You may KO it."
+            ]
+          ]
+        },
+        {
+          name: "Poison Scarlet Witch",
+          qtd: 1,
+          vAttack: "3",
+          hc: 1,
+          team: 20,
+          overrideType: 1,
+          attack: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": This ",
+              { keyword: 53 },
+              " with another Villain in the city with an odd-numbered ",
+              { icon: 1 },
+              ". If already bonded or unable to bond, gain this as a Hero instead."
+            ],
+            { divider: true },
+            [
+              "Reveal the top card of your deck. If it has an odd-numbered cost, draw it. ",
+              { italic: "(0 is even.)" }
+            ]
+          ]
+        },
+        {
+          name: "Poison Spider-Man",
+          qtd: 1,
+          vAttack: "2",
+          hc: 1,
+          team: 20,
+          overrideType: 1,
+          attack: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": This ",
+              { keyword: 53 },
+              " with another Villain in the city. If already bonded or unable to bond, gain this as a Hero instead."
+            ],
+            { divider: true },
+            [
+              "Reveal the top card of your deck. If it costs 2 or less, draw it."
+            ]
+          ]
+        },
+        {
+          name: "Poison Storm",
+          qtd: 1,
+          vAttack: "3",
+          hc: 3,
+          team: 20,
+          overrideType: 1,
+          attack: "2+",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": This ",
+              { keyword: 53 },
+              " with a Villain on the Rooftops or Bridge. If already bonded or unable to bond, gain this as a Hero instead."
+            ],
+            { divider: true },
+            [
+              { hc: 3 },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 1 },
+              " usable only against the Mastermind."
+            ]
+          ]
+        },
+        {
+          name: "Symbiotic Armor",
+          qtd: 1,
+          vp: "6",
+          vAttack: "1",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": This ",
+              { keyword: 53 },
+              " with the Mastermind. When you fight the Mastermind, defeat Symbiotic Armor and KO one of your Heroes instead of taking a Tactic."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 110,

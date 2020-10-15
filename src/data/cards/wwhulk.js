@@ -2113,6 +2113,749 @@ export default {
       ]
     }
   ],
+  villains: [
+    {
+      id: 64,
+      name: "Aspects of the Void",
+      cards: [
+        {
+          name: "Black Anti-Hurricane",
+          qtd: 2,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player simultaneously puts a card from their discard pile into the discard pile of the player to their right."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Demonform",
+          qtd: 1,
+          vp: "5",
+          vAttack: "7",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 8 },
+              ". If Demonform feasts on a non-grey Hero, gain a Hero from the HQ of that cost or less."
+            ]
+          ]
+        },
+        {
+          name: "Infini-Tendrils",
+          qtd: 2,
+          vp: "3",
+          vAttack: "4+",
+          abilities: [
+            { keyword: 48 },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Infini-Tendrils captures a Bystander."
+            ]
+          ]
+        },
+        {
+          name: "Psychotic Break",
+          qtd: 1,
+          vp: "2",
+          subType: 1,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Play another card from the Villain Deck."
+            ],
+            [
+              { bold: "By End of Turn" },
+              ": Defeat a Villain."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": ",
+              { italic: "(After you draw your new hand)" },
+              " Psychotic Break becomes a Master Strike that takes effect immediately."
+            ],
+          ]
+        },
+        {
+          name: "Shadow Man",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 65,
+      name: "Code Red",
+      cards: [
+        {
+          name: "Caught Red-Handed",
+          qtd: 1,
+          vp: "3",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": Recruit a ",
+              { hc: 1 },
+              " Hero or recruit any two Heroes."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": ",
+              { italic: "(After you draw your new hand)" },
+              " Each player reveals a ",
+              { hc: 1 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Crimson Dynamo",
+          qtd: 2,
+          vp: "2",
+          vAttack: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Choose a ",
+              { hc: 1 },
+              " Hero in the HQ. It costs 2 less this turn."
+            ]
+          ]
+        },
+        {
+          name: "Elektra, Red Blades",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you played a ",
+              { hc: 1 },
+              " Hero this turn, KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Punisher, Red Dot Sniper",
+          qtd: 1,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of your deck. If it costs 0, KO it. If it's ",
+              { hc: 1 },
+              ", draw it."
+            ]
+          ]
+        },
+        {
+          name: "Red She-Hulk",
+          qtd: 1,
+          vp: "5",
+          vAttack: "6+",
+          abilities: [
+            { keyword: 48 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals a ",
+              { hc: 1 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Thundra",
+          qtd: 1,
+          vp: "3",
+          vAttack: "4+",
+          abilities: [
+            [
+              "Thundra gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              " if there are any number of ",
+              { hc: 1 },
+              " Heroes in the HQ."
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put each non-",
+              { hc: 1 },
+              " Hero from the HQ on the bottom of the Hero Deck."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 66,
+      name: "Illuminati",
+      cards: [
+        {
+          name: "Black Bolt",
+          qtd: 2,
+          vp: "5",
+          vAttack: "13",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "During your turn, any number of times, you may discard a card that has no rules text to give Black Bolt ",
+              { bold: "-2" },
+              { icon: 1 },
+              " this turn."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player discards a card with no rules text."
+            ]
+          ]
+        },
+        {
+          name: "Dr. Strange",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player who can't ",
+              { keyword: 46 },
+              " Dr. Strange discards a card."
+            ]
+          ]
+        },
+        {
+          name: "Dr. Strange, Possessed by Zom",
+          qtd: 1,
+          vp: "3",
+          vAttack: "5+",
+          abilities: [
+            [
+              "This Villain gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Bystander in the city."
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": This Villain captures 3 Bystanders."
+            ]
+          ]
+        },
+        {
+          name: "Enchain the Hulk",
+          qtd: 1,
+          vp: "4",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": Discard two cards of the same Hero Class or recruit two cards of the same Hero Class. (",
+              { hc: 4 },
+              ", ",
+              { hc: 2 },
+              ", ",
+              { hc: 1 },
+              ", ",
+              { hc: 5 },
+              ", ",
+              { hc: 3 },
+              ", but not grey)"
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": ",
+              { italic: "(After you draw your new hand) " },
+              { keyword: 17, text: "Cross-Dimensional Hulk Rampage" }
+            ]
+          ]
+        },
+        {
+          name: "Hulkbuster Iron Man",
+          qtd: 2,
+          vp: "4",
+          vAttack: "6+",
+          abilities: [
+            [
+              "Hulkbuster Iron Man gets ",
+              { bold: "+3" },
+              { icon: 1 },
+              " unless you ",
+              { keyword: 46 },
+              " him."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 17, text: "Cross-Dimensional Illuminati Rampage" }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 67,
+      name: "Intelligencia",
+      cards: [
+        {
+          name: "Battle of Wits",
+          qtd: 2,
+          vp: "3",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": ",
+              { keyword: 46 },
+              " this trap."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": ",
+              { italic: "(After you draw your new hand)" },
+              " Each player discards down to 4 cards."
+            ]
+          ]
+        },
+        {
+          name: "Cosmic Hulk Robot",
+          qtd: 2,
+          vp: "4",
+          vAttack: "5+",
+          abilities: [
+            { keyword: 48 },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player who can't ",
+              { keyword: 46 },
+              " Cosmic Hulk Robot gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Doc Samson",
+          qtd: 2,
+          vp: "3",
+          vAttack: "4+",
+          abilities: [
+            [
+              "Doc Samson has ",
+              { bold: "+4" },
+              { icon: 1 },
+              " unless you ",
+              { keyword: 46 },
+              " him."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "The Leader, Gamma Fiend",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": If you can't ",
+              { keyword: 46 },
+              " the Leader, play the top card of the Villain Deck."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Same effect."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 68,
+      name: "Sakaar Imperial Guard",
+      cards: [
+        {
+          name: "Gladiators' Colosseum",
+          qtd: 1,
+          vp: "4",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": Only play cards from a single Team of your choice this turn (e.g. ",
+              { team: 2 },
+              ", ",
+              { team: 1 },
+              ", ",
+              { team: 4 },
+              ", ",
+              { team: 19 },
+              ", etc.)"
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": ",
+              { italic: "(After you draw your new hand)" },
+              " Each player reveals their hand, chooses a Team, and discards all cards that don't belong to that Team."
+            ]
+          ]
+        },
+        {
+          name: "Great Devil Corker",
+          qtd: 2,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Look at the top three cards of your deck. Put them back in any order. Then ",
+              { keyword: 8 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Headman Charr",
+          qtd: 2,
+          vp: "2",
+          vAttack: "2+",
+          abilities: [
+            [
+              "During your turn, Headman Charr gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Villain in your Victory Pile."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Lieutenant Caiera",
+          qtd: 1,
+          vp: "5",
+          vAttack: "7",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you ",
+              { keyword: 46 },
+              " Lieutenant Caiera draw two cards."
+            ]
+          ]
+        },
+        {
+          name: "Primus Vand",
+          qtd: 2,
+          vp: "3",
+          vAttack: "3+",
+          abilities: [
+            [
+              "Primus Vand gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Villain adjacent to him."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 69,
+      name: "U-Foes",
+      cards: [
+        {
+          name: "Ironclad",
+          qtd: 1,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals a ",
+              { hc: 4 },
+              " Hero or KO's a Hero that costs 1 or more from their discard pile."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Vapor",
+          qtd: 2,
+          vp: "2",
+          vAttack: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals a ",
+              { hc: 1 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Vector",
+          qtd: 2,
+          vp: "2",
+          vAttack: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player who reveals an ",
+              { hc: 2 },
+              " Hero draws a card."
+            ]
+          ]
+        },
+        {
+          name: "Unidentified Flying U-Foes",
+          qtd: 1,
+          vp: "3",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": Discard a ",
+              { hc: 5 },
+              " Hero or discard three cards."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": Play two extra cards from the Villain Deck next turn."
+            ]
+          ]
+        },
+        {
+          name: "X-Ray",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player who reveals a ",
+              { hc: 3 },
+              " Hero may KO a card from their discard pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 70,
+      name: "Warbound",
+      cards: [
+        {
+          name: "Elloe Kaifi",
+          qtd: 1,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Draw a card. Another player of your choice also draws a card."
+            ]
+          ]
+        },
+        {
+          name: "Hiroim",
+          qtd: 1,
+          vp: "5",
+          vAttack: "7",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO a card from the HQ. Each player reveals their hand and KO's a card with that same cost."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Korg",
+          qtd: 1,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": KO a Hero from the HQ. Each player reveals their hand and discards a card with that same cost."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Miek The Unhived",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Look at the top two cards of your deck. Put them back on the top and/or bottom. Then ",
+              { keyword: 8 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "No-Name, Brood Queen",
+          qtd: 2,
+          vp: "3",
+          vAttack: "4+",
+          abilities: [
+            { keyword: 48 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 8 },
+              ". If this feasts on a non-grey Hero, draw two cards."
+            ]
+          ]
+        },
+        {
+          name: "Warbound Rescue",
+          qtd: 1,
+          vp: "7",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": Put a Warbound Villain and Henchman Villain from your Victory Pile back into the city."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": Each player gains a Wound."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 92,

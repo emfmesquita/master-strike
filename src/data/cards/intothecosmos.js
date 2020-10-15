@@ -1127,6 +1127,499 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 90,
+      name: "Elders of the Universe",
+      cards: [
+        {
+          name: "The Runner",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 68 },
+              " ",
+              { hc: 2 },
+              ". Each player that loses must discard a card. If Evil wins, the Runner gains a ",
+              { rule: 1, text: "Shard" },
+              " for each card discarded this way, and he pushes forward two extra spaces."
+            ]
+          ]
+        },
+        {
+          name: "The Trader",
+          qtd: 2,
+          vp: "2",
+          vAttack: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 68 },
+              " ",
+              { hc: 5 },
+              ". Each player that loses must reveal their hand and trade a non-grey card from their hand with a card in the HQ that costs the same or less. If Evil wins, the Trader gains a ",
+              { rule: 1, text: "Shard" },
+              " for each trade that occurred."
+            ]
+          ]
+        },
+        {
+          name: "The Champion of the Universe",
+          qtd: 2,
+          vp: "5",
+          vAttack: "7",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 68 },
+              " ",
+              { hc: 4 },
+              ". Each player that loses must give this Villain one of their ",
+              { rule: 1 },
+              " or gain a Wound."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "The Collector",
+          qtd: 2,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 68 },
+              " ",
+              { hc: 1 },
+              ". Each player that loses gives the Collector one of these things that he doesn't have yet: A ",
+              { rule: 1, text: "Shard" },
+              ", a Bystander from their Victory Pile, a ",
+              { hc: 4 },
+              " Hero, a ",
+              { hc: 2 },
+              " Hero, a ",
+              { hc: 1 },
+              " Hero, a ",
+              { hc: 5 },
+              " Hero, or a ",
+              { hc: 3 },
+              " Hero ",
+              { italic: "(from hand or discard pile)" },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": The player of your choice gains one of the captured Heroes. Put the rest on the bottom of the Hero Deck."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 91,
+      name: "Celestials",
+      cards: [
+        {
+          name: "Nezarr, The Calculator",
+          qtd: 2,
+          vp: "4",
+          vAttack: "11",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              " ",
+              { hc: 1 },
+              " or ",
+              { hc: 5 },
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Nezarr grants you a ",
+              { keyword: 67 },
+              ": For the rest of the game, while it's your turn, the Mastermind gets ",
+              { bold: "-" },
+              { icon: 1 },
+              " equal to a fifth of its printed ",
+              { icon: 1 },
+              ". ",
+              { italic: "(round down the loss)" }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": The Mastermind gains ",
+              { rule: 1 },
+              " equal to a fifth of its printed ",
+              { icon: 1 },
+              { italic: " (rounded down)." }
+            ]
+          ]
+        },
+        {
+          name: "Gammenon, The Gatherer",
+          qtd: 2,
+          vp: "3",
+          vAttack: "10",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              " ",
+              { hc: 4 },
+              " or ",
+              { hc: 2 },
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gammenon grants you a ",
+              { keyword: 67 },
+              ": For the rest of the game, whenever you fight a Villain, rescue a Bystander."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Three Villains in the city each capture a Bystander."
+            ]
+          ]
+        },
+        {
+          name: "Exitar, The Exterminator",
+          qtd: 2,
+          vp: "5",
+          vAttack: "12",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              " ",
+              { hc: 5 },
+              " or ",
+              { hc: 3 },
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Exitar grants you a ",
+              { keyword: 67 },
+              ": For the rest of the game, once during each of your turns, you may fight a Henchman from your Victory Pile. Spend the normal ",
+              { icon: 1 },
+              " then do the Henchman's Fight effect, KO it, and rescue a Bystander."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": KO 5 Henchmen from the Villain Deck then shuffle it."
+            ]
+          ]
+        },
+        {
+          name: "Arishem, The Judge",
+          qtd: 1,
+          vp: "5",
+          vAttack: "13",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              " ",
+              { hc: 3 },
+              " or ",
+              { hc: 4 },
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Arishem grants you a ",
+              { keyword: 67 },
+              ": For the rest of the game, once during each of your turns, you may put a card from the HQ on the bottom of the Hero Deck."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { italic: "(After the normal Escape KO)" },
+              " Put each Hero that costs 5 or more from the HQ on the bottom of the Hero Deck."
+            ]
+          ]
+        },
+        {
+          name: "Tiamut, The Dreaming Celestial",
+          qtd: 1,
+          vp: "6",
+          vAttack: "14",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              " ",
+              { hc: 2 },
+              " or ",
+              { hc: 1 },
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Tiamut grants you a ",
+              { keyword: 67 },
+              ": Your hand size is one more for the rest of the game."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player's hand size is one less for the rest of the game."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 92,
+      name: "From Beyond",
+      cards: [
+        {
+          name: "The Mapmakers",
+          qtd: 3,
+          vp: "3",
+          vAttack: "7",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              " ",
+              { hc: 5 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "The Shaper of Worlds",
+          qtd: 2,
+          vp: "5",
+          vAttack: "10",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              " ",
+              { hc: 3 }
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Create a “New Reality“ space that stays above the Shaper of Worlds. It always contains a Hero, like an HQ space. Players can recruit from it."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Choose a player to gain that Hero."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": After the normal Escape KO, destroy the New Reality space and destroy an HQ space. KO those Heroes. ",
+              { italic: "(It doesn't refill. Any “Pocket Dimension“ stays in play.)" }
+            ]
+          ]
+        },
+        {
+          name: "Kubik",
+          qtd: 2,
+          vp: "5",
+          vAttack: "11",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              " ",
+              { hc: 2 }
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player must reveal two cards with the same non-zero cost or gain a Wound."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of your deck. If it costs 0, KO it."
+            ]
+          ]
+        },
+        {
+          name: "Kosmos",
+          qtd: 1,
+          vp: "6",
+          vAttack: "13",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              " ",
+              { hc: 1 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Take another turn after this one. Don't play a card from the Villain Deck at the start of that turn. For the rest of the game, players take turns in the opposite order around the table."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 93,
+      name: "Black Order of Thanos",
+      cards: [
+        {
+          name: "Corvus Glaive",
+          qtd: 2,
+          vp: "4",
+          vAttack: "5+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 41, text: "Danger Sense 3" },
+              ", helping all Black Order Villains and the Mastermind. Corvus Glaive captures a Bystander revealed this way."
+            ]
+          ]
+        },
+        {
+          name: "Black Dwarf",
+          qtd: 2,
+          vp: "3",
+          vAttack: "4+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 41, text: "Danger Sense 2" },
+              ", helping all Black Order Villains and the Mastermind. Play a Master Strike revealed this way."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Supergiant",
+          qtd: 2,
+          vp: "5",
+          vAttack: "6+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 41, text: "Danger Sense 1" },
+              ", helping all Black Order Villains and the Mastermind. Play a Villain revealed this way."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": You may KO a card from your discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Proxima Midnight",
+          qtd: 1,
+          vp: "5",
+          vAttack: "7+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 41, text: "Danger Sense 2" },
+              ", helping all Black Order Villains and the Mastermind. Play a Scheme Twist revealed this way."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals an ",
+              { hc: 2 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Ebony Maw",
+          qtd: 1,
+          vp: "5",
+          vAttack: "6+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Choose Villain, Master Strike, or Scheme Twist. Then ",
+              { keyword: 41, text: "Danger Sense 3" },
+              ", helping all Black Order Villains and the Mastermind. Play all the cards you revealed this way of the type you chose."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 130,

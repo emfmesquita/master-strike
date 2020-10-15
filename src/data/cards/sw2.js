@@ -1511,6 +1511,584 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 34,
+      name: "Deadpool's Secret Secret Wars",
+      cards: [
+        {
+          name: "Deadpool",
+          qtd: 1,
+          vAttack: "5+",
+          vp: "5",
+          abilities: [
+            { keyword: 20, text: "5th Circle of Kung-Fu" },
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 21 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Deadpool ascends to become a ",
+              { rule: 3, text: "new Mastermind" },
+              ". He gains the ability, “",
+              { bold: "Master Strike" },
+              ": Each player reveals a Hero with an odd-numbered cost or gains a Wound.“ (0 is even.)"
+            ]
+          ]
+        },
+        {
+          name: "Doop",
+          qtd: 2,
+          vAttack: "2",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "You can't fight Doop if there is a Villain in an adjacent city space."
+            ]
+          ]
+        },
+        {
+          name: "Howard the Duck",
+          qtd: 2,
+          vAttack: "1+",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Howard the Duck captures ",
+              { italic: "(the heart of)" },
+              " a Bystander."
+            ],
+            { keyword: 20, text: "7th Circle of Quack-Fu" }
+          ]
+        },
+        {
+          name: "Pink Sphinx",
+          qtd: 3,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 18 },
+              ": KO one of your Heroes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 35,
+      name: "Guardians of Knowhere",
+      cards: [
+        {
+          name: "Angela",
+          qtd: 1,
+          vAttack: "7",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 21 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Angela ascends to become a ",
+              { rule: 3, text: "new Mastermind" },
+              ". She gains the ability, “",
+              { bold: "Master Strike" },
+              ": Each player KOs a Hero from their discard pile that costs 1 or more.“"
+            ]
+          ]
+        },
+        {
+          name: "Drax the Destroyer",
+          qtd: 2,
+          vAttack: "5",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top card of your deck. KO it or put it back. ",
+              { keyword: 21 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Gamora",
+          qtd: 1,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 22 },
+              " one space."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { italic: "(After this goes to your Victory Pile) " },
+              { keyword: 19, text: "Patrol the Sewers" },
+              ": If it's empty, each other player gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Groot",
+          qtd: 2,
+          vAttack: "5",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 21 },
+              ". If Groot resurrects this way, then he becomes Tiny Dancing Groot with ",
+              { bold: "1" },
+              { icon: 1 },
+              " and no abilities for the rest of the turn."
+            ]
+          ]
+        },
+        {
+          name: "Rocket Raccoon",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { italic: "(After this goes to your Victory Pile) " },
+              { keyword: 19, text: "Patrol the Bank" },
+              ": If it's empty, draw a card. If it's not empty, KO one of your Heroes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 36,
+      name: "K'un-Lun",
+      cards: [
+        {
+          name: "Laughing Skull",
+          qtd: 2,
+          vAttack: "5+",
+          vp: "5",
+          abilities: [
+            { keyword: 20, text: "5th Circle of Kung-Fu" },
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals a Hero that costs 5 or more, or they discard a card."
+            ]
+          ]
+        },
+        {
+          name: "Rand K'ai",
+          qtd: 2,
+          vAttack: "6+",
+          vp: "6",
+          abilities: [
+            { keyword: 20, text: "6th Circle of Kung-Fu" },
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals a Hero that costs 6 or more, or they gain a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Razor Fist",
+          qtd: 2,
+          vAttack: "3+",
+          vp: "3",
+          abilities: [
+            { keyword: 20, text: "3rd Circle of Kung-Fu" },
+            [
+              {
+                bold: "Fight"
+              },
+              ": For each of your Heroes that costs 3, KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Red Sai",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "4",
+          abilities: [
+            { keyword: 20, text: "4th Circle of Kung-Fu" },
+            [
+              {
+                bold: "Fight"
+              },
+              ": Draw a card for each of your Heroes that costs 4."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 37,
+      name: "Monster Metropolis",
+      cards: [
+        {
+          name: "Bug, Shiklah's Dragon",
+          qtd: 2,
+          vAttack: "4",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO a card from your discard pile.",
+            ],
+            { keyword: 21 }
+          ]
+        },
+        {
+          name: "Ghost Deadpool",
+          qtd: 2,
+          vAttack: "5",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 21 },
+              ". Then, ",
+              { keyword: 17, text: "Cross-Dimensional Deadpool Rampage" },
+              "."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 17, text: "Cross-Dimensional Deadpool Rampage" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Man-Thing",
+          qtd: 2,
+          vAttack: "5",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each Monster Metropolis Villain captures a Bystander."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 21 }
+            ]
+          ]
+        },
+        {
+          name: "Marcus Symbiote Centaur",
+          qtd: 2,
+          vAttack: "3+",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 22 },
+              " two spaces."
+            ],
+            [
+              "When in the Sewers, Rooftops or Bridge, he is in “wolf form“ and gets ",
+              { bold: "+3" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 38,
+      name: "Utopolis",
+      cards: [
+        {
+          name: "Doctor Spectrum",
+          qtd: 3,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 22 },
+              " one space."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 18 },
+              ": KO a card from your discard pile."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player who doesn't have ",
+              { keyword: 18 },
+              " discards a card."
+            ]
+          ]
+        },
+        {
+          name: "Nighthawk",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "4",
+          abilities: [
+            [
+              "While in the Sewers, Rooftops or Bridge, Nighthawk gains ",
+              { bold: "+4" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Nighthawk becomes a Scheme Twist that takes effect immediately."
+            ]
+          ]
+        },
+        {
+          name: "Warrior Woman",
+          qtd: 1,
+          vAttack: "8",
+          vp: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 22 },
+              " one space."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Warrior Woman ascends to become a ",
+              { rule: 3, text: "new Mastermind" },
+              ". She gains the ability, “",
+              { bold: "Master Strike" },
+              ": ",
+              { keyword: 19, text: "Patrol the Bank" },
+              ": If there's a Villain there, each player discards a card with a ",
+              { icon: 2 },
+              " icon.“"
+            ]
+          ]
+        },
+        {
+          name: "Whizzer",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 22 },
+              " three spaces."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { italic: "(After this goes to your Victory Pile) " },
+              { keyword: 19, text: "Patrol the Bridge" },
+              ": If there's a Villain there, each other player gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 39,
+      name: "X-Men '92",
+      cards: [
+        {
+          name: "'92 Beast",
+          qtd: 2,
+          vAttack: "5",
+          hc: 4,
+          team: 4,
+          overrideType: 1,
+          attack: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 22 },
+              " one space."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            { divider: true },
+            [
+              { hc: 5 },
+              ": Draw a card."
+            ]
+          ]
+        },
+        {
+          name: "'92 Jubilee",
+          qtd: 3,
+          vAttack: "4",
+          hc: 3,
+          team: 4,
+          overrideType: 1,
+          attack: "2+",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            { divider: true },
+            [
+              { keyword: 18 },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "'92 Professor X",
+          qtd: 1,
+          vAttack: "8+",
+          vp: "6",
+          abilities: [
+            [
+              {
+                bold: "Escape"
+              },
+              ": '92 Professor X ascends to become a ",
+              { rule: 3, text: "new Mastermind" },
+              ". He gains the ability, “",
+              { bold: "Master Strike" },
+              ": Stack the two heroes from the HQ with the highest cost next to '92 Professor X. He gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Hero stacked there. Players can recruit the top card of the stack.“"
+            ]
+          ]
+        },
+        {
+          name: "'92 Wolverine",
+          qtd: 2,
+          vAttack: "7",
+          hc: 2,
+          overrideType: 1,
+          attack: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 17, tex: "Cross-Dimensional Wolverine Rampage" }
+            ],
+            { divider: true },
+            [
+              { hc: 2 },
+              ": Draw two cards."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 48,

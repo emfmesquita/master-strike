@@ -44,7 +44,7 @@ export default {
               "You get ",
               { bold: "+1" },
               { icon: 1 },
-              " for each Bystander in your Victory pile."
+              " for each Bystander in your Victory Pile."
             ]
           ]
         },
@@ -194,7 +194,7 @@ export default {
     {
       id: 4,
       name: "Deadpool",
-      filterName: "Deadpool (Core)",
+      filterName: "Deadpool (Core Set)",
       team: 0,
       cards: [
         {
@@ -857,7 +857,7 @@ export default {
     {
       id: 14,
       name: "Thor",
-      filterName: "Thor (Core)",
+      filterName: "Thor (Core Set)",
       set: [1, 20],
       team: 1,
       cards: [
@@ -935,7 +935,7 @@ export default {
     {
       id: 15,
       name: "Wolverine",
-      filterName: "Wolverine (Core)",
+      filterName: "Wolverine (Core Set)",
       team: 4,
       cards: [
         {
@@ -1334,6 +1334,534 @@ export default {
         },
       ]
     },
+  ],
+  villains: [
+    {
+      id: 1,
+      name: "Brotherhood",
+      cards: [
+        {
+          name: "Blob",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              "You can't defeat Blob unless you have an ",
+              { team: 4 },
+              " Hero."
+            ]
+          ]
+        },
+        {
+          name: "Juggernaut",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player KOs two Heroes from their discard pile."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player KOs two Heroes from their hand."
+            ]
+          ]
+        },
+        {
+          name: "Mystique",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Escape"
+              },
+              ": Mystique becomes a Scheme Twist that takes effect immediately."
+            ]
+          ]
+        },
+        {
+          name: "Sabretooth",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals an ",
+              { team: 4 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: "Enemies of Asgard",
+      filterName: "Enemies of Asgard (Core Set)",
+      cards: [
+        {
+          name: "Destroyer",
+          qtd: 1,
+          vAttack: "7",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO all your ",
+              { team: 2 },
+              " Heroes."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player KOs two of their Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Enchantress",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Draw three cards."
+            ]
+          ]
+        },
+        {
+          name: "Frost Giant",
+          qtd: 3,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals a ",
+              { hc: 3 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Ymir, Frost Giant King",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals a ",
+              { hc: 3 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Choose a player. That player KOs any number of Wounds from their hand and discard pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "HYDRA",
+      filterName: "HYDRA (Core Set)",
+      cards: [
+        {
+          name: "Endless Armies of HYDRA",
+          qtd: 3,
+          vAttack: "4",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Play the top two cards of the Villain Deck."
+            ]
+          ]
+        },
+        {
+          name: "HYDRA Kidnappers",
+          qtd: 3,
+          vAttack: "3",
+          vp: "1",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": You may gain a S.H.I.E.L.D. Officer."
+            ]
+          ]
+        },
+        {
+          name: "Supreme HYDRA",
+          qtd: 1,
+          vAttack: "6",
+          vp: "3*",
+          abilities: [
+            [
+              "Supreme HYDRA is worth ",
+              { bold: "+3" },
+              { icon: 4 },
+              " for each other HYDRA Villain in your Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Viper",
+          qtd: 1,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player without another HYDRA Villain in their Victory Pile gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Masters of Evil",
+      cards: [
+        {
+          name: "Baron Zemo",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": For each of your ",
+              { team: 1 },
+              " Heroes, rescue a Bystander."
+            ]
+          ]
+        },
+        {
+          name: "Melter",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals the top card of their deck. For each card, you choose to KO it or put it back."
+            ]
+          ]
+        },
+        {
+          name: "Ultron",
+          qtd: 2,
+          vAttack: "6",
+          vp: "2+",
+          abilities: [
+            [
+              "Ultron is worth ",
+              { bold: "+1" },
+              { icon: 4 },
+              " for each ",
+              { hc: 5 },
+              " Hero you have among all your cards at the end of the game."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals a ",
+              { hc: 5 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Whirlwind",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you fight Whirlwind on the Rooftops or Bridge, KO two of your Heroes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 5,
+      name: "Radiation",
+      cards: [
+        {
+          name: "Abomination",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you fight Abomination on the Streets or Bridge, rescue three Bystanders."
+            ]
+          ]
+        },
+        {
+          name: "The Leader",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Play the top card of the Villain Deck."
+            ]
+          ]
+        },
+        {
+          name: "Maestro",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": For each of your ",
+              { hc: 4 },
+              " Heroes, KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Zzzax",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals a ",
+              { hc: 4 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 6,
+      name: "Skrulls",
+      cards: [
+        {
+          name: "Paibok the Power Skrull",
+          qtd: 1,
+          vAttack: "8",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Choose a Hero in the HQ for each player. Each player gains that Hero."
+            ]
+          ]
+        },
+        {
+          name: "Skrull Queen Veranke",
+          qtd: 1,
+          vAttack: "*",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put the highest-cost Hero from the HQ under this Villain. This Villain's ",
+              { icon: 1 },
+              " is equal to that Hero's ",
+              { icon: 3 },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain that Hero."
+            ]
+          ]
+        },
+        {
+          name: "Skrull Shapeshifters",
+          qtd: 3,
+          vAttack: "*",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put the rightmost Hero from the HQ under this Villain. This Villain's ",
+              { icon: 1 },
+              " is equal to that Hero's ",
+              { icon: 3 },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain that Hero"
+            ]
+          ]
+        },
+        {
+          name: "Super-Skrull",
+          qtd: 3,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player KOs one of their Heroes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 7,
+      name: "Spider-Foes",
+      cards: [
+        {
+          name: "Doctor Octopus",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": When you draw a new hand of cards at the end of this turn, draw eight cards instead of six."
+            ]
+          ]
+        },
+        {
+          name: "Green Goblin",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Green Goblin captures a Bystander."
+            ]
+          ]
+        },
+        {
+          name: "The Lizard",
+          qtd: 2,
+          vAttack: "3",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you fight the Lizard in the Sewers, each other player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Venom",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              "You can't defeat Venom unless you have a ",
+              { hc: 1 },
+              " Hero."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        }
+      ]
+    }
   ],
   schemes: [
     {

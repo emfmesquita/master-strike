@@ -588,6 +588,307 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 88,
+      name: "Demons of Limbo",
+      cards: [
+        {
+          name: "Crotus",
+          qtd: 2,
+          vp: "3",
+          vAttack: "3+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Crotus captures a Bystander. Put an even-numbered Hero on the bottom of the Hero Deck."
+            ],
+            [
+              { keyword: 64, text: "Moonlight" },
+              ": Crotus gets ",
+              { bold: "+4" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "N'astirh",
+          qtd: 2,
+          vp: "3",
+          vAttack: "3+",
+          abilities: [
+            [
+              { keyword: 64, text: "Sunlight" },
+              ": To fight N'astirh, you must also spend ",
+              { bold: "3" },
+              { icon: 2 },
+              "."
+            ],
+            [
+              { keyword: 64, text: "Moonlight" },
+              ": N'astirh gets ",
+              { bold: "+3" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "S'ym",
+          qtd: 1,
+          vp: "5",
+          vAttack: "7",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { keyword: 64, text: "Sunlight" },
+              ": Each player reveals a ",
+              { hc: 4 },
+              " Hero or gains a Wound. ",
+              { keyword: 64, text: "Moonlight" },
+              ": Each player has a ",
+              { keyword: 65 },
+              "."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Demon Bear",
+          qtd: 1,
+          vp: "5",
+          vAttack: "5+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player has a ",
+              { keyword: 65 },
+              ". The Demon Bear captures one of the Heroes discarded this way that has the lowest cost. The Demon Bear gets ",
+              { bold: "+" },
+              { icon: 1 },
+              " equal to that Hero's cost."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": The player of your choice gains that Hero."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": KO the captured Hero."
+            ]
+          ]
+        },
+        {
+          name: "Witchfire",
+          qtd: 2,
+          vp: "4",
+          vAttack: "4+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Witchfire captures a Hero from the HQ with the lowest odd-numbered cost. ",
+              { keyword: 64, text: "Sunlight" },
+              ": Witchfire gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": The player of your choice gains that Hero."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": KO the captured Hero."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 89,
+      name: "Hellions",
+      cards: [
+        {
+          name: "Catseye",
+          qtd: 2,
+          vp: "3",
+          vAttack: "3+",
+          abilities: [
+            [
+              { keyword: 64, text: "Moonlight" },
+              ": Catseye gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Thunderbird",
+          qtd: 2,
+          vp: "4",
+          vAttack: "4+",
+          abilities: [
+            [
+              { keyword: 64, text: "Sunlight" },
+              ": Thunderbird gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Tarot",
+          qtd: 1,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top card of the Villain Deck. If it's a..."
+            ],
+            "Bystander: Rescue it.",
+            "Scheme Twist: Play it.",
+            "Master Strike: Each player gains a Wound.",
+            [
+              "Villain: Each player has a ",
+              { keyword: 65 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Roulette",
+          qtd: 1,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top card of the Hero Deck. If it's ",
+              { hc: 5 },
+              " each player gains a Wound. If it's ",
+              { hc: 1 },
+              ", you draw a card."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Same Effect."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same Effect."
+            ]
+          ]
+        },
+        {
+          name: "Empath",
+          qtd: 1,
+          vp: "4",
+          vAttack: "4+",
+          abilities: [
+            [
+              "During your turn, Empath gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each grey Hero you have."
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals a ",
+              { hc: 1 },
+              " Hero or has a ",
+              { keyword: 65 },
+              "."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Jetstream",
+          qtd: 1,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { italic: "(After this enters the Sewers)" },
+              " Put Jetstream on the Bridge. If there's another Villain there, swap them."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player discards an ",
+              { team: 4 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 126,

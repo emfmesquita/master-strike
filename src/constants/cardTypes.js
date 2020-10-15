@@ -15,6 +15,7 @@ const HENCHMEN = {
 };
 const VILLAIN = {
   id: 4,
+  value: "villains",
   label: "Villain",
 };
 const SCHEME = {

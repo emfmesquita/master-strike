@@ -102,7 +102,7 @@ export default {
     bottom: 82px;
   }
   .card-vp {
-    right: 6px;
+    right: 7px;
     bottom: 92px;
     width: 20px !important;
     line-height: 20px !important;

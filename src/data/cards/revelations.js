@@ -1184,6 +1184,554 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 80,
+      name: "Army of Evil",
+      cards: [
+        {
+          name: "Mister Hyde",
+          qtd: 2,
+          vp: "4",
+          vAttack: "6",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "While in the Bank or Streets, this card's name is “Dr. Calvin Zabo“, and you muist spend ",
+              { icon: 2 },
+              " to fight him instead of ",
+              { icon: 1 },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO pne of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Klaw",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Klaw captures a ",
+              { hc: 5 },
+              " or ",
+              { hc: 3 },
+              " Hero that costs 5 or less from the HQ."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain that Hero"
+            ]
+          ]
+        },
+        {
+          name: "Dome of Darkforce",
+          qtd: 1,
+          vp: "5",
+          vAttack: "7",
+          subType: 2,
+          abilities: [
+            [
+              "Whenever you fight a Villain here, each other player reveals a ",
+              { hc: 3 },
+              " Hero or discards a card."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Draw two cards."
+            ]
+          ]
+        },
+        {
+          name: "Count Nefaria",
+          qtd: 1,
+          vp: "5",
+          vAttack: "7",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": All players reveal their hands.  Unless all those revealed cards together include ",
+              { hc: 4 },
+              ", ",
+              { hc: 2 },
+              ", ",
+              { hc: 1 },
+              ", ",
+              { hc: 5 },
+              ", and ",
+              { hc: 3 },
+              " Heroes, each player gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same Effect."
+            ]
+          ]
+        },
+        {
+          name: "Blackout",
+          qtd: 2,
+          vp: "2",
+          vAttack: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals a ",
+              { hc: 3 },
+              " Hero or discards a card."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Draw two cards."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 81,
+      name: "Dark Avengers",
+      cards: [
+        {
+          name: "Ares",
+          qtd: 1,
+          vp: "6",
+          vAttack: "6+",
+          abilities: [
+            { keyword: 59 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Captain Marvel (Noh-Varr)",
+          qtd: 1,
+          vp: "3",
+          vAttack: "3+",
+          abilities: [
+            { keyword: 59 },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": If any other Dark Avengers are in the city, each player gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same Effect."
+            ]
+          ]
+        },
+        {
+          name: "Dark Hawkeye (Bullseye)",
+          qtd: 1,
+          vp: "4",
+          vAttack: "4+",
+          abilities: [
+            { keyword: 59 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes. Then choose one:"
+            ],
+            "- Each other player KOs one of their Heroes.",
+            "- Each other player gains a 0-cost Hero from the KO pile."
+          ]
+        },
+        {
+          name: "Dark Ms. Marvel (Moonnstone)",
+          qtd: 1,
+          vp: "4",
+          vAttack: "4+",
+          abilities: [
+            { keyword: 59 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each other plasyer discards two cards, then draws a card."
+            ]
+          ]
+        },
+        {
+          name: "Dark Spider-Man (Scorpion)",
+          qtd: 1,
+          vp: "2",
+          vAttack: "2+",
+          abilities: [
+            { keyword: 59, text: "Double Last Stand" },
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal the top two cards of your deck.  KO one of them that costs 2 or less.  Put the rest back in any order."
+            ]
+          ]
+        },
+        {
+          name: "Dark Wolverine (Daken)",
+          qtd: 1,
+          vp: "5",
+          vAttack: "5+",
+          abilities: [
+            { keyword: 59 },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals an ",
+              { hc: 2 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same Effect, then shuffle Dark Wolverine back into the Villain Deck."
+            ]
+          ]
+        },
+        {
+          name: "Sentry",
+          qtd: 1,
+          vp: "5",
+          vAttack: "7+",
+          abilities: [
+            [
+              "While in the Bank or Streets, this card's name is “The Void“, it gets ",
+              { bold: "+5" },
+              { icon: 1 },
+              ", and it gets “",
+              { bold: "Fight" },
+              ": KO up to two cards from your discard pile.“"
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Sentry's Watchtower",
+          qtd: 1,
+          vp: "5",
+          vAttack: "8",
+          subType: 2,
+          abilities: [
+            [
+              "Villains here get ",
+              { keyword: 59 },
+              ". ",
+              { italic: "(Villains who already have it get the bonus again.)" }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": You gain the Hero on the HQ space under this."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 82,
+      name: "Hood's Gang",
+      cards: [
+        {
+          name: "Cancer",
+          qtd: 2,
+          vp: "2",
+          vAttack: "3+",
+          abilities: [
+            { keyword: 58 },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player that has any cards in their discard pile gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Chemistro",
+          qtd: 2,
+          vp: "3",
+          vAttack: "4+",
+          abilities: [
+            { keyword: 58 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": Exchange a card you played this turn with a card in the HQ that has the same or lower cost. ",
+              { italic: "(The card you gained goes to your discard pile.)" }
+            ]
+          ]
+        },
+        {
+          name: "Madam Masque",
+          qtd: 2,
+          vp: "4",
+          vAttack: "5+",
+          abilities: [
+            { keyword: 58 },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Guess Villain, Bystander, Strike, or Twist.  Then reveal the top card of the Villain Deck.  If you guessed wrong, play that card."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "The Brother's Grimm",
+          qtd: 1,
+          vp: "2",
+          vAttack: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "To fight The Brother's Grimm, you must also discard two identical cards."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": You may KO a card from your discard pile."
+            ]
+          ]
+        },
+        {
+          name: "The Dark Dimension",
+          qtd: 1,
+          vp: "5",
+          vAttack: "9",
+          subType: 2,
+          abilities: [
+            [
+              "Villains here get ",
+              { keyword: 58 },
+              ". ",
+              { italic: "(Villains who already have it get the bonus again.)" }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Take another turn after this one."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 83,
+      name: "Lethal Legion",
+      cards: [
+        {
+          name: "Carnival of Wonders",
+          qtd: 1,
+          vp: "3",
+          vAttack: "5",
+          subType: 2,
+          abilities: [
+            [
+              "Whenever you fight a Villain here, each other player chooses a Bystander from their Victory Pile to be captured by Carnival of Wonders."
+            ]
+          ]
+        },
+        {
+          name: "Laser Maze",
+          qtd: 1,
+          vp: "5",
+          vAttack: "7",
+          subType: 2,
+          abilities: [
+            [
+              "Whenever you fight a Villain here, each other players reveals a ",
+              { hc: 3 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Living Laser",
+          qtd: 1,
+          vp: "5",
+          vAttack: "6+",
+          abilities: [
+            [
+              "Living Laser gers ",
+              { bold: "+3" },
+              { icon: 1 },
+              " while there's a “Maze“ ",
+              { rule: 6, text: "Location" },
+              " in the city."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals a ",
+              { hc: 3 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "M'Baku",
+          qtd: 1,
+          vp: "4",
+          vAttack: "5+",
+          abilities: [
+            [
+              "M'Baku gets ",
+              { bold: "+3" },
+              { icon: 1 },
+              " while there's a “Cult“ ",
+              { rule: 6, text: "Location" },
+              " in the city."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals their hand and discards a ",
+              { hc: 5 },
+              " card."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Power Man (Erik Josten)",
+          qtd: 1,
+          vp: "4",
+          vAttack: "5+",
+          abilities: [
+            [
+              "Power Man gets ",
+              { bold: "+3" },
+              { icon: 1 },
+              " while there's a “Prison“ ",
+              { rule: 6, text: "Location" },
+              " in the city."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player puts a Villain from their Victory Pile into the Escape Pile or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Swordsman",
+          qtd: 1,
+          vp: "3",
+          vAttack: "4+",
+          abilities: [
+            [
+              "Swordsman gets ",
+              { bold: "+3" },
+              { icon: 1 },
+              " while there's a “Carnival“ ",
+              { rule: 6, text: "Location" },
+              " in the city."
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Swordsman and each ",
+              { rule: 6, text: "Location" },
+              " in the city capture a Bystander."
+            ]
+          ]
+        },
+        {
+          name: "“The Raft“ Prison",
+          qtd: 1,
+          vp: "4",
+          vAttack: "6",
+          subType: 2,
+          abilities: [
+            [
+              "Whenever you fight a Villain here, each other player puts a Villain from their Victory Pile into the Escape Pile or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "White Gorilla Cult",
+          qtd: 1,
+          vp: "4",
+          vAttack: "6",
+          subType: 2,
+          abilities: [
+            [
+              "Whenever you fight a Villain here, each other player reveals their hand and discards a ",
+              { hc: 5 },
+              " card."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 114,

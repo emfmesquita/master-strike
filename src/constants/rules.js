@@ -3,7 +3,7 @@ const SHARDS = {
     id: 1,
     value: "shards",
     label: "Shards",
-    cardTypes: [1, 2, 3, 5],
+    cardTypes: [1, 2, 3, 4, 5],
 }
 const MULTICLASS_CARDS = {
     id: 2,
@@ -15,7 +15,7 @@ const MULTIPLE_MASTERMINDS = {
     id: 3,
     value: "multiplemasterminds",
     label: "Multiple Masterminds",
-    cardTypes: [1, 5],
+    cardTypes: [1, 4, 5],
 }
 const DIVIDED = {
     id: 4,
@@ -27,13 +27,13 @@ const TRAPS= {
     id: 5,
     value: "traps",
     label: "Traps",
-    cardTypes: [5],
+    cardTypes: [4, 5],
 }
 const LOCATIONS = {
     id: 6,
     value: "locations",
     label: "Locations",
-    cardTypes: [2, 3],
+    cardTypes: [2, 3, 4],
 }
 const TRANSFORMING_SCHEMES = {
     id: 7,
@@ -51,19 +51,19 @@ const VILLAINOUS_WEAPONS = {
     id: 9,
     value: "villainousweapons",
     label: "Villainous Weapons",
-    cardTypes: [2],
+    cardTypes: [2, 4],
 }
 const ASTERISK = {
     id: 10,
     value: "asterisk",
     label: "Asterisk Symbol",
-    cardTypes: [1, 2, 3],
+    cardTypes: [1, 2, 3, 4],
 }
 const SIDEKICKS = {
     id: 11,
     value: "sidekicks",
     label: "Sidekicks",
-    cardTypes: [1, 5],
+    cardTypes: [1, 4, 5],
 }
 
 export const rules = Object.freeze({

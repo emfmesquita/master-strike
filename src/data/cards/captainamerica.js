@@ -529,6 +529,192 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 40,
+      name: "Zola's Creations",
+      cards: [
+        {
+          name: "Captain Zolandia",
+          qtd: 2,
+          vAttack: "6+",
+          vp: "5",
+          abilities: [
+            { keyword: 25 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              " for each Hero Class you have."
+            ]
+          ]
+        },
+        {
+          name: "Doughboy",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "3",
+          abilities: [
+            { keyword: 25 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Man-Fish",
+          qtd: 2,
+          vAttack: "5+",
+          vp: "4",
+          abilities: [
+            { keyword: 25 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you fought Man-Fish in the Sewers or Bridge, then each other player gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Primus",
+          qtd: 2,
+          vAttack: "3",
+          vp: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "To fight Primus, you must also discard a card that costs 2, 3, 5, or 7."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": each player discards a Hero that costs 2, 3, 5, or 7."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 41,
+      name: "Masters of Evil (WWII)",
+      cards: [
+        {
+          name: "Black Knight",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Black Knight captures a Bystander."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 24 },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Executioner",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Executioner captures a Bystander."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 24 },
+              ": Draw a card."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": KO a Bystander from each player's Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Melter (WWII)",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Melter captures a Bystander."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 24 },
+              ": Each player reveals the top card of their deck. For each card, you choose to KO it or put it back."
+            ]
+          ]
+        },
+        {
+          name: "Radioactive Man",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Radioactive Man captures a Bystander."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player who is not a ",
+              { keyword: 24 },
+              " gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 56,

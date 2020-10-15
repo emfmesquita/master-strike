@@ -507,6 +507,182 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 60,
+      name: "Salvagers",
+      cards: [
+        {
+          name: "Hybrid Alien Tech",
+          qtd: 2,
+          vp: "4",
+          vAttack: "4+",
+          abilities: [
+            { keyword: 42 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your 0-cost Heroes."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": The current player reveals a ",
+              { hc: 3 },
+              " Hero or gains a 0-cost Hero from the KO pile."
+            ]
+          ]
+        },
+        {
+          name: "Shocker #1",
+          qtd: 2,
+          vp: "3",
+          vAttack: "3+",
+          abilities: [
+            { keyword: 42 },
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals an ",
+              { hc: 2 },
+              " Hero or discards a card."
+            ]
+          ]
+        },
+        {
+          name: "Shocker #2",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals their hand and discards all cards with the same card name as a card in the HQ."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { italic: "(After the normal HQ KO for this escaping)" },
+              " Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Tinkerer",
+          qtd: 2,
+          vp: "2",
+          vAttack: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 2 },
+              " for each ",
+              { hc: 5 },
+              " Hero in the HQ."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals a ",
+              { hc: 5 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 61,
+      name: "Vulture Tech",
+      cards: [
+        {
+          name: "Chitauri Weapon Assault",
+          qtd: 2,
+          vp: "4",
+          vAttack: "4+",
+          abilities: [
+            { keyword: 42 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes with a ",
+              { icon: 2 },
+              " icon."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player discards a card with a ",
+              { icon: 2 },
+              " icon."
+            ]
+          ]
+        },
+        {
+          name: "High Tech Helmet",
+          qtd: 2,
+          vp: "3",
+          vAttack: "3+",
+          abilities: [
+            { keyword: 42 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": ",
+              { keyword: 41, text: "Danger Sense 3" }
+            ]
+          ]
+        },
+        {
+          name: "Razor Talons",
+          qtd: 2,
+          vp: "2",
+          vAttack: "2+",
+          abilities: [
+            { keyword: 42 },
+            [
+              {
+                bold: "Fight"
+              },
+              ": The next Hero you gain this turn has ",
+              { keyword: 7 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Turbine Powered",
+          qtd: 2,
+          vp: "5",
+          vAttack: "5+",
+          abilities: [
+            { keyword: 42 },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Turbine Powered captures a Bystander. Then move this Villain to the Rooftops. If there's already a Villain there, swap them."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 84,

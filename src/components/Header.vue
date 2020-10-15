@@ -70,6 +70,10 @@ const items = [
     to: "/masterminds"
   },
   {
+    title: "Villains",
+    to: "/villains"
+  },
+  {
     title: "Henchmen",
     to: "/henchmen"
   },

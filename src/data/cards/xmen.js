@@ -1278,7 +1278,7 @@ export default {
             ],
             [
               { bold: "Master Strike" },
-              ": KO the top card of the Hero Deck and each card in the Hero Deck that shares a color with it. Shuffle the Hero Deck. Then, each player plays a Hellfire Club card from their victory Pile. Next, play a random Horror."
+              ": KO the top card of the Hero Deck and each card in the Hero Deck that shares a color with it. Shuffle the Hero Deck. Then, each player plays a Hellfire Club card from their Victory Pile. Next, play a random Horror."
             ],
             [
               { bold: "Dark Phoenix Wins" },
@@ -1852,6 +1852,845 @@ export default {
         },
       ]
     },
+  ],
+  villains: [
+    {
+      id: 53,
+      name: "Dark Descendants",
+      cards: [
+        {
+          name: "Fatale",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": The Mastermind ",
+              { keyword: 39, text: "Dominates" },
+              " the top card of the Hero Deck."
+            ]
+          ]
+        },
+        {
+          name: "Havok, Brainwashed",
+          qtd: 2,
+          vAttack: "6",
+          hc: 3,
+          team: 4,
+          overrideType: 1,
+          attack: "2+",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Havok becomes a Hero ",
+              { keyword: 39, text: "Dominated" },
+              " by the Mastermind."
+            ],
+            { divider: true },
+            [
+              { keyword: 34 },
+              " ",
+              { hc: 3 },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Nemesis",
+          qtd: 1,
+          vp: "5",
+          vAttack: "5+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals their hand and chooses one of their non-grey Heroes. Nemesis ",
+              { keyword: 39, text: "Dominates" },
+              " those Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Psychic Subjugation",
+          qtd: 1,
+          vp: "3",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": Recruit the left-most and right-most Heroes in the HQ."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": Each of those Heroes you didn't recruit enters the city as a Villain with ",
+              { icon: 1 },
+              " equal to that Hero's cost. When you fight one, you gain it."
+            ]
+          ]
+        },
+        {
+          name: "Random",
+          qtd: 2,
+          vp: "3",
+          vAttack: "4+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Random ",
+              { keyword: 39, text: "Dominates" },
+              " the top card of the Hero Deck. Then, each player reveals their hand and chooses one of their Heroes with that same cost. Random ",
+              { keyword: 39, text: "Dominates" },
+              " those Heroes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 54,
+      name: "Hellfire Club",
+      cards: [
+        {
+          name: "Corrupt the Phoenix Force",
+          qtd: 1,
+          vp: "3",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": Have no Hellfire Villains in the city."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": This Trap becomes a ",
+              { bold: "6" },
+              { icon: 1 },
+              " “Phoenix Force“ ",
+              { icon: 7 },
+              " Villain that enters the city and ",
+              { keyword: 39, text: "Dominates" },
+              " all the Heroes in the HQ that cost 6 or less."
+            ]
+          ]
+        },
+        {
+          name: "Emma Frost (White Queen)",
+          qtd: 2,
+          vp: "4",
+          vAttack: "4+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player chooses an ",
+              { team: 4 },
+              " Hero from their discard pile. Emma Frost ",
+              { keyword: 39, text: "Dominates" },
+              " those Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Harry Leland (Black Bishop)",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Heroes cost 1 more to recruit this turn."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Mastermind (Jason Wyngarde)",
+          qtd: 1,
+          vp: "6",
+          vAttack: "8+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": This Villain ascends to become a ",
+              { rule: 3, text: "new Mastermind" },
+              ". He gains the ability “",
+              { bold: "Master Strike" },
+              ": Each player simultaneously reveals a non-grey Hero.“ Mastermind ",
+              { keyword: 39, text: "Dominates" },
+              " the revealed Hero with the highest cost ",
+              { italic: "(and tied for highest)" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Sebastian Shaw (Black King)",
+          qtd: 2,
+          vp: "4",
+          vAttack: "3+",
+          abilities: [
+            [
+              "Sebastian Shaw has ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each card you've played from your hand this turn."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 55,
+      name: "Mojoverse",
+      cards: [
+        {
+          name: "Mindwarping TV Broadcast",
+          qtd: 1,
+          vp: "3",
+          subType: 1,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": A Villain captures a Bystander."
+            ],
+            [
+              { bold: "By End of Turn" },
+              ": Have no Bystanders in the city captured by Villains."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": After you draw your new hand at end of turn, each player discards down to four cards in hand."
+            ],
+          ]
+        },
+        {
+          name: "Minor Domo",
+          qtd: 2,
+          vp: "2",
+          vAttack: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Minor Domo captures 2 ",
+              { keyword: 40 },
+              "."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player simultaneously reveals a card from their hand. Whoever revealed the lowest cost card ",
+              { italic: "(or tied for lowest)" },
+              " gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Major Domo",
+          qtd: 2,
+          vp: "3",
+          vAttack: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Major Domo captures a ",
+              { keyword: 40, text: "Human Shield" },
+              "."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player simultaneously reveals a card from their hand. Whoever reveals the highest-costing card ",
+              { italic: "(or tied for highest)" },
+              " gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Spiral",
+          qtd: 1,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals a ",
+              { hc: 1 },
+              " Hero or discards their hand. Each player who discarded their hand this way draws 5 cards."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Warwolves",
+          qtd: 2,
+          vp: "2",
+          vAttack: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": These Warwolves capture a ",
+              { keyword: 40, text: "Human Shield" },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 56,
+      name: "Murderworld",
+      cards: [
+        {
+          name: "Animatronic Killer Clowns",
+          qtd: 2,
+          vp: "2",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": Recruit two Heroes."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": This Trap enters the city as a ",
+              { bold: "3" },
+              { icon: 1 },
+              " “Animatronic Killer Clown“ ",
+              { icon: 7 },
+              " Villain that captures a ",
+              { keyword: 40, text: "Human Shield" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Guillotine Rollercoaster",
+          qtd: 1,
+          vp: "3",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": Have at least four different costs of Heroes in the HQ."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": After you draw your new hand at the end of this turn, each palyer reveals their hand and discards each card with the same cost as the cards in the HQ."
+            ]
+          ]
+        },
+        {
+          name: "Miss Locke",
+          qtd: 2,
+          vp: "2",
+          vAttack: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Miss Locke captures 2 ",
+              { keyword: 40 },
+              ". Then reveal the top card of the Villain Deck. If it's a ",
+              { rule: 5, text: "Trap" },
+              " or Master Strike, play it."
+            ]
+          ]
+        },
+        {
+          name: "Monstrous Pinball Machine",
+          qtd: 1,
+          vp: "3",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": Pay any amount of ",
+              { icon: 2 },
+              ". Then you must reveal the top card of the Hero Deck. If you paid enough, recruit that Hero and put this Trap in your Victory Pile."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": KO that Hero. Play two extra cards from the Villain Deck next turn."
+            ]
+          ]
+        },
+        {
+          name: "Sulfuric Acid Water Slide",
+          qtd: 2,
+          vp: "2",
+          subType: 1,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Play another card from the Villain Deck."
+            ],
+            [
+              { bold: "By End of Turn" },
+              ": Have no Villains in the Sewers."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": Each player gains a Wound."
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 57,
+      name: "Shadow-X",
+      cards: [
+        {
+          name: "Betrayal of the Shadow",
+          qtd: 1,
+          vp: "4",
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": You may pay 6",
+              { icon: 2 },
+              "."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": Each player reveals their hand. Then, each player chooses a Shadow-X card from their hand or discard pile to enter the city as a Villain."
+            ]
+          ]
+        },
+        {
+          name: "Dark Angel",
+          qtd: 2,
+          vAttack: "4",
+          hc: 2,
+          team: 4,
+          overrideType: 1,
+          attack: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            { divider: true },
+            [
+              { keyword: 34 },
+              " ",
+              { hc: 2 },
+              ": The next Hero you recruit from the HQ has ",
+              { keyword: 37 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Dark Beast",
+          qtd: 1,
+          vAttack: "5",
+          hc: 5,
+          team: 4,
+          overrideType: 1,
+          attack: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            { divider: true },
+            [
+              { keyword: 34 },
+              " ",
+              { hc: 5 },
+              ": You may KO a card from your hand or discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Dark Cyclops",
+          qtd: 1,
+          vAttack: "7",
+          hc: 3,
+          team: 4,
+          overrideType: 1,
+          attack: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals a ",
+              { hc: 3 },
+              " Hero or discards a card."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            { divider: true },
+            [
+              { keyword: 34 },
+              " ",
+              { hc: 3 },
+              ": Return a ",
+              { hc: 3 },
+              " Hero from your discard pile to your hand."
+            ]
+          ]
+        },
+        {
+          name: "Dark Iceman",
+          qtd: 2,
+          vAttack: "5",
+          hc: 4,
+          team: 4,
+          overrideType: 1,
+          attack: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            { divider: true },
+            [
+              { keyword: 34 },
+              " ",
+              { hc: 4 },
+              ": Draw a card."
+            ]
+          ]
+        },
+        {
+          name: "Dark Marvel Girl",
+          qtd: 1,
+          vAttack: "4+",
+          hc: 1,
+          team: 4,
+          overrideType: 1,
+          attack: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Dark Marvel Girl ",
+              { keyword: 39, text: "Dominates" },
+              " each ",
+              { team: 4 },
+              " Hero that costs 4 or less from the HQ."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain this as a Hero."
+            ],
+            { divider: true },
+            [
+              { keyword: 34 },
+              " ",
+              { hc: 1 },
+              ": Rescue a Bystander."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 58,
+      name: "Shi'ar Imperial Guard",
+      cards: [
+        {
+          name: "Blackthorn",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you fought Blackthorn in the Sewers or Streets, each other player gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Gladiator",
+          qtd: 1,
+          vp: "5",
+          vAttack: "7",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player discards an ",
+              { team: 4 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Oracle",
+          qtd: 2,
+          vp: "4",
+          vAttack: "4+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player discards the top four cards of their deck and chooses one of those cards that costs 1 to 4. Oracle ",
+              { keyword: 39, text: "Dominates" },
+              " those Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Shi'ar Trial by Combat",
+          qtd: 1,
+          vp: "2",
+          subType: 1,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": If the Bridge is empty, reveal the top card of the Villain Deck. If it's a Villain, put it on the Bridge."
+            ],
+            [
+              { bold: "By End of Turn" },
+              ": Have no Villains on the Bridge."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": After you draw a new hand at end of turn, each player KOs a non-grey Hero from their discard pile."
+            ],
+          ]
+        },
+        {
+          name: "Smasher",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals a ",
+              { hc: 4 },
+              " Hero or discards a card."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO a card from your discard pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 59,
+      name: "Sisterhood of Mutants",
+      cards: [
+        {
+          name: "Lady Deathstrike",
+          qtd: 2,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals an ",
+              { hc: 2 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Lady Mastermind",
+          qtd: 1,
+          vp: "5",
+          vAttack: "7+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": This Villain ascends to become a ",
+              { rule: 3, text: "new Mastermind" },
+              ". She gains the ability “",
+              { bold: "Master Strike" },
+              ": Each player simultaneously reveals a non-grey Hero.“ Lady Mastermind ",
+              { keyword: 39, text: "Dominates" },
+              " the revealed Hero with the lowest cost ",
+              { italic: "(and tied for lowest)" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Resurrect Madelyne Pryor",
+          qtd: 1,
+          subType: 1,
+          abilities: [
+            [
+              { bold: "By End of Turn" },
+              ": You may pay ",
+              { bold: "3" },
+              { icon: 2 },
+              ". If you do, shuffle this Trap back into the Villain Deck, then play a card from the Villain Deck."
+            ],
+            [
+              { bold: "Or Suffer" },
+              ": This Trap becomes a Scheme Twist that takes effect immediately."
+            ]
+          ]
+        },
+        {
+          name: "Selene",
+          qtd: 2,
+          vp: "3",
+          vAttack: "3+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Selene ",
+              { keyword: 39, text: "Dominates" },
+              " all of the 0-cost Heroes from the KO pile."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO all the Heroes Dominated by Selene."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Put one Hero Dominated by Selene into each player's discard pile."
+            ]
+          ]
+        },
+        {
+          name: "Typhoid Mary",
+          qtd: 2,
+          vp: "3",
+          vAttack: "3+",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals their hand and chooses a 3-cost Hero from it. Typhoid Mary ",
+              { keyword: 39, text: "Dominates" },
+              " those Heroes."
+            ]
+          ]
+        }
+      ]
+    }
   ],
   schemes: [
     {

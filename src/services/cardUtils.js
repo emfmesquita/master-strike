@@ -1,4 +1,5 @@
-import { cardTypes } from "../constants/cardTypes"
+import { cardSubTypes, cardTypes } from "../constants/cardTypes"
+
 import { heroClassArray } from "../constants/heroClass"
 import { iconArray } from "../constants/icon"
 import { keywordsArray } from "../constants/keywords"
@@ -41,6 +42,10 @@ const abilitiesToText = abilities => {
 export const numberOfCards = cards => cards.reduce((total, card) => {
   // card is disabled (filtered on a search) or the second half of divided card nothing is added to total
   if(card.disabled || card.divided === 2) return total;
+
+  if(card.qtd) {
+    return total + card.qtd;
+  }
 
   // otherwise adds a value to total depending of the card rarity
   if(card.rarity === 1) return total + 5;
@@ -95,6 +100,17 @@ const henchmanSubtitle = (card, group) => {
   if(group.set === 6) return "Backup Adversary";
   return "Henchman Villain";
 }
+
+const villainSubtitle = (card, group) => {
+  if(group.subTitle) return group.subTitle;
+  if(card.subTitle) return card.subTitle;
+  if(card.subType === cardSubTypes.TRAP.id) return `Trap - ${group.name}`;
+  if(card.subType === cardSubTypes.LOCATION.id) return `Location - ${group.name}`;
+  if(card.subType === cardSubTypes.VILLAINOUS_WEAPON.id) return `Villainous Weapon - ${group.name}`;
+  if([6, 8].includes(group.set)) return `Adversary - ${group.name}`;
+  return `Villain - ${group.name}`;
+}
+
 const schemeSubtitle = (card, group) => {
   if([6, 8].includes(group.set)) return "Plot";
   if(card.transformed) return "Scheme, Transformed";
@@ -115,9 +131,14 @@ const processHero = (card, group) => {
 const processVillain = (card, group) => {
   card.vAttack = card.vAttack || group.vAttack;
   card.vAttackNum = toNumber(card.vAttack);
-  card.vAttackText = card.vAttackAsterisk ? card.vAttack + "*" : card.vAttack + "";
-  card.vp = card.vp || group.vp || -1;
-  card.vpText = card.vp > 0 ? card.vp + "" : "";
+
+  const vAttackText  = card.vAttack ? card.vAttack + "" : "";
+  const sufix = card.vAttackAsterisk && !vAttackText.includes("*") ? "*" : "";
+  card.vAttackText = vAttackText + sufix;
+
+  card.vp = card.vp || group.vp;
+  card.vpText = card.vp ? card.vp + "" : "";
+  card.vpNum = toNumber(card.vpText);
 
   if(card.overrideType === cardTypes.HERO.id) {
     card.cost = card.vAttack;
@@ -159,6 +180,12 @@ const processCard = (cardType, card, group) => {
     processVillain(card, group);
     card.subTitle = mastermindSubtitle(card, group);
     return;
+  }
+
+  if(cardTypes.VILLAIN === cardType) {
+    processVillain(card, group);
+    card.name = card.name || group.name;
+    card.subTitle = villainSubtitle(card, group);
   }
 
   if(cardTypes.HENCHMEN === cardType) {
@@ -204,6 +231,10 @@ export const getAllHeroes = () => {
 
 export const getAllMasterminds = () => {
   return processCardGroups(cardTypes.MASTERMIND);
+};
+
+export const getAllVillains = () => {
+  return processCardGroups(cardTypes.VILLAIN);
 };
 
 export const getAllHenchmen = () => {

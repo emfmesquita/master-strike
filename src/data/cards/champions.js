@@ -156,7 +156,7 @@ export default {
     {
       id: 154,
       name: "Nova",
-      filterName: "Nova (Champ)",
+      filterName: "Nova (Champions)",
       team: 18,
       cards: [
         {
@@ -647,6 +647,275 @@ export default {
         }
       ]
     },
+  ],
+  villains: [
+    {
+      id: 62,
+      name: "Monsters Unleashed",
+      cards: [
+        {
+          name: "Goom",
+          qtd: 1,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Goom captures a Bystander."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Groot from Planet X",
+          qtd: 1,
+          vp: "2",
+          vAttack: "6",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 4 },
+              ", ",
+              { hc: 1 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Two Bystanders from the Bystander Stack enter the city as ",
+              { bold: "3" },
+              { icon: 1 },
+              " “Splintered Half-Groot“ Villains. When you fight one, rescue it as a Bystander."
+            ]
+          ]
+        },
+        {
+          name: "Monsteroso",
+          qtd: 1,
+          vp: "2",
+          vAttack: "5",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 4 },
+              ", ",
+              { hc: 2 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": When you draw a new hand of cards at the end of this turn, draw an extra card."
+            ]
+          ]
+        },
+        {
+          name: "Orrgo",
+          qtd: 1,
+          vp: "2",
+          vAttack: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "You can't fight Orrgo unless you have already defeated another Villain this turn."
+            ]
+          ]
+        },
+        {
+          name: "Sporr",
+          qtd: 1,
+          vp: "3",
+          vAttack: "7",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 5 },
+              ", ",
+              { hc: 3 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": A Hero in the HQ gains ",
+              { keyword: 26 },
+              ": ",
+              { hc: 5 },
+              ", ",
+              { hc: 3 },
+              " this turn."
+            ]
+          ]
+        },
+        {
+          name: "Tim Boo Ba",
+          qtd: 1,
+          vp: "5",
+          vAttack: "12",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 4 },
+              ", ",
+              { hc: 2 },
+              ", ",
+              { hc: 1 },
+              ", ",
+              { hc: 5 },
+              ", ",
+              { hc: 3 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": All Heroes currently in the HQ cost 1 less this turn."
+            ]
+          ]
+        },
+        {
+          name: "Trull the Unhuman",
+          qtd: 1,
+          vp: "4",
+          vAttack: "8",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 1 },
+              ", ",
+              { hc: 5 }
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Trull captures a Bystander. Then ",
+              { keyword: 9 },
+              " each player."
+            ]
+          ]
+        },
+        {
+          name: "Zzutak",
+          qtd: 1,
+          vp: "5",
+          vAttack: "9",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 26 },
+              ": ",
+              { hc: 3 },
+              ", ",
+              { hc: 2 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 9 },
+              " each player."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 63,
+      name: "Wrecking Crew",
+      cards: [
+        {
+          name: "Bulldozer",
+          qtd: 2,
+          vp: "2",
+          vAttack: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Bulldozer moves an extra space forward. If this pushes any Villains forward, ",
+              { keyword: 9 },
+              " each player."
+            ]
+          ]
+        },
+        {
+          name: "Piledriver",
+          qtd: 2,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { keyword: 9 },
+              " each player."
+            ]
+          ]
+        },
+        {
+          name: "Thunderball",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you fight Thunderball in the Sewers or Bank, ",
+              { keyword: 9 },
+              " each other player."
+            ]
+          ]
+        },
+        {
+          name: "The Wrecker",
+          qtd: 2,
+          vp: "5",
+          vAttack: "7",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": For each Wrecking Crew Villain in the city ",
+              { italic: "(including this one)" },
+              ", ",
+              { keyword: 9 },
+              " each player."
+            ]
+          ]
+        }
+      ]
+    }
   ],
   schemes: [
     {

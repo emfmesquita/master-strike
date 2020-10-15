@@ -476,6 +476,174 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 27,
+      name: "Mighty, The",
+      subTitle: "Adversary - The Mighty",
+      cards: [
+        {
+          name: "Black Widow",
+          qtd: 1,
+          vAttack: "3",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 15, text: "2 Uru-Enchanted Weapons" },
+            [
+              {
+                bold: "Fight or Fail"
+              },
+              ": If her Uru-Enchanted Weapons revealed any Bystanders, kidnap them."
+            ]
+          ]
+        },
+        {
+          name: "Dr. Strange",
+          qtd: 1,
+          vAttack: "5",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top three cards of the Adversary Deck. Put the Adversary you revealed with the highest printed VP on top of that deck. Put the rest on the bottom of that deck in random order."
+            ],
+            { keyword: 15, text: "Uru-Enchanted Weapon" },
+            [
+              {
+                bold: "Fight or Fail"
+              },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Hawkeye",
+          qtd: 1,
+          vAttack: "3",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 15, text: "Uru-Enchanted Weapon" },
+            [
+              {
+                bold: "Fight or Fail"
+              },
+              ": Choose one: Each other player draws a card, or each other player discards a card."
+            ]
+          ]
+        },
+        {
+          name: "Iron Fist",
+          qtd: 1,
+          vAttack: "3",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 15, text: "Uru-Enchanted Weapon" },
+            [
+              {
+                bold: "Fight or Fail"
+              },
+              ": If his Uru-Enchanted Weapon revealed an Adversary, KO one of your Allies."
+            ]
+          ]
+        },
+        {
+          name: "Ms. Marvel",
+          qtd: 1,
+          vAttack: "4",
+          vp: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 15, text: "Uru-Enchanted Weapon" },
+            [
+              {
+                bold: "Fight or Fail"
+              },
+              ": If her Uru-Enchanted Weapon revealed a Command Strike or Plot Twist, play it."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Each player reveals a ",
+              { hc: 3 },
+              " Ally or gains a Bindings."
+            ]
+          ]
+        },
+        {
+          name: "Red She-Hulk",
+          qtd: 1,
+          vAttack: "4",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 15, text: "Uru-Enchanted Weapon" },
+            [
+              {
+                bold: "Fight or Fail"
+              },
+              ": If her Uru-Enchanted Weapon revealed an Adversary, put that Adversary into your Victory Pile."
+            ]
+          ]
+        },
+        {
+          name: "Spider-Man",
+          qtd: 1,
+          vAttack: "2",
+          vp: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 15, text: "2 Uru-Enchanted Weapons" },
+            [
+              {
+                bold: "Fight or Fail"
+              },
+              ": Play all the cards revealed by his Uru-Enchanted Weapon that are worth 2 VP or less."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Each player gains a Bindings."
+            ]
+          ]
+        },
+        {
+          name: "Wolverine",
+          qtd: 1,
+          vAttack: "5",
+          vp: "6",
+          vAttackAsterisk: true,
+          abilities: [
+            { keyword: 15, text: "2 Uru-Enchanted Weapons" },
+            [
+              {
+                bold: "Fight or Fail"
+              },
+              ": Draw two cards."
+            ],
+            [
+              {
+                bold: "Overrun"
+              },
+              ": Each player reveals an ",
+              { hc: 2 },
+              " Ally or gains a Bindings. Then put Wolverine on top of the Adversary Deck."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 37,

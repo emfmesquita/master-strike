@@ -2,13 +2,13 @@ const TELEPORT = {
     id: 1,
     value: "teleport",
     label: "Teleport",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 4],
 }
 const BRIBE = {
     id: 2,
     value: "bribe",
     label: "Bribe",
-    cardTypes: [2, 3],
+    cardTypes: [2, 3, 4],
 }
 const VERSATILE = {
     id: 3,
@@ -26,31 +26,31 @@ const BURROW = {
     id: 5,
     value: "burrow",
     label: "Burrow",
-    cardTypes: [],
+    cardTypes: [4],
 }
 const COSMIC_THREAT = {
     id: 6,
     value: "cosmicthreat",
     label: "Cosmic Threat",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 4],
 }
 const WALL_CRAWL = {
     id: 7,
     value: "wallcrawl",
     label: "Wall-Crawl",
-    cardTypes: [1, 3, 5],
+    cardTypes: [1, 3, 4, 5],
 }
 const FEAST = {
     id: 8,
     value: "feast",
     label: "Feast",
-    cardTypes: [1, 2, 3],
+    cardTypes: [1, 2, 3, 4],
 }
 const DEMOLISH = {
     id: 9,
     value: "demolish",
     label: "Demolish",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 4],
 }
 const DODGE = {
     id: 10,
@@ -62,73 +62,73 @@ const ELUSIVE = {
     id: 11,
     value: "elusive",
     label: "Elusive",
-    cardTypes: [],
+    cardTypes: [4],
 }
 const X_TREME_ATTACK = {
     id: 12,
     value: "xtremeattack",
     label: "X-Treme Attack",
-    cardTypes: [2],
+    cardTypes: [2, 4],
 }
 const ARTIFACT = {
     id: 13,
     value: "artifact",
     label: "Artifact",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 4],
 }
 const THROWN_ARTIFACT = {
     id: 14,
     value: "thrownartifact",
     label: "Thrown Artifact",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 4],
 }
 const URU_ENCHANTED_WEAPONS = {
     id: 15,
     value: "uruenchantedweapons",
     label: "Uru-Enchanted Weapons",
-    cardTypes: [2],
+    cardTypes: [2, 4],
 }
 const RISE_OF_THE_LIVING_DEAD = {
     id: 16,
     value: "riseofthelivingdead",
     label: "Rise of The Living Dead",
-    cardTypes: [2, 3],
+    cardTypes: [2, 3, 4],
 }
 const CROSS_DIMENSIONAL_RAMPAGE = {
     id: 17,
     value: "crossdimensionalrampage",
     label: "Cross-Dimensional Rampage",
-    cardTypes: [1, 2, 5],
+    cardTypes: [1, 2, 4, 5],
 }
 const SPECTRUM = {
     id: 18,
     value: "spectrum",
     label: "Spectrum",
-    cardTypes: [1],
+    cardTypes: [1, 4],
 }
 const PATROL = {
     id: 19,
     value: "patrol",
     label: "Patrol",
-    cardTypes: [1],
+    cardTypes: [1, 4],
 }
 const CIRCLE_OF_KUNG_FU = {
     id: 20,
     value: "circleofkungfu",
     label: "Circle of Kung-Fu (and Quack-Fu)",
-    cardTypes: [2, 5],
+    cardTypes: [2, 4, 5],
 }
 const FATEFUL_RESURRECTION = {
     id: 21,
     value: "fatefulresurrection",
     label: "Fateful Resurrection",
-    cardTypes: [2, 3, 5],
+    cardTypes: [2, 3, 4, 5],
 }
 const CHARGE = {
     id: 22,
     value: "charge",
     label: "Charge",
-    cardTypes: [2, 5],
+    cardTypes: [2, 4, 5],
 }
 const MAN_OUT_OF_TIME = {
     id: 23,
@@ -140,19 +140,19 @@ const SAVIOR = {
     id: 24,
     value: "savior",
     label: "Savior",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 4],
 }
 const ABOMINATION = {
     id: 25,
     value: "abomination",
     label: "Abomination",
-    cardTypes: [2],
+    cardTypes: [2, 4],
 }
 const SIZE_CHANGING = {
     id: 26,
     value: "sizechanging",
     label: "Size-Changing",
-    cardTypes: [1, 2, 5],
+    cardTypes: [1, 2, 4, 5],
 }
 const PHASING = {
     id: 27,
@@ -164,43 +164,43 @@ const FORTIFY = {
     id: 28,
     value: "fortify",
     label: "Fortify",
-    cardTypes: [1, 2, 5],
+    cardTypes: [1, 2, 4, 5],
 }
 const SHIELD_CLEARANCE = {
     id: 29,
     value: "shieldclearance",
     label: "S.H.I.E.L.D. Clearance",
-    cardTypes: [2, 3, 5],
+    cardTypes: [2, 3, 4, 5],
 }
 const EXCESSIVE_VIOLENCE = {
     id: 30,
     value: "excessiveviolence",
     label: "Excessive Violence",
-    cardTypes: [1],
+    cardTypes: [1, 4],
 }
 const REVENGE = {
     id: 31,
     value: "revenge",
     label: "Revenge",
-    cardTypes: [2, 5],
+    cardTypes: [2, 4, 5],
 }
 const INVESTIGATE = {
     id: 32,
     value: "investigate",
     label: "Investigate",
-    cardTypes: [1, 2, 5],
+    cardTypes: [1, 2, 4, 5],
 }
 const HIDDEN_WITNESS = {
     id: 33,
     value: "hiddenwitness",
     label: "Hidden Witness",
-    cardTypes: [2, 5],
+    cardTypes: [2, 4, 5],
 }
 const X_GENE = {
     id: 34,
     value: "xgene",
     label: "X-Gene",
-    cardTypes: [1],
+    cardTypes: [1, 4],
 }
 const PIERCING_ENERGY = {
     id: 35,
@@ -218,7 +218,7 @@ const SOARING_FLIGHT = {
     id: 37,
     value: "soaringflight",
     label: "Soaring Flight",
-    cardTypes: [1, 3],
+    cardTypes: [1, 3, 4],
 }
 const LIGHTSHOW = {
     id: 38,
@@ -230,25 +230,25 @@ const DOMINATE = {
     id: 39,
     value: "dominate",
     label: "Dominate",
-    cardTypes: [2],
+    cardTypes: [2, 4],
 }
 const HUMAN_SHIELDS = {
     id: 40,
     value: "humanshield",
     label: "Human Shields",
-    cardTypes: [2, 3],
+    cardTypes: [2, 3, 4],
 }
 const DANGER_SENSE = {
     id: 41,
     value: "dangersense",
     label: "Danger Sense",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 4],
 }
 const STRIKER = {
     id: 42,
     value: "striker",
     label: "Striker",
-    cardTypes: [1, 2, 5],
+    cardTypes: [1, 2, 4, 5],
 }
 const COORDINATE = {
     id: 43,
@@ -272,7 +272,7 @@ const OUTWIT = {
     id: 46,
     value: "outwit",
     label: "Outwit",
-    cardTypes: [1, 2, 3],
+    cardTypes: [1, 2, 3, 4],
 }
 const SMASH = {
     id: 47,
@@ -284,37 +284,37 @@ const WOUNDED_FURY = {
     id: 48,
     value: "woundedfury",
     label: "Wounded Fury",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 4],
 }
 const CONQUEROR = {
     id: 49,
     value: "conqueror",
     label: "Conqueror",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 4],
 }
 const MICROSCOPIC_SIZE_CHANGING = {
     id: 50,
     value: "microscopicsizechanging",
     label: "Microscopic Size-Changing",
-    cardTypes: [1],
+    cardTypes: [1, 4],
 }
 const EMPOWERED = {
     id: 51,
     value: "empowered",
     label: "Empowered",
-    cardTypes: [1, 2, 5],
+    cardTypes: [1, 2, 4, 5],
 }
 const CHIVALROUS_DUEL = {
     id: 52,
     value: "chivalrousduel",
     label: "Chivalrous Duel",
-    cardTypes: [2, 5],
+    cardTypes: [2, 4, 5],
 }
 const SYMBIOTE_BONDS = {
     id: 53,
     value: "symbiontebonds",
     label: "Symbionte Bonds",
-    cardTypes: [2, 5],
+    cardTypes: [2, 4, 5],
 }
 const DIGEST = {
     id: 54,
@@ -344,19 +344,19 @@ const DARK_MEMORIES = {
     id: 58,
     value: "darkmemories",
     label: "Dark Memories",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 4],
 }
 const LAST_STAND = {
     id: 59,
     value: "laststand",
     label: "Last Stand",
-    cardTypes: [1],
+    cardTypes: [1, 4],
 }
 const UNDERCOVER = {
     id: 60,
     value: "undercover",
     label: "Undercover",
-    cardTypes: [1, 5],
+    cardTypes: [1, 4, 5],
 }
 const SHIELD_LEVEL = {
     id: 61,
@@ -368,25 +368,25 @@ const HYDRA_LEVEL = {
     id: 62,
     value: "hydralevel",
     label: "Hydra Level",
-    cardTypes: [2, 5],
+    cardTypes: [2, 4, 5],
 }
 const WORTHY = {
     id: 63,
     value: "worthy",
     label: "Worthy",
-    cardTypes: [1, 5],
+    cardTypes: [1, 4, 5],
 }
 const MOONLIGHT_SUNLIGHT = {
     id: 64,
     value: "moonlightsunlight",
     label: "Moonlight and Sunlight",
-    cardTypes: [1, 2, 5],
+    cardTypes: [1, 2, 4, 5],
 }
 const WAKING_NIGHTMARE = {
     id: 65,
     value: "wakingnightmare",
     label: "Waking Nightmare",
-    cardTypes: [1, 2],
+    cardTypes: [1, 2, 4],
 }
 const BURN_SHARDS = {
     id: 66,
@@ -398,13 +398,13 @@ const CELESTIAL_BOON = {
     id: 67,
     value: "celestialboon",
     label: "Celestial Boon",
-    cardTypes: [],
+    cardTypes: [4],
 }
 const CONTEST_OF_CHAMPIONS = {
     id: 68,
     value: "contestofchampions",
     label: "Contest of Champions",
-    cardTypes: [1, 2, 5],
+    cardTypes: [1, 2, 4, 5],
 }
 
 export const keywords = Object.freeze({
@@ -412,13 +412,13 @@ export const keywords = Object.freeze({
     BRIBE,                      // 02 done
     VERSATILE,                  // 03 done
     FOCUS,                      // 04 done
-    BURROW,                     // 05
+    BURROW,                     // 05 done
     COSMIC_THREAT,              // 06 done
     WALL_CRAWL,                 // 07 done
     FEAST,                      // 08 done
     DEMOLISH,                   // 09 done
     DODGE,                      // 10 done
-    ELUSIVE,                    // 11
+    ELUSIVE,                    // 11 done
     X_TREME_ATTACK,             // 12 done
     ARTIFACT,                   // 13 done
     THROWN_ARTIFACT,            // 14 done
@@ -474,7 +474,7 @@ export const keywords = Object.freeze({
     MOONLIGHT_SUNLIGHT,         // 64 done
     WAKING_NIGHTMARE,           // 65 done
     BURN_SHARDS,                // 66 done
-    CELESTIAL_BOON,             // 67
+    CELESTIAL_BOON,             // 67 done
     CONTEST_OF_CHAMPIONS        // 68 done
 });
 

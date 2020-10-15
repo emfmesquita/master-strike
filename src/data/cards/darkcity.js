@@ -324,7 +324,7 @@ export default {
     {
       id: 21,
       name: "Daredevil",
-      filterName: "Daredevil (DC)",
+      filterName: "Daredevil (Dark City)",
       team: 6,
       cards: [
         {
@@ -1109,7 +1109,7 @@ export default {
     {
       id: 32,
       name: "Wolverine",
-      filterName: "Wolverine (DC)",
+      filterName: "Wolverine (Dark City)",
       team: 7,
       cards: [
         {
@@ -1565,6 +1565,480 @@ export default {
         },
       ]
     },
+  ],
+  villains: [
+    {
+      id: 8,
+      name: "Emissaries of Evil",
+      cards: [
+        {
+          name: "Egghead",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top card of the Villain Deck. If it's a Villain, play it."
+            ]
+          ]
+        },
+        {
+          name: "Electro",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top card of the Villain Deck. If it's a Scheme Twist, play it."
+            ]
+          ]
+        },
+        {
+          name: "Gladiator",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top card of the Villain Deck. If it's a Bystander, Gladiator captures it."
+            ]
+          ]
+        },
+        {
+          name: "Rhino",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top card of the Villain Deck. If it's a Master Strike, each player gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 9,
+      name: "Four Horsemen",
+      cards: [
+        {
+          name: "Death",
+          qtd: 2,
+          vAttack: "7",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each other player reveals their hand and KOs one of their Heroes that costs 1",
+              { icon: 3 },
+              " or more."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player does that same effect."
+            ]
+          ]
+        },
+        {
+          name: "Famine",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each other player reveals an ",
+              { hc: 2 },
+              " Hero or discards a card."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player does that same effect."
+            ]
+          ]
+        },
+        {
+          name: "Pestilence",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each other player reveals the top three cards of their deck, discards each of those cards that costs 1",
+              { icon: 3 },
+              " or more, and puts the rest back in any order."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player does that same effect."
+            ]
+          ]
+        },
+        {
+          name: "War",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each other player reveals an ",
+              { hc: 2 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player does that same effect."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 10,
+      name: "Marauders",
+      cards: [
+        {
+          name: "Blockbuster",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "2",
+          abilities: [
+            [
+              "Blockbuster gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              " for each Bystander he has."
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": If there is a Villain in the Bank that Villain and Blockbuster each capture a Bystander."
+            ]
+          ]
+        },
+        {
+          name: "Chimera",
+          qtd: 2,
+          vAttack: "3+",
+          vp: "3",
+          abilities: [
+            [
+              "Chimera gets ",
+              { bold: "+3" },
+              { icon: 1 },
+              " for each Bystander she has."
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top three cards of the Villain Deck. Chimera captures all the Bystander cards you revealed. Put the rest back in random order."
+            ]
+          ]
+        },
+        {
+          name: "Scalphunter",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "2",
+          abilities: [
+            [
+              "Scalphunter gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Bystander he has."
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player chooses a Bystander from their Victory Pile. Scalphunter captures those Bystanders."
+            ]
+          ]
+        },
+        {
+          name: "Vertigo",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player discards all the cards in their hand, then draws as many cards as they discarded."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 11,
+      name: "Mutant Liberation Front",
+      subTitle: "Villain - MLF",
+      cards: [
+        {
+          name: "Forearm",
+          qtd: 2,
+          vAttack: "4",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "To fight Forearm, you must also reveal four Hero cards with different card names."
+            ]
+          ]
+        },
+        {
+          name: "Reignfire",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Escape"
+              },
+              ": Reignfire becomes a Master Strike that takes effect immediately."
+            ]
+          ]
+        },
+        {
+          name: "Wildside",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you fight Wildside in the Sewers or Bank, KO two of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Zero",
+          qtd: 2,
+          vAttack: "0",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "To fight Zero, you must also discard three cards that cost 0",
+              { icon: 3 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 12,
+      name: "Streets of New York",
+      cards: [
+        {
+          name: "Bullseye",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes with a ",
+              { icon: 2 },
+              " icon and one of your Heroes with an ",
+              { icon: 1 },
+              " icon."
+            ]
+          ]
+        },
+        {
+          name: "Hammerhead",
+          qtd: 2,
+          vAttack: "5",
+          vp: "2",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 2 }
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes with a ",
+              { icon: 2 },
+              " icon."
+            ]
+          ]
+        },
+        {
+          name: "Jigsaw",
+          qtd: 2,
+          vAttack: "11",
+          vp: "5",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player discards three cards, then draws two cards."
+            ],
+            [
+              { keyword: 2 }
+            ]
+          ]
+        },
+        {
+          name: "Tombstone",
+          qtd: 2,
+          vAttack: "8",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 2 }
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals a ",
+              { hc: 4 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 13,
+      name: "Underworld",
+      cards: [
+        {
+          name: "Azazel",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": A card in your hand gains ",
+              { keyword: 1 },
+              " this turn."
+            ]
+          ]
+        },
+        {
+          name: "Blackheart",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": The player to your right reveals a ",
+              { team: 6 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Same effect."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Dracula",
+          qtd: 2,
+          vAttack: "3+",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Dracula captures the top card of the Hero Deck. Dracula gets ",
+              { bold: "+" },
+              { icon: 1 },
+              " equal to that card's Cost."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain that card."
+            ]
+          ]
+        },
+        {
+          name: "Lilith, Daughter of Dracula",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player without Dracula in their Victory Pile gains a Wound."
+            ]
+          ]
+        }
+      ]
+    }
   ],
   schemes: [
     {

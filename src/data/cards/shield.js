@@ -599,6 +599,184 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 84,
+      name: "A.I.M., Hydra Offshoot",
+      cards: [
+        {
+          name: "Taskmaster",
+          qtd: 2,
+          vp: "2",
+          vAttack: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put a card from the S.H.I.E.L.D. Officer Stack into the Escape Pile."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player must reveal as many Hero colors ",
+              { italic: "(including grey)" },
+              " as the ",
+              { keyword: 62 },
+              " or gain a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same Effect."
+            ]
+          ]
+        },
+        {
+          name: "Superia",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put a card from the S.H.I.E.L.D. Officer Stack into the Escape Pile. Then each player reveals a random card from their hand. If the ",
+              { keyword: 62 },
+              " is higher than that card's cost, that player discards that card."
+            ]
+          ]
+        },
+        {
+          name: "Graviton",
+          qtd: 2,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put a card from the S.H.I.E.L.D. Officer Stack into the Escape Pile.  Then, for each 2 ",
+              { keyword: 62, text: "Hydra Levels" },
+              ", Heroes currently in the HQ cost 1 more to recruit this turn."
+            ]
+          ]
+        },
+        {
+          name: "Mentallo",
+          qtd: 2,
+          vp: "3",
+          vAttack: "3+",
+          abilities: [
+            [
+              "Mentallo gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Officer he has."
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put a card from the S.H.I.E.L.D. Officer Stack into the Escape Pile.  Then Mentallo vaptures a S.H.I.E.L.D. Officer for each 2 ",
+              { keyword: 62, text: "Hydra Levels" },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Gain an Officer captured by Mentallo or send it ",
+              { keyword: 60 },
+              ".  KO the rest."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 85,
+      name: "Hydra Elite",
+      cards: [
+        {
+          name: "Growing Man",
+          qtd: 2,
+          vp: "3",
+          vAttack: "0+",
+          abilities: [
+            [
+              "Growing Man gets ",
+              { bold: "+" },
+              { icon: 1 },
+              " equal to the Mastermind's ",
+              { keyword: 62 },
+              "."
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put a card from the S.H.I.E.L.D. Officer Stack into the Escape Pile."
+            ]
+          ]
+        },
+        {
+          name: "Crossbones",
+          qtd: 2,
+          vp: "2",
+          vAttack: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put a card from the S.H.I.E.L.D. Officer Stack into the Escape Pile. Then each player gains a Wound unless that player reveals at least as many ",
+              { team: 2 },
+              " Heroes as the ",
+              { keyword: 62 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Hive",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put a card form the S.H.I.E.L.D. Officer Stack into the Escape Pile. Then each player reveals their hand and discards a card with cost equal to the ",
+              { keyword: 62 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Gorgon",
+          qtd: 2,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put a card from the S.H.I.E.L.D. Officer Stack into the Escape Pile. Then check the ",
+              { keyword: 62 },
+              ".  You can't play Heroes of that cost this turn."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 118,

@@ -537,6 +537,182 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 14,
+      name: "Heralds of Galactus",
+      cards: [
+        {
+          name: "Firelord",
+          qtd: 2,
+          vAttack: "9",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              ": ",
+              { hc: 3 },
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each player reveals a ",
+              { hc: 3 },
+              " Hero or gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Morg",
+          qtd: 2,
+          vAttack: "12",
+          vp: "6",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              ": ",
+              { hc: 2 },
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Put each non-",
+              { hc: 2 },
+              " Hero from the HQ on the bottom of the Hero Deck."
+            ]
+          ]
+        },
+        {
+          name: "Stardust",
+          qtd: 2,
+          vAttack: "10",
+          vp: "5",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              ": ",
+              { hc: 1 },
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Choose one of your ",
+              { hc: 1 },
+              " Heroes. When you draw a new hand of cards at the end of this turn, add that Hero to your hand as a seventh card."
+            ]
+          ]
+        },
+        {
+          name: "Terrax the Tamer",
+          qtd: 2,
+          vAttack: "11",
+          vp: "5",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              { keyword: 6 },
+              ": ",
+              { hc: 4 },
+            ],
+            [
+              {
+                bold: "Ambush"
+              },
+              ": For each ",
+              { hc: 4 },
+              " Hero in the HQ, Terrax captures a Bystander."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 15,
+      name: "Subterranea",
+      cards: [
+        {
+          name: "Giganto",
+          qtd: 2,
+          vAttack: "7",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": When you draw a new hand of cards at the end of this turn, draw two extra cards."
+            ],
+            [
+              { keyword: 5 }
+            ]
+          ]
+        },
+        {
+          name: "Megataur",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Megataur captures two Bystanders."
+            ],
+            [
+              { keyword: 5 }
+            ]
+          ]
+        },
+        {
+          name: "Moloids",
+          qtd: 2,
+          vAttack: "3",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ],
+            [
+              { keyword: 5 }
+            ]
+          ]
+        },
+        {
+          name: "Ra'ktar the Molan King",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Any Villain in the Streets moves to the Bridge, pushing any Villain already there to escape."
+            ],
+            [
+              { keyword: 5 }
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 17,

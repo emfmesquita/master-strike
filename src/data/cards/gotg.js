@@ -489,6 +489,327 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 25,
+      name: "Kree Starforce",
+      cards: [
+        {
+          name: "Captain Atlas",
+          qtd: 1,
+          vAttack: "6+",
+          vp: "4",
+          abilities: [
+            [
+              "Captain Atlas gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each ",
+              { rule: 1, text: "Shard" },
+              " on the Mastermind."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player loses a ",
+              { rule: 1, text: "Shard" },
+              ". Each player that cannot do so gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Demon Druid",
+          qtd: 1,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Another Villain in the city gains two ",
+              { rule: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Dr. Minerva",
+          qtd: 1,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each Kree Villain in the city gains a ",
+              { rule: 1, text: "Shard" },
+              { italic: " (including this Villain)." }
+            ]
+          ]
+        },
+        {
+          name: "Korath the Pursuer",
+          qtd: 1,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player may draw a card. Korath gains a ",
+              { rule: 1, text: "Shard" },
+              " for each card drawn this way."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": If Korath had any ",
+              { rule: 1 },
+              ", each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Ronan the Accuser",
+          qtd: 1,
+          vAttack: "7",
+          vp: "5",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player simultaneously points their finger to accuse another player. Each player who was accused the most gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Same effect."
+            ]
+          ]
+        },
+        {
+          name: "Shatterax",
+          qtd: 1,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Put a ",
+              { rule: 1, text: "Shard" },
+              " on each Hero in the HQ. When a player gains that Hero, they gain that ",
+              { rule: 1, text: "Shard" },
+              ". If that Hero leaves the HQ some other way, return that ",
+              { rule: 1, text: "Shard" },
+              " to the supply."
+            ]
+          ]
+        },
+        {
+          name: "Supremor",
+          qtd: 2,
+          vAttack: "3",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Supremor and the Mastermind each gain a ",
+              { rule: 1, text: "Shard" },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 26,
+      name: "Infinity Gems",
+      cards: [
+        {
+          name: "Mind Gem",
+          qtd: 1,
+          vAttack: "6",
+          vp: "0",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Mind Gem gains a ",
+              { rule: 1, text: "Shard" },
+              " for each Scheme Twist in the KO pile and/or stacked next to the Scheme."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Put this into your discard pile as an Artifact."
+            ],
+            [
+              { keyword: 13, text: "Artifact -"},
+              " Once per turn, you get ",
+              { bold: "+2" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Power Gem",
+          qtd: 1,
+          vAttack: "7",
+          vp: "0",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Power Gem gains a ",
+              { rule: 1, text: "Shard" },
+              " for each Master Strike in the KO pile and/or stacked next to the Mastermind."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Put this into your discard pile as an Artifact."
+            ],
+            [
+              { keyword: 13, text: "Artifact -"},
+              " Once per turn, you get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Reality Gem",
+          qtd: 2,
+          vAttack: "5",
+          vp: "0",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reality Gem gains a ",
+              { rule: 1, text: "Shard" },
+              " for each Infinity Gem Villain card in the city and/or Escape pile."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Put this into your discard pile as an Artifact."
+            ],
+            [
+              { keyword: 13, text: "Artifact -"},
+              " Before you play a card from the Villain Deck, you may first reveal the top card of the Villain Deck. If it's not a Scheme Twist, you may put it on the bottom of the Villain Deck. If you do, gain a ",
+              { rule: 1, text: "Shard" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Soul Gem",
+          qtd: 1,
+          vAttack: "6",
+          vp: "0",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Soul Gem gains a ",
+              { rule: 1, text: "Shard" },
+              " for each Villain in the city."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Put this into your discard pile as an Artifact."
+            ],
+            [
+              { keyword: 13, text: "Artifact -"},
+              " Whenever you defeat a Villain, put a ",
+              { rule: 1, text: "Shard" },
+              " on Soul Gem from the supply. Once per turn, you get ",
+              { bold: "+" },
+              { icon: 1 },
+              " equal to the number of Shards on Soul Gem."
+            ]
+          ]
+        },
+        {
+          name: "Space Gem",
+          qtd: 2,
+          vAttack: "5",
+          vp: "0",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Space Gem gains a ",
+              { rule: 1, text: "Shard" },
+              " for each empty space in the city."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Put this into your discard pile as an Artifact."
+            ],
+            [
+              { keyword: 13, text: "Artifact -"},
+              " Once per turn, you may move a Villain to another city space. If another Villain is already there, swap them. If you moved any Villains this way, gain a ",
+              { rule: 1, text: "Shard" },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Time Gem",
+          qtd: 1,
+          vAttack: "6",
+          vp: "0",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Play another card from the Villain Deck. Time Gem gains ",
+              { rule: 1 },
+              " equal to that card's printed Victory Points."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Put this into your discard pile as an Artifact."
+            ],
+            [
+              { keyword: 13, text: "Artifact -"},
+              " When you play this Artifact, take another turn after this one. Use this ability only if this is the fist time any player has played the Time Gem this game."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 33,

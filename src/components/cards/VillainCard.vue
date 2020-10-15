@@ -19,14 +19,14 @@
     <SetIcon v-if="card.set" class="set-icon" :set="card.set" width="24px" />
     <SetIcon v-if="card.set2" class="set-icon2" :set="card.set2" width="24px" />
 
-    <template v-if="card.vp > 0">
+    <template v-if="card.vpNum >= 0">
       <AbilityIcon class="card-vp-icon absolute-icon" :icon="4" width="42px"/>
       <span class="card-vp icon-text text-center font-weight-black">
         {{ card.vp }}
       </span>
     </template>
 
-    <template v-if="card.vAttack">
+    <template v-if="card.vAttackText">
       <AbilityIcon class="card-attack-icon absolute-icon" :icon="1" width="90px"/> 
       <span class="card-attack icon-text text-center font-weight-black">
         <template v-if="!card.vAttackAsterisk">
@@ -147,7 +147,7 @@ export default {
     bottom: 82px;
   }
   .card-vp {
-    right: 6px;
+    right: 7px;
     bottom: 92px;
     width: 20px !important;
     line-height: 20px !important;

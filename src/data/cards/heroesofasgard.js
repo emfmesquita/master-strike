@@ -625,6 +625,252 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 86,
+      name: "Dark Council",
+      cards: [
+        {
+          name: "Laufey, Father Of Loki",
+          qtd: 1,
+          vp: "4",
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Laufey captures The Casket of Ancient Winters from any Villain, Mastermind, player's control, or discard pile."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": If Laufey holds The Casket of Ancient Winters, say “Fimbulwinter has come,“ and each player discards down to 3 cards."
+            ]
+          ]
+        },
+        {
+          name: "The Mangog",
+          qtd: 1,
+          vp: "4",
+          vAttack: "3+",
+          abilities: [
+            [
+              "The Mangog gets ",
+              { bold: "+1" },
+              { icon: 1 },
+              " for each Villain in the Victory Pile of the player on your right."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player who is not ",
+              { keyword: 63 },
+              " gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Ulik, The Troll",
+          qtd: 2,
+          vp: "2",
+          vAttack: "3+",
+          abilities: [
+            [
+              "Ulik gets ",
+              { bold: "+2" },
+              { icon: 1 },
+              " if you are not ",
+              { keyword: 63 },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Sindr, Fire Giant Queen",
+          qtd: 2,
+          vp: "3",
+          vAttack: "5",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you are ",
+              { keyword: 63 },
+              ", you get ",
+              { bold: "+2" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Jarnbjorn, First Axe of Thor",
+          qtd: 1,
+          vAttack: "+3",
+          subType: 3,
+          abilities: [
+            { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+            { divider: true },
+            [
+              { keyword: 14, text: "Thrown Artifact -" },
+              " When you throw this, you get ",
+              { bold: "+3" },
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "The Casket of Ancient Winters",
+          qtd: 1,
+          vAttack: "+4",
+          subType: 3,
+          abilities: [
+            { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+            { divider: true },
+            [
+              { keyword: 13, text: "Artifact -" },
+              " Once per turn, if you are ",
+              { keyword: 63 },
+              ", you get ",
+              { bold: "+2" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 87,
+      name: "Omens of Ragnarok",
+      cards: [
+        {
+          name: "The Eternal Flame",
+          qtd: 1,
+          vAttack: "+4",
+          subType: 3,
+          abilities: [
+            { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": If Surtur is in the city, he captures The Eternal Flame. If a player controls “Surtur's Crown“, that card enters the city as the Villain Surtur and captures The Eternal Flame."
+            ],
+            { divider: true },
+            [
+              { keyword: 13, text: "Artifact -" },
+              " Once per turn, return a 0-cost card from your discard pile to your hand."
+            ]
+          ]
+        },
+        {
+          name: "The Hel-Crown",
+          qtd: 1,
+          vAttack: "+3",
+          subType: 3,
+          abilities: [
+            { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+            { divider: true },
+            [
+              { keyword: 13, text: "Artifact -" },
+              " Once per turn, you get ",
+              { keyword: 49, text: "Streets Conqueror 1"},
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Skurge, The Executioner",
+          qtd: 2,
+          vp: "2",
+          vAttack: "4+",
+          abilities: [
+            { keyword: 49, text: "Bridge Conqueror 3"},
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ]
+          ]
+        },
+        {
+          name: "Surtur, Fire Giant King",
+          qtd: 1,
+          vAttack: "6",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Put this into your discard pile as a “Surtur's Crown“ Artifact."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": If Surtur was holding The Eternal Flame, say “Ragnarok has come“, KO each ",
+              { team: 21 },
+              " Hero from the HQ, and each player gains two Wounds."
+            ],
+            { divider: true },
+            [
+              { keyword: 13, text: "Artifact -" },
+              " Once per turn, you get ",
+              { keyword: 49, text: "Sewers Conqueror 1"},
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Jormungand, The World-Serpent",
+          qtd: 1,
+          vp: "5",
+          vAttack: "5+",
+          abilities: [
+            { keyword: 49, text: "Sewers Conqueror 1"},
+            { keyword: 49, text: "Bank Conqueror 1"},
+            { keyword: 49, text: "Rooftops Conqueror 1"},
+            { keyword: 49, text: "Streets Conqueror 1"},
+            { keyword: 49, text: "Bridge Conqueror 1"},
+            [
+              {
+                bold: "Fight"
+              },
+              ": Each Hero currently in the HQ costs 1 less this turn."
+            ]
+          ]
+        },
+        {
+          name: "The Fenris Wolf",
+          qtd: 2,
+          vp: "3",
+          vAttack: "4+",
+          abilities: [
+            { keyword: 49, text: "Streets Conqueror 2"},
+            [
+              {
+                bold: "Ambush"
+              },
+              ": The Fenris Wolf moves forward to the Rooftops, pushing other Villains forward as normal."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 122,

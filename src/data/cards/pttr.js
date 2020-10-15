@@ -481,6 +481,210 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 16,
+      name: "Maximum Carnage",
+      cards: [
+        {
+          name: "Carrion",
+          qtd: 2,
+          vAttack: "4",
+          vp: "3",
+          abilities: [
+            [
+              { keyword: 8 }
+            ],
+            [
+              "Whenever Carrion feasts on a Hero that costs 1",
+              { icon: 3 },
+              " or more, put Carrion back in the city space where he was."
+            ]
+          ]
+        },
+        {
+          name: "Demogoblin",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Demogoblin captures a Bystander."
+            ],
+            [
+              { keyword: 8 }
+            ],
+          ]
+        },
+        {
+          name: "Doppelganger",
+          qtd: 2,
+          vAttack: "",
+          vp: "3",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "Doppelganger's ",
+              { icon: 1 },
+              " is equal to the ",
+              { icon: 3 },
+              " of the Hero in the HQ space under him."
+            ],
+            [
+              { keyword: 8 }
+            ]
+          ]
+        },
+        {
+          name: "Shriek",
+          qtd: 2,
+          vAttack: "6",
+          vp: "4",
+          abilities: [
+            [
+              { keyword: 8 }
+            ],
+            [
+              "When Shriek feasts on a 0-cost Hero, each other player gains a Wound."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player gains a Wound."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 17,
+      name: "Sinister Six",
+      cards: [
+        {
+          name: "Chameleon",
+          qtd: 1,
+          vAttack: "6",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": Copy the effects of the Hero in the HQ space under Chameleon, including its ",
+              { icon: 2 },
+              " and ",
+              { icon: 1 },
+              "."
+            ]
+          ]
+        },
+        {
+          name: "Hobgoblin",
+          qtd: 1,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each Sinister Six Villain captures a Bystander."
+            ]
+          ]
+        },
+        {
+          name: "Kraven the Hunter",
+          qtd: 1,
+          vAttack: "",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "Kraven's ",
+              { icon: 1 },
+              " is equal to the ",
+              { icon: 3 },
+              " of the highest-cost Hero in the HQ."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": ",
+              { italic: "(After you do the normal escape KO)" },
+              " KO a Hero from the HQ with the highest cost."
+            ]
+          ]
+        },
+        {
+          name: "Sandman",
+          qtd: 1,
+          vAttack: "",
+          vp: "4",
+          vAttackAsterisk: true,
+          abilities: [
+            [
+              "Sandman's ",
+              { icon: 1 },
+              " is twice the number of Villains in the city."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals an ",
+              { hc: 2 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Shocker",
+          qtd: 2,
+          vAttack: "5",
+          vp: "3",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Each player reveals an ",
+              { hc: 2 },
+              " Hero or discards a card."
+            ]
+          ]
+        },
+        {
+          name: "Vulture",
+          qtd: 2,
+          vAttack: "4",
+          vp: "2",
+          abilities: [
+            [
+              {
+                bold: "Ambush"
+              },
+              ": ",
+              { italic: "(After Vulture enters the city)" },
+              " If there is a Villain on the Rooftops or Bridge, swap Vulture with one of those Villains."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals an ",
+              { hc: 2 },
+              " Hero or gains a Wound."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 21,
