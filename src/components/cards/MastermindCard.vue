@@ -110,23 +110,6 @@ export default {
     -webkit-text-stroke-width: 1px !important;
   }
 
-  .icon-text {
-    position: absolute;
-    width: 64px;
-    font-size: 28px;
-    -webkit-text-fill-color: #fff;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
-    line-height: 64px;
-    user-select: none;
-    pointer-events: none;
-
-    &.small {
-      font-size: 24px;
-      -webkit-text-stroke-width: 1px;
-    }
-  }
-
   .card-title {
     line-height: 24px;
     padding: 0px 6px;

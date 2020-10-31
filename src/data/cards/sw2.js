@@ -2051,7 +2051,7 @@ export default {
               { rule: 3, text: "new Mastermind" },
               ". He gains the ability, “",
               { bold: "Master Strike" },
-              ": Stack the two heroes from the HQ with the highest cost next to '92 Professor X. He gets ",
+              ": Stack the two Heroes from the HQ with the highest cost next to '92 Professor X. He gets ",
               { bold: "+1" },
               { icon: 1 },
               " for each Hero stacked there. Players can recruit the top card of the stack.“"

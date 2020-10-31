@@ -20,6 +20,13 @@
     <RarityIcon v-if="card.rarity" class="card-rarity" :icon="card.rarity" width="24px"/>
     <SetIcon v-else-if="card.set" class="set-icon" :set="card.set" width="24px" />
 
+    <template v-if="card.qtd > 0">
+      <QtdIcon class="card-qtd-icon" :qtd="card.qtd" width="32px"/>
+      <span class="card-qtd icon-text text-center font-weight-black">
+        {{ card.qtd }}
+      </span>
+    </template>
+
     <shared-rule v-if="card.divided === 1" :rule="{ rule: 4 }">
       <DividedCardIcon class="divided-card-icon-left" size="12px" left />
     </shared-rule>
@@ -74,6 +81,7 @@
 import CardMixin from "./cardMixin";
 import TeamIcon from "../icons/TeamIcon.vue";
 import HeroClassIcon from "../icons/HeroClassIcon.vue";
+import QtdIcon from "../icons/QtdIcon.vue";
 import RarityIcon from "../icons/RarityIcon.vue";
 import AbilityIcon from "../icons/AbilityIcon.vue";
 import SetIcon from "../icons/SetIcon.vue";
@@ -86,6 +94,7 @@ export default {
   components: {
     TeamIcon,
     HeroClassIcon,
+    QtdIcon,
     RarityIcon,
     AbilityIcon,
     DividedCardIcon,
@@ -147,12 +156,6 @@ export default {
     right: 0;
     z-index: -1;
     box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-  }
-
-  .set-icon {
-    position: absolute;
-    top: 6px;
-    right: 8px;
   }
 
   .card-team {
@@ -223,23 +226,6 @@ export default {
   .card-attack {
     left: 0px;
     bottom: 10px;
-  }
-
-  .icon-text {
-    position: absolute;
-    width: 64px;
-    font-size: 28px;
-    -webkit-text-fill-color: #fff;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
-    line-height: 64px;
-    user-select: none;
-    pointer-events: none;
-
-    &.small {
-      font-size: 22px;
-      -webkit-text-stroke-width: 1px;
-    }
   }
 
   .card-title {

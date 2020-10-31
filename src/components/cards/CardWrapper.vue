@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div @click="cardClick" :class="classes">
+    <div class="card" @click="cardClick" :class="classes">
       <DynamicCard :height="height">
         <template v-slot:default="{ contentHeight }">
           <slot :contentHeight="contentHeight"></slot>
@@ -109,5 +109,52 @@ export default {
     transform-origin: 0 0;
     cursor: zoom-out;
   }
+}
+
+.card, .zoom-card {
+
+  .set-icon {
+    position: absolute;
+    top: 3px;
+    right: 4px;
+  }
+
+  .set-icon2 {
+    position: absolute;
+    top: 21px;
+    right: 4px;
+  }
+
+  .card-qtd-icon {
+    position: absolute;
+    right: 0px;
+    top: 6px;
+  }
+  .card-qtd {
+    right: 7px;
+    top: 11px;
+    width: 20px !important;
+    line-height: 20px !important;
+    font-size: 20px !important;
+    -webkit-text-stroke-width: 1px !important;
+  }
+
+  .icon-text {
+    position: absolute;
+    width: 64px;
+    font-size: 28px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    line-height: 64px;
+    user-select: none;
+    pointer-events: none;
+
+    &.small {
+      font-size: 24px;
+      -webkit-text-stroke-width: 1px;
+    }
+  }
+
 }
 </style>

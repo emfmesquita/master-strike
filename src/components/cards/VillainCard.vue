@@ -19,6 +19,13 @@
     <SetIcon v-if="card.set" class="set-icon" :set="card.set" width="24px" />
     <SetIcon v-if="card.set2" class="set-icon2" :set="card.set2" width="24px" />
 
+    <template v-if="card.qtd > 0">
+      <QtdIcon class="card-qtd-icon" :qtd="card.qtd" width="32px"/>
+      <span class="card-qtd icon-text text-center font-weight-black">
+        {{ card.qtd }}
+      </span>
+    </template>
+
     <template v-if="card.vpNum >= 0">
       <AbilityIcon class="card-vp-icon absolute-icon" :icon="4" width="42px"/>
       <span class="card-vp icon-text text-center font-weight-black">
@@ -43,6 +50,7 @@
 <script>
 import CardMixin from "./cardMixin";
 import AbilityIcon from "../icons/AbilityIcon.vue";
+import QtdIcon from "../icons/QtdIcon.vue";
 import SetIcon from "../icons/SetIcon.vue";
 import { cardSubTypes, cardTypes } from "../../constants/cardTypes";
 
@@ -51,7 +59,8 @@ export default {
   mixins: [CardMixin(62)],
   components: {
     AbilityIcon,
-    SetIcon
+    SetIcon,
+    QtdIcon
   },
   computed: {
     subTitleClasses() {
@@ -79,18 +88,6 @@ export default {
   padding: 6px;
   color: #000;
   border: solid 1px rgba(#000, .2);
-
-  .set-icon {
-    position: absolute;
-    top: 6px;
-    right: 8px;
-  }
-
-  .set-icon2 {
-    position: absolute;
-    top: 24px;
-    right: 8px;
-  }
 
   &.villain {
     background-color: #ffd9b3;
@@ -153,23 +150,6 @@ export default {
     line-height: 20px !important;
     font-size: 16px !important;
     -webkit-text-stroke-width: 1px !important;
-  }
-
-  .icon-text {
-    position: absolute;
-    width: 64px;
-    font-size: 28px;
-    -webkit-text-fill-color: #fff;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
-    line-height: 64px;
-    user-select: none;
-    pointer-events: none;
-
-    &.small {
-      font-size: 24px;
-      -webkit-text-stroke-width: 1px;
-    }
   }
 
   .card-title {

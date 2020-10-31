@@ -51,18 +51,6 @@ export default {
   background-color: #C6ECD9;
   border: solid 1px rgba(#000, .2);
 
-  .set-icon {
-    position: absolute;
-    top: 6px;
-    right: 8px;
-  }
-
-  .set-icon2 {
-    position: absolute;
-    top: 24px;
-    right: 8px;
-  }
-
   &.disabled {
     filter: blur(0px) grayscale(60%) opacity(0.4);
   }
