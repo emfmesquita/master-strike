@@ -9,7 +9,8 @@
 
     <div v-if="card.abilities" class="card-abilities" :class="{ dense }" ref="cardAbilities">
       <div v-for="(ability, idx) in card.abilities" :key="idx">
-        <shared-description-group :description="ability" :dense="dense"/>
+        <shared-bullet-point-description v-if="ability.points" :points="ability.points" />
+        <shared-description-group v-else :description="ability" :dense="dense"/>
       </div>
     </div>
 

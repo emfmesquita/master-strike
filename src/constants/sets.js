@@ -194,6 +194,13 @@ const INTO_THE_COSMOS = {
     initials: "ItC",
     cardTypes: [1,2,3,4,5],
 };
+const REALM_OF_KINGS = {
+    id: 29,
+    value: "realmofkings",
+    label: "Realm of Kings",
+    initials: "Rok",
+    cardTypes: [1,2,4,5],
+};
 
 export const sets = Object.freeze({
     CORE_SET,                   // 1
@@ -223,7 +230,8 @@ export const sets = Object.freeze({
     SHIELD,                     // 25
     HEROES_OF_ASGARD,           // 26
     NEW_MUTANTS,                // 27
-    INTO_THE_COSMOS             // 28
+    INTO_THE_COSMOS,            // 28
+    REALM_OF_KINGS,             // 29
 });
 
 export const setsArray = Object.freeze(Object.values(sets));

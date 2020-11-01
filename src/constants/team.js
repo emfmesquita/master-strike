@@ -108,6 +108,11 @@ const HEROES_OF_ASGARD= {
     value: "heroes-of-asgard",
     label: "Heroes of Asgard"
 };
+const INHUMANS = {
+    id: 22,
+    value: "inhumans",
+    label: "Inhumans"
+};
 
 export const team = Object.freeze({
     UNAFFILIATED,                   //0
@@ -131,7 +136,8 @@ export const team = Object.freeze({
     CHAMPIONS,                      //18
     WARBOUND,                       //19
     VENOMVERSE,                     //20   
-    HEROES_OF_ASGARD                //21
+    HEROES_OF_ASGARD,               //21
+    INHUMANS,                       //22
 });
 
 export const teamArray = Object.freeze(Object.values(team));

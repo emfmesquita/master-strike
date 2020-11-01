@@ -30,7 +30,8 @@ export default {
   },
   mounted() {
     const keywords = keywordsArray.filter(keyword => window.hasIntersection(keyword.cardTypes, this.cardTypes));
-    keywords.sort((a, b) => a.label.localeCompare(b.label));
+    const l = keyword => keyword.sortLabel || keyword.label;
+    keywords.sort((a, b) => l(a).localeCompare(l(b)));
     this.keywords = Object.freeze(keywords);
   },
   methods: {

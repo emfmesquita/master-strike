@@ -67,6 +67,7 @@ export default {
     {
       id: 72,
       name: "Black Bolt",
+      filterName: "Black Bolt (SW1)",
       team: 15,
       cards: [
         {

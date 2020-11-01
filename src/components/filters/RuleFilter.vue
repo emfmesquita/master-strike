@@ -30,7 +30,8 @@ export default {
   },
   mounted() {
     const rules = rulesArray.filter(rule => window.hasIntersection(rule.cardTypes, this.cardTypes));
-    rules.sort((a, b) => a.label.localeCompare(b.label));
+    const l = rule => rule.sortLabel || rule.label;
+    rules.sort((a, b) => l(a).localeCompare(l(b)));
     this.rules = Object.freeze(rules);
   },
   methods: {

@@ -167,8 +167,8 @@ export default {
   }),
   computed: {
     villainsFound() {
-      if(this.villains.length === 1) return "1 Villain";
-      return `${this.villains.length} Villains`;
+      if(this.villains.length === 1) return "1 Villain Group";
+      return `${this.villains.length} Villain Groups`;
     },
     hasAttackFilter() {
       return this.filter.vAttack[0] !== -1 || this.filter.vAttack[1] !== 14;
