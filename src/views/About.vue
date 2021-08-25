@@ -53,7 +53,11 @@
           </p>
 
           <p>
-            A huge shout out to our comunity that built the <a href="https://www.boardgamegeek.com/wiki/page/Legendary_Marvel_Complete_Card_Text" target="_blank">wiki page with all cards text</a>. And to CaseyFowler that created <a href="https://marveldbg.wordpress.com/" target="_blank">a blog with all card images</a>. Those resources were fundamental to create Master Strike.
+            A huge shout-out to our comunity that built the <a href="https://www.boardgamegeek.com/wiki/page/Legendary_Marvel_Complete_Card_Text" target="_blank">wiki page with all cards text</a>. And to CaseyFowler that created <a href="https://marveldbg.wordpress.com/" target="_blank">a blog with all card images</a>. Those resources were fundamental to create Master Strike.
+          </p>
+
+          <p>
+            Another huge shout-out to @normware on BGG, he provided all villain groups in a format that I could import to the site way easier than adding all of them manually. That reduced the work at least in 10x. Thank you Neil!
           </p>
         </v-col>
       </v-row>
