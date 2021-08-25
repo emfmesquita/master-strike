@@ -749,8 +749,8 @@ export default {
             [
               { hc: 2 },
               ": You get ",
-              { bold: "+3 " },
-              { icon: 1 },
+              { bold: "+3" },
+              { icon: 2 },
               "."
             ]
           ]
@@ -2070,11 +2070,11 @@ export default {
           abilities: [
             [
               { bold: "Setup" },
-              ": 9 Twists. Put 10 extra Annihilation Wave Henchmen in that KO pile."
+              ": 9 Twists. Put 10 extra Annihilation Wave Henchmen in the KO pile."
             ],
             [
               { bold: "Twist" },
-              ": KO all Annihilation Henchmen from the players' Victory Piles. Stack this Twist next to the Scheme. Then, for each Twist in that stack, put an Annihilation Henchman from the KO pile next to the Mastermind. Players can fight those Henchmen.",
+              ": KO all Annihilation Henchmen from players' Victory Piles. Stack this Twist next to the Scheme. Then, for each Twist in that stack, put an Annihilation Henchman from the KO pile next to the Mastermind. Players can fight those Henchmen.",
             ],
             [
               { bold: "Evil Wins" },
