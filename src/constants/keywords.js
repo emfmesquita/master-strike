@@ -419,6 +419,12 @@ const THRONES_FAVOR = {
   label: "Throne's Favor",
   cardTypes: [1, 2, 4, 5],
 }
+const NONE = {
+  id: -1,
+  value: "none",
+  label: " NONE",
+  cardTypes: [1, 2, 3, 4],
+}
 
 export const keywords = Object.freeze({
   TELEPORT,                   // 01 done
@@ -491,6 +497,7 @@ export const keywords = Object.freeze({
   CONTEST_OF_CHAMPIONS,       // 68 done
   WHEN_RECRUITED,             // 69 done
   THRONES_FAVOR,              // 70 done
+  NONE,                       // -1
 });
 
 export const keywordsArray = Object.freeze(Object.values(keywords));

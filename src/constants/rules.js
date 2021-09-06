@@ -72,6 +72,12 @@ const CHOOSE_A_VILLAIN = {
   sortLabel: "Choose a Villain Group",
   cardTypes: [1],
 }
+const NONE = {
+  id: -1,
+  value: "none",
+  label: " NONE",
+  cardTypes: [1, 2, 3, 4],
+}
 
 export const rules = Object.freeze({
   SHARDS,                     // 1  done
@@ -86,6 +92,7 @@ export const rules = Object.freeze({
   ASTERISK,                   // 10 done
   SIDEKICKS,                  // 11 done
   CHOOSE_A_VILLAIN,           // 12 done
+  NONE,                       // -1
 });
 
 export const rulesArray = Object.freeze(Object.values(rules));

@@ -53,6 +53,14 @@ export const filterGroupByKeyword = (groups, keywords) => {
       const matchKey = abs.some(ab => Array.isArray(ab) ? ab.some(hasKey) : hasKey(ab));
       if(matchKey) match = true;
       card.disabled = !matchKey;
+
+      // filter by none
+      if(keywords.includes(-1)) {
+        const checkNoKeyword = ab => !ab.keyword;
+        const noKeyword = abs.every(ab => Array.isArray(ab) ? ab.every(checkNoKeyword) : checkNoKeyword(ab));
+        if(noKeyword) match = true;
+        card.disabled = !matchKey && !noKeyword;
+      }
     });
     return match;
   });
@@ -66,43 +74,50 @@ export const filterGroupByRule = (groups, rules) => {
       if(card.disabled || !card.abilities) return;
 
       // checks for multiclass
-      if(card.hc2 && rules.includes(R.MULTICLASS_CARDS.id)) {
+      const isMulticlass = card.hc2;
+      if(isMulticlass && rules.includes(R.MULTICLASS_CARDS.id)) {
         match = true;
         return;
       }
 
       // checks for divided
-      if(card.divided && rules.includes(R.DIVIDED.id)) {
+      const isDivided = card.divided;
+      if(isDivided && rules.includes(R.DIVIDED.id)) {
         match = true;
         return;
       }
 
       // check for asterisk
-      if((card.costAsterisk || card.vAttackAsterisk) && rules.includes(R.ASTERISK.id)) {
+      const hasAsterisk = (card.costAsterisk || card.vAttackAsterisk);
+      if(hasAsterisk && rules.includes(R.ASTERISK.id)) {
         match = true;
         return;
       }
 
       // check for trap
-      if(card.subType === cardSubTypes.TRAP.id && rules.includes(R.TRAPS.id)) {
+      const isTrap = card.subType === cardSubTypes.TRAP.id;
+      if(isTrap && rules.includes(R.TRAPS.id)) {
         match = true;
         return;
       }
 
       // check for location
-      if(card.subType === cardSubTypes.LOCATION.id && rules.includes(R.LOCATIONS.id)) {
+      const isLocation = card.subType === cardSubTypes.LOCATION.id;
+      if(isLocation && rules.includes(R.LOCATIONS.id)) {
         match = true;
         return;
       }
 
       // check for villainous weapon
-      if(card.subType === cardSubTypes.VILLAINOUS_WEAPON.id && rules.includes(R.VILLAINOUS_WEAPONS.id)) {
+      const isVillainousWep = card.subType === cardSubTypes.VILLAINOUS_WEAPON.id;
+      if(isVillainousWep && rules.includes(R.VILLAINOUS_WEAPONS.id)) {
         match = true;
         return;
       }
 
       // check for transforming schemes
-      if(card.type === cardTypes.SCHEME.id && group.set === 24 && rules.includes(R.TRANSFORMING_SCHEMES.id)) {
+      const isTransfScheme = card.type === cardTypes.SCHEME.id && group.set === 24;
+      if(isTransfScheme && rules.includes(R.TRANSFORMING_SCHEMES.id)) {
         match = true;
         return;
       }
@@ -113,6 +128,18 @@ export const filterGroupByRule = (groups, rules) => {
       const matchRule = abs.some(ab => Array.isArray(ab) ? ab.some(hasRule) : hasRule(ab));
       if(matchRule) match = true;
       card.disabled = !matchRule;
+
+      // filter by none
+      if(rules.includes(-1)) {
+        const noSpecialRules = !isMulticlass && !isDivided && !hasAsterisk && !isTrap && !isLocation && !isVillainousWep && !isTransfScheme;
+        if(noSpecialRules) {
+          // checks if does not have rules on abilities
+          const checkNoRule = ab => !ab.rule;
+          const noRulesOnAbilites = abs.every(ab => Array.isArray(ab) ? ab.every(checkNoRule) : checkNoRule(ab));
+          if(noRulesOnAbilites) match = true;
+          card.disabled = !matchRule && !noRulesOnAbilites;
+        }
+      }
     });
     return match;
   });
