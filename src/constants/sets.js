@@ -201,6 +201,13 @@ const REALM_OF_KINGS = {
     initials: "Rok",
     cardTypes: [1,2,4,5],
 };
+const ANNIHILATION = {
+    id: 30,
+    value: "annihilation",
+    label: "Annihilation",
+    initials: "A",
+    cardTypes: [5],
+};
 
 export const sets = Object.freeze({
     CORE_SET,                   // 1
@@ -232,6 +239,7 @@ export const sets = Object.freeze({
     NEW_MUTANTS,                // 27
     INTO_THE_COSMOS,            // 28
     REALM_OF_KINGS,             // 29
+    ANNIHILATION,               // 30
 });
 
 export const setsArray = Object.freeze(Object.values(sets));
