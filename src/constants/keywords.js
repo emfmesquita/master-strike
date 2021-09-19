@@ -419,6 +419,12 @@ const THRONES_FAVOR = {
   label: "Throne's Favor",
   cardTypes: [1, 2, 4, 5],
 }
+const MOMENTUM = {
+  id: 71,
+  value: "momentum",
+  label: "Momentum",
+  cardTypes: [2, 4],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -497,6 +503,7 @@ export const keywords = Object.freeze({
   CONTEST_OF_CHAMPIONS,       // 68 done
   WHEN_RECRUITED,             // 69 done
   THRONES_FAVOR,              // 70 done
+  MOMENTUM,                   // 71 done
   NONE,                       // -1
 });
 

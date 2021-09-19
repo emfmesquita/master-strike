@@ -452,6 +452,192 @@ export default {
       ]
     }
   ],
+  masterminds: [
+    {
+      id: 76,
+      name: "Annihilus",
+      vAttack: "10",
+      vp: 6,
+      cards: [
+        {
+          name: "Annihilus",
+          vAttack: "10+",
+          abilities: [
+            { keyword: 71, text: "Mass Momentum 2" },
+            [
+              { bold: "Always Leads" },
+              ": Annihilation Wave ",
+              { italic: "(1 player: Use 6 Henchmen.)" },
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Reveal the top card of the Villain Deck. If it's a Bystander, Annihilus captures it. If it's a Villain, it enters the city, captures a Bystander, and moves forward an extra space ",
+              { italic: "(before doing any Ambush ability)." },
+            ],
+          ]
+        },
+        {
+          name: "Epic Annihilus",
+          epic: true,
+          vAttack: "12+",
+          abilities: [
+            { keyword: 71, text: "Mass Momentum 4" },
+            [
+              { bold: "Always Leads" },
+              ": Annihilation Wave. Add an extra Villain Group ",
+              { italic: "(even for 1 player.)" },
+            ],
+            [
+              { bold: "Master Strike" },
+              ": Play a card from the Villain Deck. If it's a Villain, play a second card from the Villain Deck.",
+            ],
+          ]
+        },
+        {
+          name: "The Cosmic Control Rod",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Each other player reveals the top three cards of their deck, KOs the highest-cost Hero that is revealed this way and puts the rest back in any order."
+            ]
+          ]
+        },
+        {
+          name: "Surging Annihilation",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Check all Annihilation Wave villains from each other player's victory pile. The one worth the most VP enters the city, and that player rescues bystanders equal to that villain's VP."
+            ]
+          ]
+        },
+        {
+          name: "Deploy the Planet Killer",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this is not the final tactic: if Weaponized Galactus is in the city, he escapes. If Weaponized Galactus wasn't in the city and wasn't in any victory pile, then he enters the city from the Villain Deck and you shuffle the Villain Deck."
+            ]
+          ]
+        },
+        {
+          name: "Pull Into the Negative Zone",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": The cost of each hero currently in the HQ gets -2 this turn."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 77,
+      name: "Kang the Conqueror",
+      tacticName: "Kang",
+      vAttack: "8",
+      vp: 6,
+      cards: [
+        {
+          name: "Kang the Conqueror",
+          vAttack: "8+",
+          abilities: [
+            [
+              "Kang has ",
+              { keyword: 49, text: "Conqueror 2" },
+              " for each city space under a Time Incursion. ",
+              { italic: "(He benefits from Villains there.)" },
+              " Villains under a Time Incursion get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Timelines of Kang"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": This Strike becomes a “Time Incursion.“ Put it above the rightmost city space that doesn't yet have a Time Incursion."
+            ]
+          ]
+        },
+        {
+          name: "Epic Kang the Conqueror",
+          epic: true,
+          vAttack: "10+",
+          abilities: [
+            [
+              "Kang has ",
+              { keyword: 49, text: "Conqueror 3" },
+              " for each city space under a Time Incursion. Villains under a Time Incursion get ",
+              { bold: "+3" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              { bold: "Always Leads" },
+              ": Timelines of Kang"
+            ],
+            [
+              { bold: "Master Strike" },
+              ": This Strike becomes a “Time Incursion.“ Put it above the rightmost city space that doesn't yet have a Time Incursion. If there are any Villains in any Time Incursions, each player gains a Wound."
+            ]
+          ]
+        },
+        {
+          name: "Iron Lad Grows Up to Become Kang",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this is not the final Tactic: Each player reveals their hand. You choose a card named “Iron Lad“ from the Escape Pile, or from ",
+              { keyword: 23, text: "Man Out of Time" },
+              ", or from any player's hand or discard pile or that you played this turn. Shuffle Iron Lad into Kang's Tactics as a Mastermind Tactic that says “",
+              { bold: "Fight" },
+              ": Gain this as a Hero.“"
+            ]
+          ]
+        },
+        {
+          name: "Leap Into the Timestream",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": If this is not the final Tactic: Take another turn after this one. Don't play a card from the Villain Deck at the start of that turn."
+            ]
+          ]
+        },
+        {
+          name: "Pull From the Future",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": Reveal the top two cards of the Villain Deck. Choose a Villain revealed this way to enter an empty city space under a Time Incursion. Put the rest back in any order."
+            ]
+          ]
+        },
+        {
+          name: "Savior From Another Timeline",
+          tactic: true,
+          abilities: [
+            [
+              { bold: "Fight" },
+              ": You may gain a Hero from any HQ space under a Time Incurion. Send it as a ",
+              { keyword: 23, text: "Man or Woman Out of Time" },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+  ],
   schemes: [
     {
       id: 138,
