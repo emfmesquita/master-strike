@@ -134,7 +134,7 @@ const MAN_OUT_OF_TIME = {
   id: 23,
   value: "manoutoftime",
   label: "Man/Woman Out of Time",
-  cardTypes: [1],
+  cardTypes: [1,2,4],
 }
 const SAVIOR = {
   id: 24,

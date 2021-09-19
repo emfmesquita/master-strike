@@ -638,6 +638,202 @@ export default {
       ]
     },
   ],
+  villains: [
+    {
+      id: 96,
+      name: "Annihilation Wave",
+      cards: [
+        {
+          name: "Annihilation Armada",
+          qtd: 2,
+          vAttack: "3+",
+          vp: "2",
+          abilities: [
+            { keyword: 71, text: "Momentum 2" },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": A Henchmen Villain from your Victory Pile enters the city."
+            ],
+          ]
+        },
+        {
+          name: "Queens of Annihilation",
+          qtd: 3,
+          vAttack: "4+",
+          vp: "3",
+          abilities: [
+            { keyword: 71, text: "Momentum 3" },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal the top card of the Villain Deck. If it's a Villain, play it."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": KO one of your Heroes."
+            ],
+          ]
+        },
+        {
+          name: "Ravenous",
+          qtd: 2,
+          vAttack: "5+",
+          vp: "4",
+          abilities: [
+            { keyword: 71, text: "Momentum 3" },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Ravenous swaps places with an Annihilation Wave Villain that isn't Weaponized Galactus."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals a ",
+              { hc: 4 },
+              " Hero or gains a wound."
+            ]
+          ]
+        },
+        {
+          name: "Weaponized Galactus",
+          qtd: 1,
+          vAttack: "9+",
+          vp: "7",
+          abilities: [
+            { keyword: 71, text: "Momentum 9" },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Weaponized Galactus swaps places with the leftmost Villain in the city."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Destroy the leftmost city space. If this destroys the last city space, Evil Wins. Otherwise, each player gains a Wound, and you shuffle Weaponized Galactus back into the Villain Deck. Any Villain from the destroyed city space escapes."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 97,
+      name: "Timelines of Kang",
+      cards: [
+        {
+          name: "Immortus",
+          qtd: 2,
+          vAttack: "5+",
+          vp: "5",
+          abilities: [
+            { keyword: 49, text: "Streets Conqueror 3" },
+            [
+              {
+                bold: "Fight"
+              },
+              ": Reveal a ",
+              { hc: 3 },
+              " Hero or reveal the top card of the Villain Deck. If it's a Villain worth 4VP or less, defeat it ",
+              { italic: "(do its Fight effect)" },
+              " and put Immortus in its place."
+            ],
+            [
+              {
+                bold: "Escape"
+              },
+              ": Each player reveals a ",
+              { hc: 3 },
+              " Hero or gains a Wound. Shuffle Immortus back into the Villain Deck."
+            ],
+          ]
+        },
+        {
+          name: "Iron Lad",
+          qtd: 2,
+          vAttack: "4",
+          hc: 5,
+          team: 0,
+          overrideType: 1,
+          attack: "2",
+          abilities: [
+            [
+              {
+                bold: "Fight"
+              },
+              ": The player of your choice gains this as a Hero."
+            ],
+            { divider: true },
+            [
+              { hc: 5 },
+              ": ",
+              { keyword: 23, text: "Man Out of Time" }
+            ]
+          ]
+        },
+        {
+          name: "Pharaoh Rama-Tut",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "4",
+          abilities: [
+            { keyword: 49, text: "Bridge Conqueror 3" },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": If the Bridge is empty, move a Villain to the Bridge."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": Send a ",
+              { hc: 4 },
+              " or ",
+              { hc: 2 },
+              " Hero you played this turn as a ",
+              { keyword: 23, text: "Man or Woman Out of Time" },
+              "."
+            ],
+          ]
+        },
+        {
+          name: "Scarlet Centurion",
+          qtd: 2,
+          vAttack: "4+",
+          vp: "3",
+          abilities: [
+            { keyword: 49, text: "Bank Conqueror 2" },
+            [
+              {
+                bold: "Ambush"
+              },
+              ": Reveal your hand and send your highest-cost Hero as a ",
+              { keyword: 23, text: "Man or Woman Out of Time" },
+              "."
+            ],
+            [
+              {
+                bold: "Fight"
+              },
+              ": If you played a ",
+              { hc: 1 },
+              " Hero this turn, KO one of your Heroes."
+            ],
+          ]
+        }
+      ]
+    }
+  ],
   schemes: [
     {
       id: 138,
