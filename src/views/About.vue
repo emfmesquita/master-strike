@@ -51,14 +51,23 @@
           <p>
             Also, if you find any errors on cards, or have any suggestions, please file a new issue on our <a href="https://github.com/emfmesquita/master-strike/issues" target="_blank">project page on Github</a>.
           </p>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12" offset="0" lg="8" offset-lg="2">
+          <h2>Shout-outs</h2>
 
-          <p>
-            A huge shout-out to our comunity that built the <a href="https://www.boardgamegeek.com/wiki/page/Legendary_Marvel_Complete_Card_Text" target="_blank">wiki page with all cards text</a>. And to CaseyFowler that created <a href="https://marveldbg.wordpress.com/" target="_blank">a blog with all card images</a>. Those resources were fundamental to create Master Strike.
-          </p>
-
-          <p>
-            Another huge shout-out to @normware on BGG, he provided all villain groups in a format that I could import to the site way easier than adding all of them manually. That reduced the work at least in 10x. Thank you Neil!
-          </p>
+          <ul>
+            <li>
+              Humongous shout-out to our comunity that built the <a href="https://www.boardgamegeek.com/wiki/page/Legendary_Marvel_Complete_Card_Text" target="_blank">wiki page with all cards text</a>. And to CaseyFowler that created <a href="https://marveldbg.wordpress.com/" target="_blank">a blog with all card images</a>. Those resources were fundamental to create Master Strike.
+            </li>
+            <li>
+              Huge shout-out to @normware on BGG, he provided all villain groups in a format that I could import to the site way easier than adding all of them manually. That reduced the work at least in 10x. Thank you Neil!
+            </li>
+            <li>
+              Shout-out to House of Mao Gaming (<a href="https://www.twitch.tv/houseofmao" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitch</v-icon></a>, <a href="https://www.youtube.com/channel/UCEN4p2Ugc8tsVYRO--unkcg" style="text-decoration: none;" target="_blank"><v-icon>mdi-youtube</v-icon></a>, <a href="https://twitter.com/houseofmao" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitter</v-icon></a>) for sharing the Annihilation expansion cards before I could grab them. Thank you!
+            </li>
+          </ul>
         </v-col>
       </v-row>
       <v-row>
