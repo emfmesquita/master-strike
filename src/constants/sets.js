@@ -206,7 +206,7 @@ const ANNIHILATION = {
     value: "annihilation",
     label: "Annihilation",
     initials: "A",
-    cardTypes: [5],
+    cardTypes: [1,2,4,5],
 };
 
 export const sets = Object.freeze({

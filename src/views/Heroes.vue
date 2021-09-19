@@ -55,7 +55,7 @@
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <RangeFilter v-model="filter.cost" :icon="3" :min="0" :max="9" @input="filterChanged"/>
+              <RangeFilter v-model="filter.cost" :icon="3" :min="0" :max="10" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
@@ -157,7 +157,7 @@ const baseFilter = () => ({
   hc: [],
   keyword: [],
   rule: [],
-  cost: [0,9],
+  cost: [0,10],
   attack: [-1,10],
   recruit: [-1,5]
 });
@@ -195,7 +195,7 @@ export default {
     this.filter.hc = toIntArray(query.hc).filter(hc => heroClassArray[hc]);
     this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
     this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
-    this.filter.cost = toIntPair(query.cost, 0, 9);
+    this.filter.cost = toIntPair(query.cost, 0, 10);
     this.filter.attack = toIntPair(query.attack, -1, 10);
     this.filter.recruit = toIntPair(query.recruit, -1, 5);
     this.sortMethod = query.sort === RESULTS_SORT ? RESULTS_SORT : ALPHA_SORT;
@@ -208,7 +208,7 @@ export default {
       return `${this.heroes.length} Heroes`;
     },
     hasCostFilter() {
-      return this.filter.cost[0] !== 0 || this.filter.cost[1] !== 9;
+      return this.filter.cost[0] !== 0 || this.filter.cost[1] !== 10;
     },
     hasAttackFilter() {
       return this.filter.attack[0] !== -1 || this.filter.attack[1] !== 10;
