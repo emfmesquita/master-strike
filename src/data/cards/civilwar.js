@@ -1409,7 +1409,7 @@ export default {
               { hc: 1 },
               ": You get ",
               { bold: "+2" },
-              { icon: 1 },
+              { icon: 2 },
               "."
             ]
           ]
