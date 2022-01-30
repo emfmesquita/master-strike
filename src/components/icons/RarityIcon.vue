@@ -22,7 +22,7 @@ export default {
       return require(`../../assets/icons/rarity/${rarity}.svg`);
     },
     label() {
-      return rarityArray[this.icon - 1].label;
+      return rarityArray[this.icon - 1].qtdLabel;
     }
   }
 };

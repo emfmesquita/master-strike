@@ -208,6 +208,13 @@ const ANNIHILATION = {
     initials: "A",
     cardTypes: [1,2,4,5],
 };
+const MESSIAH_COMPLEX = {
+    id: 31,
+    value: "messiahcomplex",
+    label: "Messiah Complex",
+    initials: "MC",
+    cardTypes: [1,2,3,4,5,6],
+};
 
 export const sets = Object.freeze({
     CORE_SET,                   // 1
@@ -240,6 +247,7 @@ export const sets = Object.freeze({
     INTO_THE_COSMOS,            // 28
     REALM_OF_KINGS,             // 29
     ANNIHILATION,               // 30
+    MESSIAH_COMPLEX,            // 31
 });
 
 export const setsArray = Object.freeze(Object.values(sets));

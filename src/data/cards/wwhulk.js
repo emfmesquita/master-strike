@@ -61,9 +61,9 @@ export default {
           abilities: [
             [
               "You get ",
-              { bold: "+1 " },
+              { bold: "+1" },
               { icon: 1 },
-              "for each different cost of Hero you have."
+              " for each different cost of Hero you have."
             ],
             [
               { keyword: 46 },

@@ -15,9 +15,7 @@ export default [
         { bold: " card from among them and draw it. Put the rest of those cards back on the top and/or bottom of your deck in any order.”" }
       ],
       [
-        "Other abilities let you investigate for cards with certain costs, teams, ",
-        { icon: 1 },
-        " icons, and other traits."
+        "Other cards let you investigate for cards with certain costs, teams, icons, and other traits."
       ],
       [
         "Whether your investigation finds the right kind of card or not, you can still decide which cards go back on the top or bottom of your deck. This lets you set up your next investigation, or make powerful combos with other abilities that care about the top card of your deck."

@@ -18,15 +18,15 @@
     <shared-rule v-if="card.hc2" :rule="{ rule: 2 }">
       <HeroClassIcon class="card-second-hero-class"  :icon="card.hc2" width="32px"/>
     </shared-rule>
-    <RarityIcon v-if="card.rarity" class="card-rarity" :icon="card.rarity" width="24px"/>
-    <SetIcon v-else-if="card.set" class="set-icon" :set="card.set" width="24px" />
 
     <template v-if="card.qtd > 0">
-      <QtdIcon class="card-qtd-icon" :qtd="card.qtd" width="32px"/>
+      <QtdIcon class="card-qtd-icon" :qtd="card.qtd" :rarity="card.rarity" width="32px"/>
       <span class="card-qtd icon-text text-center font-weight-black">
         {{ card.qtd }}
       </span>
     </template>
+    <RarityIcon v-else-if="card.rarity" class="card-rarity" :icon="card.rarity" width="24px"/>
+    <SetIcon v-else-if="card.set" class="set-icon" :set="card.set" width="24px" />
 
     <shared-rule v-if="card.divided === 1" :rule="{ rule: 4 }">
       <DividedCardIcon class="divided-card-icon-left" size="12px" left />

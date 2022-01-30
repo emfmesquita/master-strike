@@ -45,7 +45,7 @@
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <RangeFilter v-model="filter.vAttack" :icon="1" :min="-1" :max="14" @input="filterChanged"/>
+              <RangeFilter v-model="filter.vAttack" :icon="1" :min="-1" :max="16" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
@@ -137,7 +137,7 @@ const baseFilter = () => ({
   set: [],
   keyword: [],
   rule: [],
-  vAttack: [-1,14],
+  vAttack: [-1,16],
   vp: [-1,7]
 });
 
@@ -171,7 +171,7 @@ export default {
       return `${this.villains.length} Villain Groups`;
     },
     hasAttackFilter() {
-      return this.filter.vAttack[0] !== -1 || this.filter.vAttack[1] !== 14;
+      return this.filter.vAttack[0] !== -1 || this.filter.vAttack[1] !== 16;
     },
     hasVpFilter() {
       return this.filter.vp[0] !== -1 || this.filter.vp[1] !== 7;
@@ -185,7 +185,7 @@ export default {
     this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
     this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
     this.filter.epic = query.rule === "1";
-    this.filter.vAttack = toIntPair(query.attack, -1, 14);
+    this.filter.vAttack = toIntPair(query.attack, -1, 16);
     this.filter.vp = toIntPair(query.vp, -1, 7);
     this.sortMethod = query.sort === RESULTS_SORT ? RESULTS_SORT : ALPHA_SORT;
     this.search();

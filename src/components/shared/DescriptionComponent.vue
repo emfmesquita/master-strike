@@ -1,6 +1,7 @@
 <template>
   <span>
     <span v-if="typeof descriptionComponent === 'string'">{{ descriptionComponent }}</span>
+    <span class="text-h5" v-else-if="descriptionComponent.header">{{ descriptionComponent.header }}</span>
     <span class="font-weight-bold" v-else-if="descriptionComponent.bold">{{ descriptionComponent.bold }}</span>
     <span class="font-italic" v-else-if="descriptionComponent.italic">{{ descriptionComponent.italic }}</span>
     <span v-else-if="isIcon" class="description-icon-container">

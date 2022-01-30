@@ -425,6 +425,30 @@ const MOMENTUM = {
   label: "Momentum",
   cardTypes: [2, 4],
 }
+const CLONE = {
+  id: 72,
+  value: "clone",
+  label: "Clone",
+  cardTypes: [1, 3, 4, 5, 6],
+}
+const SHATTER = {
+  id: 73,
+  value: "shatter",
+  label: "Shatter",
+  cardTypes: [1, 2, 4, 6],
+}
+const PREY = {
+  id: 74,
+  value: "prey",
+  label: "Prey",
+  cardTypes: [2, 4],
+}
+const TACTICAL_FORMATION = {
+  id: 75,
+  value: "tacticalformation",
+  label: "Tactical Formation",
+  cardTypes: [1],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -504,6 +528,10 @@ export const keywords = Object.freeze({
   WHEN_RECRUITED,             // 69 done
   THRONES_FAVOR,              // 70 done
   MOMENTUM,                   // 71 done
+  CLONE,                      // 72 done
+  SHATTER,                    // 73 done
+  PREY,                       // 74 done
+  TACTICAL_FORMATION,         // 75 done
   NONE,                       // -1
 });
 

@@ -72,6 +72,20 @@ const CHOOSE_A_VILLAIN = {
   sortLabel: "Choose a Villain Group",
   cardTypes: [1],
 }
+const VEILED_SCHEMES = {
+  id: 13,
+  value: "veiledschemes",
+  label: "Veiled Schemes",
+  title: "Veiled and Unveiled Schemes",
+  cardTypes: [5],
+}
+const UNVEILED_SCHEMES = {
+  id: 14,
+  value: "unveiledschemes",
+  label: "Unveiled Schemes",
+  title: "Veiled and Unveiled Schemes",
+  cardTypes: [5],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -92,6 +106,8 @@ export const rules = Object.freeze({
   ASTERISK,                   // 10 done
   SIDEKICKS,                  // 11 done
   CHOOSE_A_VILLAIN,           // 12 done
+  VEILED_SCHEMES,             // 13 done
+  UNVEILED_SCHEMES,           // 14 done
   NONE,                       // -1
 });
 

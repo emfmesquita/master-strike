@@ -16,7 +16,7 @@
           class="headline grey lighten-2"
           primary-title
         >
-          {{ label }}
+          {{ title }}
         </v-card-title>
 
         <v-card-text class="pa-5">
@@ -56,8 +56,9 @@ export default {
   name: "Rule",
   props: ["rule"],
   computed: {
-    label() {
-      return obj(this.rule).label;
+    title() {
+      const ruleObj = obj(this.rule);
+      return ruleObj.title || ruleObj.label;
     },
     text() {
       return this.rule.text || obj(this.rule).label;

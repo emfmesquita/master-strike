@@ -1,14 +1,17 @@
 const COMMON = {
     value: "common",
-    label: "Common (5 cards)"
+    qtdLabel: "Common (5 cards)",
+    label: "Common"
 };
 const UNCOMMON = {
     value: "uncommon",
-    label: "Uncommon (3 cards)"
+    qtdLabel: "Uncommon (3 cards)",
+    label: "Uncommon"
 };
 const RARE = {
     value: "rare",
-    label: "Rare (1 card)"
+    qtdLabel: "Rare (1 card)",
+    label: "Rare"
 };
 
 export const rarity = Object.freeze({

@@ -122,6 +122,20 @@ export const filterGroupByRule = (groups, rules) => {
         return;
       }
 
+      // check for veiled schemes
+      const isVeiledScheme = card.type === cardTypes.SCHEME.id && card.veiled;
+      if(isVeiledScheme && rules.includes(R.VEILED_SCHEMES.id)) {
+        match = true;
+        return;
+      }
+
+      // check for unveiled schemes
+      const isUnvailedScheme = card.type === cardTypes.SCHEME.id && card.unveiled;
+      if(isUnvailedScheme && rules.includes(R.UNVEILED_SCHEMES.id)) {
+        match = true;
+        return;
+      }
+
       // checks other rules
       const abs = card.abilities;
       const hasRule = ab => rules.includes(ab.rule);

@@ -114,6 +114,8 @@ const villainSubtitle = (card, group) => {
 const schemeSubtitle = (card, group) => {
   if([6, 8].includes(group.set)) return "Plot";
   if(card.transformed) return "Scheme, Transformed";
+  if(card.veiled) return "Veiled Scheme";
+  if(card.unveiled) return "Unveiled Scheme";
   return "Scheme";
 }
 
@@ -142,6 +144,7 @@ const processVillain = (card, group) => {
 
   if(card.overrideType === cardTypes.HERO.id) {
     card.cost = card.vAttack;
+    if(card.vAttackAsterisk) card.costAsterisk = true;
     processHero(card, group);
   }
 }

@@ -113,6 +113,11 @@ const INHUMANS = {
     value: "inhumans",
     label: "Inhumans"
 };
+const X_FACTOR_INVESTIGATIONS = {
+    id: 23,
+    value: "x-factor-investigations",
+    label: "X-Factor Investigations"
+};
 
 export const team = Object.freeze({
     UNAFFILIATED,                   //0
@@ -138,6 +143,7 @@ export const team = Object.freeze({
     VENOMVERSE,                     //20   
     HEROES_OF_ASGARD,               //21
     INHUMANS,                       //22
+    X_FACTOR_INVESTIGATIONS,        //23
 });
 
 export const teamArray = Object.freeze(Object.values(team));
