@@ -67,6 +67,9 @@
             <li>
               Shout-out to House of Mao Gaming (<a href="https://www.twitch.tv/houseofmao" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitch</v-icon></a>, <a href="https://www.youtube.com/channel/UCEN4p2Ugc8tsVYRO--unkcg" style="text-decoration: none;" target="_blank"><v-icon>mdi-youtube</v-icon></a>, <a href="https://twitter.com/houseofmao" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitter</v-icon></a>) for sharing the Annihilation expansion cards before I could grab them. Thank you!
             </li>
+            <li>
+              Shout-out to Bageltop Games (<a href="https://www.twitch.tv/bageltopgames" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitch</v-icon></a>, <a href="https://www.youtube.com/channel/UCc4LXeuOzl1xndGXk2_8hbQ" style="text-decoration: none;" target="_blank"><v-icon>mdi-youtube</v-icon></a>, <a href="https://twitter.com/BageltopGames" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitter</v-icon></a>) for sharing the Messiah Complex expansion cards (including typing all text!!) before I could grab them. Thank you!
+            </li>
           </ul>
         </v-col>
       </v-row>
