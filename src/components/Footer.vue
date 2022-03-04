@@ -8,11 +8,11 @@
       <template v-slot:action="{ attrs }">
         <v-btn
           color="white"
-          icon
+          text
           v-bind="attrs"
           @click="closeDisclaimer"
         >
-          <v-icon>mdi-close</v-icon>
+          I Agree
         </v-btn>
       </template>
     </v-snackbar>

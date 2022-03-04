@@ -1,12 +1,14 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import { getObj, saveObj } from "../services/storageUtils";
+import KEYS from "../constants/storage";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     sideBarCollapsed: true,
-    disclaimer: true,
+    disclaimer: !getObj(KEYS.DISCLAIMER_AGREED),
     canZoom: false,
   },
   getters: {
@@ -30,6 +32,7 @@ export default new Vuex.Store({
       context.commit('toggleSideBar');
     },
     closeDisclaimer(context) {
+      saveObj(KEYS.DISCLAIMER_AGREED, true);
       context.commit('closeDisclaimer');
     },
     canZoom(context, canZoom) {

@@ -90,7 +90,7 @@
           </p>
 
           <p>
-            For additional information on copyright law and fair use, please visit <a href="http://www.copyright.gov/fls/fl102.html" target="_blank">http://www.copyright.gov/fls/fl102.html</a>.
+            For additional information on copyright law and fair use, please visit <a href="https://www.copyright.gov/fair-use/index.html" target="_blank">https://www.copyright.gov/fair-use/index.html</a>.
           </p>
         </v-col>
       </v-row>
