@@ -722,7 +722,7 @@ export default {
           recruit: "1+",
           abilities: [
             [
-              { keyword: 36 },
+              { keyword: 38 },
               ": You get ",
               { bold: "+2" },
               { icon: 2 },
