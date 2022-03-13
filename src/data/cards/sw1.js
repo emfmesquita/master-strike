@@ -270,6 +270,7 @@ export default {
     {
       id: 75,
       name: "Dr. Strange",
+      filterName: "Dr. Strange (SW1)",
       team: 15,
       cards: [
         {

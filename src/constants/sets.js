@@ -215,6 +215,13 @@ const MESSIAH_COMPLEX = {
     initials: "MC",
     cardTypes: [1,2,3,4,5,6],
 };
+const DOCTOR_STRANGE = {
+    id: 32,
+    value: "doctorstrange",
+    label: "Doctor Strange and the Shadows of Nightmare",
+    initials: "DS",
+    cardTypes: [1,2,4,5,6],
+};
 
 export const sets = Object.freeze({
     CORE_SET,                   // 1
@@ -248,6 +255,7 @@ export const sets = Object.freeze({
     REALM_OF_KINGS,             // 29
     ANNIHILATION,               // 30
     MESSIAH_COMPLEX,            // 31
+    DOCTOR_STRANGE,             // 32
 });
 
 export const setsArray = Object.freeze(Object.values(sets));

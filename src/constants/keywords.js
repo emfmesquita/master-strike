@@ -449,6 +449,24 @@ const TACTICAL_FORMATION = {
   label: "Tactical Formation",
   cardTypes: [1],
 }
+const ASTRAL_PLANE = {
+  id: 76,
+  value: "astralplane",
+  label: "Astral Plane",
+  cardTypes: [1, 2, 4, 5],
+}
+const DEMONIC_BARGAIN = {
+  id: 77,
+  value: "demonicbargain",
+  label: "Demonic Bargain",
+  cardTypes: [1, 2, 4, 5],
+}
+const RITUAL_ARTIFACT = {
+  id: 78,
+  value: "ritualartifact",
+  label: "Ritual Artifact",
+  cardTypes: [1, 5],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -532,6 +550,9 @@ export const keywords = Object.freeze({
   SHATTER,                    // 73 done
   PREY,                       // 74 done
   TACTICAL_FORMATION,         // 75 done
+  ASTRAL_PLANE,               // 76 done
+  DEMONIC_BARGAIN,            // 77 done
+  RITUAL_ARTIFACT,            // 78 done
   NONE,                       // -1
 });
 
