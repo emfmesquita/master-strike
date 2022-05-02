@@ -2077,7 +2077,7 @@ export default {
                 bold: "Escape"
               },
               ": ",
-              { keyword: 17, tex: "Cross-Dimensional Wolverine Rampage" }
+              { keyword: 17, text: "Cross-Dimensional Wolverine Rampage" }
             ],
             { divider: true },
             [
