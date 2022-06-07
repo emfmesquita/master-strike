@@ -1082,7 +1082,6 @@ export default {
           team: 1,
           rarity: 3,
           cost: 9,
-          attack: "0+",
           abilities: [
             [
               "Count the number of different printed VP values in your Victory Pile. Draw that many cards."
