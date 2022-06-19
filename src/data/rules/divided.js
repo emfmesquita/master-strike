@@ -1,20 +1,24 @@
 export default [
   [
-    "Matching the theme of division and duality, ",
-    { italic: "Civil War" },
-    " introduces “Divided Cards,” which have two miniature cards printed on the same card."
+    "Each Divided Card has two miniature cards printed on the same card."
   ],
   {
     points: [
       [
-        "You recruit a Divided Card from the HQ as normal by paying its cost. Each side of a Divided Card shows the same cost. (If it costs “3” on each side, you pay only 3 Recruit, not 6.)"
+        "If a Divided Card costs “3” on each side, its cost is 3. Pay ",
+        { bold: "3" },
+        { icon: 2 },
+        " to recruit it from the HQ, not ",
+        { bold: "6" },
+        { icon: 2 },
+        "."
       ],
       [
         "When you play a Divided Card, you choose which side to play. You generate all the ",
         { icon: 2 },
         ", ",
         { icon: 1 },
-        ", and special abilities of that side as normal. You ignore the other side, as if it doesn’t exist.",
+        ", and special abilities of that side as normal. You ignore the other side, as if it didn’t exist.",
       ],
       [
         "Each side of a Divided Card has a different Hero Class, like ",
@@ -31,13 +35,14 @@ export default [
         "Different sides of Divided Cards often let you choose between Recruit, Attack, drawing cards, and other effects. Choose carefully which side to play!"
       ],
       [
-        "While a Divided Card is in your hand or the HQ, it counts as all its Hero Classes, Teams and Hero Names. But once you play it, the card only counts as the side you chose."
+        "While a Divided Card is in your hand, deck, or the HQ, it counts as all its Hero Classes, Teams, card names, and Hero Names. (It still counts as 1 card, not 2.) While there, its “printed ",
+        { icon: 1 },
+        "” is the total of both ",
+        { icon: 1 },
+        " numbers printed on it. However, once you play the card, it only counts as the side you choose."
       ],
       [
         "When sorting and setting up, always use the Hero Name on the left side of a Divided Card."
-      ],
-      [
-        "A Divided Card is one card, not two. So if you have to “discard two cards,” “draw two cards,” or count the number of cards in your hand, a Divided Card only counts as one card."
       ]
     ]
   }

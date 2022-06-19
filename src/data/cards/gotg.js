@@ -70,6 +70,7 @@ export default {
     {
       id: 59,
       name: "Gamora",
+      filterName: "Gamora (GotG)",
       team: 12,
       cards: [
         {
@@ -290,6 +291,7 @@ export default {
     {
       id: 62,
       name: "Star-Lord",
+      filterName: "Star-Lord (GotG)",
       team: 12,
       cards: [
         {

@@ -1,11 +1,13 @@
 export default [
   [
-    "Villains and Masterminds can capture these ancient weapons to become even more powerful. But if you defeat them, you can seize those weapons to use as Artifacts of your own."
+    "Villains and Masterminds can capture these ancient weapons to become even more powerful. But if you defeat them, you can seize those weapons to use as ",
+    { keyword: 13, text: "Artifacts" },
+    " of your own. Some of them also have Ambush effects, which happen when they enter the city captured by a Villain."
   ],
   {
     points: [
       [
-        "These weapons are not Villains."
+        "Villainous Weapons are not Villains."
       ],
       [
         "When a Villainous Weapon is played from the Villain Deck, ",
@@ -34,7 +36,9 @@ export default [
         { bold: "put all those Weapons into your discard pile as Artifacts." }
       ],
       [
-        "When you have a Villainous Weapon in your hand, you can play it just like any other Artifact."
+        "When you have a Villainous Weapon in your hand, you can play it just like any other ",
+        { keyword: 13 },
+        "."
       ],
       [
         { bold: "You never get the Weapon’s printed " },
@@ -53,7 +57,7 @@ export default [
         "If you have gained a Villainous Weapon, and a card effect makes an enemy capture that Weapon again, then it works as a Villainous Weapon again until someone defeats that enemy to reclaim it."
       ],
       [
-        "Malekith and Hela both have Mastermind Tactics that turn into Villainous Weapons. You win when the Mastermind has no face down Tactics left under them, even if there are still some Tactics that have turned into other card types somewhere."
+        "Malekith, Hela, and Ronan have Mastermind Tactics that turn into Villainous Weapons. You win when the Mastermind has no face down Tactics left under them, even if there are still some Tactics that have turned into other card types."
       ]
     ]
   }

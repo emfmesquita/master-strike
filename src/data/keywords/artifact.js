@@ -1,6 +1,6 @@
 export default [
   [
-    "Some Hero cards are also Artifacts. (They still count as Hero cards too.) When you gain a Hero Artifact, put it in your discard pile like any other Hero card. When you draw that Artifact later in the game, you may play it in front of you and use its effects. This means you “control” that Artifact. At the end of your turn, when you discard all the cards you played that turn, the Artifacts you control stay in front of you."
+    "Some Hero cards are also powerful “Artifact” cards. (They still count as Hero cards too.) When you gain a Hero Artifact, put it in your discard pile like any other Hero card. When you draw that Artifact later in the game, you may play it in front of you and use its effects. This means you “control” that Artifact. At end of turn, when you discard all the cards you played that turn, the Artifacts you control stay in front of you."
   ],
   {
     points: [
@@ -8,7 +8,11 @@ export default [
       ["You can control multiple Artifacts with the same card name and use each of them."],
       ["You can only use Artifacts during your turn unless otherwise specified."],
       [
-        "If a card effect during any player’s turn asks you to “Reveal a Hero,” you may reveal a Hero Artifact you control. Card effects that say “your Heroes” or “Heroes you have” include Hero Artifacts you control as well."
+        "If a card effect during any player’s turn asks you to “Reveal a ",
+        { hc: 3 },
+        " Hero,” you may reveal a ",
+        { hc: 3 },
+        " Hero Artifact you control. Card effects that say “your Heroes” or “Heroes you have” include Hero Artifacts you control."
       ],
       [
         "However, you only “played” an Artifact on the turn you put it out, so it only activates Superpower Abilities (like “",

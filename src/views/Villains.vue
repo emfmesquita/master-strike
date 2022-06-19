@@ -240,7 +240,7 @@ export default {
 
       this.villains = filterById(this.villains, this.filter.villain);
       this.villains = filterBySet(this.villains, this.filter.set);
-      this.villains = filterGroupByKeyword(this.villains, this.filter.keyword);
+      this.villains = filterGroupByKeyword(this.villains, this.filter.keyword, this.filter.rule);
       this.villains = filterGroupByRule(this.villains, this.filter.rule);
       if(this.hasAttackFilter) this.villains = filterGroupByMinMax(this.villains, "vAttackNum", this.filter.vAttack);
       if(this.hasVpFilter) this.villains = filterGroupByMinMax(this.villains, "vpNum", this.filter.vp);

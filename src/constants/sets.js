@@ -220,7 +220,14 @@ const DOCTOR_STRANGE = {
     value: "doctorstrange",
     label: "Doctor Strange and the Shadows of Nightmare",
     initials: "DS",
-    cardTypes: [1,2,4,5,6],
+    cardTypes: [1,2,4,5],
+};
+const MS_GUARDIANS_OF_THE_GALAXY = {
+    id: 33,
+    value: "msgotg",
+    label: "Marvel Studios' Guardians of the Galaxy",
+    initials: "MSGotG",
+    cardTypes: [1,2,4,5],
 };
 
 export const sets = Object.freeze({
@@ -256,6 +263,7 @@ export const sets = Object.freeze({
     ANNIHILATION,               // 30
     MESSIAH_COMPLEX,            // 31
     DOCTOR_STRANGE,             // 32
+    MS_GUARDIANS_OF_THE_GALAXY, // 33
 });
 
 export const setsArray = Object.freeze(Object.values(sets));

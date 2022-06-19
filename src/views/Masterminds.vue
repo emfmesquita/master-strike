@@ -251,7 +251,7 @@ export default {
 
       this.masterminds = filterById(this.masterminds, this.filter.mastermind);
       this.masterminds = filterBySet(this.masterminds, this.filter.set);
-      this.masterminds = filterGroupByKeyword(this.masterminds, this.filter.keyword);
+      this.masterminds = filterGroupByKeyword(this.masterminds, this.filter.keyword, this.filter.rule);
       this.masterminds = filterGroupByRule(this.masterminds, this.filter.rule);
       if(this.filter.epic) this.masterminds = filterGroupByCardProp(this.masterminds, "epic", [true]);
       if(this.hasAttackFilter) this.masterminds = filterGroupByMinMax(this.masterminds, "vAttackNum", this.filter.vAttack);

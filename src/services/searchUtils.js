@@ -4,6 +4,7 @@ import { cardSubTypes, cardTypes } from "../constants/cardTypes";
 import { getAllHenchmen, getAllHeroes, getAllMasterminds, getAllSchemes, getAllVillains } from "./cardUtils"
 
 import { rules as R } from "../constants/rules"
+import { keywords as K } from "../constants/keywords"
 
 const SEARCH_CACHE = {};
 const SEARCH_INDEXES = [
@@ -42,7 +43,12 @@ export const filterBySet = (items, sets) => {
   return items.filter(setCheck);
 }
 
-export const filterGroupByKeyword = (groups, keywords) => {
+export const filterGroupByKeyword = (groups, keywords, rules) => {
+  // work around for villaneous weapons
+  if(rules && rules.indexOf(R.VILLAINOUS_WEAPONS.id) >= 0) {
+    keywords = [K.VILLAINOUS_WEAPONS.id].concat(keywords || []);
+  }
+
   if(!keywords || !keywords.length) return groups;
   return groups.filter(group => {
     let match = false;
@@ -67,6 +73,16 @@ export const filterGroupByKeyword = (groups, keywords) => {
 }
 
 export const filterGroupByRule = (groups, rules) => {
+  if(!rules || !rules.length) return groups;
+
+  // work around for villaneous weapons
+  // removes vw id from the filter - the filder by vw is done on keywords
+  const vwIdx = rules.indexOf(R.VILLAINOUS_WEAPONS.id);
+  if(vwIdx >= 0) {
+    rules = [].concat(rules);
+    rules.splice(vwIdx, 1);
+  }
+
   if(!rules || !rules.length) return groups;
   return groups.filter(group => {
     let match = false;
@@ -108,13 +124,6 @@ export const filterGroupByRule = (groups, rules) => {
         return;
       }
 
-      // check for villainous weapon
-      const isVillainousWep = card.subType === cardSubTypes.VILLAINOUS_WEAPON.id;
-      if(isVillainousWep && rules.includes(R.VILLAINOUS_WEAPONS.id)) {
-        match = true;
-        return;
-      }
-
       // check for transforming schemes
       const isTransfScheme = card.type === cardTypes.SCHEME.id && group.set === 24;
       if(isTransfScheme && rules.includes(R.TRANSFORMING_SCHEMES.id)) {
@@ -145,7 +154,7 @@ export const filterGroupByRule = (groups, rules) => {
 
       // filter by none
       if(rules.includes(-1)) {
-        const noSpecialRules = !isMulticlass && !isDivided && !hasAsterisk && !isTrap && !isLocation && !isVillainousWep && !isTransfScheme;
+        const noSpecialRules = !isMulticlass && !isDivided && !hasAsterisk && !isTrap && !isLocation && !isTransfScheme;
         if(noSpecialRules) {
           // checks if does not have rules on abilities
           const checkNoRule = ab => !ab.rule;

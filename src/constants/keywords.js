@@ -467,6 +467,30 @@ const RITUAL_ARTIFACT = {
   label: "Ritual Artifact",
   cardTypes: [1, 5],
 }
+const TRIGGERED_ARTIFACT = {
+  id: 79,
+  value: "triggeredartifact",
+  label: "Triggered Artifact",
+  cardTypes: [1, 2, 4],
+}
+const EXCESSIVE_KINDNESS = {
+  id: 80,
+  value: "excessivekindness",
+  label: "Excessive Kindness",
+  cardTypes: [1],
+}
+const COMMAND = {
+  id: 81,
+  value: "command",
+  label: "Command",
+  cardTypes: [4],
+}
+const VILLAINOUS_WEAPONS = {
+  id: 82,
+  value: "villainousweapons",
+  label: "Villainous Weapons",
+  cardTypes: [2, 4],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -553,6 +577,10 @@ export const keywords = Object.freeze({
   ASTRAL_PLANE,               // 76 done
   DEMONIC_BARGAIN,            // 77 done
   RITUAL_ARTIFACT,            // 78 done
+  TRIGGERED_ARTIFACT,         // 79 done
+  EXCESSIVE_KINDNESS,         // 80 done
+  COMMAND,                    // 81 done
+  VILLAINOUS_WEAPONS,         // 82 done
   NONE,                       // -1
 });
 

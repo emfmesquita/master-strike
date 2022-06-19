@@ -424,7 +424,7 @@ export default {
             [
               { bold: "Fight" },
               ": Rescue 4 Bystanders. Hela captures this card as a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               "."
             ],
             { divider: true },
@@ -445,7 +445,7 @@ export default {
             [
               { bold: "Fight" },
               ": Rescue 4 Bystanders. Hela captures this card as a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               "."
             ],
             { divider: true },
@@ -496,9 +496,9 @@ export default {
             [
               { bold: "Master Strike" },
               ": Malekith captures a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               " from the city or from any player's control or discard pile. Then this Master Strike enters the city as a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               " called “Darkspear“ that gives ",
               { bold: "+2" },
               { icon: 1 },
@@ -523,9 +523,9 @@ export default {
             [
               { bold: "Master Strike" },
               ": Malekith captures a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               " from the city, then captures one from any player's control or discard pile. Then this Master Strike enters the city as a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               " called “Darkspear“ that gives ",
               { bold: "+3" },
               { icon: 1 },
@@ -549,9 +549,9 @@ export default {
             [
               { bold: "Fight" },
               ": Rescue 4 Bystanders. Malekith captures a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               " from the city or from any player's control or discard pile. The this Tactic enters the city as a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               "."
             ],
             { divider: true },
@@ -572,9 +572,9 @@ export default {
             [
               { bold: "Fight" },
               ": Rescue 4 Bystanders. Malekith captures a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               " from the city or from any player's control or discard pile. The this Tactic enters the city as a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               "."
             ],
             { divider: true },
@@ -595,9 +595,9 @@ export default {
             [
               { bold: "Fight" },
               ": Rescue 4 Bystanders. Malekith captures a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               " from the city or from any player's control or discard pile. The this Tactic enters the city as a ",
-              { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+              { keyword: 82, text: "Villainous Weapon" },
               "."
             ],
             { divider: true },
@@ -719,7 +719,7 @@ export default {
           vAttack: "+3",
           subType: 3,
           abilities: [
-            { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+            { keyword: 82, text: "Villainous Weapon" },
             { divider: true },
             [
               { keyword: 14, text: "Thrown Artifact -" },
@@ -736,7 +736,7 @@ export default {
           vAttack: "+4",
           subType: 3,
           abilities: [
-            { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+            { keyword: 82, text: "Villainous Weapon" },
             { divider: true },
             [
               { keyword: 13, text: "Artifact -" },
@@ -761,7 +761,7 @@ export default {
           vAttack: "+4",
           subType: 3,
           abilities: [
-            { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+            { keyword: 82, text: "Villainous Weapon" },
             [
               {
                 bold: "Ambush"
@@ -781,7 +781,7 @@ export default {
           vAttack: "+3",
           subType: 3,
           abilities: [
-            { rule: 9, text: "Villainous Weapon", keywordStyle: true },
+            { keyword: 82, text: "Villainous Weapon" },
             { divider: true },
             [
               { keyword: 13, text: "Artifact -" },
