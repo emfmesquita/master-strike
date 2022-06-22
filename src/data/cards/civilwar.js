@@ -1338,7 +1338,7 @@ export default {
           abilities: [
             { keyword: 27 },
             [
-              "Choose a Hero Class. Reveal the top card of your deck. If it's the Hero class you named, then draw it."
+              "Choose a Hero Class. Reveal the top card of your deck. If it's the Hero Class you named, then draw it."
             ]
           ]
         },
