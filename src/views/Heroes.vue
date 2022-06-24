@@ -219,7 +219,7 @@ export default {
   },
   methods: {
     heroKey(hero) {
-      return `${this.lastFilterTime}-${hero.team}-${hero.name}`;
+      return `${this.lastFilterTime}-${hero.id}-${hero.name}`;
     },
     setQuery() {
       const query = {};
