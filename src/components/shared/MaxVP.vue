@@ -40,7 +40,7 @@ export default {
       return `${2 * this.size}px`;
     },
     tooltip() {
-      return `${this.maxVP} max VP`;
+      return `${this.maxVP} max printed VP`;
     }
   },
   data: () => ({})
