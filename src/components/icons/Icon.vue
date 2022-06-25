@@ -1,12 +1,13 @@
 
 <template>
   <span v-on="iconOn">
-    <v-tooltip top content-class="ms-icon">
+    <v-tooltip v-if="!noTooltip" top content-class="ms-icon">
       <template v-slot:activator="{ on }">
         <slot :on="on" />
       </template>
       <span>{{ label }}</span>
     </v-tooltip>
+    <slot v-else />
   </span>
 </template>
 
@@ -17,7 +18,8 @@ export default {
   name: "Icon",
   mixins: [IconMixin],
   props: {
-    label: String
+    label: String,
+    noTooltip: Boolean,
   },
   computed: {
     iconOn() {

@@ -1,11 +1,11 @@
 
 <template>
-  <Icon :label="label" :allowClickOnMobile="allowClickOnMobile">
+  <Icon :label="label" :noTooltip="noTooltip" :allowClickOnMobile="allowClickOnMobile">
     <template v-slot:default="{ on }">
       <span v-on="on">
         <template v-if="icon">
           <v-icon v-if="icon === 5" :style="focusStyle">mdi-arrow-right-thick</v-icon>
-          <img v-else class="ability-icon"  :src="iconSrc" :width="width" draggable="false"/>
+          <img v-else class="ability-icon" :src="iconSrc" :width="width" draggable="false"/>
         </template>
       </span>
     </template>
@@ -19,7 +19,12 @@ import Icon from "./Icon.vue";
 
 export default {
   name: "AbilityIcon",
-  props: ["icon", "width", "iconSrcOverride"],
+  props: {
+    icon: Number, 
+    width: String, 
+    iconSrcOverride: String, 
+    noTooltip: Boolean,
+  },
   mixins: [IconMixin],
   components: { Icon },
   computed: {

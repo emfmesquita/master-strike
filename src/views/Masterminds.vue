@@ -7,7 +7,7 @@
         <v-container>
           <v-row align="center">
             <v-col cols="12">
-              <SortToggle v-model="sortMethod" @input="sortChanged" />
+              <SortToggle v-model="sortMethod" @input="sortChanged" vp="true" />
             </v-col>
           </v-row>
           <v-row align="center" justify="center">
@@ -69,7 +69,7 @@
           <v-icon small>mdi-eraser</v-icon>
         </v-btn>
         <v-divider></v-divider>
-        <SortToggleCollapsed v-model="sortMethod" @input="sortChanged" />
+        <SortToggleCollapsed v-model="sortMethod" @input="sortChanged" vp="true" />
         <v-divider></v-divider>
       </template>
     </shared-side-bar>
@@ -122,7 +122,7 @@ import { keywordsArray } from "../constants/keywords";
 import { rulesArray } from "../constants/rules";
 import { setsArray } from "../constants/sets";
 
-import { getAllMasterminds, numberOfCards } from "../services/cardUtils";
+import { getAllMasterminds, maxVP, numberOfCards } from "../services/cardUtils";
 import { toIntArray, toIntPair } from "../services/queryUtils";
 import { 
   groupSearchSetup,
@@ -134,7 +134,7 @@ import {
   filterById,
   filterGroupByCardProp
 } from "../services/searchUtils";
-import { sortGroups, ALPHA_SORT, RESULTS_SORT } from "../services/sortUtils";
+import { sortGroups, ALPHA_SORT, RESULTS_SORT, VP_SORT } from "../services/sortUtils";
 
 const masterminds = getAllMasterminds();
 const validMasterminds = masterminds.filter(mm => mm.id).map(mm => mm.id);
@@ -198,7 +198,10 @@ export default {
     this.filter.epic = query.rule === "1";
     this.filter.vAttack = toIntPair(query.attack, 2, 36);
     this.filter.vp = toIntPair(query.vp, -1, 7);
-    this.sortMethod = query.sort === RESULTS_SORT ? RESULTS_SORT : ALPHA_SORT;
+
+    if(query.sort === RESULTS_SORT) this.sortMethod = RESULTS_SORT;
+    else if(query.sort === VP_SORT) this.sortMethod = VP_SORT;
+    else this.sortMethod = ALPHA_SORT;
     this.search();
     this.sort();
   },
@@ -219,6 +222,7 @@ export default {
       if(this.hasVpFilter) query.vp = filter.vp.join(",");
 
       if(this.sortMethod === RESULTS_SORT) query.sort = RESULTS_SORT;
+      if(this.sortMethod === VP_SORT) query.sort = VP_SORT;
       
       this.$router.replace({
         path: this.$route.path,
@@ -272,6 +276,7 @@ export default {
         });
 
         mm.results = numberOfCards(mm.filteredCards);
+        mm.maxVP = maxVP(mm.cards.filter(card => !card.epic && !card.transformed)) + "";
       });
 
       this.lastFilterTime = Date.now();

@@ -6,7 +6,8 @@
           <template v-if="!dense">
             <SetIcon v-for="set in setArray" :key="set" class="set float-right" :set="set" width="42px" />
           </template>
-          <NumberOfCards v-if="!dense" class="number-of-cards" :number="numberOfCards" size="16"/>
+          <NumberOfCards v-if="!dense" class="number-of-cards" :number="numberOfCards" :size="16"/>
+          <MaxVP v-if="!dense && group.maxVP" class="max-vp" :maxVP="group.maxVP" :size="16"/>
           <span class="group-title" :class="titleClasses">{{ group.name }}</span>
         </v-col>
       </v-row>
@@ -53,6 +54,7 @@
 <script>
 import SetIcon from "../icons/SetIcon.vue";
 import NumberOfCards from "../shared/NumberOfCards";
+import MaxVP from "../shared/MaxVP";
 import { numberOfCards } from "../../services/cardUtils";
 import { numberOfColumns, pages } from "../../services/pageUtils";
 
@@ -70,7 +72,7 @@ export default {
       default: 280
     }
   },
-  components: { SetIcon, NumberOfCards },
+  components: { SetIcon, NumberOfCards, MaxVP },
   data: () => ({
     currentPage: 0
   }),
@@ -195,8 +197,13 @@ export default {
   }
   .number-of-cards {
     position: absolute;
-    top: -16px;
-    left: 4px;
+    top: -12px;
+    left: 8px;
+  }
+  .max-vp {
+    position: absolute;
+    top: -12px;
+    left: 48px;
   }
 }
 </style>

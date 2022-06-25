@@ -85,6 +85,30 @@ export const paginate = (cards, pageSize) => {
   return pages;
 }
 
+/**
+ * Calculates the sum of VP of a list of cards.
+ * @param {*} cards 
+ * @returns 
+ */
+export const maxVP = cards => cards.reduce((total, card) => {
+  // card is the second half of divided card nothing is added to total
+  if(card.divided === 2) return total;
+  if(!card.vpNum || card.vpNum <= 0) return total;
+
+  // get the card qtd
+  let qtd = 1;
+  if(card.qtd) {
+    qtd = card.qtd;
+  } else {
+    // gets the qtd from rarity
+    if(card.rarity === 1) qtd = 5;
+    if(card.rarity === 2) qtd = 3;
+    if(card.rarity === 3) qtd = 1;
+  }
+  
+  return total + qtd * card.vpNum;
+}, 0);
+
 const mastermindSubtitle = (card, group) => {
   const type = [6, 8].includes(group.set) ? "Commander": "Mastermind";
   const mmName = group.tacticName || group.name;

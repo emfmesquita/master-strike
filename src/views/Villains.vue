@@ -7,7 +7,7 @@
         <v-container>
           <v-row align="center">
             <v-col cols="12">
-              <SortToggle v-model="sortMethod" @input="sortChanged" />
+              <SortToggle v-model="sortMethod" @input="sortChanged" vp="true" />
             </v-col>
           </v-row>
           <v-row align="center" justify="center">
@@ -64,7 +64,7 @@
           <v-icon small>mdi-eraser</v-icon>
         </v-btn>
         <v-divider></v-divider>
-        <SortToggleCollapsed v-model="sortMethod" @input="sortChanged" />
+        <SortToggleCollapsed v-model="sortMethod" @input="sortChanged" vp="true" />
         <v-divider></v-divider>
       </template>
     </shared-side-bar>
@@ -115,7 +115,7 @@ import { keywordsArray } from "../constants/keywords";
 import { rulesArray } from "../constants/rules";
 import { setsArray } from "../constants/sets";
 
-import { getAllVillains, numberOfCards } from "../services/cardUtils";
+import { getAllVillains, numberOfCards, maxVP } from "../services/cardUtils";
 import { toIntArray, toIntPair } from "../services/queryUtils";
 import { 
   groupSearchSetup,
@@ -126,7 +126,7 @@ import {
   filterById,
   filterGroupByMinMax
 } from "../services/searchUtils";
-import { sortGroups, ALPHA_SORT, RESULTS_SORT } from "../services/sortUtils";
+import { sortGroups, ALPHA_SORT, RESULTS_SORT, VP_SORT } from "../services/sortUtils";
 
 const villains = getAllVillains();
 const validVillains = villains.filter(villain => villain.id).map(villain => villain.id);
@@ -187,7 +187,10 @@ export default {
     this.filter.epic = query.rule === "1";
     this.filter.vAttack = toIntPair(query.attack, -1, 16);
     this.filter.vp = toIntPair(query.vp, -1, 7);
-    this.sortMethod = query.sort === RESULTS_SORT ? RESULTS_SORT : ALPHA_SORT;
+
+    if(query.sort === RESULTS_SORT) this.sortMethod = RESULTS_SORT;
+    else if(query.sort === VP_SORT) this.sortMethod = VP_SORT;
+    else this.sortMethod = ALPHA_SORT;
     this.search();
     this.sort();
   },
@@ -208,6 +211,7 @@ export default {
       if(this.hasVpFilter) query.vp = filter.vp.join(",");
 
       if(this.sortMethod === RESULTS_SORT) query.sort = RESULTS_SORT;
+      if(this.sortMethod === VP_SORT) query.sort = VP_SORT;
       
       this.$router.replace({
         path: this.$route.path,
@@ -254,6 +258,7 @@ export default {
         });
 
         villain.results = numberOfCards(villain.filteredCards);
+        villain.maxVP = maxVP(villain.cards) + ([3, 4, 74].includes(villain.id) ? "*" : "");
       });
 
       this.lastFilterTime = Date.now();
