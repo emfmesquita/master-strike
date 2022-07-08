@@ -732,7 +732,6 @@ export default {
           cost: 5,
           attack: "3",
           abilities: [
-            "Draw a card.",
             [
               { hc: 3 },
               ": Draw a card for each ",
