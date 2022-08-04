@@ -491,6 +491,13 @@ const VILLAINOUS_WEAPONS = {
   label: "Villainous Weapons",
   cardTypes: [2, 4],
 }
+const AMBUSH = {
+  id: 83,
+  value: "ambush",
+  label: "Ambush",
+  title: "Ambush Abilities on Heroes",
+  cardTypes: [1],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -581,6 +588,7 @@ export const keywords = Object.freeze({
   EXCESSIVE_KINDNESS,         // 80 done
   COMMAND,                    // 81 done
   VILLAINOUS_WEAPONS,         // 82 done
+  AMBUSH,                     // 83 done
   NONE,                       // -1
 });
 

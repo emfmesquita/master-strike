@@ -17,11 +17,11 @@ export default [
         { bold: " card in the HQ.”" },
       ],
       [
-        "Likewise, some Villains and Masterminds say things like “",
+        "On Villains and Masterminds “",
         { bold: "Empowered" },
         " by ",
         { hc: 5 },
-        "”. This means ",
+        "” means ",
         { bold: "“This gets +1" },
         { icon: 1 },
         { bold: " for each " },
@@ -29,7 +29,7 @@ export default [
         { bold: " card in the HQ.”" }
       ],
       [
-        "As cards enter and leave the HQ, an Empowered card can get stronger or weaker. You only check the ",
+        "As heroes enter and leave the HQ, an Empowered card can get stronger or weaker. You only check the ",
         { icon: 1 },
         " bonus at the moment you play your Empowered Hero or at the moment you fight the Empowered enemy."
       ],
@@ -37,16 +37,19 @@ export default [
         "One clever move is to recruit a Hero from the HQ at the right time, changing the colors in the HQ to weaken an Empowered enemy or try to strengthen an Empowered Hero in your hand."
       ],
       [
-        "Some cards are even “Double Empowered” or “Triple Empowered” meaning that they get ",
+        "Some cards are even “Double Empowered”, “Triple Empowered”, or Quadruple Empowered” meaning that they get ",
         { bold: "+2" },
         { icon: 1 },
-        " or ",
+        ", ",
         { bold: "+3" },
+        { icon: 1 },
+        ", or ",
+        { bold: "+4" },
         { icon: 1 },
         " for each appropriate card in the HQ."
       ],
       [
-        "(A multicolored or divided card from other sets counts if either half is the correct color. For example, an “Empowered by ",
+        "(A multicolored or divided card from counts if either half is the correct color. For example, an “Empowered by ",
         { hc: 3 },
         " and ",
         { hc: 4 },
@@ -69,6 +72,9 @@ export default [
         { bold: "+2" },
         { icon: 1 },
         ".)"
+      ],
+      [
+        "Abilities that let you put cards from the HQ on the bottom of the Hero Deck are especially useful at setting up Empowered Heroes or Empowered Villains. They are also great at giving you more Hero Ambushes!"
       ]
     ]
   }

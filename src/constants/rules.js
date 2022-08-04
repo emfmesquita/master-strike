@@ -86,6 +86,13 @@ const UNVEILED_SCHEMES = {
   title: "Veiled and Unveiled Schemes",
   cardTypes: [5],
 }
+const WOUNDS_ON_VILAINS = {
+  id:15,
+  value: "woundsonvillains",
+  label: "Wounds on Villains",
+  title: "Putting Wounds on Villains",
+  cardTypes: [1, 2, 4, 5],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -108,6 +115,7 @@ export const rules = Object.freeze({
   CHOOSE_A_VILLAIN,           // 12 done
   VEILED_SCHEMES,             // 13 done
   UNVEILED_SCHEMES,           // 14 done
+  WOUNDS_ON_VILAINS,          // 15
   NONE,                       // -1
 });
 

@@ -1,7 +1,4 @@
 export default [
-  [
-    "The power of the Inhuman Kingdom and the Kree and Shi'ar interstellar empires is truly vast. During Marvel's “War of Kings“ storyline, influence over these empires shifts frequently as Black Bolt, Vulcan, Ronan the Accuser, Lilandra, Gladiator, and eventually Maximus battle for supremacy. This is represented by a game concept called the “Throne's Favor.“"
-  ],
   {
     points: [
       [
@@ -19,10 +16,10 @@ export default [
         "You can only spend the Throne's Favor at the moment the card you're playing tells you to do so. You can't wait and spend it later in the turn. "
       ],
       [
-        "Masterminds and Villains may have abilities that can cause the Mastermind to gain the Throne's Favor and/or benefit from having it. When the Mastermind gains the Throne's Favor, they take it away from any player that may already have it."
+        "The Throne's Favor is not a card. It never goes into decks or discard piles. Instead, when it comes up, just use whatever cool object is easily at hand. There's no need to store a special Throne's Favor object with the game."
       ],
       [
-        "The Throne's Favor is not a card. It never goes into decks or discard piles. Instead, when it comes up, just use whatever cool object is easily at hand. There's no need to store a special Throne's Favor object with the game."
+        "Cards can also cause the Mastermind to gain the Throne's Favor and/or benefit from having it. When the Mastermind gains the Throne's Favor, they take it away from any player that may already have it. Likewise, a card ability that causes a player to gain the Throne's Favor will take it away from the Mastermind and give it to the player."
       ]
     ]
   }

@@ -118,6 +118,11 @@ const X_FACTOR_INVESTIGATIONS = {
     value: "x-factor-investigations",
     label: "X-Factor Investigations"
 };
+const HEROES_OF_WAKANDA = {
+    id: 24,
+    value: "heroes-of-wakanda",
+    label: "Heroes of Wakanda"
+};
 
 export const team = Object.freeze({
     UNAFFILIATED,                   //0
@@ -144,6 +149,7 @@ export const team = Object.freeze({
     HEROES_OF_ASGARD,               //21
     INHUMANS,                       //22
     X_FACTOR_INVESTIGATIONS,        //23
+    HEROES_OF_WAKANDA,              //24
 });
 
 export const teamArray = Object.freeze(Object.values(team));
