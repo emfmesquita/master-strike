@@ -1138,7 +1138,7 @@ export default {
               { bold: "+1" },
               { icon: 1 },
               "for each card that ",
-              { keyword: 45 },
+              { keyword: 45, text: "Transformed" },
               " this turn."
             ]
           ]
