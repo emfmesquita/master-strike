@@ -2094,7 +2094,7 @@ export default {
       ]
     },
     {
-      id: 27,
+      id: 28,
       name: "Sakaaran Hivelings",
       vAttack: "3",
       vp: 1,
