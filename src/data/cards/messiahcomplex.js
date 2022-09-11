@@ -102,6 +102,7 @@ export default {
           recruit: "2+",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited —" },
               { hc: 2 },
               ": ",
@@ -126,6 +127,7 @@ export default {
           attack: "2+",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited —" },
               { hc: 3 },
               ": ",
@@ -150,6 +152,7 @@ export default {
           attack: "2",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited —" },
               { hc: 2 },
               ": ",
@@ -171,6 +174,7 @@ export default {
           attack: "2",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited —" },
               { team: 7 },
               ": ",
@@ -202,6 +206,7 @@ export default {
           attack: "1",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited" },
               ": ",
               { keyword: 72 },
@@ -224,6 +229,7 @@ export default {
           attack: "1+",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited" },
               ": ",
               { keyword: 72 },
@@ -255,6 +261,7 @@ export default {
           attack: "2+",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited" },
               ": ",
               { keyword: 72 },
@@ -285,6 +292,7 @@ export default {
           attack: "2+",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited" },
               ": ",
               { keyword: 72 },
@@ -315,6 +323,7 @@ export default {
           attack: "2+",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited —" },
               { hc: 4 },
               ": ",
@@ -338,6 +347,7 @@ export default {
           attack: "0+",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited —" },
               { hc: 4 },
               ": ",
@@ -363,6 +373,7 @@ export default {
           recruit: "2",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited —" },
               { hc: 1 },
               ": ",
@@ -384,6 +395,7 @@ export default {
           attack: "2+",
           abilities: [
             [
+              { keyword: 69, text: " " },
               { keyword: 72, text: "When Recruited —" },
               { team: 23 },
               ": ",

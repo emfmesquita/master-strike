@@ -56,7 +56,7 @@ const DODGE = {
   id: 10,
   value: "dodge",
   label: "Dodge",
-  cardTypes: [1],
+  cardTypes: [1, 5],
 }
 const ELUSIVE = {
   id: 11,
@@ -498,6 +498,19 @@ const AMBUSH = {
   title: "Ambush Abilities on Heroes",
   cardTypes: [1],
 }
+const UNLEASH = {
+  id: 84,
+  value: "unleash",
+  label: "Unleash",
+  title: "Unleash from Undercover",
+  cardTypes: [1, 4, 5],
+}
+const WHEN_RECRUITED_UDERCOVER = {
+  id: 85,
+  value: "whenrecruitedundercover",
+  label: "When Recruited: Send This Undercover",
+  cardTypes: [1],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -589,6 +602,8 @@ export const keywords = Object.freeze({
   COMMAND,                    // 81 done
   VILLAINOUS_WEAPONS,         // 82 done
   AMBUSH,                     // 83 done
+  UNLEASH,                    // 84 done
+  WHEN_RECRUITED_UDERCOVER,   // 85 done
   NONE,                       // -1
 });
 

@@ -50,7 +50,7 @@
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <RangeFilter v-model="filter.vAttack" :icon="1" :min="2" :max="36" @input="filterChanged"/>
+              <RangeFilter v-model="filter.vAttack" :icon="1" :min="0" :max="36" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
@@ -146,7 +146,7 @@ const baseFilter = () => ({
   keyword: [],
   rule: [],
   epic: false,
-  vAttack: [2,36],
+  vAttack: [0,36],
   vp: [-1,7]
 });
 
@@ -182,7 +182,7 @@ export default {
       return `${this.masterminds.length} Masterminds`;
     },
     hasAttackFilter() {
-      return this.filter.vAttack[0] !== 2 || this.filter.vAttack[1] !== 36;
+      return this.filter.vAttack[0] !== 0 || this.filter.vAttack[1] !== 36;
     },
     hasVpFilter() {
       return this.filter.vp[0] !== -1 || this.filter.vp[1] !== 7;
@@ -196,7 +196,7 @@ export default {
     this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
     this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
     this.filter.epic = query.rule === "1";
-    this.filter.vAttack = toIntPair(query.attack, 2, 36);
+    this.filter.vAttack = toIntPair(query.attack, 0, 36);
     this.filter.vp = toIntPair(query.vp, -1, 7);
 
     if(query.sort === RESULTS_SORT) this.sortMethod = RESULTS_SORT;

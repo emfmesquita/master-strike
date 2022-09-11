@@ -35,11 +35,26 @@ export default [
         "Different sides of Divided Cards often let you choose between Recruit, Attack, drawing cards, and other effects. Choose carefully which side to play!"
       ],
       [
-        "While a Divided Card is in your hand, deck, or the HQ, it counts as all its Hero Classes, Teams, card names, and Hero Names. (It still counts as 1 card, not 2.) While there, its “printed ",
+        "While a Divided Card is in your hand, deck, or the HQ, it counts as all its Hero Classes, Teams, Hero Names, card names, icons, etc. So one Divided Card in your discard pile can potentially power up ",
+        { keyword: 58 },
+        " by ",
+        { bold: "+2" },
+        { icon: 1 },
+        ", since it has two Hero Classes. It still counts as one card though, not two cards, so you can't discard a single Divided card for an effect that says to “discard two cards.“"
+      ],
+      [
+        "When it's not being played, a Divided Card's “printed ",
         { icon: 1 },
         "” is the total of both ",
         { icon: 1 },
         " numbers printed on it. However, once you play the card, it only counts as the side you choose."
+      ],
+      [
+        "You can ",
+        { keyword: 10 },
+        " with a Divided card if either side has ",
+        { keyword: 10 },
+        "."
       ],
       [
         "When sorting and setting up, always use the Hero Name on the left side of a Divided Card."

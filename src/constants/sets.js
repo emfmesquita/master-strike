@@ -236,6 +236,13 @@ const BLACK_PANTHER = {
     initials: "BP",
     cardTypes: [1,2,4,5],
 };
+const BLACK_WIDOW = {
+    id: 35,
+    value: "blackwidow",
+    label: "Black Widow",
+    initials: "BW",
+    cardTypes: [1,2,4,5],
+};
 
 export const sets = Object.freeze({
     CORE_SET,                   // 1
@@ -272,6 +279,7 @@ export const sets = Object.freeze({
     DOCTOR_STRANGE,             // 32
     MS_GUARDIANS_OF_THE_GALAXY, // 33
     BLACK_PANTHER,              // 34
+    BLACK_WIDOW,                // 35
 });
 
 export const setsArray = Object.freeze(Object.values(sets));

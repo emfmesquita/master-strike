@@ -1,9 +1,4 @@
 export default [
-  [
-    "In the theme of ",
-    { italic: "Revelations" },
-    ", this keyword represents the way The Hood and his gang find every dark secret in a Hero’s past and use it against them."
-  ],
   {
     points: [
       [
@@ -14,7 +9,7 @@ export default [
         "”"
       ],
       [
-        "Likewise, some Hero cards like Ronin and Scarlet Witch also have “Dark Memories,” drawing power from the tragedies of their pasts. Playing a Hero card with this keyword gives you that same bonus: “You get ",
+        "Likewise, some Hero cards also have “Dark Memories,”. Playing a Hero card with this keyword gives you that same bonus: “You get ",
         { bold: "+1" },
         { icon: 1 },
         " for each Hero Class among cards in your discard pile.”"
@@ -49,7 +44,14 @@ export default [
         "."
       ],
       [
-        "Recruiting Heroes, Hyperspeed, and other discard abilities may increase the Dark Memories bonus. Likewise, if you draw or reveal enough cards that you have to shuffle your discard pile to make a new deck, the Dark Memories bonus will go back to ",
+        "Recruiting Heroes, ",
+        { keyword: 57 },
+        ", ",
+        { keyword: 10 },
+        ", and other discard abilities may increase the Dark Memories bonus."
+      ],
+      [
+        "Likewise, if you draw or reveal enough cards that you have to shuffle your discard pile to make a new deck, the Dark Memories bonus will go back to ",
         { bold: "+0" },
         { icon: 1 },
         ". Time your plays and build your deck carefully to turn Dark Memories to your advantage!"

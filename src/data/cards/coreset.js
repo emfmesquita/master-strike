@@ -4,6 +4,7 @@ export default {
     {
       id: 1,
       name: "Black Widow",
+      filterName: "Black Widow (Core/MS)",
       set: [1, 20],
       team: 1,
       cards: [

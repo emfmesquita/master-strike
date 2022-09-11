@@ -1,17 +1,20 @@
 export default [
-  [
-    "“Dodge” means “During your turn, you may discard this card from your hand to draw another card.” This ability represents the trickiness and resourcefulness of the Villainous Allies. Many Dodge cards have conditional effects so that sometimes you want to play them, and sometimes you want to Dodge them away. Dodge also helps you sculpt your hand towards Recruit Points or Attack as you desire."
-  ],
   {
     points: [
       [
-        "When you Dodge a card from your hand, ignore all the other text on that card. (The only exception is Green Goblin’s “Goblin Glider,” which specifically tells you to do something when you Dodge with it.)"
+        "Dodge means ",
+        { bold: "“During your turn, you may discard this card from your hand to draw another card.”" }
       ],
       [
-        "When you Dodge a card from your hand, you didn’t “play” that card, so the Dodged card’s Ally Class/color doesn’t help you use the Superpower abilities of other cards you play that turn."
+        "When you Dodge a card from your hand, ignore all the other text on that card. ",
+        { italic: "(Unless it specifically mentions Dodging)" },
+        ". You didn't “play” the Dodged card, so it's Hero Class/color don't help you trigger Superpower abilities of other cards you play that turn."
       ],
       [
         "Some Allies count the number of cards you discarded this turn. This includes cards you discarded with Dodge."
+      ],
+      [
+        "Many Dodge cards have effects that can be specifically strong or weak in different situations. That way you can play them when they're strong and Dodge them away when they're weak. Dodge also helps to sculpt your hand towards Recruit Points or Attack as you see fit."
       ]
     ]
   }

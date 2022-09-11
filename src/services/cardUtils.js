@@ -160,7 +160,7 @@ const processVillain = (card, group) => {
 
   const vAttackText  = card.vAttack ? card.vAttack + "" : "";
   const sufix = card.vAttackAsterisk && !vAttackText.includes("*") ? "*" : "";
-  card.vAttackText = vAttackText + sufix;
+  card.vAttackText = card.vAttackHideValue ? sufix : vAttackText + sufix;
 
   card.vp = card.vp || group.vp;
   card.vpText = card.vp ? card.vp + "" : "";
