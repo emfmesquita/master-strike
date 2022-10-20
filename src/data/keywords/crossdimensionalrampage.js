@@ -21,7 +21,7 @@ export default [
         "When a Cross-Dimensional Hulk Rampage happens, you can choose to gain the Wound, even if you have a Hulk that you already played or could otherwise reveal. You might want the Wound if you have Wounded Fury cards."
       ],
       [
-        "There are also Cross-Dimensional Void, Illuminati, Deadpool, and Wolverine (“Weapon X” and “Old Man Logan” included) Rampages."
+        "There are also Cross-Dimensional Void, Illuminati, Deadpool, Thor, Colossus, and Wolverine (“Weapon X” and “Old Man Logan” included) Rampages."
       ]
     ]
   }
