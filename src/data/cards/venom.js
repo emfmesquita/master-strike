@@ -536,7 +536,7 @@ export default {
               { bold: "Master Strike" },
               ": Each player reveals their hand and puts half ",
               { italic: "(round up)" },
-              " of their non-grey Heroes next to Thanos in a “Poisoned Souls“ pile. Each player that lost no Heroes this way gains a Wound. Each player that lost no Heroes this way gains a Wound."
+              " of their non-grey Heroes next to Thanos in a “Poisoned Souls“ pile. Each player that lost no Heroes this way gains a Wound."
             ]
           ]
         },
