@@ -104,7 +104,7 @@ export default {
           attack: "2½+",
           abilities: [
             [
-              "If you have a Wound in your hand or discard pile, KO it at you get ",
+              "If you have a Wound in your hand or discard pile, KO it and you get ",
               { bold: "+1" },
               { icon: 1 },
               ". Otherwise, gain a Wound. These days, getting wounded mostly just pisses me off."
