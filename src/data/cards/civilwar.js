@@ -1757,7 +1757,7 @@ export default {
           abilities: [
             [
               { bold: "Fight" },
-              ": Going clockwise, the fist other player with Colleen Wing in their Victory Pile rescues 5 Bystanders and returns Colleen Wing to play ",
+              ": Going clockwise, the first other player with Colleen Wing in their Victory Pile rescues 5 Bystanders and returns Colleen Wing to play ",
               { keyword: 28, text: "fortifying" },
               " Misty Knight."
             ]
