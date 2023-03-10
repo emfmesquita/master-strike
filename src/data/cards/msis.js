@@ -709,7 +709,7 @@ export default {
               { bold: "Fight" },
               ": Each other player discards half of their cards. Destroy half of the HQ spaces. ",
               { italic: "(Round down the losses.)" },
-              " Turn the Heroes there face down to mark the destroyed spaces. Don't refil those spaces."
+              " Turn the Heroes there face down to mark the destroyed spaces. Don't refill those spaces."
             ],
           ]
         },
@@ -821,7 +821,7 @@ export default {
           abilities: [
             [
               { bold: "Fight" },
-              ": When you draw a new hand of cards at the end of the turn, draw two extra cards."
+              ": When you draw a new hand of cards at the end of this turn, draw two extra cards."
             ],
             [
               { keyword: 87 },
@@ -885,7 +885,7 @@ export default {
               {
                 bold: "Fight"
               },
-              ": KO one of your Heroes. Then reveal the top card of the Villain Deck. If it's a Children of Thanos Villain. Endless Armies of Chitauri reenters the Sewers."
+              ": KO one of your Heroes. Then reveal the top card of the Villain Deck. If it's a Children of Thanos Villain, Endless Armies of Chitauri reenters the Sewers."
             ]
           ]
         },

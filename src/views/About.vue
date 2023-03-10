@@ -70,6 +70,9 @@
             <li>
               Colossal shout-out to Bageltop Games (<a href="https://www.twitch.tv/bageltopgames" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitch</v-icon></a>, <a href="https://www.youtube.com/channel/UCc4LXeuOzl1xndGXk2_8hbQ" style="text-decoration: none;" target="_blank"><v-icon>mdi-youtube</v-icon></a>, <a href="https://twitter.com/BageltopGames" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitter</v-icon></a>) for sharing the cards from all expansion since Messiah Complex (already too many to list) before I could grab them. This includes typing all text, and help me to proof read the result, what a gamer!! Thank you! Btw support Bagel on <a href="https://ko-fi.com/bageltopgames/tiers" target="_blank">Ko-fi</a>!
             </li>
+            <li>
+              Kudos to Marcus from Bageltop Games Discord channel for proofreading the cards from the Marvel Studios' The Infinity Saga expansion.
+            </li>
           </ul>
         </v-col>
       </v-row>
