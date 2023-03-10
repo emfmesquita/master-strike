@@ -616,8 +616,8 @@ export const keywords = Object.freeze({
   AMBUSH,                     // 83 done
   UNLEASH,                    // 84 done
   WHEN_RECRUITED_UDERCOVER,   // 85 done
-  SACRIFICE,                  // 86
-  ENDGAME,                    // 87
+  SACRIFICE,                  // 86 done
+  ENDGAME,                    // 87 done
   NONE,                       // -1
 });
 
