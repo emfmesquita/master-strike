@@ -425,6 +425,7 @@ export default {
     {
       id: 19,
       name: "Thanos",
+      filterName: "Thanos (GotG)",
       vAttack: "24",
       vp: 7,
       cards: [

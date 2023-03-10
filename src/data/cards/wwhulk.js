@@ -94,6 +94,7 @@ export default {
     {
       id: 158,
       name: "Bruce Banner",
+      filterName: "Bruce Banner (WWH)",
       team: 1,
       cards: [
         {

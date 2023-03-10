@@ -243,6 +243,13 @@ const BLACK_WIDOW = {
     initials: "BW",
     cardTypes: [1,2,4,5],
 };
+const MS_INFINITY_SAGA = {
+    id: 36,
+    value: "msis",
+    label: "Marvel Studios' The Infinity Saga",
+    initials: "MSIS",
+    cardTypes: [1,2,4,5],
+};
 
 export const sets = Object.freeze({
     CORE_SET,                   // 1
@@ -280,6 +287,7 @@ export const sets = Object.freeze({
     MS_GUARDIANS_OF_THE_GALAXY, // 33
     BLACK_PANTHER,              // 34
     BLACK_WIDOW,                // 35
+    MS_INFINITY_SAGA,           // 36
 });
 
 export const setsArray = Object.freeze(Object.values(sets));

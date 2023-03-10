@@ -131,6 +131,7 @@ export default {
     {
       id: 73,
       name: "Black Panther",
+      filterName: "Black Panther (SW1)",
       team: 15,
       cards: [
         {
@@ -194,6 +195,7 @@ export default {
     {
       id: 74,
       name: "Captain Marvel",
+      filterName: "Captain Marvel (SW1)",
       team: 1,
       cards: [
         {

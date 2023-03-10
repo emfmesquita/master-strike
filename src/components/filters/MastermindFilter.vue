@@ -31,7 +31,7 @@ export default {
   mounted() {
     const masterminds = getAllMasterminds().map(mm => ({
       id: mm.id,
-      label: mm.name
+      label: mm.filterName ? mm.filterName : mm.name
     }));
     masterminds.sort((a, b) => a.label.localeCompare(b.label));
     this.masterminds = Object.freeze(masterminds);

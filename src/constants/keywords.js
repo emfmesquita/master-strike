@@ -511,6 +511,18 @@ const WHEN_RECRUITED_UDERCOVER = {
   label: "When Recruited: Send This Undercover",
   cardTypes: [1],
 }
+const SACRIFICE = {
+  id: 86,
+  value: "sacrifice",
+  label: "Sacrifice",
+  cardTypes: [1],
+}
+const ENDGAME = {
+  id: 87,
+  value: "endgame",
+  label: "Endgame",
+  cardTypes: [1, 2, 4],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -604,6 +616,8 @@ export const keywords = Object.freeze({
   AMBUSH,                     // 83 done
   UNLEASH,                    // 84 done
   WHEN_RECRUITED_UDERCOVER,   // 85 done
+  SACRIFICE,                  // 86
+  ENDGAME,                    // 87
   NONE,                       // -1
 });
 

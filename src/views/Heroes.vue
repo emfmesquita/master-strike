@@ -293,8 +293,11 @@ export default {
           if(a.rarity < b.rarity) return -1;
           if(a.cost > b.cost) return 1;
           if(a.cost < b.cost) return -1;
-          if(a.divided > b.divided) return 1;
-          if(a.divided < b.divided) return -1;
+          if(a.divided && b.divided) {
+            const idxA = hero.filteredCards.indexOf(a);
+            const idxB = hero.filteredCards.indexOf(b);
+            return idxA > idxB ? 1 : -1;
+          }
           return 0;
         });
 
