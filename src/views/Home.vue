@@ -1,6 +1,6 @@
 <template>
   <div class="home" :class="sizeClass">
-    
+
     <v-container class="text-center container">
       <v-row>
         <v-col class="logo-title-container">
@@ -20,6 +20,7 @@
           <v-btn color="primary" x-large to="/villains" class="ma-3">Villains</v-btn>
           <v-btn color="primary" x-large to="/henchmen" class="ma-3">Henchmen</v-btn>
           <v-btn color="primary" x-large to="/schemes" class="ma-3">Schemes</v-btn>
+          <v-btn color="primary" x-large to="/keywords" class="ma-3">Keywords</v-btn>
           <v-btn color="primary" x-large to="/about" class="ma-3">About</v-btn>
           <v-btn color="primary" x-large to="/donate" class="ma-3">
             <v-icon>mdi-cookie</v-icon>
@@ -92,7 +93,7 @@ export default {
     .logo-sub-title {
       padding-left: 280px;
     }
-    
+
     .logo {
       height: 150px;
     }
@@ -114,7 +115,7 @@ export default {
     .logo-sub-title {
       padding-left: 116px;
     }
-    
+
     .logo {
       height: 80px;
     }

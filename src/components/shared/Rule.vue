@@ -11,24 +11,8 @@
         </span>
       </template>
 
-      <v-card v-if="dialog">
-        <v-card-title
-          class="headline grey lighten-2"
-          primary-title
-        >
-          {{ title }}
-        </v-card-title>
-
-        <v-card-text class="pa-5">
-          <div v-for="(rule, idx) in rules" :key="idx">
-            <shared-bullet-point-description v-if="typeof rule === 'object' && rule.points" :points="rule.points" :noBullets="rule.noBullets" :padded=true />
-            <shared-description-group v-else :description="rule" :padded=true />
-          </div>
-        </v-card-text>
-
-        <v-divider></v-divider>
-
-        <v-card-actions >
+      <shared-rule-card :rule="rule" v-if="dialog">
+        <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn
             color="primary"
@@ -38,17 +22,15 @@
             Close
           </v-btn>
         </v-card-actions>
-      </v-card>
+      </shared-rule-card>
     </v-dialog>
   </span>
-  
+
 </template>
 
 <script>
 import { keywordsArray } from "../../constants/keywords";
-import { keywords } from "../../data";
 import { rulesArray } from "../../constants/rules";
-import { rules } from "../../data";
 
 const obj = (rule) => rule.rule ? rulesArray[rule.rule - 1] : keywordsArray[rule.keyword - 1];
 
@@ -56,17 +38,8 @@ export default {
   name: "Rule",
   props: ["rule"],
   computed: {
-    title() {
-      const ruleObj = obj(this.rule);
-      return ruleObj.title || ruleObj.label;
-    },
     text() {
       return this.rule.text || obj(this.rule).label;
-    },
-    rules() {
-      const val = obj(this.rule).value;
-      const src = this.rule.rule ? rules : keywords;
-      return src[val] || [];
     },
     width() {
       return this.$vuetify.breakpoint.mdAndUp ? "800px" : "500px";
