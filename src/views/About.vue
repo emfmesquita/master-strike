@@ -73,6 +73,9 @@
             <li>
               Kudos to Marcus from Bageltop Games Discord channel for proofreading the cards from the Marvel Studios' The Infinity Saga expansion.
             </li>
+            <li>
+              A heroic shout-out to egreer (<a href="https://github.com/egreer" style="text-decoration: none;" target="_blank"><v-icon>mdi-github</v-icon></a>) for creating the keyword page, amazing work!
+            </li>
           </ul>
         </v-col>
       </v-row>
