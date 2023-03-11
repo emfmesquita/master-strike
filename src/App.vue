@@ -23,7 +23,7 @@
 <script>
 import { mapActions } from 'vuex';
 import { bus } from "./services/eventBus";
-import { screenHeight, screenWidth } from "./services/sceenUtils";
+import { screenHeight, screenWidth } from "./services/screenUtils";
 
 export default {
   name: "App",
