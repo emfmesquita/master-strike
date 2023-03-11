@@ -1,11 +1,11 @@
 <template>
-  <v-app-bar 
-      app 
-      dark 
-      clipped-right 
-      clipped-left 
-      color="primary" 
-      class="header" 
+  <v-app-bar
+      app
+      dark
+      clipped-right
+      clipped-left
+      color="primary"
+      class="header"
       :hide-on-scroll="!lg"
       :value="show || lg"
       @input="onInput"
@@ -80,6 +80,10 @@ const items = [
   {
     title: "Schemes",
     to: "/schemes"
+  },
+  {
+    title: "Keywords",
+    to: "/keywords"
   },
   {
     title: "About",
