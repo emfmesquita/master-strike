@@ -27,7 +27,7 @@
 
 <script>
 import DynamicCard from "./DynamicCard.vue";
-import { screenHeight, screenWidth } from "../../services/sceenUtils";
+import { screenHeight, screenWidth } from "../../services/screenUtils";
 import { bus } from "../../services/eventBus";
 
 export default {
