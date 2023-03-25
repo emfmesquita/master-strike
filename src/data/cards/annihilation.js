@@ -903,7 +903,7 @@ export default {
           abilities: [
             [
               { bold: "Setup" },
-              ": 11 Twists. Stack 11 Bystanders next to the Scheme face down as “Galactus Jurors.“"
+              ": 11 Twists. Stack 11 Bystanders next to the Scheme face down as “Galactic Jurors.“"
             ],
             [
               { bold: "Special Rules" },
