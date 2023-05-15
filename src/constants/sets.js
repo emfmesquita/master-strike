@@ -250,6 +250,13 @@ const MS_INFINITY_SAGA = {
     initials: "MSIS",
     cardTypes: [1,2,4,5],
 };
+const MIDNIGHT_SUNS = {
+    id: 37,
+    value: "midnightsons",
+    label: "Midnight Sons",
+    initials: "MNS",
+    cardTypes: [1,2,4,5],
+};
 
 export const sets = Object.freeze({
     CORE_SET,                   // 1
@@ -288,6 +295,7 @@ export const sets = Object.freeze({
     BLACK_PANTHER,              // 34
     BLACK_WIDOW,                // 35
     MS_INFINITY_SAGA,           // 36
+    MIDNIGHT_SUNS,              // 37
 });
 
 export const setsArray = Object.freeze(Object.values(sets));

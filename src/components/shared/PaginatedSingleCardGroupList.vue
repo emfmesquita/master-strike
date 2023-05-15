@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     cardHeight(group) {
-      return group.cards && group.cards.length > 1 ? this.lineHeight - 96 : this.lineHeight - 24;
+      return group.cards && group.cards.length > 1 ? this.lineHeight - 98 : this.lineHeight - 24;
     }
   }
 };

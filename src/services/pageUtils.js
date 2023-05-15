@@ -5,7 +5,7 @@ export const numberOfColumns = component => {
     case 'sm': return expandedSideBar ? 1 : 2
     case 'md': return expandedSideBar ? 2 : 3
     case 'lg': return 4
-    case 'xl': return 4
+    case 'xl': return 6
   }
   return 4;
 }

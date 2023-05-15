@@ -2,7 +2,8 @@ export default [
   [
     "Some cards have abilities like “",
     { bold: "Patrol the Sewers:" },
-    "  If it’s empty, rescue a Bystander.” When you play that card, you can use that ability only if that city space has no cards in it.",
+    "  If it’s empty, rescue a Bystander.” ",
+    { bold: "You can use the specified Patrol ability only if the specified city space has no cards in it." },
   ],
   {
     points: [
@@ -31,7 +32,7 @@ export default [
         "Other cards let you patrol even stranger places, like the Escape Pile or a Victory Pile. Similarly, you can use those Patrol abilities if that place has no cards in it."
       ],
       [
-        "If a Mastermind or Scheme causes a city space not to exist, you can’t patrol that space."
+        "If a card effect causes a city space not to exist, you can’t use Patrol abilities for that space."
       ]
     ]
   }

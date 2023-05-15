@@ -523,6 +523,24 @@ const ENDGAME = {
   label: "Endgame",
   cardTypes: [1, 2, 4],
 }
+const BLOOD_FRENZY = {
+  id: 88,
+  value: "bloodfrenzy",
+  label: "Blood Frenzy",
+  cardTypes: [1, 4, 5],
+}
+const HUNT_FOR_VICTIMS = {
+  id: 89,
+  value: "huntforvictims",
+  label: "Hunt for Victims",
+  cardTypes: [1, 2, 4, 5],
+}
+const HAUNT = {
+  id: 90,
+  value: "haunt",
+  label: "Haunt",
+  cardTypes: [2, 4],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -618,6 +636,9 @@ export const keywords = Object.freeze({
   WHEN_RECRUITED_UDERCOVER,   // 85 done
   SACRIFICE,                  // 86 done
   ENDGAME,                    // 87 done
+  BLOOD_FRENZY,               // 88
+  HUNT_FOR_VICTIMS,           // 89
+  HAUNT,                      // 90                                                                    
   NONE,                       // -1
 });
 

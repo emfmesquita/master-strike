@@ -226,6 +226,11 @@ const processCard = (cardType, card, group) => {
     processSet(card, group);
     card.name = card.name || group.name;
     card.subTitle = schemeSubtitle(card, group);
+
+    if(card.overrideType === cardTypes.MASTERMIND.id) {
+      processVillain(card, group);
+      card.subTitle = mastermindSubtitle(card, group);
+    }
   }
 }
 

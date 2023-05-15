@@ -69,6 +69,7 @@ export default {
       font-size: 10px;
       padding-left: 4px;
       padding-right: 4px;
+      padding-top: 2px;
     }
   }
 

@@ -57,7 +57,8 @@
           <template v-slot:default="{ card, cardHeight }">
             <CardWrapper :height="cardHeight">
               <template v-slot:default="{ contentHeight }">
-                <SchemeCard :card="card" :height="cardHeight" :contentHeight="contentHeight" />
+                <MastermindCard v-if="card.overrideType === 2" :card="card" :height="cardHeight" :contentHeight="contentHeight" />
+                <SchemeCard v-else :card="card" :height="cardHeight" :contentHeight="contentHeight" />
               </template>
             </CardWrapper>
           </template>
@@ -75,6 +76,7 @@ import KeywordFilter from "../components/filters/KeywordFilter.vue";
 import PaginatedSingleCardGroupList from "../components/shared/PaginatedSingleCardGroupList.vue";
 import ResizableCardList from "../components/shared/ResizableCardList.vue";
 import RuleFilter from "../components/filters/RuleFilter.vue";
+import MastermindCard from "../components/cards/MastermindCard.vue";
 import SchemeCard from "../components/cards/SchemeCard.vue";
 import SchemeFilter from "../components/filters/SchemeFilter.vue";
 import SearchFilter from "../components/filters/SearchFilter.vue";
@@ -117,6 +119,7 @@ export default {
     PaginatedSingleCardGroupList,
     ResizableCardList,
     RuleFilter, 
+    MastermindCard,
     SchemeCard,
     SchemeFilter,
     SearchFilter,

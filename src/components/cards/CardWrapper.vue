@@ -82,8 +82,8 @@ export default {
       const sWidth = screenWidth();
       const ratioByHeight = 0.9 * (sHeight / this.height);
       const ratioByWidth = 0.9 * (sWidth - 48) / (this.height * 0.75);
-      const safeRation = ratioByHeight > ratioByWidth ? ratioByWidth : ratioByHeight;
-      this.zoomLvl = Math.floor(10 * safeRation) / 10;
+      const safeRatio = ratioByHeight > ratioByWidth ? ratioByWidth : ratioByHeight;
+      this.zoomLvl = Math.floor(10 * safeRatio) / 10;
     },
     cardClick() {
       if(!this.$store.getters.canZoom) return;
