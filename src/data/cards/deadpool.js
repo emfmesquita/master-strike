@@ -294,7 +294,7 @@ export default {
           hc: 5,
           rarity: 1,
           cost: 2,
-          attack: "1½+",
+          attack: "½+",
           abilities: [
             [
               "Draw a card."
