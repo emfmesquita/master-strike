@@ -994,7 +994,7 @@ export default {
             ],
             [
               { bold: "Twist 7-9" },
-              ": Each player puts a Villains from the Victory Pile into the Escape Pile."
+              ": Each player puts a Villain from the Victory Pile into the Escape Pile."
             ],
             [
               { bold: "Evil Wins" },
