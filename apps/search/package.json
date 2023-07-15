@@ -1,0 +1,23 @@
+{
+  "name": "@master-strike/search",
+  "version": "1.0.0",
+  "description": "Service to make search on the master-strike card data.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist",
+    "build": "tsc --build",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edson Mesquita",
+  "devDependencies": {
+    "@types/flexsearch": "0.7.2",
+    "@types/node": "^16.11.7",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@master-strike/data": "workspace:*",
+    "flexsearch": "0.7.21",
+    "readline": "^1.3.0"
+  }
+}

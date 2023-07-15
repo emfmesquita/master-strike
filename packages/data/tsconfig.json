@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "rootDir": "./src",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "declaration": true,
+    "sourceMap": true,
+  },
+  "exclude": ["dist", "node_modules", "**/*.spec.ts"]
+}

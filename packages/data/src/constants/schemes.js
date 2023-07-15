@@ -1,0 +1,27 @@
+// scheme ids
+// C       001 - 008 done
+// DC      009 - 016 done
+// FF      017 - 020 done
+// PtTR    021 - 024 done
+// V       025 - 032 done
+// GotG    033 - 036 done
+// FI      037 - 039 done
+// SW1     040 - 047 done
+// SW2     048 - 055 done
+// CA      056 - 059 done
+// CW      060 - 067 done
+// DP      068 - 071 done
+// NOIR    072 - 075 done
+// X       076 - 083 done
+// SMH     084 - 087 done
+// Champ   088 - 091 done
+// WWH     092 - 099 done
+// MS1     100 - 105 done
+// AM      106 - 109 done
+// Venom   110 - 113 done
+// Rev     114 - 117 done
+// Shield  118 - 121 done
+// HoA     122 - 125 done
+// NM      126 - 129 done
+// ItC     130 - 133 done
+// RoK     134 - 137 done

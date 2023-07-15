@@ -1,24 +1,10 @@
 # master-strike
 
-## Project setup
-```
-npm install
-```
+## apps/web
+Source of the page master-strike.com
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## apps/search
+Service with an API to query cards and rules.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## packages/data
+Common cards and rules data used in both **web** and **search**.

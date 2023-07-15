@@ -1,0 +1,15 @@
+{
+  "name": "@master-strike/data",
+  "version": "1.0.0",
+  "description": "Library with the data used on master-strike.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edson Mesquita",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
