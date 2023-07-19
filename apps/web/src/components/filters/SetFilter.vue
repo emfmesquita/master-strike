@@ -23,7 +23,7 @@
 
 <script>
 import SetIcon from "../icons/SetIcon.vue";
-import { setsArray } from "../../constants/sets";
+import { Metadata } from "@master-strike/data";
 
 export default {
   name: "SetFilter",
@@ -35,7 +35,7 @@ export default {
     }
   },
   mounted() {
-    this.sets = Object.freeze(setsArray.filter(set => window.hasIntersection(set.cardTypes, this.cardTypes)));
+    this.sets = Object.freeze(Metadata.setsArray.filter(set => window.hasIntersection(set.cardTypes, this.cardTypes)));
   },
   methods: {
     filterChanged(newValue) {

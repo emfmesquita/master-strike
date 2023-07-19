@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { heroClassArray } from "../../constants/heroClass";
+import { Metadata } from '@master-strike/data';
 import IconMixin from "./iconMixin";
 import Icon from "./Icon.vue";
 
@@ -18,11 +18,11 @@ export default {
   components: { Icon },
   computed: {
     hc() {
-      const hc = heroClassArray[this.icon].value;
+      const hc = Metadata.heroClassesArray[this.icon].value;
       return require(`../../assets/icons/heroclasses/${hc}.svg`);
     },
     label() {
-      const label = heroClassArray[this.icon].label;
+      const label = Metadata.heroClassesArray[this.icon].label;
       return `Hero Class: ${label}`;
     }
   }

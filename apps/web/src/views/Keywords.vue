@@ -56,9 +56,9 @@
 import { sortBy } from "lodash";
 import SearchFilter from "../components/filters/SearchFilter.vue";
 import ResizableCardList from "../components/shared/ResizableCardList.vue";
-import { keywordsArray } from "../constants/keywords";
+import { Metadata } from "@master-strike/data";
 
-const allKeywords = sortBy(keywordsArray.filter(k => k.value !== 'none'), "label");
+const allKeywords = sortBy(Metadata.keywordsArray.filter(k => k.value !== 'none'), "label");
 
 const baseFilter = () => ({
   search: ""

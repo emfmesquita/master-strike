@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { rulesArray } from "../../constants/rules";
+import { Metadata } from '@master-strike/data';
 
 export default {
   name: "RuleFilter",
@@ -29,7 +29,7 @@ export default {
     }
   },
   mounted() {
-    const rules = rulesArray.filter(rule => window.hasIntersection(rule.cardTypes, this.cardTypes));
+    const rules = Metadata.rulesArray.filter(rule => window.hasIntersection(rule.cardTypes, this.cardTypes));
     const l = rule => rule.sortLabel || rule.label;
     rules.sort((a, b) => l(a).localeCompare(l(b)));
     this.rules = Object.freeze(rules);

@@ -82,11 +82,7 @@ import SchemeFilter from "../components/filters/SchemeFilter.vue";
 import SearchFilter from "../components/filters/SearchFilter.vue";
 import SetFilter from "../components/filters/SetFilter.vue";
 
-
-import { cardTypes } from "../constants/cardTypes";
-import { keywordsArray } from "../constants/keywords";
-import { rulesArray } from "../constants/rules";
-import { setsArray } from "../constants/sets";
+import { Metadata } from "@master-strike/data";
 
 import { getAllSchemes, numberOfCards } from "../services/cardUtils";
 import { toIntArray } from "../services/queryUtils";
@@ -140,9 +136,9 @@ export default {
     const query = this.$route.query;
     this.filter.search = decodeURI(query.s || "");
     this.filter.scheme = toIntArray(query.scheme).filter(scheme => validSchemes.includes(scheme));
-    this.filter.set = toIntArray(query.set).filter(set => setsArray[set - 1]);
-    this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
-    this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
+    this.filter.set = toIntArray(query.set).filter(set => Metadata.setsArray[set - 1]);
+    this.filter.keyword = toIntArray(query.keyword).filter(keyword => Metadata.keywordsArray[keyword - 1]);
+    this.filter.rule = toIntArray(query.rule).filter(rule => Metadata.rulesArray[rule - 1]);
     this.search();
   },
   methods: {
@@ -177,7 +173,7 @@ export default {
       this.schemes = filterBySet(this.schemes, this.filter.set);
       this.schemes = filterGroupByKeyword(this.schemes, this.filter.keyword);
       this.schemes = filterGroupByRule(this.schemes, this.filter.rule);
-      this.schemes = filterGroupBySearch(this.schemes, cardTypes.SCHEME.id, this.filter.search);
+      this.schemes = filterGroupBySearch(this.schemes, Metadata.cardTypes.SCHEME.id, this.filter.search);
 
       this.schemes.forEach(scheme => {
         scheme.filteredCards.sort((a,b) => {

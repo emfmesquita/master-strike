@@ -2,7 +2,7 @@
   <v-card class="mx-auto mm-card" :class="classes" raised :style="{ background, height: cardHeight }">
     <div ref="cardHeader">
       <div class="text-center font-weight-black card-title" :class="titleClasses">{{ card.name }}</div>
-      <div :class="subTitleClasses">{{ card.subTitle }}</div>
+      <div :class="subtitleClasses">{{ card.subtitle }}</div>
     </div>
 
     <div v-if="card.abilities" class="card-abilities" :class="{ dense }" ref="cardAbilities">
@@ -47,7 +47,7 @@ export default {
     background() {
       return this.card.tactic ? "#E6CDE6" : "#CE9CCE";
     },
-    subTitleClasses() {
+    subtitleClasses() {
       return {
         'text-center card-sub-title': true,
         'card-red-sub-title': !!this.card.epic || !!this.card.transformed

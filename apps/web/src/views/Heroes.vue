@@ -124,12 +124,7 @@ import SortToggle from "../components/filters/SortToggle.vue";
 import SortToggleCollapsed from "../components/filters/SortToggleCollapsed.vue";
 import TeamFilter from "../components/filters/TeamFilter.vue";
 
-import { cardTypes } from "../constants/cardTypes";
-import { heroClassArray } from "../constants/heroClass";
-import { keywordsArray } from "../constants/keywords";
-import { rulesArray } from "../constants/rules";
-import { setsArray } from "../constants/sets";
-import { teamArray } from "../constants/team";
+import { Metadata } from "@master-strike/data";
 
 import { getAllHeroes, numberOfCards } from "../services/cardUtils";
 import { toIntArray, toIntPair } from "../services/queryUtils";
@@ -190,11 +185,11 @@ export default {
     const query = this.$route.query;
     this.filter.search = decodeURI(query.s || "");
     this.filter.hero = toIntArray(query.hero).filter(hero => validHeroes.indexOf(hero) >= 0);
-    this.filter.set = toIntArray(query.set).filter(set => setsArray[set - 1]);
-    this.filter.team = toIntArray(query.team).filter(team => teamArray[team]);
-    this.filter.hc = toIntArray(query.hc).filter(hc => heroClassArray[hc]);
-    this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
-    this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
+    this.filter.set = toIntArray(query.set).filter(set => Metadata.setsArray[set - 1]);
+    this.filter.team = toIntArray(query.team).filter(team => Metadata.teamsArray[team]);
+    this.filter.hc = toIntArray(query.hc).filter(hc => Metadata.heroClassesArray[hc]);
+    this.filter.keyword = toIntArray(query.keyword).filter(keyword => Metadata.keywordsArray[keyword - 1]);
+    this.filter.rule = toIntArray(query.rule).filter(rule => Metadata.rulesArray[rule - 1]);
     this.filter.cost = toIntPair(query.cost, 0, 10);
     this.filter.attack = toIntPair(query.attack, -1, 10);
     this.filter.recruit = toIntPair(query.recruit, -1, 5);
@@ -275,7 +270,7 @@ export default {
       if(this.hasCostFilter) this.heroes = filterGroupByMinMax(this.heroes, "cost", this.filter.cost);
       if(this.hasAttackFilter) this.heroes = filterGroupByMinMax(this.heroes, "attackNum", this.filter.attack);
       if(this.hasRecruitFilter) this.heroes = filterGroupByMinMax(this.heroes, "recruitNum", this.filter.recruit);
-      this.heroes = filterGroupBySearch(this.heroes, cardTypes.HERO.id, this.filter.search);
+      this.heroes = filterGroupBySearch(this.heroes, Metadata.cardTypes.HERO.id, this.filter.search);
 
       this.heroes.forEach(hero => {
         // make sure divided cards disabled status is consistent

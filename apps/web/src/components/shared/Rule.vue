@@ -29,10 +29,9 @@
 </template>
 
 <script>
-import { keywordsArray } from "../../constants/keywords";
-import { rulesArray } from "../../constants/rules";
+import { Metadata } from '@master-strike/data';
 
-const obj = (rule) => rule.rule ? rulesArray[rule.rule - 1] : keywordsArray[rule.keyword - 1];
+const obj = (rule) => rule.rule ? Metadata.rulesArray[rule.rule - 1] : Metadata.keywordsArray[rule.keyword - 1];
 
 export default {
   name: "Rule",

@@ -1,15 +1,13 @@
 import * as JsSearch from 'js-search'
 
-import { cardSubTypes, cardTypes } from "../constants/cardTypes";
 import { getAllHenchmen, getAllHeroes, getAllMasterminds, getAllSchemes, getAllVillains } from "./cardUtils"
 
-import { rules as R } from "../constants/rules"
-import { keywords as K } from "../constants/keywords"
+import { Metadata } from "@master-strike/data";
 
 const SEARCH_CACHE = {};
 const SEARCH_INDEXES = [
   "name",
-  "subTitle",
+  "subtitle",
   "attackText",
   "recruitText",
   "piercingText",
@@ -18,6 +16,9 @@ const SEARCH_INDEXES = [
   "vpText",
   "abilitiesText",
 ];
+
+const K = Metadata.keywords;
+const R = Metadata.rules;
 
 export const groupSearchSetup = groups => {
   groups.forEach(group => {
@@ -111,35 +112,35 @@ export const filterGroupByRule = (groups, rules) => {
       }
 
       // check for trap
-      const isTrap = card.subType === cardSubTypes.TRAP.id;
+      const isTrap = card.subType === Metadata.cardSubTypes.TRAP.id;
       if(isTrap && rules.includes(R.TRAPS.id)) {
         match = true;
         return;
       }
 
       // check for location
-      const isLocation = card.subType === cardSubTypes.LOCATION.id;
+      const isLocation = card.subType === Metadata.cardSubTypes.LOCATION.id;
       if(isLocation && rules.includes(R.LOCATIONS.id)) {
         match = true;
         return;
       }
 
       // check for transforming schemes
-      const isTransfScheme = card.type === cardTypes.SCHEME.id && group.set === 24;
+      const isTransfScheme = card.type === Metadata.cardTypes.SCHEME.id && group.set === 24;
       if(isTransfScheme && rules.includes(R.TRANSFORMING_SCHEMES.id)) {
         match = true;
         return;
       }
 
       // check for veiled schemes
-      const isVeiledScheme = card.type === cardTypes.SCHEME.id && card.veiled;
+      const isVeiledScheme = card.type === Metadata.cardTypes.SCHEME.id && card.veiled;
       if(isVeiledScheme && rules.includes(R.VEILED_SCHEMES.id)) {
         match = true;
         return;
       }
 
       // check for unveiled schemes
-      const isUnvailedScheme = card.type === cardTypes.SCHEME.id && card.unveiled;
+      const isUnvailedScheme = card.type === Metadata.cardTypes.SCHEME.id && card.unveiled;
       if(isUnvailedScheme && rules.includes(R.UNVEILED_SCHEMES.id)) {
         match = true;
         return;
@@ -221,11 +222,11 @@ const buildGroupSearch = groups => {
 }
 
 const buildCardSearch = cardType => {
-  if(cardTypes.HERO.id === cardType) return buildGroupSearch(getAllHeroes());
-  if(cardTypes.MASTERMIND.id === cardType) return buildGroupSearch(getAllMasterminds());
-  if(cardTypes.HENCHMEN.id === cardType) return buildGroupSearch(getAllHenchmen());
-  if(cardTypes.VILLAIN.id === cardType) return buildGroupSearch(getAllVillains());
-  if(cardTypes.SCHEME.id === cardType) return buildGroupSearch(getAllSchemes());
+  if(Metadata.cardTypes.HERO.id === cardType) return buildGroupSearch(getAllHeroes());
+  if(Metadata.cardTypes.MASTERMIND.id === cardType) return buildGroupSearch(getAllMasterminds());
+  if(Metadata.cardTypes.HENCHMEN.id === cardType) return buildGroupSearch(getAllHenchmen());
+  if(Metadata.cardTypes.VILLAIN.id === cardType) return buildGroupSearch(getAllVillains());
+  if(Metadata.cardTypes.SCHEME.id === cardType) return buildGroupSearch(getAllSchemes());
   return null;
 }
 

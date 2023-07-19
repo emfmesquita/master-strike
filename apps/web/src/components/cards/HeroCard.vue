@@ -2,7 +2,7 @@
   <v-card class="mx-auto hero-card" :class="classes" raised :style="{ background, height: cardHeight }">
     <div ref="cardHeader">
       <div class="text-center font-weight-black card-title" :class="titleClasses">{{ card.name }}</div>
-      <div :class="subTitleClasses">{{ card.subTitle }}</div>
+      <div :class="subtitleClasses">{{ card.subtitle }}</div>
     </div>
 
     <div class="card-abilities" :class="{ dense }" v-if="card.abilities" ref="cardAbilities">
@@ -87,7 +87,7 @@ import RarityIcon from "../icons/RarityIcon.vue";
 import AbilityIcon from "../icons/AbilityIcon.vue";
 import SetIcon from "../icons/SetIcon.vue";
 import DividedCardIcon from "../icons/DividedCardIcon.vue";
-import { heroClassArray } from "../../constants/heroClass";
+import { Metadata } from '@master-strike/data';
 
 export default {
   name: "HeroCard",
@@ -103,12 +103,12 @@ export default {
   },
   computed: {
     background() {
-      const baseColor = heroClassArray[this.card.hc || 0].bgColor;
+      const baseColor = Metadata.heroClassesArray[this.card.hc || 0].bgColor;
       if(!this.card.hc2) return baseColor;
-      const secondColor = heroClassArray[this.card.hc2 || 0].bgColor;
+      const secondColor = Metadata.heroClassesArray[this.card.hc2 || 0].bgColor;
       return `linear-gradient(${baseColor} 35%, ${secondColor} 65%)`;
     },
-    subTitleClasses() {
+    subtitleClasses() {
       return {
         'text-center card-sub-title': true,
         'card-red-sub-title': !!this.card.transformed

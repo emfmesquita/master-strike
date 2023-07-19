@@ -2,11 +2,11 @@
   <v-card class="mx-auto villain-card" :class="classes" raised :style="cardHeightStyle">
     <div ref="cardHeader">
       <div class="text-center font-weight-black card-title" :class="titleClasses">{{ card.name }}</div>
-      <div :class="subTitleClasses">
-        <shared-rule v-if="card.subType === 1" :rule="{ rule: 5, text: card.subTitle }" />
-        <shared-rule v-else-if="card.subType === 2" :rule="{ rule: 6, text: card.subTitle }" />
-        <shared-rule v-else-if="card.subType === 3" :rule="{ rule: 9, text: card.subTitle }" />
-        <template v-else>{{ card.subTitle }}</template>
+      <div :class="subtitleClasses">
+        <shared-rule v-if="card.subType === 1" :rule="{ rule: 5, text: card.subtitle }" />
+        <shared-rule v-else-if="card.subType === 2" :rule="{ rule: 6, text: card.subtitle }" />
+        <shared-rule v-else-if="card.subType === 3" :rule="{ rule: 9, text: card.subtitle }" />
+        <template v-else>{{ card.subtitle }}</template>
       </div>
     </div>
 
@@ -53,7 +53,7 @@ import CardMixin from "./cardMixin";
 import AbilityIcon from "../icons/AbilityIcon.vue";
 import QtdIcon from "../icons/QtdIcon.vue";
 import SetIcon from "../icons/SetIcon.vue";
-import { cardSubTypes, cardTypes } from "../../constants/cardTypes";
+import { Metadata } from '@master-strike/data';
 
 export default {
   name: "VillainCard",
@@ -64,7 +64,7 @@ export default {
     QtdIcon
   },
   computed: {
-    subTitleClasses() {
+    subtitleClasses() {
       return {
         'text-center card-sub-title': true
       };
@@ -73,11 +73,11 @@ export default {
       const subType = this.card.subType || this.card.overrideSubType;
       return {
         "disabled": this.card.disabled,
-        "henchman": !subType && this.card.type === cardTypes.HENCHMEN.id,
-        "villain": !subType && this.card.type === cardTypes.VILLAIN.id,
-        "location": subType === cardSubTypes.LOCATION.id,
-        "trap": subType === cardSubTypes.TRAP.id,
-        "villainous-weapon": subType === cardSubTypes.VILLAINOUS_WEAPON.id,
+        "henchman": !subType && this.card.type === Metadata.cardTypes.HENCHMEN.id,
+        "villain": !subType && this.card.type === Metadata.cardTypes.VILLAIN.id,
+        "location": subType === Metadata.cardSubTypes.LOCATION.id,
+        "trap": subType === Metadata.cardSubTypes.TRAP.id,
+        "villainous-weapon": subType === Metadata.cardSubTypes.VILLAINOUS_WEAPON.id,
       }
     }
   }

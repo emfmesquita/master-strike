@@ -68,6 +68,18 @@ const routes = [
     import(/* webpackChunkName: "donate" */ "../views/Donate.vue")
   },
   {
+    path: "/csearch",
+    name: "Card Search",
+    component: () =>
+    import(/* webpackChunkName: "search" */ "../views/CardSearch.vue")
+  },
+  {
+    path: "/rsearch",
+    name: "Rule Search",
+    component: () =>
+    import(/* webpackChunkName: "search" */ "../views/RuleSearch.vue")
+  },
+  {
     path: "*",
     name: "Fallback",
     redirect: "/"

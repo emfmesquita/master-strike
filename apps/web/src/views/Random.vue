@@ -70,7 +70,7 @@
 <script>
 import HeroCard from "../components/cards/HeroCard.vue";
 import CardGroup from "../components/shared/CardGroup.vue";
-import { setsArray } from "../constants/sets";
+import { Metadata } from "@master-strike/data";
 import { toIntArray, toInteger } from "../services/queryUtils";
 import { getAllHeroes } from "../services/cardUtils";
 import { randomArray } from "../services/randomUtils";
@@ -88,7 +88,7 @@ const safeNumberOfHeroes = nHeroes => {
 export default {
   name: "Random",
   data: () => ({
-    sets: setsArray,
+    sets: Metadata.setsArray,
     heroes: [],
     filter: {
       set: [],
@@ -100,9 +100,9 @@ export default {
   created() {
     const query = this.$route.query;
     if(!query.fs) {
-      this.filter.set = setsArray.map(set => set.id);
+      this.filter.set = Metadata.setsArray.map(set => set.id);
     } else {
-      this.filter.set = toIntArray(query.fs).filter(set => setsArray[set]);
+      this.filter.set = toIntArray(query.fs).filter(set => Metadata.setsArray[set]);
     }
     this.filter.nHeroes = query.fh ? safeNumberOfHeroes(query.fh) : 5;
     if(query.h) {
@@ -118,7 +118,7 @@ export default {
     selectedSetsLabel() {
       const sets = this.filter.set;
       if(sets.length === 1) return "1 Set";
-      if(sets.length === setsArray.length) return "All Sets";
+      if(sets.length === Metadata.setsArray.length) return "All Sets";
       return `${sets.length} Sets`;
     }
   },
@@ -129,7 +129,7 @@ export default {
     setQuery() {
       const query = {};
       const filter = this.filter;
-      if(filter.set.length && filter.set.length < setsArray.length) query.fs = filter.set.join(",");
+      if(filter.set.length && filter.set.length < Metadata.setsArray.length) query.fs = filter.set.join(",");
       if(filter.nHeroes !== 5) query.fh = "" + filter.nHeroes;
       if(this.heroes.length) query.h = this.heroes.map(hero => hero.id).join(",");
 

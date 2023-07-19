@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { teamArray } from "../../constants/team";
+import { Metadata } from "@master-strike/data";
 import IconMixin from "./iconMixin";
 import Icon from "./Icon.vue";
 
@@ -18,7 +18,7 @@ export default {
   components: { Icon },
   computed: {
     team() {
-      const team = teamArray[this.icon].value;
+      const team = Metadata.teamsArray[this.icon].value;
       let src = "";
       try {
         src = require(`../../assets/icons/teams/${team}.svg`);
@@ -28,7 +28,7 @@ export default {
       return src;
     },
     label() {
-      const label = teamArray[this.icon].label;
+      const label = Metadata.teamsArray[this.icon].label;
       return `Team: ${label}`;
     }
   }

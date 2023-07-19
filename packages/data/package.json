@@ -11,5 +11,9 @@
   "author": "Edson Mesquita",
   "devDependencies": {
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/flexsearch": "0.7.2",
+    "flexsearch": "0.7.21"
   }
 }

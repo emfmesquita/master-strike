@@ -1,11 +1,4 @@
-import { cardSubTypes, cardTypes } from "../constants/cardTypes"
-
-import { heroClassArray } from "../constants/heroClass"
-import { iconArray } from "../constants/icon"
-import { keywordsArray } from "../constants/keywords"
-import { rulesArray } from "../constants/rules"
-import { Sets } from "@master-strike/data";
-import { teamArray } from "../constants/team"
+import { Metadata, SetDefinitions, Subtitles } from "@master-strike/data";
 
 const toNumber = (value) => {
   if (!value) return -1;
@@ -26,11 +19,11 @@ const abilitiesToText = abilities => {
     else if(typeof ability === "string") append(ability);
     else if(ability.bold) append(ability.bold);
     else if(ability.italic) append(ability.italic);
-    else if(ability.hc) append(heroClassArray[ability.hc].label);
-    else if(ability.team) append(teamArray[ability.team].label);
-    else if(ability.icon) append(iconArray[ability.icon - 1].label);
-    else if(ability.keyword) append(ability.text || keywordsArray[ability.keyword - 1].label);
-    else if(ability.rule) append(ability.text || rulesArray[ability.rule - 1].label);
+    else if(ability.hc) append(Metadata.heroClassesArray[ability.hc].label);
+    else if(ability.team) append(Metadata.teamsArray[ability.team].label);
+    else if(ability.icon) append(Metadata.iconsArray[ability.icon - 1].label);
+    else if(ability.keyword) append(ability.text || Metadata.keywordsArray[ability.keyword - 1].label);
+    else if(ability.rule) append(ability.text || Metadata.rulesArray[ability.rule - 1].label);
   });
   return textTokens.join(" ");
 }
@@ -109,41 +102,6 @@ export const maxVP = cards => cards.reduce((total, card) => {
   return total + qtd * card.vpNum;
 }, 0);
 
-const mastermindSubtitle = (card, group) => {
-  const type = [6, 8].includes(group.set) ? "Commander": "Mastermind";
-  const mmName = group.tacticName || group.name;
-  if(card.tactic) return `${type} Tactic - ${mmName}`;
-  if(card.epic) return `Epic ${type}`;
-  if(card.transformed) return `${type}, Transformed`;
-  return type;
-}
-
-const henchmanSubtitle = (card, group) => {
-  if(group.subTitle) return group.subTitle;
-  if(card.subTitle) return card.subTitle;
-  if(group.set === 6) return "Backup Adversary";
-  return "Henchman Villain";
-}
-
-const villainSubtitle = (card, group) => {
-  if(group.subTitle) return group.subTitle;
-  if(card.subTitle) return card.subTitle;
-  if(card.subType === cardSubTypes.TRAP.id) return `Trap - ${group.name}`;
-  if(card.subType === cardSubTypes.LOCATION.id) return `Location - ${group.name}`;
-  if(card.subType === cardSubTypes.VILLAINOUS_WEAPON.id) return `Villainous Weapon - ${group.name}`;
-  if([6, 8].includes(group.set)) return `Adversary - ${group.name}`;
-  return `Villain - ${group.name}`;
-}
-
-const schemeSubtitle = (card, group) => {
-  if([6, 8].includes(group.set)) return "Plot";
-  if(card.transformed) return "Scheme, Transformed";
-  if(card.veiled) return "Veiled Scheme";
-  if(card.unveiled) return "Unveiled Scheme";
-  return "Scheme";
-}
-
-
 const processHero = (card, group) => {
   card.team = card.team !== undefined ? card.team : group.team;
   card.attackNum = toNumber(card.attack);
@@ -166,7 +124,7 @@ const processVillain = (card, group) => {
   card.vpText = card.vp ? card.vp + "" : "";
   card.vpNum = toNumber(card.vpText);
 
-  if(card.overrideType === cardTypes.HERO.id) {
+  if(card.overrideType === Metadata.cardTypes.HERO.id) {
     card.cost = card.vAttack;
     if(card.vAttackAsterisk) card.costAsterisk = true;
     processHero(card, group);
@@ -195,50 +153,49 @@ const processCard = (cardType, card, group) => {
   card.type = cardType.id;
   card.abilitiesText = abilitiesToText(card.abilities);
 
-  if(cardTypes.HERO === cardType) {
+  if(Metadata.cardTypes.HERO === cardType) {
     card.team = card.team !== undefined ? card.team : group.team;
-    card.subTitle = card.subTitle || group.name;
+    card.subtitle = Subtitles.heroSubtitle(card, group);
     card.type
     processHero(card, group);
-    return;
   }
 
-  if(cardTypes.MASTERMIND === cardType) {
+  if(Metadata.cardTypes.MASTERMIND === cardType) {
     processVillain(card, group);
-    card.subTitle = mastermindSubtitle(card, group);
-    return;
+    card.subtitle = Subtitles.mastermindSubtitle(card, group, group.set);
   }
 
-  if(cardTypes.VILLAIN === cardType) {
+  if(Metadata.cardTypes.VILLAIN === cardType) {
     processVillain(card, group);
     card.name = card.name || group.name;
-    card.subTitle = villainSubtitle(card, group);
+    card.subtitle = Subtitles.villainSubtitle(card, group, group.set);
   }
 
-  if(cardTypes.HENCHMEN === cardType) {
+  if(Metadata.cardTypes.HENCHMEN === cardType) {
     processVillain(card, group);
     processSet(card, group);
     card.name = card.name || group.name;
-    card.subTitle = henchmanSubtitle(card, group);
+    card.subtitle = Subtitles.henchmanSubtitle(card, group, group.set);
   }
 
-  if(cardTypes.SCHEME === cardType) {
+  if(Metadata.cardTypes.SCHEME === cardType) {
     processSet(card, group);
     card.name = card.name || group.name;
-    card.subTitle = schemeSubtitle(card, group);
+    card.subtitle = Subtitles.schemeSubtitle(card, group.set);
 
-    if(card.overrideType === cardTypes.MASTERMIND.id) {
+    if(card.overrideType === Metadata.cardTypes.MASTERMIND.id) {
       processVillain(card, group);
-      card.subTitle = mastermindSubtitle(card, group);
     }
   }
+
+  return card.subtitle;
 }
 
 const processCardGroups = cardType => {
   if(GROUP_CACHE[cardType.id]) return GROUP_CACHE[cardType.id];
 
   let allGroups = [];
-  Object.values(Sets).forEach(setData => {
+  Object.values(SetDefinitions).forEach(setData => {
     const setGroups = setData[cardType.value];
     if(setGroups && setGroups.length) {
       setGroups.forEach(group => {
@@ -258,20 +215,20 @@ const processCardGroups = cardType => {
 };
 
 export const getAllHeroes = () => {
-  return processCardGroups(cardTypes.HERO);
+  return processCardGroups(Metadata.cardTypes.HERO);
 };
 
 export const getAllMasterminds = () => {
-  return processCardGroups(cardTypes.MASTERMIND);
+  return processCardGroups(Metadata.cardTypes.MASTERMIND);
 };
 
 export const getAllVillains = () => {
-  return processCardGroups(cardTypes.VILLAIN);
+  return processCardGroups(Metadata.cardTypes.VILLAIN);
 };
 
 export const getAllHenchmen = () => {
-  return processCardGroups(cardTypes.HENCHMEN);
+  return processCardGroups(Metadata.cardTypes.HENCHMEN);
 }
 export const getAllSchemes = () => {
-  return processCardGroups(cardTypes.SCHEME);
+  return processCardGroups(Metadata.cardTypes.SCHEME);
 }

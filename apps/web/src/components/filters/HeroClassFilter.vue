@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import { heroClassArray } from "../../constants/heroClass";
 import HeroClassIcon from "../icons/HeroClassIcon.vue";
+import { Metadata } from '@master-strike/data';
 
 export default {
   name: "HeroClassFilter",
@@ -35,7 +35,7 @@ export default {
   },
   components: { HeroClassIcon },
   mounted() {
-    const hcs = heroClassArray.slice();
+    const hcs = Metadata.heroClassesArray.slice();
     hcs.shift();
     this.hcs = Object.freeze(hcs);
   },

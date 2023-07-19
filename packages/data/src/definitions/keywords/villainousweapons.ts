@@ -1,0 +1,1 @@
+export  { villainousweapons } from "../rules/villainousweapons";

@@ -109,11 +109,7 @@ import SortToggleCollapsed from "../components/filters/SortToggleCollapsed.vue";
 import VillainCard from "../components/cards/VillainCard.vue";
 import VillainFilter from "../components/filters/VillainFilter.vue";
 
-
-import { cardTypes } from "../constants/cardTypes";
-import { keywordsArray } from "../constants/keywords";
-import { rulesArray } from "../constants/rules";
-import { setsArray } from "../constants/sets";
+import { Metadata } from "@master-strike/data";
 
 import { getAllVillains, numberOfCards, maxVP } from "../services/cardUtils";
 import { toIntArray, toIntPair } from "../services/queryUtils";
@@ -181,9 +177,9 @@ export default {
     const query = this.$route.query;
     this.filter.search = decodeURI(query.s || "");
     this.filter.villain = toIntArray(query.v).filter(villain => validVillains.includes(villain));
-    this.filter.set = toIntArray(query.set).filter(set => setsArray[set - 1]);
-    this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
-    this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
+    this.filter.set = toIntArray(query.set).filter(set => Metadata.setsArray[set - 1]);
+    this.filter.keyword = toIntArray(query.keyword).filter(keyword => Metadata.keywordsArray[keyword - 1]);
+    this.filter.rule = toIntArray(query.rule).filter(rule => Metadata.rulesArray[rule - 1]);
     this.filter.epic = query.rule === "1";
     this.filter.vAttack = toIntPair(query.attack, -1, 16);
     this.filter.vp = toIntPair(query.vp, -1, 7);
@@ -248,7 +244,7 @@ export default {
       this.villains = filterGroupByRule(this.villains, this.filter.rule);
       if(this.hasAttackFilter) this.villains = filterGroupByMinMax(this.villains, "vAttackNum", this.filter.vAttack);
       if(this.hasVpFilter) this.villains = filterGroupByMinMax(this.villains, "vpNum", this.filter.vp);
-      this.villains = filterGroupBySearch(this.villains, cardTypes.VILLAIN.id, this.filter.search);
+      this.villains = filterGroupBySearch(this.villains, Metadata.cardTypes.VILLAIN.id, this.filter.search);
 
       this.villains.forEach(villain => {
         villain.filteredCards.sort((a,b) => {

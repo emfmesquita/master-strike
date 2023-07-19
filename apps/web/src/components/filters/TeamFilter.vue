@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { teamArray } from "../../constants/team";
+import { Metadata } from "@master-strike/data";
 import TeamIcon from "../icons/TeamIcon.vue";
 
 export default {
@@ -35,7 +35,7 @@ export default {
   },
   components: { TeamIcon }, 
   mounted() {
-    const teams = teamArray.slice();
+    const teams = Metadata.teamsArray.slice();
     teams.sort((a, b) => a.label.localeCompare(b.label));
     this.teams = Object.freeze(teams);
   },

@@ -19,12 +19,9 @@
 </template>
 
 <script>
-import { keywordsArray } from "../../constants/keywords";
-import { keywords } from "../../data";
-import { rulesArray } from "../../constants/rules";
-import { rules } from "../../data";
+import { KeywordDefinitions, Metadata, RuleDefinitions } from '@master-strike/data';
 
-const obj = (rule) => rule.rule ? rulesArray[ rule.rule - 1 ] : keywordsArray[ rule.keyword - 1 ];
+const obj = (rule) => rule.rule ? Metadata.rulesArray[rule.rule - 1] : Metadata.keywordsArray[rule.keyword - 1];
 
 export default {
   name: "RuleCard",
@@ -39,8 +36,8 @@ export default {
     },
     rules() {
       const val = obj(this.rule).value;
-      const src = this.rule.rule ? rules : keywords;
-      return src[ val ] || [];
+      const src = this.rule.rule ? RuleDefinitions : KeywordDefinitions;
+      return src[val] || [];
     },
   },
   data: () => ({

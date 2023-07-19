@@ -88,11 +88,7 @@ import SearchFilter from "../components/filters/SearchFilter.vue";
 import SetFilter from "../components/filters/SetFilter.vue";
 import VillainCard from "../components/cards/VillainCard.vue";
 
-
-import { cardTypes } from "../constants/cardTypes";
-import { keywordsArray } from "../constants/keywords";
-import { rulesArray } from "../constants/rules";
-import { setsArray } from "../constants/sets";
+import { Metadata } from "@master-strike/data";
 
 import { getAllHenchmen, numberOfCards } from "../services/cardUtils";
 import { toIntArray, toIntPair } from "../services/queryUtils";
@@ -152,9 +148,9 @@ export default {
     const query = this.$route.query;
     this.filter.search = decodeURI(query.s || "");
     this.filter.henchman = toIntArray(query.hm).filter(hm => validHenchmen.includes(hm));
-    this.filter.set = toIntArray(query.set).filter(set => setsArray[set - 1]);
-    this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
-    this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
+    this.filter.set = toIntArray(query.set).filter(set => Metadata.setsArray[set - 1]);
+    this.filter.keyword = toIntArray(query.keyword).filter(keyword => Metadata.keywordsArray[keyword - 1]);
+    this.filter.rule = toIntArray(query.rule).filter(rule => Metadata.rulesArray[rule - 1]);
     this.filter.vAttack = toIntPair(query.attack, 1, 4);
     this.search();
   },
@@ -192,7 +188,7 @@ export default {
       this.henchmen = filterGroupByKeyword(this.henchmen, this.filter.keyword);
       this.henchmen = filterGroupByRule(this.henchmen, this.filter.rule);
       if(this.hasAttackFilter) this.henchmen = filterGroupByMinMax(this.henchmen, "vAttackNum", this.filter.vAttack);
-      this.henchmen = filterGroupBySearch(this.henchmen, cardTypes.HENCHMEN.id, this.filter.search);
+      this.henchmen = filterGroupBySearch(this.henchmen, Metadata.cardTypes.HENCHMEN.id, this.filter.search);
 
       this.henchmen.forEach(hm => {
         hm.filteredCards.sort((a,b) => {

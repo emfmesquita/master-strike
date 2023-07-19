@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { iconArray } from "../../constants/icon";
+import { Metadata } from '@master-strike/data';
 import IconMixin from "./iconMixin";
 import Icon from "./Icon.vue";
 
@@ -29,11 +29,11 @@ export default {
   components: { Icon },
   computed: {
     iconSrc() {
-      const icon = this.iconSrcOverride || iconArray[this.icon - 1].value;
+      const icon = this.iconSrcOverride || Metadata.iconsArray[this.icon - 1].value;
       return require(`../../assets/icons/${icon}.svg`);
     },
     label() {
-      return iconArray[this.icon - 1].label;
+      return Metadata.iconsArray[this.icon - 1].label;
     },
     focusStyle() {
       if(this.icon !== 5) return {};

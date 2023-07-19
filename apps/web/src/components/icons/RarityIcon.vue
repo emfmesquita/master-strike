@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { rarityArray } from "../../constants/rarity";
+import { Metadata } from '@master-strike/data';
 import IconMixin from "./iconMixin";
 import Icon from "./Icon.vue";
 
@@ -18,11 +18,11 @@ export default {
   components: { Icon },
   computed: {
     rarity() {
-      const rarity = rarityArray[this.icon - 1].value;
+      const rarity = Metadata.raritiesArray[this.icon - 1].value;
       return require(`../../assets/icons/rarity/${rarity}.svg`);
     },
     label() {
-      return rarityArray[this.icon - 1].qtdLabel;
+      return Metadata.raritiesArray[this.icon - 1].qtdLabel;
     }
   }
 };

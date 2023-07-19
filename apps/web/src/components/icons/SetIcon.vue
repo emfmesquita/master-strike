@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { setsArray } from "../../constants/sets";
+import { Metadata } from "@master-strike/data";
 import IconMixin from "./iconMixin";
 import Icon from "./Icon.vue";
 
@@ -18,7 +18,7 @@ export default {
   components: { Icon },
   computed: {
     setIcon() {
-      const set = setsArray[this.set - 1].value;
+      const set = Metadata.setsArray[this.set - 1].value;
       let src = "";
       try {
         src = require(`../../assets/icons/sets/${set}.svg`);
@@ -28,7 +28,7 @@ export default {
       return src;
     },
     label() {
-      const label = setsArray[this.set - 1].label;
+      const label = Metadata.setsArray[this.set - 1].label;
       return `Set: ${label}`;
     }
   }

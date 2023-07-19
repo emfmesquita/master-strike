@@ -116,11 +116,7 @@ import SortToggle from "../components/filters/SortToggle.vue";
 import SortToggleCollapsed from "../components/filters/SortToggleCollapsed.vue";
 import VillainCard from "../components/cards/VillainCard.vue";
 
-
-import { cardTypes } from "../constants/cardTypes";
-import { keywordsArray } from "../constants/keywords";
-import { rulesArray } from "../constants/rules";
-import { setsArray } from "../constants/sets";
+import { Metadata } from "@master-strike/data";
 
 import { getAllMasterminds, maxVP, numberOfCards } from "../services/cardUtils";
 import { toIntArray, toIntPair } from "../services/queryUtils";
@@ -192,9 +188,9 @@ export default {
     const query = this.$route.query;
     this.filter.search = decodeURI(query.s || "");
     this.filter.mastermind = toIntArray(query.mm).filter(mm => validMasterminds.includes(mm));
-    this.filter.set = toIntArray(query.set).filter(set => setsArray[set - 1]);
-    this.filter.keyword = toIntArray(query.keyword).filter(keyword => keywordsArray[keyword - 1]);
-    this.filter.rule = toIntArray(query.rule).filter(rule => rulesArray[rule - 1]);
+    this.filter.set = toIntArray(query.set).filter(set => Metadata.setsArray[set - 1]);
+    this.filter.keyword = toIntArray(query.keyword).filter(keyword => Metadata.keywordsArray[keyword - 1]);
+    this.filter.rule = toIntArray(query.rule).filter(rule => Metadata.rulesArray[rule - 1]);
     this.filter.epic = query.rule === "1";
     this.filter.vAttack = toIntPair(query.attack, 0, 36);
     this.filter.vp = toIntPair(query.vp, -1, 7);
@@ -260,7 +256,7 @@ export default {
       if(this.filter.epic) this.masterminds = filterGroupByCardProp(this.masterminds, "epic", [true]);
       if(this.hasAttackFilter) this.masterminds = filterGroupByMinMax(this.masterminds, "vAttackNum", this.filter.vAttack);
       if(this.hasVpFilter) this.masterminds = filterGroupByMinMax(this.masterminds, "vpNum", this.filter.vp);
-      this.masterminds = filterGroupBySearch(this.masterminds, cardTypes.MASTERMIND.id, this.filter.search);
+      this.masterminds = filterGroupBySearch(this.masterminds, Metadata.cardTypes.MASTERMIND.id, this.filter.search);
 
       this.masterminds.forEach(mm => {
         mm.filteredCards.sort((a,b) => {

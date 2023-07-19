@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { keywordsArray } from "../../constants/keywords";
+import { Metadata } from '@master-strike/data';
 
 export default {
   name: "KeywordFilter",
@@ -29,7 +29,7 @@ export default {
     }
   },
   mounted() {
-    const keywords = keywordsArray.filter(keyword => window.hasIntersection(keyword.cardTypes, this.cardTypes));
+    const keywords = Metadata.keywordsArray.filter(keyword => window.hasIntersection(keyword.cardTypes, this.cardTypes));
     const l = keyword => keyword.sortLabel || keyword.label;
     keywords.sort((a, b) => l(a).localeCompare(l(b)));
     this.keywords = Object.freeze(keywords);

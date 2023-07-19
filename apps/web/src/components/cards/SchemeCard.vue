@@ -2,11 +2,11 @@
   <v-card class="mx-auto scheme-card" :class="classes" raised :style="cardHeightStyle">
     <div ref="cardHeader">
       <div class="text-center font-weight-black card-title" :class="titleClasses">{{ card.name }}</div>
-      <div :class="subTitleClasses">
-        <shared-rule v-if="card.veiled" :rule="{ rule: 13, text: card.subTitle }" />
-        <shared-rule v-else-if="card.unveiled" :rule="{ rule: 14, text: card.subTitle }" />
-        <shared-rule v-else-if="card.transformed" :rule="{ rule: 7, text: card.subTitle }" />
-        <template v-else>{{ card.subTitle }}</template>
+      <div :class="subtitleClasses">
+        <shared-rule v-if="card.veiled" :rule="{ rule: 13, text: card.subtitle }" />
+        <shared-rule v-else-if="card.unveiled" :rule="{ rule: 14, text: card.subtitle }" />
+        <shared-rule v-else-if="card.transformed" :rule="{ rule: 7, text: card.subtitle }" />
+        <template v-else>{{ card.subtitle }}</template>
       </div>
     </div>
 
@@ -33,7 +33,7 @@ export default {
     SetIcon
   },
   computed: {
-    subTitleClasses() {
+    subtitleClasses() {
       return {
         'text-center card-sub-title': true,
         'card-red-sub-title': !!this.card.transformed

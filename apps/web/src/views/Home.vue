@@ -10,7 +10,7 @@
       </v-row>
       <v-row>
         <v-col class="logo-sub-title-container">
-          <div class="logo-sub-title" :class="subTitleClass">A Legendary Card Database</div>
+          <div class="logo-sub-title" :class="subtitleClass">A Legendary Card Database</div>
         </v-col>
       </v-row>
       <v-row class="buttons">
@@ -47,7 +47,7 @@ export default {
     titleClass() {
       return this.lg ? "text-h1" : "text-h4";
     },
-    subTitleClass() {
+    subtitleClass() {
       return this.lg ? "text-h4" : "text-subtitle-2";
     }
   }
