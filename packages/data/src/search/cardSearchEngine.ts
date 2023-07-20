@@ -55,14 +55,16 @@ export class CardSearchEngine {
   private subtitle: boolean;
   private type: boolean;
   private set: boolean;
+  private group: boolean;
 
-  constructor(limit = 10, subtitle = false, type = false, set = false) {
+  constructor(limit = 10, subtitle = false, type = false, set = false, group = false) {
     const startTime = Date.now();
     this.limit = limit < 1 ? 1 : limit;
     this.engine = new Document<SearchEntry, false>(OPTIONS);
     this.subtitle = subtitle;
     this.type = type;
     this.set = set;
+    this.group = group;
 
 
     this.cardCount = 0;
@@ -72,6 +74,7 @@ export class CardSearchEngine {
       if(this.subtitle) entry += ` <|> ${card.subtitle}`;
       if(this.type) entry += ` <|> ${card.type}`;
       if(this.set) entry += ` <|> ${card.set}`;
+      if(this.group) entry += ` <|> ${card.group}`;
 
       this.engine.add(this.cardCount, {
         id: this.cardCount,

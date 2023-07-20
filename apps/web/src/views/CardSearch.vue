@@ -19,15 +19,19 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col lg="2" sm="4">
+        <v-col lg="2" sm="3">
           <v-checkbox class="text-center" v-model="subtitle" label="Subtitle" @change="changeIndexes"/>
         </v-col>
-        <v-col lg="2" sm="4">
+        <v-col lg="2" sm="3">
           <v-checkbox v-model="type" label="Type" @change="changeIndexes">
           </v-checkbox>
         </v-col>
-        <v-col lg="2" sm="4">
+        <v-col lg="2" sm="3">
           <v-checkbox v-model="set" label="Set" @change="changeIndexes">
+          </v-checkbox>
+        </v-col>
+        <v-col lg="2" sm="3">
+          <v-checkbox v-model="group" label="Group" @change="changeIndexes">
           </v-checkbox>
         </v-col>
       </v-row>
@@ -101,6 +105,7 @@ export default {
     subtitle: false,
     type: false,
     set: false,
+    group: false,
   }),
   computed: {
     cardCount() {
@@ -118,7 +123,7 @@ export default {
       }, 750);
     },
     changeIndexes() {
-      this.searchEngine = new CardSearchEngine(10, this.subtitle, this.type, this.set);
+      this.searchEngine = new CardSearchEngine(10, this.subtitle, this.type, this.set, this.group);
       this.makeSearch(this.search);
     }
   }
