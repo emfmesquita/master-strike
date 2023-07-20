@@ -225,7 +225,7 @@ export const XMen: CardSetDef = {
           ]
         },
         {
-          name: "Recursive Pummeling ",
+          name: "Recursive Pummeling",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -452,7 +452,7 @@ export const XMen: CardSetDef = {
           ]
         },
         {
-          name: "Inspire the World ",
+          name: "Inspire the World",
           hc: 3,
           rarity: 3,
           cost: 7,
@@ -524,7 +524,7 @@ export const XMen: CardSetDef = {
           ]
         },
         {
-          name: "Radiation Focus Array ",
+          name: "Radiation Focus Array",
           hc: 5,
           rarity: 3,
           cost: 7,
@@ -585,7 +585,7 @@ export const XMen: CardSetDef = {
           ]
         },
         {
-          name: "Unexpected Explosion ",
+          name: "Unexpected Explosion",
           hc: 2,
           rarity: 2,
           cost: 5,
@@ -781,7 +781,7 @@ export const XMen: CardSetDef = {
           ]
         },
         {
-          name: "Maelstrom of Clashing Powers ",
+          name: "Maelstrom of Clashing Powers",
           hc: 1,
           rarity: 3,
           cost: 8,
@@ -1035,7 +1035,7 @@ export const XMen: CardSetDef = {
           ]
         },
         {
-          name: "Butterfly Effect ",
+          name: "Butterfly Effect",
           hc: 1,
           rarity: 2,
           cost: 5,

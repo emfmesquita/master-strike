@@ -782,7 +782,7 @@ export const SecretWars2: CardSetDef = {
           ]
         },
         {
-          name: "Form of Solid Ruby ",
+          name: "Form of Solid Ruby",
           hc: 4,
           rarity: 2,
           cost: 6,

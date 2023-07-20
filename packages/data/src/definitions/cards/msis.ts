@@ -116,7 +116,7 @@ export const MSInfinitySaga: CardSetDef = {
       team: 1,
       cards: [
         {
-          name: "Avengers Reassembled	",
+          name: "Avengers Reassembled",
           hc: 2,
           hc2: 1,
           rarity: 1,

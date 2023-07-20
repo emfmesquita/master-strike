@@ -1130,7 +1130,7 @@ export const WorldWarHulk: CardSetDef = {
           ]
         },
         {
-          name: "Rival Personalities ",
+          name: "Rival Personalities",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -1301,7 +1301,7 @@ export const WorldWarHulk: CardSetDef = {
       team: 1,
       cards: [
         {
-          name: "Anger Management ",
+          name: "Anger Management",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -1318,7 +1318,7 @@ export const WorldWarHulk: CardSetDef = {
           ]
         },
         {
-          name: "Scarred Past ",
+          name: "Scarred Past",
           hc: 2,
           rarity: 1,
           cost: 3,

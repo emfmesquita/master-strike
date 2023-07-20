@@ -327,7 +327,7 @@ export const SecretWars1: CardSetDef = {
           ]
         },
         {
-          name: "Sorcerer Supreme ",
+          name: "Sorcerer Supreme",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -652,7 +652,7 @@ export const SecretWars1: CardSetDef = {
           ]
         },
         {
-          name: "Loner ",
+          name: "Loner",
           hc: 2,
           hc2: 1,
           rarity: 1,
@@ -951,7 +951,7 @@ export const SecretWars1: CardSetDef = {
           ]
         },
         {
-          name: "Web-Slinger ",
+          name: "Web-Slinger",
           hc: 5,
           rarity: 2,
           cost: 2,

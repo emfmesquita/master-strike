@@ -1025,7 +1025,7 @@ export const BlackWidow: CardSetDef = {
     },
     {
       id: 165,
-      name: "Frame Heroes for Murder	",
+      name: "Frame Heroes for Murder",
       cards: [
         {
           abilities: [

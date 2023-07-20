@@ -37,7 +37,7 @@ export const CoreSet: CardSetDef = {
           ]
         },
         {
-          name: "Covert Operation ",
+          name: "Covert Operation",
           hc: 1,
           rarity: 2,
           cost: 4,
@@ -151,7 +151,7 @@ export const CoreSet: CardSetDef = {
           ]
         },
         {
-          name: "Optic Blast ",
+          name: "Optic Blast",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -483,7 +483,7 @@ export const CoreSet: CardSetDef = {
           ]
         },
         {
-          name: "Crazed Rampage ",
+          name: "Crazed Rampage",
           hc: 4,
           rarity: 2,
           cost: 5,

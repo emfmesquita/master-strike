@@ -564,7 +564,7 @@ export const Revelations: CardSetDef = {
           ]
         },
         {
-          name: "Speedy Delivery ",
+          name: "Speedy Delivery",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -643,7 +643,7 @@ export const Revelations: CardSetDef = {
           ]
         },
         {
-          name: "Military-Industrial Complex ",
+          name: "Military-Industrial Complex",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -676,7 +676,7 @@ export const Revelations: CardSetDef = {
           ]
         },
         {
-          name: "Overwhelming Firepower ",
+          name: "Overwhelming Firepower",
           hc: 5,
           rarity: 3,
           cost: 8,

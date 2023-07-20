@@ -191,7 +191,7 @@ export const Deadpool: CardSetDef = {
           ]
         },
         {
-          name: "Electroplasmic Insanity ",
+          name: "Electroplasmic Insanity",
           hc: 3,
           rarity: 3,
           cost: 8,
@@ -220,7 +220,7 @@ export const Deadpool: CardSetDef = {
           abilities: []
         },
         {
-          name: "Merc's Gotta Get Paid ",
+          name: "Merc's Gotta Get Paid",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -250,7 +250,7 @@ export const Deadpool: CardSetDef = {
           ]
         },
         {
-          name: "Cut in Half ",
+          name: "Cut in Half",
           hc: 2,
           rarity: 3,
           cost: 7,

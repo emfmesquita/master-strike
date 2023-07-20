@@ -212,7 +212,7 @@ export const DarkCity: CardSetDef = {
           ]
         },
         {
-          name: "Strike at the Heart of Evil ",
+          name: "Strike at the Heart of Evil",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -373,7 +373,7 @@ export const DarkCity: CardSetDef = {
           ]
         },
         {
-          name: "The Man Without Fear ",
+          name: "The Man Without Fear",
           hc: 2,
           rarity: 3,
           cost: 8,
@@ -394,7 +394,7 @@ export const DarkCity: CardSetDef = {
       team: 7,
       cards: [
         {
-          name: "Lucky Break ",
+          name: "Lucky Break",
           hc: 5,
           rarity: 1,
           cost: 1,
@@ -762,7 +762,7 @@ export const DarkCity: CardSetDef = {
       team: 6,
       cards: [
         {
-          name: "Focus Chi ",
+          name: "Focus Chi",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -1032,7 +1032,7 @@ export const DarkCity: CardSetDef = {
       team: 6,
       cards: [
         {
-          name: "Boom Goes the Dynamite ",
+          name: "Boom Goes the Dynamite",
           hc: 5,
           rarity: 1,
           cost: 2,

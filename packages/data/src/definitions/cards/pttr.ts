@@ -154,7 +154,7 @@ export const PaintTheTownRed: CardSetDef =  {
       team: 3,
       cards: [
         {
-          name: "Flip Out ",
+          name: "Flip Out",
           hc: 4,
           rarity: 1,
           cost: 2,
@@ -168,7 +168,7 @@ export const PaintTheTownRed: CardSetDef =  {
           ]
         },
         {
-          name: "Perfect Hunter ",
+          name: "Perfect Hunter",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -198,7 +198,7 @@ export const PaintTheTownRed: CardSetDef =  {
           ]
         },
         {
-          name: "Sting of the Spider ",
+          name: "Sting of the Spider",
           hc: 4,
           rarity: 3,
           cost: 7,
