@@ -51,7 +51,7 @@ export interface CardSearchResult {
   /**
    * Group that the card is part of. Can be a Hero, Villain group, Mastermind...
    */
-  group?: string;
+  group: string;
 
   imageUrl: string;
 
@@ -209,3 +209,10 @@ export interface OopVillainDetails extends VillainCardDetails {
  * Mastermind-like cards on other decks.
  */
 export interface OopMastermindDetails extends MastermindCardDetails {}
+
+
+export type ByCardTypeAndSetAndGroup = {[key: string]: CardSearchResult[]}
+export type ByCardTypeAndSet = {[key: string]: ByCardTypeAndSetAndGroup}
+export type ByCardType = {[key in CardType]?: ByCardTypeAndSet};
+
+// (Set -> Card Type -> Group) (Card Type -> Set -> Group)

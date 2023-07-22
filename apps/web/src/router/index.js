@@ -74,6 +74,12 @@ const routes = [
     import(/* webpackChunkName: "search" */ "../views/CardSearch.vue")
   },
   {
+    path: "/browser",
+    name: "Card Browser",
+    component: () =>
+    import(/* webpackChunkName: "browser" */ "../views/CardBrowser.vue")
+  },
+  {
     path: "/rsearch",
     name: "Rule Search",
     component: () =>

@@ -1,5 +1,5 @@
 import { Document, Id, IndexOptionsForDocumentSearch } from "flexsearch";
-import { CardSearchResult } from "./cardSearchTypes";
+import { ByCardType, ByCardTypeAndSet, ByCardTypeAndSetAndGroup, CardSearchResult } from "./cardSearchTypes";
 import { SetDefinitions } from "../definitions";
 import { processSet } from "./processors";
 
@@ -35,17 +35,7 @@ const OPTIONS: IndexOptionsForDocumentSearch<SearchEntry, false> = {
   },
 }
 
-const CACHE: CardSearchResult[] = [];;;
-
-export interface CardRow {
-  set: string;
-  type: string;
-  group?: string;
-  name: string;
-  subTitle: string;
-}
-
-export const cardRows: CardRow[] = [];
+const CACHE: CardSearchResult[] = [];
 
 export class CardSearchEngine {
   private engine: Document<SearchEntry, false>;
@@ -56,6 +46,7 @@ export class CardSearchEngine {
   private type: boolean;
   private set: boolean;
   private group: boolean;
+  private byCardType: ByCardType;
 
   constructor(limit = 10, subtitle = false, type = false, set = false, group = false) {
     const startTime = Date.now();
@@ -65,6 +56,7 @@ export class CardSearchEngine {
     this.type = type;
     this.set = set;
     this.group = group;
+    this.byCardType = {};
 
 
     this.cardCount = 0;
@@ -81,13 +73,21 @@ export class CardSearchEngine {
         strict: entry,
         full: entry,
       });
-      // rows.push({
-      //   set: card.set,
-      //   type: card.type,
-      //   group: card.group,
-      //   name: card.name,
-      //   subTitle: card.subtitle,
-      // });
+
+      const bySet = this.byCardType[card.type];
+      let safeBySet: ByCardTypeAndSet = {};
+      if(bySet) {
+        safeBySet = bySet;
+      } else {
+        this.byCardType[card.type] = safeBySet;
+      }
+
+      if(!safeBySet[card.set]) safeBySet[card.set] = {};
+      const byGroup = safeBySet[card.set];
+
+      if(!byGroup[card.group]) byGroup[card.group] = [];
+      byGroup[card.group].push(card);
+
       this.cardCount++;
     }
 
@@ -139,5 +139,19 @@ export class CardSearchEngine {
    */
   public getStartupDuration() {
     return this.startupDuration;
+  }
+
+  /**
+   * @returns An array with all cards indexed.
+   */
+  public getAllCards() {
+    return Object.freeze(CACHE);
+  }
+
+  /**
+   * @returns The card browser.
+   */
+  public getBrowser() {
+    return this.byCardType;
   }
 }

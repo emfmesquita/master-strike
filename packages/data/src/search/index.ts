@@ -1,3 +1,3 @@
-export { RuleSearchEngine, ruleRows, RuleRow } from './ruleSearchEngine';
-export { CardSearchEngine, cardRows, CardRow } from './cardSearchEngine';
+export { RuleSearchEngine } from './ruleSearchEngine';
+export { CardSearchEngine } from './cardSearchEngine';
 export * from './cardSearchTypes';

@@ -2,25 +2,13 @@ import { Document } from 'flexsearch';
 import { processRules } from './processors';
 import { RuleSearchResult } from './ruleSearchTypes';
 
-
-export interface RuleRow {
-  name: string;
-  type: string;
-  details: string;
-}
-
-export const ruleRows: RuleRow[] = [];
-
+export const CACHE: RuleSearchResult[] = [];
 
 const startRuleEngine = (engine: Document<RuleSearchResult, true>) => {
   let rulesAdded = 0;
   processRules((rule: RuleSearchResult) => {
     engine.add(rulesAdded, rule);
-    ruleRows.push({
-      name: rule.name,
-      type: rule.type,
-      details: JSON.stringify(rule, null, 2),
-    });
+    CACHE.push(rule);
     rulesAdded++;
   });
   return rulesAdded;
@@ -81,5 +69,9 @@ export class RuleSearchEngine {
    */
   public getStartupDuration() {
     return this.startupDuration;
+  }
+
+  public getAllRules() {
+    return Object.freeze(CACHE);
   }
 }
