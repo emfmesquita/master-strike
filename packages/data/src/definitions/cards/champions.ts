@@ -10,6 +10,7 @@ export const Champions: CardSetDef = {
       cards: [
         {
           name: "Come On, Nobody Reads Card Names",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gwen_04.png",
           hc: 1,
           rarity: 1,
           cost: 2,
@@ -27,6 +28,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "I'll Rescue You If I Feel Like It",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gwen_03.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -39,6 +41,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "I Heard Keywords Are Powerful",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gwen_02.png",
           hc: 2,
           rarity: 2,
           cost: 6,
@@ -59,6 +62,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "I'm the Best at Board Games",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gwen_01.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -79,6 +83,7 @@ export const Champions: CardSetDef = {
       cards: [
         {
           name: "Long Arm of the Law",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ms-marvel_04.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -98,6 +103,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Big Impact",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ms-marvel_03.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -115,6 +121,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Need to Stretch My Legs",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ms-marvel_02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -135,6 +142,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Rising Hope",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ms-marvel_01.png",
           hc: 4,
           rarity: 3,
           cost: 9,
@@ -163,6 +171,7 @@ export const Champions: CardSetDef = {
       cards: [
         {
           name: "Space Cop",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nova-c-03.png",
           hc: 4,
           rarity: 1,
           cost: 2,
@@ -178,6 +187,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Interstellar Hero",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nova-c-04.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -190,6 +200,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Holographic Projection",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nova-c-02.png",
           hc: 3,
           rarity: 2,
           cost: 5,
@@ -206,6 +217,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Growing Nova Force",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nova-c-01.png",
           hc: 3,
           rarity: 3,
           cost: 9,
@@ -244,6 +256,7 @@ export const Champions: CardSetDef = {
       cards: [
         {
           name: "Beloved Behemoth",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/awesome_hulk_04.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -263,6 +276,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Incredible Mind, Awesome Body",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/awesome_hulk_03.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -280,6 +294,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Growing Pains",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/awesome_hulk_02.png",
           hc: 4,
           rarity: 2,
           cost: 5,
@@ -301,6 +316,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "7th Smartest Man in the World",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/awesome_hulk_01.png",
           hc: 5,
           rarity: 3,
           cost: 9,
@@ -331,6 +347,7 @@ export const Champions: CardSetDef = {
       cards: [
         {
           name: "Walking Wi-Fi",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/viv_04.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -344,6 +361,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Expanding Neural Network",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/viv_03.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -363,6 +381,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Crowdsourcing",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/viv_02.png",
           hc: 3,
           rarity: 2,
           cost: 6,
@@ -375,6 +394,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Alter Molecular Density",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/viv_01.png",
           hc: 5,
           rarity: 3,
           cost: 9,
@@ -409,6 +429,7 @@ export const Champions: CardSetDef = {
       cards: [
         {
           name: "Fin Fang Foom",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/fin-fang-foom-01.png",
           vAttackAsterisk: true,
           abilities: [
             [
@@ -438,6 +459,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Epic Fin Fang Foom",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/fin-fang-foom-02.png",
           vAttack: "24",
           epic: true,
           vAttackAsterisk: true,
@@ -471,6 +493,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Alien Dragon Technology",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/fin-fang-foom-04.png",
           tactic: true,
           abilities: [
             [
@@ -493,6 +516,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Flammable Acid Breath",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/fin-fang-foom-03.png",
           tactic: true,
           abilities: [
             [
@@ -513,6 +537,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Multipronged Assault",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/fin-fang-foom-05.png",
           tactic: true,
           abilities: [
             [
@@ -533,6 +558,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Supersonic Dive Attack",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/fin-fang-foom-06.png",
           tactic: true,
           abilities: [
             [
@@ -561,6 +587,7 @@ export const Champions: CardSetDef = {
       cards: [
         {
           name: "Pagliacci",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/pagliacci-01.png",
           abilities: [
             [
               { bold: "Always Leads" },
@@ -580,6 +607,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Epic Pagliacci",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/pagliacci-02.png",
           vAttack: "11",
           epic: true,
           abilities: [
@@ -601,6 +629,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Commedia Dell'Morte",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/pagliacci-06.png",
           tactic: true,
           abilities: [
             [
@@ -613,6 +642,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Creative Assassin",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/pagliacci-05.png",
           tactic: true,
           abilities: [
             [
@@ -625,6 +655,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Insane Clown Has a Posse",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/pagliacci-04.png",
           tactic: true,
           abilities: [
             [
@@ -637,6 +668,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Jester of a Twisted Opera",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/pagliacci-03.png",
           tactic: true,
           abilities: [
             [
@@ -657,6 +689,7 @@ export const Champions: CardSetDef = {
       cards: [
         {
           name: "Goom",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/monsters-unleashed-01.png",
           qtd: 1,
           vp: "4",
           vAttack: "6",
@@ -677,6 +710,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Groot from Planet X",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/monsters-unleashed-02.png",
           qtd: 1,
           vp: "2",
           vAttack: "6",
@@ -702,6 +736,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Monsteroso",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/monsters-unleashed-05.png",
           qtd: 1,
           vp: "2",
           vAttack: "5",
@@ -724,6 +759,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Orrgo",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/monsters-unleashed-07.png",
           qtd: 1,
           vp: "2",
           vAttack: "2",
@@ -736,6 +772,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Sporr",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/monsters-unleashed-08.png",
           qtd: 1,
           vp: "3",
           vAttack: "7",
@@ -764,6 +801,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Tim Boo Ba",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/monsters-unleashed-04.png",
           qtd: 1,
           vp: "5",
           vAttack: "12",
@@ -792,6 +830,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Trull the Unhuman",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/monsters-unleashed-06.png",
           qtd: 1,
           vp: "4",
           vAttack: "8",
@@ -816,6 +855,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Zzutak",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/monsters-unleashed-03.png",
           qtd: 1,
           vp: "5",
           vAttack: "9",
@@ -846,6 +886,7 @@ export const Champions: CardSetDef = {
       cards: [
         {
           name: "Bulldozer",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/wc_01.png",
           qtd: 2,
           vp: "2",
           vAttack: "4",
@@ -862,6 +903,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Piledriver",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/wc_03.png",
           qtd: 2,
           vp: "4",
           vAttack: "6",
@@ -884,6 +926,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "Thunderball",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/wc_02.png",
           qtd: 2,
           vp: "3",
           vAttack: "5",
@@ -900,6 +943,7 @@ export const Champions: CardSetDef = {
         },
         {
           name: "The Wrecker",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/wc_04.png",
           qtd: 2,
           vp: "5",
           vAttack: "7",
@@ -923,6 +967,7 @@ export const Champions: CardSetDef = {
     {
       id: 88,
       name: "Clash of the Monsters Unleashed",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/86Scheme(3).png",
       cards: [
         {
           abilities: [
@@ -947,6 +992,7 @@ export const Champions: CardSetDef = {
     {
       id: 89,
       name: "Divide and Conquer",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/85Scheme(2).png",
       cards: [
         {
           abilities: [
@@ -989,6 +1035,7 @@ export const Champions: CardSetDef = {
     {
       id: 90,
       name: "Hypnotize Every Human",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/84Scheme(1).png",
       cards: [
         {
           abilities: [
@@ -1018,6 +1065,7 @@ export const Champions: CardSetDef = {
     {
       id: 91,
       name: "Steal All Oxygen on Earth",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/87Scheme(4).png",
       cards: [
         {
           abilities: [

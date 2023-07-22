@@ -10,6 +10,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Extrapolate",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/amadeus-cho-03.png",
           hc: 2,
           rarity: 1,
           cost: 2,
@@ -23,6 +24,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Gamma-Draining Nanites",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/amadeus-cho-04.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -38,6 +40,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Like Totally Smart Hulk",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/amadeus-cho-01a.png",
           subtitle: "Amadeus Cho, transformed",
           transformed: true,
           hc: 4,
@@ -56,6 +59,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Renegade Genius",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/amadeus-cho-02.png",
           hc: 5,
           rarity: 2,
           cost: 6,
@@ -75,6 +79,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Visualize the Variables",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/amadeus-cho-01.png",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -101,6 +106,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Solve the Impossible",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bruce-banner-03.png",
           hc: 5,
           rarity: 1,
           cost: 2,
@@ -114,6 +120,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Gamma Bomb Disaster",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bruce-banner-04.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -129,6 +136,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Savage Hulk Unleashed",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bruce-banner-01a.png",
           subtitle: "Bruce Banner, transformed",
           transformed: true,
           hc: 4,
@@ -146,6 +154,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Dangerous Testing",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bruce-banner-02.png",
           hc: 5,
           rarity: 2,
           cost: 6,
@@ -159,6 +168,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Gamma Ray Experiment",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bruce-banner-01.png",
           hc: 5,
           rarity: 3,
           cost: 7,
@@ -179,6 +189,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Shadow Queen",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/caiera-03.png",
           hc: 1,
           rarity: 1,
           cost: 2,
@@ -192,6 +203,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Shadowforged Blade",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/caiera-04.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -209,6 +221,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Focus The Old Power",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/caiera-02.png",
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -222,6 +235,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Dutiful Protector",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/caiera-01.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -240,6 +254,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Vengeful Destructor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/caiera-01a.png",
           subtitle: "Caiera, transformed",
           transformed: true,
           hc: 4,
@@ -262,6 +277,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Don't Make Me Angry",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gladiator-hulk-03.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -280,6 +296,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Seize The Throne",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gladiator-hulk-04.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -300,6 +317,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Hulk Is King",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gladiator-hulk-01a.png",
           subtitle: "Gladiator Hulk, transformed",
           transformed: true,
           hc: 4,
@@ -314,6 +332,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "The Green Scar",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gladiator-hulk-02.png",
           hc: 4,
           rarity: 2,
           cost: 5,
@@ -336,6 +355,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Double-Fisted Smashing",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gladiator-hulk-01.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -363,6 +383,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Seek Redemption",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hiroim-04.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -376,6 +397,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Save from the Rubble",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hiroim-03.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -393,6 +415,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Hiroim Redeemed",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hiroim-01a.png",
           subtitle: "Hiroim, transformed",
           transformed: true,
           hc: 4,
@@ -410,6 +433,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Mystic Shadow Priest",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hiroim-02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -423,6 +447,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Blade of the People",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hiroim-01.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -443,6 +468,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Pound for Pound",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hulkbuster-iron-man-03.png",
           hc: 4,
           rarity: 1,
           cost: 2,
@@ -462,6 +488,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Attune Techtonic Transducer",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hulkbuster-iron-man-04.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -479,6 +506,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Build the Suit",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hulkbuster-iron-man-02.png",
           hc: 5,
           rarity: 2,
           cost: 5,
@@ -495,6 +523,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Ultra-Massive Armor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hulkbuster-iron-man-01a.png",
           subtitle: "Hulkbuster Iron Man, transformed",
           transformed: true,
           hc: 5,
@@ -515,6 +544,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Final Battle",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hulkbuster-iron-man-01.png",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -541,6 +571,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Carefully Considered Smashing",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/grey-hulk-03.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -559,6 +590,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Threaten And Bribe",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/grey-hulk-04.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -575,6 +607,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Ambitious Enforcer",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/grey-hulk-02.png",
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -592,6 +625,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Underworld Boss",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/grey-hulk-01a.png",
           subtitle: "Joe Fixit, Grey Hulk, transformed",
           transformed: true,
           hc: 2,
@@ -609,6 +643,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Hulk Runs This Town",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/grey-hulk-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -632,6 +667,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Nothing Beats Rock",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/korg-03.png",
           hc: 4,
           rarity: 1,
           cost: 2,
@@ -655,6 +691,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Move Mountains",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/korg-04.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -668,6 +705,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Forged by Fire",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/korg-02.png",
           hc: 4,
           rarity: 2,
           cost: 3,
@@ -684,6 +722,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Lord of Granite",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/korg-01a.png",
           subtitle: "Korg, transformed",
           transformed: true,
           hc: 1,
@@ -704,6 +743,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Kronan Tactician",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/korg-01.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -725,6 +765,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "This Bug Smashes You",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/miek-the-unhived-03.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -740,6 +781,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Devouring Frenzy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/miek-the-unhived-04.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -758,6 +800,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Endless Appetite",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/miek-the-unhived-02.png",
           hc: 2,
           rarity: 2,
           cost: 5,
@@ -770,6 +813,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Metamorphosis",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/miek-the-unhived-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -788,6 +832,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Hive King Miek",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/miek-the-unhived-01a.png",
           subtitle: "Miek, The Unhived, transformed",
           transformed: true,
           hc: 4,
@@ -811,6 +856,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Crushing Tsunami",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/namora-04.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -831,6 +877,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Heart of the Ocean",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/namora-03.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -846,6 +893,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Herculean Effort",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/namora-02.png",
           hc: 3,
           rarity: 2,
           cost: 5,
@@ -860,6 +908,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Master of Depths",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/namora-01a.png",
           subtitle: "Namora, transformed",
           transformed: true,
           hc: 4,
@@ -882,6 +931,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Turning The Tide",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/namora-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -905,6 +955,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Surprise Attack",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/brood-queen-04.png",
           hc: 1,
           rarity: 1,
           cost: 2,
@@ -917,6 +968,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Appetite for Destruction",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/brood-queen-03.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -935,6 +987,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Bursting with Life",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/brood-queen-02.png",
           hc: 4,
           rarity: 2,
           cost: 3,
@@ -951,6 +1004,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Torrent of Broodlings",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/brood-queen-01a.png",
           subtitle: "No-Name, Brood Queen, transformed",
           transformed: true,
           hc: 1,
@@ -965,6 +1019,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "World-Spanning Hunger",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/brood-queen-01.png",
           hc: 2,
           rarity: 3,
           cost: 8,
@@ -989,6 +1044,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Hacktivist",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/rick-jones-03.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -1004,6 +1060,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Seek the Nega-Bands",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/rick-jones-04.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -1018,6 +1075,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Captain Marvel",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/rick-jones-01a.png",
           subtitle: "Rick Jones, transformed",
           transformed: true,
           hc: 3,
@@ -1033,6 +1091,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Irradiated Blood",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/rick-jones-02.png",
           hc: 5,
           rarity: 2,
           cost: 5,
@@ -1047,6 +1106,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "A-Bomb",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/rick-jones-01b.png",
           subtitle: "Rick Jones, transformed",
           transformed: true,
           hc: 4,
@@ -1065,6 +1125,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Caught in Kree-Skrull War",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/rick-jones-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -1079,6 +1140,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "The Destiny Force",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/rick-jones-01c.png",
           subtitle: "Rick Jones, transformed",
           transformed: true,
           hc: 3,
@@ -1100,6 +1162,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Agoraphobia",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sentry-03-1.png",
           hc: 1,
           rarity: 1,
           cost: 2,
@@ -1112,6 +1175,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Golden Guardian of Good",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sentry-01a-1.png",
           subtitle: "Sentry, transformed",
           transformed: true,
           hc: 4,
@@ -1131,6 +1195,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Rival Personalities",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sentry-04-1.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -1148,6 +1213,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Mournful Sentinel",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sentry-02-1.png",
           hc: 3,
           rarity: 2,
           cost: 3,
@@ -1162,6 +1228,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "The Void Unchained",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sentry-01b.png",
           subtitle: "Sentry, transformed",
           transformed: true,
           team: 0,
@@ -1181,6 +1248,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Vast Unstable Power",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sentry-01-1.png",
           hc: 3,
           rarity: 3,
           cost: 8,
@@ -1209,6 +1277,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Hurl Legal Objections",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/she-hulk-04.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -1226,6 +1295,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Hurl Trucks",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/she-hulk-01a.png",
           subtitle: "She-Hulk, transformed",
           transformed: true,
           hc: 4,
@@ -1249,6 +1319,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Window of Opportunity",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/she-hulk-03.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -1262,6 +1333,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Radioactive Riot",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/she-hulk-02.png",
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -1277,6 +1349,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Jade Giantess",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/she-hulk-01.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -1302,6 +1375,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Anger Management",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/skaar-03.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -1319,6 +1393,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Scarred Past",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/skaar-04.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -1334,6 +1409,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Mood Swings",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/skaar-02.png",
           hc: 2,
           rarity: 2,
           cost: 5,
@@ -1349,6 +1425,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Raging Savage",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/skaar-01a.png",
           subtitle: "Skaar, Son of Hulk, transformed",
           transformed: true,
           hc: 4,
@@ -1363,6 +1440,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Planetary-Level Revenge",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/skaar-01.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -1389,6 +1467,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "General “Thunderbolt” Ross",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/general-ross-01.png",
           vAttackAsterisk: true,
           abilities: [
             [
@@ -1414,6 +1493,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Red Hulk",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/red-hulk-01a.png",
           vAttack: "9+",
           transformed: true,
           abilities: [
@@ -1431,6 +1511,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Bust You Down to Private",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/general-ross-03.png",
           tactic: true,
           abilities: [
             [
@@ -1446,6 +1527,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Call Out the Army",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/general-ross-04.png",
           tactic: true,
           abilities: [
             [
@@ -1461,6 +1543,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Personal Arsenal",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/general-ross-02.png",
           tactic: true,
           abilities: [
             [
@@ -1476,6 +1559,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Urban Warfare",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/general-ross-05.png",
           tactic: true,
           abilities: [
             [
@@ -1500,6 +1584,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Illuminati, Secret Society",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/illuminati-01-1.png",
           vAttack: "11+",
           abilities: [
             [
@@ -1524,6 +1609,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Illuminati, Open Warfare",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/illuminati-01a.png",
           vAttack: "13",
           transformed: true,
           abilities: [
@@ -1540,6 +1626,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Black Bolt's Omni-Shout",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/illuminati-02-1.png",
           tactic: true,
           abilities: [
             [
@@ -1555,6 +1642,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Dr. Strange's Orb of Agamotto",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/illuminati-03-1.png",
           tactic: true,
           abilities: [
             [
@@ -1574,6 +1662,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Hulkbuster's Hammer Fist",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/illuminati-04-1.png",
           tactic: true,
           abilities: [
             [
@@ -1593,6 +1682,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Zom's Manacles of Living Bondage",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/illuminati-05-1.png",
           tactic: true,
           abilities: [
             [
@@ -1619,6 +1709,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "King Hulk, Sakaarson",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/king-hulk-01.png",
           vAttack: "9+",
           abilities: [
             [
@@ -1641,6 +1732,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "King Hulk, Worldbreaker",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/king-hulk-01a.png",
           vAttack: "10+",
           transformed: true,
           abilities: [
@@ -1655,6 +1747,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Fury of the Green Scar",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/king-hulk-02.png",
           tactic: true,
           abilities: [
             [
@@ -1672,6 +1765,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Oath of the Warbound",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/king-hulk-03.png",
           tactic: true,
           abilities: [
             [
@@ -1689,6 +1783,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Revenge from the Stars",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/king-hulk-04.png",
           tactic: true,
           abilities: [
             [
@@ -1706,6 +1801,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Rule By the Strongest",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/king-hulk-05.png",
           tactic: true,
           abilities: [
             [
@@ -1734,6 +1830,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "M.O.D.O.K.",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/modok-01.png",
           abilities: [
             [
               "All cards' ",
@@ -1756,6 +1853,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "M.O.D.O.K., Network Nightmare",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/modok-01a.png",
           vAttack: "8",
           vAttackAsterisk: true,
           transformed: true,
@@ -1779,6 +1877,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Brain Scramble",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/modok-02.png",
           tactic: true,
           abilities: [
             [
@@ -1794,6 +1893,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Designed Only For...K.O.ING",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/modok-04.png",
           tactic: true,
           abilities: [
             [
@@ -1809,6 +1909,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Don't Get a Big head About It",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/modok-03.png",
           tactic: true,
           abilities: [
             [
@@ -1824,6 +1925,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Redundancy Algorithim",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/modok-05.png",
           tactic: true,
           abilities: [
             [
@@ -1848,6 +1950,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "The Red King",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-red-king-01.png",
           vAttackAsterisk: true,
           abilities: [
             [
@@ -1869,6 +1972,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "The Red King, Power Armored",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-red-king-01a.png",
           vAttack: "10",
           transformed: true,
           abilities: [
@@ -1882,6 +1986,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Haughty Spite",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-red-king-03.png",
           tactic: true,
           abilities: [
             [
@@ -1897,6 +2002,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Royal Bodyguard",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-red-king-02.png",
           tactic: true,
           abilities: [
             [
@@ -1912,6 +2018,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Treasury of Sakaar",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-red-king-04.png",
           tactic: true,
           abilities: [
             [
@@ -1930,6 +2037,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Vast Armies of Sakaar",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-red-king-05.png",
           tactic: true,
           abilities: [
             [
@@ -1954,6 +2062,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "The Sentry",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/sentry-01.png",
           abilities: [
             [
               { bold: "Start of Game" },
@@ -1975,6 +2084,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "The Void",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/sentry-01a.png",
           vAttack: "11+",
           transformed: true,
           abilities: [
@@ -1991,6 +2101,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Pacifying Light",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/sentry-04.png",
           tactic: true,
           abilities: [
             [
@@ -2008,6 +2119,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Power of a Million Exploding Suns",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/sentry-03.png",
           tactic: true,
           abilities: [
             [
@@ -2023,6 +2135,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Reflexive Teleportation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/sentry-02.png",
           tactic: true,
           abilities: [
             [
@@ -2038,6 +2151,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Repressed Darkness",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/sentry-05.png",
           tactic: true,
           abilities: [
             [
@@ -2060,6 +2174,7 @@ export const WorldWarHulk: CardSetDef = {
     {
       id: 26,
       name: "Cytoplasm Spikes",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/cytoplasm-spikes.png",
       vAttack: "3",
       vp: 1,
       cards: [
@@ -2081,6 +2196,7 @@ export const WorldWarHulk: CardSetDef = {
     {
       id: 27,
       name: "Death's Heads",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/deaths-heads.png",
       vAttack: "3",
       vp: 1,
       cards: [
@@ -2099,6 +2215,7 @@ export const WorldWarHulk: CardSetDef = {
     {
       id: 28,
       name: "Sakaaran Hivelings",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/sakaaran-hivelings.png",
       vAttack: "3",
       vp: 1,
       cards: [
@@ -2122,6 +2239,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Black Anti-Hurricane",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/aspects-of-the-void-04.png",
           qtd: 2,
           vp: "4",
           vAttack: "6",
@@ -2142,6 +2260,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Demonform",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/aspects-of-the-void-05.png",
           qtd: 1,
           vp: "5",
           vAttack: "7",
@@ -2158,6 +2277,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Infini-Tendrils",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/aspects-of-the-void-03.png",
           qtd: 2,
           vp: "3",
           vAttack: "4+",
@@ -2173,6 +2293,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Psychotic Break",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/aspects-of-the-void-01.png",
           qtd: 1,
           vp: "2",
           subType: 1,
@@ -2197,6 +2318,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Shadow Man",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/aspects-of-the-void-02.png",
           qtd: 2,
           vp: "3",
           vAttack: "5",
@@ -2220,6 +2342,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Caught Red-Handed",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/code-red-06.png",
           qtd: 1,
           vp: "3",
           subType: 1,
@@ -2242,6 +2365,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Crimson Dynamo",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/code-red-04.png",
           qtd: 2,
           vp: "2",
           vAttack: "4",
@@ -2258,6 +2382,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Elektra, Red Blades",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/code-red-05.png",
           qtd: 2,
           vp: "3",
           vAttack: "5",
@@ -2274,6 +2399,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Punisher, Red Dot Sniper",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/code-red-02.png",
           qtd: 1,
           vp: "4",
           vAttack: "6",
@@ -2290,6 +2416,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Red She-Hulk",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/code-red-03.png",
           qtd: 1,
           vp: "5",
           vAttack: "6+",
@@ -2313,6 +2440,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Thundra",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/code-red-01.png",
           qtd: 1,
           vp: "3",
           vAttack: "4+",
@@ -2343,6 +2471,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Black Bolt",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/illuminati-04.png",
           qtd: 2,
           vp: "5",
           vAttack: "13",
@@ -2364,6 +2493,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Dr. Strange",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/illuminati-01.png",
           qtd: 2,
           vp: "3",
           vAttack: "5",
@@ -2380,6 +2510,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Dr. Strange, Possessed by Zom",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/illuminati-02.png",
           qtd: 1,
           vp: "3",
           vAttack: "5+",
@@ -2400,6 +2531,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Enchain the Hulk",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/illuminati-03.png",
           qtd: 1,
           vp: "4",
           subType: 1,
@@ -2428,6 +2560,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Hulkbuster Iron Man",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/illuminati-05.png",
           qtd: 2,
           vp: "4",
           vAttack: "6+",
@@ -2457,6 +2590,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Battle of Wits",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/intelligencia-02.png",
           qtd: 2,
           vp: "3",
           subType: 1,
@@ -2477,6 +2611,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Cosmic Hulk Robot",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/intelligencia-01.png",
           qtd: 2,
           vp: "4",
           vAttack: "5+",
@@ -2500,6 +2635,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Doc Samson",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/intelligencia-04.png",
           qtd: 2,
           vp: "3",
           vAttack: "4+",
@@ -2522,6 +2658,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "The Leader, Gamma Fiend",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/intelligencia-03.png",
           qtd: 2,
           vp: "3",
           vAttack: "5",
@@ -2550,6 +2687,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Gladiators' Colosseum",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/sakaar-imperial-guard-05.png",
           qtd: 1,
           vp: "4",
           subType: 1,
@@ -2576,6 +2714,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Great Devil Corker",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/sakaar-imperial-guard-03.png",
           qtd: 2,
           vp: "4",
           vAttack: "6",
@@ -2592,6 +2731,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Headman Charr",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/sakaar-imperial-guard-01.png",
           qtd: 2,
           vp: "2",
           vAttack: "2+",
@@ -2612,6 +2752,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Lieutenant Caiera",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/sakaar-imperial-guard-04.png",
           qtd: 1,
           vp: "5",
           vAttack: "7",
@@ -2628,6 +2769,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Primus Vand",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/sakaar-imperial-guard-02.png",
           qtd: 2,
           vp: "3",
           vAttack: "3+",
@@ -2654,6 +2796,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Ironclad",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/u-foes-03.png",
           qtd: 1,
           vp: "4",
           vAttack: "6",
@@ -2676,6 +2819,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Vapor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/u-foes-05.png",
           qtd: 2,
           vp: "2",
           vAttack: "4",
@@ -2698,6 +2842,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Vector",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/u-foes-02.png",
           qtd: 2,
           vp: "2",
           vAttack: "4",
@@ -2714,6 +2859,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Unidentified Flying U-Foes",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/u-foes-04.png",
           qtd: 1,
           vp: "3",
           subType: 1,
@@ -2732,6 +2878,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "X-Ray",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/u-foes-01.png",
           qtd: 2,
           vp: "3",
           vAttack: "5",
@@ -2754,6 +2901,7 @@ export const WorldWarHulk: CardSetDef = {
       cards: [
         {
           name: "Elloe Kaifi",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/warbound-03.png",
           qtd: 1,
           vp: "3",
           vAttack: "5",
@@ -2768,6 +2916,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Hiroim",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/warbound-05.png",
           qtd: 1,
           vp: "5",
           vAttack: "7",
@@ -2788,6 +2937,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Korg",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/warbound-04.png",
           qtd: 1,
           vp: "4",
           vAttack: "6",
@@ -2808,6 +2958,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Miek The Unhived",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/warbound-02.png",
           qtd: 2,
           vp: "3",
           vAttack: "5",
@@ -2824,6 +2975,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "No-Name, Brood Queen",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/warbound-01.png",
           qtd: 2,
           vp: "3",
           vAttack: "4+",
@@ -2841,6 +2993,7 @@ export const WorldWarHulk: CardSetDef = {
         },
         {
           name: "Warbound Rescue",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/warbound-06.png",
           qtd: 1,
           vp: "7",
           subType: 1,
@@ -2862,6 +3015,7 @@ export const WorldWarHulk: CardSetDef = {
     {
       id: 92,
       name: "Break the Planet Asunder",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/91Scheme(100).png",
       cards: [
         {
           abilities: [
@@ -2889,6 +3043,7 @@ export const WorldWarHulk: CardSetDef = {
     {
       id: 93,
       name: "Cytoplasm Spike Invasion",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/90Scheme(99).png",
       cards: [
         {
           abilities: [
@@ -2911,6 +3066,7 @@ export const WorldWarHulk: CardSetDef = {
     {
       id: 94,
       name: "Fall of the Hulks",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/89Scheme(18).png",
       cards: [
         {
           abilities: [
@@ -2939,6 +3095,7 @@ export const WorldWarHulk: CardSetDef = {
     {
       id: 95,
       name: "Gladiator Pits of Sakaar",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/88Scheme(17).png",
       cards: [
         {
           abilities: [
@@ -2970,6 +3127,7 @@ export const WorldWarHulk: CardSetDef = {
     {
       id: 96,
       name: "Mutating Gamma Rays",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/92Scheme(101).png",
       cards: [
         {
           abilities: [
@@ -2992,6 +3150,7 @@ export const WorldWarHulk: CardSetDef = {
     {
       id: 97,
       name: "Shoot Hulk into Space",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/93Scheme(102).png",
       cards: [
         {
           abilities: [
@@ -3018,6 +3177,7 @@ export const WorldWarHulk: CardSetDef = {
     {
       id: 98,
       name: "Subjugate with Obedience Disks",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/94Scheme(103).png",
       cards: [
         {
           abilities: [
@@ -3047,6 +3207,7 @@ export const WorldWarHulk: CardSetDef = {
     {
       id: 99,
       name: "World War Hulk",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/95Scheme(104).png",
       cards: [
         {
           abilities: [

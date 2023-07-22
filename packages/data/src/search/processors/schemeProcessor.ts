@@ -25,7 +25,7 @@ export const processScheme = (addCard: (card: CardSearchResult) => void, scheme:
     addCard({
       name: card.name || scheme.name,
       subtitle: Subtitles.schemeSubtitle(card, set.id),
-      imageUrl: '',
+      imageUrl: card.imageUrl || scheme.imageUrl || '',
       set: getSetLabel(set.id),
       type: CardType.Scheme,
       group: scheme.name,

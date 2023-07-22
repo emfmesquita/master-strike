@@ -38,7 +38,7 @@ export const processHero = (addCard: (card: CardSearchResult) => void, hero: Her
       const rCard: CardSearchResult = {
         name: `${card.name} / ${secondHalfCard.name}`,
         subtitle: Subtitles.heroSubtitle(card, hero),
-        imageUrl: '',
+        imageUrl: card.imageUrl || '',
         set: getSetLabel(set.id),
         type: CardType.Hero,
         group: hero.name,
@@ -49,7 +49,7 @@ export const processHero = (addCard: (card: CardSearchResult) => void, hero: Her
       const rCard: CardSearchResult = {
         name: card.name,
         subtitle: Subtitles.heroSubtitle(card, hero),
-        imageUrl: '',
+        imageUrl: card.imageUrl || '',
         set: getSetLabel(set.id, hero.set),
         type: CardType.Hero,
         group: hero.name,

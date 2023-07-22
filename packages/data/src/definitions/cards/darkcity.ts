@@ -10,6 +10,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Diving Catch",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/angel-04.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -22,6 +23,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "High-Speed Chase",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/angel-03.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -31,6 +33,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Drop off a Friend",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/angel-02.png",
           hc: 2,
           rarity: 2,
           cost: 5,
@@ -48,6 +51,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Strength of Spirit",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/angel-01.png",
           hc: 4,
           rarity: 3,
           cost: 7,
@@ -67,6 +71,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Absorb Energies",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bishop-04.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -83,6 +88,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Whatever the Cost",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bishop-03.png",
           hc: 3,
           rarity: 1,
           cost: 2,
@@ -96,6 +102,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Concussive Blast",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bishop-02.png",
           hc: 3,
           rarity: 2,
           cost: 5,
@@ -113,6 +120,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Firepower from the Future",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bishop-01.png",
           hc: 5,
           rarity: 3,
           cost: 7,
@@ -141,6 +149,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Night Hunter",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/blade-03.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -157,6 +166,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Stalk the Prey",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/blade-04.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -167,6 +177,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Nowhere to Hide",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/blade-02.png",
           hc: 5,
           rarity: 2,
           cost: 6,
@@ -179,6 +190,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Vampiric Surge",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/blade-01.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -201,6 +213,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Disaster Survivalist",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cable-03.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -213,6 +226,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Strike at the Heart of Evil",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cable-04.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -228,6 +242,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Rapid Response Force",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cable-02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -249,6 +264,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Army of One",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cable-01.png",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -271,6 +287,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Draw Their Fire",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/colossus-04.png",
           hc: 4,
           rarity: 1,
           cost: 1,
@@ -283,6 +300,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Invulnerability",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/colossus-03.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -295,6 +313,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Silent Statue",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/colossus-02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -311,6 +330,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Russian Heavy Tank",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/colossus-01.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -331,6 +351,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Backflip",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/daredevil-04.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -343,6 +364,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Radar Sense",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/daredevil-03.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -360,6 +382,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Blind Justice",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/daredevil-02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -374,6 +397,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "The Man Without Fear",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/daredevil-01.png",
           hc: 2,
           rarity: 3,
           cost: 8,
@@ -395,6 +419,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Lucky Break",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/domino-04.png",
           hc: 5,
           rarity: 1,
           cost: 1,
@@ -413,6 +438,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Ready for Anything",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/domino-03.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -426,6 +452,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Specialized Ammunition",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/domino-02.png",
           hc: 5,
           rarity: 2,
           cost: 5,
@@ -449,6 +476,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Against All Odds",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/domino-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -477,6 +505,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "First Strike",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/elektra-04.png",
           hc: 1,
           rarity: 1,
           cost: 1,
@@ -492,6 +521,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Ninjitsu",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/elektra-03.png",
           hc: 2,
           rarity: 1,
           cost: 2,
@@ -509,6 +539,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Sai Blades",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/elektra-02.png",
           hc: 2,
           rarity: 2,
           cost: 6,
@@ -530,6 +561,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Silent Meditation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/elektra-01.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -556,6 +588,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Dirty Work",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/forge-03.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -572,6 +605,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Reboot",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/forge-04.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -585,6 +619,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Overdrive",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/forge-02.png",
           hc: 5,
           rarity: 2,
           cost: 5,
@@ -598,6 +633,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "B.F.G.",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/forge-01.png",
           hc: 5,
           rarity: 3,
           cost: 7,
@@ -619,6 +655,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Blazing Hellfire",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ghost-rider-03.png",
           hc: 3,
           rarity: 1,
           cost: 5,
@@ -634,6 +671,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Hell on Wheels",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ghost-rider-04.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -650,6 +688,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Infernal Chains",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ghost-rider-02.png",
           hc: 4,
           rarity: 2,
           cost: 2,
@@ -666,6 +705,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Penance Stare",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ghost-rider-01.png",
           hc: 3,
           rarity: 3,
           cost: 8,
@@ -692,6 +732,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Deep Freeze",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/iceman-03.png",
           hc: 3,
           rarity: 1,
           cost: 2,
@@ -711,6 +752,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Ice Slide",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/iceman-04.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -729,6 +771,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Frost Spike Armor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/iceman-02.png",
           hc: 4,
           rarity: 2,
           cost: 5,
@@ -744,6 +787,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Impenetrable Ice Wall",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/iceman-01.png",
           hc: 3,
           rarity: 3,
           cost: 8,
@@ -763,6 +807,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Focus Chi",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/iron-fist-04.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -780,6 +825,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Wield the Iron Fist",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/iron-fist-03.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -797,6 +843,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Ancient Legacy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/iron-fist-02.png",
           hc: 4,
           rarity: 2,
           cost: 1,
@@ -814,6 +861,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Living Weapon",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/iron-fist-01.png",
           hc: 4,
           rarity: 3,
           cost: 9,
@@ -835,6 +883,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Psychic Search",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jean-grey-03.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -848,6 +897,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Read Your Thoughts",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jean-grey-04.png",
           hc: 1,
           rarity: 1,
           cost: 5,
@@ -863,6 +913,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Mind Over Matter",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jean-grey-02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -873,6 +924,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Telekinetic Mastery",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jean-grey-01.png",
           hc: 3,
           rarity: 3,
           cost: 7,
@@ -901,6 +953,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Bamf!",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nightcrawler-04.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -913,6 +966,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Blend Into Shadows",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nightcrawler-03.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -923,6 +977,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Swashbuckler",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nightcrawler-02.png",
           hc: 2,
           rarity: 2,
           cost: 5,
@@ -940,6 +995,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Along for the Ride",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nightcrawler-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -966,6 +1022,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Psionic Astral Form",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/professor-x-03.png",
           hc: 3,
           rarity: 1,
           cost: 2,
@@ -982,6 +1039,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Class Dismissed",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/professor-x-04.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -996,6 +1054,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Telepathic Probe",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/professor-x-02.png",
           hc: 3,
           rarity: 2,
           cost: 5,
@@ -1006,6 +1065,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Mind Control",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/professor-x-01.png",
           hc: 1,
           rarity: 3,
           cost: 8,
@@ -1033,6 +1093,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Boom Goes the Dynamite",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/punisher-04.png",
           hc: 5,
           rarity: 1,
           cost: 2,
@@ -1050,6 +1111,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Hail of Bullets",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/punisher-03.png",
           hc: 5,
           rarity: 1,
           cost: 5,
@@ -1072,6 +1134,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Hostile Interrogation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/punisher-02.png",
           hc: 4,
           rarity: 2,
           cost: 3,
@@ -1090,6 +1153,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "The Punisher",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/punisher-01.png",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -1115,6 +1179,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Animal Instincts",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/x-force-wolverine-03.png",
           hc: 2,
           rarity: 1,
           cost: 2,
@@ -1132,6 +1197,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Sudden Ambush",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/x-force-wolverine-04.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -1147,6 +1213,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "No Mercy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/x-force-wolverine-02.png",
           hc: 4,
           rarity: 2,
           cost: 4,
@@ -1161,6 +1228,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Reckless Abandon",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/x-force-wolverine-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -1183,6 +1251,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Apocalypse",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/apocalypse-01.png",
           abilities: [
             [
               { bold: "Always Leads" },
@@ -1208,6 +1277,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Apocalyptic Destruction",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/apocalypse-02.png",
           tactic: true,
           abilities: [
             [
@@ -1220,6 +1290,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "The End of All Things",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/apocalypse-05.png",
           tactic: true,
           abilities: [
             [
@@ -1232,6 +1303,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Horsemen Are Drawing Nearer",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/apocalypse-03.png",
           tactic: true,
           abilities: [
             [
@@ -1242,6 +1314,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Immortal and Undefeated",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/apocalypse-04.png",
           tactic: true,
           abilities: [
             [
@@ -1260,7 +1333,8 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Kingpin",
-          vAttackAsterisk: true, 
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/kingpin-01.png",
+          vAttackAsterisk: true,
           abilities: [
             { keyword: 2 },
             [
@@ -1277,6 +1351,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Call a Hit",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/kingpin-02.png",
           tactic: true,
           abilities: [
             [
@@ -1287,6 +1362,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Criminal Empire",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/kingpin-03.png",
           tactic: true,
           abilities: [
             [
@@ -1297,6 +1373,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Dirty Cops",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/kingpin-04.png",
           tactic: true,
           abilities: [
             [
@@ -1309,6 +1386,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Mob War",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/kingpin-05.png",
           tactic: true,
           abilities: [
             [
@@ -1327,6 +1405,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Mephisto",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mephisto-01.png",
           abilities: [
             "Whenever a player gains a Wound, put it on top of that player's deck.",
             [
@@ -1343,6 +1422,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Damned If You Do...",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mephisto-02.png",
           tactic: true,
           abilities: [
             [
@@ -1353,6 +1433,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Devilish Torment",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mephisto-03.png",
           tactic: true,
           abilities: [
             [
@@ -1365,6 +1446,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Pain Begets Pain",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mephisto-04.png",
           tactic: true,
           abilities: [
             [
@@ -1375,6 +1457,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "The Price of Failure",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mephisto-05.png",
           tactic: true,
           abilities: [
             [
@@ -1393,6 +1476,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Mr. Sinister",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mr-sinister-01.png",
           vAttack: "8+",
           abilities: [
             [
@@ -1415,6 +1499,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Human Experimentation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mr-sinister-02.png",
           tactic: true,
           abilities: [
             [
@@ -1425,6 +1510,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Master Geneticist",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mr-sinister-03.png",
           tactic: true,
           abilities: [
             [
@@ -1435,6 +1521,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Plans Within Plans",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mr-sinister-04.png",
           tactic: true,
           abilities: [
             [
@@ -1445,6 +1532,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Telepathic Manipulation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mr-sinister-05.png",
           tactic: true,
           abilities: [
             [
@@ -1463,6 +1551,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Stryfe",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/stryfe-01.png",
           vAttack: "7+",
           abilities: [
             [
@@ -1482,6 +1571,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Furious Wrath",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/stryfe-03.png",
           tactic: true,
           abilities: [
             [
@@ -1492,6 +1582,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Psychic Torment",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/stryfe-02.png",
           tactic: true,
           abilities: [
             [
@@ -1502,6 +1593,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Swift Vengeance",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/stryfe-05.png",
           tactic: true,
           abilities: [
             [
@@ -1512,6 +1604,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Tide of Retribution",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/stryfe-04.png",
           tactic: true,
           abilities: [
             [
@@ -1531,6 +1624,7 @@ export const DarkCity: CardSetDef = {
     {
       id: 5,
       name: "Maggia Goons",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/maggia-goons.png",
       vAttack: "4",
       vp: 1,
       cards: [
@@ -1549,6 +1643,7 @@ export const DarkCity: CardSetDef = {
     {
       id: 6,
       name: "Phalanx",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/phalanx.png",
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1574,6 +1669,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Egghead",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/emissaries-of-evil-03.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -1588,6 +1684,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Electro",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/emissaries-of-evil-02.png",
           qtd: 2,
           vAttack: "6",
           vp: "4",
@@ -1602,6 +1699,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Gladiator",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/emissaries-of-evil-04.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -1616,6 +1714,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Rhino",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/emissaries-of-evil-01.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -1642,6 +1741,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Death",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/four-horsemen-04.png",
           qtd: 2,
           vAttack: "7",
           vp: "5",
@@ -1664,6 +1764,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Famine",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/four-horsemen-03-1.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -1686,6 +1787,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Pestilence",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/four-horsemen-02-1.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -1708,6 +1810,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "War",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/four-horsemen-01-1.png",
           qtd: 2,
           vAttack: "6",
           vp: "4",
@@ -1736,6 +1839,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Blockbuster",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/marauders-03.png",
           qtd: 2,
           vAttack: "4+",
           vp: "2",
@@ -1756,6 +1860,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Chimera",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/marauders-02.png",
           qtd: 2,
           vAttack: "3+",
           vp: "3",
@@ -1776,6 +1881,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Scalphunter",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/marauders-01.png",
           qtd: 2,
           vAttack: "4+",
           vp: "2",
@@ -1796,6 +1902,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Vertigo",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/marauders-04.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -1817,6 +1924,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Forearm",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/mlf-03.png",
           qtd: 2,
           vAttack: "4",
           vp: "4",
@@ -1829,6 +1937,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Reignfire",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/mlf-04.png",
           qtd: 2,
           vAttack: "6",
           vp: "4",
@@ -1843,6 +1952,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Wildside",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/mlf-02.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -1857,6 +1967,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Zero",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/mlf-01.png",
           qtd: 2,
           vAttack: "0",
           vp: "2",
@@ -1877,6 +1988,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Bullseye",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/streets-of-new-york-01.png",
           qtd: 2,
           vAttack: "6",
           vp: "4",
@@ -1895,6 +2007,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Hammerhead",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/streets-of-new-york-03.png",
           qtd: 2,
           vAttack: "5",
           vp: "2",
@@ -1915,6 +2028,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Jigsaw",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/streets-of-new-york-02.png",
           qtd: 2,
           vAttack: "11",
           vp: "5",
@@ -1933,6 +2047,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Tombstone",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/streets-of-new-york-04.png",
           qtd: 2,
           vAttack: "8",
           vp: "4",
@@ -1959,6 +2074,7 @@ export const DarkCity: CardSetDef = {
       cards: [
         {
           name: "Azazel",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/underworld-03.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -1975,6 +2091,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Blackheart",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/underworld-01.png",
           qtd: 2,
           vAttack: "6",
           vp: "4",
@@ -2003,6 +2120,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Dracula",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/underworld-02.png",
           qtd: 2,
           vAttack: "3+",
           vp: "4",
@@ -2026,6 +2144,7 @@ export const DarkCity: CardSetDef = {
         },
         {
           name: "Lilith, Daughter of Dracula",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/underworld-04.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -2045,6 +2164,7 @@ export const DarkCity: CardSetDef = {
     {
       id: 9,
       name: "Capture Baby Hope",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/9Scheme(40).png",
       cards: [
         {
           abilities: [
@@ -2080,6 +2200,7 @@ export const DarkCity: CardSetDef = {
     {
       id: 10,
       name: "Detonate the Helicarrier",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/13Scheme(44).png",
       cards: [
         {
           abilities: [
@@ -2106,6 +2227,7 @@ export const DarkCity: CardSetDef = {
     {
       id: 11,
       name: "Massive Earthquake Generator",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/15Scheme(46).png",
       cards: [
         {
           abilities: [
@@ -2130,6 +2252,7 @@ export const DarkCity: CardSetDef = {
     {
       id: 12,
       name: "Organized Crime Wave",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/16Scheme(47).png",
       cards: [
         {
           abilities: [
@@ -2156,6 +2279,7 @@ export const DarkCity: CardSetDef = {
     {
       id: 13,
       name: "Save Humanity",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/14Scheme(45).png",
       cards: [
         {
           abilities: [
@@ -2188,6 +2312,7 @@ export const DarkCity: CardSetDef = {
     {
       id: 14,
       name: "Steal the Weaponized Plutonium",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/12Scheme(43).png",
       cards: [
         {
           abilities: [
@@ -2217,6 +2342,7 @@ export const DarkCity: CardSetDef = {
     {
       id: 15,
       name: "Transform Citizens Into Demons",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/11Scheme(42).png",
       cards: [
         {
           abilities: [
@@ -2253,6 +2379,7 @@ export const DarkCity: CardSetDef = {
     {
       id: 16,
       name: "X-Cutioner's Song",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/10Scheme(41).png",
       cards: [
         {
           abilities: [

@@ -10,6 +10,7 @@ export const Dimensions: CardSetDef = {
       cards: [
         {
           name: "Alter Ego",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jessica_04.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -20,6 +21,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Alias Investigations",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jessica_03.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -37,6 +39,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Crack the Case",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jessica_02.png",
           hc: 4,
           rarity: 2,
           cost: 5,
@@ -54,6 +57,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Uncover Hidden Evil",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jessica_01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -76,6 +80,7 @@ export const Dimensions: CardSetDef = {
       cards: [
         {
           name: "Star Power",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ms_america_04.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -93,6 +98,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Search Parallel Dimensions",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ms_america_03.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -110,6 +116,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Kick a Hole in Reality",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ms_america_02.png",
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -125,6 +132,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Hyper-Cosmic Awareness",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ms_america_01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -147,6 +155,7 @@ export const Dimensions: CardSetDef = {
       cards: [
         {
           name: "Find Tiny Friends",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/squirrel_04.png",
           hc: 2,
           rarity: 1,
           cost: 2,
@@ -161,6 +170,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Nut Punch",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/squirrel_03.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -179,6 +189,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Squirrelgility",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/squirrel_02.png",
           hc: 1,
           rarity: 2,
           cost: 4,
@@ -196,6 +207,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Unbeatable Squirrel Girl",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/squirrel_01.png",
           hc: 2,
           rarity: 3,
           cost: 8,
@@ -225,6 +237,7 @@ export const Dimensions: CardSetDef = {
       cards: [
         {
           name: "J. Jonah Jameson",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/jameson_01.png",
           vAttackAsterisk: true,
           abilities: [
             [
@@ -252,6 +265,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Epic J. Jonah Jameson",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/jameson_02.png",
           vAttack: "5",
           vAttackAsterisk: true,
           epic: true,
@@ -281,6 +295,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Incite Violent Riots",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/jameson_04.png",
           tactic: true,
           abilities: [
             [
@@ -291,6 +306,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Promote Spider-Slayer Security",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/jameson_05.png",
           tactic: true,
           abilities: [
             [
@@ -301,6 +317,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "Slanderous Editorial",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/jameson_03.png",
           tactic: true,
           abilities: [
             [
@@ -313,6 +330,7 @@ export const Dimensions: CardSetDef = {
         },
         {
           name: "That Menace Spider-Man!",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/jameson_06.png",
           tactic: true,
           abilities: [
             [

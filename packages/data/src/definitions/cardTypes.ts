@@ -1,8 +1,12 @@
 import { Description } from "./descriptionTypes";
 
-export interface CardDef {
-  name: string;
+export interface BasicCardDef {
+  imageUrl?: string;
   abilities: Description;
+}
+
+export interface CardDef extends BasicCardDef {
+  name: string;
 }
 
 export interface HeroCardDef extends CardDef {
@@ -39,17 +43,15 @@ export interface VillainCardDef extends CardDef {
   subType?: number;
 }
 
-export interface HenchmanCardDef {
+export interface HenchmanCardDef extends BasicCardDef {
   name?: string;
   vAttackAsterisk?: boolean;
-  abilities: Description;
   subType?: number;
 }
 
-export interface SchemeCardDef {
+export interface SchemeCardDef extends BasicCardDef {
   name?: string;
   transformed?: boolean;
-  abilities: Description;
   veiled?: boolean;
   unveiled?: boolean;
 }
@@ -95,6 +97,7 @@ export interface MastermindDef {
 export interface HenchmanDef {
   id: number;
   name: string;
+  imageUrl?: string;
   subtitle?: string;
   set?: number | number[];
   vAttack: string;
@@ -113,6 +116,7 @@ export interface VillainDef {
 export interface SchemeDef {
   id: number;
   name: string;
+  imageUrl?: string;
   sortName?: string;
   set?: number | number[];
   cards: (SchemeCardDef | OopMastermindCardDef)[];

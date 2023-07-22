@@ -11,6 +11,7 @@ export const DoctorStrange: CardSetDef = {
       cards: [
         {
           name: "Wand of Watoomb",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ds_dr_strange_01.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -26,6 +27,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Keeper of the Sanctum",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ds_dr_strange_02.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -40,6 +42,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Book of Cagliostro",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ds_dr_strange_03.png",
           hc: 2,
           rarity: 2,
           cost: 2,
@@ -55,6 +58,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "The Eye of Agamotto",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ds_dr_strange_04.png",
           hc: 3,
           rarity: 3,
           cost: 8,
@@ -79,6 +83,7 @@ export const DoctorStrange: CardSetDef = {
       cards: [
         {
           name: "Commune with the Spirit World",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/doctor_voodoo_01.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -93,6 +98,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Medallion of Many Loas",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/doctor_voodoo_02.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -108,6 +114,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Staff of Legba",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/doctor_voodoo_03.png",
           hc: 4,
           rarity: 2,
           cost: 5,
@@ -123,6 +130,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Posessed by Brother's Spirit",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/doctor_voodoo_04.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -149,6 +157,7 @@ export const DoctorStrange: CardSetDef = {
       cards: [
         {
           name: "Prepare Dark Magic",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/clea_01.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -161,6 +170,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Demonic Descendant",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/clea_02.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -178,6 +188,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Bind the Dark Dimension",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/clea_03.png",
           hc: 3,
           rarity: 2,
           cost: 6,
@@ -193,6 +204,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "The Purple Gem",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/clea_04.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -216,6 +228,7 @@ export const DoctorStrange: CardSetDef = {
       cards: [
         {
           name: "Astral Confrontation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ancient_one_01.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -230,6 +243,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Teachings of Kamar-Taj",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ancient_one_02.png",
           hc: 2,
           rarity: 1,
           cost: 5,
@@ -241,6 +255,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "War of the Mind",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ancient_one_03.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -264,6 +279,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "The Orb of Agamotto",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ancient_one_04.png",
           hc: 2,
           rarity: 3,
           cost: 8,
@@ -283,6 +299,7 @@ export const DoctorStrange: CardSetDef = {
       cards: [
         {
           name: "Oshtur",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/vishanti_01.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -295,6 +312,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Hoggoth",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/vishanti_02.png",
           hc: 2,
           rarity: 1,
           cost: 5,
@@ -312,6 +330,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Agamotto",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/vishanti_03.png",
           hc: 3,
           rarity: 2,
           cost: 4,
@@ -330,6 +349,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "The Book of the Vishanti",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/vishanti_04.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -352,6 +372,7 @@ export const DoctorStrange: CardSetDef = {
       cards: [
         {
           name: "Nightmare",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/nightmare_01.png",
           abilities: [
             [
               "When you fight Nightmare in the ",
@@ -376,6 +397,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Epic Nightmare",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/nightmare_02.png",
           vAttack: "8",
           epic: true,
           abilities: [
@@ -402,6 +424,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Don't Fall Asleep",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/nightmare_04.png",
           tactic: true,
           abilities: [
             [
@@ -416,6 +439,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Dream Weaver",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/nightmare_05.png",
           tactic: true,
           abilities: [
             [
@@ -430,6 +454,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Night Terrors",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/nightmare_06.png",
           tactic: true,
           abilities: [
             [
@@ -444,6 +469,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Deadly Waking Nightmares",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/nightmare_03.png",
           tactic: true,
           abilities: [
             [
@@ -464,6 +490,7 @@ export const DoctorStrange: CardSetDef = {
       cards: [
         {
           name: "Dormammu",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/dormammu_01.png",
           abilities: [
             [
               { bold: "Always Leads" },
@@ -479,6 +506,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Epic Dormammu",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/dormammu_02.png",
           vAttack: "13",
           epic: true,
           abilities: [
@@ -496,6 +524,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Demonic Hellfire",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/dormammu_04.png",
           tactic: true,
           abilities: [
             [
@@ -508,6 +537,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Flames of Regency",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/dormammu_05.png",
           tactic: true,
           abilities: [
             [
@@ -522,6 +552,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Barter for Souls",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/dormammu_03.png",
           tactic: true,
           abilities: [
             [
@@ -534,6 +565,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Torments of the Dark Dimension",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/dormammu_06.png",
           tactic: true,
           abilities: [
             [
@@ -554,6 +586,7 @@ export const DoctorStrange: CardSetDef = {
       cards: [
         {
           name: "Nox",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/fear_lords_03.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -568,6 +601,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "D'Spayre",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/fear_lords_01.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -588,6 +622,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Dreamstalker",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/fear_lords_02.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -606,6 +641,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "The Lurking Unknown",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/fear_lords_04.png",
           qtd: 2,
           vAttack: "2",
           vp: "3",
@@ -632,6 +668,7 @@ export const DoctorStrange: CardSetDef = {
       cards: [
         {
           name: "Mindless Ones",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/lords_of_the_netherworld_02.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -650,6 +687,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Baron Mordo",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/lords_of_the_netherworld_01.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -664,6 +702,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Satana Hellstrom",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/lords_of_the_netherworld_03.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -678,6 +717,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Satannish",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/lords_of_the_netherworld_04.png",
           qtd: 1,
           vAttack: "6",
           vp: "4",
@@ -700,6 +740,7 @@ export const DoctorStrange: CardSetDef = {
         },
         {
           name: "Umar",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/lords_of_the_netherworld_05.png",
           qtd: 1,
           vAttack: "7",
           vp: "5",
@@ -729,6 +770,7 @@ export const DoctorStrange: CardSetDef = {
     {
       id: 150,
       name: "War for the Dream Dimension",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/ds_scheme_04.png",
       cards: [
         {
           abilities: [
@@ -757,6 +799,7 @@ export const DoctorStrange: CardSetDef = {
     {
       id: 151,
       name: "Claim Souls for Demons",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/ds_scheme_01.png",
       cards: [
         {
           abilities: [
@@ -787,6 +830,7 @@ export const DoctorStrange: CardSetDef = {
     {
       id: 152,
       name: "Cursed Pages of the Darkhold Tome",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/ds_scheme_02.png",
       cards: [
         {
           abilities: [
@@ -818,6 +862,7 @@ export const DoctorStrange: CardSetDef = {
     {
       id: 153,
       name: "Duels of Science and Magic",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/ds_scheme_03.png",
       cards: [
         {
           abilities: [

@@ -10,6 +10,7 @@ export const Annihilation: CardSetDef = {
       cards: [
         {
           name: "Time Loop Experiments",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/brainstorm_01.png",
           hc: 5,
           rarity: 1,
           cost: 2,
@@ -25,6 +26,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Borrow from the Future",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/brainstorm_02.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -40,6 +42,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Reprogram Doombot Legions",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/brainstorm_03.png",
           hc: 5,
           rarity: 2,
           cost: 6,
@@ -53,6 +56,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Protégé of Dr. Doom",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/brainstorm_04.png",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -82,6 +86,7 @@ export const Annihilation: CardSetDef = {
       cards: [
         {
           name: "Human Torch",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ffunited_01.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -109,6 +114,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Thing",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ffunited_02.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -136,6 +142,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Invisible Woman",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ffunited_03.png",
           hc: 1,
           rarity: 2,
           cost: 4,
@@ -159,6 +166,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Mr. Fantastic",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ffunited_04.png",
           hc: 5,
           rarity: 3,
           cost: 7,
@@ -187,6 +195,7 @@ export const Annihilation: CardSetDef = {
       cards: [
         {
           name: "Firelord",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hogalactus_01.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -206,6 +215,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Silver Surfer",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hogalactus_02.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -222,6 +232,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Stardust",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hogalactus_03.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -246,6 +257,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Galactus Hungers",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hogalactus_04.png",
           hc: 3,
           rarity: 3,
           cost: 10,
@@ -268,6 +280,7 @@ export const Annihilation: CardSetDef = {
       cards: [
         {
           name: "Avert Future Tragedy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/psilord_01.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -293,6 +306,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Interdimensional Rescue",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/psilord_02.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -317,6 +331,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Slip the Timestream",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/psilord_03.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -343,6 +358,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Reshape Reality",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/psilord_04.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -376,6 +392,7 @@ export const Annihilation: CardSetDef = {
       cards: [
         {
           name: "Stretching Credibility",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sskrull_01.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -392,6 +409,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Rock Solid",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sskrull_02.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -417,6 +435,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Transparent Motives",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sskrull_03.png",
           hc: 1,
           rarity: 2,
           cost: 5,
@@ -436,6 +455,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Put to the Torch",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sskrull_04.png",
           hc: 3,
           rarity: 3,
           cost: 7,
@@ -463,6 +483,7 @@ export const Annihilation: CardSetDef = {
       cards: [
         {
           name: "Annihilus",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/annihilus_01.png",
           vAttack: "10+",
           abilities: [
             { keyword: 71, text: "Mass Momentum 2" },
@@ -480,6 +501,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Epic Annihilus",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/annihilus_02.png",
           epic: true,
           vAttack: "12+",
           abilities: [
@@ -497,6 +519,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "The Cosmic Control Rod",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/annihilus_06.png",
           tactic: true,
           abilities: [
             [
@@ -507,6 +530,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Surging Annihilation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/annihilus_05.png",
           tactic: true,
           abilities: [
             [
@@ -517,6 +541,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Deploy the Planet Killer",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/annihilus_03.png",
           tactic: true,
           abilities: [
             [
@@ -527,6 +552,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Pull Into the Negative Zone",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/annihilus_04.png",
           tactic: true,
           abilities: [
             [
@@ -546,6 +572,7 @@ export const Annihilation: CardSetDef = {
       cards: [
         {
           name: "Kang the Conqueror",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/kang_01.png",
           vAttack: "8+",
           abilities: [
             [
@@ -570,6 +597,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Epic Kang the Conqueror",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/kang_02.png",
           epic: true,
           vAttack: "10+",
           abilities: [
@@ -593,6 +621,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Iron Lad Grows Up to Become Kang",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/kang_03.png",
           tactic: true,
           abilities: [
             [
@@ -607,6 +636,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Leap Into the Timestream",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/kang_04.png",
           tactic: true,
           abilities: [
             [
@@ -617,6 +647,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Pull From the Future",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/kang_05.png",
           tactic: true,
           abilities: [
             [
@@ -627,6 +658,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Savior From Another Timeline",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/kang_06.png",
           tactic: true,
           abilities: [
             [
@@ -647,6 +679,7 @@ export const Annihilation: CardSetDef = {
       cards: [
         {
           name: "Annihilation Armada",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/annihilation_wave_01.png",
           qtd: 2,
           vAttack: "3+",
           vp: "2",
@@ -662,6 +695,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Queens of Annihilation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/annihilation_wave_02.png",
           qtd: 3,
           vAttack: "4+",
           vp: "3",
@@ -683,6 +717,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Ravenous",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/annihilation_wave_03.png",
           qtd: 2,
           vAttack: "5+",
           vp: "4",
@@ -706,6 +741,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Weaponized Galactus",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/annihilation_wave_04.png",
           qtd: 1,
           vAttack: "9+",
           vp: "7",
@@ -733,6 +769,7 @@ export const Annihilation: CardSetDef = {
       cards: [
         {
           name: "Immortus",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/timelines_of_kang_01.png",
           qtd: 2,
           vAttack: "5+",
           vp: "5",
@@ -760,6 +797,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Iron Lad",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/timelines_of_kang_02.png",
           qtd: 2,
           vAttack: "4",
           hc: 5,
@@ -783,6 +821,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Pharaoh Rama-Tut",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/timelines_of_kang_03.png",
           qtd: 2,
           vAttack: "4+",
           vp: "4",
@@ -810,6 +849,7 @@ export const Annihilation: CardSetDef = {
         },
         {
           name: "Scarlet Centurion",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/timelines_of_kang_04.png",
           qtd: 2,
           vAttack: "4+",
           vp: "3",
@@ -840,6 +880,7 @@ export const Annihilation: CardSetDef = {
     {
       id: 138,
       name: "Pulse Waves From the Negative Zone",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/annihilation_scheme_02.png",
       cards: [
         {
           abilities: [
@@ -878,6 +919,7 @@ export const Annihilation: CardSetDef = {
     {
       id: 139,
       name: "Sneak Attack the Heroes' Homes",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/annihilation_scheme_04.png",
       cards: [
         {
           abilities: [
@@ -900,6 +942,7 @@ export const Annihilation: CardSetDef = {
     {
       id: 140,
       name: "Put Humanity on Trial",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/annihilation_scheme_03.png",
       cards: [
         {
           abilities: [
@@ -938,6 +981,7 @@ export const Annihilation: CardSetDef = {
     {
       id: 141,
       name: "Breach Parallel Dimensions",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/annihilation_scheme_01.png",
       cards: [
         {
           abilities: [

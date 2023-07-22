@@ -11,6 +11,7 @@ export const RealmOfKings: CardSetDef = {
       cards: [
         {
           name: "Break the Silence",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black_bolt_rok_01.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -34,6 +35,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Worldess Murmur",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black_bolt_rok_02.png",
           hc: 3,
           rarity: 1,
           cost: 5,
@@ -47,6 +49,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Declaration of War",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black_bolt_rok_03.png",
           hc: 5,
           rarity: 2,
           cost: 4,
@@ -62,6 +65,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "The King's Speech",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black_bolt_rok_04.png",
           hc: 3,
           rarity: 3,
           cost: 8,
@@ -72,7 +76,7 @@ export const RealmOfKings: CardSetDef = {
               { keyword: 70 },
               ". If you already have it, you may spend it to choose “Speak“ or “Don't Speak“ then reveal the top 3 cards of your deck:"
             ],
-            { 
+            {
               points: [
                 [
                   { bold: "Speak" },
@@ -96,6 +100,7 @@ export const RealmOfKings: CardSetDef = {
       cards: [
         {
           name: "Queen of the Inhumans",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/medusa_01.png",
           hc: 4,
           rarity: 1,
           cost: 2,
@@ -120,6 +125,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Splitting Hairs",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/medusa_02.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -142,6 +148,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Royal Command",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/medusa_03.png",
           hc: 2,
           rarity: 2,
           cost: 5,
@@ -164,6 +171,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Headstrong",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/medusa_04.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -192,6 +200,7 @@ export const RealmOfKings: CardSetDef = {
       cards: [
         {
           name: "Earth, Air, Fire, and Water",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/crystal_01.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -211,6 +220,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Master the Four Elements",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/crystal_02.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -232,6 +242,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Elemental Princess",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/crystal_03.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -267,6 +278,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Weave Four Into One",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/crystal_04.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -308,6 +320,7 @@ export const RealmOfKings: CardSetDef = {
       cards: [
         {
           name: "Brilliant Strategist",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/karnak_01.png",
           hc: 1,
           rarity: 1,
           cost: 2,
@@ -329,6 +342,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Find Fatal Flaw",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/karnak_02.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -353,6 +367,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Shatter the Weak Point",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/karnak_03.png",
           hc: 4,
           rarity: 2,
           cost: 5,
@@ -377,6 +392,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Seek the Center",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/karnak_04.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -403,6 +419,7 @@ export const RealmOfKings: CardSetDef = {
       cards: [
         {
           name: "Lockjaw, Inhuman's Best Friend",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gorgon_01.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -425,6 +442,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Stomping Shockwave",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gorgon_02.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -447,6 +465,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Trample Underhoof",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gorgon_03.png",
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -466,6 +485,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Lead the Inhuman Elite",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gorgon_04.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -501,6 +521,7 @@ export const RealmOfKings: CardSetDef = {
       cards: [
         {
           name: "Maximus the Mad",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/maximus_01.png",
           vAttack: "8+",
           abilities: [
             { keyword: 25, text: "Highest Abomination" },
@@ -516,6 +537,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Epic Maximus the Mad",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/maximus_02.png",
           vAttack: "9+",
           epic: true,
           abilities: [
@@ -532,6 +554,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Echo-Tech Chorus Sentries",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/maximus_03.png",
           tactic: true,
           abilities: [
             [
@@ -546,6 +569,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Sieve of Secrets",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/maximus_06.png",
           tactic: true,
           abilities: [
             [
@@ -556,6 +580,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Seize the Inhuman Throne",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/maximus_04.png",
           tactic: true,
           abilities: [
             [
@@ -568,6 +593,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Terrigen Bomb",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/maximus_05.png",
           tactic: true,
           abilities: [
             [
@@ -593,6 +619,7 @@ export const RealmOfKings: CardSetDef = {
       cards: [
         {
           name: "Emperor Vulcan of the Shi'ar",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/emperor_vulcan_01.png",
           vAttack: "10+",
           abilities: [
             [
@@ -619,6 +646,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Epic Emperor Vulcan",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/emperor_vulcan_02.png",
           vAttack: "12+",
           epic: true,
           abilities: [
@@ -648,6 +676,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Blast Every Form of Energy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/emperor_vulcan_03.png",
           tactic: true,
           abilities: [
             [
@@ -665,6 +694,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Vast Wealth of the Shi'ar",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/emperor_vulcan_06.png",
           tactic: true,
           abilities: [
             [
@@ -685,6 +715,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Contempt for Weakness",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/emperor_vulcan_04.png",
           tactic: true,
           abilities: [
             [
@@ -702,6 +733,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Solar Cage",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/emperor_vulcan_05.png",
           tactic: true,
           abilities: [
             [
@@ -727,6 +759,7 @@ export const RealmOfKings: CardSetDef = {
       cards: [
         {
           name: "Lineage",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/inhuman_rebellion_02.png",
           qtd: 2,
           vp: "2",
           vAttack: "3+",
@@ -744,6 +777,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Omega",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/inhuman_rebellion_03.png",
           qtd: 2,
           vp: "3",
           vAttack: "4+",
@@ -755,7 +789,7 @@ export const RealmOfKings: CardSetDef = {
               },
               ": Choose “Alpha“ or “Omega.“ Then reveal the top card of your deck:"
             ],
-            { 
+            {
               points: [
                 [
                   { bold: "Alpha" },
@@ -771,6 +805,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Lash",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/inhuman_rebellion_01.png",
           qtd: 2,
           vp: "4",
           vAttack: "5+",
@@ -796,6 +831,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "The Unspoken",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/inhuman_rebellion_04.png",
           qtd: 2,
           vp: "5",
           vAttack: "5+",
@@ -827,6 +863,7 @@ export const RealmOfKings: CardSetDef = {
       cards: [
         {
           name: "Plutonia",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/shiar_imperial_elite_03.png",
           qtd: 2,
           vp: "2",
           vAttack: "4",
@@ -864,6 +901,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Starbolt",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/shiar_imperial_elite_04.png",
           qtd: 2,
           vp: "3",
           vAttack: "4+",
@@ -896,6 +934,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Mentor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/shiar_imperial_elite_02.png",
           qtd: 2,
           vp: "3",
           vAttack: "5",
@@ -920,6 +959,7 @@ export const RealmOfKings: CardSetDef = {
         },
         {
           name: "Gladiator",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/shiar_imperial_elite_01.png",
           qtd: 2,
           vp: "5",
           vAttack: "7",
@@ -955,6 +995,7 @@ export const RealmOfKings: CardSetDef = {
     {
       id: 134,
       name: "Ruin the Perfect Wedding",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/rok_scheme_02.png",
       cards: [
         {
           abilities: [
@@ -989,6 +1030,7 @@ export const RealmOfKings: CardSetDef = {
     {
       id: 135,
       name: "War of Kings",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/rok_scheme_04.png",
       cards: [
         {
           abilities: [
@@ -1003,7 +1045,7 @@ export const RealmOfKings: CardSetDef = {
               { icon: 2 },
               " per Battlefront to supply the war:"
             ],
-            { 
+            {
               points: [
                 [
                   { bold: "If you pay" },
@@ -1017,7 +1059,7 @@ export const RealmOfKings: CardSetDef = {
                   { keyword: 70 },
                   ". If they aleady have it, you gain a Wound."
                 ]
-              ] 
+              ]
             },
             [
               { bold: "Twist 9-11" },
@@ -1034,6 +1076,7 @@ export const RealmOfKings: CardSetDef = {
     {
       id: 136,
       name: "Tornado of Terrigen Mists",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/rok_scheme_03.png",
       cards: [
         {
           abilities: [
@@ -1075,6 +1118,7 @@ export const RealmOfKings: CardSetDef = {
     {
       id: 137,
       name: "Devolve with Xerogen Crystals",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/rok_scheme_01.png",
       cards: [
         {
           abilities: [

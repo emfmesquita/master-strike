@@ -10,6 +10,7 @@ export const HeroesOfAsgard: CardSetDef = {
       cards: [
         {
           name: "Hope of the Korbinites",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/beta-ray-bill-04-1.png",
           hc: 4,
           rarity: 1,
           cost: 1,
@@ -25,6 +26,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Bio-Engineered Cyborg",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/beta-ray-bill-02-1.png",
           hc: 5,
           rarity: 1,
           cost: 5,
@@ -35,6 +37,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Stormbreaker",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/beta-ray-bill-03-1.png",
           hc: 3,
           rarity: 2,
           cost: 4,
@@ -55,6 +58,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "The Warship Skuttlebutt",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/beta-ray-bill-01-1.png",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -75,6 +79,7 @@ export const HeroesOfAsgard: CardSetDef = {
       cards: [
         {
           name: "Dimensional Blade",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/lady-sif-04-1.png",
           hc: 2,
           rarity: 1,
           cost: 2,
@@ -93,6 +98,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Weapons Master",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/lady-sif-02-1.png",
           hc: 2,
           rarity: 1,
           cost: 5,
@@ -108,6 +114,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Winged Helm",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/lady-sif-03-1.png",
           hc: 4,
           rarity: 2,
           cost: 3,
@@ -126,6 +133,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Golden Apples of Idunn",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/lady-sif-01-1.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -150,6 +158,7 @@ export const HeroesOfAsgard: CardSetDef = {
       cards: [
         {
           name: "Test of Virtue",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/thor-04-1%20%282%29.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -168,6 +177,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Divine Lightning",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/thor-02-1%20%282%29.png",
           hc: 3,
           rarity: 1,
           cost: 5,
@@ -185,6 +195,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Mjolnir",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/thor-03-1%20%282%29.png",
           hc: 4,
           rarity: 2,
           cost: 4,
@@ -210,6 +221,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Royal Decree",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/thor-01-1%20%282%29.png",
           hc: 3,
           rarity: 3,
           cost: 8,
@@ -236,6 +248,7 @@ export const HeroesOfAsgard: CardSetDef = {
       cards: [
         {
           name: "Dragonfang",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/valkyrie-04-1.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -250,6 +263,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Flying Stallion",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/valkyrie-03-1.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -263,6 +277,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Usher to Valhalla",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/valkyrie-02-1.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -277,6 +292,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Ride of the Valkyries",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/valkyrie-01-1.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -302,6 +318,7 @@ export const HeroesOfAsgard: CardSetDef = {
       cards: [
         {
           name: "Fandral the Dashing",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/warriors-three-04-1.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -316,6 +333,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Hogun the Grim",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/warriors-three-03-1.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -329,6 +347,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Volstagg the Valiant",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/warriors-three-02-1.png",
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -344,6 +363,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Three Stand as One",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/warriors-three-01-1.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -376,6 +396,7 @@ export const HeroesOfAsgard: CardSetDef = {
       cards: [
         {
           name: "Hela, Goddess of Death",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hela-01.png",
           vAttack: "10+",
           abilities: [
             { keyword: 49, text: "Bridge Conqueror 5, Streets Conqueror 5" },
@@ -396,6 +417,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Epic Hela, Goddess of Death",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hela-02.png",
           vAttack: "12+",
           epic: true,
           abilities: [
@@ -417,6 +439,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Hela's Cloak",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hela-06.png",
           tactic: true,
           vAttack: "+2",
           vp: -1,
@@ -438,6 +461,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "The Nightsword",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hela-05.png",
           tactic: true,
           vAttack: "+3",
           vp: -1,
@@ -461,6 +485,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Seize Bifrost, The Rainbow Bridge",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hela-04.png",
           tactic: true,
           abilities: [
             [
@@ -471,6 +496,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Naglfar, Longship of Fingernails",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hela-03.png",
           tactic: true,
           abilities: [
             [
@@ -490,6 +516,7 @@ export const HeroesOfAsgard: CardSetDef = {
       cards: [
         {
           name: "Malekith the Accursed",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/malekith-01.png",
           abilities: [
             [
               { bold: "Always Leads" },
@@ -515,6 +542,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Epic Malekith the Accursed",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/malekith-02.png",
           vAttack: "10",
           epic: true,
           abilities: [
@@ -542,6 +570,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Black Hammer of the Accursed",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/malekith-03.png",
           tactic: true,
           vAttack: "+4",
           vp: -1,
@@ -565,6 +594,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Dagger of Living Abyss",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/malekith-04.png",
           tactic: true,
           vAttack: "+2",
           vp: -1,
@@ -588,6 +618,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "The Hunting Horn of Faerie",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/malekith-06.png",
           tactic: true,
           vAttack: "+3",
           vp: -1,
@@ -611,6 +642,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Vulnerable to Cold Iron",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/malekith-05.png",
           tactic: true,
           abilities: [
             [
@@ -634,6 +666,7 @@ export const HeroesOfAsgard: CardSetDef = {
       cards: [
         {
           name: "Laufey, Father Of Loki",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-council-01.png",
           qtd: 1,
           vp: "4",
           vAttack: "6",
@@ -654,6 +687,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "The Mangog",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-council-02.png",
           qtd: 1,
           vp: "4",
           vAttack: "3+",
@@ -676,6 +710,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Ulik, The Troll",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-council-03.png",
           qtd: 2,
           vp: "2",
           vAttack: "3+",
@@ -698,6 +733,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Sindr, Fire Giant Queen",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-council-04.png",
           qtd: 2,
           vp: "3",
           vAttack: "5",
@@ -717,6 +753,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Jarnbjorn, First Axe of Thor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-weapon-01.png",
           qtd: 1,
           vAttack: "+3",
           subType: 3,
@@ -734,6 +771,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "The Casket of Ancient Winters",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-weapon-02.png",
           qtd: 1,
           vAttack: "+4",
           subType: 3,
@@ -759,6 +797,7 @@ export const HeroesOfAsgard: CardSetDef = {
       cards: [
         {
           name: "The Eternal Flame",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/omens-weapon-01.png",
           qtd: 1,
           vAttack: "+4",
           subType: 3,
@@ -779,6 +818,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "The Hel-Crown",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/omens-weapon-02.png",
           qtd: 1,
           vAttack: "+3",
           subType: 3,
@@ -788,18 +828,19 @@ export const HeroesOfAsgard: CardSetDef = {
             [
               { keyword: 13, text: "Artifact -" },
               " Once per turn, you get ",
-              { keyword: 49, text: "Streets Conqueror 1"},
+              { keyword: 49, text: "Streets Conqueror 1" },
               "."
             ]
           ]
         },
         {
           name: "Skurge, The Executioner",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/omens-of-ragnarok-01.png",
           qtd: 2,
           vp: "2",
           vAttack: "4+",
           abilities: [
-            { keyword: 49, text: "Bridge Conqueror 3"},
+            { keyword: 49, text: "Bridge Conqueror 3" },
             [
               {
                 bold: "Fight"
@@ -810,6 +851,7 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "Surtur, Fire Giant King",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/omens-of-ragnarok-02.png",
           qtd: 1,
           vAttack: "6",
           abilities: [
@@ -831,22 +873,23 @@ export const HeroesOfAsgard: CardSetDef = {
             [
               { keyword: 13, text: "Artifact -" },
               " Once per turn, you get ",
-              { keyword: 49, text: "Sewers Conqueror 1"},
+              { keyword: 49, text: "Sewers Conqueror 1" },
               "."
             ]
           ]
         },
         {
           name: "Jormungand, The World-Serpent",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/omens-of-ragnarok-03.png",
           qtd: 1,
           vp: "5",
           vAttack: "5+",
           abilities: [
-            { keyword: 49, text: "Sewers Conqueror 1"},
-            { keyword: 49, text: "Bank Conqueror 1"},
-            { keyword: 49, text: "Rooftops Conqueror 1"},
-            { keyword: 49, text: "Streets Conqueror 1"},
-            { keyword: 49, text: "Bridge Conqueror 1"},
+            { keyword: 49, text: "Sewers Conqueror 1" },
+            { keyword: 49, text: "Bank Conqueror 1" },
+            { keyword: 49, text: "Rooftops Conqueror 1" },
+            { keyword: 49, text: "Streets Conqueror 1" },
+            { keyword: 49, text: "Bridge Conqueror 1" },
             [
               {
                 bold: "Fight"
@@ -857,11 +900,12 @@ export const HeroesOfAsgard: CardSetDef = {
         },
         {
           name: "The Fenris Wolf",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/omens-of-ragnarok-04.png",
           qtd: 2,
           vp: "3",
           vAttack: "4+",
           abilities: [
-            { keyword: 49, text: "Streets Conqueror 2"},
+            { keyword: 49, text: "Streets Conqueror 2" },
             [
               {
                 bold: "Ambush"
@@ -877,6 +921,7 @@ export const HeroesOfAsgard: CardSetDef = {
     {
       id: 122,
       name: "Asgardian Test of Worth",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/116Scheme(25).png",
       cards: [
         {
           abilities: [
@@ -909,6 +954,7 @@ export const HeroesOfAsgard: CardSetDef = {
     {
       id: 123,
       name: "Dark World of Svartalfheim, The",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/118Scheme(111).png",
       cards: [
         {
           abilities: [
@@ -941,6 +987,7 @@ export const HeroesOfAsgard: CardSetDef = {
     {
       id: 124,
       name: "War of the Frost Giants",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/119Scheme(112).png",
       cards: [
         {
           abilities: [
@@ -975,6 +1022,7 @@ export const HeroesOfAsgard: CardSetDef = {
     {
       id: 125,
       name: "Ragnarok, Twilight of the Gods",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/117Scheme(26).png",
       cards: [
         {
           abilities: [

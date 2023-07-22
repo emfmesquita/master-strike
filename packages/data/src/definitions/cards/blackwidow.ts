@@ -11,6 +11,7 @@ export const BlackWidow: CardSetDef = {
       cards: [
         {
           name: "Evasive Acrobatics",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/BlackWidowShield_2Common.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -30,6 +31,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Widow's Bite",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/BlackWidowShield_3Common.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -45,6 +47,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Weave a Web of Spies",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/BlackWidowShield_4Uncommon.png",
           hc: 1,
           rarity: 2,
           cost: 5,
@@ -62,6 +65,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Infiltrate the Conspiracy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/BlackWidowShield_1Rare.png",
           hc: 3,
           rarity: 3,
           cost: 7,
@@ -89,6 +93,7 @@ export const BlackWidow: CardSetDef = {
       cards: [
         {
           name: "Strike and Fade",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/YelenaBelova_2Common.png",
           hc: 1,
           rarity: 1,
           cost: 2,
@@ -103,6 +108,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Unveil Identity",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/YelenaBelova_3Common.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -120,6 +126,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Twilight Ops",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/YelenaBelova_4Uncommon.png",
           hc: 5,
           rarity: 2,
           cost: 6,
@@ -134,18 +141,19 @@ export const BlackWidow: CardSetDef = {
               " with this card, you may ",
               { keyword: 84 },
               " one of your Heroes from ",
-              { keyword: 60  },
+              { keyword: 60 },
               ".",
             ],
             [
               "When you play this card, send it ",
-              { keyword: 60  },
+              { keyword: 60 },
               ".",
             ],
           ]
         },
         {
           name: "Destroy the Red Room",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/YelenaBelova_1Rare.png",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -174,6 +182,7 @@ export const BlackWidow: CardSetDef = {
       cards: [
         {
           name: "Sleeper Agent",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/RedGuardian_2Common.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -202,6 +211,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Magnetic Shield",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/RedGuardian_3Common.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -235,6 +245,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Death Was Only a Ruse",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/RedGuardian_4Uncommon.png",
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -258,13 +269,14 @@ export const BlackWidow: CardSetDef = {
             [
               { hc: 1 },
               ": you may send one of your other Heroes ",
-              { keyword: 60  },
+              { keyword: 60 },
               ".",
             ],
           ]
         },
         {
           name: "Champion of the Winter Guard",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/RedGuardian_1Rare.png",
           hc: 1,
           rarity: 3,
           cost: 8,
@@ -293,7 +305,7 @@ export const BlackWidow: CardSetDef = {
               { bold: "+2" },
               { icon: 1 },
               " for each other ",
-              { hc: 1  },
+              { hc: 1 },
               " Hero you played this turn.",
             ],
           ]
@@ -307,6 +319,7 @@ export const BlackWidow: CardSetDef = {
       cards: [
         {
           name: "Amulets of the Tiger God",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WhiteTiger_3Common.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -319,6 +332,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Dark Influence of the Hand",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WhiteTiger_2Common.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -341,6 +355,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Camouflaged Huntress",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WhiteTiger_4Uncommon.png",
           hc: 1,
           rarity: 2,
           cost: 5,
@@ -353,6 +368,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Shadowed Resurrection",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WhiteTiger_1Rare.png",
           hc: 2,
           rarity: 3,
           cost: 8,
@@ -465,6 +481,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Captain America's Legacy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/FalconandWinterSoldier_1Rare.png",
           hc: 4,
           rarity: 3,
           cost: 7,
@@ -496,6 +513,7 @@ export const BlackWidow: CardSetDef = {
       cards: [
         {
           name: "Taskmaster",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/Taskmaster.png",
           vAttack: "5+",
           abilities: [
             [
@@ -522,6 +540,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Epic Taskmaster",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/Taskmaster_Epic.png",
           vAttack: "5+",
           epic: true,
           abilities: [
@@ -549,6 +568,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "S.H.I.E.L.D. Initiative Trainer",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/TaskmasterTactic3.png",
           tactic: true,
           abilities: [
             [
@@ -562,6 +582,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Photographic Reflexes",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/TaskmasterTactic2.png",
           tactic: true,
           abilities: [
             [
@@ -575,6 +596,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Teacher and Assassin",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/TaskmasterTactic4.png",
           tactic: true,
           abilities: [
             [
@@ -588,6 +610,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Henchman Instructor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/TaskmasterTactic1.png",
           tactic: true,
           abilities: [
             [
@@ -609,6 +632,7 @@ export const BlackWidow: CardSetDef = {
       cards: [
         {
           name: "Indestructible Man",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/IndestructibleMan.png",
           vAttackAsterisk: true,
           vAttackHideValue: true,
           abilities: [
@@ -632,6 +656,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Epic Indestructible Man",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/IndestructibleMan_Epic.png",
           vAttackAsterisk: true,
           vAttackHideValue: true,
           epic: true,
@@ -656,6 +681,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Manipulate Murderous Mad Monk",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/IndestructibleManTactic2.png",
           tactic: true,
           vAttack: "8",
           abilities: [
@@ -680,6 +706,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Secrets of Indestructibility",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/IndestructibleManTactic3.png",
           tactic: true,
           vAttackAsterisk: true,
           vAttackHideValue: true,
@@ -695,6 +722,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "International Arms Dealer",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/IndestructibleManTactic1.png",
           tactic: true,
           vAttackAsterisk: true,
           vAttackHideValue: true,
@@ -714,6 +742,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Unveil Project Four",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/IndestructibleManTactic4.png",
           tactic: true,
           vAttackAsterisk: true,
           vAttackHideValue: true,
@@ -738,6 +767,7 @@ export const BlackWidow: CardSetDef = {
       cards: [
         {
           name: "Jester",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/TaskmastersThunderboltsJester.png",
           qtd: 2,
           vAttack: "2",
           vp: "2",
@@ -758,6 +788,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Joystick",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/TaskmastersThunderboltsJoystick.png",
           qtd: 2,
           vAttack: "3",
           vp: "2",
@@ -772,6 +803,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Jack O'Lantern",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/TaskmastersThunderboltsJackOLantern.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -792,6 +824,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Bullseye",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/TaskmastersThunderboltsBullseye.png",
           qtd: 2,
           vAttack: "4+",
           vp: "3",
@@ -831,6 +864,7 @@ export const BlackWidow: CardSetDef = {
       cards: [
         {
           name: "Blue Talon",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/EliteAssassinsBlueTalon.png",
           qtd: 2,
           vAttack: "3+",
           vp: "2",
@@ -856,6 +890,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Iron Maiden",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/EliteAssassinsIronMaiden.png",
           qtd: 2,
           vAttack: "4+",
           vp: "2",
@@ -883,6 +918,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Snapdragon",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/EliteAssassinsSnapdragon.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -905,6 +941,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Black Lotus",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/EliteAssassinsBlackLotus.png",
           qtd: 2,
           vAttack: "6",
           vp: "3",
@@ -933,6 +970,7 @@ export const BlackWidow: CardSetDef = {
     {
       id: 162,
       name: "Corrupt the Spy Agencies",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/CorruptTheSpyAgencies.png",
       cards: [
         {
           abilities: [
@@ -963,6 +1001,7 @@ export const BlackWidow: CardSetDef = {
     {
       id: 163,
       name: "Train Black Widows in the Red Room",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/TrainBlackWidowsintheRedRoom.png",
       cards: [
         {
           abilities: [
@@ -1002,6 +1041,7 @@ export const BlackWidow: CardSetDef = {
     {
       id: 164,
       name: "Sniper Rifle Assassins",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/SniperRifleAssassins.png",
       cards: [
         {
           abilities: [
@@ -1026,6 +1066,7 @@ export const BlackWidow: CardSetDef = {
     {
       id: 165,
       name: "Frame Heroes for Murder",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/FrameHeroesforMurder.png.png",
       cards: [
         {
           abilities: [

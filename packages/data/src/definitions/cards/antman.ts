@@ -10,6 +10,7 @@ export const AntMan: CardSetDef = {
       cards: [
         {
           name: "Ride the Ants",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ant-man-04.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -26,6 +27,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Risky Science",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ant-man-03.png",
           hc: 5,
           rarity: 1,
           cost: 5,
@@ -47,6 +49,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Giant Ego",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ant-man-02.png",
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -68,6 +71,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Pym Particles",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ant-man-01.png",
           hc: 5,
           rarity: 3,
           cost: 9,
@@ -101,6 +105,7 @@ export const AntMan: CardSetDef = {
       cards: [
         {
           name: "Amulet of Avalon",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black-knight-03.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -115,6 +120,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Defend the Weak",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black-knight-04.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -128,6 +134,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Flying Steed",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black-knight-02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -140,6 +147,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "The Ebony Blade",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black-knight-01.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -165,6 +173,7 @@ export const AntMan: CardSetDef = {
       cards: [
         {
           name: "Creation of Ultron",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jocasta-04.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -182,6 +191,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Reprocess",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jocasta-03.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -197,6 +207,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Holographic Image Inducer",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jocasta-02.png",
           hc: 5,
           rarity: 2,
           cost: 6,
@@ -212,6 +223,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Electromagnetic Eyebeams",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/jocasta-01.png",
           hc: 3,
           rarity: 3,
           cost: 7,
@@ -234,6 +246,7 @@ export const AntMan: CardSetDef = {
       cards: [
         {
           name: "Bio-Electric Sting",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/wasp-03.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -257,6 +270,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Tiny Winged Justice",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/wasp-04.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -276,6 +290,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Swarm Tactics",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/wasp-02.png",
           hc: 3,
           rarity: 2,
           cost: 6,
@@ -297,6 +312,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Founding Avenger",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/wasp-01.png",
           hc: 1,
           rarity: 3,
           cost: 9,
@@ -332,6 +348,7 @@ export const AntMan: CardSetDef = {
       cards: [
         {
           name: "One-Hit Wonder",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/wonder-man-03.png",
           hc: 4,
           rarity: 1,
           cost: 2,
@@ -348,6 +365,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Ionic Energy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/wonder-man-04.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -366,6 +384,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Absorb Ambient Power",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/wonder-man-02.png",
           hc: 3,
           rarity: 2,
           cost: 5,
@@ -390,6 +409,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "8th Wonder of the World",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/wonder-man-01.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -424,6 +444,7 @@ export const AntMan: CardSetDef = {
       cards: [
         {
           name: "Morgan Le Fay",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/morgan-le-fay-01.png",
           vAttackAsterisk: true,
           abilities: [
             { keyword: 52 },
@@ -441,6 +462,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Epic Morgan Le Fay",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/morgan-le-fay-02.png",
           vAttack: "9",
           vAttackAsterisk: true,
           epic: true,
@@ -458,6 +480,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Reverse the Flow of Time",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/morgan-le-fay-06.png",
           tactic: true,
           abilities: [
             [
@@ -468,6 +491,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Sorcerous Blasts",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/morgan-le-fay-03.png",
           tactic: true,
           abilities: [
             [
@@ -480,6 +504,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Stolen Tomes of Merlin",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/morgan-le-fay-05.png",
           tactic: true,
           abilities: [
             [
@@ -497,6 +522,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Transmogrify",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/morgan-le-fay-04.png",
           tactic: true,
           abilities: [
             [
@@ -515,6 +541,7 @@ export const AntMan: CardSetDef = {
       cards: [
         {
           name: "Ultron",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ultron-01.png",
           vAttack: "9+",
           abilities: [
             [
@@ -533,6 +560,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Epic Ultron",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ultron-02.png",
           vAttack: "10+",
           epic: true,
           abilities: [
@@ -550,6 +578,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Arrogant Blindspot",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ultron-06.png",
           tactic: true,
           abilities: [
             [
@@ -560,6 +589,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Paralyzing Encephalo-Ray",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ultron-03.png",
           tactic: true,
           abilities: [
             [
@@ -570,6 +600,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Predictive Analysis",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ultron-05.png",
           tactic: true,
           abilities: [
             [
@@ -580,6 +611,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Self-Repairing Legions",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ultron-04.png",
           tactic: true,
           abilities: [
             [
@@ -600,6 +632,7 @@ export const AntMan: CardSetDef = {
       cards: [
         {
           name: "Ultron Roboticks",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ultrons-legacy-08.png",
           qtd: 1,
           vp: "2",
           vAttack: "3",
@@ -622,6 +655,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Original Ultron-1",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ultrons-legacy-07.png",
           qtd: 1,
           vp: "2",
           vAttack: "3+",
@@ -641,6 +675,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Legions of Ultron",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ultrons-legacy-05.png",
           qtd: 1,
           vp: "3",
           vAttack: "4+",
@@ -660,6 +695,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Alkhema",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ultrons-legacy-06.png",
           qtd: 1,
           vp: "3",
           vAttack: "4+",
@@ -679,6 +715,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Ultron-Pym",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ultrons-legacy-03.png",
           qtd: 1,
           vp: "3",
           vAttack: "6",
@@ -707,6 +744,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Future Ultron Prime",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ultrons-legacy-04.png",
           qtd: 1,
           vp: "5",
           vAttack: "5+",
@@ -728,6 +766,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Brutish Ultron-14",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ultrons-legacy-01.png",
           qtd: 1,
           vp: "4",
           vAttack: "5+",
@@ -755,6 +794,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Crimson Cowl",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ultrons-legacy-02.png",
           qtd: 1,
           vp: "4",
           vAttack: "5+",
@@ -780,6 +820,7 @@ export const AntMan: CardSetDef = {
       cards: [
         {
           name: "Daystar",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/queens-vengeance-03.png",
           qtd: 1,
           vp: "2",
           vAttack: "5",
@@ -804,6 +845,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Blackbird",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/queens-vengeance-04.png",
           qtd: 1,
           vp: "3",
           vAttack: "3",
@@ -820,6 +862,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Gigantus",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/queens-vengeance-02.png",
           qtd: 1,
           vp: "4",
           vAttack: "7",
@@ -845,6 +888,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Iron Knight",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/queens-vengeance-01.png",
           qtd: 1,
           vp: "4",
           vAttack: "4",
@@ -863,6 +907,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Yeoman America",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/queens-vengeance-08.png",
           qtd: 1,
           vp: "5",
           vAttack: "5",
@@ -884,6 +929,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Star-Knight",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/queens-vengeance-07.png",
           qtd: 1,
           vp: "3",
           vAttack: "3",
@@ -900,6 +946,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Pixie",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/queens-vengeance-06.png",
           qtd: 1,
           vp: "2",
           vAttack: "3",
@@ -925,6 +972,7 @@ export const AntMan: CardSetDef = {
         },
         {
           name: "Mordred the Evil",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/queens-vengeance-05.png",
           qtd: 1,
           vp: "3",
           vAttack: "5",
@@ -950,6 +998,7 @@ export const AntMan: CardSetDef = {
     {
       id: 106,
       name: "Age of Ultron",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/96Scheme(5).png",
       cards: [
         {
           abilities: [
@@ -981,6 +1030,7 @@ export const AntMan: CardSetDef = {
     {
       id: 107,
       name: "Pull Earth into Medieval Times",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/97Scheme(6).png",
       cards: [
         {
           abilities: [
@@ -1009,6 +1059,7 @@ export const AntMan: CardSetDef = {
     {
       id: 108,
       name: "Transform Commuters into Giant Ants",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/98Scheme(7).png",
       cards: [
         {
           abilities: [
@@ -1034,6 +1085,7 @@ export const AntMan: CardSetDef = {
     {
       id: 109,
       name: "Trap Heroes in the Microverse",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/99Scheme(8).png",
       cards: [
         {
           abilities: [

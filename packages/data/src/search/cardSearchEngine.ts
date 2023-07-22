@@ -37,7 +37,7 @@ const OPTIONS: IndexOptionsForDocumentSearch<SearchEntry, false> = {
 
 const CACHE: CardSearchResult[] = [];;;
 
-interface CardRow {
+export interface CardRow {
   set: string;
   type: string;
   group?: string;
@@ -45,7 +45,7 @@ interface CardRow {
   subTitle: string;
 }
 
-export const rows: CardRow[] = [];
+export const cardRows: CardRow[] = [];
 
 export class CardSearchEngine {
   private engine: Document<SearchEntry, false>;

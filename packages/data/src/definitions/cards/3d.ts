@@ -11,6 +11,7 @@ export const ThreeDimension: CardSetDef = {
       cards: [
         {
           name: "Traveling Companion",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/howard_04.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -23,6 +24,7 @@ export const ThreeDimension: CardSetDef = {
         },
         {
           name: "Rebel Without a Cause",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/howard_03.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -38,6 +40,7 @@ export const ThreeDimension: CardSetDef = {
         },
         {
           name: "Right Place, Wrong Time",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/howard_02.png",
           hc: 2,
           rarity: 2,
           cost: 5,
@@ -53,6 +56,7 @@ export const ThreeDimension: CardSetDef = {
         },
         {
           name: "Interplanetary Visitor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/howard_01.png",
           hc: 5,
           rarity: 3,
           cost: 7,
@@ -73,6 +77,7 @@ export const ThreeDimension: CardSetDef = {
       cards: [
         {
           name: "Form from Ooze",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/man_thing_04.png",
           hc: 4,
           rarity: 1,
           cost: 2,
@@ -89,6 +94,7 @@ export const ThreeDimension: CardSetDef = {
         },
         {
           name: "Burn the Fearful",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/man_thing_03.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -104,6 +110,7 @@ export const ThreeDimension: CardSetDef = {
         },
         {
           name: "Travel the Nexus of Realities",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/man_thing_02.png",
           hc: 1,
           rarity: 2,
           cost: 5,
@@ -117,6 +124,7 @@ export const ThreeDimension: CardSetDef = {
         },
         {
           name: "Eternity of Solitude",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/man_thing_01.png",
           hc: 4,
           rarity: 3,
           cost: 7,
@@ -138,6 +146,7 @@ export const ThreeDimension: CardSetDef = {
     {
       id: 11,
       name: "Circus of Crime",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/circus_of_crime.png",
       set: [9, 23],
       vAttack: "3",
       vp: 1,
@@ -158,6 +167,7 @@ export const ThreeDimension: CardSetDef = {
     {
       id: 12,
       name: "Spider-Slayer",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/spider-slayer-1.png",
       set: [9, 23],
       vAttack: "3",
       vp: 1,

@@ -10,6 +10,7 @@ export const SpiderManHomecoming: CardSetDef = {
       cards: [
         {
           name: "Head of Security",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/happy-hogan-04.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -21,6 +22,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Watchful Eye",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/happy-hogan-03.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -36,6 +38,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Loyal Friend",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/happy-hogan-02.png",
           hc: 5,
           rarity: 2,
           cost: 5,
@@ -47,6 +50,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Asset Management",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/happy-hogan-01.png",
           hc: 2,
           rarity: 3,
           cost: 5,
@@ -64,6 +68,7 @@ export const SpiderManHomecoming: CardSetDef = {
       cards: [
         {
           name: "Advanced Targeting System",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ht-spiderman_03.png",
           hc: 1,
           rarity: 1,
           cost: 2,
@@ -77,6 +82,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Recon Drone Connection",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ht-spiderman_04.png",
           hc: 5,
           rarity: 1,
           cost: 2,
@@ -88,6 +94,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Spider-Grip",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ht-spiderman_02.png",
           hc: 5,
           rarity: 2,
           cost: 2,
@@ -105,6 +112,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Friendly Neighborhood...",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ht-spiderman_01.png",
           hc: 5,
           rarity: 3,
           cost: 2,
@@ -129,6 +137,7 @@ export const SpiderManHomecoming: CardSetDef = {
       cards: [
         {
           name: "Avenger in Training",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/peter-parker-hc-03.png",
           hc: 2,
           rarity: 1,
           cost: 2,
@@ -145,6 +154,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Heightened Senses",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/peter-parker-hc-04.png",
           hc: 1,
           rarity: 1,
           cost: 2,
@@ -156,6 +166,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Homemade Web-Shooters",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/peter-parker-hc-02.png",
           hc: 5,
           rarity: 2,
           cost: 2,
@@ -172,6 +183,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Something is Happening",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/peter-parker-hc-01.png",
           hc: 4,
           rarity: 3,
           cost: 2,
@@ -194,6 +206,7 @@ export const SpiderManHomecoming: CardSetDef = {
       cards: [
         {
           name: "Ned",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/peters-allies-03.png",
           hc: 1,
           rarity: 1,
           cost: 2,
@@ -211,6 +224,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Michelle",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/peters-allies-04.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -225,6 +239,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Liz",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/peters-allies-02.png",
           hc: 2,
           rarity: 2,
           cost: 6,
@@ -239,6 +254,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "May Parker",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/peters-allies-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -266,6 +282,7 @@ export const SpiderManHomecoming: CardSetDef = {
       cards: [
         {
           name: "Genius, Billionaire...",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/tony-stark-03.png",
           hc: 5,
           rarity: 1,
           cost: 2,
@@ -277,6 +294,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Stay Out of Trouble",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/tony-stark-04.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -292,6 +310,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Little Grey Area",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/tony-stark-02.png",
           hc: 3,
           rarity: 2,
           cost: 5,
@@ -310,6 +329,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "As Usual, I Did All the Work",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/tony-stark-01.png",
           hc: 3,
           rarity: 3,
           cost: 7,
@@ -335,6 +355,7 @@ export const SpiderManHomecoming: CardSetDef = {
       cards: [
         {
           name: "Adrian Toomes",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/adrian-toomes-01.png",
           vAttack: "5+",
           abilities: [
             [
@@ -352,6 +373,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Epic Adrian Toomes",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/adrian-toomes-02.png",
           vAttack: "5+",
           epic: true,
           abilities: [
@@ -370,6 +392,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Don't Interfere",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/adrian-toomes-05.png",
           tactic: true,
           abilities: [
             [
@@ -382,6 +405,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "More Harm than Good",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/adrian-toomes-03.png",
           tactic: true,
           abilities: [
             [
@@ -394,6 +418,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Take Everything",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/adrian-toomes-06.png",
           tactic: true,
           abilities: [
             [
@@ -404,6 +429,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "The World's Changed",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/adrian-toomes-04.png",
           tactic: true,
           abilities: [
             [
@@ -424,6 +450,7 @@ export const SpiderManHomecoming: CardSetDef = {
       cards: [
         {
           name: "Vulture",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/vulture-01.png",
           vAttack: "8+",
           abilities: [
             [
@@ -441,6 +468,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Epic Vulture",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/vulture-02.png",
           vAttack: "10+",
           epic: true,
           abilities: [
@@ -459,6 +487,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Bird of Prey",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/vulture-05.png",
           tactic: true,
           abilities: [
             [
@@ -471,6 +500,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Lurking Shadow",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/vulture-06.png",
           tactic: true,
           abilities: [
             [
@@ -483,6 +513,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Mid Air Heist",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/vulture-03.png",
           tactic: true,
           abilities: [
             [
@@ -498,6 +529,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Winged Assault",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/vulture-04.png",
           tactic: true,
           abilities: [
             [
@@ -516,6 +548,7 @@ export const SpiderManHomecoming: CardSetDef = {
       cards: [
         {
           name: "Hybrid Alien Tech",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/salvagers-04.png",
           qtd: 2,
           vp: "4",
           vAttack: "4+",
@@ -539,6 +572,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Shocker #1",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/salvagers-03.png",
           qtd: 2,
           vp: "3",
           vAttack: "3+",
@@ -556,6 +590,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Shocker #2",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/salvagers-02.png",
           qtd: 2,
           vp: "3",
           vAttack: "5",
@@ -578,6 +613,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Tinkerer",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/salvagers-01.png",
           qtd: 2,
           vp: "2",
           vAttack: "4",
@@ -611,6 +647,7 @@ export const SpiderManHomecoming: CardSetDef = {
       cards: [
         {
           name: "Chitauri Weapon Assault",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/vulture-tech-03.png",
           qtd: 2,
           vp: "4",
           vAttack: "4+",
@@ -636,6 +673,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "High Tech Helmet",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/vulture-tech-02.png",
           qtd: 2,
           vp: "3",
           vAttack: "3+",
@@ -652,6 +690,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Razor Talons",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/vulture-tech-01.png",
           qtd: 2,
           vp: "2",
           vAttack: "2+",
@@ -669,6 +708,7 @@ export const SpiderManHomecoming: CardSetDef = {
         },
         {
           name: "Turbine Powered",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/vulture-tech-04.png",
           qtd: 2,
           vp: "5",
           vAttack: "5+",
@@ -689,6 +729,7 @@ export const SpiderManHomecoming: CardSetDef = {
     {
       id: 84,
       name: "Distract the Hero",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/scheme-distract-the-hero.png",
       cards: [
         {
           abilities: [
@@ -713,6 +754,7 @@ export const SpiderManHomecoming: CardSetDef = {
     {
       id: 85,
       name: "Explosion at the Washington Monument",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/scheme-explosion-at-the-washington-monument.png",
       cards: [
         {
           abilities: [
@@ -739,6 +781,7 @@ export const SpiderManHomecoming: CardSetDef = {
     {
       id: 86,
       name: "Ferry Disaster",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/scheme-ferry-disaster.png",
       cards: [
         {
           abilities: [
@@ -769,6 +812,7 @@ export const SpiderManHomecoming: CardSetDef = {
     {
       id: 87,
       name: "Scavenge Alien Weaponry",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/scheme-scavenge-alien-weaponry.png",
       cards: [
         {
           abilities: [

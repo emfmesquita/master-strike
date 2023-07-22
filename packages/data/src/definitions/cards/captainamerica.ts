@@ -10,6 +10,7 @@ export const CaptainAmerica: CardSetDef = {
       cards: [
         {
           name: "Sniper Squad",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/agent-x-13-04.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -28,6 +29,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Paramilitary Ops",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/agent-x-13-03.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -45,6 +47,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Spy Network",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/agent-x-13-02.png",
           hc: 1,
           rarity: 2,
           cost: 4,
@@ -65,6 +68,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Mobilize for War",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/agent-x-13-01.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -93,6 +97,7 @@ export const CaptainAmerica: CardSetDef = {
       cards: [
         {
           name: "Aerial Catch",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/falcon-03.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -106,6 +111,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Winged Salvation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/falcon-04.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -122,6 +128,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Flying Shield Block",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/falcon-02.png",
           hc: 5,
           rarity: 2,
           cost: 6,
@@ -132,6 +139,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Star-Spangled Hero",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/falcon-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -162,6 +170,7 @@ export const CaptainAmerica: CardSetDef = {
       cards: [
         {
           name: "Devoted Patriot",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/captain-america-1941-03.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -176,6 +185,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Storm the Beachhead",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/captain-america-1941-04.png",
           hc: 5,
           rarity: 1,
           cost: 5,
@@ -194,6 +204,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Liberate the Prisoners",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/captain-america-1941-02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -212,6 +223,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Punch Evil in the Face",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/captain-america-1941-01.png",
           hc: 2,
           rarity: 3,
           cost: 8,
@@ -234,6 +246,7 @@ export const CaptainAmerica: CardSetDef = {
       cards: [
         {
           name: "International Strike Force",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/steve-rogers-03.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -257,6 +270,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Reassign to Civilian Duty",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/steve-rogers-04.png",
           hc: 2,
           rarity: 1,
           cost: 5,
@@ -274,6 +288,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Shadow of Wars Past",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/steve-rogers-02.png",
           hc: 1,
           rarity: 2,
           cost: 4,
@@ -288,6 +303,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Save the World",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/steve-rogers-01.png",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -312,6 +328,7 @@ export const CaptainAmerica: CardSetDef = {
       cards: [
         {
           name: "Bionic Arm",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/winter-soldier-03.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -326,6 +343,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Sniper Nest",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/winter-soldier-04.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -341,6 +359,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "KGB Training",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/winter-soldier-02.png",
           hc: 1,
           rarity: 2,
           cost: 5,
@@ -356,6 +375,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "2>4",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/winter-soldier-01.png",
           hc: 5,
           rarity: 3,
           cost: 7,
@@ -386,6 +406,7 @@ export const CaptainAmerica: CardSetDef = {
       cards: [
         {
           name: "Arnim Zola",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/arnim-zola-01.png",
           vAttack: "6+",
           abilities: [
             [
@@ -405,6 +426,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Dominate the Weak",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/arnim-zola-02.png",
           tactic: true,
           abilities: [
             [
@@ -417,6 +439,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Computer-Uploaded Genius",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/arnim-zola-05.png",
           tactic: true,
           abilities: [
             [
@@ -429,6 +452,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Pet Projects",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/arnim-zola-04.png",
           tactic: true,
           abilities: [
             [
@@ -439,6 +463,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Crush Pacifist Resistance",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/arnim-zola-03.png",
           tactic: true,
           abilities: [
             [
@@ -460,6 +485,7 @@ export const CaptainAmerica: CardSetDef = {
       cards: [
         {
           name: "Baron Heinrich Zemo",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/baron-zemo-01.png",
           vAttack: "9+",
           abilities: [
             [
@@ -484,6 +510,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Fallen Idols",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/baron-zemo-02.png",
           tactic: true,
           abilities: [
             [
@@ -496,6 +523,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Finding Zemo",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/baron-zemo-03.png",
           tactic: true,
           abilities: [
             [
@@ -506,6 +534,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Hatred for the Avengers",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/baron-zemo-05.png",
           tactic: true,
           abilities: [
             [
@@ -518,6 +547,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Prisoners of War",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/baron-zemo-04.png",
           tactic: true,
           abilities: [
             [
@@ -538,6 +568,7 @@ export const CaptainAmerica: CardSetDef = {
       cards: [
         {
           name: "Captain Zolandia",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/zolas-creations-01.png",
           qtd: 2,
           vAttack: "6+",
           vp: "5",
@@ -556,6 +587,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Doughboy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/zolas-creations-04.png",
           qtd: 2,
           vAttack: "4+",
           vp: "3",
@@ -571,6 +603,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Man-Fish",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/zolas-creations-03.png",
           qtd: 2,
           vAttack: "5+",
           vp: "4",
@@ -592,6 +625,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Primus",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/zolas-creations-02.png",
           qtd: 2,
           vAttack: "3",
           vp: "3",
@@ -616,6 +650,7 @@ export const CaptainAmerica: CardSetDef = {
       cards: [
         {
           name: "Black Knight",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/masters-of-evil-03-1.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -638,6 +673,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Executioner",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/masters-of-evil-04-1.png",
           qtd: 2,
           vAttack: "6",
           vp: "4",
@@ -666,6 +702,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Melter (WWII)",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/masters-of-evil-01-2.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -688,6 +725,7 @@ export const CaptainAmerica: CardSetDef = {
         },
         {
           name: "Radioactive Man",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/masters-of-evil-02-1.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -721,6 +759,7 @@ export const CaptainAmerica: CardSetDef = {
     {
       id: 56,
       name: "Brainwash the Military",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/59Scheme(78).png",
       cards: [
         {
           abilities: [
@@ -753,6 +792,7 @@ export const CaptainAmerica: CardSetDef = {
     {
       id: 57,
       name: "Change the Outcome of WWII",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/58Scheme(77).png",
       cards: [
         {
           abilities: [
@@ -803,6 +843,7 @@ export const CaptainAmerica: CardSetDef = {
     {
       id: 58,
       name: "Go Back in Time to Slay Heroes' Ancestors",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/57Scheme(76).png",
       cards: [
         {
           abilities: [
@@ -829,6 +870,7 @@ export const CaptainAmerica: CardSetDef = {
     {
       id: 59,
       name: "Unbreakable Enigma Code, The",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/56Scheme(12).png",
       cards: [
         {
           abilities: [

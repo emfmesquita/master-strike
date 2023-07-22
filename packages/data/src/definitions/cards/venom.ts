@@ -10,6 +10,7 @@ export const Venom: CardSetDef = {
       cards: [
         {
           name: "Rending Claws",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/carnage-03.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -23,6 +24,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Carnivore",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/carnage-04.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -43,6 +45,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Gruesome Feast",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/carnage-02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -56,6 +59,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Feast or Famine",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/carnage-01.png",
           hc: 1,
           rarity: 3,
           cost: 8,
@@ -78,6 +82,7 @@ export const Venom: CardSetDef = {
       cards: [
         {
           name: "Devouring Drool",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-vn-04.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -106,6 +111,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Razor Teeth",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-vn-03.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -123,6 +129,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Symbiotic Adaptation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-vn-02.png",
           hc: 2,
           rarity: 2,
           cost: 6,
@@ -150,6 +157,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Insatiable Hunger",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-vn-01.png",
           hc: 2,
           rarity: 3,
           cost: 8,
@@ -187,6 +195,7 @@ export const Venom: CardSetDef = {
       cards: [
         {
           name: "Hungry for Action",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-rocket-04.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -200,6 +209,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Spring the Trap",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-rocket-03.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -215,6 +225,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Serious Overkill",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-rocket-02.png",
           hc: 3,
           rarity: 2,
           cost: 5,
@@ -228,6 +239,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Ultimate Survivor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-rocket-01.png",
           hc: 5,
           rarity: 3,
           cost: 7,
@@ -248,6 +260,7 @@ export const Venom: CardSetDef = {
       cards: [
         {
           name: "Cauldron of the Cosmos",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venomized-dr-strange-03.png",
           hc: 3,
           rarity: 1,
           cost: 2,
@@ -261,6 +274,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "See Future Timelines",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venomized-dr-strange-04.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -277,6 +291,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Complete the Grand Ritual",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venomized-dr-strange-02.png",
           hc: 2,
           rarity: 2,
           cost: 6,
@@ -292,6 +307,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Crystal of Kadavus",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venomized-dr-strange-01.png",
           hc: 3,
           rarity: 3,
           cost: 8,
@@ -315,6 +331,7 @@ export const Venom: CardSetDef = {
       cards: [
         {
           name: "Digest That Chimichanga",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venompool-04.png",
           hc: 4,
           rarity: 1,
           cost: 2,
@@ -339,6 +356,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Shenanigans",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venompool-03.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -350,6 +368,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Can I Get a Little Gratitude?",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venompool-02.png",
           hc: 2,
           rarity: 2,
           cost: 5,
@@ -366,6 +385,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Play to the Crowd",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venompool-01.png",
           hc: 4,
           rarity: 3,
           cost: 7,
@@ -404,6 +424,7 @@ export const Venom: CardSetDef = {
       cards: [
         {
           name: "Hybrid",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hybrid-01.png",
           abilities: [
             [
               "If you fight Hybrid while he's bonded to a Villain, defeat that Villain and rescue three Bystanders instead of taking a Tactic."
@@ -422,6 +443,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Epic Hybrid",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hybrid-02.png",
           vAttack: "8",
           epic: true,
           abilities: [
@@ -444,6 +466,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Alien Awakening",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hybrid-03.png",
           tactic: true,
           abilities: [
             [
@@ -456,6 +479,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Escaped Monstrosity",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hybrid-04.png",
           tactic: true,
           abilities: [
             [
@@ -468,6 +492,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Life Foundation Research",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hybrid-05.png",
           tactic: true,
           abilities: [
             [
@@ -481,6 +506,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Symbiotic Call",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/hybrid-06.png",
           tactic: true,
           abilities: [
             [
@@ -501,6 +527,7 @@ export const Venom: CardSetDef = {
       cards: [
         {
           name: "Poison Thanos",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/poison-thanos-01.png",
           vAttack: "12+",
           abilities: [
             [
@@ -521,6 +548,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Epic Poison Thanos",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/poison-thanos-02.png",
           vAttack: "13+",
           epic: true,
           abilities: [
@@ -544,6 +572,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Desperate Rescue",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/poison-thanos-06.png",
           tactic: true,
           abilities: [
             [
@@ -554,6 +583,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Poisoned Loyalties",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/poison-thanos-03.png",
           tactic: true,
           abilities: [
             [
@@ -564,6 +594,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Searing Poisons",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/poison-thanos-05.png",
           tactic: true,
           abilities: [
             [
@@ -574,6 +605,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Soul Seize",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/poison-thanos-04.png",
           tactic: true,
           abilities: [
             [
@@ -592,6 +624,7 @@ export const Venom: CardSetDef = {
       cards: [
         {
           name: "Agony",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/life-foundation-02.png",
           qtd: 1,
           vp: "3",
           vAttack: "3",
@@ -616,6 +649,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Dr. Carlton Drake",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/life-foundation-03.png",
           qtd: 1,
           vp: "3",
           vAttack: "5",
@@ -634,6 +668,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Lasher",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/life-foundation-01-1.png",
           qtd: 2,
           vp: "2",
           vAttack: "2",
@@ -650,6 +685,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Phage",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/life-foundation-06.png",
           qtd: 1,
           vp: "3",
           vAttack: "3",
@@ -666,6 +702,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Riot",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/life-foundation-04.png",
           qtd: 2,
           vp: "2",
           vAttack: "2",
@@ -688,6 +725,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Scream",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/life-foundation-05.png",
           qtd: 1,
           vp: "4",
           vAttack: "4",
@@ -710,6 +748,7 @@ export const Venom: CardSetDef = {
       cards: [
         {
           name: "Poison Captain America",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/poisons-03.png",
           qtd: 1,
           vAttack: "4",
           hc: 2,
@@ -739,6 +778,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Poison Dr. Octopus",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/poisons-07.png",
           qtd: 1,
           vAttack: "3",
           hc: 5,
@@ -762,6 +802,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Poison Hulk",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/poisons-02.png",
           qtd: 1,
           vAttack: "5",
           hc: 4,
@@ -789,6 +830,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Poison Sabretooth",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/poisons-05.png",
           qtd: 1,
           vAttack: "4",
           hc: 2,
@@ -813,6 +855,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Poison Scarlet Witch",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/poisons-06.png",
           qtd: 1,
           vAttack: "3",
           hc: 1,
@@ -839,6 +882,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Poison Spider-Man",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/poisons-08.png",
           qtd: 1,
           vAttack: "2",
           hc: 1,
@@ -862,6 +906,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Poison Storm",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/poisons-04.png",
           qtd: 1,
           vAttack: "3",
           hc: 3,
@@ -889,6 +934,7 @@ export const Venom: CardSetDef = {
         },
         {
           name: "Symbiotic Armor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/poisons-01.png",
           qtd: 1,
           vp: "6",
           vAttack: "1",
@@ -910,6 +956,7 @@ export const Venom: CardSetDef = {
     {
       id: 110,
       name: "Invasion of the Venom Symbiotes",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/100Scheme(9).png",
       cards: [
         {
           abilities: [
@@ -939,6 +986,7 @@ export const Venom: CardSetDef = {
     {
       id: 111,
       name: "Maximum Carnage",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/101Scheme(10).png",
       cards: [
         {
           abilities: [
@@ -967,6 +1015,7 @@ export const Venom: CardSetDef = {
     {
       id: 112,
       name: "Paralyzing Venom",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/102Scheme(11).png",
       cards: [
         {
           abilities: [
@@ -989,6 +1038,7 @@ export const Venom: CardSetDef = {
     {
       id: 113,
       name: "Symbiotic Absorption",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/103Scheme(12).png",
       cards: [
         {
           abilities: [

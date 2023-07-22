@@ -46,6 +46,16 @@
                 {{result.subtitle}}
               </p>
 
+              <v-container class="d-flex justify-center mb-6">
+                <v-img
+                  v-if="!!result.imageUrl"
+                  :max-width="imgWidth"
+                  :src="result.imageUrl"
+                >
+                </v-img>
+
+              </v-container>
+
               <v-expansion-panels :flat="true">
                 <v-expansion-panel>
                   <v-expansion-panel-header>
@@ -113,7 +123,17 @@ export default {
     },
     startupDuration() {
       return this.searchEngine.getStartupDuration();
-    }
+    },
+    imgWidth () {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 300;
+        case 'sm': return 400;
+        case 'md': return 300;
+        case 'lg': return 500;
+        case 'xl': return 500;
+      }
+      return 500;
+    },
   },
   methods: {
     makeSearch(newValue) {

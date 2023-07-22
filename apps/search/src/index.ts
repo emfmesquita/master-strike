@@ -1,17 +1,11 @@
-import { CardSearchEngine, RuleSearchEngine, rows } from '@master-strike/data';
+import { CardSearchEngine, RuleSearchEngine } from '@master-strike/data';
 import * as readline from 'readline';
-// import { writeFileSync } from 'fs';
-// import { json2csv } from 'json-2-csv';
 
 const cardSearcEngine = new CardSearchEngine();
 console.log(`${cardSearcEngine.getCardCount()} cards added`);
 
 const ruleSearcEngine = new RuleSearchEngine();
 console.log(`${ruleSearcEngine.getRulesCount()} rules added`);
-
-// json2csv(rows).then(csv => {
-//   writeFileSync('./cards.csv', csv);
-// });
 
 const question = () => {
   const rl = readline.createInterface({

@@ -10,6 +10,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "The Sword of S.H.I.E.L.D.",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cpt-marvel-04.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -26,6 +27,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Radiant Blast",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cpt-marvel-03.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -42,6 +44,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Dominate the Battlefield",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cpt-marvel-02.png",
           hc: 3,
           rarity: 2,
           cost: 6,
@@ -56,6 +59,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Higher, Further, Faster",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cpt-marvel-01.png",
           hc: 4,
           rarity: 3,
           cost: 7,
@@ -82,6 +86,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Balance the Darkforce",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/darkhawk-04.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -96,6 +101,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Hawk Dive",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/darkhawk-03.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -116,6 +122,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Travel to Nullspace",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/darkhawk-02.png",
           hc: 5,
           rarity: 2,
           cost: 6,
@@ -140,6 +147,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Warflight",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/darkhawk-01.png",
           hc: 5,
           rarity: 3,
           cost: 7,
@@ -180,6 +188,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Catlike Agility",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hellcat_04.png",
           hc: 2,
           rarity: 1,
           cost: 2,
@@ -196,6 +205,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Part-Time PI",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hellcat_03.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -216,6 +226,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Demon Sight",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hellcat_02.png",
           hc: 1,
           rarity: 2,
           cost: 5,
@@ -235,6 +246,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Second Chance at Life",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hellcat_01.png",
           hc: 2,
           rarity: 3,
           cost: 8,
@@ -254,6 +266,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Infrared Conversation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/photon-04.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -265,6 +278,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Ultraviolet Radiation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/photon-03.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -283,6 +297,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Light the Way",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/photon-02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -298,6 +313,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Coruscating Vengeance",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/photon-01.png",
           hc: 3,
           rarity: 3,
           cost: 8,
@@ -320,6 +336,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Too Fast to See",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/quicksilver-04.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -346,6 +363,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Perpetual Motion",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/quicksilver-03.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -361,6 +379,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Jittery Impatience",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/quicksilver-02.png",
           hc: 2,
           rarity: 2,
           cost: 6,
@@ -378,6 +397,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Around the World Punch",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/quicksilver-01.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -406,6 +426,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Mysterious Identity",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ronin-04.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -423,6 +444,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Storm of Arrows",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ronin-03.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -440,6 +462,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Haunted by Loss",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ronin-02.png",
           hc: 2,
           rarity: 2,
           cost: 5,
@@ -454,6 +477,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Brooding Fury",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ronin-01.png",
           hc: 4,
           rarity: 3,
           cost: 7,
@@ -479,6 +503,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Hex Bolt",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/scarlet-witch-03.png",
           hc: 3,
           rarity: 1,
           cost: 2,
@@ -492,6 +517,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Alter Reality",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/scarlet-witch-04.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -511,6 +537,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Chaos Magic",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/scarlet-witch-02.png",
           hc: 1,
           rarity: 2,
           cost: 4,
@@ -522,6 +549,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Warp Time and Space",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/scarlet-witch-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -548,6 +576,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Accelerate",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/speed_03.png",
           hc: 2,
           rarity: 1,
           cost: 2,
@@ -565,6 +594,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Speedy Delivery",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/speed_04.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -579,6 +609,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Race to the Rescue",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/speed_02.png",
           hc: 1,
           rarity: 2,
           cost: 5,
@@ -603,6 +634,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Break the Sound Barrier",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/speed_01.png",
           hc: 1,
           rarity: 3,
           cost: 8,
@@ -630,6 +662,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Simulated Target Practice",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/war-machine-04.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -644,6 +677,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Military-Industrial Complex",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/war-machine-03.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -661,6 +695,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Hypersonic Cannon",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/war-machine-02.png",
           hc: 3,
           rarity: 2,
           cost: 5,
@@ -677,6 +712,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Overwhelming Firepower",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/war-machine-01.png",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -699,6 +735,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Grim Reaper",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/grim-reaper-01.png",
           vAttack: "8+",
           abilities: [
             [
@@ -729,6 +766,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Epic Grim Reaper",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/grim-reaper-02.png",
           vAttack: "9+",
           epic: true,
           abilities: [
@@ -760,6 +798,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Carnival of Concussions",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/grim-reaper-03.png",
           tactic: true,
           overrideType: 4,
           overrideSubType: 2,
@@ -778,6 +817,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Cult of Skulls",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/grim-reaper-04.png",
           tactic: true,
           overrideType: 4,
           overrideSubType: 2,
@@ -796,6 +836,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Maze of Bones",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/grim-reaper-05.png",
           tactic: true,
           overrideType: 4,
           overrideSubType: 2,
@@ -814,6 +855,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Prison of Coffins",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/grim-reaper-06.png",
           tactic: true,
           overrideType: 4,
           overrideSubType: 2,
@@ -844,6 +886,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "The Hood",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-hood-01.png",
           vAttack: "9+",
           abilities: [
             { keyword: 58 },
@@ -859,6 +902,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Epic Hood",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-hood-02.png",
           vAttack: "10+",
           epic: true,
           abilities: [
@@ -875,6 +919,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Demonic Revelation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-hood-05.png",
           tactic: true,
           abilities: [
             [
@@ -885,6 +930,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Focus Magic Through Guns",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-hood-04.png",
           tactic: true,
           abilities: [
             [
@@ -902,6 +948,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Paean to Dormammu",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-hood-03.png",
           tactic: true,
           abilities: [
             [
@@ -912,6 +959,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "The Hood's Warehouse",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/the-hood-06.png",
           tactic: true,
           overrideType: 4,
           overrideSubType: 2,
@@ -938,6 +986,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Mandarin",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mandarin-01.png",
           vAttackAsterisk: true,
           abilities: [
             [
@@ -968,6 +1017,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Epic Mandarin",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mandarin-02.png",
           vAttack: "26",
           vAttackAsterisk: true,
           epic: true,
@@ -1000,6 +1050,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Circles Unbroken",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mandarin-04.png",
           tactic: true,
           abilities: [
             [
@@ -1010,6 +1061,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Dragon of Heaven Spaceship",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mandarin-03.png",
           vAttack: "9",
           tactic: true,
           overrideType: 4,
@@ -1033,6 +1085,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Intertwining Powers",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mandarin-05.png",
           tactic: true,
           abilities: [
             [
@@ -1043,6 +1096,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Rings Seek Their True Hand",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/mandarin-06.png",
           tactic: true,
           abilities: [
             [
@@ -1060,6 +1114,7 @@ export const Revelations: CardSetDef = {
     {
       id: 33,
       name: "HYDRA Base",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/location-hydra-base.png",
       vAttack: "2+",
       vp: 1,
       cards: [
@@ -1090,6 +1145,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Daimonic, The White Light",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/mandarins-rings-10.png",
           abilities: [
             [
               { bold: "Fight" },
@@ -1099,6 +1155,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Incandescence, The Flame Blast",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/mandarins-rings-09.png",
           abilities: [
             [
               { bold: "Fight" },
@@ -1108,6 +1165,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Influence, The Impact Beam",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/mandarins-rings-05.png",
           abilities: [
             [
               { bold: "Fight" },
@@ -1120,6 +1178,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Liar, The Mento-Intensifier",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/mandarins-rings-06.png",
           abilities: [
             [
               { bold: "Fight" },
@@ -1129,6 +1188,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Lightning, The Electro-Blast",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/mandarins-rings-07.png",
           abilities: [
             [
               { bold: "Fight" },
@@ -1138,6 +1198,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Nightbringer, The Black Light",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/mandarins-rings-08.png",
           abilities: [
             [
               { bold: "Fight" },
@@ -1149,6 +1210,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Remaker, The Matter Rearranger",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/mandarins-rings-03.png",
           abilities: [
             [
               { bold: "Fight" },
@@ -1158,6 +1220,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Spectral, The Disintegration Beam",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/mandarins-rings-04.png",
           abilities: [
             [
               { bold: "Fight" },
@@ -1167,6 +1230,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Spin, The Vortex Beam",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/mandarins-rings-01.png",
           abilities: [
             [
               { bold: "Fight" },
@@ -1176,6 +1240,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Zero, The Ice Blast",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/mandarins-rings-02.png",
           abilities: [
             [
               { bold: "Fight" },
@@ -1193,6 +1258,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Mister Hyde",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/army-of-evil-01.png",
           qtd: 2,
           vp: "4",
           vAttack: "6",
@@ -1215,6 +1281,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Klaw",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/army-of-evil-03.png",
           qtd: 2,
           vp: "3",
           vAttack: "5",
@@ -1239,6 +1306,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Dome of Darkforce",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/location-army-of-evil.png",
           qtd: 1,
           vp: "5",
           vAttack: "7",
@@ -1259,6 +1327,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Count Nefaria",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/army-of-evil-04.png",
           qtd: 1,
           vp: "5",
           vAttack: "7",
@@ -1289,6 +1358,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Blackout",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/army-of-evil-02.png",
           qtd: 2,
           vp: "2",
           vAttack: "4",
@@ -1317,6 +1387,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Ares",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-avengers-02.png",
           qtd: 1,
           vp: "6",
           vAttack: "6+",
@@ -1332,6 +1403,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Captain Marvel (Noh-Varr)",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-avengers-06.png",
           qtd: 1,
           vp: "3",
           vAttack: "3+",
@@ -1353,6 +1425,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Dark Hawkeye (Bullseye)",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-avengers-03.png",
           qtd: 1,
           vp: "4",
           vAttack: "4+",
@@ -1370,6 +1443,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Dark Ms. Marvel (Moonnstone)",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-avengers-05.png",
           qtd: 1,
           vp: "4",
           vAttack: "4+",
@@ -1385,6 +1459,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Dark Spider-Man (Scorpion)",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-avengers-07.png",
           qtd: 1,
           vp: "2",
           vAttack: "2+",
@@ -1400,6 +1475,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Dark Wolverine (Daken)",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-avengers-01.png",
           qtd: 1,
           vp: "5",
           vAttack: "5+",
@@ -1423,6 +1499,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Sentry",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/dark-avengers-04.png",
           qtd: 1,
           vp: "5",
           vAttack: "7+",
@@ -1445,6 +1522,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Sentry's Watchtower",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/location-dark-avengers.png",
           qtd: 1,
           vp: "5",
           vAttack: "8",
@@ -1472,6 +1550,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Cancer",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/hoods-gang-01.png",
           qtd: 2,
           vp: "2",
           vAttack: "3+",
@@ -1493,6 +1572,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Chemistro",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/hoods-gang-04.png",
           qtd: 2,
           vp: "3",
           vAttack: "4+",
@@ -1509,6 +1589,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Madam Masque",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/hoods-gang-03.png",
           qtd: 2,
           vp: "4",
           vAttack: "5+",
@@ -1530,6 +1611,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "The Brothers Grimm",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/hoods-gang-02.png",
           qtd: 1,
           vp: "2",
           vAttack: "2",
@@ -1548,6 +1630,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "The Dark Dimension",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/hoods-gang-location.png",
           qtd: 1,
           vp: "5",
           vAttack: "9",
@@ -1575,6 +1658,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Carnival of Wonders",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/lethal-legion-04.png",
           qtd: 1,
           vp: "3",
           vAttack: "5",
@@ -1587,6 +1671,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Laser Maze",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/location-lethal-legion-02.png",
           qtd: 1,
           vp: "5",
           vAttack: "7",
@@ -1601,6 +1686,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Living Laser",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/lethal-legion-01.png",
           qtd: 1,
           vp: "5",
           vAttack: "6+",
@@ -1631,6 +1717,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "M'Baku",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/lethal-legion-05.png",
           qtd: 1,
           vp: "4",
           vAttack: "5+",
@@ -1661,6 +1748,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Power Man (Erik Josten)",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/lethal-legion-02.png",
           qtd: 1,
           vp: "4",
           vAttack: "5+",
@@ -1683,6 +1771,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Swordsman",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/lethal-legion-06.png",
           qtd: 1,
           vp: "3",
           vAttack: "4+",
@@ -1707,6 +1796,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "“The Raft“ Prison",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/lethal-legion-03.png",
           qtd: 1,
           vp: "4",
           vAttack: "6",
@@ -1719,6 +1809,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "White Gorilla Cult",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/location-lethal-legion-01.png",
           qtd: 1,
           vp: "4",
           vAttack: "6",
@@ -1741,6 +1832,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Earthquake Drains the Ocean",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/104Scheme(19).png",
           abilities: [
             [
               { bold: "Setup" },
@@ -1764,6 +1856,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Tsunami Crushes the Coast",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/105Scheme(105).png",
           transformed: true,
           abilities: [
             [
@@ -1790,6 +1883,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "House of M",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/108Scheme(107).png",
           abilities: [
             [
               { bold: "Setup" },
@@ -1824,6 +1918,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "”No More Mutants”",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/109Scheme(108).png",
           transformed: true,
           abilities: [
             [
@@ -1855,6 +1950,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "Secret HYDRA Corruption",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/110Scheme(109).png",
           abilities: [
             [
               { bold: "Setup" },
@@ -1879,6 +1975,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Open HYDRA Revolution",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/111Scheme(110).png",
           transformed: true,
           abilities: [
             [
@@ -1910,6 +2007,7 @@ export const Revelations: CardSetDef = {
       cards: [
         {
           name: "The Korvac Saga",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/106Scheme(20).png",
           abilities: [
             [
               { bold: "Setup" },
@@ -1925,6 +2023,7 @@ export const Revelations: CardSetDef = {
         },
         {
           name: "Korvac Revealed",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/107Scheme(106).png",
           transformed: true,
           abilities: [
             [

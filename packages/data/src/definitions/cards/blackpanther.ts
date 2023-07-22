@@ -10,6 +10,7 @@ export const BlackPanther: CardSetDef = {
       cards: [
         {
           name: "Unseen Protector",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/KingBlackPanther_2Common.png",
           hc: 2,
           hc2: 1,
           rarity: 1,
@@ -35,6 +36,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Vibranium Claws",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/KingBlackPanther_3Common.png",
           hc: 2,
           hc2: 5,
           rarity: 1,
@@ -64,6 +66,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Heart-Shaped Herb",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/KingBlackPanther_4Uncommon.png",
           hc: 4,
           hc2: 1,
           rarity: 2,
@@ -87,6 +90,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Unite the Tribes of Wakanda",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/KingBlackPanther_1Rare.png",
           hc: 4,
           hc2: 3,
           rarity: 3,
@@ -127,6 +131,7 @@ export const BlackPanther: CardSetDef = {
       cards: [
         {
           name: "Hurricane Winds",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/QueenStormofWakanda_2Common.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -148,6 +153,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Torrential Downpour",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/QueenStormofWakanda_3Common.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -176,6 +182,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Forked Lightning",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/QueenStormofWakanda_4Uncommon.png",
           hc: 1,
           hc2: 3,
           rarity: 2,
@@ -198,6 +205,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Thunderous Tempest",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/QueenStormofWakanda_1Rare.png",
           hc: 3,
           rarity: 3,
           cost: 8,
@@ -231,6 +239,7 @@ export const BlackPanther: CardSetDef = {
       cards: [
         {
           name: "Vibranium Experiments",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/PrincessShuri_2Common.png",
           hc: 5,
           rarity: 1,
           cost: 2,
@@ -256,6 +265,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Kimoyo Beads",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/PrincessShuri_3Common.png",
           hc: 5,
           hc2: 3,
           rarity: 1,
@@ -275,6 +285,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Shock Net",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/PrincessShuri_4Uncommon.png",
           hc: 3,
           rarity: 2,
           cost: 6,
@@ -293,6 +304,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Become the Next Black Panther",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/PrincessShuri_1Rare.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -319,6 +331,7 @@ export const BlackPanther: CardSetDef = {
       cards: [
         {
           name: "To My Last Breath",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/GeneralOkoye_2Common.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -342,6 +355,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Lead the Dora Milaje",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/GeneralOkoye_3Common.png",
           hc: 4,
           hc2: 2,
           rarity: 1,
@@ -360,6 +374,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Sovereign Bodyguard",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/GeneralOkoye_4Uncommon.png",
           hc: 4,
           rarity: 2,
           cost: 5,
@@ -374,6 +389,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Direct the Agents of Wakanda",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/GeneralOkoye_1Rare.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -399,13 +415,14 @@ export const BlackPanther: CardSetDef = {
       cards: [
         {
           name: "Secret Assignment",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WhiteWolf_2Common.png",
           hc: 1,
           rarity: 1,
           cost: 3,
           recruit: "2+",
           abilities: [
             [
-              { hc: 1},
+              { hc: 1 },
               " ",
               { keyword: 83 },
               ": ",
@@ -426,13 +443,14 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Cloaking Tech Ambush",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WhiteWolf_3Common.png",
           hc: 5,
           rarity: 1,
           cost: 4,
           attack: "2",
           abilities: [
             [
-              { hc: 5},
+              { hc: 5 },
               " ",
               { keyword: 83 },
               ": ",
@@ -450,6 +468,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Command the Hatut Zeraze",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WhiteWolf_4Uncommon.png",
           hc: 1,
           hc2: 5,
           rarity: 2,
@@ -473,6 +492,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Reflective Vibranium Armor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WhiteWolf_1Rare.png",
           hc: 5,
           rarity: 3,
           cost: 7,
@@ -507,6 +527,7 @@ export const BlackPanther: CardSetDef = {
       cards: [
         {
           name: "Killmonger",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/Killmonger.png",
           vAttackAsterisk: true,
           abilities: [
             [
@@ -538,6 +559,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Epic Killmonger",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/Killmonger_Epic.png",
           vAttack: "6",
           vAttackAsterisk: true,
           epic: true,
@@ -573,6 +595,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "A Scar for Every Kill",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KillmongerTactic1.png",
           tactic: true,
           abilities: [
             [
@@ -586,6 +609,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Rite of Challenge",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KillmongerTactic3.png",
           tactic: true,
           abilities: [
             [
@@ -599,6 +623,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Throw from the Waterfall",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KillmongerTactic4.png",
           tactic: true,
           abilities: [
             [
@@ -609,6 +634,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Altar of Resurrection",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KillmongerTactic2.png",
           tactic: true,
           abilities: [
             [
@@ -630,6 +656,7 @@ export const BlackPanther: CardSetDef = {
       cards: [
         {
           name: "Klaw",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/Klaw.png",
           vAttack: "8+",
           abilities: [
             [
@@ -649,6 +676,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Epic Klaw",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/Klaw_Epic.png",
           vAttack: "10+",
           epic: true,
           abilities: [
@@ -669,6 +697,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Cohesive Sound Construct",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KlawTactic1.png",
           tactic: true,
           abilities: [
             [
@@ -679,6 +708,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Convert Matter to Sound",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KlawTactic2.png",
           tactic: true,
           abilities: [
             [
@@ -689,6 +719,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Ultrasonic Boom",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KlawTactic4.png",
           tactic: true,
           abilities: [
             [
@@ -699,6 +730,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Cruelty Provokes Resistance",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KlawTactic3.png",
           tactic: true,
           abilities: [
             [
@@ -717,6 +749,7 @@ export const BlackPanther: CardSetDef = {
       cards: [
         {
           name: "Preyy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/KillmongersLeaguePreyy.png",
           qtd: 2,
           vAttack: "3",
           vAttackAsterisk: true,
@@ -748,6 +781,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Malice",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/KillmongersLeagueMalice.png",
           qtd: 2,
           vAttack: "4",
           vAttackAsterisk: true,
@@ -777,6 +811,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Baron Macabre",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/KillmongersLeagueBaronMacabre.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -795,6 +830,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Venomm",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/KillmongersLeagueVenomm.png",
           qtd: 2,
           vAttack: "9",
           vp: "4",
@@ -827,6 +863,7 @@ export const BlackPanther: CardSetDef = {
       cards: [
         {
           name: "Nightshade",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/EnemiesofWakandaNightshade.png",
           qtd: 2,
           vAttack: "3+",
           vp: "2",
@@ -852,6 +889,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Jakarra",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/EnemiesofWakandaJakarra.png",
           qtd: 2,
           vAttack: "4+",
           vp: "3",
@@ -872,6 +910,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Tetu",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/EnemiesofWakandaTetu.png",
           qtd: 2,
           vAttack: "4+",
           vp: "3",
@@ -901,6 +940,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Zenzi",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/EnemiesofWakandaZenzi.png",
           qtd: 1,
           vAttack: "5+",
           vp: "4",
@@ -923,6 +963,7 @@ export const BlackPanther: CardSetDef = {
         },
         {
           name: "Reverend Achebe",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/EnemiesofWakandaReverendAchebe.png",
           qtd: 1,
           vAttack: "6+",
           vp: "5",
@@ -948,6 +989,7 @@ export const BlackPanther: CardSetDef = {
     {
       id: 158,
       name: "Seize the Wakandan Throne",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/SeizetheWakandanThrone.png",
       cards: [
         {
           abilities: [
@@ -980,6 +1022,7 @@ export const BlackPanther: CardSetDef = {
     {
       id: 159,
       name: "Poison Lakes with Nanite Microbots",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/PoisonLakeswithNaniteMicrobots.png",
       cards: [
         {
           abilities: [
@@ -1011,6 +1054,7 @@ export const BlackPanther: CardSetDef = {
     {
       id: 160,
       name: "Plunder Wakanda's Vibranium",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/PlunderWakandasVibranium.png",
       cards: [
         {
           abilities: [
@@ -1044,6 +1088,7 @@ export const BlackPanther: CardSetDef = {
     {
       id: 161,
       name: "Provoke a Clash of Nations",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/ProvokeaClashofNations.png",
       cards: [
         {
           abilities: [

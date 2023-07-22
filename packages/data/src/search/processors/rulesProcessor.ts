@@ -1,6 +1,6 @@
 import { Metadata } from "../..";
 import { KeywordDefinitions, RuleDefinitions } from "../../definitions";
-import { RuleSearchResult } from "../ruleSearchTypes";
+import { RuleSearchResult, RuleType } from "../ruleSearchTypes";
 
 export const processRules = (addRule: (rule: RuleSearchResult) => void) => {
   Object.entries(KeywordDefinitions).forEach(entry => {
@@ -8,15 +8,19 @@ export const processRules = (addRule: (rule: RuleSearchResult) => void) => {
     addRule({
       name: metadata?.label,
       imageUrl: '',
+      type: RuleType.Keyword,
       details: entry[1]
     });
   });
 
   Object.entries(RuleDefinitions).forEach(entry => {
     const metadata = Metadata.rulesArray.find(m => m.value === entry[0])!;
+    if(['villainousweapons', 'unveiledschemes'].includes(metadata.value)) return;
+    const name = metadata.value === 'veiledschemes' ? 'Veiled and Unveiled Schemes' : metadata?.label;
     addRule({
-      name: metadata?.label,
+      name: name,
       imageUrl: '',
+      type: RuleType.ExtraRule,
       details: entry[1]
     });
   });

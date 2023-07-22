@@ -41,7 +41,7 @@ export const processMastermind = (addCard: (card: CardSearchResult) => void, mm:
     addCard({
       name: card.name,
       subtitle: Subtitles.mastermindSubtitle(card, mm, set.id),
-      imageUrl: '',
+      imageUrl: card.imageUrl || '',
       set: getSetLabel(set.id, mm.set),
       type: details.tactic ? CardType.MastermindTactic : CardType.Mastermind,
       group: mm.name,

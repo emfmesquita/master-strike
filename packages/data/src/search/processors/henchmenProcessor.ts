@@ -23,7 +23,7 @@ export const processHenchman = (addCard: (card: CardSearchResult) => void, hench
     addCard({
       name: card.name || henchman.name,
       subtitle: Subtitles.henchmanSubtitle(card, henchman, set.id),
-      imageUrl: '',
+      imageUrl: card.imageUrl || henchman.imageUrl || '',
       set: getSetLabel(set.id, henchman.set),
       type: CardType.Henchmen,
       group: henchman.name,

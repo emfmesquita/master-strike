@@ -10,6 +10,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Fulfill the Contract",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bullseye-03.png",
           hc: 2,
           rarity: 1,
           cost: 2,
@@ -26,6 +27,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Everything's a Weapon",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bullseye-04.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -39,6 +41,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Specialist Assassin",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bullseye-02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -54,6 +57,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Perfect Aim",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/bullseye-01.png",
           hc: 3,
           rarity: 3,
           cost: 7,
@@ -77,6 +81,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Brilliant Research",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/dr-octopus-03.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -90,6 +95,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Crazed Experiments",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/dr-octopus-04.png",
           hc: 5,
           rarity: 1,
           cost: 5,
@@ -102,6 +108,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Eighth Time's a Charm",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/dr-octopus-02.png",
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -117,6 +124,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Octo-Pulverize",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/dr-octopus-01.png",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -142,6 +150,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Electroshock Therapy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/electro-03.png",
           hc: 3,
           rarity: 1,
           cost: 2,
@@ -154,6 +163,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Shocking Robbery",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/electro-04.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -177,6 +187,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Supercharge",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/electro-02.png",
           hc: 2,
           rarity: 2,
           cost: 5,
@@ -192,6 +203,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Anti-Matter",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/electro-01.png",
           hc: 3,
           rarity: 3,
           cost: 7,
@@ -220,6 +232,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Enchant the Senses",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/enchantress-04.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -233,6 +246,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Soul Sacrifice",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/enchantress-03.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -248,6 +262,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Irresistible Bribe",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/enchantress-02.png",
           hc: 1,
           rarity: 2,
           cost: 6,
@@ -273,6 +288,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Unending Anguish",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/enchantress-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -296,6 +312,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Pumpkin Bombs",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/green-goblin-04.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -312,6 +329,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Goblin Glider",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/green-goblin-03.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -331,6 +349,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Unstable Kidnapper",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/green-goblin-02.png",
           hc: 2,
           rarity: 2,
           cost: 5,
@@ -344,6 +363,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Experimental Goblin Serum",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/green-goblin-01.png",
           hc: 5,
           rarity: 3,
           cost: 7,
@@ -364,6 +384,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Crimson Gem of Cyttorak",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/juggernaut-03.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -386,6 +407,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Size Matters",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/juggernaut-04.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -403,6 +425,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Runaway Train",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/juggernaut-02.png",
           hc: 4,
           rarity: 2,
           cost: 5,
@@ -415,6 +438,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Unstoppable Force",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/juggernaut-01.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -438,6 +462,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Pull the Strings",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/kingpin-03-1.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -452,6 +477,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Recruitment Day",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/kingpin-04-1.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -465,6 +491,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Import Illegal Weapons",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/kingpin-02-1.png",
           hc: 5,
           rarity: 2,
           cost: 5,
@@ -480,6 +507,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Endless Underlings",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/kingpin-01-1.png",
           hc: 4,
           rarity: 3,
           cost: 8,
@@ -504,6 +532,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Ceaseless Tracker",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/kraven-03.png",
           hc: 2,
           rarity: 1,
           cost: 2,
@@ -521,6 +550,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Corner the Prey",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/kraven-04.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -536,6 +566,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Hunt Down",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/kraven-02.png",
           hc: 4,
           rarity: 2,
           cost: 5,
@@ -551,6 +582,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "He's the Best Around",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/kraven-01.png",
           hc: 2,
           rarity: 3,
           cost: 8,
@@ -574,6 +606,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "All Humans Are Expendable",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/loki-03-1.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -587,6 +620,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Illusionary Bindings",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/loki-04-1.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -605,6 +639,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Father of Lies",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/loki-02-1.png",
           hc: 1,
           rarity: 2,
           cost: 5,
@@ -617,6 +652,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "God of Mischief",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/loki-01-1.png",
           hc: 1,
           rarity: 3,
           cost: 8,
@@ -639,6 +675,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Magnetic Levitation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/magneto-03-1.png",
           hc: 3,
           rarity: 1,
           cost: 3,
@@ -655,6 +692,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Mutants Will Rule",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/magneto-04-1.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -674,6 +712,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Weapons from Scrap Metal",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/magneto-02-1.png",
           hc: 3,
           rarity: 2,
           cost: 5,
@@ -686,6 +725,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Master of Magnetism",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/magneto-01-1.png",
           hc: 3,
           rarity: 3,
           cost: 7,
@@ -712,6 +752,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Psychedelic Mist",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/mysterio-04.png",
           hc: 3,
           rarity: 1,
           cost: 2,
@@ -729,6 +770,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Shifting Decoy",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/mysterio-03.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -752,6 +794,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Holographic Illusion",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/mysterio-02.png",
           hc: 5,
           rarity: 2,
           cost: 5,
@@ -767,6 +810,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "False Reflection",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/mysterio-01.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -805,6 +849,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Show Your True Colors",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/mystique-04.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -820,6 +865,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Hidden Weapons",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/mystique-03.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -837,6 +883,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Turn the Tide",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/mystique-02.png",
           hc: 2,
           rarity: 2,
           cost: 4,
@@ -848,6 +895,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Spy Games",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/mystique-01.png",
           hc: 1,
           rarity: 3,
           cost: 7,
@@ -873,6 +921,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Leap of the Tiger",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sabretooth-03.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -890,6 +939,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Take One for the Team",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sabretooth-04.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -904,6 +954,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Stealthy Predator",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sabretooth-02.png",
           hc: 1,
           rarity: 2,
           cost: 2,
@@ -915,6 +966,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Upper Hand",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/sabretooth-01.png",
           hc: 4,
           rarity: 3,
           cost: 7,
@@ -944,6 +996,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Encephalo-Ray",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ultron-04.png",
           hc: 5,
           rarity: 1,
           cost: 2,
@@ -963,6 +1016,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Army of Ultrons",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ultron-03.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -980,6 +1034,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Genetic Experimentation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ultron-02.png",
           hc: 5,
           rarity: 2,
           cost: 6,
@@ -995,6 +1050,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Molecular Rearrangement",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ultron-01.png",
           hc: 5,
           rarity: 3,
           cost: 8,
@@ -1027,6 +1083,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Symbiote Takeover",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-03.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -1040,6 +1097,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Devour",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-04.png",
           hc: 2,
           rarity: 1,
           cost: 4,
@@ -1055,6 +1113,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Horrify the Populace",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-02.png",
           hc: 4,
           rarity: 2,
           cost: 6,
@@ -1070,6 +1129,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Ravenous Greed",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/venom-01.png",
           hc: 2,
           rarity: 3,
           cost: 7,
@@ -1103,6 +1163,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Dr. Strange",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/dr-strange-01.png",
           abilities: [
             [
               { bold: "Always Leads" },
@@ -1118,6 +1179,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Book of the Vishanti",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/dr-strange-05.png",
           tactic: true,
           abilities: [
             [
@@ -1130,6 +1192,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Crimson Bands of Cyttorak",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/dr-strange-03.png",
           tactic: true,
           abilities: [
             [
@@ -1140,6 +1203,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Eye of Agamotto",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/dr-strange-04.png",
           tactic: true,
           abilities: [
             [
@@ -1150,6 +1214,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Winds of Watoomb",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/dr-strange-02.png",
           tactic: true,
           abilities: [
             [
@@ -1168,6 +1233,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Nick Fury",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/nick-fury-01-1.png",
           abilities: [
             [
               { bold: "Always Leads" },
@@ -1183,6 +1249,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Bounty on Fury's Head",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/nick-fury-03-1.png",
           tactic: true,
           abilities: [
             [
@@ -1195,6 +1262,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Purge Hydra",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/nick-fury-05.png",
           tactic: true,
           abilities: [
             [
@@ -1207,6 +1275,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "The Avengers Initiative",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/nick-fury-02-1.png",
           tactic: true,
           abilities: [
             [
@@ -1219,6 +1288,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Total Fury",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/nick-fury-04-1.png",
           tactic: true,
           abilities: [
             [
@@ -1241,6 +1311,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Odin",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/odin-01.png",
           vAttack: "10+",
           abilities: [
             [
@@ -1261,6 +1332,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Divine Justice",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/odin-02.png",
           tactic: true,
           abilities: [
             [
@@ -1271,6 +1343,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Might of Valhalla",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/odin-03.png",
           tactic: true,
           abilities: [
             [
@@ -1281,6 +1354,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Riches of Asgard",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/odin-04.png",
           tactic: true,
           abilities: [
             [
@@ -1294,6 +1368,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Ride of the Valkyries",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/odin-05.png",
           tactic: true,
           abilities: [
             [
@@ -1314,6 +1389,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Professor X",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/professor-x-01-1.png",
           vAttack: "8+",
           abilities: [
             [
@@ -1331,6 +1407,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Cerebro Device",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/professor-x-05.png",
           tactic: true,
           abilities: [
             [
@@ -1343,6 +1420,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Mental Dominance",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/professor-x-03-1.png",
           tactic: true,
           abilities: [
             [
@@ -1353,6 +1431,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Mightiest Mutant Mind",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/professor-x-04-1.png",
           tactic: true,
           abilities: [
             [
@@ -1365,6 +1444,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Telepathic Imprisonment",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/professor-x-02-1.png",
           tactic: true,
           abilities: [
             [
@@ -1382,6 +1462,7 @@ export const Villains: CardSetDef = {
     {
       id: 7,
       name: "Asgardian Warriors",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/asgardian-warrior.png",
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1398,6 +1479,7 @@ export const Villains: CardSetDef = {
     {
       id: 8,
       name: "Cops",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/cops.png",
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1414,6 +1496,7 @@ export const Villains: CardSetDef = {
     {
       id: 9,
       name: "Multiple Man",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/multiple-man.png",
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1430,6 +1513,7 @@ export const Villains: CardSetDef = {
     {
       id: 10,
       name: "S.H.I.E.L.D. Assault Squad",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/shield-assault-squad.png",
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1451,6 +1535,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Ant-Man",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/avengers-04.png",
           qtd: 2,
           vAttack: "3",
           vp: "2",
@@ -1463,6 +1548,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Captain America",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/avengers-01.png",
           qtd: 1,
           vAttack: "4+",
           vp: "5",
@@ -1498,6 +1584,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Hulk",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/avengers-05.png",
           qtd: 1,
           vAttack: "8",
           vp: "6",
@@ -1526,6 +1613,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Iron Man",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/avengers-06.png",
           qtd: 1,
           vAttack: "7",
           vp: "5",
@@ -1556,6 +1644,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Thor",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/avengers-02.png",
           qtd: 1,
           vAttack: "7",
           vp: "5",
@@ -1586,6 +1675,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Wasp",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/avengers-03.png",
           qtd: 2,
           vAttack: "1",
           vp: "4",
@@ -1604,6 +1694,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Daredevil",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/defenders-02.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -1626,6 +1717,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Iron Fist",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/defenders-03.png",
           qtd: 2,
           vAttack: "3",
           vp: "2",
@@ -1638,6 +1730,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Namor, The Sub-Mariner",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/defenders-01.png",
           qtd: 2,
           vAttack: "6",
           vp: "4",
@@ -1664,6 +1757,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Luke Cage",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/defenders-04.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -1684,6 +1778,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Black Panther",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/marvel-knights-03.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -1698,6 +1793,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Elektra",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/marvel-knights-02.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -1712,6 +1808,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Punisher",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/marvel-knights-04.png",
           qtd: 2,
           vAttack: "6",
           vp: "4",
@@ -1736,6 +1833,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Ghost Rider",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/marvel-knights-01.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -1765,6 +1863,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Black Cat",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/spider-friends-03.png",
           qtd: 2,
           vAttack: "2",
           vp: "2",
@@ -1783,6 +1882,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Firestar",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/spider-friends-01.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -1807,6 +1907,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Moon Knight",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/spider-friends-02.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -1821,6 +1922,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Spider-Man",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/spider-friends-04.png",
           qtd: 2,
           vAttack: "2",
           vp: "3",
@@ -1849,6 +1951,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Havok",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/uncanny-avengers-01.png",
           qtd: 2,
           vAttack: "4+",
           vp: "2",
@@ -1868,6 +1971,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Rogue",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/uncanny-avengers-04.png",
           qtd: 2,
           vAttack: "4+",
           vp: "2",
@@ -1885,6 +1989,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Scarlet Witch",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/uncanny-avengers-02.png",
           qtd: 2,
           vAttack: "5",
           vp: "3",
@@ -1900,6 +2005,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Wolverine",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/uncanny-avengers-03.png",
           qtd: 2,
           vAttack: "7+",
           vp: "5",
@@ -1931,6 +2037,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Colossus",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/uncanny-x-men-03.png",
           qtd: 2,
           vAttack: "5+",
           vp: "3",
@@ -1948,6 +2055,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Nightcrawler",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/uncanny-x-men-02.png",
           qtd: 2,
           vAttack: "4+",
           vp: "2",
@@ -1965,6 +2073,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Shadowcat",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/uncanny-x-men-01.png",
           qtd: 2,
           vAttack: "2*+",
           vp: "2",
@@ -1980,6 +2089,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Storm",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/uncanny-x-men-04.png",
           qtd: 2,
           vAttack: "4+",
           vp: "2",
@@ -2011,6 +2121,7 @@ export const Villains: CardSetDef = {
       cards: [
         {
           name: "Angel",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/x-men-first-class-03.png",
           qtd: 2,
           vAttack: "4+",
           vp: "2",
@@ -2028,6 +2139,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Iceman",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/x-men-first-class-01.png",
           qtd: 2,
           vAttack: "5+",
           vp: "3",
@@ -2047,6 +2159,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Jean Grey",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/x-men-first-class-04.png",
           qtd: 1,
           vAttack: "6+",
           vp: "4",
@@ -2075,6 +2188,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Beast",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/x-men-first-class-05.png",
           qtd: 2,
           vAttack: "5+",
           vp: "3",
@@ -2092,6 +2206,7 @@ export const Villains: CardSetDef = {
         },
         {
           name: "Cyclops",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/x-men-first-class-02.png",
           qtd: 1,
           vAttack: "6+",
           vp: "4",
@@ -2119,6 +2234,7 @@ export const Villains: CardSetDef = {
     {
       id: 25,
       name: "Build an Underground MegaVault Prison",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/21Scheme(1).png",
       cards: [
         {
           abilities: [
@@ -2141,6 +2257,7 @@ export const Villains: CardSetDef = {
     {
       id: 26,
       name: "Cage Villains in Power-Suppressing Cells",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/23Scheme(3).png",
       cards: [
         {
           abilities: [
@@ -2167,6 +2284,7 @@ export const Villains: CardSetDef = {
     {
       id: 27,
       name: "Crown Thor King of Asgard",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/26Scheme(6).png",
       cards: [
         {
           abilities: [
@@ -2193,6 +2311,7 @@ export const Villains: CardSetDef = {
     {
       id: 28,
       name: "Crush HYDRA",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/22Scheme(2).png",
       cards: [
         {
           abilities: [
@@ -2226,6 +2345,7 @@ export const Villains: CardSetDef = {
     {
       id: 29,
       name: "Graduation at Xavier's X-Academy",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/24Scheme(4).png",
       cards: [
         {
           abilities: [
@@ -2248,6 +2368,7 @@ export const Villains: CardSetDef = {
     {
       id: 30,
       name: "Infiltrate the Lair with Spies",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/25Scheme(5).png",
       cards: [
         {
           abilities: [
@@ -2274,6 +2395,7 @@ export const Villains: CardSetDef = {
     {
       id: 31,
       name: "Mass Produce War Machine Armor",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/28Scheme(8).png",
       cards: [
         {
           abilities: [
@@ -2303,6 +2425,7 @@ export const Villains: CardSetDef = {
     {
       id: 32,
       name: "Resurrect Heroes with Norn Stones",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/27Scheme(7).png",
       cards: [
         {
           abilities: [

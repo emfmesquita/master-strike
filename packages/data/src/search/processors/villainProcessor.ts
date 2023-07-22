@@ -29,7 +29,7 @@ export const processVillain = (addCard: (card: CardSearchResult) => void, villai
     addCard({
       name: card.name,
       subtitle: Subtitles.villainSubtitle(card, villain, set.id),
-      imageUrl: '',
+      imageUrl: card.imageUrl || '',
       set: getSetLabel(set.id),
       type: CardType.Villain,
       group: villain.name,

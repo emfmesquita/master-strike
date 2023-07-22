@@ -1,14 +1,26 @@
-import { Document, IndexOptionsForDocumentSearch } from 'flexsearch';
-import { SetDefinitions } from '../definitions';
-import { CardSearchResult } from './cardSearchTypes';
-import { processRules, processSet } from './processors';
+import { Document } from 'flexsearch';
+import { processRules } from './processors';
 import { RuleSearchResult } from './ruleSearchTypes';
+
+
+export interface RuleRow {
+  name: string;
+  type: string;
+  details: string;
+}
+
+export const ruleRows: RuleRow[] = [];
 
 
 const startRuleEngine = (engine: Document<RuleSearchResult, true>) => {
   let rulesAdded = 0;
   processRules((rule: RuleSearchResult) => {
     engine.add(rulesAdded, rule);
+    ruleRows.push({
+      name: rule.name,
+      type: rule.type,
+      details: JSON.stringify(rule, null, 2),
+    });
     rulesAdded++;
   });
   return rulesAdded;
