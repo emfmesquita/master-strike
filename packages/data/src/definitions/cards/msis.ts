@@ -540,6 +540,7 @@ export const MSInfinitySaga: CardSetDef = {
         },
         {
           name: "Hold On",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WandaAndVision_4Common.png",
           subtitle: "Wanda",
           hc: 1,
           rarity: 1,
@@ -578,6 +579,7 @@ export const MSInfinitySaga: CardSetDef = {
         },
         {
           name: "Magic",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WandaAndVision_6Uncommon.png",
           subtitle: "Wanda",
           hc: 3,
           rarity: 2,
@@ -616,6 +618,7 @@ export const MSInfinitySaga: CardSetDef = {
         },
         {
           name: "Rage",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WandaAndVision_5Uncommon.png",
           subtitle: "Wanda",
           hc: 1,
           rarity: 2,

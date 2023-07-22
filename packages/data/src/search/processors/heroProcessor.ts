@@ -35,9 +35,11 @@ export const processHero = (addCard: (card: CardSearchResult) => void, hero: Her
         half1: toHeroCardDetails(card, CardDetailsType.HeroCardDetails, hero.team),
         half2: toHeroCardDetails(secondHalfCard, CardDetailsType.HeroCardDetails, hero.team),
       }
+      const subtitle1 = Subtitles.heroSubtitle(card, hero);
+      const subtitle2 = Subtitles.heroSubtitle(secondHalfCard, hero);
       const rCard: CardSearchResult = {
         name: `${card.name} / ${secondHalfCard.name}`,
-        subtitle: Subtitles.heroSubtitle(card, hero),
+        subtitle: `${subtitle1} / ${subtitle2}`,
         imageUrl: card.imageUrl || '',
         set: getSetLabel(set.id),
         type: CardType.Hero,

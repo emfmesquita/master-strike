@@ -391,6 +391,7 @@ export const BlackWidow: CardSetDef = {
       cards: [
         {
           name: "Attune",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/FalconandWinterSoldier_2Common.png",
           subtitle: "Falcon",
           hc: 3,
           rarity: 1,
@@ -417,6 +418,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "Relocate",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/FalconandWinterSoldier_3Common.png",
           subtitle: "Falcon",
           hc: 2,
           rarity: 1,
@@ -451,6 +453,7 @@ export const BlackWidow: CardSetDef = {
         },
         {
           name: "New Wings",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/FalconandWinterSoldier_4Uncommon.png",
           subtitle: "Falcon",
           hc: 5,
           rarity: 2,

@@ -26,6 +26,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Inspire a Nation",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/captain-america-secret-avenger-04.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -95,6 +96,7 @@ export const CivilWar: CardSetDef = {
       cards: [
         {
           name: "Above",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cloak-and-dagger-03.png",
           subtitle: "Cloak",
           hc: 1,
           rarity: 1,
@@ -123,6 +125,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Flee",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cloak-and-dagger-04.png",
           subtitle: "Cloak",
           hc: 1,
           rarity: 1,
@@ -162,6 +165,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Darkness",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cloak-and-dagger-02.png",
           subtitle: "Cloak",
           hc: 1,
           rarity: 2,
@@ -244,6 +248,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Hidden Identity",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/daredevil-02-1.png",
           hc: 2,
           rarity: 2,
           cost: 6,
@@ -320,6 +325,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Talk with Birds",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/falcon-03-1.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -394,6 +400,7 @@ export const CivilWar: CardSetDef = {
       cards: [
         {
           name: "Brilliant Biochemist",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/goliath-04.png",
           hc: 5,
           rarity: 1,
           cost: 4,
@@ -498,6 +505,7 @@ export const CivilWar: CardSetDef = {
       cards: [
         {
           name: "Manly Dullard",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hercules-03.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -585,6 +593,7 @@ export const CivilWar: CardSetDef = {
       cards: [
         {
           name: "Half-Kree",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/hulkling-03.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -693,6 +702,7 @@ export const CivilWar: CardSetDef = {
       cards: [
         {
           name: "Cautious",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/luke-cage-03.png",
           hc: 4,
           rarity: 1,
           cost: 3,
@@ -805,6 +815,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Incredible Effort",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/patriot-02.png",
           hc: 1,
           rarity: 2,
           cost: 5,
@@ -889,6 +900,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Protect My Family",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/peter-parker-02.png",
           hc: 5,
           rarity: 2,
           cost: 2,
@@ -971,6 +983,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Double Down",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/speedball-02.png",
           hc: 3,
           rarity: 2,
           cost: 5,
@@ -1045,6 +1058,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Crush Ants",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/stature-03.png",
           hc: 4,
           rarity: 1,
           cost: 5,
@@ -1144,6 +1158,7 @@ export const CivilWar: CardSetDef = {
       cards: [
         {
           name: "Gathering Rain Clouds",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black-panther-and-storm-04.png",
           subtitle: "Storm",
           hc: 3,
           rarity: 1,
@@ -1175,6 +1190,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Lightning Strike",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black-panther-and-storm-03.png",
           subtitle: "Storm",
           hc: 3,
           rarity: 1,
@@ -1207,6 +1223,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Tsunami of Water",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black-panther-and-storm-02.png",
           subtitle: "Storm",
           hc: 3,
           rarity: 2,
@@ -1265,6 +1282,7 @@ export const CivilWar: CardSetDef = {
       cards: [
         {
           name: "Friendship",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/tigra-03.png",
           hc: 1,
           rarity: 1,
           cost: 2,
@@ -1386,6 +1404,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Lighter than Air",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/vision-02.png",
           hc: 3,
           rarity: 2,
           cost: 6,
@@ -1477,6 +1496,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Supersonic Spells",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/wiccan-02.png",
           hc: 3,
           rarity: 2,
           cost: 4,

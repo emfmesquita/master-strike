@@ -71,6 +71,7 @@ export const MSGuardiansOfTheGalaxy: CardSetDef = {
         },
         {
           name: "Give",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/msgg_star_lord_04.png",
           hc: 1,
           qtd: 2,
           rarity: 2,
@@ -205,6 +206,7 @@ export const MSGuardiansOfTheGalaxy: CardSetDef = {
         },
         {
           name: "Forgive",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/msgg_gamora_04.png",
           hc: 1,
           qtd: 2,
           rarity: 2,
@@ -292,6 +294,7 @@ export const MSGuardiansOfTheGalaxy: CardSetDef = {
         },
         {
           name: "Passion",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/rocket_groot_01.png",
           subtitle: "Rocket",
           hc: 5,
           rarity: 1,
@@ -324,6 +327,7 @@ export const MSGuardiansOfTheGalaxy: CardSetDef = {
         },
         {
           name: "Don't Press this Button",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/rocket_groot_03.png",
           subtitle: "Rocket",
           hc: 3,
           rarity: 1,
@@ -376,6 +380,7 @@ export const MSGuardiansOfTheGalaxy: CardSetDef = {
         },
         {
           name: "Tricky",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/rocket_groot_05.png",
           subtitle: "Rocket",
           hc: 5,
           qtd: 2,
@@ -470,6 +475,7 @@ export const MSGuardiansOfTheGalaxy: CardSetDef = {
         },
         {
           name: "I am Invisible",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/msgg_drax_02.png",
           hc: 2,
           rarity: 1,
           qtd: 3,
@@ -509,6 +515,7 @@ export const MSGuardiansOfTheGalaxy: CardSetDef = {
         },
         {
           name: "Remove his Spine",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/msgg_drax_05.png",
           hc: 4,
           qtd: 2,
           rarity: 2,
@@ -606,6 +613,7 @@ export const MSGuardiansOfTheGalaxy: CardSetDef = {
         },
         {
           name: "Selfless",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/mantis_02.png",
           hc: 2,
           rarity: 1,
           qtd: 3,

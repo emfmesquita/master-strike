@@ -25,6 +25,7 @@ export const XMen: CardSetDef = {
         },
         {
           name: "Blazing Flare",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/aurora-and-northstar-03-1.png",
           subtitle: "Aurora",
           hc: 3,
           rarity: 1,
@@ -337,6 +338,7 @@ export const XMen: CardSetDef = {
       cards: [
         {
           name: "Reliable",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/colossus-and-wolverine-04-1.png",
           subtitle: "Colossus",
           hc: 4,
           rarity: 1,
@@ -740,6 +742,7 @@ export const XMen: CardSetDef = {
       cards: [
         {
           name: "Bend Steel",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/legion-04-1.png",
           hc: 4,
           rarity: 1,
           divided: 1,
@@ -768,6 +771,7 @@ export const XMen: CardSetDef = {
         },
         {
           name: "Split Personality",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/legion-03-1.png",
           hc: 5,
           rarity: 1,
           divided: 1,
@@ -790,6 +794,7 @@ export const XMen: CardSetDef = {
         },
         {
           name: "Channel Time",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/legion-02-1.png",
           hc: 2,
           rarity: 2,
           divided: 1,

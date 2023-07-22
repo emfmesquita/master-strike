@@ -47,9 +47,10 @@ const process = async () => {
 
   let notFound = 0;
   let found = 0;
-  data.filter(d => d.Name && d.Name.indexOf('/') < 0).forEach((d, idx) => {
+  data.filter(d => d.Name).forEach((d, idx) => {
     let minSpacer = MIN_SPACER_CARD;
-    const nameEntry = `name: "${d.Name}",`;
+    const name = d.Name.indexOf(' / ') < 0 ? d.Name : d.Name.split(' / ')[0];
+    const nameEntry = `name: "${name}",`;
 
     const getSet = (row: ImageEntry) => {
       if (row.Set === 'Playable Marvel 3D Trading Cards - Dimensions') return 'Playable Marvel 3D Trading Cards';
@@ -66,7 +67,7 @@ const process = async () => {
 
     if (!file) {
       notFound++;
-      console.log(`Not found - ${idx}: ${d.Name} - ${d.Type} - ${d.Set}`);
+      console.log(`Not found - ${idx}: ${name} - ${d.Type} - ${d.Set}`);
     } else {
       let realSpacer = '';
       let hasImg = false;
@@ -97,7 +98,7 @@ const process = async () => {
 
   console.log(`Not found: ${notFound}`);
   console.log(`Found: ${found}`);
-  console.log(`All: ${data.filter(d => d.Name && d.Name.indexOf('/') < 0).length}`);
+  console.log(`All: ${data.filter(d => d.Name).length}`);
 
   dataFiles.forEach(f => {
     writeFileSync(f.path, f.content);
