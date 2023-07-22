@@ -6,9 +6,11 @@ const cardSearcEngine = new CardSearchEngine();
 console.log(`${cardSearcEngine.getCardCount()} cards added`);
 json2csv(cardSearcEngine.getAllCards().map(c=>c), {
   keys: [
-    { field: 'name', title: 'Name' },
     { field: 'set', title: 'Set' },
     { field: 'type', title: 'Type' },
+    { field: 'group', title: 'Group' },
+    { field: 'name', title: 'Name' },
+    { field: 'subtitle', title: 'Subtitle' },
     { field: 'imageUrl', title: 'Card Image URL' },
   ]
 }).then(csv => {

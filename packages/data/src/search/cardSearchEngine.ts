@@ -1,5 +1,5 @@
 import { Document, Id, IndexOptionsForDocumentSearch } from "flexsearch";
-import { ByCardType, ByCardTypeAndSet, ByCardTypeAndSetAndGroup, CardSearchResult } from "./cardSearchTypes";
+import { ByCardType, ByCardTypeAndSet, ByCardTypeAndSetAndGroup, CardSearchResult, CardType } from "./cardSearchTypes";
 import { SetDefinitions } from "../definitions";
 import { processSet } from "./processors";
 
@@ -74,6 +74,7 @@ export class CardSearchEngine {
         full: entry,
       });
 
+      // browser
       const bySet = this.byCardType[card.type];
       let safeBySet: ByCardTypeAndSet = {};
       if(bySet) {
@@ -87,11 +88,37 @@ export class CardSearchEngine {
 
       if(!byGroup[card.group]) byGroup[card.group] = [];
       byGroup[card.group].push(card);
+      // browser
 
       this.cardCount++;
     }
 
     Object.values(SetDefinitions).forEach(set => processSet(addCard, set));
+
+    // sort the set entries and group entries
+    Object.keys(this.byCardType).forEach(type => {
+      const cardType = type as CardType;
+      const byset = this.byCardType[cardType]!;
+      this.byCardType[cardType] = Object.keys(byset).sort().reduce(
+        (sortedBySet, key) => { 
+          sortedBySet[key] = byset[key]; 
+          return sortedBySet;
+        }, 
+        {} as ByCardTypeAndSet
+      );
+
+      Object.keys(byset).forEach(set => {
+        const byGroup = byset[set];
+        this.byCardType[cardType]![set] = Object.keys(byGroup).sort().reduce(
+          (sortedByGroup, key) => { 
+            sortedByGroup[key] = byGroup[key]; 
+            return sortedByGroup;
+          }, 
+          {} as ByCardTypeAndSetAndGroup
+        );
+      });
+    });
+
     this.startupDuration = Date.now() - startTime;
   }
 

@@ -1,4 +1,4 @@
-import { getSetLabel } from ".";
+import { getSets, setIdToLabel } from ".";
 import { CardSetDef, OopMastermindCardDef, SchemeDef, SchemeCardDef } from "../../definitions/cardTypes";
 import { Subtitles } from "../../utils";
 import { CardDetailsType, CardType, OopMastermindDetails, SchemeCardDetails, CardSearchResult } from "../cardSearchTypes";
@@ -22,14 +22,16 @@ export const processScheme = (addCard: (card: CardSearchResult) => void, scheme:
       } as SchemeCardDetails;
     }
 
-    addCard({
-      name: card.name || scheme.name,
-      subtitle: Subtitles.schemeSubtitle(card, set.id),
-      imageUrl: card.imageUrl || scheme.imageUrl || '',
-      set: getSetLabel(set.id),
-      type: CardType.Scheme,
-      group: scheme.name,
-      details,
+    getSets(set.id, scheme.set).forEach(setId => {
+      addCard({
+        name: card.name || scheme.name,
+        subtitle: Subtitles.schemeSubtitle(card, setId),
+        imageUrl: card.imageUrl || scheme.imageUrl || '',
+        set: setIdToLabel(setId),
+        type: CardType.Scheme,
+        group: scheme.name,
+        details,
+      });
     });
   });
 }

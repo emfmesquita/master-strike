@@ -15,11 +15,12 @@ export const processSet = (addCard: (card: CardSearchResult) => void, set: CardS
   set.schemes?.forEach(scheme => processScheme(addCard, scheme, set));
 }
 
-const setIdToLabel = (id: number) => setsArray[id - 1].label;
+export const setIdToLabel = (id: number) => setsArray[id - 1].label;
 
-export const getSetLabel = (setId: number, override?: number | number[]): string => {
-  if(!override || typeof override === 'number') return setIdToLabel(override || setId);
-  return override.map(setIdToLabel).join(' - ');
+export const getSets = (setId: number, override?: number | number[]): number[] => {
+  if(!override || typeof override === 'number') return [override || setId];
+  const ids = override.filter(id => id !== 9 && id != 20); // 3d and ms phase 1 not considered
+  return ids;
 }
 
 export { processRules } from './rulesProcessor';

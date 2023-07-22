@@ -1,4 +1,4 @@
-import { getSetLabel } from ".";
+import { getSets, setIdToLabel } from ".";
 import { CardSetDef, MastermindDef, MastermindCardDef, OopHeroCardDef, OopVillainCardDef } from "../../definitions/cardTypes";
 import { Subtitles } from "../../utils";
 import { CardDetailsType, CardType, MastermindCardDetails, OopHeroDetails, OopVillainDetails, CardSearchResult } from "../cardSearchTypes";
@@ -38,14 +38,16 @@ export const processMastermind = (addCard: (card: CardSearchResult) => void, mm:
       details = toMastermindCardDetails(mmCard, CardDetailsType.MastermindCardDetails, mm);
     }
     
-    addCard({
-      name: card.name,
-      subtitle: Subtitles.mastermindSubtitle(card, mm, set.id),
-      imageUrl: card.imageUrl || '',
-      set: getSetLabel(set.id, mm.set),
-      type: details.tactic ? CardType.MastermindTactic : CardType.Mastermind,
-      group: mm.name,
-      details,
+    getSets(set.id, mm.set).forEach(setId => {
+      addCard({
+        name: card.name,
+        subtitle: Subtitles.mastermindSubtitle(card, mm, setId),
+        imageUrl: card.imageUrl || '',
+        set: setIdToLabel(setId),
+        type: details.tactic ? CardType.MastermindTactic : CardType.Mastermind,
+        group: mm.name,
+        details,
+      });
     });
   });
 }

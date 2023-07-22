@@ -1,4 +1,4 @@
-import { getSetLabel } from ".";
+import { getSets, setIdToLabel } from ".";
 import { CardSetDef, HenchmanDef, HenchmanCardDef, OopHeroCardDef } from "../../definitions/cardTypes";
 import { Subtitles } from "../../utils";
 import { CardDetailsType, CardType, HenchmanCardDetails, OopHeroDetails, CardSearchResult } from "../cardSearchTypes";
@@ -20,14 +20,17 @@ export const processHenchman = (addCard: (card: CardSearchResult) => void, hench
       } as HenchmanCardDetails;
     }
 
-    addCard({
-      name: card.name || henchman.name,
-      subtitle: Subtitles.henchmanSubtitle(card, henchman, set.id),
-      imageUrl: card.imageUrl || henchman.imageUrl || '',
-      set: getSetLabel(set.id, henchman.set),
-      type: CardType.Henchmen,
-      group: henchman.name,
-      details,
+    getSets(set.id, henchman.set).forEach(setId => {
+      addCard({
+        name: card.name || henchman.name,
+        subtitle: Subtitles.henchmanSubtitle(card, henchman, setId),
+        imageUrl: card.imageUrl || henchman.imageUrl || '',
+        set: setIdToLabel(setId),
+        type: CardType.Henchmen,
+        group: henchman.name,
+        details,
+      });
+
     });
   });
 }

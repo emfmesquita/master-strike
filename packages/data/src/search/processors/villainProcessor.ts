@@ -1,4 +1,4 @@
-import { getSetLabel } from ".";
+import { setIdToLabel } from ".";
 import { CardSetDef, OopHeroCardDef, VillainDef, VillainCardDef } from "../../definitions/cardTypes";
 import { Subtitles } from "../../utils";
 import { CardDetailsType, CardType, OopHeroDetails, CardSearchResult, VillainCardDetails } from "../cardSearchTypes";
@@ -30,7 +30,7 @@ export const processVillain = (addCard: (card: CardSearchResult) => void, villai
       name: card.name,
       subtitle: Subtitles.villainSubtitle(card, villain, set.id),
       imageUrl: card.imageUrl || '',
-      set: getSetLabel(set.id),
+      set: setIdToLabel(set.id),
       type: CardType.Villain,
       group: villain.name,
       details,

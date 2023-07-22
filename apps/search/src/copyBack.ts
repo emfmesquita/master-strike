@@ -57,12 +57,17 @@ const process = async () => {
       if (row.Set === 'Core Set - Marvel Studios, Phase 1') return 'Core Set';
       return row.Set;
     }
-    const findFile = () => dataFiles.find(f => getSet(d) === f.set && f.content.indexOf(minSpacer + nameEntry) >= 0);
+    const findFile = (set: string) => dataFiles.find(f => set === f.set && f.content.indexOf(minSpacer + nameEntry) >= 0);
 
-    let file = findFile();
+    let fileSet = d.Set;
+    let file = findFile(fileSet);
+    if(!file && fileSet === 'Dimensions') {
+      fileSet = 'Playable Marvel 3D Trading Cards';
+      file = findFile(fileSet);
+    }
     if (!file && ['Scheme', 'Henchmen'].includes(d.Type)) {
       minSpacer = MIN_SPACER_GROUP;
-      file = findFile();
+      file = findFile(fileSet);
     }
 
     if (!file) {

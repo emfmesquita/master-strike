@@ -1139,7 +1139,7 @@ export const CoreSet: CardSetDef = {
       cards: [
         {
           name: "Loki",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/loki-01-2.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/loki-01.png",
           abilities: [
             [
               { bold: "Always Leads" },

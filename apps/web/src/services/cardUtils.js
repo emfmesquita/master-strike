@@ -205,6 +205,7 @@ const processCardGroups = cardType => {
     }
   });
 
+  allGroups = allGroups.filter(g => g.id >= 0);
   allGroups.forEach(group => {
     const cards = group.cards || [];
     cards.forEach(card => processCard(cardType, card, group));

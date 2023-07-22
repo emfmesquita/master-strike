@@ -1,4 +1,4 @@
-import { getSetLabel } from ".";
+import { getSets, setIdToLabel } from ".";
 import { CardSetDef, HeroDef, HeroCardDef } from "../../definitions/cardTypes";
 import { Subtitles } from "../../utils";
 import { CardDetailsType, CardType, DividedHeroCardDetails, HeroCardDetails, CardSearchResult } from "../cardSearchTypes";
@@ -41,23 +41,25 @@ export const processHero = (addCard: (card: CardSearchResult) => void, hero: Her
         name: `${card.name} / ${secondHalfCard.name}`,
         subtitle: `${subtitle1} / ${subtitle2}`,
         imageUrl: card.imageUrl || '',
-        set: getSetLabel(set.id),
+        set: setIdToLabel(set.id),
         type: CardType.Hero,
         group: hero.name,
         details,
       };
       addCard(rCard);
     } else {
-      const rCard: CardSearchResult = {
-        name: card.name,
-        subtitle: Subtitles.heroSubtitle(card, hero),
-        imageUrl: card.imageUrl || '',
-        set: getSetLabel(set.id, hero.set),
-        type: CardType.Hero,
-        group: hero.name,
-        details: toHeroCardDetails(card, CardDetailsType.HeroCardDetails, hero.team),
-      };
-      addCard(rCard);
+      getSets(set.id, hero.set).forEach(setId => {
+        const rCard: CardSearchResult = {
+          name: card.name,
+          subtitle: Subtitles.heroSubtitle(card, hero),
+          imageUrl: card.imageUrl || '',
+          set: setIdToLabel(setId),
+          type: CardType.Hero,
+          group: hero.name,
+          details: toHeroCardDetails(card, CardDetailsType.HeroCardDetails, hero.team),
+        };
+        addCard(rCard);
+      });
     }
   });
 }

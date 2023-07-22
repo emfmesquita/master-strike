@@ -1069,7 +1069,7 @@ export const BlackWidow: CardSetDef = {
     {
       id: 165,
       name: "Frame Heroes for Murder",
-      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/FrameHeroesforMurder.png.png",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/FrameHeroesforMurder.png",
       cards: [
         {
           abilities: [
