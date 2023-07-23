@@ -924,7 +924,7 @@ export const MSGuardiansOfTheGalaxy: CardSetDef = {
         },
         {
           name: "I'm a Celestial, Sweetheart",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ego_03.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ego_04.png",
           tactic: true,
           vAttack: "3",
           abilities: [
@@ -939,7 +939,7 @@ export const MSGuardiansOfTheGalaxy: CardSetDef = {
         },
         {
           name: "Cover All That Exists",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ego_04.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ego_03.png",
           tactic: true,
           vAttack: "3",
           abilities: [

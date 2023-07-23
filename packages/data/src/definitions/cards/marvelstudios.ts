@@ -11,7 +11,7 @@ export const MarvelStudios: CardSetDef = {
       cards: [
         {
           name: "Dangerous Rescue",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black-widow-04-1.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black-widow-03-1.png",
           hc: 1,
           rarity: 1,
           cost: 3,
@@ -25,7 +25,7 @@ export const MarvelStudios: CardSetDef = {
         },
         {
           name: "Mission Accomplished",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black-widow-03-1.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black-widow-04-1.png",
           hc: 5,
           rarity: 1,
           cost: 2,
@@ -76,7 +76,7 @@ export const MarvelStudios: CardSetDef = {
       cards: [
         {
           name: "Avengers Assemble!",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/captain-america-04-1.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/captain-america-03-1.png",
           hc: 2,
           rarity: 1,
           cost: 3,
@@ -92,7 +92,7 @@ export const MarvelStudios: CardSetDef = {
         },
         {
           name: "Perfect Teamwork",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/captain-america-03-1.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/captain-america-04-1.png",
           hc: 4,
           rarity: 1,
           cost: 4,
@@ -360,7 +360,7 @@ export const MarvelStudios: CardSetDef = {
       cards: [
         {
           name: "Battlefield Promotion",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nick-fury-04-2.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nick-fury-03-2.png",
           hc: 1,
           rarity: 1,
           cost: 4,
@@ -374,7 +374,7 @@ export const MarvelStudios: CardSetDef = {
         },
         {
           name: "High-Tech Weaponry",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nick-fury-03-2.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/nick-fury-04-2.png",
           hc: 5,
           rarity: 1,
           cost: 3,
@@ -612,7 +612,7 @@ export const MarvelStudios: CardSetDef = {
         },
         {
           name: "Cruel Ruler",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/loki-02-2.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/loki-04-2.png",
           tactic: true,
           abilities: [
             [
@@ -634,7 +634,7 @@ export const MarvelStudios: CardSetDef = {
         },
         {
           name: "Vanishing Illusions",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/loki-04-2.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/loki-02-2.png",
           tactic: true,
           abilities: [
             [
@@ -679,7 +679,7 @@ export const MarvelStudios: CardSetDef = {
         },
         {
           name: "Endless Resources",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/red-skull-03-1.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/red-skull-05-1.png",
           tactic: true,
           abilities: [
             [
@@ -693,7 +693,7 @@ export const MarvelStudios: CardSetDef = {
         },
         {
           name: "HYDRA Conspiracy",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/red-skull-05-1.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/red-skull-03-1.png",
           tactic: true,
           abilities: [
             [
@@ -704,7 +704,7 @@ export const MarvelStudios: CardSetDef = {
         },
         {
           name: "Negablast Grenades",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/red-skull-04-1.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/red-skull-02-1.png",
           tactic: true,
           abilities: [
             [
@@ -718,7 +718,7 @@ export const MarvelStudios: CardSetDef = {
         },
         {
           name: "Ruthless Dictator",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/red-skull-02-1.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/red-skull-04-1.png",
           tactic: true,
           abilities: [
             [

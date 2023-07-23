@@ -2,85 +2,80 @@
   <div>
     <shared-header />
 
-    <v-container fluid>
-      <v-row>
-        <v-col cols="12" md="3" sm="4" xs="12">
-          <v-treeview 
-            :items="items"
-            :active.sync="active"
-            dense
-            activatable
-            open-on-click
-          >
-          </v-treeview>
-        </v-col>
-        
-        <v-col cols="12" md="9" sm="8" xs="12">
-          <v-container>
-            <v-row>
-              <v-col :key="result.name + result.set" v-for="result in cards" cols="12" md="12" lg="6" xl="4">
-                <v-card elevation="2">
-                  <v-card-text>
-                    <p class="text-h6 text--primary mb-0">
-                      {{result.name}}
-                    </p>
-                    <p class="text-subtitle-1 mb-1">
-                      {{result.subtitle}}
-                    </p>
+    <v-navigation-drawer fixed :width="400" class="pt-16 pb-2">
+      <v-treeview 
+        :items="items"
+        :active.sync="active"
+        dense
+        activatable
+        open-on-click
+        class="text-body-2"
+      >
+      </v-treeview>
+    </v-navigation-drawer>
 
-                    <v-container class="d-flex justify-center mb-6">
-                      <v-img
-                        v-if="!!result.imageUrl"
-                        :max-width="imgWidth"
-                        :src="result.imageUrl"
-                      >
-                      </v-img>
+    <v-container fluid style="margin-left: 400px; width: calc(100% - 400px);" class="px-10">
+      <v-row>        
+        <v-col :key="result.name + result.set" v-for="result in cards" cols="12" md="12" lg="6" xl="4">
+          <v-card elevation="2">
+            <v-card-text>
+              <p class="text-h6 text--primary mb-0">
+                {{result.name}}
+              </p>
+              <p class="text-subtitle-1 mb-1">
+                {{result.subtitle}}
+              </p>
 
-                    </v-container>
+              <v-container class="d-flex justify-center mb-6">
+                <v-img
+                  v-if="!!result.imageUrl"
+                  :max-width="imgWidth"
+                  :src="result.imageUrl"
+                >
+                </v-img>
 
-                    <v-expansion-panels :flat="true">
-                      <v-expansion-panel>
-                        <v-expansion-panel-header>
-                          Details
-                        </v-expansion-panel-header>
-                        <v-expansion-panel-content>
-                          <pre class="text-body text--primary" style="white-space: pre-wrap">{{JSON.stringify(result, null, 2)}}</pre>
-                        </v-expansion-panel-content>
-                      </v-expansion-panel>
-                    </v-expansion-panels>              
+              </v-container>
 
-                    <v-tooltip bottom>
-                      <template v-slot:activator="{ on, attrs }">
-                        <v-chip v-bind="attrs" v-on="on" class="ma-2" color="primary">
-                          {{result.type}}
-                        </v-chip>
-                      </template>
-                      <span>Card Type</span>
-                    </v-tooltip>
+              <v-expansion-panels :flat="true">
+                <v-expansion-panel>
+                  <v-expansion-panel-header>
+                    Details
+                  </v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    <pre class="text-body text--primary" style="white-space: pre-wrap">{{JSON.stringify(result, null, 2)}}</pre>
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>              
 
-                    <v-tooltip bottom v-if="!!result.group">
-                      <template v-slot:activator="{ on, attrs }">
-                        <v-chip v-bind="attrs" v-on="on" class="ma-2" color="green" text-color="white">
-                          {{result.group}}
-                        </v-chip>
-                      </template>
-                      <span>Group</span>
-                    </v-tooltip>
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-chip v-bind="attrs" v-on="on" class="ma-2" color="primary">
+                    {{result.type}}
+                  </v-chip>
+                </template>
+                <span>Card Type</span>
+              </v-tooltip>
 
-                    <v-tooltip bottom>
-                      <template v-slot:activator="{ on, attrs }">
-                        <v-chip v-bind="attrs" v-on="on" class="ma-2" color="red" text-color="white">
-                          {{result.set}}
-                        </v-chip>
-                      </template>
-                      <span>Set</span>
-                    </v-tooltip>
-                    
-                  </v-card-text>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-container>
+              <v-tooltip bottom v-if="!!result.group">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-chip v-bind="attrs" v-on="on" class="ma-2" color="green" text-color="white">
+                    {{result.group}}
+                  </v-chip>
+                </template>
+                <span>Group</span>
+              </v-tooltip>
+
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-chip v-bind="attrs" v-on="on" class="ma-2" color="red" text-color="white">
+                    {{result.set}}
+                  </v-chip>
+                </template>
+                <span>Set</span>
+              </v-tooltip>
+              
+            </v-card-text>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -104,7 +99,7 @@ export default {
         case 'xs': return 300;
         case 'sm': return 400;
         case 'md': return 400;
-        case 'lg': return 400;
+        case 'lg': return 300;
         case 'xl': return 400;
       }
       return 400;

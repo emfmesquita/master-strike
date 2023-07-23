@@ -6,9 +6,17 @@ import { csv2json } from 'json-2-csv';
 const PATH = '../../packages/data/src/definitions/cards';
 const files = readdirSync('../../packages/data/src/definitions/cards');
 
+const betterReplace = (str: string, search: string, replace: string, from: number) => {
+  if (str.length > from && from >= 0) {
+    return str.slice(0, from) + str.slice(from).replace(search, replace);
+  }
+  return str;
+}
+
 interface DataFile {
   path: string;
   content: string;
+  newContent: string;
   lines: string[];
   set: string;
 }
@@ -39,6 +47,7 @@ const process = async () => {
     dataFiles.push({
       path: fullPath,
       content,
+      newContent: content,
       lines: content.split('\n'),
       set: Metadata.setsArray.find(set => f.startsWith(set.value))?.label || ''
     })
@@ -52,11 +61,8 @@ const process = async () => {
     const name = d.Name.indexOf(' / ') < 0 ? d.Name : d.Name.split(' / ')[0];
     const nameEntry = `name: "${name}",`;
 
-    const getSet = (row: ImageEntry) => {
-      if (row.Set === 'Playable Marvel 3D Trading Cards - Dimensions') return 'Playable Marvel 3D Trading Cards';
-      if (row.Set === 'Core Set - Marvel Studios, Phase 1') return 'Core Set';
-      return row.Set;
-    }
+    if(d.Name === 'Dangerous Rescue') console.log(d)
+
     const findFile = (set: string) => dataFiles.find(f => set === f.set && f.content.indexOf(minSpacer + nameEntry) >= 0);
 
     let fileSet = d.Set;
@@ -91,12 +97,14 @@ const process = async () => {
       if (!hasImg) {
         const before = `${realSpacer}${nameEntry}`;
         const after = `${before}\n${imageEntry}`;
-        file.content = file.content.replace(before, after);
+        const from = file.content.indexOf(before);
+        file.newContent = betterReplace(file.newContent, before, after, from);
       }
       else {
         const currentImageLine = file!.lines[nameLineNum + 1];
         const newImageLine = `${imageEntry}${currentImageLine.endsWith('\r') ? '\r' : ''}`;
-        file.content = file.content.replace(currentImageLine, newImageLine);
+        const from = file.content.indexOf(currentImageLine);
+        file.newContent = betterReplace(file.newContent, currentImageLine, newImageLine, from);
       }
     }
   });
@@ -106,7 +114,7 @@ const process = async () => {
   console.log(`All: ${data.filter(d => d.Name).length}`);
 
   dataFiles.forEach(f => {
-    writeFileSync(f.path, f.content);
+    writeFileSync(f.path, f.newContent);
   });
 }
 process();

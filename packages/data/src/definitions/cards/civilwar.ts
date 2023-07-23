@@ -1892,7 +1892,7 @@ export const CivilWar: CardSetDef = {
         },
         {
           name: "Electrical Charge",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ragnarok-01.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/ragnarok-02.png",
           tactic: true,
           abilities: [
             [

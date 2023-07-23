@@ -348,7 +348,7 @@ export const CoreSet: CardSetDef = {
       cards: [
         {
           name: "Card Shark",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gambit-01.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gambit-03.png",
           hc: 3,
           rarity: 1,
           cost: 4,
@@ -363,7 +363,7 @@ export const CoreSet: CardSetDef = {
         },
         {
           name: "Stack the Deck",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gambit-02.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gambit-04.png",
           hc: 1,
           rarity: 1,
           cost: 2,
@@ -375,7 +375,7 @@ export const CoreSet: CardSetDef = {
         },
         {
           name: "Hypnotic Charm",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gambit-03.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gambit-02.png",
           hc: 2,
           rarity: 2,
           cost: 3,
@@ -392,7 +392,7 @@ export const CoreSet: CardSetDef = {
         },
         {
           name: "High Stakes Jackpot",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gambit-04.png",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/gambit-01.png",
           hc: 2,
           rarity: 3,
           cost: 7,
