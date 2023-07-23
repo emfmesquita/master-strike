@@ -14,6 +14,9 @@ const startRuleEngine = (engine: Document<RuleSearchResult, true>) => {
   return rulesAdded;
 }
 
+/**
+ * Search engine for rules. Has a default query limit of 10.
+ */
 export class RuleSearchEngine {
   private engine: Document<RuleSearchResult, true>;
   private rulesCount: number;
@@ -41,10 +44,10 @@ export class RuleSearchEngine {
   }
 
   /**
- * Makes a search.
- * @param query The query string to search.
- * @returns A promise with the results of the search.
- */
+   * Makes a search.
+   * @param query The query string to search.
+   * @returns A promise with the results of the search.
+   */
   public async search(query: string): Promise<RuleSearchResult[]> {
     query = (query || '').trim();
     if (!query) return [];
@@ -71,6 +74,9 @@ export class RuleSearchEngine {
     return this.startupDuration;
   }
 
+  /**
+   * @returns An array with all rules indexed.
+   */
   public getAllRules() {
     return Object.freeze(CACHE);
   }

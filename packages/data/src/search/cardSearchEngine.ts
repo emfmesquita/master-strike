@@ -1,5 +1,5 @@
 import { Document, Id, IndexOptionsForDocumentSearch } from "flexsearch";
-import { ByCardType, ByCardTypeAndSet, ByCardTypeAndSetAndGroup, CardSearchResult, CardType } from "./cardSearchTypes";
+import { ByCardType, ByCardTypeAndSet, ByCardTypeAndSetAndGroup, CardSearchResult, CardType, SearchEngineOptions } from "./cardSearchTypes";
 import { SetDefinitions } from "../definitions";
 import { processSet } from "./processors";
 
@@ -37,6 +37,9 @@ const OPTIONS: IndexOptionsForDocumentSearch<SearchEntry, false> = {
 
 const CACHE: CardSearchResult[] = [];
 
+/**
+ * Card search engine.
+ */
 export class CardSearchEngine {
   private engine: Document<SearchEntry, false>;
   private cardCount: number;
@@ -48,14 +51,17 @@ export class CardSearchEngine {
   private group: boolean;
   private byCardType: ByCardType;
 
-  constructor(limit = 10, subtitle = false, type = false, set = false, group = false) {
+  /**
+   * @param opts Options of the card search engine.
+   */
+  constructor(opts?: SearchEngineOptions) {
     const startTime = Date.now();
-    this.limit = limit < 1 ? 1 : limit;
+    this.limit = opts?.limit && opts.limit > 0 ? opts.limit : 10;
     this.engine = new Document<SearchEntry, false>(OPTIONS);
-    this.subtitle = subtitle;
-    this.type = type;
-    this.set = set;
-    this.group = group;
+    this.subtitle = opts?.subtitle || true;
+    this.type = opts?.type || false;
+    this.set = opts?.set || false;
+    this.group = opts?.group || false;
     this.byCardType = {};
 
 
@@ -176,7 +182,7 @@ export class CardSearchEngine {
   }
 
   /**
-   * @returns The card browser.
+   * @returns The card browser (By Card type) -> (By Set) -> (By Group).
    */
   public getBrowser() {
     return this.byCardType;

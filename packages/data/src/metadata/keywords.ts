@@ -1,3 +1,6 @@
+/**
+ * Metadata of a keyword.
+ */
 export interface KeywordMetadata {
   id: number;
   value: string;
@@ -559,6 +562,9 @@ export interface KeywordMetadataMap {
   [key: string]: KeywordMetadata;
 }
 
+/**
+ * Object with the metadata of keywords.
+ */
 export const keywords: Readonly<KeywordMetadataMap> = Object.freeze({
   TELEPORT,                   // 01 done
   BRIBE,                      // 02 done
@@ -653,4 +659,7 @@ export const keywords: Readonly<KeywordMetadataMap> = Object.freeze({
   NONE,                       // -1
 });
 
+/**
+ * Array with the metadata of keywords. The first item corresponds to id one and it represents the keyword teleport.
+ */
 export const keywordsArray: Readonly<KeywordMetadata[]> = Object.freeze(Object.values(keywords));

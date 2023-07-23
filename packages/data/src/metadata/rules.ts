@@ -1,3 +1,6 @@
+/**
+ * Metadata of a rule.
+ */
 export interface RuleMetadata {
   id: number;
   value: string;
@@ -110,6 +113,9 @@ export interface RuleMetadataMap {
   [key: string]: RuleMetadata;
 }
 
+/**
+ * Object with the metadata of rules.
+ */
 export const rules: Readonly<RuleMetadataMap> = Object.freeze({
   SHARDS,                     // 1  done
   MULTICLASS_CARDS,           // 2  done
@@ -129,4 +135,7 @@ export const rules: Readonly<RuleMetadataMap> = Object.freeze({
   NONE,                       // -1
 });
 
+/**
+ * Array with the metadata of rules. The first item corresponds to id one and it represents the shards rules.
+ */
 export const rulesArray: Readonly<RuleMetadata[]> = Object.freeze(Object.values(rules));

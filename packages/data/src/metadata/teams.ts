@@ -1,3 +1,6 @@
+/**
+ * Metadata of a hero team.
+ */
 export interface TeamMetadata {
     id: number;
     value: string;
@@ -133,7 +136,10 @@ const HEROES_OF_WAKANDA = {
 export interface TeamMetadataMap {
 [key: string]: TeamMetadata;
 }
-  
+
+/**
+ * Object with the metadata of hero teams.
+ */
 export const teams: Readonly<TeamMetadataMap> = Object.freeze({
     UNAFFILIATED,                   //0
     AVENGERS,                       //1
@@ -162,4 +168,7 @@ export const teams: Readonly<TeamMetadataMap> = Object.freeze({
     HEROES_OF_WAKANDA,              //24
 });
 
+/**
+ * Array with the metadata of icons. The first item corresponds to id zero and it represents an unaffiliated hero.
+ */
 export const teamsArray: Readonly<TeamMetadata[]> = Object.freeze(Object.values(teams));

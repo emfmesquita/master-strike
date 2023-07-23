@@ -112,7 +112,7 @@ export default {
     results: [],
     searchEngine: new CardSearchEngine(),
     search: '',
-    subtitle: false,
+    subtitle: true,
     type: false,
     set: false,
     group: false,
@@ -143,7 +143,13 @@ export default {
       }, 750);
     },
     changeIndexes() {
-      this.searchEngine = new CardSearchEngine(10, this.subtitle, this.type, this.set, this.group);
+      this.searchEngine = new CardSearchEngine({
+        limit: 10, 
+        subtitle: this.subtitle, 
+        type: this.type, 
+        set: this.set, 
+        group: this.group,
+      });
       this.makeSearch(this.search);
     }
   }

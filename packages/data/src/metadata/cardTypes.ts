@@ -1,3 +1,6 @@
+/**
+ * Metadata of a card type.
+ */
 export interface CardTypeMetadata {
   id: number;
   value: string;
@@ -39,6 +42,9 @@ export interface CardTypeMetadataMap {
   [key: string]: CardTypeMetadata;
 }
 
+/**
+ * Object with the metadata of card types.
+ */
 export const cardTypes: Readonly<CardTypeMetadataMap> = Object.freeze({
   HERO,         // 1
   MASTERMIND,   // 2
@@ -72,6 +78,9 @@ export interface CardSubTypeMetadataMap {
   [key: string]: CardSubTypeMetadata;
 }
 
+/**
+ * Object with the metadata of card sub-types.
+ */
 export const cardSubTypes: Readonly<CardSubTypeMetadataMap> =  Object.freeze({
   TRAP,               // 1
   LOCATION,           // 2

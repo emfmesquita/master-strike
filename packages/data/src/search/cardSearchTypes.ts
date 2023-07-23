@@ -1,5 +1,8 @@
 import { Description } from "../definitions/descriptionTypes";
 
+/**
+ * Enum of all possible card types.
+ */
 export enum CardType {
   Hero = 'Hero',
   Mastermind = 'Mastermind',
@@ -17,18 +20,51 @@ export enum CardType {
   Token = 'Token',
 }
 
+/**
+ * Enum that identifies the type of description of a card. Usefull to undertant which type of card it is.
+ */
 export enum CardDetailsType {
+  /**
+   * Details of a hero card.
+   */
   HeroCardDetails = 'HeroCardDetails',
+  /**
+   * Details of a hero divided hero card.
+   */
   DividedHeroCardDetails = 'DividedHeroCardDetails',
+  /**
+   * Details of a mastermind card.
+   */
   MastermindCardDetails = 'MastermindCardDetails',
+  /**
+   * Details of a villain card.
+   */
   VillainCardDetails = 'VillainCardDetails',
+  /**
+   * Details of a henchman card.
+   */
   HenchmanCardDetails = 'HenchmanCardDetails',
+  /**
+   * Details of a scheme card.
+   */
   SchemeCardDetail = 'SchemeCardDetail',
+  /**
+   * Details of an out of place hero card (a villain, mastermind tactic, henchman, ... that can be earned as a hero).
+   */
   OopHeroDetails = 'OopHeroDetails',
+  /**
+   * Details of an out of place villain card (a mastermind tactic that can be become a villain).
+   */
   OopVillainDetails = 'OopVillainDetails',
+  /**
+   * Details of an out of place mastermind card (Chthon!).
+   */
   OopMastermindDetails = 'OopMastermindDetails',
 }
 
+/**
+ * Result entry of a card search.
+ */
 export interface CardSearchResult {
 
   /**
@@ -58,13 +94,55 @@ export interface CardSearchResult {
   details: CardDetails;
 }
 
+/**
+ * Options to instanciate a card search engine.
+ */
+export interface SearchEngineOptions {
+  /**
+   * The max number of results per query.
+   * Default: 10
+   */
+  limit: number;
+
+  /**
+   * If the card subtitle should be considered in the queries.
+   * Default: true
+   */
+  subtitle: boolean;
+
+  /**
+   * If the card type should be considered in the queries.
+   * Default: false
+   */
+  type: boolean;
+
+  /**
+   * If the card set should be considered in the queries.
+   * Default: false
+   */
+  set: boolean;
+
+  /**
+   * If the card group should be considered in the queries.
+   * Default: false
+   */
+  group: boolean;
+}
+
+/**
+ * Details of a card (hero abilities, scheme description, ...).
+ */
 export type CardDetails = HeroCardDetails | DividedHeroCardDetails | MastermindCardDetails | VillainCardDetails | HenchmanCardDetails | SchemeCardDetails | OopHeroDetails | OopVillainDetails | OopMastermindDetails;
+
 
 export interface BaseCardDetails {
   detailsType: CardDetailsType;
   description: Description;
 }
 
+/**
+ * Details of a hero card.
+ */
 export interface HeroCardDetails extends BaseCardDetails {
   /**
    * Hero Class.
@@ -112,11 +190,17 @@ export interface HeroCardDetails extends BaseCardDetails {
   transformed?: boolean;
 }
 
+/**
+ * Details of a hero divided hero card.
+ */
 export interface DividedHeroCardDetails extends BaseCardDetails {
   half1: HeroCardDetails;
   half2: HeroCardDetails;
 }
 
+/**
+ * Details of a mastermind card.
+ */
 export interface MastermindCardDetails extends BaseCardDetails {
   /**
    * Villain attack value.
@@ -139,6 +223,9 @@ export interface MastermindCardDetails extends BaseCardDetails {
   vp: string;
 }
 
+/**
+ * Details of a villain card.
+ */
 export interface VillainCardDetails extends BaseCardDetails {
     /**
    * Number of the same card in the Group.
@@ -156,6 +243,9 @@ export interface VillainCardDetails extends BaseCardDetails {
   vp: string;
 }
 
+/**
+ * Details of a henchman card.
+ */
 export interface HenchmanCardDetails extends BaseCardDetails {
   /**
    * Villain attack value.
@@ -168,6 +258,9 @@ export interface HenchmanCardDetails extends BaseCardDetails {
   vp: string;
 }
 
+/**
+ * Details of a scheme card.
+ */
 export interface SchemeCardDetails extends BaseCardDetails {
   /**
    * True if it is the transformed version of the card.
@@ -186,7 +279,7 @@ export interface SchemeCardDetails extends BaseCardDetails {
 }
 
 /**
- * Hero-like cards on other decks.
+ * Details of an out of place hero card (a villain, mastermind tactic, henchman, ... that can be earned as a hero).
  */
 export interface OopHeroDetails extends HeroCardDetails {
   /**
@@ -196,7 +289,7 @@ export interface OopHeroDetails extends HeroCardDetails {
 }
 
 /**
- * Villain-like cards on other decks.
+ * Details of an out of place villain card (a mastermind tactic that can be become a villain).
  */
 export interface OopVillainDetails extends VillainCardDetails {
   /**
@@ -206,13 +299,22 @@ export interface OopVillainDetails extends VillainCardDetails {
 }
 
 /**
- * Mastermind-like cards on other decks.
+ * Details of an out of place mastermind card (Chthon!).
  */
 export interface OopMastermindDetails extends MastermindCardDetails {}
 
 
-export type ByCardTypeAndSetAndGroup = {[key: string]: CardSearchResult[]}
-export type ByCardTypeAndSet = {[key: string]: ByCardTypeAndSetAndGroup}
-export type ByCardType = {[key in CardType]?: ByCardTypeAndSet};
+/**
+ * Card browser by card type and set and group.
+ */
+export type ByCardTypeAndSetAndGroup = {[key: string]: CardSearchResult[]};
 
-// (Set -> Card Type -> Group) (Card Type -> Set -> Group)
+/**
+ * Card broser by card type and set.
+ */
+export type ByCardTypeAndSet = {[key: string]: ByCardTypeAndSetAndGroup};
+
+/**
+ * Card browser by card type.
+ */
+export type ByCardType = {[key in CardType]?: ByCardTypeAndSet};

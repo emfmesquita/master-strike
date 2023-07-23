@@ -1,3 +1,6 @@
+/**
+ * Metadata of a card rarity.
+ */
 export interface RarityMetadata {
     id: number,
     value: string;
@@ -28,10 +31,16 @@ export interface RarityMetadataMap {
     [key: string]: RarityMetadata;
 }
 
+/**
+ * Object with the metadata of card rarities.
+ */
 export const rarities: Readonly<RarityMetadataMap> = Object.freeze({
     COMMON,     // 1
     UNCOMMON,   // 2
     RARE        // 3
 });
 
+/**
+ * Array with the metadata of card rarities. The first item corresponds to id one and it represents a common card.
+ */
 export const raritiesArray: Readonly<RarityMetadata[]> = Object.freeze(Object.values(rarities));

@@ -1,5 +1,8 @@
 import { RuleDescription } from "../definitions/ruleTypes";
 
+/**
+ * Types of rules.
+ */
 export enum RuleType {
   Keyword = 'Keyword',
   ExtraRule = 'Extra Rule',
@@ -7,15 +10,27 @@ export enum RuleType {
   Errata = 'Errata',
 }
 
+/**
+ * Result item of a rule search.
+ */
 export interface RuleSearchResult {
   /**
-   * Card name.
+   * Rule name.
    */
   name: string;
 
+  /**
+   * Rule image URL.
+   */
   imageUrl: string;
 
+  /**
+   * Rule type.
+   */
   type: RuleType;
 
+  /**
+   * Rule description.
+   */
   details: RuleDescription;
 }

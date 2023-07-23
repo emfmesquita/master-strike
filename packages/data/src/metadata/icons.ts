@@ -1,3 +1,6 @@
+/**
+ * Metadata of an icon.
+ */
 export interface IconMetadata {
     id: number;
     value: string;
@@ -44,6 +47,9 @@ export interface IconMetadataMap {
     [key: string]: IconMetadata;
 }
 
+/**
+ * Object with the metadata of icons.
+ */
 export const icons: Readonly<IconMetadataMap> = Object.freeze({
     ATTACK,     // 1
     RECRUIT,    // 2
@@ -54,4 +60,7 @@ export const icons: Readonly<IconMetadataMap> = Object.freeze({
     TOKEN       // 7
 });
 
+/**
+ * Array with the metadata of icons. The first item corresponds to id one and it represents the attack icon.
+ */
 export const iconsArray: Readonly<IconMetadata[]> = Object.freeze(Object.values(icons));

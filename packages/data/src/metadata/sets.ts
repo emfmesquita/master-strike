@@ -1,3 +1,6 @@
+/**
+ * Metadata of a card set.
+ */
 export interface CardSetMetadata {
     id: number;
     value: string;
@@ -270,6 +273,9 @@ export interface SetMetadataMap {
     [key: string]: CardSetMetadata;
 }
 
+/**
+ * Object with the metadata of card sets.
+ */
 export const sets: Readonly<SetMetadataMap> = Object.freeze({
     CORE_SET,                   // 1
     PROMO,                      // 2
@@ -310,4 +316,7 @@ export const sets: Readonly<SetMetadataMap> = Object.freeze({
     MIDNIGHT_SUNS,              // 37
 });
 
+/**
+ * Array with the metadata of card sets. The first item corresponds to id one and it represents the core set.
+ */
 export const setsArray: Readonly<CardSetMetadata[]> = Object.freeze(Object.values(sets));

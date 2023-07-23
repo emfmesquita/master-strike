@@ -1,3 +1,6 @@
+/**
+ * Metadata of a hero class.
+ */
 export interface HeroClassMetadata {
     id: number;
     value: string;
@@ -46,6 +49,9 @@ export interface HeroClassMetadataMap {
     [key: string]: HeroClassMetadata;
 }
 
+/**
+ * Object with the metadata of hero classes.
+ */
 export const heroClasses: Readonly<HeroClassMetadataMap> = Object.freeze({
     NONE,       // 0
     COVERT,     // 1
@@ -55,4 +61,7 @@ export const heroClasses: Readonly<HeroClassMetadataMap> = Object.freeze({
     TECH        // 5
 });
 
+/**
+ * Array with the metadata of hero classes. The first item corresponds to id zero and it represents no hero class.
+ */
 export const heroClassesArray: Readonly<HeroClassMetadata[]> = Object.freeze(Object.values(heroClasses));
