@@ -11,6 +11,7 @@
     "skipLibCheck": true,
     "declaration": true,
     "sourceMap": true,
+    "preserveConstEnums": true,
   },
   "exclude": ["dist", "node_modules", "**/*.spec.ts"]
 }

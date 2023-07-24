@@ -82,6 +82,10 @@ const items = [
     to: "/schemes"
   },
   {
+    title: "Bystanders",
+    to: "/bystanders"
+  },
+  {
     title: "Keywords",
     to: "/keywords"
   },

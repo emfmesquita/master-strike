@@ -12,7 +12,7 @@ const TELEPORT = {
   id: 1,
   value: "teleport",
   label: "Teleport",
-  cardTypes: [1, 2, 4],
+  cardTypes: [1, 2, 4, 6],
 }
 const BRIBE = {
   id: 2,
@@ -120,7 +120,7 @@ const PATROL = {
   id: 19,
   value: "patrol",
   label: "Patrol",
-  cardTypes: [1, 4],
+  cardTypes: [1, 4, 6],
 }
 const CIRCLE_OF_KUNG_FU = {
   id: 20,
@@ -198,7 +198,7 @@ const INVESTIGATE = {
   id: 32,
   value: "investigate",
   label: "Investigate",
-  cardTypes: [1, 2, 4, 5],
+  cardTypes: [1, 2, 4, 5, 6],
 }
 const HIDDEN_WITNESS = {
   id: 33,
@@ -222,7 +222,7 @@ const BERSERK = {
   id: 36,
   value: "berserk",
   label: "Berserk",
-  cardTypes: [1],
+  cardTypes: [1, 6],
 }
 const SOARING_FLIGHT = {
   id: 37,
@@ -348,7 +348,7 @@ const HYPERSPEED = {
   id: 57,
   value: "hyperspeed",
   label: "Hyperspeed",
-  cardTypes: [1],
+  cardTypes: [1, 6],
 }
 const DARK_MEMORIES = {
   id: 58,

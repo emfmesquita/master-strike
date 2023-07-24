@@ -185,5 +185,101 @@ export const ThreeDimension: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 10,
+      name: "Bulldozer Driver",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bulldozer-driver.png",
+      set: [9, 23],
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, you may move a Villain to an adjacent city space. If another Villain is already there, swap them."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 11,
+      name: "Double Agent of S.H.I.E.L.D.",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/double-agent-shield.png",
+      set: [9, 23],
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, play a copy of one of your ",
+              { team: 2 },
+              " Heroes or ",
+              { team: 13 },
+              " Allies."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 12,
+      name: "Fortune Teller",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/fortune-teller.png",
+      set: [9, 23],
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, guess “zero“ or “not zero.“ Then reveal the top card of your deck and check its cost. If you guessed right, draw that card."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 13,
+      name: "Photographer",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/photographer.png",
+      set: [9, 23],
+      vp: "1*",
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "This Bystander is worth ",
+              { bold: "+1"},
+              { icon: 4 },
+              " for each Hero you have that costs ",
+              { bold: "7"},
+              { icon: 3 },
+              " or more among all your cards at the end of the game."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 14,
+      name: "Stan Lee",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Promos/Marvel3D/StanLee.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, say a Hero name. Then reveal the top three cards of your deck. Put one of those cards with that exact Hero name into your hand. Put the rest back in any order."
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

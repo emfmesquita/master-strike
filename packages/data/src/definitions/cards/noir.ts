@@ -938,5 +938,27 @@ export const Noir: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 21,
+      name: "Detective Wolverine",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-detective-wolverine.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, ",
+              { keyword: 32 },
+              " the Villain Deck for a Villain worth 1",
+              { icon: 4 },
+              " and put it in your Victory Pile."
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

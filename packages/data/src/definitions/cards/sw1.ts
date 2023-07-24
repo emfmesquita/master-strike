@@ -2427,5 +2427,26 @@ export const SecretWars1: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 15,
+      name: "Banker",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-banker.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            [
+              "When you rescue this Bystander, you get ",
+              { bold: "+2"},
+              { icon: 2 },
+              ", usable only to recruit Heroes in the HQ space under the Bank."
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

@@ -1,16 +1,16 @@
-import { DecriptionPiece } from "./descriptionTypes";
+import { DescriptionPiece } from "./descriptionTypes";
 
-export type RuleDescription = (RuleDescriptionGroup | BulletPointDescription | RuleDecriptionPiece)[];
+export type RuleDescription = (RuleDescriptionGroup | BulletPointDescription | RuleDescriptionPiece)[];
 
 export interface BulletPointDescription {
   noBullets?: true;
-  points: (RuleDescriptionGroup | RuleDecriptionPiece)[];
+  points: (RuleDescriptionGroup | RuleDescriptionPiece)[];
 }
 
-export type RuleDescriptionGroup = RuleDecriptionPiece[];
+export type RuleDescriptionGroup = RuleDescriptionPiece[];
 
-export type RuleDecriptionPiece =
-  DecriptionPiece |
+export type RuleDescriptionPiece =
+  DescriptionPiece |
   UnderlinedDescription |
   HeaderDescription;
 

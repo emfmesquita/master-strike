@@ -188,6 +188,21 @@ const processCard = (cardType, card, group) => {
     }
   }
 
+  if(Metadata.cardTypes.BYSTANDER === cardType) {
+    processSet(card, group);
+    card.name = card.name || group.name;
+    card.subtitle = Subtitles.bystanderSubtitle(card);
+
+    card.vp = card.vp || group.vp;
+    card.vpText = card.vp ? card.vp + "" : "";
+    card.vpNum = toNumber(card.vpText);
+    card.type = 6;
+
+    if(card.overrideType === Metadata.cardTypes.HERO.id) {
+      processHero(card, group);
+    }
+  }
+
   return card.subtitle;
 }
 
@@ -232,4 +247,8 @@ export const getAllHenchmen = () => {
 }
 export const getAllSchemes = () => {
   return processCardGroups(Metadata.cardTypes.SCHEME);
+}
+
+export const getAllBystanders = () => {
+  return processCardGroups(Metadata.cardTypes.BYSTANDER);
 }

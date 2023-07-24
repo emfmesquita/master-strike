@@ -3055,5 +3055,273 @@ export const XMen: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 22,
+      name: "Cypher",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-cypher.png",
+      cards: [
+        {
+          qtd: 1,
+          subtitle: "Bystander - New Mutants",
+          overrideType: 1,
+          cost: 2,
+          hc: 5,
+          team: 4,
+          abilities: [
+            [
+              "When you rescue this Bystander, gain it as a Hero."
+            ],
+            { divider: true },
+            [
+              "Look at the top two cards of your deck. Draw one and discard the other."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 23,
+      name: "Heartless Computer Scientist",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/heartless-computer-scientist.png",
+      cards: [
+        {
+          qtd: 1,
+          overrideType: 1,
+          cost: 3,
+          hc: 5,
+          team: 0,
+          recruit: "2",
+          abilities: [
+            [
+              "When you rescue this Bystander, gain it as a Hero."
+            ],
+            { divider: true },
+            [
+              { hc: 5 },
+              ": You may KO a card from your hand or discard pile."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 24,
+      name: "Karma",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-karma.png",
+      cards: [
+        {
+          qtd: 1,
+          subtitle: "Bystander - New Mutants",
+          overrideType: 1,
+          cost: 3,
+          hc: 1,
+          team: 4,
+          attack: "0+",
+          abilities: [
+            [
+              "When you rescue this Bystander, gain it as a Hero."
+            ],
+            { divider: true },
+            [
+              "Reveal the top card of the Hero Deck. You get ",
+              { bold: "+"},
+              { icon: 1 },
+              " equal to its printed ",
+              { icon: 1 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 25,
+      name: "Magik",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-magik.png",
+      cards: [
+        {
+          qtd: 1,
+          subtitle: "Bystander - New Mutants",
+          overrideType: 1,
+          cost: 4,
+          hc: 3,
+          team: 4,
+          attack: "2",
+          abilities: [
+            [
+              "When you rescue this Bystander, gain it as a Hero."
+            ],
+            { divider: true },
+            [
+              { keyword: 1 },
+              { italic: " (Instead of playing this card, you may set it aside. At the end of the turn, add it to your hand as an extra card.)" },
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 26,
+      name: "Magma",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-magma.png",
+      cards: [
+        {
+          qtd: 1,
+          subtitle: "Bystander - New Mutants",
+          overrideType: 1,
+          cost: 3,
+          hc: 3,
+          team: 4,
+          attack: "0+",
+          abilities: [
+            [
+              "When you rescue this Bystander, gain it as a Hero."
+            ],
+            { divider: true },
+            [
+              "Chose one: Draw a card or you get ",
+              { bold: "+2"},
+              { icon: 1 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 27,
+      name: "Martial Arts Master",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/martial-arts-master.png",
+      cards: [
+        {
+          qtd: 1,
+          overrideType: 1,
+          cost: 3,
+          hc: 2,
+          team: 0,
+          attack: "1",
+          abilities: [
+            [
+              "When you rescue this Bystander, gain it as a Hero."
+            ],
+            { divider: true },
+            [
+              "Draw a card."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 28,
+      name: "Mirage",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-mirage.png",
+      cards: [
+        {
+          qtd: 1,
+          subtitle: "Bystander - New Mutants",
+          overrideType: 1,
+          cost: 3,
+          hc: 1,
+          team: 4,
+          recruit: "1",
+          abilities: [
+            [
+              "When you rescue this Bystander, gain it as a Hero."
+            ],
+            { divider: true },
+            [
+              "Draw a card."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 29,
+      name: "Sunspot",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-sunspot.png",
+      cards: [
+        {
+          qtd: 1,
+          subtitle: "Bystander - New Mutants",
+          overrideType: 1,
+          cost: 3,
+          hc: 4,
+          team: 4,
+          attack: "2+",
+          abilities: [
+            [
+              "When you rescue this Bystander, gain it as a Hero."
+            ],
+            { divider: true },
+            [
+              { hc: 4 },
+              ": You get ",
+              { bold: "+1"},
+              { icon: 1 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 30,
+      name: "Warlock",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-warlock.png",
+      cards: [
+        {
+          qtd: 1,
+          subtitle: "Bystander - New Mutants",
+          overrideType: 1,
+          cost: 3,
+          hc: 5,
+          team: 4,
+          attack: "2",
+          abilities: [
+            [
+              "When you rescue this Bystander, gain it as a Hero."
+            ],
+            { divider: true },
+            [
+              { hc: 5 },
+              ": Draw a card.",
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 31,
+      name: "Wolfsbane",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-wolfsbane.png",
+      cards: [
+        {
+          qtd: 1,
+          subtitle: "Bystander - New Mutants",
+          overrideType: 1,
+          cost: 3,
+          hc: 2,
+          team: 4,
+          attack: "0+",
+          abilities: [
+            [
+              "When you rescue this Bystander, gain it as a Hero."
+            ],
+            { divider: true },
+            [
+              { keyword: 36 },
+              ", ",
+              { keyword: 36 },
+              ", ",
+              { keyword: 36 },
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

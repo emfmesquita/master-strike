@@ -838,5 +838,23 @@ export const SpiderManHomecoming: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 32,
+      name: "Damage Control",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/scheme-damage-control.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, reveal the top two cards of your deck. Put any that cost 2 or less into your hand. Put the rest back in any order."
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

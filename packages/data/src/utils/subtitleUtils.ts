@@ -1,4 +1,6 @@
 import { 
+  BystanderCardDef,
+  BystanderDef,
   HenchmanCardDef, 
   HenchmanDef, 
   HeroCardDef, 
@@ -56,4 +58,10 @@ export const schemeSubtitle = (card: SchemeCardDef | OopMastermindCardDef, setId
   if(schemeCard.veiled) return "Veiled Scheme";
   if(schemeCard.unveiled) return "Unveiled Scheme";
   return "Scheme";
+}
+
+export const bystanderSubtitle = (card: BystanderCardDef | OopHeroCardDef) => {
+  const cardSubtitle = (card as OopHeroCardDef).subtitle;
+  if(cardSubtitle) return cardSubtitle;
+  return "Bystander";
 }

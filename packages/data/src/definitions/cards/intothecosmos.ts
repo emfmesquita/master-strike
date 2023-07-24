@@ -1822,5 +1822,58 @@ export const IntoTheCosmos: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 46,
+      name: "Board Gamer",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander_03.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, each player with the most Victory Points draws a card. ",
+              { italic: "(Your VP includes this Bystander.)" }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 47,
+      name: "Legendary Game Designer",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander_01.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, gain a ",
+              { rule: 1, text: "Shard" },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 48,
+      name: "Pizza Delivery Guy",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander_02.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, choose one: Draw a card now, or draw an extra card when you draw a new hand of cards at the end of this turn."
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

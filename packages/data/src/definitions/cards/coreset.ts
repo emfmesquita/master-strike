@@ -2207,5 +2207,19 @@ export const CoreSet: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 1,
+      name: "Bystander",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystanders.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 30,
+          abilities: []
+        }
+      ]
+    }
+  ],
 }

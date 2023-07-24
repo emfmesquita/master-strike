@@ -1,12 +1,12 @@
-export type Description = (DescriptionGroup | BulletPointDescription | DecriptionPiece)[];
+export type Description = (DescriptionGroup | BulletPointDescription | DescriptionPiece)[];
 
 export interface BulletPointDescription {
-  points: (DescriptionGroup | DecriptionPiece)[];
+  points: (DescriptionGroup | DescriptionPiece)[];
 }
 
-export type DescriptionGroup = DecriptionPiece[];
+export type DescriptionGroup = DescriptionPiece[];
 
-export type DecriptionPiece = 
+export type DescriptionPiece = 
   string |
   BoldDescription |
   ItalicDescription |

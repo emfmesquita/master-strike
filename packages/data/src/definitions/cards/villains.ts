@@ -2449,5 +2449,86 @@ export const Villains: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 5,
+      name: "Bystander",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 30,
+          abilities: []
+        }
+      ]
+    },
+    {
+      id: 6,
+      name: "Computer Hacker",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-computer-hacker.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            "When you kidnap this Bystander, draw an extra card when you draw a new hand at the end of your turn."
+          ]
+        }
+      ]
+    },
+    {
+      id: 7,
+      name: "Engineer",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-engineer.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            [
+              "When you kidnap this Bystander, reveal the top card of your deck. If it costs 0",
+              { icon: 3 },
+              ", KO it."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 8,
+      name: "Public Speaker",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-public-speaker.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            [
+              "When you kidnap this Bystander, gain ",
+              { bold: "+1"},
+              { icon: 2 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 9,
+      name: "Rock Star",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-rock-star.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            [
+              "When you kidnap this Bystander, kidnap another Bystander."
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

@@ -1991,5 +1991,67 @@ export const MessiahComplex: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 49,
+      name: "Cloning Technician",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/mc_bystander_cloning_technician.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, ",
+              { keyword: 72 },
+              " the next Hero you recruit this turn that has printed cost 3 or less.",
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 50,
+      name: "Opera Singer",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/mc_bystander_opera_singer.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, ",
+              { keyword: 73 },
+              " a Villain in the Bank or ",
+              { keyword: 73 },
+              " a Hero in the HQ space under the Bank.",
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 51,
+      name: "Private Investigator",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/mc_bystander_private_investigator.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, choose ",
+              { icon: 2 },
+              " or ",
+              { icon: 1 },
+              ". ",
+              { keyword: 32 },
+              " for a card with that icon.",
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

@@ -12,7 +12,7 @@ const SHARDS = {
   id: 1,
   value: "shards",
   label: "Shards",
-  cardTypes: [1, 2, 3, 4, 5],
+  cardTypes: [1, 2, 3, 4, 5, 6],
 }
 const MULTICLASS_CARDS = {
   id: 2,
@@ -72,7 +72,7 @@ const SIDEKICKS = {
   id: 11,
   value: "sidekicks",
   label: "Sidekicks",
-  cardTypes: [1, 4, 5],
+  cardTypes: [1, 4, 5, 6],
 }
 const CHOOSE_A_VILLAIN = {
   id: 12,

@@ -2049,5 +2049,62 @@ export const Revelations: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 43,
+      name: "Dog Show Judge",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/dog-show-judge.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, each player reveals the top card of their deck. Judge one of those cards to be the “best in show.“ That player draws that card.",
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 44,
+      name: "Lawyer",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/lawyer.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, reveal the top 3 cards of your deck. Draw each of them that has at least 10 words of rules text. Put the rest back in any order. ",
+              { italic: "(Numerals, icons, and punctuation don't count.)" }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 45,
+      name: "Rocket Test Pilot",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/rocket-test-pilot.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, choose ",
+              { icon: 2 },
+              " or ",
+              { icon: 1 },
+              ". Then ",
+              { keyword: 57, text: "Hyperspeed 3" },
+              " for that icon.",
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 };

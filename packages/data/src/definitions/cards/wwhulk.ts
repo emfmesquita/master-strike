@@ -3231,5 +3231,85 @@ export const WorldWarHulk: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 33,
+      name: "Actor",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/actor.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, choose a Hero in the HQ that costs 4 or less. You get its printed ",
+              { icon: 2 },
+              " and ",
+              { icon: 1 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 34,
+      name: "Animal Trainer",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/animal-trainer.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, each ",
+              { hc: 2 },
+              " and/or ",
+              { hc: 1 },
+              " Hero currently in the HQ costs 1 less this turn.",
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 35,
+      name: "Tourist Couple",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/tourist-couple.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, you get ",
+              { bold: "+1"},
+              { icon: 2 },
+              " if the Rooftops are empty and ",
+              { bold: "+1"},
+              { icon: 2 },
+              " if the Bridge is empty.",
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 36,
+      name: "Triage Nurse",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/triage-nurse.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, look at the top three cards of your deck. KO one, discard one, and put one back.",
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 };

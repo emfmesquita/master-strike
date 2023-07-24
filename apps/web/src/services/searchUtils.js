@@ -1,6 +1,6 @@
 import * as JsSearch from 'js-search'
 
-import { getAllHenchmen, getAllHeroes, getAllMasterminds, getAllSchemes, getAllVillains } from "./cardUtils"
+import { getAllBystanders, getAllHenchmen, getAllHeroes, getAllMasterminds, getAllSchemes, getAllVillains } from "./cardUtils"
 
 import { Metadata } from "@master-strike/data";
 
@@ -227,6 +227,7 @@ const buildCardSearch = cardType => {
   if(Metadata.cardTypes.HENCHMEN.id === cardType) return buildGroupSearch(getAllHenchmen());
   if(Metadata.cardTypes.VILLAIN.id === cardType) return buildGroupSearch(getAllVillains());
   if(Metadata.cardTypes.SCHEME.id === cardType) return buildGroupSearch(getAllSchemes());
+  if(Metadata.cardTypes.BYSTANDER.id === cardType) return buildGroupSearch(getAllBystanders());
   return null;
 }
 

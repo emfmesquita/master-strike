@@ -2474,5 +2474,65 @@ export const SecretWars2: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 16,
+      name: "Alligator Trapper",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-alligator-trapper.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            [
+              "When you rescue this Bystander, ",
+              { keyword: 19, text: "Patrol the Sewers:" },
+              " If it's empty, you get ",
+              { bold: "+2"},
+              { icon: 2 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 17,
+      name: "Shapeshifted Copycat",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-shapeshifter-copycat.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 4,
+          abilities: [
+            [
+              "When you rescue this Bystander, this card becomes a Villain with ",
+              { bold: "3"},
+              { icon: 1 },
+              " and enters the city. It gains the ability: “",
+              { bold: "Fight" },
+              ": KO one of your Heroes.“"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 18,
+      name: "Undercover Agent",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-undercover-agent.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            [
+              "When you rescue this Bystander, a player of your choice gains a S.H.I.E.L.D. Officer."
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

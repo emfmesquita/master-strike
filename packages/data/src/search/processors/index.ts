@@ -6,6 +6,7 @@ import { processHero } from './heroProcessor';
 import { processMastermind } from './mastermindProcessor';
 import { processScheme } from './schemeProcessor';
 import { processVillain } from './villainProcessor';
+import { processBystander } from './bystanderProcessor';
 
 export const processSet = (addCard: (card: CardSearchResult) => void, set: CardSetDef) => {
   set.heroes?.forEach(hero => processHero(addCard, hero, set));
@@ -13,6 +14,7 @@ export const processSet = (addCard: (card: CardSearchResult) => void, set: CardS
   set.henchmen?.forEach(henchman => processHenchman(addCard, henchman, set));
   set.villains?.forEach(villain => processVillain(addCard, villain, set));
   set.schemes?.forEach(scheme => processScheme(addCard, scheme, set));
+  set.bystanders?.forEach(bystander => processBystander(addCard, bystander, set));
 }
 
 export const setIdToLabel = (id: number) => setsArray[id - 1].label;

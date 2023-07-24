@@ -44,6 +44,12 @@ const routes = [
     import(/* webpackChunkName: "schemes" */ "../views/Schemes.vue")
   },
   {
+    path: "/bystanders",
+    name: "Bystanders",
+    component: () =>
+    import(/* webpackChunkName: "bystanders" */ "../views/Bystanders.vue")
+  },
+  {
     path: "/random",
     name: "Random",
     component: () =>

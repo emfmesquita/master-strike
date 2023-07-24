@@ -49,6 +49,10 @@ export enum CardDetailsType {
    */
   SchemeCardDetail = 'SchemeCardDetail',
   /**
+   * Details of a bystander card.
+   */
+  BystanderCardDetail = 'BystanderCardDetail',
+  /**
    * Details of an out of place hero card (a villain, mastermind tactic, henchman, ... that can be earned as a hero).
    */
   OopHeroDetails = 'OopHeroDetails',
@@ -276,6 +280,21 @@ export interface SchemeCardDetails extends BaseCardDetails {
    * True if it is the unveiled version of the card.
    */
   unveiled?: boolean;
+}
+
+/**
+ * Details of a bystander card.
+ */
+export interface BystanderCardDetails extends BaseCardDetails {
+  /**
+  * Number of the same card in the set.
+  */
+  qtd: number;
+
+  /**
+   * Victory Points.
+   */
+  vp: string;
 }
 
 /**

@@ -115,14 +115,14 @@ export default {
 
   .set-icon {
     position: absolute;
-    top: 3px;
-    right: 4px;
+    top: 4px;
+    right: 6px;
   }
 
   .set-icon2 {
     position: absolute;
-    top: 21px;
-    right: 4px;
+    top: 22px;
+    right: 6px;
   }
 
   .card-qtd-icon {

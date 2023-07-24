@@ -2816,5 +2816,41 @@ export const CivilWar: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 19,
+      name: "Aspiring Hero",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-aspiring-hero.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 4,
+          abilities: [
+            [
+              "When you rescue this Bystander, gain a ",
+              { rule: 11, text: "Sidekick" },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 20,
+      name: "Comic Shop Keeper",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-comic-shop-keeper.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            [
+              "When you rescue this Bystander, reveal the top three cards of the Hero Deck. The player of your choice gains one of them that costs 3 or less. Put the rest back in any order."
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

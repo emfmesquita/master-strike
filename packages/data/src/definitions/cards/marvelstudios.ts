@@ -1446,5 +1446,86 @@ export const MarvelStudios: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 37,
+      name: "Bystander",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystanders-01.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 30,
+          abilities: []
+        }
+      ]
+    },
+    {
+      id: 38,
+      name: "Happy Hogan",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-happy-hogan.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            [
+              "When you rescue this Bystander, you may KO a Wound from your hand or from any player's discard pile.",
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 39,
+      name: "Jane Foster",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystyander-jane-foster.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            [
+              "When you rescue this Bystander, you may KO one of your Heroes or a Hero from your discard pile.",
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 40,
+      name: "Peggy Carter",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-peggy-carter.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            [
+              "When you rescue this Bystander, draw a card.",
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 41,
+      name: "Pepper Potts",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-pepper-potts.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            [
+              "When you rescue this Bystander, you get ",
+              { bold: "+2" },
+              { icon: 2 },
+              ", usable only to recruit Heroes in the HQ space under the Bank.",
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

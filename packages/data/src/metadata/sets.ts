@@ -14,7 +14,7 @@ const CORE_SET: CardSetMetadata = {
     value: "coreset",
     label: "Core Set",
     initials: "C",
-    cardTypes: [1, 2, 3, 4, 5],
+    cardTypes: [1, 2, 3, 4, 5, 6],
 };
 const PROMO: CardSetMetadata = {
     id: 2,
@@ -28,7 +28,7 @@ const DARK_CITY: CardSetMetadata = {
     value: "darkcity",
     label: "Dark City",
     initials: "DC",
-    cardTypes: [1, 2, 3, 4, 5],
+    cardTypes: [1, 2, 3, 4, 5, 6],
 };
 const FANTASTIC_FOUR: CardSetMetadata = {
     id: 4,
@@ -49,7 +49,7 @@ const VILLAINS: CardSetMetadata = {
     value: "villains",
     label: "Villains",
     initials: "V",
-    cardTypes: [1, 2, 3, 4, 5],
+    cardTypes: [1, 2, 3, 4, 5, 6],
 };
 const GUARDIANS_OF_THE_GALAXY: CardSetMetadata = {
     id: 7,
@@ -70,21 +70,21 @@ const THREE_DIMENSION: CardSetMetadata = {
     value: "3d",
     label: "Playable Marvel 3D Trading Cards",
     initials: "3D",
-    cardTypes: [1, 3],
+    cardTypes: [1, 3, 6],
 };
 const SECRET_WARS_1: CardSetMetadata = {
     id: 10,
     value: "sw1",
     label: "Secret Wars, Volume 1",
     initials: "SW1",
-    cardTypes: [1, 2, 3, 4, 5],
+    cardTypes: [1, 2, 3, 4, 5, 6],
 };
 const SECRET_WARS_2: CardSetMetadata = {
     id: 11,
     value: "sw2",
     label: "Secret Wars, Volume 2",
     initials: "SW2",
-    cardTypes: [1, 2, 3, 4, 5],
+    cardTypes: [1, 2, 3, 4, 5, 6],
 };
 const CAPTAIN_AMERICA: CardSetMetadata = {
     id: 12,
@@ -98,7 +98,7 @@ const CIVIL_WAR: CardSetMetadata = {
     value: "civilwar",
     label: "Civil War",
     initials: "CW",
-    cardTypes: [1, 2, 3, 4, 5],
+    cardTypes: [1, 2, 3, 4, 5, 6],
 };
 const DEADPOOL: CardSetMetadata = {
     id: 14,
@@ -112,21 +112,21 @@ const NOIR: CardSetMetadata = {
     value: "noir",
     label: "Noir",
     initials: "Noir",
-    cardTypes: [1, 2, 4, 5],
+    cardTypes: [1, 2, 4, 5, 6],
 };
 const X_MEN: CardSetMetadata = {
     id: 16,
     value: "xmen",
     label: "X-Men",
     initials: "X",
-    cardTypes: [1, 2, 3, 4, 5],
+    cardTypes: [1, 2, 3, 4, 5, 6],
 };
 const SPIDER_HOMECOMING: CardSetMetadata = {
     id: 17,
     value: "spiderhomecoming",
     label: "Spider-Man Homecoming",
     initials: "SMH",
-    cardTypes: [1, 2, 4, 5],
+    cardTypes: [1, 2, 4, 5, 6],
 };
 const CHAMPIONS: CardSetMetadata = {
     id: 18,
@@ -140,14 +140,14 @@ const WW_HULK: CardSetMetadata = {
     value: "wwhulk",
     label: "World War Hulk",
     initials: "WWH",
-    cardTypes: [1, 2, 3, 4, 5],
+    cardTypes: [1, 2, 3, 4, 5, 6],
 };
 const MARVEL_STUDIOS: CardSetMetadata = {
     id: 20,
     value: "marvelstudios",
     label: "Marvel Studios, Phase 1",
     initials: "MS1",
-    cardTypes: [1, 2, 3, 4, 5],
+    cardTypes: [1, 2, 3, 4, 5, 6],
 };
 const ANT_MAN: CardSetMetadata = {
     id: 21,
@@ -168,14 +168,14 @@ const DIMENSIONS: CardSetMetadata = {
     value: "dimensions",
     label: "Dimensions",
     initials: "Dim",
-    cardTypes: [1, 2, 3],
+    cardTypes: [1, 2, 3, 6],
 };
 const REVELATIONS: CardSetMetadata = {
     id: 24,
     value: "revelations",
     label: "Revelations",
     initials: "Rev",
-    cardTypes: [1, 2, 3, 4, 5],
+    cardTypes: [1, 2, 3, 4, 5, 6],
 };
 const SHIELD: CardSetMetadata = {
     id: 25,
@@ -203,7 +203,7 @@ const INTO_THE_COSMOS: CardSetMetadata = {
     value: "intothecosmos",
     label: "Into the Cosmos",
     initials: "ItC",
-    cardTypes: [1, 2, 3, 4, 5],
+    cardTypes: [1, 2, 3, 4, 5, 6],
 };
 const REALM_OF_KINGS: CardSetMetadata = {
     id: 29,

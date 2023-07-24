@@ -343,5 +343,23 @@ export const Dimensions: CardSetDef = {
         }
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 42,
+      name: "Forklift Driver",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/forklift-driver.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 1,
+          abilities: [
+            [
+              "When you rescue this Bystander, put any number of Heroes from the HQ on the bottom of the Hero Deck.",
+            ]
+          ]
+        }
+      ]
+    },
+  ],
 }

@@ -67,11 +67,11 @@ const process = async () => {
 
     let fileSet = d.Set;
     let file = findFile(fileSet);
-    if(!file && fileSet === 'Dimensions') {
+    if(!file && fileSet === 'Dimensions' && d.Name !== 'Forklift Driver') {
       fileSet = 'Playable Marvel 3D Trading Cards';
       file = findFile(fileSet);
     }
-    if (!file && ['Scheme', 'Henchmen'].includes(d.Type)) {
+    if (!file && ['Scheme', 'Henchmen', 'Bystander'].includes(d.Type)) {
       minSpacer = MIN_SPACER_GROUP;
       file = findFile(fileSet);
     }

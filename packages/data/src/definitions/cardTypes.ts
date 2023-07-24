@@ -56,6 +56,10 @@ export interface SchemeCardDef extends BasicCardDef {
   unveiled?: boolean;
 }
 
+export interface BystanderCardDef extends BasicCardDef {
+  qtd: number;
+}
+
 export interface OopHeroCardDef extends HeroCardDef {
   overrideType?: 1;
   tactic?: boolean;
@@ -122,6 +126,15 @@ export interface SchemeDef {
   cards: (SchemeCardDef | OopMastermindCardDef)[];
 }
 
+export interface BystanderDef {
+  id: number;
+  name: string;
+  set?: number | number[];
+  imageUrl?: string;
+  vp?: string | number;
+  cards: (BystanderCardDef | OopHeroCardDef)[];
+}
+
 export interface CardSetDef {
   id: number;
   heroes?: HeroDef[];
@@ -129,4 +142,5 @@ export interface CardSetDef {
   henchmen?: HenchmanDef[];
   villains?: VillainDef[];
   schemes?: SchemeDef[];
+  bystanders?: BystanderDef[];
 }

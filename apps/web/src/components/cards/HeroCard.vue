@@ -26,7 +26,8 @@
       </span>
     </template>
     <RarityIcon v-else-if="card.rarity" class="card-rarity" :icon="card.rarity" width="24px"/>
-    <SetIcon v-else-if="card.set" class="set-icon" :set="card.set" width="24px" />
+
+    <SetIcon v-if="showSetIcon" :class="setIconclasses" :set="card.set" width="24px" />
 
     <shared-rule v-if="card.divided === 1" :rule="{ rule: 4 }">
       <DividedCardIcon class="divided-card-icon-left" size="12px" left />
@@ -63,7 +64,7 @@
     </template>
 
     <template v-if="card.cost">
-      <AbilityIcon class="card-cost-icon absolute-icon" :icon="card.overrideType === 1 ? 1 : 3" width="90px"/>
+      <AbilityIcon class="card-cost-icon absolute-icon" :icon="card.overrideType === 1 && card.type !== 6 ? 1 : 3" width="90px"/>
       <span 
         class="card-cost icon-text text-center font-weight-black"
         :class="{ small: card.cost.length > 2 }">
@@ -120,6 +121,15 @@ export default {
         "hero-divided-right": this.card.divided === 2,
         "disabled": this.card.disabled
       }
+    },
+    setIconclasses() {
+      return {
+        "set-icon": true,
+        "bystander-set-icon": this.card.type === 6,
+      }
+    },
+    showSetIcon() {
+      return ((!this.card.qtd && !this.card.rarity) || this.card.type === 6) && this.card.set;
     }
   }
 };
@@ -260,6 +270,12 @@ export default {
     position: absolute;
     left: 2px;
     top: 130px
+  }
+
+  .set-icon.bystander-set-icon {
+    position: absolute;
+    top: 40px;
+    right: 6px;
   }
 }
 </style>

@@ -2406,5 +2406,49 @@ export const DarkCity: CardSetDef = {
         },
       ]
     },
-  ]
+  ],
+  bystanders: [
+    {
+      id: 2,
+      name: "News Reporter",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-news-reporter.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 4,
+          abilities: [
+            "When you rescue this Bystander, draw a card."
+          ]
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "Paramedic",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-paramedic.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 3,
+          abilities: [
+            "When you rescue this Bystander, you may KO a Wound from your hand or from any player's discard pile."
+          ]
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Radiation Scientist",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander-radiation-scientist.png",
+      vp: 1,
+      cards: [
+        {
+          qtd: 4,
+          abilities: [
+            "When you rescue this Bystander, you may KO one of your Heroes or a Hero from your discard pile."
+          ]
+        }
+      ]
+    },
+  ],
 }
