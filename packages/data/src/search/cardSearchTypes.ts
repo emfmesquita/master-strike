@@ -199,7 +199,9 @@ export interface HeroCardDetails extends BaseCardDetails {
  */
 export interface DividedHeroCardDetails extends BaseCardDetails {
   half1: HeroCardDetails;
+  nameHalf1: string;
   half2: HeroCardDetails;
+  nameHalf2: string;
 }
 
 /**

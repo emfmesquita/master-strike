@@ -33,7 +33,9 @@ export const processHero = (addCard: (card: CardSearchResult) => void, hero: Her
         detailsType: CardDetailsType.DividedHeroCardDetails,
         description: [],
         half1: toHeroCardDetails(card, CardDetailsType.HeroCardDetails, hero.team),
+        nameHalf1: card.name,
         half2: toHeroCardDetails(secondHalfCard, CardDetailsType.HeroCardDetails, hero.team),
+        nameHalf2: secondHalfCard.name,
       }
       const subtitle1 = Subtitles.heroSubtitle(card, hero);
       const subtitle2 = Subtitles.heroSubtitle(secondHalfCard, hero);
