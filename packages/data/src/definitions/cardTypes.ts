@@ -65,7 +65,7 @@ export interface OopHeroCardDef extends HeroCardDef {
   tactic?: boolean;
   vp?: -1;
   vAttack?: string;
-  vAttackAsterisk?: string;
+  vAttackAsterisk?: boolean;
 }
 
 export interface OopVillainCardDef extends VillainCardDef {
