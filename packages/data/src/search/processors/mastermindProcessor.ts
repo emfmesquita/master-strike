@@ -8,10 +8,12 @@ import { toVillainCardDetails } from "./villainProcessor";
 export const toMastermindCardDetails = (card: MastermindCardDef, detailsType: CardDetailsType, mm?: MastermindDef): MastermindCardDetails => {
   const vp = (card.vp || mm?.vp);
   const vpS = vp + '';
+  const vAttack = (card.vAttack || mm?.vAttack);
+
   return {
     detailsType,
-    vAttack: (card.vAttack || '') + (card.vAttackAsterisk ? '*' : ''),
-    vp: (!vp || vpS === '-1' ? '' : vpS),
+    vAttack: (vAttack || '') + (card.vAttackAsterisk ? '*' : ''),
+    vp: ((!vp || vpS === '-1') ? '' : vpS),
     tactic: card.tactic,
     epic: card.epic,
     description: card.abilities,
