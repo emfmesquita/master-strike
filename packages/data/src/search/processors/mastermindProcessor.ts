@@ -5,14 +5,15 @@ import { CardDetailsType, CardType, MastermindCardDetails, OopHeroDetails, OopVi
 import { toHeroCardDetails } from "./heroProcessor";
 import { toVillainCardDetails } from "./villainProcessor";
 
+const vAttack = (card: MastermindCardDef | OopHeroCardDef, mm?: MastermindDef) => (card.vAttack || mm?.vAttack || '') + (card.vAttackAsterisk ? '*' : '');
+
 export const toMastermindCardDetails = (card: MastermindCardDef, detailsType: CardDetailsType, mm?: MastermindDef): MastermindCardDetails => {
   const vp = (card.vp || mm?.vp);
   const vpS = vp + '';
-  const vAttack = (card.vAttack || mm?.vAttack);
 
   return {
     detailsType,
-    vAttack: (vAttack || '') + (card.vAttackAsterisk ? '*' : ''),
+    vAttack: vAttack(card, mm),
     vp: ((!vp || vpS === '-1') ? '' : vpS),
     tactic: card.tactic,
     epic: card.epic,
@@ -29,6 +30,7 @@ export const processMastermind = (addCard: (card: CardSearchResult) => void, mm:
     if(oopHero && oopHero.overrideType === 1) {
       details = {
         ...toHeroCardDetails(oopHero, CardDetailsType.OopHeroDetails),
+        vAttack: vAttack(oopHero, mm),
         tactic: oopHero.tactic,
       } as OopHeroDetails;
     } else if (oopVillain && oopVillain.overrideType === 4) {

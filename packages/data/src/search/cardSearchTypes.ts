@@ -307,6 +307,11 @@ export interface OopHeroDetails extends HeroCardDetails {
    * If it is a mastermind tactic.
    */
   tactic?: boolean;
+
+  /**
+   * If was originally a villain it might have a villain attack.
+   */
+  vAttack?: string;
 }
 
 /**

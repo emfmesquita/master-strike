@@ -9,12 +9,16 @@ export const processHenchman = (addCard: (card: CardSearchResult) => void, hench
     let details: HenchmanCardDetails | OopHeroDetails;
     const oopHero = card as OopHeroCardDef;
     const henchmanCard = card as HenchmanCardDef;
+    const vAttack = (henchman.vAttack || '') + (henchmanCard.vAttackAsterisk ? '*' : '');
     if(oopHero && oopHero.overrideType === 1) {
-      details = toHeroCardDetails(oopHero, CardDetailsType.OopHeroDetails) as OopHeroDetails;
+      details = {
+        ...toHeroCardDetails(oopHero, CardDetailsType.OopHeroDetails),
+        vAttack,
+      } as OopHeroDetails;
     } else {
       details = {
         detailsType: CardDetailsType.HenchmanCardDetails,
-        vAttack: (henchman.vAttack || '') + (henchmanCard.vAttackAsterisk ? '*' : ''),
+        vAttack,
         vp: henchman.vp + '',
         description: card.abilities,
       } as HenchmanCardDetails;
