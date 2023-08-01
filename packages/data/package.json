@@ -1,6 +1,6 @@
 {
   "name": "@master-strike/data",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Library with the data used on master-strike.",
   "main": "dist/index.js",
   "scripts": {
