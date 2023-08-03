@@ -16,7 +16,7 @@ export const toHeroCardDetails = (card: HeroCardDef, detailsType: CardDetailsTyp
   hc: card.hc,
   ...(card.hc2 && { hc2: card.hc2 }),
   qtd: cardQtd(card),
-  team: card.team || groupTeam || 0,
+  team: (card.team !== undefined ? card.team : groupTeam) || 0,
   attack: card.attack,
   recruit: card.recruit,
   piercing: card.piercing,
