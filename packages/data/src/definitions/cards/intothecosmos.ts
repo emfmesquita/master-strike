@@ -534,7 +534,7 @@ export const IntoTheCosmos: CardSetDef = {
           attack: "2+",
           abilities: [
             [
-              { keyword: 66, text: "Burn a Shards" },
+              { keyword: 66, text: "Burn a Shard" },
               ": You get ",
               { bold: "+3" },
               { icon: 1 },
