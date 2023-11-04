@@ -1425,7 +1425,7 @@ export const XMen: CardSetDef = {
             ],
             [
               { bold: "Master Strike" },
-              ": If there are already any Shi'ar Villains in the city, each player gains a Wound. Then this strike enters the city as a “Shi'ar Battleship“ ",
+              ": If there are already any Shi'ar Villains in the city, each player gains a Wound. Then this strike enters the city as a “Shi'ar Battlecruiser“ ",
               { icon: 7 },
               " Villain with 7",
               { icon: 1 },
