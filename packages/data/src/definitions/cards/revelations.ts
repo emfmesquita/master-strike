@@ -559,9 +559,9 @@ export const Revelations: CardSetDef = {
               "Reveal the top three cards of the Hero Deck. Put one of them in your hand. Put the rest on the top or bottom of the Hero Deck in any order."
             ],
             [
-              { hc: 1 },
-              { hc: 1 },
-              { hc: 1 },
+              { team: 1 },
+              { team: 1 },
+              { team: 1 },
               ": ",
               { keyword: 58 }
             ]
