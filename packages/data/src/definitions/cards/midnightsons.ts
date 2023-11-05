@@ -948,7 +948,9 @@ export const MidnightSuns: CardSetDef = {
             ],
             [
               { bold: "Escape" },
-              ": Salomé ascends to become an additional Mastermind. She gains the ability “",
+              ": Salomé ascends to become an ",
+              { rule: 3, text: "additional Mastermind" },
+              ". She gains the ability “",
               { bold: "Master Strike" },
               ": Each player discards a ",
               { team: 6 },

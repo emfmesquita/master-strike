@@ -20,10 +20,10 @@ export const crossdimensionalrampage: KeywordDefinition = [
         "Some Heroes can transform into Hulks, like Bruce Banner and Amadeus Cho. A puny “Bruce Banner” card doesn’t say “Hulk” on it, so it can’t stop a Hulk Rampage. But revealing the transformed Bruce Banner card named “Savage Hulk Unleashed” works."
       ],
       [
-        "When a Cross-Dimensional Hulk Rampage happens, you can choose to gain the Wound, even if you have a Hulk that you already played or could otherwise reveal. You might want the Wound if you have Wounded Fury cards."
+        "When a Cross-Dimensional Hulk Rampage happens, you can choose to gain the Wound, even if you have a Hulk that you already played or could otherwise reveal. You might want the Wound if you have cards that benefit from gaining   Wounds, or a card that benefits from preventing Wounds."
       ],
       [
-        "There are also Cross-Dimensional Void, Illuminati, Deadpool, Thor, Colossus, and Wolverine (“Weapon X” and “Old Man Logan” included) Rampages."
+        "There are also Cross-Dimensional Void, Illuminati, Deadpool, Thor, Colossus, Zombie, Demon, Party, Ultrom, and Wolverine (“Weapon X” and “Old Man Logan” included) Rampages."
       ]
     ]
   }

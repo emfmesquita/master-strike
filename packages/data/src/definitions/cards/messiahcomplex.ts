@@ -877,7 +877,9 @@ export const MessiahComplex: CardSetDef = {
               ": A card from the Bystander Stack ascends to become a ",
               { bold: "3" },
               { icon: 1 },
-              " “Prime Sentinel“ Mastermind with “",
+              " ",
+              { rule: 3, text: "“Prime Sentinel“ Mastermind" },
+              " with “",
               { bold: "Fight" },
               ": Rescue this. ",
               { bold: "Master Strike" },
@@ -906,7 +908,9 @@ export const MessiahComplex: CardSetDef = {
               ": A card from the Bystander Stack ascends to become a ",
               { bold: "4" },
               { icon: 1 },
-              " “Prime Sentinel“ Mastermind with “",
+              " ",
+              { rule: 3, text: "“Prime Sentinel“ Mastermind" },
+              " with “",
               { bold: "Fight" },
               ": Rescue this. ",
               { bold: "Master Strike" },
@@ -921,7 +925,9 @@ export const MessiahComplex: CardSetDef = {
           abilities: [
             [
               { bold: "Fight" },
-              ": Rescue three Bystanders. KO one of your Heroes. Master Mold ascends to become an additional Mastermind whose only ability is:",
+              ": Rescue three Bystanders. KO one of your Heroes. Master Mold ascends to become an ",
+              { rule: 3, text: "additional Mastermind" },
+              " whose only ability is:",
             ],
             { divider: true },
             [
@@ -938,7 +944,9 @@ export const MessiahComplex: CardSetDef = {
           abilities: [
             [
               { bold: "Fight" },
-              ": Rescue three Bystanders. KO one of your Heroes. Template ascends to become an additional Mastermind whose only ability is:",
+              ": Rescue three Bystanders. KO one of your Heroes. Template ascends to become an ",
+              { rule: 3, text: "additional Mastermind" },
+              " whose only ability is:",
             ],
             { divider: true },
             [
@@ -957,7 +965,9 @@ export const MessiahComplex: CardSetDef = {
           abilities: [
             [
               { bold: "Fight" },
-              ": Rescue three Bystanders. KO one of your Heroes. Nimrod ascends to become an additional Mastermind whose only abilities are:",
+              ": Rescue three Bystanders. KO one of your Heroes. Nimrod ascends to become an ",
+              { rule: 3, text: "additional Mastermind" },
+              " whose only abilities are:",
             ],
             { divider: true },
             [
@@ -978,7 +988,9 @@ export const MessiahComplex: CardSetDef = {
           abilities: [
             [
               { bold: "Fight" },
-              ": Rescue three Bystanders. KO one of your Heroes. Machine Man ascends to become an additional Mastermind whose only ability is:",
+              ": Rescue three Bystanders. KO one of your Heroes. Machine Man ascends to become an ",
+              { rule: 3, text: "additional Mastermind" },
+              " whose only ability is:",
             ],
             { divider: true },
             [

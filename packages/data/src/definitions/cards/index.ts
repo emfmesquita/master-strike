@@ -21,6 +21,7 @@ export * from './messiahcomplex';
 export * from './midnightsons';
 export * from './msgotg';
 export * from './msis';
+export * from './mswi';
 export * from './newmutants';
 export * from './noir';
 export * from './pttr';

@@ -132,6 +132,11 @@ const HEROES_OF_WAKANDA = {
     value: "heroes-of-wakanda",
     label: "Heroes of Wakanda"
 };
+const GUARDIANS_OF_THE_MULTIVERSE = {
+    id: 25,
+    value: "guardians-of-the-multiverse",
+    label: "Guardians of the Multiverse"
+};
 
 export interface TeamMetadataMap {
 [key: string]: TeamMetadata;
@@ -166,6 +171,7 @@ export const teams: Readonly<TeamMetadataMap> = Object.freeze({
     INHUMANS,                       //22
     X_FACTOR_INVESTIGATIONS,        //23
     HEROES_OF_WAKANDA,              //24
+    GUARDIANS_OF_THE_MULTIVERSE,    //25
 });
 
 /**

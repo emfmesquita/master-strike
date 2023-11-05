@@ -24,7 +24,7 @@ const MULTIPLE_MASTERMINDS = {
   id: 3,
   value: "multiplemasterminds",
   label: "Multiple Masterminds",
-  cardTypes: [1, 4, 5],
+  cardTypes: [1, 2, 4, 5],
 }
 const DIVIDED = {
   id: 4,

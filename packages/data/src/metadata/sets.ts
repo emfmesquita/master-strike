@@ -268,6 +268,13 @@ const MIDNIGHT_SUNS: CardSetMetadata = {
     initials: "MNS",
     cardTypes: [1, 2, 4, 5],
 };
+const MS_WHAT_IF: CardSetMetadata = {
+    id: 38,
+    value: "mswi",
+    label: "Marvel Studios' What If...?",
+    initials: "MSWI",
+    cardTypes: [1, 2, 3, 4, 5, 6],
+};
 
 export interface SetMetadataMap {
     [key: string]: CardSetMetadata;
@@ -314,6 +321,7 @@ export const sets: Readonly<SetMetadataMap> = Object.freeze({
     BLACK_WIDOW,                // 35
     MS_INFINITY_SAGA,           // 36
     MIDNIGHT_SUNS,              // 37
+    MS_WHAT_IF,                 // 38
 });
 
 /**

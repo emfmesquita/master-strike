@@ -102,7 +102,7 @@ const RISE_OF_THE_LIVING_DEAD = {
   id: 16,
   value: "riseofthelivingdead",
   label: "Rise of The Living Dead",
-  cardTypes: [2, 3, 4],
+  cardTypes: [2, 3, 4, 5],
 }
 const CROSS_DIMENSIONAL_RAMPAGE = {
   id: 17,
@@ -312,7 +312,7 @@ const EMPOWERED = {
   id: 51,
   value: "empowered",
   label: "Empowered",
-  cardTypes: [1, 2, 4, 5],
+  cardTypes: [1, 2, 3, 4, 5],
 }
 const CHIVALROUS_DUEL = {
   id: 52,
@@ -551,6 +551,24 @@ const HAUNT = {
   label: "Haunt",
   cardTypes: [2, 4],
 }
+const WHAT_IF = {
+  id: 91,
+  value: "whatif",
+  label: "What If...?",
+  cardTypes: [1],
+}
+const LIBERATE = {
+  id: 92,
+  value: "liberate",
+  label: "Liberate",
+  cardTypes: [1, 3],
+}
+const SOULBIND = {
+  id: 93,
+  value: "soulbind",
+  label: "Soulbind",
+  cardTypes: [1, 2, 4],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -653,9 +671,12 @@ export const keywords: Readonly<KeywordMetadataMap> = Object.freeze({
   WHEN_RECRUITED_UDERCOVER,   // 85 done
   SACRIFICE,                  // 86 done
   ENDGAME,                    // 87 done
-  BLOOD_FRENZY,               // 88
-  HUNT_FOR_VICTIMS,           // 89
-  HAUNT,                      // 90                                                                    
+  BLOOD_FRENZY,               // 88 done
+  HUNT_FOR_VICTIMS,           // 89 done
+  HAUNT,                      // 90 done
+  WHAT_IF,                    // 91 done
+  LIBERATE,                   // 92 done
+  SOULBIND,                   // 93 done
   NONE,                       // -1
 });
 

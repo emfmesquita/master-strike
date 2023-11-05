@@ -31,6 +31,9 @@ export const empowered: KeywordDefinition = [
         { bold: " card in the HQ.”" }
       ],
       [
+        "Uatu the Watcher is sometimes Empowered by a specific Hero Name or Hero Team, in the same way."
+      ],
+      [
         "As heroes enter and leave the HQ, an Empowered card can get stronger or weaker. You only check the ",
         { icon: 1 },
         " bonus at the moment you play your Empowered Hero or at the moment you fight the Empowered enemy."
