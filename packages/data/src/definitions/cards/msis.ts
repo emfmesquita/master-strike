@@ -89,7 +89,7 @@ export const MSInfinitySaga: CardSetDef = {
           abilities: [
             [
               { hc: 2 },
-              ": Reveal the top card of the Villain Deck. If it's a Marster Strike, KO that Strike, you get ",
+              ": Reveal the top card of the Villain Deck. If it's a Master Strike, KO that Strike, you get ",
               { bold: "+3" },
               { icon: 1 },
               ", and put a card from the Bystander Deck on top of the Villain Deck."
