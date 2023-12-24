@@ -419,7 +419,7 @@ export const WorldWarHulk: CardSetDef = {
           subtitle: "Hiroim, transformed",
           transformed: true,
           hc: 4,
-          rarity: 2,
+          rarity: 1,
           cost: 5,
           attack: "1+",
           abilities: [
