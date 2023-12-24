@@ -265,7 +265,7 @@ export const DarkCity: CardSetDef = {
         {
           name: "Army of One",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/cable-01.png",
-          hc: 5,
+          hc: 3,
           rarity: 3,
           cost: 8,
           attack: "5+",
