@@ -1111,7 +1111,7 @@ export const XMen: CardSetDef = {
         {
           name: "Telepathic Ninjutsu",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/psylocke-01.png",
-          hc: 1,
+          hc: 2,
           rarity: 3,
           cost: 7,
           piercing: "3",
