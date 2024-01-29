@@ -275,6 +275,13 @@ const MS_WHAT_IF: CardSetMetadata = {
     initials: "MSWI",
     cardTypes: [1, 2, 3, 4, 5, 6],
 };
+const MS_ANT_MAN_WASP: CardSetMetadata = {
+    id: 39,
+    value: "msaw",
+    label: "Marvel Studios' Ant-Man and the Wasp",
+    initials: "MSAW",
+    cardTypes: [1, 2, 3, 4, 5, 6],
+};
 
 export interface SetMetadataMap {
     [key: string]: CardSetMetadata;
@@ -322,6 +329,7 @@ export const sets: Readonly<SetMetadataMap> = Object.freeze({
     MS_INFINITY_SAGA,           // 36
     MIDNIGHT_SUNS,              // 37
     MS_WHAT_IF,                 // 38
+    MS_ANT_MAN_WASP,            // 39
 });
 
 /**

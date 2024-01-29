@@ -146,6 +146,13 @@ export const filterGroupByRule = (groups, rules) => {
         return;
       }
 
+      // check for ambush schemes
+      const isAmbushScheme = card.type === Metadata.cardTypes.VILLAIN.id && card.ambush;
+      if(isAmbushScheme && rules.includes(R.AMBUSH_SCHEMES.id)) {
+        match = true;
+        return;
+      }
+
       // checks other rules
       const abs = card.abilities;
       const hasRule = ab => rules.includes(ab.rule);

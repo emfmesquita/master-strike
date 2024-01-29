@@ -76,6 +76,9 @@ export const sizechanging: KeywordDefinition = [
         "After you’ve recruited a card, Size-Changing doesn’t do anything else on that card."
       ],
       [
+        "The Size-Changing card's cost is only changed during the moment you are recruiting it, not other times."
+      ],
+      [
         "If a Hero in the HQ already has “",
         { bold: "Size-Changing: " },
         { hc: 5 },

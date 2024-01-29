@@ -1,6 +1,5 @@
 import { 
   BystanderCardDef,
-  BystanderDef,
   HenchmanCardDef, 
   HenchmanDef, 
   HeroCardDef, 
@@ -9,6 +8,7 @@ import {
   MastermindDef, 
   OopHeroCardDef, 
   OopMastermindCardDef, 
+  OopSchemeCardDef, 
   OopVillainCardDef, 
   SchemeCardDef, 
   VillainCardDef, 
@@ -37,10 +37,17 @@ export const henchmanSubtitle = (card: HenchmanCardDef | OopHeroCardDef, henchma
   return "Henchman Villain";
 }
 
-export const villainSubtitle = (card: VillainCardDef | OopHeroCardDef, villain: VillainDef, setId: number) => {
+export const villainSubtitle = (card: VillainCardDef | OopHeroCardDef | OopSchemeCardDef, villain: VillainDef, setId: number) => {
   if(villain.subtitle) return villain.subtitle;
+
   const cardSubtitle = (card as OopHeroCardDef).subtitle;
   if(cardSubtitle) return cardSubtitle;
+
+  const isAmbus = (card as OopSchemeCardDef).ambush;
+  if(!!isAmbus) {
+    return `Ambush Scheme - ${villain.name}`;
+  }
+
   const subType = (card as VillainCardDef).subType;
   if(subType === 1) return `Trap - ${villain.name}`;
   if(subType === 2) return `Location - ${villain.name}`;

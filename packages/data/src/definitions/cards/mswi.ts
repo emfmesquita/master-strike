@@ -2501,7 +2501,7 @@ export const MSWhatIf: CardSetDef = {
       ]
     },
     {
-      id: 56,
+      id: 57,
       name: "Scott Lang's Head",
       imageUrl: "",
       vp: 1,

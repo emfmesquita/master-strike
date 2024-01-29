@@ -64,6 +64,10 @@ export enum CardDetailsType {
    * Details of an out of place mastermind card (Chthon!).
    */
   OopMastermindDetails = 'OopMastermindDetails',
+  /**
+   * Details of an out of place scheme card.
+   */
+  OopSchemeDetails = 'OopSchemeDetails',
 }
 
 /**
@@ -328,6 +332,16 @@ export interface OopVillainDetails extends VillainCardDetails {
  * Details of an out of place mastermind card (Chthon!).
  */
 export interface OopMastermindDetails extends MastermindCardDetails {}
+
+/**
+ * Details of an out of place scheme card.
+ */
+export interface OopSchemeDetails extends SchemeCardDetails {
+  /**
+   * If it is a ambush scheme.
+   */
+  ambush?: boolean;
+}
 
 
 /**

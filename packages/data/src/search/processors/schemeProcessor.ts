@@ -4,6 +4,16 @@ import { Subtitles } from "../../utils";
 import { CardDetailsType, CardType, OopMastermindDetails, SchemeCardDetails, CardSearchResult } from "../cardSearchTypes";
 import { toMastermindCardDetails } from "./mastermindProcessor";
 
+export const toSchemeCardDetails = (card: SchemeCardDef, detailsType: CardDetailsType): SchemeCardDetails => {
+  return {
+    detailsType: detailsType,
+    transformed: card.transformed,
+    veiled: card.veiled,
+    unveiled: card.unveiled,
+    description: card.abilities,
+  };
+}
+
 
 export const processScheme = (addCard: (card: CardSearchResult) => void, scheme: SchemeDef, set: CardSetDef) => {
   scheme.cards?.forEach(card => {
@@ -13,13 +23,7 @@ export const processScheme = (addCard: (card: CardSearchResult) => void, scheme:
     if(oopMM && oopMM.overrideType === 2) {
       details = toMastermindCardDetails(oopMM, CardDetailsType.OopMastermindDetails) as OopMastermindDetails;
     } else {
-      details = {
-        detailsType: CardDetailsType.SchemeCardDetail,
-        transformed: schemeCard.transformed,
-        veiled: schemeCard.veiled,
-        unveiled: schemeCard.unveiled,
-        description: schemeCard.abilities,
-      } as SchemeCardDetails;
+      details = toSchemeCardDetails(schemeCard, CardDetailsType.SchemeCardDetail);
     }
 
     getSets(set.id, scheme.set).forEach(setId => {

@@ -80,6 +80,13 @@ export interface OopMastermindCardDef extends MastermindCardDef {
   subtitle: string;
 }
 
+export interface OopSchemeCardDef extends SchemeCardDef {
+  overrideType?: 5;
+  ambush?: boolean;
+  qtd: number;
+  vp?: string | number;
+}
+
 export interface HeroDef {
   id: number;
   name: string;
@@ -115,7 +122,7 @@ export interface VillainDef {
   id: number;
   subtitle?: string;
   name: string;
-  cards: (VillainCardDef | OopHeroCardDef)[];
+  cards: (VillainCardDef | OopHeroCardDef | OopSchemeCardDef)[];
   filterName?: string;
 }
 

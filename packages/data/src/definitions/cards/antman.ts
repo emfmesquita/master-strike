@@ -6,6 +6,7 @@ export const AntMan: CardSetDef = {
     {
       id: 172,
       name: "Ant-Man",
+      filterName: "Ant-Man (AM)",
       team: 1,
       cards: [
         {
@@ -242,6 +243,7 @@ export const AntMan: CardSetDef = {
     {
       id: 175,
       name: "Wasp",
+      filterName: "Wasp (AM)",
       team: 1,
       cards: [
         {

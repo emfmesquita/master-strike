@@ -7,7 +7,7 @@ export const microscopicsizechanging: KeywordDefinition = [
   {
     points: [
       [
-        "Some Heroes and Villains say things like “Microscopic Size-Changing ",
+        "Some cards say “Microscopic Size-Changing ",
         { hc: 5 },
         { hc: 5 },
         { hc: 5 },
@@ -24,13 +24,13 @@ export const microscopicsizechanging: KeywordDefinition = [
         { bold: " cards.”" }
       ],
       [
-        "So if you played one ",
+        "If you played 1 ",
         { hc: 5 },
-        " Hero this turn, this card costs 2 less. If you played two ",
+        " Hero this turn, this card costs you 2 less. If you played 2 ",
         { hc: 5 },
-        " Heroes, it costs 4 less. If you played three or more ",
+        " Heroes, it costs you 4 less. If you played 3+ ",
         { hc: 5 },
-        " Heroes, it costs 6 less."
+        " Heroes, it costs you 6 less."
       ],
       [
         "Playing a fourth ",
@@ -49,14 +49,14 @@ export const microscopicsizechanging: KeywordDefinition = [
         "Some Villains also have Microscopic Size-Changing. It works the same way, letting you fight that Villain for ",
         { bold: "2" },
         { icon: 1 },
-        " less for each card of the correct color you played this turn, counting up to the number of icons shown in the Microscopic Size-Changing ability."
+        " less for each card of the correct Hero Class you played this turn, up to the number of icons shown in the Microscopic Size-Changing ability."
       ],
       [
         "Likewise, if you fight a Villain with Microscopic Size-Changing and reduce its ",
         { icon: 1 },
         " value to a negative number, you actually gain that many ",
         { icon: 1 },
-        " points when you fight it. You don’t even need to have any ",
+        " points when you fight it! You don’t even need to have any ",
         { icon: 1 },
         " points before you fight them."
       ],
@@ -67,7 +67,7 @@ export const microscopicsizechanging: KeywordDefinition = [
         { bold: "3" },
         { icon: 1 },
         " and ",
-        { bold: "“Microscopic SizeChanging " },
+        { bold: "“Microscopic Size-Changing " },
         { hc: 1 },
         { hc: 1 },
         { hc: 1 },
@@ -86,6 +86,13 @@ export const microscopicsizechanging: KeywordDefinition = [
       ],
       [
         "Building the right deck and shrinking down to the crazy backwards physics of the Microverse can create some very powerful turns!"
+      ],
+      [
+        "Microscopic Size-Changing is a type of ",
+        { keyword: 26 },
+        ", so any effect that mentions ",
+        { keyword: 26 },
+        " works with Microscopic Size-Changing."
       ],
     ]
   }

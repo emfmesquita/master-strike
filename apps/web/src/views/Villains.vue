@@ -79,6 +79,7 @@
                   <CardWrapper>
                     <template v-slot:default="{ contentHeight }">
                       <HeroCard v-if="card.overrideType === 1" :card="card" :contentHeight="contentHeight" />
+                      <SchemeCard v-else-if="card.overrideType === 5" :card="card" :contentHeight="contentHeight" />
                       <VillainCard v-else :card="card" :contentHeight="contentHeight" />
                     </template>
                   </CardWrapper>
@@ -102,6 +103,7 @@ import KeywordFilter from "../components/filters/KeywordFilter.vue";
 import RangeFilter from "../components/filters/RangeFilter.vue";
 import ResizableCardList from "../components/shared/ResizableCardList.vue";
 import RuleFilter from "../components/filters/RuleFilter.vue";
+import SchemeCard from "../components/cards/SchemeCard.vue";
 import SearchFilter from "../components/filters/SearchFilter.vue";
 import SetFilter from "../components/filters/SetFilter.vue";
 import SortToggle from "../components/filters/SortToggle.vue";
@@ -148,6 +150,7 @@ export default {
     RangeFilter,
     ResizableCardList,
     RuleFilter, 
+    SchemeCard,
     SearchFilter,
     SetFilter, 
     SortToggle,

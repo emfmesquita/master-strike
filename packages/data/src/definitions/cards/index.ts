@@ -19,6 +19,7 @@ export * from './intothecosmos';
 export * from './marvelstudios';
 export * from './messiahcomplex';
 export * from './midnightsons';
+export * from './msaw';
 export * from './msgotg';
 export * from './msis';
 export * from './mswi';

@@ -102,6 +102,12 @@ const WOUNDS_ON_VILAINS = {
   title: "Putting Wounds on Villains",
   cardTypes: [1, 2, 4, 5],
 }
+const AMBUSH_SCHEMES = {
+  id:16,
+  value: "ambushschemes",
+  label: "Ambush Schemes",
+  cardTypes: [4],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -131,7 +137,8 @@ export const rules: Readonly<RuleMetadataMap> = Object.freeze({
   CHOOSE_A_VILLAIN,           // 12 done
   VEILED_SCHEMES,             // 13 done
   UNVEILED_SCHEMES,           // 14 done
-  WOUNDS_ON_VILAINS,          // 15
+  WOUNDS_ON_VILAINS,          // 15 done
+  AMBUSH_SCHEMES,             // 16 done
   NONE,                       // -1
 });
 

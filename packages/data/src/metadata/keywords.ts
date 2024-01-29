@@ -162,7 +162,7 @@ const SIZE_CHANGING = {
   id: 26,
   value: "sizechanging",
   label: "Size-Changing",
-  cardTypes: [1, 2, 4, 5],
+  cardTypes: [1, 2, 3, 4, 5, 6],
 }
 const PHASING = {
   id: 27,
@@ -300,13 +300,13 @@ const CONQUEROR = {
   id: 49,
   value: "conqueror",
   label: "Conqueror",
-  cardTypes: [1, 2, 4],
+  cardTypes: [1, 2, 3, 4],
 }
 const MICROSCOPIC_SIZE_CHANGING = {
   id: 50,
   value: "microscopicsizechanging",
   label: "Microscopic Size-Changing",
-  cardTypes: [1, 4],
+  cardTypes: [1, 2, 3, 4],
 }
 const EMPOWERED = {
   id: 51,
@@ -569,6 +569,30 @@ const SOULBIND = {
   label: "Soulbind",
   cardTypes: [1, 2, 4],
 }
+const HEIST = {
+  id: 94,
+  value: "heist",
+  label: "Heist",
+  cardTypes: [1, 4, 5],
+}
+const ANTICS = {
+  id: 95,
+  value: "antics",
+  label: "Antics",
+  cardTypes: [1],
+}
+const EXPLORE = {
+  id: 96,
+  value: "explore",
+  label: "Explore",
+  cardTypes: [1, 3, 4],
+}
+const DOUBLE_CROSS = {
+  id: 97,
+  value: "doublecross",
+  label: "Double-Cross",
+  cardTypes: [2, 4],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -677,6 +701,10 @@ export const keywords: Readonly<KeywordMetadataMap> = Object.freeze({
   WHAT_IF,                    // 91 done
   LIBERATE,                   // 92 done
   SOULBIND,                   // 93 done
+  HEIST,                      // 94 done
+  ANTICS,                     // 95 done
+  EXPLORE,                    // 96 done
+  DOUBLE_CROSS,               // 97 done
   NONE,                       // -1
 });
 

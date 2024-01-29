@@ -1,4 +1,5 @@
 export * from './adaptingmasterminds';
+export * from './ambushschemes';
 export * from './chooseavillain';
 export * from './locations';
 export * from './multiplemasterminds';
