@@ -10,7 +10,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Petty Larceny",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ScottLangCatBurgler_2Common.png",
           hc: 1,
           qtd: 3,
           rarity: 1,
@@ -28,7 +28,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Shocking Support",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ScottLangCatBurgler_3Common.png",
           hc: 3,
           qtd: 3,
           rarity: 1,
@@ -46,7 +46,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "X-Con Security Van",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ScottLangCatBurgler_4Common.png",
           hc: 5,
           qtd: 3,
           rarity: 1,
@@ -61,7 +61,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Anything for Cassie",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ScottLangCatBurgler_5Uncommon.png",
           hc: 2,
           qtd: 2,
           rarity: 2,
@@ -80,7 +80,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Putting a Crew Together",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ScottLangCatBurgler_6Uncommon.png",
           hc: 4,
           qtd: 2,
           rarity: 2,
@@ -98,7 +98,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "The Big Score",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/ScottLangCatBurgler_1Rare.png",
           hc: 1,
           qtd: 1,
           rarity: 3,
@@ -124,7 +124,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Hitch a Ride",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Ant-ManMCU_2Common.png",
           hc: 1,
           qtd: 3,
           rarity: 1,
@@ -148,7 +148,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Look Out for the Little Guy!",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Ant-ManMCU_3Common.png",
           hc: 4,
           qtd: 3,
           rarity: 1,
@@ -172,7 +172,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Shrink Away",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Ant-ManMCU_4Common.png",
           hc: 1,
           qtd: 3,
           rarity: 1,
@@ -196,7 +196,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Bug Swarm",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Ant-ManMCU_5Uncommon.png",
           hc: 4,
           qtd: 2,
           rarity: 2,
@@ -219,7 +219,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Tiny little Risk",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Ant-ManMCU_6Uncommon.png",
           hc: 1,
           qtd: 2,
           rarity: 2,
@@ -242,7 +242,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Giant-Man",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Ant-ManMCU_1Rare.png",
           hc: 4,
           qtd: 1,
           rarity: 3,
@@ -279,7 +279,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Flitting Sting",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WaspMCU_2Common.png",
           hc: 3,
           qtd: 3,
           rarity: 1,
@@ -307,7 +307,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Positive Ions",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WaspMCU_4Common.png",
           hc: 3,
           qtd: 3,
           rarity: 1,
@@ -332,7 +332,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Master Physicist",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WaspMCU_3Common.png",
           hc: 5,
           qtd: 3,
           rarity: 1,
@@ -357,7 +357,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Follow my Lead",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WaspMCU_5Uncommon.png",
           hc: 3,
           qtd: 2,
           rarity: 2,
@@ -380,7 +380,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Infiltrate",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WaspMCU_6Uncommon.png",
           hc: 5,
           qtd: 2,
           rarity: 2,
@@ -409,7 +409,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Hope Returns",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/WaspMCU_1Rare.png",
           hc: 3,
           qtd: 1,
           rarity: 3,
@@ -454,7 +454,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Start Small",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/CassieLang_2Common.png",
           hc: 5,
           qtd: 3,
           rarity: 1,
@@ -476,7 +476,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Giant Hug",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/CassieLang_3Common.png",
           hc: 4,
           qtd: 3,
           rarity: 1,
@@ -496,7 +496,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Colossal Stomp",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/CassieLang_4Common.png",
           hc: 4,
           qtd: 3,
           rarity: 1,
@@ -519,7 +519,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Quantum Beacon",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/CassieLang_5Uncommon.png",
           hc: 5,
           qtd: 2,
           rarity: 2,
@@ -544,7 +544,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Learn from the Past",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/CassieLang_6Uncommon.png",
           hc: 4,
           qtd: 2,
           rarity: 2,
@@ -569,7 +569,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Inspire Revolution",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/CassieLang_1Rare.png",
           hc: 4,
           qtd: 1,
           rarity: 3,
@@ -605,7 +605,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Subatomic Size",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/JanetVanDyne_5Uncommon.png",
           hc: 1,
           qtd: 3,
           rarity: 1,
@@ -634,7 +634,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Search for Peace",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/JanetVanDyne_2Common.png",
           hc: 1,
           qtd: 3,
           rarity: 1,
@@ -656,7 +656,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Prepare for War",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/JanetVanDyne_3Common.png",
           hc: 3,
           qtd: 3,
           rarity: 1,
@@ -678,7 +678,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Wasp of Another Generation",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/JanetVanDyne_4Common.png",
           hc: 1,
           qtd: 2,
           rarity: 2,
@@ -704,7 +704,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Quantum Contradiction",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/JanetVanDyne_6Uncommon.png",
           hc: 3,
           qtd: 2,
           rarity: 2,
@@ -719,7 +719,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Finally Found You",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/JanetVanDyne_1Rare.png",
           hc: 1,
           qtd: 1,
           rarity: 3,
@@ -755,7 +755,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Mystics",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/FreedomFighters_2Common.png",
           hc: 3,
           qtd: 3,
           rarity: 1,
@@ -769,7 +769,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Steel Warrior",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/FreedomFighters_3Common.png",
           hc: 2,
           qtd: 3,
           rarity: 1,
@@ -786,7 +786,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Xolum",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/FreedomFighters_4Common.png",
           hc: 3,
           qtd: 3,
           rarity: 1,
@@ -807,7 +807,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Veb",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/FreedomFighters_5Uncommon.png",
           hc: 2,
           qtd: 2,
           rarity: 2,
@@ -827,7 +827,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Quaz",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/FreedomFighters_6Uncommon.png",
           hc: 3,
           qtd: 2,
           rarity: 2,
@@ -852,7 +852,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Freedom Forever",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/FreedomFighters_1Rare.png",
           hc: 2,
           qtd: 1,
           rarity: 3,
@@ -877,7 +877,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Take the High Ground",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Jentorra_2Common.png",
           hc: 4,
           qtd: 3,
           rarity: 1,
@@ -894,7 +894,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Hit and Run",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Jentorra_3Common.png",
           hc: 2,
           qtd: 3,
           rarity: 1,
@@ -916,7 +916,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Unite the Oppressed",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Jentorra_4Common.png",
           hc: 4,
           qtd: 3,
           rarity: 1,
@@ -932,7 +932,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Find Your Courage",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Jentorra_5Uncommon.png",
           hc: 2,
           qtd: 2,
           rarity: 2,
@@ -954,7 +954,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Lead Powerful Allies",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Jentorra_6Uncommon.png",
           hc: 4,
           qtd: 2,
           rarity: 2,
@@ -974,7 +974,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Conquer the Conqueror",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/Jentorra_1Rare.png",
           hc: 2,
           qtd: 1,
           rarity: 3,
@@ -1003,7 +1003,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Up the Ante",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/AntArmy_2Common.png",
           hc: 2,
           qtd: 3,
           rarity: 1,
@@ -1018,7 +1018,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Antagonize",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/AntArmy_3Common.png",
           hc: 2,
           qtd: 3,
           rarity: 1,
@@ -1042,7 +1042,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Anticipate",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/AntArmy_4Common.png",
           hc: 5,
           qtd: 3,
           rarity: 1,
@@ -1063,7 +1063,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Antiproton Experiments",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/AntArmy_5Uncommon.png",
           hc: 5,
           qtd: 2,
           rarity: 2,
@@ -1093,7 +1093,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Anti-Tank Weapons",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/AntArmy_6Uncommon.png",
           hc: 5,
           qtd: 2,
           rarity: 2,
@@ -1119,7 +1119,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Revolutionary Anthem",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/AntArmy_1Rare.png",
           hc: 5,
           qtd: 1,
           rarity: 3,
@@ -1167,7 +1167,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Darren Cross",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/DarrenCross.png",
           vAttack: "8+",
           abilities: [
             [
@@ -1189,7 +1189,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Yellowjacket",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/DarrenCross_Transformed.png",
           vAttack: "12",
           vAttackAsterisk: true,
           transformed: true,
@@ -1214,7 +1214,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Corporate Raider",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/DarrenCrossTactic1.png",
           tactic: true,
           abilities: [
             [
@@ -1232,7 +1232,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Protect My Investments",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/DarrenCrossTactic2.png",
           tactic: true,
           abilities: [
             [
@@ -1250,7 +1250,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Shrinking Research Budget",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/DarrenCrossTactic3.png",
           tactic: true,
           abilities: [
             [
@@ -1270,7 +1270,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Steal Pym Particles",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/DarrenCrossTactic4.png",
           tactic: true,
           abilities: [
             [
@@ -1301,7 +1301,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Ghost, Master Thief",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/GhostMasterThief.png",
           vAttack: "8+",
           abilities: [
             [
@@ -1332,7 +1332,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Ghost, Intangible",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/GhostMasterThief_Transformed.png",
           vAttack: "6",
           vAttackAsterisk: true,
           transformed: true,
@@ -1354,7 +1354,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Elaborate Rescue Plan",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/GhostMasterThiefTactic2.png",
           tactic: true,
           abilities: [
             [
@@ -1370,7 +1370,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Nightmarish Wraith",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/GhostMasterThiefTactic3.png",
           tactic: true,
           abilities: [
             [
@@ -1386,7 +1386,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Shadowy Abduction",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/GhostMasterThiefTactic4.png",
           tactic: true,
           abilities: [
             [
@@ -1402,7 +1402,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Draining Quantum Energy Chamber",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/GhostMasterThiefTactic1.png",
           tactic: true,
           abilities: [
             [
@@ -1427,7 +1427,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Kang, Quantum Conqueror",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KangQuantumConqueror.png",
           vAttack: "11+",
           abilities: [
             [
@@ -1449,7 +1449,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Kang, Multiverse Conqueror",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KangQuantumConqueror_Transformed.png",
           vAttack: "10+",
           transformed: true,
           abilities: [
@@ -1471,7 +1471,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Conqueror's Wrath",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/Kang%203.png",
           tactic: true,
           abilities: [
             [
@@ -1487,7 +1487,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Kang's Defiance",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KangQuantumConquerorTactic2.png",
           tactic: true,
           abilities: [
             [
@@ -1506,7 +1506,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Multiversal Engine Core",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KangQuantumConquerorTactic3.png",
           tactic: true,
           abilities: [
             [
@@ -1527,7 +1527,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "The Time Sphere",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Masterminds/KangQuantumConquerorTactic4.png",
           tactic: true,
           abilities: [
             [
@@ -1548,7 +1548,7 @@ export const MSAntManWasp: CardSetDef = {
     {
       id: 41,
       name: "Quantumnauts",
-      imageUrl: "",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/Quantumnauts.png",
       vAttack: "2+",
       vp: 1,
       cards: [
@@ -1571,7 +1571,7 @@ export const MSAntManWasp: CardSetDef = {
     {
       id: 42,
       name: "Quantum Hound",
-      imageUrl: "",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/QuantumHound.png",
       vAttack: "3",
       vp: 1,
       cards: [
@@ -1599,6 +1599,7 @@ export const MSAntManWasp: CardSetDef = {
       vp: 1,
       cards: [
         {
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/TardigradeCovert.png",
           vAttackAsterisk: true,
           abilities: [
             [
@@ -1615,6 +1616,7 @@ export const MSAntManWasp: CardSetDef = {
           ]
         },
         {
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/TardigradeInstinct.png",
           vAttackAsterisk: true,
           abilities: [
             [
@@ -1631,6 +1633,7 @@ export const MSAntManWasp: CardSetDef = {
           ]
         },
         {
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/TardigradeRanged.png",
           vAttackAsterisk: true,
           abilities: [
             [
@@ -1647,6 +1650,7 @@ export const MSAntManWasp: CardSetDef = {
           ]
         },
         {
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/TardigradeStrength.png",
           vAttackAsterisk: true,
           abilities: [
             [
@@ -1663,6 +1667,7 @@ export const MSAntManWasp: CardSetDef = {
           ]
         },
         {
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/TardigradeTech.png",
           vAttackAsterisk: true,
           abilities: [
             [
@@ -1688,7 +1693,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Hydra Arms Dealer",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/CrossTechnologiesHydraArmsDealer.png",
           qtd: 2,
           vAttack: "4",
           vp: "2",
@@ -1706,7 +1711,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Cross' Security Detail",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/CrossTechnologiesCrosssSecurityDetail.png",
           qtd: 2,
           vAttack: "5+",
           vp: "4",
@@ -1727,7 +1732,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Shrinksperiments",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/CT3.png",
           qtd: 2,
           vAttack: "6",
           vAttackAsterisk: true,
@@ -1752,7 +1757,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Yellowjacket Prototype",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/CrossTechnologiesYellowJacketPrototype.png",
           qtd: 1,
           vAttack: "9",
           vAttackAsterisk: true,
@@ -1780,7 +1785,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Take Over Pym Technologies",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/CrossTechnologiesAmbushSchemeTakeOverPymTechnologies.png",
           qtd: 1,
           overrideType: 5,
           vp: "2",
@@ -1813,7 +1818,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Sonny Burch's Goons",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/GhostChasersSonnyBurchsGoons.png",
           qtd: 1,
           vAttack: "4",
           vp: "2",
@@ -1831,7 +1836,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Anitolov",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/GC%202.png",
           qtd: 1,
           vAttack: "5",
           vp: "3",
@@ -1846,7 +1851,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Corrupted Government Agents",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/GhostChasersCorruptedGovernmentAgents.png",
           qtd: 1,
           vAttack: "5",
           vp: "3",
@@ -1865,7 +1870,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Uzman, with Truth Serum",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/GhostChasersUzmanWithTruthSerum.png",
           qtd: 1,
           vAttack: "5",
           vp: "3",
@@ -1879,7 +1884,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Sonny Burch",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/GhostChasersSonnyBurch.png",
           qtd: 1,
           vAttack: "6",
           vp: "4",
@@ -1904,7 +1909,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Dr. Bill Foster",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/GhostChasersDrBillFoster.png",
           qtd: 1,
           vAttack: "0",
           vAttackAsterisk: true,
@@ -1921,7 +1926,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Goliath",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/GhostChasersGoliath.png",
           qtd: 1,
           vAttack: "8",
           vAttackAsterisk: true,
@@ -1948,7 +1953,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "High-Speed Car Chase",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/GhostChasersAmbushSchemeHigh-SpeedCarChase.png",
           qtd: 1,
           overrideType: 5,
           vp: "3",
@@ -1975,7 +1980,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Quantumnaut Elite",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ArmadaOfKangQuantumnautElite.png",
           qtd: 1,
           vAttack: "4+",
           vp: "4",
@@ -1994,7 +1999,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Troop Ships of Kang",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ArmadaOfKangTroopShipsOfKang.png",
           qtd: 1,
           vAttack: "4+",
           vp: "3",
@@ -2014,7 +2019,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "City Defense System",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ArmadaOfKangCityDefenseSystem.png",
           qtd: 1,
           vAttack: "4+",
           vp: "3",
@@ -2036,7 +2041,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Lord Krylar's Yacht",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ArmadaOfKangLordKrylarsYacht.png",
           qtd: 1,
           vAttack: "5",
           vp: "3",
@@ -2061,7 +2066,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Energy Shield",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ArmadaOfKangEnergyShield.png",
           qtd: 1,
           vAttack: "5+",
           vp: "4",
@@ -2078,7 +2083,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Pursuit Craft",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ArmadaOfKangPursuitCraft.png",
           qtd: 1,
           vAttack: "5+",
           vp: "4",
@@ -2096,7 +2101,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "M.O.D.O.K.",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ArmadaOfKangMODOK.png",
           qtd: 1,
           vAttack: "8",
           vAttackAsterisk: true,
@@ -2124,7 +2129,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Build a Conquering Army",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/ArmadaOfKangAmbushSchemeBuildAConqueringArmy.png",
           qtd: 1,
           overrideType: 5,
           vp: "4",
@@ -2156,7 +2161,7 @@ export const MSAntManWasp: CardSetDef = {
       cards: [
         {
           name: "Axian Bartender",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/QuantumRealmAxianBartender.png",
           qtd: 1,
           vAttack: "4",
           vp: "2",
@@ -2175,7 +2180,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Axiam Maitre D'",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/QuantumRealmAxianMaitreD.png",
           qtd: 1,
           vAttack: "4",
           vp: "2",
@@ -2190,7 +2195,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Lord Krylar's Valet",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/QuantumRealmLordKrylarsValet.png",
           qtd: 1,
           vAttack: "5",
           vp: "3",
@@ -2209,7 +2214,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Sky Manta",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/QuantumRealmSkyManta.png",
           qtd: 1,
           vAttack: "5",
           vp: "3",
@@ -2224,7 +2229,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Lord Krylar's Appetizer",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/QuantumRealmLordKrylarsAppetizer.png",
           qtd: 1,
           vAttack: "6",
           vAttackAsterisk: true,
@@ -2246,7 +2251,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Hungering Energy",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/QuantumRealmHungeringEnergy.png",
           qtd: 1,
           vAttack: "7",
           vAttackAsterisk: true,
@@ -2268,7 +2273,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Quantumoeba",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/QuantumRealmQuantumoeba.png",
           qtd: 1,
           vAttack: "8",
           vAttackAsterisk: true,
@@ -2296,7 +2301,7 @@ export const MSAntManWasp: CardSetDef = {
         },
         {
           name: "Quantumania",
-          imageUrl: "",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Villains/QuantumRealmAmbushSchemeQuantumania.png",
           qtd: 1,
           overrideType: 5,
           vp: "2",
@@ -2325,7 +2330,7 @@ export const MSAntManWasp: CardSetDef = {
     {
       id: 178,
       name: "Auction Shrink Tech to Highest Bidder",
-      imageUrl: "",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/Auction%20Shrink%20Tech%20To%20Highest%20Bidder.png",
       cards: [
         {
           abilities: [
@@ -2352,7 +2357,7 @@ export const MSAntManWasp: CardSetDef = {
     {
       id: 179,
       name: "Safeguard Dark Secrets",
-      imageUrl: "",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/Safeguard%20Dark%20Secrets.png",
       cards: [
         {
           abilities: [
@@ -2384,7 +2389,7 @@ export const MSAntManWasp: CardSetDef = {
     {
       id: 180,
       name: "Escape an Imprisoning Dimension",
-      imageUrl: "",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/Escape%20An%20Imprisoning%20Dimension.png",
       cards: [
         {
           abilities: [
@@ -2413,7 +2418,7 @@ export const MSAntManWasp: CardSetDef = {
     {
       id: 181,
       name: "Siphon Energy from the Quantum Realm",
-      imageUrl: "",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/Siphon%20Energy%20From%20The%20Quantum%20Realm.png",
       cards: [
         {
           abilities: [
@@ -2445,7 +2450,7 @@ export const MSAntManWasp: CardSetDef = {
     {
       id: 58,
       name: "Agent Jimmy Woo",
-      imageUrl: "",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/Agent%20Jimmy%20Woo.png",
       vp: 1,
       cards: [
         {
@@ -2464,7 +2469,7 @@ export const MSAntManWasp: CardSetDef = {
     {
       id: 59,
       name: "Maggie Lang",
-      imageUrl: "",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/Maggie%20Lang.png",
       vp: 1,
       cards: [
         {
@@ -2481,7 +2486,7 @@ export const MSAntManWasp: CardSetDef = {
     {
       id: 60,
       name: "Officer Jim Paxton",
-      imageUrl: "",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/Officer%20Jim%20Paxton.png",
       vp: 1,
       cards: [
         {
@@ -2498,7 +2503,7 @@ export const MSAntManWasp: CardSetDef = {
     {
       id: 61,
       name: "Young Cassie Lang",
-      imageUrl: "",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/Young%20Cassie%20Lang.png",
       vp: 1,
       cards: [
         {
