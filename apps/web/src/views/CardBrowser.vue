@@ -2,19 +2,25 @@
   <div>
     <shared-header />
 
-    <v-navigation-drawer fixed :width="400" class="pt-16 pb-2">
-      <v-treeview 
-        :items="items"
-        :active.sync="active"
-        dense
-        activatable
-        open-on-click
-        class="text-body-2"
-      >
-      </v-treeview>
-    </v-navigation-drawer>
+    <shared-side-bar>
+      <template v-slot:default>
+        <v-treeview 
+          :items="items"
+          :active.sync="active"
+          dense
+          activatable
+          open-on-click
+          class="text-body-2"
+        >
+        </v-treeview>
+    
+      </template>
+      <template v-slot:collapsed>
+        <SortToggleCollapsed v-model="sortMethod" @input="sortChanged" vp="true" />
+      </template>
+    </shared-side-bar>
 
-    <v-container fluid style="margin-left: 400px; width: calc(100% - 400px);" class="px-10">
+    <v-container fluid  class="px-10">
       <v-row>        
         <v-col :key="result.name + result.set" v-for="result in cards" cols="12" md="12" lg="6" xl="4">
           <v-card elevation="2">
