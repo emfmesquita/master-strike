@@ -1599,6 +1599,7 @@ export const MSAntManWasp: CardSetDef = {
       vp: 1,
       cards: [
         {
+          name: "Tardigrade (Covert)",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/TardigradeCovert.png",
           vAttackAsterisk: true,
           abilities: [
@@ -1616,6 +1617,7 @@ export const MSAntManWasp: CardSetDef = {
           ]
         },
         {
+          name: "Tardigrade (Instinct)",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/TardigradeInstinct.png",
           vAttackAsterisk: true,
           abilities: [
@@ -1633,6 +1635,7 @@ export const MSAntManWasp: CardSetDef = {
           ]
         },
         {
+          name: "Tardigrade (Ranged)",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/TardigradeRanged.png",
           vAttackAsterisk: true,
           abilities: [
@@ -1650,6 +1653,7 @@ export const MSAntManWasp: CardSetDef = {
           ]
         },
         {
+          name: "Tardigrade (Strength)",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/TardigradeStrength.png",
           vAttackAsterisk: true,
           abilities: [
@@ -1667,6 +1671,7 @@ export const MSAntManWasp: CardSetDef = {
           ]
         },
         {
+          name: "Tardigrade (Tech)",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/TardigradeTech.png",
           vAttackAsterisk: true,
           abilities: [

@@ -1452,6 +1452,7 @@ export const MSWhatIf: CardSetDef = {
       vp: 1,
       cards: [
         {
+          name: "Ultron Sentries (Covert)",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/UltronSentries_Covert.png",
           abilities: [
             [
@@ -1466,6 +1467,7 @@ export const MSWhatIf: CardSetDef = {
           ]
         },
         {
+          name: "Ultron Sentries (Instinct)",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/UltronSentries_Instinct.png",
           abilities: [
             [
@@ -1480,6 +1482,7 @@ export const MSWhatIf: CardSetDef = {
           ]
         },
         {
+          name: "Ultron Sentries (Ranged)",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/UltronSentries_Ranged.png",
           abilities: [
             [
@@ -1494,6 +1497,7 @@ export const MSWhatIf: CardSetDef = {
           ]
         },
         {
+          name: "Ultron Sentries (Strength)",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/UltronSentries_Strength.png",
           abilities: [
             [
@@ -1508,6 +1512,7 @@ export const MSWhatIf: CardSetDef = {
           ]
         },
         {
+          name: "Ultron Sentries (Tech)",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/UltronSentries_Tech.png",
           abilities: [
             [
