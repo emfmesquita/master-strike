@@ -282,6 +282,13 @@ const MS_ANT_MAN_WASP: CardSetMetadata = {
     initials: "MSAW",
     cardTypes: [1, 2, 3, 4, 5, 6],
 };
+const MARVEL_2099: CardSetMetadata = {
+    id: 40,
+    value: "2099",
+    label: "Marvel 2099",
+    initials: "2099",
+    cardTypes: [1, 2, 4, 5],
+};
 
 export interface SetMetadataMap {
     [key: string]: CardSetMetadata;
@@ -330,6 +337,7 @@ export const sets: Readonly<SetMetadataMap> = Object.freeze({
     MIDNIGHT_SUNS,              // 37
     MS_WHAT_IF,                 // 38
     MS_ANT_MAN_WASP,            // 39
+    MARVEL_2099,                // 40
 });
 
 /**

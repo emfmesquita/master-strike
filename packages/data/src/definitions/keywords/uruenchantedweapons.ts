@@ -2,45 +2,38 @@ import { KeywordDefinition } from "../ruleTypes";
 
 export const uruenchantedweapons: KeywordDefinition = [
   [
-    "When you try to fight an enemy that has some number of Uru-Enchanted Weapons, reveal that many cards from the top of the Adversary Deck. That enemy immediately gains ",
-    { bold: "+" },
-    { icon: 1 },
-    " equal to the total Victory Points of all the cards you revealed. If you have enough Attack points to match the enemy’s improved ",
-    { icon: 1 },
-    ", use them and defeat the enemy as normal. If you don’t have enough Attack points, you don’t defeat this enemy, you lose all your Attack points, and you can’t fight anymore this turn.",
+    "To corrupt the people of 2099’s faith in ancient Heroes, Alchemax creates false Asgardian “gods”. They combine nanotech and nuclear fusion to engineer jaw-dropping weapons that mimic the power of the fabled Mjolnir. These use the UruEnchanted Weapons keyword, which first appeared in Legendary®: Fear Itself."
   ],
   {
     points: [
       [
-        "Whether you defeat that enemy or not, put all the cards you revealed from the Adversary Deck on the bottom of that deck in random order."
-      ],
-      [
-        "Many of these enemies have a “",
-        { bold: "Fight or Fail:" },
-        "” effect. Do this effect if you defeat them ",
-        { bold: "or" },
-        " if the Uru-Enchanted Weapons cause you to fail to defeat them."
-      ],
-      [
-        "You can’t try to fight an enemy unless you have enough Attack points to match its printed ",
+        { bold: "When you try to fight an Enemy that has some number of Uru-Enchanted Weapons, reveal that many cards from the top of the Villain Deck. That Enemy immediately gains +" },
         { icon: 1 },
-        "."
+        { bold: " equal to the total Victory Points of all the cards you revealed." },
       ],
       [
-        "Once you start to fight an enemy, you can’t play any more cards or throw any Artifacts until after that fight is complete. So remember to generate all the Attack points you can before you attack an enemy with Uru-Enchanted Weapons!"
-      ],
-      [
-        "The ",
-        { bold: "*" },
-        " symbol next to these Enemies’ ",
+        "If you have at least as many ",
         { icon: 1 },
-        " indicates that they might get more Attack.",
+        " points as the Enemy’s improved ",
+        { icon: 1 },
+        ", use them and defeat the Enemy as normal. If you don’t have enough ",
+        { icon: 1 },
+        " points, you don’t defeat this Enemy, you lose all your ",
+        { icon: 1 },
+        " points, and you can’t use fight anymore this turn. (You can still play cards and recruit – you just can’t fight or Heal Wounds.)"
       ],
       [
-        "Flipping cards for Uru-Enchanted Weapons cannot end the game. If you run out of cards in the Adversary Deck, shuffle the cards you’ve revealed so far and keep revealing. (If there are no cards left in the Adversary Deck there is no Attack bonus.)"
+        { bold: "Whether you defeat that Enemy or not, put all the cards you revealed from the Villain Deck on the bottom of that deck in random order." },
       ],
       [
-        "With 2-5 players, each flip tends to be worth about 1.5 attack. In solo mode: about 1 attack."
+        "Once you start to fight an Enemy, you can’t play any more cards until after that fight is complete. Remember to generate all the ",
+        { icon: 1 },
+        " you can before you fight them!"
+      ],
+      [
+        "Flipping cards for Uru-Enchanted Weapons cannot end the game. If you run out of cards in the Villain Deck, shuffle the cards you’ve revealed so far and keep revealing. (If there are no cards left in the Villain Deck there is no ",
+        { icon: 1 },
+        " bonus.)"
       ],
     ]
   }

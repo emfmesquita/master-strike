@@ -366,7 +366,7 @@ const UNDERCOVER = {
   id: 60,
   value: "undercover",
   label: "Undercover",
-  cardTypes: [1, 4, 5],
+  cardTypes: [1, 2, 4, 5],
 }
 const SHIELD_LEVEL = {
   id: 61,
@@ -593,6 +593,24 @@ const DOUBLE_CROSS = {
   label: "Double-Cross",
   cardTypes: [2, 4],
 }
+const CYBER_MOD = {
+  id: 98,
+  value: "cybermod",
+  label: "Cyber-Mod",
+  cardTypes: [1, 2, 4],
+}
+const FATED_FUTURE = {
+  id: 99,
+  value: "fatedfuture",
+  label: "Fated Future",
+  cardTypes: [1],
+}
+const FIGHT_OR_FAIL = {
+  id: 100,
+  value: "fightorfail",
+  label: "Fight or Fail",
+  cardTypes: [4],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -705,6 +723,9 @@ export const keywords: Readonly<KeywordMetadataMap> = Object.freeze({
   ANTICS,                     // 95 done
   EXPLORE,                    // 96 done
   DOUBLE_CROSS,               // 97 done
+  CYBER_MOD,                  // 98 done
+  FATED_FUTURE,               // 99 done
+  FIGHT_OR_FAIL,              // 100 done
   NONE,                       // -1
 });
 

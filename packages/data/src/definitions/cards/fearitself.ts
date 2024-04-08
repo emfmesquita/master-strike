@@ -523,9 +523,7 @@ export const FearItself: CardSetDef = {
           abilities: [
             { keyword: 15, text: "2 Uru-Enchanted Weapons" },
             [
-              {
-                bold: "Fight or Fail"
-              },
+              { keyword: 100 },
               ": If her Uru-Enchanted Weapons revealed any Bystanders, kidnap them."
             ]
           ]
@@ -546,9 +544,7 @@ export const FearItself: CardSetDef = {
             ],
             { keyword: 15, text: "Uru-Enchanted Weapon" },
             [
-              {
-                bold: "Fight or Fail"
-              },
+              { keyword: 100 },
               ": You get ",
               { bold: "+2" },
               { icon: 2 },
@@ -566,9 +562,7 @@ export const FearItself: CardSetDef = {
           abilities: [
             { keyword: 15, text: "Uru-Enchanted Weapon" },
             [
-              {
-                bold: "Fight or Fail"
-              },
+              { keyword: 100 },
               ": Choose one: Each other player draws a card, or each other player discards a card."
             ]
           ]
@@ -583,9 +577,7 @@ export const FearItself: CardSetDef = {
           abilities: [
             { keyword: 15, text: "Uru-Enchanted Weapon" },
             [
-              {
-                bold: "Fight or Fail"
-              },
+              { keyword: 100 },
               ": If his Uru-Enchanted Weapon revealed an Adversary, KO one of your Allies."
             ]
           ]
@@ -600,9 +592,7 @@ export const FearItself: CardSetDef = {
           abilities: [
             { keyword: 15, text: "Uru-Enchanted Weapon" },
             [
-              {
-                bold: "Fight or Fail"
-              },
+              { keyword: 100 },
               ": If her Uru-Enchanted Weapon revealed a Command Strike or Plot Twist, play it."
             ],
             [
@@ -625,9 +615,7 @@ export const FearItself: CardSetDef = {
           abilities: [
             { keyword: 15, text: "Uru-Enchanted Weapon" },
             [
-              {
-                bold: "Fight or Fail"
-              },
+              { keyword: 100 },
               ": If her Uru-Enchanted Weapon revealed an Adversary, put that Adversary into your Victory Pile."
             ]
           ]
@@ -642,9 +630,7 @@ export const FearItself: CardSetDef = {
           abilities: [
             { keyword: 15, text: "2 Uru-Enchanted Weapons" },
             [
-              {
-                bold: "Fight or Fail"
-              },
+              { keyword: 100 },
               ": Play all the cards revealed by his Uru-Enchanted Weapon that are worth 2 VP or less."
             ],
             [
@@ -665,9 +651,7 @@ export const FearItself: CardSetDef = {
           abilities: [
             { keyword: 15, text: "2 Uru-Enchanted Weapons" },
             [
-              {
-                bold: "Fight or Fail"
-              },
+              { keyword: 100 },
               ": Draw two cards."
             ],
             [

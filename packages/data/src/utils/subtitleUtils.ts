@@ -20,9 +20,11 @@ export const heroSubtitle = (card: HeroCardDef, hero: HeroDef) => {
 }
 
 export const mastermindSubtitle = (card: MastermindCardDef | OopHeroCardDef | OopVillainCardDef, mm: MastermindDef, setId: number) => {
-  const type = [6, 8].includes(setId) ? "Commander": "Mastermind";
+  let type = [6, 8].includes(setId) ? "Commander": "Mastermind";
   const mmName = mm.tacticName || mm.name;
-  if(card.tactic) return `${type} Tactic - ${mmName}`;
+  if(card.tactic) {
+    type =  `${type} Tactic - ${mmName}`
+  };
   const mmCard = card as MastermindCardDef;
   if(mmCard.epic) return `Epic ${type}`;
   if(mmCard.transformed) return `${type}, Transformed`;
