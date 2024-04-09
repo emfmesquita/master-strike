@@ -1440,7 +1440,7 @@ export const Marvel2099: CardSetDef = {
     },
     {
       id: 185,
-      name: "Befoul Eath Into a Polluted Wasteland",
+      name: "Befoul Earth Into a Polluted Wasteland",
       imageUrl: "",
       cards: [
         {
