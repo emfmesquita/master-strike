@@ -63,7 +63,7 @@ export const Marvel2099: CardSetDef = {
           ]
         },
         {
-          name: "Spider-Silk Webbing",
+          name: "Spider-Sense Telepathy",
           imageUrl: "",
           hc: 2,
           rarity: 3,
