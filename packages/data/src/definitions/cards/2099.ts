@@ -453,7 +453,7 @@ export const Marvel2099: CardSetDef = {
   masterminds: [
     {
       id: 100,
-      name: "Sinsiter Six 2099",
+      name: "Sinister Six 2099",
       vp: 6,
       cards: [
         {
