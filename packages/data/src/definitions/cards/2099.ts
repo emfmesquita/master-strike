@@ -1209,7 +1209,7 @@ export const Marvel2099: CardSetDef = {
             ],
             [
               { bold: "Ambush" },
-              ": Put the top car of the Hero Deck into the Escape Pile.",
+              ": Put the top card of the Hero Deck into the Escape Pile.",
             ],
             [
               { bold: "Fight" },

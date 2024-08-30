@@ -1453,7 +1453,7 @@ export const Revelations: CardSetDef = {
               {
                 bold: "Fight"
               },
-              ": Each other plasyer discards two cards, then draws a card."
+              ": Each other player discards two cards, then draws a card."
             ]
           ]
         },
