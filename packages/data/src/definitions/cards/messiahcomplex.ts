@@ -1178,7 +1178,7 @@ export const MessiahComplex: CardSetDef = {
       ]
     },
     {
-      id: 38,
+      id: 44,
       name: "Sentinel Squad O∗N∗E∗",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/mc_henchman_sentinel_squad_one.png",
       vAttack: "2",
