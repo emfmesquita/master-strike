@@ -2360,7 +2360,7 @@ export const XMen: CardSetDef = {
             ],
             [
               { bold: "Or Suffer" },
-              ": After you draw your new hand at the end of this turn, each palyer reveals their hand and discards each card with the same cost as the cards in the HQ."
+              ": After you draw your new hand at the end of this turn, each player reveals their hand and discards each card with the same cost as the cards in the HQ."
             ]
           ]
         },
