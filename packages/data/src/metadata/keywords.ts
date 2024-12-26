@@ -222,7 +222,7 @@ const BERSERK = {
   id: 36,
   value: "berserk",
   label: "Berserk",
-  cardTypes: [1, 6],
+  cardTypes: [1, 2, 4, 5, 6],
 }
 const SOARING_FLIGHT = {
   id: 37,
@@ -611,6 +611,18 @@ const FIGHT_OR_FAIL = {
   label: "Fight or Fail",
   cardTypes: [4],
 }
+const WEAPON_X_SEQUENCE = {
+  id: 101,
+  value: "weaponxsequence",
+  label: "Weapon X Sequence",
+  cardTypes: [1, 2, 4],
+}
+const FAIL = {
+  id: 102,
+  value: "fail",
+  label: "Fail",
+  cardTypes: [2, 4],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -726,6 +738,8 @@ export const keywords: Readonly<KeywordMetadataMap> = Object.freeze({
   CYBER_MOD,                  // 98 done
   FATED_FUTURE,               // 99 done
   FIGHT_OR_FAIL,              // 100 done
+  WEAPON_X_SEQUENCE,          // 101 done
+  FAIL,                       // 102 done
   NONE,                       // -1
 });
 

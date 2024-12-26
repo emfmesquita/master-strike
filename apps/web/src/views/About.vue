@@ -23,9 +23,6 @@
           >
             Report Bug
           </v-btn>
-          <v-btn small color="primary" to="/donate" class="ma-1">
-            Donate
-          </v-btn>
         </v-col>
       </v-row>
       <v-row>

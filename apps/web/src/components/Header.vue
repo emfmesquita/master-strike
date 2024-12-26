@@ -93,10 +93,6 @@ const items = [
     title: "About",
     to: "/about"
   },
-  {
-    title: "Donate",
-    to: "/donate"
-  },
 ];
 
 export default {

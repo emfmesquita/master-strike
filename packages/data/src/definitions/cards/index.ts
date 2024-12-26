@@ -35,5 +35,6 @@ export * from './sw1';
 export * from './sw2';
 export * from './venom';
 export * from './villains';
+export * from './weaponx';
 export * from './wwhulk';
 export * from './xmen';
