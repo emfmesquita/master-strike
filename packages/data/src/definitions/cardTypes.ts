@@ -60,6 +60,14 @@ export interface BystanderCardDef extends BasicCardDef {
   qtd: number;
 }
 
+export interface WoundCardDef extends BasicCardDef {
+  qtd: number;
+  subtitle?: string;
+  cost?: number;
+  attack?: string;
+  recruit?: string;
+}
+
 export interface OopHeroCardDef extends HeroCardDef {
   overrideType?: 1;
   tactic?: boolean;
@@ -144,6 +152,15 @@ export interface BystanderDef {
   cards: (BystanderCardDef | OopHeroCardDef)[];
 }
 
+export interface WoundDef {
+  id: number;
+  name: string;
+  set?: number | number[];
+  imageUrl?: string;
+  cards: WoundCardDef[];
+  filterName?: string;
+}
+
 export interface CardSetDef {
   id: number;
   heroes?: HeroDef[];
@@ -152,4 +169,5 @@ export interface CardSetDef {
   villains?: VillainDef[];
   schemes?: SchemeDef[];
   bystanders?: BystanderDef[];
+  wounds?: WoundDef[];
 }

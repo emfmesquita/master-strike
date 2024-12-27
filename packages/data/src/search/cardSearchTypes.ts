@@ -53,6 +53,10 @@ export enum CardDetailsType {
    */
   BystanderCardDetail = 'BystanderCardDetail',
   /**
+   * Details of a wound card.
+   */
+  WoundCardDetail = 'WoundCardDetail',
+  /**
    * Details of an out of place hero card (a villain, mastermind tactic, henchman, ... that can be earned as a hero).
    */
   OopHeroDetails = 'OopHeroDetails',
@@ -301,6 +305,31 @@ export interface BystanderCardDetails extends BaseCardDetails {
    * Victory Points.
    */
   vp: string;
+}
+
+/**
+ * Details of a wound card.
+ */
+export interface WoundCardDetails extends BaseCardDetails {
+  /**
+  * Number of the same card in the set.
+  */
+  qtd: number;
+
+  /**
+   * Card cost, only present on enraging wounds, and always zero.
+   */
+  cost?: string;
+
+  /**
+   * Attack Value, only present on enraging wounds.
+   */
+  attack?: string;
+
+  /**
+   * Recruit Value, only present on enraging wounds.
+   */
+  recruit?: string;
 }
 
 /**

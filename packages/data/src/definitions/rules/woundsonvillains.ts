@@ -69,7 +69,9 @@ export const woundsonvillains: RuleDefinition = [
         " ). Malice and Preyy work similarly. You can Wound them this way multiple times per turn. This does not count as a “Fight.“ Don't rescue captured Bystanders. You can still use the “Healing“ ability on your own Wounds the same turn you Wound an enemy this way.",
       ],
       [
-        "If your Wound Stack contains different kinds of Wounds, like the Grievous Wounds from Legendary® Civil War, then whenever you return Wounds to the Wound Stack, put them on the bottom. Wounds on enemies are face up."
+        "If your Wound Stack contains different kinds of Wounds, like the ",
+        { rule: 17 },
+        " from Legendary® Civil War, then whenever you return Wounds to the Wound Stack, put them on the bottom. Wounds on enemies are face up."
       ],
       [
         "If an effect causes “each player“ to gain a Wound (or do anything else), start with the current player then go clockwise."

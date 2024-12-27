@@ -14,7 +14,7 @@ const CORE_SET: CardSetMetadata = {
     value: "coreset",
     label: "Core Set",
     initials: "C",
-    cardTypes: [1, 2, 3, 4, 5, 6],
+    cardTypes: [1, 2, 3, 4, 5, 6, 7],
 };
 const PROMO: CardSetMetadata = {
     id: 2,
@@ -49,7 +49,7 @@ const VILLAINS: CardSetMetadata = {
     value: "villains",
     label: "Villains",
     initials: "V",
-    cardTypes: [1, 2, 3, 4, 5, 6],
+    cardTypes: [1, 2, 3, 4, 5, 6, 7],
 };
 const GUARDIANS_OF_THE_GALAXY: CardSetMetadata = {
     id: 7,
@@ -98,7 +98,7 @@ const CIVIL_WAR: CardSetMetadata = {
     value: "civilwar",
     label: "Civil War",
     initials: "CW",
-    cardTypes: [1, 2, 3, 4, 5, 6],
+    cardTypes: [1, 2, 3, 4, 5, 6, 7],
 };
 const DEADPOOL: CardSetMetadata = {
     id: 14,
@@ -147,7 +147,7 @@ const MARVEL_STUDIOS: CardSetMetadata = {
     value: "marvelstudios",
     label: "Marvel Studios, Phase 1",
     initials: "MS1",
-    cardTypes: [1, 2, 3, 4, 5, 6],
+    cardTypes: [1, 2, 3, 4, 5, 6, 7],
 };
 const ANT_MAN: CardSetMetadata = {
     id: 21,
@@ -273,7 +273,7 @@ const MS_WHAT_IF: CardSetMetadata = {
     value: "mswi",
     label: "Marvel Studios' What If...?",
     initials: "MSWI",
-    cardTypes: [1, 2, 3, 4, 5, 6],
+    cardTypes: [1, 2, 3, 4, 5, 6, 7],
 };
 const MS_ANT_MAN_WASP: CardSetMetadata = {
     id: 39,
@@ -294,7 +294,7 @@ const WEAPON_X: CardSetMetadata = {
     value: "weaponx",
     label: "Weapon X",
     initials: "WX",
-    cardTypes: [1, 2, 4, 5],
+    cardTypes: [1, 2, 4, 5, 7],
 };
 
 export interface SetMetadataMap {

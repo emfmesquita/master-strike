@@ -2222,4 +2222,24 @@ export const CoreSet: CardSetDef = {
       ]
     }
   ],
+  wounds: [
+    {
+      id: 1,
+      name: "Wound",
+      filterName: "Wound (Core)",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/wound.png",
+      set: 1,
+      cards: [
+        {
+          qtd: 30,
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": If you don't recruit any Heroes or defeat any Villains on your turn, you may KO all the Wounds from your hand.",
+            ],
+          ]
+        }
+      ]
+    }
+  ],
 }

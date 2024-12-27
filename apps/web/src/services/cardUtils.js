@@ -203,6 +203,13 @@ const processCard = (cardType, card, group) => {
     }
   }
 
+  if(Metadata.cardTypes.WOUND === cardType) {
+    processSet(card, group);
+    card.name = card.name || group.name;
+    card.subtitle = Subtitles.woundSubtitle(card);
+    card.type = 7;
+  }
+
   return card.subtitle;
 }
 
@@ -251,4 +258,8 @@ export const getAllSchemes = () => {
 
 export const getAllBystanders = () => {
   return processCardGroups(Metadata.cardTypes.BYSTANDER);
+}
+
+export const getAllWounds = () => {
+  return processCardGroups(Metadata.cardTypes.WOUND);
 }

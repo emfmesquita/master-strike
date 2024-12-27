@@ -12,7 +12,8 @@ import {
   OopVillainCardDef, 
   SchemeCardDef, 
   VillainCardDef, 
-  VillainDef 
+  VillainDef, 
+  WoundCardDef
 } from "../definitions";
 
 export const heroSubtitle = (card: HeroCardDef, hero: HeroDef) => {
@@ -73,4 +74,8 @@ export const bystanderSubtitle = (card: BystanderCardDef | OopHeroCardDef) => {
   const cardSubtitle = (card as OopHeroCardDef).subtitle;
   if(cardSubtitle) return cardSubtitle;
   return "Bystander";
+}
+
+export const woundSubtitle = (card: WoundCardDef) => {
+  return card.subtitle ?? "Wound";
 }

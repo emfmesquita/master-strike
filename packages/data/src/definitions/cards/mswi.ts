@@ -2529,4 +2529,24 @@ export const MSWhatIf: CardSetDef = {
       ]
     },
   ],
+  wounds: [
+    {
+      id: 11,
+      name: "Wound",
+      filterName: "Wound (What If...)",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/General%20Cards/What%20If%20Wound.png",
+      set: 38,
+      cards: [
+        {
+          qtd: 30,
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": If you don't recruit or fight anything on your turn, you may KO all the Wounds from your hand.",
+            ],
+          ]
+        }
+      ]
+    },
+  ]
 }

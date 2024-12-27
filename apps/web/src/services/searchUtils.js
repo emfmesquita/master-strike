@@ -1,6 +1,6 @@
 import * as JsSearch from 'js-search'
 
-import { getAllBystanders, getAllHenchmen, getAllHeroes, getAllMasterminds, getAllSchemes, getAllVillains } from "./cardUtils"
+import { getAllBystanders, getAllHenchmen, getAllHeroes, getAllMasterminds, getAllSchemes, getAllVillains, getAllWounds } from "./cardUtils"
 
 import { Metadata } from "@master-strike/data";
 
@@ -153,6 +153,20 @@ export const filterGroupByRule = (groups, rules) => {
         return;
       }
 
+      // check for grievous wounds
+      const isGrievousWound = card.type === Metadata.cardTypes.WOUND.id && card.set === 13;
+      if(isGrievousWound && rules.includes(R.GRIEVOUS_WOUNDS.id)) {
+        match = true;
+        return;
+      }
+
+      // check for enraging wounds
+      const isEnragingWound = card.type === Metadata.cardTypes.WOUND.id && card.set === 41;
+      if(isEnragingWound && rules.includes(R.ENRAGING_WOUNDS.id)) {
+        match = true;
+        return;
+      }
+
       // checks other rules
       const abs = card.abilities;
       const hasRule = ab => rules.includes(ab.rule);
@@ -235,6 +249,7 @@ const buildCardSearch = cardType => {
   if(Metadata.cardTypes.VILLAIN.id === cardType) return buildGroupSearch(getAllVillains());
   if(Metadata.cardTypes.SCHEME.id === cardType) return buildGroupSearch(getAllSchemes());
   if(Metadata.cardTypes.BYSTANDER.id === cardType) return buildGroupSearch(getAllBystanders());
+  if(Metadata.cardTypes.WOUND.id === cardType) return buildGroupSearch(getAllWounds());
   return null;
 }
 

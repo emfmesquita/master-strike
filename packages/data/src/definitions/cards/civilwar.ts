@@ -2853,4 +2853,136 @@ export const CivilWar: CardSetDef = {
       ]
     },
   ],
+  wounds: [
+    {
+      id: 3,
+      name: "Blinding Flash",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/gw_blindingflash.png",
+      set: 13,
+      cards: [
+        {
+          subtitle: "Grievous Wound",
+          qtd: 2,
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": You may discard a card and have each other player discard a card. If you do, KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Blunt Force Trauma",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/gw_bluntforcetrauma.png",
+      set: 13,
+      cards: [
+        {
+          subtitle: "Grievous Wound",
+          qtd: 2,
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": You may spend 5",
+              { icon: 1 },
+              ". If you do, KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 5,
+      name: "Corrosive Webbing",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/gw_corrosivewebbing.png",
+      set: 13,
+      cards: [
+        {
+          subtitle: "Grievous Wound",
+          qtd: 2,
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": You may KO this Wound. If you do, gain another Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 6,
+      name: "Fatal Blow",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/gw_fatalblow.png",
+      set: 13,
+      cards: [
+        {
+          subtitle: "Grievous Wound",
+          qtd: 2,
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": You may KO a Hero that costs 1 or more from your hand or discard pile. If you do, KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 7,
+      name: "Psychic Trauma",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/gw_psychictrauma.png",
+      set: 13,
+      cards: [
+        {
+          subtitle: "Grievous Wound",
+          qtd: 2,
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": You may spend 5",
+              { icon: 2 },
+              ". If you do, KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 8,
+      name: "Spreading Nanovirus",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/gw_spreadingnanovirus.png",
+      set: 13,
+      cards: [
+        {
+          subtitle: "Grievous Wound",
+          qtd: 3,
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": You may have the player on your left gain this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 9,
+      name: "Subdermal Tracker",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/gw_subdermaltracker.png",
+      set: 13,
+      cards: [
+        {
+          subtitle: "Grievous Wound",
+          qtd: 2,
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": You may play a card from the Villain Deck. If you do, KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+  ]
 }

@@ -2531,4 +2531,24 @@ export const Villains: CardSetDef = {
       ]
     },
   ],
+  wounds: [
+    {
+      id: 2,
+      name: "Bindings",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/wounds.png",
+      set: 6,
+      cards: [
+        {
+          qtd: 30,
+          subtitle: "Bindings",
+          abilities: [
+            [
+              { bold: "Betrayal" },
+              ": If you don't recruit any Allies or defeat any Adversaries or Commanders on your turn, you may KO a Bindings from your hand. If you do, the player to your right gains all the other Bindings from your hand.",
+            ],
+          ]
+        }
+      ]
+    }
+  ]
 }

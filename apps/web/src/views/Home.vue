@@ -21,6 +21,7 @@
           <v-btn color="primary" x-large to="/henchmen" class="ma-3">Henchmen</v-btn>
           <v-btn color="primary" x-large to="/schemes" class="ma-3">Schemes</v-btn>
           <v-btn color="primary" x-large to="/bystanders" class="ma-3">Bystanders</v-btn>
+          <v-btn color="primary" x-large to="/wounds" class="ma-3">Wounds</v-btn>
           <v-btn color="primary" x-large to="/keywords" class="ma-3">Keywords</v-btn>
           <v-btn color="primary" x-large to="/about" class="ma-3">About</v-btn>
         </v-col>

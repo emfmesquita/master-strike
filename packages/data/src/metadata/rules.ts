@@ -108,6 +108,18 @@ const AMBUSH_SCHEMES = {
   label: "Ambush Schemes",
   cardTypes: [4],
 }
+const GRIEVOUS_WOUNDS = {
+  id:17,
+  value: "grievouswounds",
+  label: "Grievous Wounds",
+  cardTypes: [7],
+}
+const ENRAGING_WOUNDS = {
+  id:18,
+  value: "enragingwounds",
+  label: "Enraging Wounds",
+  cardTypes: [7],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -139,6 +151,8 @@ export const rules: Readonly<RuleMetadataMap> = Object.freeze({
   UNVEILED_SCHEMES,           // 14 done
   WOUNDS_ON_VILAINS,          // 15 done
   AMBUSH_SCHEMES,             // 16 done
+  GRIEVOUS_WOUNDS,            // 17 done
+  ENRAGING_WOUNDS,            // 18 done
   NONE,                       // -1
 });
 

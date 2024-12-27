@@ -7,7 +7,7 @@
         <v-container>
           <v-row align="center" justify="center">
             <v-col cols="12" class="text-center">
-              <v-chip class="text-center font-weight-bold mr-2">{{ bystandersFound }}</v-chip>
+              <v-chip class="text-center font-weight-bold mr-2">{{ woundsFound }}</v-chip>
               <v-btn icon title="Clear Filter" @click="clearFilter">
                 <v-icon>mdi-eraser</v-icon>
               </v-btn>
@@ -20,22 +20,17 @@
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <BystanderFilter v-model="filter.bystander" @input="filterChanged"/>
+              <WoundFilter v-model="filter.wound" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <SetFilter v-model="filter.set" :cardTypes="[6]" @input="filterChanged"/>
+              <SetFilter v-model="filter.set" :cardTypes="[7]" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <KeywordFilter v-model="filter.keyword" :cardTypes="[6]" @input="filterChanged"/>
-            </v-col>
-          </v-row>
-          <v-row align="center">
-            <v-col cols="12">
-              <RuleFilter v-model="filter.rule" :cardTypes="[6]" @input="filterChanged"/>
+              <RuleFilter v-model="filter.rule" :cardTypes="[7]" @input="filterChanged"/>
             </v-col>
           </v-row>
         </v-container>
@@ -43,7 +38,7 @@
 
       <template v-slot:collapsed>
         <div class="text-center">
-          <v-chip small class="text-center font-weight-bold mb-2">{{ bystanders.length }}</v-chip>
+          <v-chip small class="text-center font-weight-bold mb-2">{{ wounds.length }}</v-chip>
         </div>
         <v-btn small icon title="Clear Filter" @click="clearFilter" class="mb-2 ml-2">
           <v-icon small>mdi-eraser</v-icon>
@@ -51,14 +46,14 @@
       </template>
     </shared-side-bar>
 
-    <ResizableCardList v-model="filter.search" :foundText="bystandersFound" @change="filterChanged">
-      <template v-if="bystanders.length">
-        <PaginatedSingleCardGroupList :groups="bystanders" :key="lastFilterTime" :lineHeight="334">
+    <ResizableCardList v-model="filter.search" :foundText="woundsFound" @change="filterChanged">
+      <template v-if="wounds.length">
+        <PaginatedSingleCardGroupList :groups="wounds" :key="lastFilterTime" :lineHeight="334">
           <template v-slot:default="{ card, cardHeight }">
             <CardWrapper :height="cardHeight">
               <template v-slot:default="{ contentHeight }">
                 <HeroCard v-if="card.overrideType === 1" :card="card" :height="cardHeight" :contentHeight="contentHeight" />
-                <BystanderCard v-else :card="card" :height="cardHeight" :contentHeight="contentHeight" />
+                <WoundCard v-else :card="card" :height="cardHeight" :contentHeight="contentHeight" />
               </template>
             </CardWrapper>
           </template>
@@ -73,71 +68,66 @@
 <script>
 import CardWrapper from "../components/cards/CardWrapper.vue";
 import HeroCard from "../components/cards/HeroCard.vue";
-import BystanderCard from "../components/cards/BystanderCard.vue";
-import KeywordFilter from "../components/filters/KeywordFilter.vue";
+import WoundCard from "../components/cards/WoundCard.vue";
 import PaginatedSingleCardGroupList from "../components/shared/PaginatedSingleCardGroupList.vue";
 import ResizableCardList from "../components/shared/ResizableCardList.vue";
 import RuleFilter from "../components/filters/RuleFilter.vue";
 import SearchFilter from "../components/filters/SearchFilter.vue";
 import SetFilter from "../components/filters/SetFilter.vue";
-import BystanderFilter from "../components/filters/BystanderFilter.vue";
+import WoundFilter from "../components/filters/WoundFilter.vue";
 
 import { Metadata } from "@master-strike/data";
 
-import { getAllBystanders, numberOfCards } from "../services/cardUtils";
+import { getAllWounds, numberOfCards } from "../services/cardUtils";
 import { toIntArray } from "../services/queryUtils";
 import { 
   groupSearchSetup,
   filterGroupBySearch, 
-  filterBySet, 
-  filterGroupByKeyword, 
+  filterBySet,
   filterGroupByRule,
   filterById,
 } from "../services/searchUtils";
 import { sortGroups, ALPHA_SORT } from "../services/sortUtils";
 
-const bystanders = getAllBystanders();
-const validBystanders = bystanders.filter(by => by.id).map(by => by.id);
+const wounds = getAllWounds();
+const validWounds = wounds.filter(by => by.id).map(by => by.id);
 
 const baseFilter = () => ({
   search: "",
-  bystander: [],
+  wound: [],
   set: [],
-  keyword: [],
   rule: [],
 });
 
 export default {
-  name: "Bystanders",
+  name: "Wounds",
   components: {
     CardWrapper,
-    BystanderCard,
+    WoundCard,
     HeroCard,
-    KeywordFilter,
     PaginatedSingleCardGroupList,
     ResizableCardList,
     RuleFilter, 
     SearchFilter,
     SetFilter,
-    BystanderFilter,
+    WoundFilter,
   },
   data: () => ({
     filter: baseFilter(),
     lastFilterTime: 0,
-    bystanders,
+    wounds,
   }),
   computed: {
-    bystandersFound() {
-      if(this.bystanders.length === 1) return "1 Bystander";
-      return `${this.bystanders.length} Bystanders`;
+    woundsFound() {
+      if(this.wounds.length === 1) return "1 Wound";
+      return `${this.wounds.length} Wounds`;
     },
   },
   created() {
     const query = this.$route.query;
     this.filter.search = decodeURI(query.s || "");
-    this.filter.bystander = toIntArray(query.by).filter(bystander => validBystanders.includes(bystander));
+    this.filter.wound = toIntArray(query.by).filter(wound => validWounds.includes(wound));
     this.filter.set = toIntArray(query.set).filter(set => Metadata.setsArray[set - 1]);
-    this.filter.keyword = toIntArray(query.keyword).filter(keyword => Metadata.keywordsArray[keyword - 1]);
     this.filter.rule = toIntArray(query.rule).filter(rule => Metadata.rulesArray[rule - 1]);
     this.search();
   },
@@ -146,9 +136,8 @@ export default {
       const query = {};
       const filter = this.filter;
       if(filter.search) query.s = encodeURI(filter.search);
-      if(filter.bystander.length) query.by = filter.bystander.join(",");
+      if(filter.wound.length) query.by = filter.wound.join(",");
       if(filter.set.length) query.set = filter.set.join(",");
-      if(filter.keyword.length) query.keyword = filter.keyword.join(",");
       if(filter.rule.length) query.rule = filter.rule.join(",");
       
       this.$router.replace({
@@ -166,26 +155,25 @@ export default {
       this.setQuery();
     },
     search() {
-      this.bystanders = bystanders;
-      groupSearchSetup(this.bystanders);
+      this.wounds = wounds;
+      groupSearchSetup(this.wounds);
 
-      this.bystanders = filterById(this.bystanders, this.filter.bystander);
-      this.bystanders = filterBySet(this.bystanders, this.filter.set);
-      this.bystanders = filterGroupByKeyword(this.bystanders, this.filter.keyword);
-      this.bystanders = filterGroupByRule(this.bystanders, this.filter.rule);
-      this.bystanders = filterGroupBySearch(this.bystanders, Metadata.cardTypes.BYSTANDER.id, this.filter.search);
+      this.wounds = filterById(this.wounds, this.filter.wound);
+      this.wounds = filterBySet(this.wounds, this.filter.set);
+      this.wounds = filterGroupByRule(this.wounds, this.filter.rule);
+      this.wounds = filterGroupBySearch(this.wounds, Metadata.cardTypes.WOUND.id, this.filter.search);
 
-      this.bystanders.forEach(bystanders => {
-        bystanders.filteredCards.sort((a,b) => {
+      this.wounds.forEach(wounds => {
+        wounds.filteredCards.sort((a,b) => {
           if(a.disabled && !b.disabled) return 1;
           if(!a.disabled && b.disabled) return -1;
           return a.name.localeCompare(b.name);
         });
 
-        bystanders.results = numberOfCards(bystanders.filteredCards);
+        wounds.results = numberOfCards(wounds.filteredCards);
       });
 
-      sortGroups(this.bystanders, ALPHA_SORT);
+      sortGroups(this.wounds, ALPHA_SORT);
 
       this.lastFilterTime = Date.now();
     }

@@ -1528,4 +1528,24 @@ export const MarvelStudios: CardSetDef = {
       ]
     },
   ],
+  wounds: [
+    {
+      id: 10,
+      name: "Wound",
+      filterName: "Wound (MS)",
+      imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/wound-1.png",
+      set: 20,
+      cards: [
+        {
+          qtd: 30,
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": If you don't recruit any Heroes or defeat any Villains or Masterminds on your turn, you may KO all the Wounds from your hand.",
+            ],
+          ]
+        }
+      ]
+    }
+  ]
 }

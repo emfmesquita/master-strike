@@ -1059,4 +1059,232 @@ export const WeaponX: CardSetDef = {
       ]
     },
   ],
+  wounds: [
+    {
+      id: 12,
+      name: "Blazing Vengeance",
+      imageUrl: "",
+      set: 41,
+      cards: [
+        {
+          subtitle: "Enraging Wound",
+          qtd: 1,
+          cost: 0,
+          attack: "2",
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": When you defeat a Mastermind Tactic this turn, you may KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 13,
+      name: "Broken Bones",
+      imageUrl: "",
+      set: 41,
+      cards: [
+        {
+          subtitle: "Enraging Wound",
+          qtd: 1,
+          cost: 0,
+          attack: "3",
+          abilities: [
+            [
+              "To play this, you must put another card from your hand on top of your deck."
+            ],
+            [
+              { bold: "Healing" },
+              ": When you draw a card this turn ",
+              { italic: "(including drawing this card but not including drawing a new hand at the end of your turn)" },
+              ", you may KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 14,
+      name: "Concussion",
+      imageUrl: "",
+      set: 41,
+      cards: [
+        {
+          subtitle: "Enraging Wound",
+          qtd: 1,
+          cost: 0,
+          attack: "2",
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": When you play two cards of the same Hero Class this turn, you may KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 15,
+      name: "Erratic Powers",
+      imageUrl: "",
+      set: 41,
+      cards: [
+        {
+          subtitle: "Enraging Wound",
+          qtd: 1,
+          cost: 0,
+          attack: "3",
+          abilities: [
+            [
+              "To play this, you must discard three cards, then draw a card."
+            ],
+            [
+              { bold: "Healing" },
+              ": When you use a Superpower Ability this turn, you may KO this Wound. ",
+              { italic: "(e.g. “" },
+              { hc: 4 },
+              { italic: ": You get " },
+              { bold: "+1" },
+              { icon: 1 },
+              { italic: ".“)" },
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 16,
+      name: "Insults and Injuries",
+      imageUrl: "",
+      set: 41,
+      cards: [
+        {
+          subtitle: "Enraging Wound",
+          qtd: 1,
+          cost: 0,
+          attack: "2",
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": When you defeat a Villain worth at least ",
+              { bold: "2" },
+              { icon: 4 },
+              " this turn, you may KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 17,
+      name: "Last Breath",
+      imageUrl: "",
+      set: 41,
+      cards: [
+        {
+          subtitle: "Enraging Wound",
+          qtd: 1,
+          cost: 0,
+          attack: "4",
+          abilities: [
+            [
+              "To play this, you must gain a Wound to the top of your deck."
+            ],
+            [
+              { bold: "Healing" },
+              ": When you KO another Wound this turn, you may KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 18,
+      name: "Massive Blood Loss",
+      imageUrl: "",
+      set: 41,
+      cards: [
+        {
+          subtitle: "Enraging Wound",
+          qtd: 1,
+          cost: 0,
+          attack: "3",
+          abilities: [
+            [
+              "To play this, you must discard a card."
+            ],
+            [
+              { bold: "Healing" },
+              ": When you discard a card this turn ",
+              { italic: "(not including discarding to play this card or discarding at the end of your turn)" },
+              " you may KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 19,
+      name: "Shell Shock",
+      imageUrl: "",
+      set: 41,
+      cards: [
+        {
+          subtitle: "Enraging Wound",
+          qtd: 1,
+          cost: 0,
+          attack: "1",
+          recruit: "1",
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": When you recruit two Heroes this turn, you may KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 20,
+      name: "Sudden Terror",
+      imageUrl: "",
+      set: 41,
+      cards: [
+        {
+          subtitle: "Enraging Wound",
+          qtd: 1,
+          cost: 0,
+          recruit: "2",
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": When you recruit a Hero that costs 7 or more this turn, you may KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 21,
+      name: "Wild Rage",
+      imageUrl: "",
+      set: 41,
+      cards: [
+        {
+          subtitle: "Enraging Wound",
+          qtd: 1,
+          cost: 0,
+          attack: "2",
+          abilities: [
+            [
+              { bold: "Healing" },
+              ": When you defeat a Henchman this turn, you may KO this Wound.",
+            ],
+          ]
+        }
+      ]
+    },
+  ]
 }

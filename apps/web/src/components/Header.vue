@@ -86,6 +86,10 @@ const items = [
     to: "/bystanders"
   },
   {
+    title: "Wounds",
+    to: "/wounds"
+  },
+  {
     title: "Keywords",
     to: "/keywords"
   },
