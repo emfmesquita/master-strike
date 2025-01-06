@@ -42,7 +42,7 @@
           </p>
 
           <p>
-            We plan to keep this page up to date with new expansions and to add more card types, as our free time allows. If you want to give us a morale boost check our <router-link to="/donate">donate page</router-link>.
+            We plan to keep this page up to date with new expansions and to add more card types, as our free time allows.
           </p>
 
           <p>
