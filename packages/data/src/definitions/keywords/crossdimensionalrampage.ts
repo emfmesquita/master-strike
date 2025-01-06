@@ -23,7 +23,7 @@ export const crossdimensionalrampage: KeywordDefinition = [
         "When a Cross-Dimensional Hulk Rampage happens, you can choose to gain the Wound, even if you have a Hulk that you already played or could otherwise reveal. You might want the Wound if you have cards that benefit from gaining   Wounds, or a card that benefits from preventing Wounds."
       ],
       [
-        "There are also Cross-Dimensional Void, Illuminati, Deadpool, Thor, Colossus, Zombie, Demon, Party, Ultrom, and Wolverine (“Weapon X” and “Old Man Logan” included) Rampages."
+        "There are also Cross-Dimensional Void, Illuminati, Deadpool, Thor, Colossus, Zombie, Demon, Party, Ultron, and Wolverine (“Weapon X” and “Old Man Logan” included) Rampages."
       ]
     ]
   }
