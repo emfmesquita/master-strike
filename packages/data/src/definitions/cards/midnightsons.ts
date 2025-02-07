@@ -445,7 +445,7 @@ export const MidnightSuns: CardSetDef = {
               "Once this turn, you may fight the top card of the Bystander Deck as if it were a ",
               { bold: "4" },
               { icon: 1 },
-              " “Darkhold Demon” Vilan with “",
+              " “Darkhold Demon” Villain with “",
               { bold: "Fight" },
               ": KO up to two of your Heroes. Rescue this card as a Bystander.”"
             ],
