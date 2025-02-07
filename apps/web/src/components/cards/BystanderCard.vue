@@ -90,8 +90,8 @@ export default {
     top: 11px;
     width: 24px !important;
     line-height: 20px !important;
-    font-size: 20px !important;
-    -webkit-text-stroke-width: 1px !important;
+    font-size: 16px !important;
+    -webkit-text-stroke-width: 3px !important;
   }
 
 
@@ -111,8 +111,8 @@ export default {
     bottom: 92px;
     width: 20px !important;
     line-height: 20px !important;
-    font-size: 16px !important;
-    -webkit-text-stroke-width: 1px !important;
+    font-size: 14px !important;
+    -webkit-text-stroke-width: 3px !important;
   }
 
   .card-title {

@@ -210,10 +210,10 @@ export default {
   .card-cost {
     right: 0px;
     bottom: 0px;
-    font-size: 32px !important;
+    font-size: 24px !important;
     
     &.small {
-      font-size: 24px !important;
+      font-size: 20px !important;
     }
 
     .card-cost-asterisk {

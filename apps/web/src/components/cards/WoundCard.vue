@@ -100,8 +100,8 @@ export default {
     top: 11px;
     width: 24px !important;
     line-height: 20px !important;
-    font-size: 20px !important;
-    -webkit-text-stroke-width: 1px !important;
+    font-size: 16px !important;
+    -webkit-text-stroke-width: 3px !important;
   }
 
   .card-abilities {
@@ -118,7 +118,7 @@ export default {
   .card-cost {
     right: 0px;
     bottom: 0px;
-    font-size: 32px !important;
+    font-size: 24px !important;
   }
 
   .card-recruit-icon {

@@ -135,24 +135,24 @@ export default {
     top: 11px;
     width: 20px !important;
     line-height: 20px !important;
-    font-size: 20px !important;
-    -webkit-text-stroke-width: 1px !important;
+    font-size: 16px !important;
+    -webkit-text-stroke-width: 3px !important;
   }
 
   .icon-text {
     position: absolute;
     width: 64px;
-    font-size: 28px;
+    font-size: 20px;
     -webkit-text-fill-color: #fff;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: #000;
     line-height: 64px;
     user-select: none;
     pointer-events: none;
 
     &.small {
-      font-size: 24px;
-      -webkit-text-stroke-width: 1px;
+      font-size: 20px;
+      -webkit-text-stroke-width: 3px;
     }
   }
 

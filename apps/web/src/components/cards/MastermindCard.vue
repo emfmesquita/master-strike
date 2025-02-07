@@ -91,7 +91,7 @@ export default {
   .card-attack {
     right: 0px;
     bottom: 0px;
-    font-size: 32px !important;
+    font-size: 28px !important;
 
     .card-attack-asterisk {
       pointer-events: all;
@@ -107,8 +107,8 @@ export default {
     bottom: 92px;
     width: 20px !important;
     line-height: 20px !important;
-    font-size: 16px !important;
-    -webkit-text-stroke-width: 1px !important;
+    font-size: 14px !important;
+    -webkit-text-stroke-width: 3px !important;
   }
 
   .card-title {

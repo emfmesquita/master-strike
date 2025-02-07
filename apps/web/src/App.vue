@@ -105,4 +105,8 @@ export default {
       line-height: 32px;
     }
   }
+
+  body {
+    paint-order: stroke fill;
+  }
 </style>

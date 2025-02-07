@@ -52,7 +52,7 @@ export default {
   font-weight: bold;
   z-index: 1;
   -webkit-text-fill-color: #fff;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #000;
   user-select: none;
   pointer-events: none;

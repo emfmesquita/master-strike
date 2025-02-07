@@ -68,9 +68,9 @@ export default {
   .icon-text {
     position: absolute;
     width: 32px;
-    font-size: 16px;
+    font-size: 10px;
     -webkit-text-fill-color: #fff;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #000;
     line-height: 32px;
     user-select: none;
