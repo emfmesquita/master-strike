@@ -507,7 +507,7 @@ export const SecretWars2: CardSetDef = {
           abilities: [
             [
               { keyword: 19, text: "Patrol the Escape Pile" },
-              ": If there are none Bystanders in it, you get ",
+              ": If there are Bystanders in it, you get ",
               { bold: "+2" },
               { icon: 1 },
               ". Otherwise, you get ",
