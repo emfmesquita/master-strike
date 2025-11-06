@@ -34,7 +34,7 @@ export const RealmOfKings: CardSetDef = {
           ]
         },
         {
-          name: "Worldess Murmur",
+          name: "Wordless Murmur",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/black_bolt_rok_02.png",
           hc: 3,
           rarity: 1,
