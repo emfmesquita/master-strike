@@ -604,35 +604,6 @@ export const MSAntManWasp: CardSetDef = {
       team: 0,
       cards: [
         {
-          name: "Subatomic Size",
-          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/JanetVanDyne_5Uncommon.png",
-          hc: 1,
-          qtd: 3,
-          rarity: 1,
-          cost: 2,
-          costAsterisk: true,
-          attack: "0+",
-          abilities: [
-            [
-              { keyword: 50 },
-              " ",
-              { hc: 1 },
-              { hc: 1 },
-            ],
-            [
-              "Draw a card."
-            ],
-            [
-              { hc: 1 },
-              { hc: 1 },
-              ": You get ",
-              { bold: "+2" },
-              { icon: 1 },
-              "."
-            ]
-          ]
-        },
-        {
           name: "Search for Peace",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/JanetVanDyne_2Common.png",
           hc: 1,
@@ -680,8 +651,8 @@ export const MSAntManWasp: CardSetDef = {
           name: "Wasp of Another Generation",
           imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/JanetVanDyne_4Common.png",
           hc: 1,
-          qtd: 2,
-          rarity: 2,
+          qtd: 3,
+          rarity: 1,
           cost: 5,
           costAsterisk: true,
           attack: "2+",
@@ -700,6 +671,35 @@ export const MSAntManWasp: CardSetDef = {
               { icon: 1 },
               " for each time you explored this turn."
             ],
+          ]
+        },
+        {
+          name: "Subatomic Size",
+          imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Heroes/JanetVanDyne_5Uncommon.png",
+          hc: 1,
+          qtd: 2,
+          rarity: 2,
+          cost: 2,
+          costAsterisk: true,
+          attack: "0+",
+          abilities: [
+            [
+              { keyword: 50 },
+              " ",
+              { hc: 1 },
+              { hc: 1 },
+            ],
+            [
+              "Draw a card."
+            ],
+            [
+              { hc: 1 },
+              { hc: 1 },
+              ": You get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ]
           ]
         },
         {
