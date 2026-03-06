@@ -1792,7 +1792,7 @@ export const XMen: CardSetDef = {
               { bold: "Master Strike" },
               ": KO all Heroes ",
               { keyword: 39, text: "Dominated" },
-              " by Shadow King. Then each player chooses a non-grey Hero from their discard pile. Shadow King ",
+              " by Shadow King. Then each player chooses two non-grey Hero from their discard pile. Shadow King ",
               { keyword: 39, text: "Dominates" },
               " those Heroes."
             ]
