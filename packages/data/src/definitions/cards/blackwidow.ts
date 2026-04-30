@@ -341,7 +341,7 @@ export const BlackWidow: CardSetDef = {
             { keyword: 10 },
             { keyword: 58 },
             [
-              "Once this turn, you might fight the top card of the Bystander Stack as if it were a ",
+              "Once this turn, you may fight the top card of the Bystander Stack as if it were a ",
               { bold: "3" },
               { icon: 1 },
               " “Hand Ninjas“ Henchman Villain with “",
