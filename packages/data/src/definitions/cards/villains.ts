@@ -2374,7 +2374,7 @@ export const Villains: CardSetDef = {
           abilities: [
             [
               { bold: "Setup" },
-              ": 8 Twists, Stack 21 Bystanders next to this Plot as “Infiltrating Spies.“"
+              ": 8 Twists. Stack 21 Bystanders next to this Plot as “Infiltrating Spies.“"
             ],
             [
               { bold: "Twist" },
@@ -2401,7 +2401,7 @@ export const Villains: CardSetDef = {
           abilities: [
             [
               { bold: "Setup" },
-              ": 8 Twists, Include 10 S.H.I.E.L.D. Assault Squads as one of the Backup Adversary groups."
+              ": 8 Twists. Include 10 S.H.I.E.L.D. Assault Squads as one of the Backup Adversary groups."
             ],
             [
               { bold: "Twist" },
