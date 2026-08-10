@@ -210,6 +210,20 @@ const processCard = (cardType, card, group) => {
     card.type = 7;
   }
 
+  if(Metadata.cardTypes.OFFICER === cardType) {
+    processHero(card, group);
+    processSet(card, group);
+    card.name = card.name || group.name;
+    card.type = 8;
+  }
+
+  if(Metadata.cardTypes.SIDEKICK === cardType) {
+    processHero(card, group);
+    processSet(card, group);
+    card.name = card.name || group.name;
+    card.type = 9;
+  }
+
   return card.subtitle;
 }
 
@@ -237,29 +251,12 @@ const processCardGroups = cardType => {
   return allGroups;
 };
 
-export const getAllHeroes = () => {
-  return processCardGroups(Metadata.cardTypes.HERO);
-};
-
-export const getAllMasterminds = () => {
-  return processCardGroups(Metadata.cardTypes.MASTERMIND);
-};
-
-export const getAllVillains = () => {
-  return processCardGroups(Metadata.cardTypes.VILLAIN);
-};
-
-export const getAllHenchmen = () => {
-  return processCardGroups(Metadata.cardTypes.HENCHMEN);
-}
-export const getAllSchemes = () => {
-  return processCardGroups(Metadata.cardTypes.SCHEME);
-}
-
-export const getAllBystanders = () => {
-  return processCardGroups(Metadata.cardTypes.BYSTANDER);
-}
-
-export const getAllWounds = () => {
-  return processCardGroups(Metadata.cardTypes.WOUND);
-}
+export const getAllHeroes = () => processCardGroups(Metadata.cardTypes.HERO);
+export const getAllMasterminds = () => processCardGroups(Metadata.cardTypes.MASTERMIND);
+export const getAllVillains = () => processCardGroups(Metadata.cardTypes.VILLAIN);
+export const getAllHenchmen = () => processCardGroups(Metadata.cardTypes.HENCHMEN);
+export const getAllSchemes = () => processCardGroups(Metadata.cardTypes.SCHEME);
+export const getAllBystanders = () => processCardGroups(Metadata.cardTypes.BYSTANDER);
+export const getAllWounds = () => processCardGroups(Metadata.cardTypes.WOUND);
+export const getAllOfficers = () => processCardGroups(Metadata.cardTypes.OFFICER);
+export const getAllSidekicks = () => processCardGroups(Metadata.cardTypes.SIDEKICK);

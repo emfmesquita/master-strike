@@ -2066,4 +2066,209 @@ export const MessiahComplex: CardSetDef = {
       ]
     },
   ],
+  sidekicks: [
+    {
+      id: 10,
+      name: "Layla Miller",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 23,
+          hc: 5,
+          qtd: 2,
+          cost: 2,
+          attack: "1",
+          abilities: [
+            [
+              "Choose a team. ",
+              { keyword: 32 },
+              " for a card of that team."
+            ],
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 11,
+      name: "Skids",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 4,
+          hc: 1,
+          qtd: 2,
+          cost: 2,
+          recruit: "3",
+          abilities: [
+            [
+              "If any player would gain a Wound, you may discard this card instead. If you do, draw two cards."
+            ],
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 12,
+      name: "Rockslide",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 4,
+          hc: 4,
+          qtd: 2,
+          cost: 2,
+          abilities: [
+            [
+              { keyword: 73 },
+              " a Villain."
+            ],
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 13,
+      name: "Darwin",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 23,
+          hc: 2,
+          qtd: 2,
+          cost: 2,
+          attack: "0+",
+          recruit: "0+",
+          abilities: [
+            [
+              "If the most recent other Hero you played this turn has a ",
+              { icon: 2 },
+              " icon, you get ",
+              { bold: "+2" },
+              { icon: 2 },
+              ". If it has a ",
+              { icon: 1 },
+              " icon, you get ",
+              { bold: "+2" },
+              { icon: 1 },
+              ". ",
+              { italic: "(If both, you get both.)" }
+            ],
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 14,
+      name: "Boom-Boom",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 7,
+          hc: 3,
+          qtd: 2,
+          cost: 2,
+          attack: "0+",
+          abilities: [
+            "Choose one of her nicknames:",
+            { points: [
+                [
+                  { bold: "“Time Bomb“" },
+                  ": You get ",
+                  { bold: "+1" },
+                  { icon: 1 },
+                  " and put this on top of your deck."
+                ],
+                [
+                  { bold: "“Boomer“" },
+                  ": You get ",
+                  { bold: "+3" },
+                  { icon: 1 },
+                  " and put this on the bottom of the ",
+                  { rule: 11, text: "Sidekick" },
+                  " Stack."
+                ],
+                [
+                  { bold: "“Meltdown“" },
+                  ": You get ",
+                  { bold: "+4" },
+                  { icon: 1 },
+                  ", KO this, and gain a Wound."
+                ],
+              ]
+            },
+          ]
+        }
+      ]
+    },
+    {
+      id: 15,
+      name: "Prodigy",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 4,
+          hc: 5,
+          qtd: 2,
+          cost: 2,
+          abilities: [
+            [
+              "Play this card as a copy of another Hero you played this turn that costs 6 or less. This card is both ",
+              { hc: 5 },
+              " and the Hero Class you copy.",
+            ],
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 16,
+      name: "Rusty “Firefist“ Collins",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 4,
+          hc: 3,
+          qtd: 2,
+          cost: 2,
+          attack: "1",
+          abilities: [
+            [
+              { keyword: 32 },
+              " your deck for a card that costs 0. KO it or discard it.",
+            ],
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+  ],
 }

@@ -240,7 +240,9 @@ export const Villains: CardSetDef = {
           abilities: [
             [
               { hc: 3 },
-              ": Whenever you defeat an Adversary this turn, you gain a New Recruit."
+              ": Whenever you defeat an Adversary this turn, you gain a ",
+              { rule: 19, text: "New Recruit" },
+              "."
             ]
           ]
         },
@@ -468,10 +470,16 @@ export const Villains: CardSetDef = {
           cost: 3,
           abilities: [
             [
-              "Whenever a card effect causes you to gain a New Recruit this turn, put that New Recruit into your hand."
+              "Whenever a card effect causes you to gain a ",
+              { rule: 19, text: "New Recruit" },
+              " this turn, put that ",
+              { rule: 19, text: "New Recruit" },
+              " into your hand."
             ],
             [
-              "Gain a New Recruit."
+              "Gain a ",
+              { rule: 19, text: "New Recruit" },
+              "."
             ]
           ]
         },
@@ -485,7 +493,9 @@ export const Villains: CardSetDef = {
           abilities: [
             [
               { hc: 4 },
-              ": Gain a New Recruit."
+              ": Gain a ",
+              { rule: 19, text: "New Recruit" },
+              "."
             ]
           ]
         },
@@ -501,7 +511,9 @@ export const Villains: CardSetDef = {
               "You get ",
               { bold: "+1" },
               { icon: 1 },
-              " for each New Recruit you played this turn."
+              " for each ",
+              { rule: 19, text: "New Recruit" },
+              " you played this turn."
             ]
           ]
         },
@@ -513,12 +525,18 @@ export const Villains: CardSetDef = {
           cost: 8,
           abilities: [
             [
-              "Gain three New Recruits."
+              "Gain three ",
+              { rule: 19 },
+              "."
             ],
             [
               { team: 8 },
               { team: 8 },
-              ": If you would return a New Recruit to the New Recruit Stack this turn, put it on the bottom of your deck instead."
+              ": If you would return a ",
+              { rule: 19, text: "New Recruit" },
+              " to the ",
+              { rule: 19, text: "New Recruit" },
+              " Stack this turn, put it on the bottom of your deck instead."
             ]
           ]
         },
@@ -614,7 +632,9 @@ export const Villains: CardSetDef = {
           abilities: [
             [
               { hc: 1 },
-              ": You may KO a card from your hand or discard pile. If you do, gain a New Recruit."
+              ": You may KO a card from your hand or discard pile. If you do, gain a ",
+              { rule: 19, text: "New Recruit" },
+              "."
             ]
           ]
         },
@@ -1487,7 +1507,9 @@ export const Villains: CardSetDef = {
           abilities: [
             [
               { bold: "Fight" },
-              ": Gain a New Recruit."
+              ": Gain a ",
+              { rule: 19, text: "New Recruit" },
+              "."
             ]
           ]
         },
@@ -2321,7 +2343,11 @@ export const Villains: CardSetDef = {
             ],
             [
               { bold: "Twists 1-7" },
-              ": Each Adversary in the city captures a New Recruit, or if there are no more New Recruits, a Madame HYDRA."
+              ": Each Adversary in the city captures a ",
+              { rule: 19, text: "New Recruit" },
+              ", or if there are no more ",
+              { rule: 19 },
+              ", a Madame HYDRA."
             ],
             [
               { bold: "Twist 8" },
@@ -2454,6 +2480,7 @@ export const Villains: CardSetDef = {
     {
       id: 5,
       name: "Bystander",
+      filterName: "Bystander (Villains)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystander.png",
       vp: 1,
       cards: [
@@ -2550,5 +2577,50 @@ export const Villains: CardSetDef = {
         }
       ]
     }
+  ],
+  officers: [
+    {
+      id: 2,
+      name: "Madame HYDRA",
+      cards: [
+        {
+          team: 13,
+          subtitle: "Viper",
+          qtd: 15,
+          cost: 3,
+          recruit: "2",
+          abilities: [
+            { keyword: 10 },
+            "To play this card, you must discard a card from your hand."
+          ]
+        }
+      ]
+    }
+  ],
+  sidekicks: [
+    {
+      id: 1,
+      name: "New Recruit",
+      cards: [
+        {
+          subtitle: "Ally",
+          team: 0,
+          qtd: 15,
+          cost: 2,
+          attack: "1",
+          abilities: [
+            [
+              "Return this card to the ",
+              { rule: 19, text: "New Recruit" },
+              " Stack. Draw a card. ",
+              { italic: "(You still get this New Recruit's " },
+              { icon: 1 },
+              { italic: ".)" }
+            ]
+          ]
+        }
+      ]
+    }
+
   ]
 }

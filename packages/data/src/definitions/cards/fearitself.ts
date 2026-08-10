@@ -180,7 +180,9 @@ export const FearItself: CardSetDef = {
           attack: "2",
           abilities: [
             [
-              "Whenever you defeat an Adversary on the Bridge this turn, you may KO one of your cards or a card from your discard pile. If you do, gain a New Recruit."
+              "Whenever you defeat an Adversary on the Bridge this turn, you may KO one of your cards or a card from your discard pile. If you do, gain a ",
+              { rule: 19, text: "New Recruit" },
+              "."
             ]
           ]
         },
@@ -210,7 +212,9 @@ export const FearItself: CardSetDef = {
           abilities: [
             [
               { team: 10 },
-              ": Each other player reveals their hand. Choose a New Recruit or Madame HYDRA from each of those players' hands and put them into your hand."
+              ": Each other player reveals their hand. Choose a ",
+              { rule: 19, text: "New Recruit" },
+              " or Madame HYDRA from each of those players' hands and put them into your hand."
             ]
           ]
         }
@@ -368,10 +372,16 @@ export const FearItself: CardSetDef = {
           rarity: 1,
           cost: 3,
           abilities: [
-            "Gain two New Recruits.",
+            [
+              "Gain two ",
+              { rule: 19 },
+              ".",
+            ],
             [
               { hc: 2 },
-              ": Gain a third New Recruit."
+              ": Gain a third ",
+              { rule: 19, text: "New Recruit" },
+              "."
             ]
           ]
         },

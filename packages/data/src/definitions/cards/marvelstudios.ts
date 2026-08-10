@@ -1451,6 +1451,7 @@ export const MarvelStudios: CardSetDef = {
     {
       id: 37,
       name: "Bystander",
+      filterName: "Bystander (Marvel Studios)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystanders-01.png",
       vp: 1,
       cards: [
@@ -1532,7 +1533,7 @@ export const MarvelStudios: CardSetDef = {
     {
       id: 10,
       name: "Wound",
-      filterName: "Wound (MS)",
+      filterName: "Wound (Marvel Studios)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/wound-1.png",
       set: 20,
       cards: [
@@ -1544,6 +1545,23 @@ export const MarvelStudios: CardSetDef = {
               ": If you don't recruit any Heroes or defeat any Villains or Masterminds on your turn, you may KO all the Wounds from your hand.",
             ],
           ]
+        }
+      ]
+    }
+  ],
+  officers: [
+    {
+      id: 3,
+      name: "S.H.I.E.L.D. Officer",
+      filterName: "S.H.I.E.L.D. Officer (Marvel Studios)",
+      cards: [
+        {
+          team: 2,
+          subtitle: "Maria Hill",
+          qtd: 30,
+          cost: 3,
+          recruit: "2",
+          abilities: []
         }
       ]
     }

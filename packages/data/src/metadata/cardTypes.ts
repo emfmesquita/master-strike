@@ -42,6 +42,16 @@ const WOUND = {
   value: "wounds",
   label: "Wound",
 };
+const OFFICER = {
+  id: 8,
+  value: "officers",
+  label: "Officer",
+};
+const SIDEKICK = {
+  id: 9,
+  value: "sidekicks",
+  label: "Sidekick",
+};
 
 export interface CardTypeMetadataMap {
   [key: string]: CardTypeMetadata;
@@ -58,6 +68,8 @@ export const cardTypes: Readonly<CardTypeMetadataMap> = Object.freeze({
   SCHEME,       // 5
   BYSTANDER,    // 6
   WOUND,        // 7
+  OFFICER,      // 8
+  SIDEKICK,     // 9
 });
 
 export interface CardSubTypeMetadata {

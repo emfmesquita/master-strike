@@ -8,6 +8,7 @@ export * from './captainamerica';
 export * from './champions';
 export * from './civilwar';
 export * from './coreset';
+export * from './coreset2';
 export * from './darkcity';
 export * from './deadpool';
 export * from './dimensions';

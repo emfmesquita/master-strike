@@ -89,7 +89,7 @@ export default {
   padding: 6px;
   color: #000;
   border: solid 1px rgba(#000, .2);
-  background: #d84037;
+  background: #FCD2D2;
 
   &.disabled {
     filter: blur(0px) grayscale(60%) opacity(0.4);

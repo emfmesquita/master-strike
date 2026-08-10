@@ -14,7 +14,7 @@ const CORE_SET: CardSetMetadata = {
     value: "coreset",
     label: "Core Set",
     initials: "C",
-    cardTypes: [1, 2, 3, 4, 5, 6, 7],
+    cardTypes: [1, 2, 3, 4, 5, 6, 7, 8],
 };
 const PROMO: CardSetMetadata = {
     id: 2,
@@ -49,7 +49,7 @@ const VILLAINS: CardSetMetadata = {
     value: "villains",
     label: "Villains",
     initials: "V",
-    cardTypes: [1, 2, 3, 4, 5, 6, 7],
+    cardTypes: [1, 2, 3, 4, 5, 6, 7, 8, 9],
 };
 const GUARDIANS_OF_THE_GALAXY: CardSetMetadata = {
     id: 7,
@@ -77,7 +77,7 @@ const SECRET_WARS_1: CardSetMetadata = {
     value: "sw1",
     label: "Secret Wars, Volume 1",
     initials: "SW1",
-    cardTypes: [1, 2, 3, 4, 5, 6],
+    cardTypes: [1, 2, 3, 4, 5, 6, 9],
 };
 const SECRET_WARS_2: CardSetMetadata = {
     id: 11,
@@ -98,7 +98,7 @@ const CIVIL_WAR: CardSetMetadata = {
     value: "civilwar",
     label: "Civil War",
     initials: "CW",
-    cardTypes: [1, 2, 3, 4, 5, 6, 7],
+    cardTypes: [1, 2, 3, 4, 5, 6, 7, 9],
 };
 const DEADPOOL: CardSetMetadata = {
     id: 14,
@@ -147,7 +147,7 @@ const MARVEL_STUDIOS: CardSetMetadata = {
     value: "marvelstudios",
     label: "Marvel Studios, Phase 1",
     initials: "MS1",
-    cardTypes: [1, 2, 3, 4, 5, 6, 7],
+    cardTypes: [1, 2, 3, 4, 5, 6, 7, 8],
 };
 const ANT_MAN: CardSetMetadata = {
     id: 21,
@@ -182,7 +182,7 @@ const SHIELD: CardSetMetadata = {
     value: "shield",
     label: "S.H.I.E.L.D.",
     initials: "S.H.I.E.L.D.",
-    cardTypes: [1, 2, 4, 5],
+    cardTypes: [1, 2, 4, 5, 8],
 };
 const HEROES_OF_ASGARD: CardSetMetadata = {
     id: 26,
@@ -224,7 +224,7 @@ const MESSIAH_COMPLEX: CardSetMetadata = {
     value: "messiahcomplex",
     label: "Messiah Complex",
     initials: "MC",
-    cardTypes: [1, 2, 3, 4, 5, 6],
+    cardTypes: [1, 2, 3, 4, 5, 6, 9],
 };
 const DOCTOR_STRANGE: CardSetMetadata = {
     id: 32,
@@ -273,7 +273,7 @@ const MS_WHAT_IF: CardSetMetadata = {
     value: "mswi",
     label: "Marvel Studios' What If...?",
     initials: "MSWI",
-    cardTypes: [1, 2, 3, 4, 5, 6, 7],
+    cardTypes: [1, 2, 3, 4, 5, 6, 7, 8],
 };
 const MS_ANT_MAN_WASP: CardSetMetadata = {
     id: 39,
@@ -295,6 +295,13 @@ const WEAPON_X: CardSetMetadata = {
     label: "Weapon X",
     initials: "WX",
     cardTypes: [1, 2, 4, 5, 7],
+};
+const CORE_SET_2ND_EDITION: CardSetMetadata = {
+    id: 42,
+    value: "coreset2",
+    label: "Core Set Second Edition",
+    initials: "C2E",
+    cardTypes: [1, 2, 3, 4, 5, 6, 7, 8, 9],
 };
 
 export interface SetMetadataMap {
@@ -346,6 +353,7 @@ export const sets: Readonly<SetMetadataMap> = Object.freeze({
     MS_ANT_MAN_WASP,            // 39
     MARVEL_2099,                // 40
     WEAPON_X,                   // 41
+    CORE_SET_2ND_EDITION,       // 42
 });
 
 /**

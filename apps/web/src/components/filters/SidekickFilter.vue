@@ -1,9 +1,9 @@
 <template>
   <v-autocomplete
     :value="value"
-    :items="schemes"
+    :items="sidekicks"
     multiple
-    label="Scheme"
+    label="Sidekick"
     item-text="label"
     item-value="id" 
     clearable
@@ -18,23 +18,23 @@
 </template>
 
 <script>
-import { getAllSchemes } from "../../services/cardUtils";
+import { getAllSidekicks } from "../../services/cardUtils";
 
 export default {
-  name: "SchemeFilter",
+  name: "SidekickFilter",
   props: ["value"],
   data() {
     return {
-      schemes: []
+      sidekicks: []
     }
   },
   mounted() {
-    const schemes = getAllSchemes().map(scheme => ({
-      id: scheme.id,
-      label: scheme.filterName ? scheme.filterName : scheme.name
+    const sidekicks = getAllSidekicks().map(sidekick => ({
+      id: sidekick.id,
+      label: sidekick.filterName ? sidekick.filterName : sidekick.name
     }));
-    schemes.sort((a, b) => a.label.localeCompare(b.label));
-    this.schemes = Object.freeze(schemes);
+    sidekicks.sort((a, b) => a.label.localeCompare(b.label));
+    this.sidekicks = Object.freeze(sidekicks);
   },
   methods: {
     filterChanged(newValue) {

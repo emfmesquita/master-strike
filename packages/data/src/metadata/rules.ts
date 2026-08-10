@@ -72,7 +72,7 @@ const SIDEKICKS = {
   id: 11,
   value: "sidekicks",
   label: "Sidekicks",
-  cardTypes: [1, 4, 5, 6],
+  cardTypes: [1, 4, 5, 6, 9],
 }
 const CHOOSE_A_VILLAIN = {
   id: 12,
@@ -120,6 +120,12 @@ const ENRAGING_WOUNDS = {
   label: "Enraging Wounds",
   cardTypes: [7],
 }
+const NEW_RECRUITS = {
+  id: 19,
+  value: "newrecruits",
+  label: "New Recruits",
+  cardTypes: [1, 3, 5, 9],
+}
 const NONE = {
   id: -1,
   value: "none",
@@ -153,6 +159,7 @@ export const rules: Readonly<RuleMetadataMap> = Object.freeze({
   AMBUSH_SCHEMES,             // 16 done
   GRIEVOUS_WOUNDS,            // 17 done
   ENRAGING_WOUNDS,            // 18 done
+  NEW_RECRUITS,               // 19 done
   NONE,                       // -1
 });
 

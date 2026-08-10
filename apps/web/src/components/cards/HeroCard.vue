@@ -125,11 +125,11 @@ export default {
     setIconclasses() {
       return {
         "set-icon": true,
-        "bystander-set-icon": this.card.type === 6,
+        "groupless-set-icon": [6,8,9].includes(this.card.type),
       }
     },
     showSetIcon() {
-      return ((!this.card.qtd && !this.card.rarity) || this.card.type === 6) && this.card.set;
+      return ((!this.card.qtd && !this.card.rarity) || [6,8,9].includes(this.card.type)) && this.card.set;
     }
   }
 };
@@ -272,7 +272,7 @@ export default {
     top: 130px
   }
 
-  .set-icon.bystander-set-icon {
+  .set-icon.groupless-set-icon {
     position: absolute;
     top: 40px;
     right: 6px;

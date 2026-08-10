@@ -12,7 +12,7 @@ const NONE = {
     id: 0,
     value: "",
     label: "",
-    bgColor: "#ffffff"
+    bgColor: "#ddd"
 };
 const COVERT = {
     id: 1,

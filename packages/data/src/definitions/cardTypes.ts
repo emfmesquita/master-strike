@@ -68,6 +68,26 @@ export interface WoundCardDef extends BasicCardDef {
   recruit?: string;
 }
 
+export interface OfficerCardDef extends BasicCardDef {
+  subtitle?: string;
+  qtd: number;
+  hc?: number;
+  cost: number;
+  attack?: string;
+  recruit?: string;
+  team?: number;
+}
+
+export interface SidekickCardDef extends BasicCardDef {
+  subtitle?: string;
+  qtd: number;
+  hc?: number;
+  cost: number;
+  attack?: string;
+  recruit?: string;
+  team?: number;
+}
+
 export interface OopHeroCardDef extends HeroCardDef {
   overrideType?: 1;
   tactic?: boolean;
@@ -118,6 +138,7 @@ export interface MastermindDef {
 export interface HenchmanDef {
   id: number;
   name: string;
+  filterName?: string;
   imageUrl?: string;
   subtitle?: string;
   set?: number | number[];
@@ -137,6 +158,7 @@ export interface VillainDef {
 export interface SchemeDef {
   id: number;
   name: string;
+  filterName?: string;
   imageUrl?: string;
   sortName?: string;
   set?: number | number[];
@@ -146,6 +168,7 @@ export interface SchemeDef {
 export interface BystanderDef {
   id: number;
   name: string;
+  filterName?: string;
   set?: number | number[];
   imageUrl?: string;
   vp?: string | number;
@@ -161,6 +184,24 @@ export interface WoundDef {
   filterName?: string;
 }
 
+export interface OfficerDef {
+  id: number;
+  name: string;
+  filterName?: string;
+  set?: number | number[];
+  imageUrl?: string;
+  cards: OfficerCardDef[];
+};
+
+export interface SidekickDef {
+  id: number;
+  name: string;
+  filterName?: string;
+  set?: number | number[];
+  imageUrl?: string;
+  cards: OfficerCardDef[];
+};
+
 export interface CardSetDef {
   id: number;
   heroes?: HeroDef[];
@@ -170,4 +211,6 @@ export interface CardSetDef {
   schemes?: SchemeDef[];
   bystanders?: BystanderDef[];
   wounds?: WoundDef[];
+  officers?: OfficerDef[];
+  sidekicks?: SidekickDef[];
 }

@@ -13,17 +13,19 @@
           <div class="logo-sub-title" :class="subtitleClass">A Legendary Card Database</div>
         </v-col>
       </v-row>
-      <v-row class="buttons">
+      <v-row class="buttons" justify="center">
         <v-col>
-          <v-btn color="primary" x-large to="/heroes" class="ma-3">Heroes</v-btn>
-          <v-btn color="primary" x-large to="/masterminds" class="ma-3">Masterminds</v-btn>
-          <v-btn color="primary" x-large to="/villains" class="ma-3">Villains</v-btn>
-          <v-btn color="primary" x-large to="/henchmen" class="ma-3">Henchmen</v-btn>
-          <v-btn color="primary" x-large to="/schemes" class="ma-3">Schemes</v-btn>
-          <v-btn color="primary" x-large to="/bystanders" class="ma-3">Bystanders</v-btn>
-          <v-btn color="primary" x-large to="/wounds" class="ma-3">Wounds</v-btn>
-          <v-btn color="primary" x-large to="/keywords" class="ma-3">Keywords</v-btn>
-          <v-btn color="primary" x-large to="/about" class="ma-3">About</v-btn>
+          <HomeButton to="/heroes" label="Heroes" />
+          <HomeButton to="/masterminds" label="Masterminds" />
+          <HomeButton to="/villains" label="Villains" />
+          <HomeButton to="/henchmen" label="Henchmen" />
+          <HomeButton to="/schemes" label="Schemes" />
+          <HomeButton to="/bystanders" label="Bystanders" />
+          <HomeButton to="/wounds" label="Wounds" />
+          <HomeButton to="/officers" label="Officers" />
+          <HomeButton to="/sidekicks" label="Sidekicks" />
+          <HomeButton to="/keywords" label="Keywords" />
+          <HomeButton to="/about" label="About" />
         </v-col>
       </v-row>
     </v-container>
@@ -33,9 +35,12 @@
 </template>
 
 <script>
+import HomeButton from "../components/shared/HomeButton";
+
 export default {
   name: "Heroes",
   data: () => ({}),
+  components: { HomeButton },
   computed: {
     lg() {
       return this.$vuetify.breakpoint.mdAndUp;
@@ -76,6 +81,10 @@ export default {
     position: absolute;
   }
 
+  .buttons > div {
+    max-width: 960px;
+  }
+
   &.lg {
     .container {
       padding-top: 60px;
@@ -100,11 +109,11 @@ export default {
 
   &.sm {
     .container {
-      padding-top: 60px;
+      padding-top: 40px;
     }
 
     .buttons {
-      padding-top: 60px;
+      padding-top: 40px;
     }
 
     .logo-title {

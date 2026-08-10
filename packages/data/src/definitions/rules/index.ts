@@ -8,6 +8,7 @@ export * from './grievouswounds';
 export * from './locations';
 export * from './multiclasscards';
 export * from './multiplemasterminds';
+export * from './newrecruits';
 export * from './shards';
 export * from './sidekicks';
 export * from './transformingschemes';

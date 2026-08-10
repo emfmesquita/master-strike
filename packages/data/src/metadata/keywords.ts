@@ -66,7 +66,7 @@ const DODGE = {
   id: 10,
   value: "dodge",
   label: "Dodge",
-  cardTypes: [1, 5],
+  cardTypes: [1, 5, 8],
 }
 const ELUSIVE = {
   id: 11,
@@ -168,7 +168,7 @@ const PHASING = {
   id: 27,
   value: "phasing",
   label: "Phasing",
-  cardTypes: [1],
+  cardTypes: [1, 9],
 }
 const FORTIFY = {
   id: 28,
@@ -198,7 +198,7 @@ const INVESTIGATE = {
   id: 32,
   value: "investigate",
   label: "Investigate",
-  cardTypes: [1, 2, 4, 5, 6],
+  cardTypes: [1, 2, 4, 5, 6, 9],
 }
 const HIDDEN_WITNESS = {
   id: 33,
@@ -366,7 +366,7 @@ const UNDERCOVER = {
   id: 60,
   value: "undercover",
   label: "Undercover",
-  cardTypes: [1, 2, 4, 5],
+  cardTypes: [1, 2, 4, 5, 8],
 }
 const SHIELD_LEVEL = {
   id: 61,
@@ -445,7 +445,7 @@ const SHATTER = {
   id: 73,
   value: "shatter",
   label: "Shatter",
-  cardTypes: [1, 2, 4, 6],
+  cardTypes: [1, 2, 4, 6, 9],
 }
 const PREY = {
   id: 74,

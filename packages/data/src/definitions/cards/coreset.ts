@@ -72,6 +72,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 2,
       name: "Captain America",
+      filterName: "Captain America (Core/MS)",
       set: [1, 20],
       team: 1,
       cards: [
@@ -144,6 +145,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 3,
       name: "Cyclops",
+      filterName: "Cyclops (Core Set)",
       team: 4,
       cards: [
         {
@@ -274,6 +276,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 5,
       name: "Emma Frost",
+      filterName: "Emma Frost (Core Set)",
       team: 4,
       cards: [
         {
@@ -344,6 +347,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 6,
       name: "Gambit",
+      filterName: "Gambit (Core Set)",
       team: 4,
       cards: [
         {
@@ -411,6 +415,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 7,
       name: "Hawkeye",
+      filterName: "Hawkeye (Core/MS)",
       set: [1, 20],
       team: 1,
       cards: [
@@ -476,6 +481,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 8,
       name: "Hulk",
+      filterName: "Hulk (Core/MS)",
       set: [1, 20],
       team: 1,
       cards: [
@@ -547,6 +553,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 9,
       name: "Iron Man",
+      filterName: "Iron Man (Core/MS)",
       set: [1, 20],
       team: 1,
       cards: [
@@ -623,6 +630,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 10,
       name: "Nick Fury",
+      filterName: "Nick Fury (Core/MS)",
       set: [1, 20],
       team: 2,
       cards: [
@@ -696,6 +704,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 11,
       name: "Rogue",
+      filterName: "Rogue (Core Set)",
       team: 4,
       cards: [
         {
@@ -764,6 +773,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 12,
       name: "Spider-Man",
+      filterName: "Spider-Man (Core Set)",
       team: 3,
       cards: [
         {
@@ -836,6 +846,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 13,
       name: "Storm",
+      filterName: "Storm (Core Set)",
       team: 4,
       cards: [
         {
@@ -912,7 +923,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 14,
       name: "Thor",
-      filterName: "Thor (Core Set)",
+      filterName: "Thor (Core/MS)",
       set: [1, 20],
       team: 1,
       cards: [
@@ -1061,6 +1072,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 1,
       name: "Dr. Doom",
+      filterName: "Dr. Doom (Core Set)",
       vAttack: "9",
       vp: 5,
       cards: [
@@ -1133,6 +1145,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 2,
       name: "Loki",
+      filterName: "Loki (Core/MS)",
       set: [1, 20],
       vAttack: "10",
       vp: 5,
@@ -1202,6 +1215,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 3,
       name: "Magneto",
+      filterName: "Magneto (Core Set)",
       vAttack: "8",
       vp: 5,
       cards: [
@@ -1353,6 +1367,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 1,
       name: "Doombot Legion",
+      filterName: "Doombot Legion (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/doombot-legion.png",
       vAttack: "3",
       vp: 1,
@@ -1370,6 +1385,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 2,
       name: "Hand Ninjas",
+      filterName: "Hand Ninjas (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/hand-ninjas.png",
       vAttack: "3",
       vp: 1,
@@ -1390,6 +1406,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 3,
       name: "Savage Land Mutates",
+      filterName: "Savage Land Mutates (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/savage-land-mutants.png",
       vAttack: "3",
       vp: 1,
@@ -1407,6 +1424,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 4,
       name: "Sentinel",
+      set: [1, 42],
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Henchmen/sentinel.png",
       vAttack: "3",
       vp: 1,
@@ -1669,6 +1687,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 4,
       name: "Masters of Evil",
+      filterName: "Masters of Evil (Core Set)",
       cards: [
         {
           name: "Baron Zemo",
@@ -1747,6 +1766,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 5,
       name: "Radiation",
+      filterName: "Radiation (Core Set)",
       cards: [
         {
           name: "Abomination",
@@ -1823,6 +1843,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 6,
       name: "Skrulls",
+      filterName: "Skrulls (Core Set)",
       cards: [
         {
           name: "Paibok the Power Skrull",
@@ -2012,6 +2033,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 2,
       name: "Secret Invasion of the Skrull Shapeshifters",
+      filterName: "Secret Invasion of the Skrull Shapeshifters (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/2Scheme(33).png",
       cards: [
         {
@@ -2044,6 +2066,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 3,
       name: "Legacy Virus, The",
+      filterName: "Legacy Virus, The (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/4Scheme(35).png",
       cards: [
         {
@@ -2069,6 +2092,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 4,
       name: "Negative Zone Prison Breakout",
+      filterName: "Negative Zone Prison Breakout (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/8Scheme(39).png",
       cards: [
         {
@@ -2092,6 +2116,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 5,
       name: "Portals to the Dark Dimension",
+      filterName: "Portals to the Dark Dimension (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/7Scheme(38).png",
       cards: [
         {
@@ -2125,6 +2150,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 6,
       name: "Replace Earth's Leaders with Killbots",
+      filterName: "Replace Earth's Leaders with Killbots (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/3Scheme(34).png",
       cards: [
         {
@@ -2155,6 +2181,7 @@ export const CoreSet: CardSetDef = {
       id: 7,
       set: [1, 20],
       name: "Super Hero Civil War",
+      filterName: "Superhero Civil War (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/1Scheme(32).png",
       cards: [
         {
@@ -2179,6 +2206,7 @@ export const CoreSet: CardSetDef = {
       id: 8,
       set: [1, 20],
       name: "Unleash the Power of the Cosmic Cube",
+      filterName: "Unleash the Power of the Cosmic Cube (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Schemes/6Scheme(37).png",
       cards: [
         {
@@ -2212,6 +2240,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 1,
       name: "Bystander",
+      filterName: "Bystander (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/bystanders.png",
       vp: 1,
       cards: [
@@ -2226,7 +2255,7 @@ export const CoreSet: CardSetDef = {
     {
       id: 1,
       name: "Wound",
-      filterName: "Wound (Core)",
+      filterName: "Wound (Core Set)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Wounds/wound.png",
       set: 1,
       cards: [
@@ -2242,4 +2271,21 @@ export const CoreSet: CardSetDef = {
       ]
     }
   ],
+  officers: [
+    {
+      id: 1,
+      name: "S.H.I.E.L.D. Officer",
+      filterName: "S.H.I.E.L.D. Officer (Core Set)",
+      cards: [
+        {
+          team: 2,
+          subtitle: "Maria Hill",
+          qtd: 30,
+          cost: 3,
+          recruit: "2",
+          abilities: []
+        }
+      ]
+    }
+  ]
 }

@@ -53,7 +53,19 @@ const routes = [
     path: "/wounds",
     name: "Wounds",
     component: () =>
-    import(/* webpackChunkName: "bystanders" */ "../views/Wounds.vue")
+    import(/* webpackChunkName: "wounds" */ "../views/Wounds.vue")
+  },
+  {
+    path: "/officers",
+    name: "Officers",
+    component: () =>
+    import(/* webpackChunkName: "officers" */ "../views/Officers.vue")
+  },
+  {
+    path: "/sidekicks",
+    name: "Sidekicks",
+    component: () =>
+    import(/* webpackChunkName: "sidekicks" */ "../views/Sidekicks.vue")
   },
   {
     path: "/random",

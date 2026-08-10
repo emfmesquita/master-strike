@@ -57,7 +57,12 @@ export const filterGroupByKeyword = (groups, keywords, rules) => {
       if(card.disabled || !card.abilities) return;
       const abs = card.abilities;
       const hasKey = ab => keywords.includes(ab.keyword);
-      const matchKey = abs.some(ab => Array.isArray(ab) ? ab.some(hasKey) : hasKey(ab));
+      const checkKey = (abilities) => abilities.some(ab => {
+        if(Array.isArray(ab)) return ab.some(hasKey);
+        if(ab.points) return checkKey(ab.points);
+        return hasKey(ab)
+      });
+      const matchKey = checkKey(abs);
       if(matchKey) match = true;
       card.disabled = !matchKey;
 
@@ -170,7 +175,12 @@ export const filterGroupByRule = (groups, rules) => {
       // checks other rules
       const abs = card.abilities;
       const hasRule = ab => rules.includes(ab.rule);
-      const matchRule = abs.some(ab => Array.isArray(ab) ? ab.some(hasRule) : hasRule(ab));
+      const checkRules = (abilities) => abilities.some(ab => {
+        if(Array.isArray(ab)) return ab.some(hasRule);
+        if(ab.points) return checkRules(ab.points);
+        return hasRule(ab)
+      });
+      const matchRule = checkRules(abs);
       if(matchRule) match = true;
       card.disabled = !matchRule;
 

@@ -27,7 +27,7 @@ import TeamIcon from "../icons/TeamIcon.vue";
 
 export default {
   name: "TeamFilter",
-  props: ["value"],
+  props: ["value", "cardTypes"],
   data() {
     return {
       teams: []
@@ -35,7 +35,7 @@ export default {
   },
   components: { TeamIcon }, 
   mounted() {
-    const teams = Metadata.teamsArray.slice();
+    const teams = Metadata.teamsArray.filter(team => window.hasIntersection(team.cardTypes, this.cardTypes));
     teams.sort((a, b) => a.label.localeCompare(b.label));
     this.teams = Object.freeze(teams);
   },

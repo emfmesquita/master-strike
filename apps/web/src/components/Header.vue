@@ -41,72 +41,37 @@
             <v-icon small>mdi-menu</v-icon>
           </v-btn>
         </template>
-        <v-list color="primary" class="white--text">
-          <v-list-item
-            v-for="(item, index) in items"
-            :key="index"
-          >
-            <v-btn text small block color="white" :to="item.to">{{ item.title }}</v-btn>
-          </v-list-item>
-        </v-list>
+        <v-card>
+          <v-row class="ma-0 pa-2 buttons" justify="center">
+              <HeaderButton to="/heroes" label="Heroes" />
+              <HeaderButton to="/masterminds" label="Masterminds" />
+              <HeaderButton to="/villains" label="Villains" />
+              <HeaderButton to="/henchmen" label="Henchmen" />
+              <HeaderButton to="/schemes" label="Schemes" />
+              <HeaderButton to="/bystanders" label="Bystanders" />
+              <HeaderButton to="/wounds" label="Wounds" />
+              <HeaderButton to="/officers" label="Officers" />
+              <HeaderButton to="/sidekicks" label="Sidekicks" />
+              <HeaderButton to="/keywords" label="Keywords" />
+              <HeaderButton to="/about" label="About" />
+          </v-row>
+        </v-card>
       </v-menu>
     </slot>
   </v-app-bar>
 </template>
 
 <script>
-
-const items = [
-  {
-    title: "Home",
-    to: "/"
-  },
-  {
-    title: "Heroes",
-    to: "/heroes"
-  },
-  {
-    title: "Masterminds",
-    to: "/masterminds"
-  },
-  {
-    title: "Villains",
-    to: "/villains"
-  },
-  {
-    title: "Henchmen",
-    to: "/henchmen"
-  },
-  {
-    title: "Schemes",
-    to: "/schemes"
-  },
-  {
-    title: "Bystanders",
-    to: "/bystanders"
-  },
-  {
-    title: "Wounds",
-    to: "/wounds"
-  },
-  {
-    title: "Keywords",
-    to: "/keywords"
-  },
-  {
-    title: "About",
-    to: "/about"
-  },
-];
+import HeaderButton from "./shared/HeaderButton";
 
 export default {
   name: "Header",
   data() {
     return {
-      items,
       show: true
     };
   },
+  components: { HeaderButton },
   computed: {
     lg() {
       return this.$vuetify.breakpoint.mdAndUp;
@@ -143,4 +108,7 @@ export default {
       color: #fff !important;
     }
   }
+    .buttons {
+      max-width: 400px;
+    }
 </style>

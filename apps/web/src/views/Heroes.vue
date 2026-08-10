@@ -35,7 +35,7 @@
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <TeamFilter v-model="filter.team" @input="filterChanged"/>
+              <TeamFilter v-model="filter.team" :cardTypes="[1]" @input="filterChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">

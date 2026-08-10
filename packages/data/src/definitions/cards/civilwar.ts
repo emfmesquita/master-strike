@@ -2984,5 +2984,175 @@ export const CivilWar: CardSetDef = {
         }
       ]
     },
+  ],
+  sidekicks: [
+    {
+      id: 3,
+      name: "Hairball",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 1,
+          hc: 1,
+          qtd: 3,
+          cost: 2,
+          attack: "1",
+          abilities: [
+            "Draw a card.",
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Lockheed",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 1,
+          hc: 3,
+          qtd: 2,
+          cost: 2,
+          attack: "2+",
+          abilities: [
+            [
+              { hc: 3 },
+              ": You get ",
+              { bold: "+1" },
+              { icon: 1 },
+              ".",
+            ],
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 5,
+      name: "Lockjaw",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 1,
+          hc: 3,
+          qtd: 2,
+          cost: 2,
+          attack: "2",
+          abilities: [
+            { keyword: 27 },
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 6,
+      name: "Ms. Lion",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 1,
+          hc: 1,
+          qtd: 2,
+          cost: 2,
+          abilities: [
+            "Rescue a Bystander.",
+            "Draw a card.",
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 7,
+      name: "Redwing",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 1,
+          hc: 2,
+          qtd: 2,
+          cost: 2,
+          abilities: [
+            "Look at the top three cards of your deck. Draw one. Put the rest back in any order.",
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 8,
+      name: "Throg",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 1,
+          hc: 4,
+          qtd: 2,
+          cost: 2,
+          recruit: "2",
+          attack: "0+",
+          abilities: [
+            [
+              "Once this turn, if you made at least 6",
+              { icon: 2 },
+              ", you get ",
+              { bold: "+2" },
+              { icon: 1 },
+              "."
+            ],
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    },
+    {
+      id: 9,
+      name: "Zabu",
+      cards: [
+        {
+          subtitle: "Special Sidekick",
+          team: 1,
+          hc: 2,
+          qtd: 2,
+          cost: 2,
+          abilities: [
+            [
+              "KO a card from your hand or discard pile."
+            ],
+            [
+              "Put this on the bottom of the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack.",
+            ],
+          ]
+        }
+      ]
+    }
   ]
 }

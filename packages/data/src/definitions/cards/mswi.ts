@@ -2427,6 +2427,7 @@ export const MSWhatIf: CardSetDef = {
     {
       id: 52,
       name: "Bystander",
+      filterName: "Bystander (What If...)",
       imageUrl: "https://nyc3.digitaloceanspaces.com/bageltop/CardImages/Bystanders/What%20If%20Bystander.png",
       vp: 1,
       cards: [
@@ -2548,5 +2549,22 @@ export const MSWhatIf: CardSetDef = {
         }
       ]
     },
+  ],
+  officers: [
+    {
+      id: 12,
+      name: "S.H.I.E.L.D. Officer",
+      filterName: "S.H.I.E.L.D. Officer (What If...)",
+      cards: [
+        {
+          team: 2,
+          subtitle: "Hero",
+          qtd: 8,
+          cost: 3,
+          recruit: "2",
+          abilities: []
+        }
+      ]
+    }
   ]
 }

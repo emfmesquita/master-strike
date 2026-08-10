@@ -59,19 +59,25 @@
               Humongous shout-out to our comunity that built the <a href="https://www.boardgamegeek.com/wiki/page/Legendary_Marvel_Complete_Card_Text" target="_blank">wiki page with all cards text</a>. And to CaseyFowler that created <a href="https://marveldbg.wordpress.com/" target="_blank">a blog with all card images</a>. Those resources were fundamental to create Master Strike.
             </li>
             <li>
-              Huge shout-out to @normware on BGG, he provided all villain groups in a format that I could import to the site way easier than adding all of them manually. That reduced the work at least in 10x. Thank you Neil!
+              Huge shout-out to <b>@normware</b> on BGG, he provided all villain groups in a format that I could import to the site way easier than adding all of them manually. That reduced the work at least in 10x. Thank you Neil!
             </li>
             <li>
-              Shout-out to House of Mao Gaming (<a href="https://www.twitch.tv/houseofmao" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitch</v-icon></a>, <a href="https://www.youtube.com/channel/UCEN4p2Ugc8tsVYRO--unkcg" style="text-decoration: none;" target="_blank"><v-icon>mdi-youtube</v-icon></a>, <a href="https://twitter.com/houseofmao" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitter</v-icon></a>) for sharing the Annihilation expansion cards before I could grab them. Thank you!
+              Shout-out to <b>House of Mao Gaming</b> (<a href="https://www.twitch.tv/houseofmao" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitch</v-icon></a>, <a href="https://www.youtube.com/channel/UCEN4p2Ugc8tsVYRO--unkcg" style="text-decoration: none;" target="_blank"><v-icon>mdi-youtube</v-icon></a>, <a href="https://twitter.com/houseofmao" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitter</v-icon></a>) for sharing the Annihilation expansion cards before I could grab them. Thank you!
             </li>
             <li>
-              Colossal shout-out to Bageltop Games (<a href="https://www.twitch.tv/bageltopgames" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitch</v-icon></a>, <a href="https://www.youtube.com/channel/UCc4LXeuOzl1xndGXk2_8hbQ" style="text-decoration: none;" target="_blank"><v-icon>mdi-youtube</v-icon></a>, <a href="https://twitter.com/BageltopGames" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitter</v-icon></a>) for sharing the cards from all expansion since Messiah Complex (already too many to list) before I could grab them. This includes typing all text, and help me to proof read the result, what a gamer!! Thank you! Btw support Bagel on <a href="https://ko-fi.com/bageltopgames/tiers" target="_blank">Ko-fi</a>!
+              Colossal shout-out to <b>Bageltop Games</b> (<a href="https://www.twitch.tv/bageltopgames" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitch</v-icon></a>, <a href="https://www.youtube.com/channel/UCc4LXeuOzl1xndGXk2_8hbQ" style="text-decoration: none;" target="_blank"><v-icon>mdi-youtube</v-icon></a>, <a href="https://twitter.com/BageltopGames" style="text-decoration: none;" target="_blank"><v-icon>mdi-twitter</v-icon></a>) for sharing the cards from all expansion since Messiah Complex (already too many to list) before I could grab them. This includes typing all text, and help me to proof read the result, what a gamer!! Thank you! Btw support Bagel on <a href="https://ko-fi.com/bageltopgames/tiers" target="_blank">Ko-fi</a>!
             </li>
             <li>
-              Kudos to Marcus from Bageltop Games Discord channel for proofreading the cards from the Marvel Studios' The Infinity Saga expansion.
+              Kudos to <b>Marcus</b> from Bageltop Games Discord channel for proofreading the cards from the Marvel Studios' The Infinity Saga expansion.
             </li>
             <li>
-              A heroic shout-out to egreer (<a href="https://github.com/egreer" style="text-decoration: none;" target="_blank"><v-icon>mdi-github</v-icon></a>) for creating the keyword page, amazing work!
+              A heroic shout-out to <b>egreer</b> (<a href="https://github.com/egreer" style="text-decoration: none;" target="_blank"><v-icon>mdi-github</v-icon></a>) for creating the keyword page, amazing work!
+            </li>
+            <li>
+              Kudos to <b>drewfusmcge</b> from Bageltop Games Discord channel for typing all cards from the recent expansions. Thank you!
+            </li>
+            <li>
+              Big thank you to <b>CaptainMetroidica</b> for providing images from the cards to be used as reference on <a href="https://www.legendarycardgame.com/" target="_blank">legendarycardgame.com</a>.
             </li>
           </ul>
         </v-col>

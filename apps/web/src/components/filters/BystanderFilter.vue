@@ -31,7 +31,7 @@ export default {
   mounted() {
     const bystanders = getAllBystanders().map(bystander => ({
       id: bystander.id,
-      label: bystander.name
+      label: bystander.filterName ? bystander.filterName : bystander.name
     }));
     bystanders.sort((a, b) => a.label.localeCompare(b.label));
     this.bystanders = Object.freeze(bystanders);

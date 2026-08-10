@@ -929,5 +929,200 @@ export const Shield: CardSetDef = {
         },
       ]
     },
+  ],
+  officers: [
+    {
+      id: 4,
+      name: "Dum Dum Dugan",
+      cards: [
+        {
+          team: 2,
+          subtitle: "S.H.I.E.L.D. Officer",
+          qtd: 2,
+          hc: 4,
+          cost: 3,
+          attack: "1",
+          recruit: "2",
+          abilities: [
+            [
+              "You may send this Hero ",
+              { keyword: 60 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 5,
+      name: "G.W. Bridge",
+      cards: [
+        {
+          team: 2,
+          subtitle: "S.H.I.E.L.D. Officer",
+          qtd: 2,
+          hc: 4,
+          cost: 3,
+          recruit: "2",
+          abilities: [
+            [
+              "You may discard a card. If you do, draw card."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 6,
+      name: "Grant Ward",
+      cards: [
+        {
+          team: 2,
+          subtitle: "S.H.I.E.L.D. Officer",
+          qtd: 2,
+          hc: 5,
+          cost: 3,
+          recruit: "2",
+          abilities: [
+            [
+              "You may send this Hero ",
+              { keyword: 60 },
+              ". If you do, KO another ",
+              { team: 2 },
+              " Hero from your hand."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 7,
+      name: "Leo Fitz & Jemma Simmons",
+      cards: [
+        {
+          team: 2,
+          subtitle: "S.H.I.E.L.D. Officer",
+          qtd: 2,
+          hc: 5,
+          cost: 3,
+          recruit: "0+",
+          attack: "0+",
+          abilities: [
+            "Choose one:",
+            {
+              points: [
+                [
+                  "You get ",
+                  { bold: "+2" },
+                  { icon: 2 },
+                  "."
+                ],
+                [
+                  "Or you get ",
+                  { bold: "+1" },
+                  { icon: 1 },
+                  " and draw a card."
+                ],
+              ],
+            },
+          ]
+        }
+      ]
+    },
+    {
+      id: 8,
+      name: "Melinda May",
+      cards: [
+        {
+          team: 2,
+          subtitle: "S.H.I.E.L.D. Officer",
+          qtd: 2,
+          hc: 2,
+          cost: 3,
+          recruit: "2",
+          abilities: [
+            [
+              { team: 2},
+              { team: 2},
+              { team: 2},
+              ": Draw a card."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 9,
+      name: "Sharon Carter",
+      cards: [
+        {
+          team: 2,
+          subtitle: "S.H.I.E.L.D. Officer",
+          qtd: 2,
+          hc: 1,
+          cost: 3,
+          recruit: "2+",
+          abilities: [
+            [
+              "You may send this Hero ",
+              { keyword: 60 },
+              ". If you do, you get ",
+              { bold: "+1" },
+              { icon: 2 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 10,
+      name: "Victoria Hand",
+      cards: [
+        {
+          team: 2,
+          subtitle: "S.H.I.E.L.D. Officer",
+          qtd: 2,
+          hc: 1,
+          cost: 3,
+          recruit: "2",
+          abilities: [
+            [
+              { team: 2},
+              { team: 2},
+              { team: 2},
+              ": You may send this Hero or a ",
+              { team: 2 },
+              " Hero from your hand ",
+              { keyword: 60 },
+              "."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      id: 11,
+      name: "“Yo-Yo“ Rodriguez",
+      cards: [
+        {
+          team: 2,
+          subtitle: "S.H.I.E.L.D. Officer",
+          qtd: 2,
+          hc: 3,
+          cost: 3,
+          recruit: "2",
+          abilities: [
+            [
+              { team: 2},
+              { team: 2},
+              ": You may send this Hero ",
+              { keyword: 60 },
+              " or put it on top of your deck."
+            ]
+          ]
+        }
+      ]
+    },
   ]
 }

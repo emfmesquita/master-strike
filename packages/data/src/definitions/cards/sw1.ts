@@ -2449,4 +2449,30 @@ export const SecretWars1: CardSetDef = {
       ]
     },
   ],
+  sidekicks: [
+    {
+      id: 2,
+      name: "Sidekick",
+      cards: [
+        {
+          subtitle: "Hero",
+          team: 0,
+          qtd: 15,
+          cost: 2,
+          abilities: [
+            [
+              "You may return this card to the ",
+              { rule: 11, text: "Sidekick" },
+              " Stack. If you do, draw two cards. ",
+            ],
+            [
+              { italic: "(You can only recruit up to one Sidekick each turn, using " },
+              { icon: 2 },
+              { italic: ".)" },
+            ]
+          ]
+        }
+      ]
+    }
+  ]
 }

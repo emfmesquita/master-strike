@@ -31,7 +31,7 @@ export default {
   mounted() {
     const henchmen = getAllHenchmen().map(hm => ({
       id: hm.id,
-      label: hm.name
+      label: hm.filterName ? hm.filterName : hm.name
     }));
     henchmen.sort((a, b) => a.label.localeCompare(b.label));
     this.henchmen = Object.freeze(henchmen);
