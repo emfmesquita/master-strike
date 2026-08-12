@@ -8,6 +8,8 @@ import { processScheme } from './schemeProcessor';
 import { processVillain } from './villainProcessor';
 import { processBystander } from './bystanderProcessor';
 import { processWound } from './woundProcessor';
+import { processOfficer } from './officerProcessor';
+import { processSidekick } from './sidekickProcessor';
 
 export const processSet = (addCard: (card: CardSearchResult) => void, set: CardSetDef) => {
   set.heroes?.forEach(hero => processHero(addCard, hero, set));
@@ -17,6 +19,8 @@ export const processSet = (addCard: (card: CardSearchResult) => void, set: CardS
   set.schemes?.forEach(scheme => processScheme(addCard, scheme, set));
   set.bystanders?.forEach(bystander => processBystander(addCard, bystander, set));
   set.wounds?.forEach(wound => processWound(addCard, wound, set));
+  set.officers?.forEach(officer => processOfficer(addCard, officer, set));
+  set.sidekicks?.forEach(sidekick => processSidekick(addCard, sidekick, set));
 }
 
 export const setIdToLabel = (id: number) => setsArray[id - 1].label;

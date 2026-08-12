@@ -182,7 +182,7 @@ export default {
       this.sidekicks = filterGroupByCardProp(this.sidekicks, "team", this.filter.team);
       this.sidekicks = filterGroupByKeyword(this.sidekicks, this.filter.keyword);
       this.sidekicks = filterGroupByRule(this.sidekicks, this.filter.rule);
-      this.sidekicks = filterGroupBySearch(this.sidekicks, Metadata.cardTypes.OFFICER.id, this.filter.search);
+      this.sidekicks = filterGroupBySearch(this.sidekicks, Metadata.cardTypes.SIDEKICK.id, this.filter.search);
 
       this.sidekicks.forEach(sidekicks => {
         sidekicks.filteredCards.sort((a,b) => {

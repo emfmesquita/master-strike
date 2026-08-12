@@ -57,6 +57,14 @@ export enum CardDetailsType {
    */
   WoundCardDetail = 'WoundCardDetail',
   /**
+   * Details of an officer card.
+   */
+  OfficerCardDetail = 'OfficerCardDetail',
+  /**
+   * Details of a sidekick card.
+   */
+  SidekickCardDetail = 'SidekickCardDetail',
+  /**
    * Details of an out of place hero card (a villain, mastermind tactic, henchman, ... that can be earned as a hero).
    */
   OopHeroDetails = 'OopHeroDetails',
@@ -331,6 +339,16 @@ export interface WoundCardDetails extends BaseCardDetails {
    */
   recruit?: string;
 }
+
+/**
+ * Details of an officer card.
+ */
+export interface OfficerCardDetails extends HeroCardDetails {}
+
+/**
+ * Details of a sidekick card.
+ */
+export interface SidekickDetails extends HeroCardDetails {}
 
 /**
  * Details of an out of place hero card (a villain, mastermind tactic, henchman, ... that can be earned as a hero).
