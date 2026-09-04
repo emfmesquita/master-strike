@@ -1,3 +1,7 @@
 packages:
   - 'apps/*'
   - 'packages/*'
+allowBuilds:
+  core-js: set this to true or false
+  ejs: set this to true or false
+  yorkie: set this to true or false
