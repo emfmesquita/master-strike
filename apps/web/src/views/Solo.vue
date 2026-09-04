@@ -18,6 +18,19 @@
         </v-row>
         <v-row align="center">
           <v-col cols="12">
+            <v-btn
+              block
+              color="success"
+              class="white--text"
+              :disabled="!canPlay"
+              :to="playTo"
+            >
+              <v-icon left>mdi-play</v-icon> Play
+            </v-btn>
+          </v-col>
+        </v-row>
+        <v-row align="center">
+          <v-col cols="12">
             <SetFilter v-model="filter.set" :cardTypes="[2,5]" @input="filterChanged"/>
           </v-col>
         </v-row>
@@ -31,6 +44,15 @@
         >
           <v-icon>mdi-refresh</v-icon>
         </v-btn>
+        <v-btn
+          block
+          color="success"
+          class="white--text pa-0 mt-2"
+          :disabled="!canPlay"
+          :to="playTo"
+        >
+          <v-icon>mdi-play</v-icon>
+        </v-btn>
       </template>
     </shared-side-bar>
 
@@ -42,9 +64,10 @@
           <v-btn
             color="pink"
             class="white--text"
+            :small="$vuetify.breakpoint.xs"
             @click="rerollMastermind"
           >
-            <v-icon left>mdi-dice-multiple</v-icon>
+            <v-icon left :small="$vuetify.breakpoint.xs">mdi-dice-multiple</v-icon>
             Reroll
           </v-btn>
         </v-col>
@@ -77,9 +100,10 @@
           <v-btn
             color="pink"
             class="white--text"
+            :small="$vuetify.breakpoint.xs"
             @click="rerollScheme"
           >
-            <v-icon left>mdi-dice-multiple</v-icon>
+            <v-icon left :small="$vuetify.breakpoint.xs">mdi-dice-multiple</v-icon>
             Reroll
           </v-btn>
         </v-col>
@@ -111,6 +135,21 @@
       <v-row v-if="!scheme">
         <v-col cols="12">
           <div class="text-center grey--text">No scheme available for the selected sets.</div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12" class="pt-6">
+          <v-btn
+            block
+            x-large
+            color="success"
+            class="white--text"
+            :disabled="!canPlay"
+            :to="playTo"
+          >
+            <v-icon left>mdi-play</v-icon>
+            Play
+          </v-btn>
         </v-col>
       </v-row>
     </v-container>
@@ -203,6 +242,19 @@ export default {
     this.setQuery();
   },
   computed: {
+    canPlay() {
+      return !!(this.mastermind && this.scheme);
+    },
+    playTo() {
+      if (!this.canPlay) return "";
+      return {
+        path: "/play-solo",
+        query: {
+          mm: "" + this.mastermind.id,
+          scheme: "" + this.scheme.id,
+        }
+      };
+    },
     schemeHasMultipleCards() {
       return !!(this.scheme && this.scheme.cards && this.scheme.cards.length > 1);
     },
