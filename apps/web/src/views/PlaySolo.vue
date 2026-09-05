@@ -12,13 +12,21 @@
 
       <template v-if="ready">
         <v-row align="center" class="score-row">
-          <v-col cols="4" sm="3" class="py-2">
+          <v-col cols="6" sm="5" class="py-2 d-flex align-center">
             <v-btn text small class="px-1" :to="soloTo">
               <v-icon left small>mdi-arrow-left</v-icon>
               <span class="hidden-xs-only">Setup</span>
             </v-btn>
+            <v-btn
+              icon
+              :small="isXs"
+              title="Change mastermind and scheme"
+              @click="openEditor"
+            >
+              <v-icon :small="isXs">mdi-pencil</v-icon>
+            </v-btn>
           </v-col>
-          <v-col cols="8" sm="9" class="py-2 text-right">
+          <v-col cols="6" sm="7" class="py-2 text-right">
             <v-chip color="pink" class="white--text font-weight-bold score-chip" :small="isXs">
               {{ scoreLabel }}
             </v-chip>
@@ -27,7 +35,12 @@
 
         <v-row>
           <v-col cols="12" md="6" class="pb-2">
-            <div class="section-label">Mastermind</div>
+            <div class="section-label d-flex align-center">
+              <span>Mastermind</span>
+              <v-btn icon x-small class="ml-1" title="Change mastermind" @click="openEditor('mastermind')">
+                <v-icon small>mdi-pencil</v-icon>
+              </v-btn>
+            </div>
             <div class="mm-stack" :style="stackStyle">
               <div
                 v-for="idx in tacticDeck.length"
@@ -44,7 +57,12 @@
             <div class="caption mt-2 text-center">{{ tacticDeck.length }} tactic{{ tacticDeck.length === 1 ? "" : "s" }} remaining</div>
           </v-col>
           <v-col cols="12" md="6" class="pb-2">
-            <div class="section-label">Scheme</div>
+            <div class="section-label d-flex align-center">
+              <span>Scheme</span>
+              <v-btn icon x-small class="ml-1" title="Change scheme" @click="openEditor('scheme')">
+                <v-icon small>mdi-pencil</v-icon>
+              </v-btn>
+            </div>
             <div class="scheme-wrap">
               <MastermindCard v-if="schemeCard.overrideType === 2" :height="schemeHeight" :card="schemeCard" />
               <SchemeCard v-else :height="schemeHeight" :card="schemeCard" />
@@ -113,6 +131,50 @@
         </v-row>
       </v-container>
     </div>
+
+    <v-dialog v-model="showEditor" :fullscreen="isXs" max-width="520" scrollable>
+      <v-card class="dialog-card">
+        <v-card-title>Change Setup</v-card-title>
+        <v-card-text>
+          <v-autocomplete
+            ref="mastermindInput"
+            v-model="draftMastermindId"
+            :items="mastermindOptions"
+            label="Mastermind"
+            item-text="label"
+            item-value="id"
+            class="mt-2"
+          />
+          <v-autocomplete
+            ref="schemeInput"
+            v-model="draftSchemeId"
+            :items="schemeOptions"
+            label="Scheme"
+            item-text="label"
+            item-value="id"
+          />
+        </v-card-text>
+        <v-card-actions class="pa-4">
+          <v-row dense class="ma-0 action-row">
+            <v-col cols="6">
+              <v-btn block large @click="showEditor = false">Cancel</v-btn>
+            </v-col>
+            <v-col cols="6">
+              <v-btn
+                block
+                large
+                color="pink"
+                class="white--text"
+                :disabled="!canApplyEditor"
+                @click="applyEditor"
+              >
+                Apply
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
 
     <v-dialog v-model="showMasterStrike" :fullscreen="isXs" max-width="720" scrollable>
       <v-card class="dialog-card">
@@ -210,6 +272,20 @@ import { randomNumber } from "../services/randomUtils";
 const allMasterminds = getAllMasterminds();
 const allSchemes = getAllSchemes();
 
+const mastermindOptions = allMasterminds
+  .map(mm => ({
+    id: mm.id,
+    label: mm.filterName || mm.name,
+  }))
+  .sort((a, b) => a.label.localeCompare(b.label));
+
+const schemeOptions = allSchemes
+  .map(scheme => ({
+    id: scheme.id,
+    label: scheme.filterName || scheme.name,
+  }))
+  .sort((a, b) => a.label.localeCompare(b.label));
+
 const shuffle = items => {
   const result = items.slice();
   let i = result.length;
@@ -288,6 +364,9 @@ export default {
     finalBlowAccepted: false,
     gameOver: false,
     showEndGame: false,
+    showEditor: false,
+    draftMastermindId: null,
+    draftSchemeId: null,
   }),
   created() {
     this.boot();
@@ -302,6 +381,15 @@ export default {
     },
     ready() {
       return !!(this.mastermindCard && this.schemeCard);
+    },
+    mastermindOptions() {
+      return mastermindOptions;
+    },
+    schemeOptions() {
+      return schemeOptions;
+    },
+    canApplyEditor() {
+      return this.draftMastermindId != null && this.draftSchemeId != null;
     },
     soloTo() {
       const query = {};
@@ -350,7 +438,7 @@ export default {
     stackStyle() {
       const extra = this.tacticDeck.length * this.stackOffset;
       return {
-        height: (this.cardHeight + extra) + "px",
+        marginBottom: extra + "px",
       };
     },
   },
@@ -384,10 +472,47 @@ export default {
     playAgain() {
       this.resetGame();
     },
+    syncQuery() {
+      if (!this.mastermindGroup || !this.schemeGroup) return;
+      this.$router.replace({
+        path: this.$route.path,
+        query: {
+          mm: "" + this.mastermindGroup.id,
+          scheme: "" + this.schemeGroup.id,
+        }
+      });
+    },
+    openEditor(focus) {
+      this.draftMastermindId = this.mastermindGroup && this.mastermindGroup.id;
+      this.draftSchemeId = this.schemeGroup && this.schemeGroup.id;
+      this.showEditor = true;
+      this.$nextTick(() => {
+        const input = focus === "scheme" ? this.$refs.schemeInput : this.$refs.mastermindInput;
+        if (input && input.focus) input.focus();
+      });
+    },
+    applyEditor() {
+      const mastermind = allMasterminds.find(mm => mm.id === this.draftMastermindId);
+      const scheme = allSchemes.find(s => s.id === this.draftSchemeId);
+      if (!mastermind || !scheme) return;
+
+      const mastermindChanged = !this.mastermindGroup || this.mastermindGroup.id !== mastermind.id;
+      this.mastermindGroup = mastermind;
+      this.schemeGroup = scheme;
+      if (mastermindChanged) {
+        this.resetGame();
+        this.showEditor = false;
+        this.syncQuery();
+        return;
+      }
+
+      this.schemeCard = pickSchemeCard(scheme.cards || []);
+      this.showEditor = false;
+      this.syncQuery();
+    },
     backStyle(idx) {
       const offset = idx * this.stackOffset;
       return {
-        height: this.cardHeight + "px",
         transform: `translate(${offset}px, ${offset}px)`,
         zIndex: idx,
       };
@@ -475,9 +600,25 @@ export default {
 .scheme-wrap,
 .reveal-card-wrap {
   position: relative;
-  width: calc(100% - 24px);
+  width: calc(100% - 40px);
   max-width: 280px;
   margin: 0 auto;
+}
+
+.scheme-wrap ::v-deep .scheme-card,
+.scheme-wrap ::v-deep .mm-card {
+  height: auto !important;
+  min-height: 280px;
+  padding-bottom: 16px;
+}
+
+.mm-front ::v-deep .mm-card,
+.mm-front ::v-deep .hero-card,
+.mm-front ::v-deep .villain-card {
+  height: auto !important;
+  min-height: 260px;
+  padding-bottom: 80px;
+  overflow: visible;
 }
 
 .tactic-back {
@@ -485,6 +626,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   border-radius: 4px;
   background: linear-gradient(160deg, #7b1fa2 0%, #4a148c 100%);
   border: solid 1px rgba(#000, .25);
