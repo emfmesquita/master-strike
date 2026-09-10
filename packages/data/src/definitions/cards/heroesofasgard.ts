@@ -964,7 +964,7 @@ export const HeroesOfAsgard: CardSetDef = {
             ],
             [
               { bold: "Twist" },
-              ": Put this Twist next to a city space of HQ space that doesn't already have one, as “Eternal Darkness.“"
+              ": Put this Twist next to a city space or HQ space that doesn't already have one, as “Eternal Darkness.“"
             ],
             [
               { bold: "Special Rules" },

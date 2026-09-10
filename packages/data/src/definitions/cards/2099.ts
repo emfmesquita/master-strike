@@ -1451,7 +1451,7 @@ export const Marvel2099: CardSetDef = {
             ],
             [
               { bold: "Twist" },
-              ": Put this Toxic Sludge under and HQ space. NO space can have two Sludges unless all spaces already have one.",
+              ": Put this Toxic Sludge under an HQ space. NO space can have two Sludges unless all spaces already have one.",
             ],
             [
               { bold: "Special Rules" },
