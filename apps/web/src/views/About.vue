@@ -80,7 +80,7 @@
               Big thank you to <b>CaptainMetroidica</b> for providing images from the cards to be used as reference on <a href="https://www.legendarycardgame.com/" target="_blank">legendarycardgame.com</a>.
             </li>
             <li>
-              A heroic shout-out to <b>mtnoronha</b> (<a href="https://github.com/mtnoronha" style="text-decoration: none;" target="_blank"><v-icon>mdi-github</v-icon></a>) for creating the solo experimental page, amazing work!
+              A heroic shout-out to <b>mtnoronha</b> (<a href="https://github.com/mtnoronha" style="text-decoration: none;" target="_blank"><v-icon>mdi-github</v-icon></a>) for creating the solo page, amazing work!
             </li>
           </ul>
         </v-col>

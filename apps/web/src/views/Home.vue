@@ -25,7 +25,7 @@
           <HomeButton to="/officers" label="Officers" />
           <HomeButton to="/sidekicks" label="Sidekicks" />
           <HomeButton to="/keywords" label="Keywords" />
-          <HomeButton to="/solo" label="Solo (Experimental)" />
+          <HomeButton to="/solo" label="Solo (Alpha)" />
           <HomeButton to="/about" label="About" />
         </v-col>
       </v-row>
