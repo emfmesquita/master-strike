@@ -64,6 +64,7 @@ export default {
 
 <style scoped lang="scss">
 .mm-card {
+  position: relative;
   padding: 6px;
   color: #000;
   border: solid 1px rgba(#000, .2);
@@ -84,6 +85,18 @@ export default {
     }
   }
   
+  .icon-text {
+    position: absolute;
+    width: 64px;
+    font-size: 20px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #000;
+    line-height: 64px;
+    user-select: none;
+    pointer-events: none;
+  }
+
   .card-attack-icon {
     right: -13px;
     bottom: -13px;

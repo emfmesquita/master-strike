@@ -82,7 +82,9 @@
             md="3"
             class="py-1"
           >
-            <MastermindCard :height="defeatedHeight" :card="tactic" />
+            <div class="defeated-card">
+              <MastermindCard :height="defeatedHeight" :card="tactic" />
+            </div>
           </v-col>
         </v-row>
       </template>
@@ -607,18 +609,39 @@ export default {
 
 .scheme-wrap ::v-deep .scheme-card,
 .scheme-wrap ::v-deep .mm-card {
-  height: auto !important;
-  min-height: 280px;
-  padding-bottom: 16px;
+  overflow: visible;
 }
 
 .mm-front ::v-deep .mm-card,
 .mm-front ::v-deep .hero-card,
-.mm-front ::v-deep .villain-card {
-  height: auto !important;
-  min-height: 260px;
-  padding-bottom: 80px;
+.mm-front ::v-deep .villain-card,
+.defeated-card ::v-deep .mm-card,
+.reveal-card-wrap ::v-deep .mm-card {
   overflow: visible;
+}
+
+@media (max-width: 599px) {
+  .scheme-wrap ::v-deep .scheme-card,
+  .scheme-wrap ::v-deep .mm-card {
+    height: auto !important;
+    min-height: 0;
+    padding-bottom: 16px;
+  }
+
+  .mm-front ::v-deep .mm-card,
+  .mm-front ::v-deep .hero-card,
+  .mm-front ::v-deep .villain-card,
+  .defeated-card ::v-deep .mm-card,
+  .reveal-card-wrap ::v-deep .mm-card {
+    height: auto !important;
+    min-height: 0;
+    padding-bottom: 130px;
+  }
+
+  .scheme-wrap ::v-deep .card-title {
+    padding-left: 8px;
+    padding-right: 28px;
+  }
 }
 
 .tactic-back {

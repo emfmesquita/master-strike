@@ -111,7 +111,8 @@ export default {
   }
 }
 
-.card, .zoom-card {
+.card, .zoom-card, .mm-card, .scheme-card, .hero-card, .villain-card, .wound-card, .bystander-card {
+  position: relative;
 
   .set-icon {
     position: absolute;
