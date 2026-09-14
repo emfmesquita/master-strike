@@ -86,6 +86,7 @@ export default {
 
 <style scoped lang="scss">
 .villain-card {
+  position: relative;
   padding: 6px;
   color: #000;
   border: solid 1px rgba(#000, .2);
@@ -126,6 +127,45 @@ export default {
     }
   }
   
+  .icon-text {
+    position: absolute;
+    width: 64px;
+    font-size: 20px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #000;
+    line-height: 64px;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .set-icon {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+  }
+
+  .set-icon2 {
+    position: absolute;
+    top: 22px;
+    right: 6px;
+  }
+
+  .card-qtd-icon {
+    position: absolute;
+    right: 0px;
+    top: 6px;
+  }
+
+  .card-qtd {
+    right: 7px;
+    top: 11px;
+    width: 20px !important;
+    line-height: 20px !important;
+    font-size: 16px !important;
+    -webkit-text-stroke-width: 3px !important;
+  }
+
   .card-attack-icon {
     right: -13px;
     bottom: -13px;

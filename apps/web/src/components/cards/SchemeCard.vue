@@ -72,6 +72,7 @@ export default {
 
 <style scoped lang="scss">
 .scheme-card {
+  position: relative;
   padding: 6px;
   color: #000;
   background-color: #C6ECD9;
@@ -127,6 +128,45 @@ export default {
     &.card-red-sub-title {
       color: #d00;
     }
+  }
+
+  .set-icon {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+  }
+
+  .set-icon2 {
+    position: absolute;
+    top: 22px;
+    right: 6px;
+  }
+
+  .icon-text {
+    position: absolute;
+    width: 64px;
+    font-size: 20px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #000;
+    line-height: 64px;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .card-qtd-icon {
+    position: absolute;
+    right: 0px;
+    top: 6px;
+  }
+
+  .card-qtd {
+    right: 7px;
+    top: 11px;
+    width: 20px !important;
+    line-height: 20px !important;
+    font-size: 16px !important;
+    -webkit-text-stroke-width: 3px !important;
   }
 
   .card-vp-icon {

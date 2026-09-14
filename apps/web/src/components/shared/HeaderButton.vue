@@ -1,5 +1,5 @@
 <template>
-  <v-btn color="primary" small :to=to class="ma-1" width="120">{{ label }}</v-btn>
+  <v-btn color="primary" small :to=to class="ma-1" min-width="120">{{ label }}</v-btn>
 </template>
 
 <script>
