@@ -5,28 +5,14 @@
     <v-container class="play-container">
       <v-row v-if="!ready">
         <v-col cols="12" class="text-center">
-          <div class="grey--text mb-4">Pick a mastermind and scheme first.</div>
-          <v-btn color="primary" block to="/solo">Back to Solo</v-btn>
+          <div class="grey--text mb-4">Choose a mastermind and scheme to start.</div>
+          <v-btn color="pink" class="white--text" block @click="openEditor">Choose Setup</v-btn>
         </v-col>
       </v-row>
 
       <template v-if="ready">
         <v-row align="center" class="score-row">
-          <v-col cols="6" sm="5" class="py-2 d-flex align-center">
-            <v-btn text small class="px-1" :to="soloTo">
-              <v-icon left small>mdi-arrow-left</v-icon>
-              <span class="hidden-xs-only">Setup</span>
-            </v-btn>
-            <v-btn
-              icon
-              :small="isXs"
-              title="Change mastermind and scheme"
-              @click="openEditor"
-            >
-              <v-icon :small="isXs">mdi-pencil</v-icon>
-            </v-btn>
-          </v-col>
-          <v-col cols="6" sm="7" class="py-2 text-right">
+          <v-col cols="12" class="py-2 text-right">
             <v-chip color="pink" class="white--text font-weight-bold score-chip" :small="isXs">
               {{ scoreLabel }}
             </v-chip>
@@ -134,32 +120,34 @@
       </v-container>
     </div>
 
-    <v-dialog v-model="showEditor" :fullscreen="isXs" max-width="520" scrollable>
+    <v-dialog v-model="showEditor" :fullscreen="isXs" :persistent="!ready" max-width="520" scrollable>
       <v-card class="dialog-card">
-        <v-card-title>Change Setup</v-card-title>
+        <v-card-title>{{ editorTitle }}</v-card-title>
         <v-card-text>
           <v-autocomplete
             ref="mastermindInput"
-            v-model="draftMastermindId"
+            v-model="draftMastermind"
             :items="mastermindOptions"
             label="Mastermind"
             item-text="label"
-            item-value="id"
+            return-object
+            auto-select-first
             class="mt-2"
           />
           <v-autocomplete
             ref="schemeInput"
-            v-model="draftSchemeId"
+            v-model="draftScheme"
             :items="schemeOptions"
             label="Scheme"
             item-text="label"
-            item-value="id"
+            return-object
+            auto-select-first
           />
         </v-card-text>
         <v-card-actions class="pa-4">
           <v-row dense class="ma-0 action-row">
             <v-col cols="6">
-              <v-btn block large @click="showEditor = false">Cancel</v-btn>
+              <v-btn block large @click="cancelEditor">Cancel</v-btn>
             </v-col>
             <v-col cols="6">
               <v-btn
@@ -168,7 +156,7 @@
                 color="pink"
                 class="white--text"
                 :disabled="!canApplyEditor"
-                @click="applyEditor"
+                @mousedown.prevent="applyEditor"
               >
                 Apply
               </v-btn>
@@ -247,7 +235,7 @@
         <v-card-actions class="pa-4">
           <v-row dense class="ma-0 action-row">
             <v-col cols="12" sm="6">
-              <v-btn block large :to="soloTo">Back to Solo</v-btn>
+              <v-btn block large to="/">Home</v-btn>
             </v-col>
             <v-col cols="12" sm="6">
               <v-btn block large color="success" class="white--text" @click="playAgain">Play Again</v-btn>
@@ -268,7 +256,6 @@ import SchemeCard from "../components/cards/SchemeCard.vue";
 import VillainCard from "../components/cards/VillainCard.vue";
 
 import { getAllMasterminds, getAllSchemes } from "../services/cardUtils";
-import { toInteger } from "../services/queryUtils";
 import { randomNumber } from "../services/randomUtils";
 
 const allMasterminds = getAllMasterminds();
@@ -322,15 +309,41 @@ const extractAbilities = (cards, prefixes) => {
 };
 
 const pickMastermindCard = cards => {
+  if (!cards || !cards.length) return null;
   const standard = cards.find(card => !card.tactic && !card.epic && !card.transformed);
   if (standard) return standard;
-  return cards.find(card => !card.tactic);
+  const nonTactic = cards.find(card => !card.tactic);
+  if (nonTactic) return nonTactic;
+  return cards[0];
 };
 
 const pickSchemeCard = cards => {
+  if (!cards || !cards.length) return null;
   const standard = cards.find(card => !card.transformed && !card.unveiled);
   if (standard) return standard;
   return cards[0];
+};
+
+const groupById = (groups, id) => {
+  const numericId = Number(id);
+  if (id == null || id === "" || Number.isNaN(numericId)) return null;
+  return groups.find(group => group.id === numericId) || null;
+};
+
+const resolveGroup = (value, groups, options) => {
+  if (value && typeof value === "object") return groupById(groups, value.id);
+  const byId = groupById(groups, value);
+  if (byId) return byId;
+
+  const label = String(value || "").trim().toLowerCase();
+  if (!label) return null;
+
+  const exact = options.find(item => item.label.toLowerCase() === label);
+  if (exact) return groupById(groups, exact.id);
+
+  const matches = options.filter(item => item.label.toLowerCase().startsWith(label));
+  if (matches.length !== 1) return null;
+  return groupById(groups, matches[0].id);
 };
 
 const cardPoints = card => {
@@ -367,8 +380,8 @@ export default {
     gameOver: false,
     showEndGame: false,
     showEditor: false,
-    draftMastermindId: null,
-    draftSchemeId: null,
+    draftMastermind: null,
+    draftScheme: null,
   }),
   created() {
     this.boot();
@@ -390,14 +403,18 @@ export default {
     schemeOptions() {
       return schemeOptions;
     },
-    canApplyEditor() {
-      return this.draftMastermindId != null && this.draftSchemeId != null;
+    resolvedMastermind() {
+      return resolveGroup(this.draftMastermind, allMasterminds, mastermindOptions);
     },
-    soloTo() {
-      const query = {};
-      if (this.mastermindGroup) query.mm = "" + this.mastermindGroup.id;
-      if (this.schemeGroup) query.scheme = "" + this.schemeGroup.id;
-      return { path: "/solo", query };
+    resolvedScheme() {
+      return resolveGroup(this.draftScheme, allSchemes, schemeOptions);
+    },
+    canApplyEditor() {
+      return !!(this.resolvedMastermind && this.resolvedScheme);
+    },
+    editorTitle() {
+      if (this.ready) return "Change Setup";
+      return "Setup";
     },
     canAttack() {
       if (this.gameOver) return false;
@@ -446,13 +463,12 @@ export default {
   },
   methods: {
     boot() {
-      const query = this.$route.query;
-      const mastermind = allMasterminds.find(mm => mm.id === toInteger(query.mm));
-      const scheme = allSchemes.find(s => s.id === toInteger(query.scheme));
-      if (!mastermind || !scheme) return;
-      this.mastermindGroup = mastermind;
-      this.schemeGroup = scheme;
-      this.resetGame();
+      this.openEditor();
+    },
+    cancelEditor() {
+      this.showEditor = false;
+      if (this.ready) return;
+      this.$router.push("/");
     },
     resetGame() {
       const cards = this.mastermindGroup.cards || [];
@@ -474,19 +490,13 @@ export default {
     playAgain() {
       this.resetGame();
     },
-    syncQuery() {
-      if (!this.mastermindGroup || !this.schemeGroup) return;
-      this.$router.replace({
-        path: this.$route.path,
-        query: {
-          mm: "" + this.mastermindGroup.id,
-          scheme: "" + this.schemeGroup.id,
-        }
-      });
+    optionForGroup(options, group) {
+      if (!group) return null;
+      return options.find(item => item.id === group.id) || null;
     },
     openEditor(focus) {
-      this.draftMastermindId = this.mastermindGroup && this.mastermindGroup.id;
-      this.draftSchemeId = this.schemeGroup && this.schemeGroup.id;
+      this.draftMastermind = this.optionForGroup(mastermindOptions, this.mastermindGroup);
+      this.draftScheme = this.optionForGroup(schemeOptions, this.schemeGroup);
       this.showEditor = true;
       this.$nextTick(() => {
         const input = focus === "scheme" ? this.$refs.schemeInput : this.$refs.mastermindInput;
@@ -494,23 +504,15 @@ export default {
       });
     },
     applyEditor() {
-      const mastermind = allMasterminds.find(mm => mm.id === this.draftMastermindId);
-      const scheme = allSchemes.find(s => s.id === this.draftSchemeId);
+      const mastermind = this.resolvedMastermind;
+      const scheme = this.resolvedScheme;
       if (!mastermind || !scheme) return;
 
-      const mastermindChanged = !this.mastermindGroup || this.mastermindGroup.id !== mastermind.id;
       this.mastermindGroup = mastermind;
       this.schemeGroup = scheme;
-      if (mastermindChanged) {
-        this.resetGame();
-        this.showEditor = false;
-        this.syncQuery();
-        return;
-      }
-
-      this.schemeCard = pickSchemeCard(scheme.cards || []);
+      this.resetGame();
+      if (!this.ready) return;
       this.showEditor = false;
-      this.syncQuery();
     },
     backStyle(idx) {
       const offset = idx * this.stackOffset;
