@@ -94,7 +94,7 @@ import {
   filterGroupByRule,
   filterById,
 } from "../services/searchUtils";
-import { sortGroups, ALPHA_SORT } from "../services/sortUtils";
+import { sortGroups, sortSchemeCards, ALPHA_SORT } from "../services/sortUtils";
 
 const schemes = getAllSchemes();
 const validSchemes = schemes.filter(scheme => scheme.id).map(scheme => scheme.id);
@@ -176,13 +176,7 @@ export default {
       this.schemes = filterGroupBySearch(this.schemes, Metadata.cardTypes.SCHEME.id, this.filter.search);
 
       this.schemes.forEach(scheme => {
-        scheme.filteredCards.sort((a,b) => {
-          if(a.disabled && !b.disabled) return 1;
-          if(!a.disabled && b.disabled) return -1;
-          if(a.transformed && !b.transformed) return 1;
-          if(!a.transformed && b.transformed) return -1;
-          return a.name.localeCompare(b.name);
-        });
+        sortSchemeCards(scheme);
 
         scheme.results = numberOfCards(scheme.filteredCards);
       });

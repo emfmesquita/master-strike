@@ -139,7 +139,7 @@ import {
   filterById,
   filterGroupByCardProp
 } from "../services/searchUtils";
-import { sortGroups, ALPHA_SORT, RESULTS_SORT } from "../services/sortUtils";
+import { sortGroups, sortHeroCards, ALPHA_SORT, RESULTS_SORT } from "../services/sortUtils";
 
 const allHeroes = getAllHeroes();
 const validHeroes = allHeroes.filter(hero => hero.id).map(hero => hero.id);
@@ -281,20 +281,7 @@ export default {
           else if (!card.disabled && pair.disabled) pair.disabled = false;
         });
 
-        hero.filteredCards.sort((a,b) => {
-          if(a.disabled && !b.disabled) return 1;
-          if(!a.disabled && b.disabled) return -1;
-          if(a.rarity > b.rarity) return 1;
-          if(a.rarity < b.rarity) return -1;
-          if(a.cost > b.cost) return 1;
-          if(a.cost < b.cost) return -1;
-          if(a.divided && b.divided) {
-            const idxA = hero.filteredCards.indexOf(a);
-            const idxB = hero.filteredCards.indexOf(b);
-            return idxA > idxB ? 1 : -1;
-          }
-          return 0;
-        });
+        sortHeroCards(hero);
 
         hero.results = numberOfCards(hero.filteredCards);
       });

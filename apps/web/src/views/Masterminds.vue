@@ -130,7 +130,7 @@ import {
   filterById,
   filterGroupByCardProp
 } from "../services/searchUtils";
-import { sortGroups, ALPHA_SORT, RESULTS_SORT, VP_SORT } from "../services/sortUtils";
+import { sortGroups, sortMastermindCards, ALPHA_SORT, RESULTS_SORT, VP_SORT } from "../services/sortUtils";
 
 const masterminds = getAllMasterminds();
 const validMasterminds = masterminds.filter(mm => mm.id).map(mm => mm.id);
@@ -259,17 +259,7 @@ export default {
       this.masterminds = filterGroupBySearch(this.masterminds, Metadata.cardTypes.MASTERMIND.id, this.filter.search);
 
       this.masterminds.forEach(mm => {
-        mm.filteredCards.sort((a,b) => {
-          if(a.disabled && !b.disabled) return 1;
-          if(!a.disabled && b.disabled) return -1;
-          if(a.tactic && !b.tactic) return 1;
-          if(!a.tactic && b.tactic) return -1;
-          if(a.epic && !b.epic) return 1;
-          if(!a.epic && b.epic) return -1;
-          if(a.transformed && !b.transformed) return 1;
-          if(!a.transformed && b.transformed) return -1;
-          return a.name.localeCompare(b.name);
-        });
+        sortMastermindCards(mm);
 
         mm.results = numberOfCards(mm.filteredCards);
         mm.maxVP = maxVP(mm.cards.filter(card => !card.epic && !card.transformed)) + "";

@@ -142,6 +142,7 @@ import VillainCard from "../components/cards/VillainCard.vue";
 import { getAllHeroes, getAllMasterminds, getAllSchemes, maxVP, numberOfCards } from "../services/cardUtils";
 import { toIntArray } from "../services/queryUtils";
 import { groupSearchSetup } from "../services/searchUtils";
+import { sortHeroCards, sortMastermindCards, sortSchemeCards } from "../services/sortUtils";
 
 const allHeroes = getAllHeroes();
 const allMasterminds = getAllMasterminds();
@@ -245,38 +246,18 @@ export default {
       groupSearchSetup(this.schemes);
 
       this.heroes.forEach(hero => {
-        hero.filteredCards.sort((a, b) => {
-          if (a.rarity > b.rarity) return 1;
-          if (a.rarity < b.rarity) return -1;
-          if (a.cost > b.cost) return 1;
-          if (a.cost < b.cost) return -1;
-          if (a.divided && b.divided && hero.filteredCards.indexOf(a) > hero.filteredCards.indexOf(b)) return 1;
-          if (a.divided && b.divided) return -1;
-          return 0;
-        });
+        sortHeroCards(hero);
         hero.results = numberOfCards(hero.filteredCards);
       });
 
       this.masterminds.forEach(mm => {
-        mm.filteredCards.sort((a, b) => {
-          if (a.tactic && !b.tactic) return 1;
-          if (!a.tactic && b.tactic) return -1;
-          if (a.epic && !b.epic) return 1;
-          if (!a.epic && b.epic) return -1;
-          if (a.transformed && !b.transformed) return 1;
-          if (!a.transformed && b.transformed) return -1;
-          return a.name.localeCompare(b.name);
-        });
+        sortMastermindCards(mm);
         mm.results = numberOfCards(mm.filteredCards);
         mm.maxVP = maxVP(mm.cards.filter(card => !card.epic && !card.transformed)) + "";
       });
 
       this.schemes.forEach(scheme => {
-        scheme.filteredCards.sort((a, b) => {
-          if (a.transformed && !b.transformed) return 1;
-          if (!a.transformed && b.transformed) return -1;
-          return a.name.localeCompare(b.name);
-        });
+        sortSchemeCards(scheme);
         scheme.results = numberOfCards(scheme.filteredCards);
       });
 
