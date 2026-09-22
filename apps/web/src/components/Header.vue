@@ -53,6 +53,7 @@
               <HeaderButton to="/officers" label="Officers" />
               <HeaderButton to="/sidekicks" label="Sidekicks" />
               <HeaderButton to="/keywords" label="Keywords" />
+              <HeaderButton to="/setup" label="Setup" />
               <HeaderButton to="/solo" label="Solo (Alpha)" />
               <HeaderButton to="/about" label="About" />
           </v-row>
