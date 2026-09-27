@@ -22,17 +22,17 @@
           </v-row>
           <v-row align="center">
             <v-col cols="12">
-              <HeroFilter :key="'hero-' + filterKey" v-model="selection.hero" @input="selectionChanged"/>
-            </v-col>
-          </v-row>
-          <v-row align="center">
-            <v-col cols="12">
               <MastermindFilter :key="'mm-' + filterKey" v-model="selection.mastermind" @input="selectionChanged"/>
             </v-col>
           </v-row>
           <v-row align="center">
             <v-col cols="12">
               <SchemeFilter :key="'scheme-' + filterKey" v-model="selection.scheme" @input="selectionChanged"/>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col cols="12">
+              <HeroFilter :key="'hero-' + filterKey" v-model="selection.hero" @input="selectionChanged"/>
             </v-col>
           </v-row>
         </v-container>
@@ -51,34 +51,12 @@
     <v-container v-if="isEmpty" style="paddingBottom: 100px">
       <v-row>
         <v-col cols="12" class="text-center grey--text py-12">
-          Select heroes, masterminds, and schemes to view a setup.
+          Select the Mastermind(s), Scheme(s), and Heroes to view a setup.
         </v-col>
       </v-row>
     </v-container>
 
     <v-container v-if="!isEmpty" style="paddingBottom: 100px">
-      <template v-if="schemes.length">
-        <v-row>
-          <v-col cols="12">
-            <div class="text-center title">{{ schemeTitle }}</div>
-          </v-col>
-        </v-row>
-        <v-row v-for="scheme in schemes" :key="groupKey('scheme', scheme)">
-          <v-col cols="12">
-            <CardGroup :group="scheme" :cardHeight="340">
-              <template v-slot:default="{ card }">
-                <CardWrapper :height="340">
-                  <template v-slot:default="{ contentHeight }">
-                    <MastermindCard v-if="card.overrideType === 2" :card="card" :height="340" :contentHeight="contentHeight" />
-                    <SchemeCard v-if="card.overrideType !== 2" :card="card" :height="340" :contentHeight="contentHeight" />
-                  </template>
-                </CardWrapper>
-              </template>
-            </CardGroup>
-          </v-col>
-        </v-row>
-      </template>
-
       <template v-if="masterminds.length">
         <v-row>
           <v-col cols="12">
@@ -94,6 +72,28 @@
                     <HeroCard v-if="card.overrideType === 1" :height="cardHeight" :card="card" :contentHeight="contentHeight" />
                     <VillainCard v-if="card.overrideType === 4" :height="cardHeight" :card="card" :contentHeight="contentHeight" />
                     <MastermindCard v-if="card.overrideType !== 1 && card.overrideType !== 4" :card="card" :height="cardHeight" :contentHeight="contentHeight" />
+                  </template>
+                </CardWrapper>
+              </template>
+            </CardGroup>
+          </v-col>
+        </v-row>
+      </template>
+
+      <template v-if="schemes.length">
+        <v-row>
+          <v-col cols="12">
+            <div class="text-center title">{{ schemeTitle }}</div>
+          </v-col>
+        </v-row>
+        <v-row v-for="scheme in schemes" :key="groupKey('scheme', scheme)">
+          <v-col cols="12">
+            <CardGroup :group="scheme" :cardHeight="340">
+              <template v-slot:default="{ card }">
+                <CardWrapper :height="340">
+                  <template v-slot:default="{ contentHeight }">
+                    <MastermindCard v-if="card.overrideType === 2" :card="card" :height="340" :contentHeight="contentHeight" />
+                    <SchemeCard v-if="card.overrideType !== 2" :card="card" :height="340" :contentHeight="contentHeight" />
                   </template>
                 </CardWrapper>
               </template>
